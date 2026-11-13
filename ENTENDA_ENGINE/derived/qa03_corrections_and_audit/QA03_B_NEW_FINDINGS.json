@@ -1,0 +1,72 @@
+{
+ "schema_version": 1,
+ "mission": "QA-03-FRONT-B",
+ "as_of": "2026-11-13",
+ "status": "NEW_FINDINGS_NOT_SILENTLY_CORRECTED",
+ "findings": [
+  {
+   "target_id": "CC2002:ART.228",
+   "audit_wave": "QA03_FRONT_B",
+   "problematic_field": "o_que_diz",
+   "problematic_excerpt": "certos parentes das partes",
+   "legal_basis": "O art. 228, V, identifica precisamente os parentes não admitidos em regra: cônjuges, ascendentes, descendentes e colaterais até o terceiro grau de alguma das partes, por consanguinidade ou afinidade. A expressão genérica não permite ao leitor saber quem integra a restrição.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "OMISSAO_DE_SUJEITOS_LEGALMENTE_ENUMERADOS",
+   "severity": "ALTO",
+   "legal_or_pedagogical_consequence": "O leitor não consegue determinar pelo ENTENDA quais vínculos familiares integram a regra de inadmissibilidade e pode excluir parentes fora do alcance legal ou admitir pessoas expressamente enumeradas.",
+   "correction_direction": "Enumerar cônjuge, ascendentes, descendentes e colaterais até o terceiro grau, por consanguinidade ou afinidade, mantendo separadas a exceção do § 1º e a garantia do § 2º.",
+   "confidence": "ALTA",
+   "human_review_required": false,
+   "checkpoint": "B-CP05",
+   "auditor": "qa03_audit_001_194"
+  },
+  {
+   "target_id": "CC2002:ART.288",
+   "audit_wave": "QA03_FRONT_B",
+   "problematic_field": "o_que_diz",
+   "problematic_excerpt": "instrumento particular com as solenidades legais referidas",
+   "legal_basis": "O art. 288 remete expressamente ao art. 654, § 1º. Para eficácia da cessão perante terceiros, o instrumento particular deve indicar o lugar em que foi passado, a qualificação do outorgante e do outorgado, a data e o objetivo da outorga, com designação e extensão dos poderes conferidos.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "OMISSAO_DE_REQUISITOS_FORMAIS_POR_REFERENCIA_CRUZADA",
+   "severity": "MÉDIO",
+   "legal_or_pedagogical_consequence": "A regra central de oponibilidade está correta, mas o leitor não recebe os requisitos concretos necessários para reconhecer o instrumento particular qualificado exigido pelo dispositivo.",
+   "correction_direction": "Explicitar no campo principal ou de significado as formalidades do art. 654, § 1º, preservando a distinção entre eficácia perante terceiros e validade entre as partes.",
+   "confidence": "ALTA",
+   "human_review_required": false,
+   "checkpoint": "B-CP07",
+   "auditor": "qa03_audit_001_194"
+  },
+  {
+   "target_id": "CC2002:ART.371",
+   "audit_wave": "QA03_FRONT_B",
+   "problematic_field": "o_que_diz; o_que_significa",
+   "problematic_excerpt": "o fiador pode usar crédito que tenha contra o credor do afiançado; ele pode invocar crédito que possua contra quem é credor da dívida garantida",
+   "legal_basis": "O art. 371 autoriza o fiador a compensar sua dívida com a dívida do credor ao afiançado, isto é, a opor o crédito que o devedor principal tem contra o credor. A explicação transforma essa exceção em uso de crédito próprio do fiador, hipótese já abrangida pela regra geral de reciprocidade.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "ERRO_NA_TITULARIDADE_DO_CREDITO_COMPENSAVEL",
+   "severity": "ALTO",
+   "legal_or_pedagogical_consequence": "Atribui a exceção legal à pessoa errada e pode impedir o fiador de invocar crédito pertencente ao afiançado ou apresentar como excepcional uma compensação de crédito próprio.",
+   "correction_direction": "Explicar que o fiador, além de seus próprios créditos compensáveis pela regra geral, pode opor ao credor o crédito que este deve ao afiançado.",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "checkpoint": "B-CP10",
+   "auditor": "qa03_audit_195_388"
+  },
+  {
+   "target_id": "CC2002:ART.500",
+   "audit_wave": "QA03_FRONT_B",
+   "problematic_field": "o_que_diz",
+   "problematic_excerpt": "o comprador pode exigir complemento, resolução ou abatimento; excesso pode exigir pagamento ou devolução",
+   "legal_basis": "O caput do art. 500 estabelece ordem condicionada: o comprador exige primeiro o complemento da área e, somente se isso não for possível, pode reclamar resolução ou abatimento proporcional. No excesso, o § 2º exige que o vendedor prove motivo para ignorar a medida exata e então atribui ao comprador a escolha entre completar o preço ou devolver o excesso.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "OMISSAO_DE_ORDEM_CONDICOES_E_TITULAR_DA_ESCOLHA",
+   "severity": "ALTO",
+   "legal_or_pedagogical_consequence": "A redação pode levar o leitor a tratar os três remédios como livremente intercambiáveis e a ignorar os pressupostos e a titularidade da escolha na área excedente.",
+   "correction_direction": "Apresentar o complemento como remédio prioritário; condicionar resolução ou abatimento à impossibilidade de complementar; e explicitar prova do vendedor e escolha do comprador no excesso.",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "checkpoint": "B-CP16",
+   "auditor": "qa03_audit_195_388"
+  }
+ ]
+}

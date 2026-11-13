@@ -1,0 +1,1324 @@
+{
+ "schema_version": 1,
+ "mission": "QA-03-FRONT-B",
+ "checkpoint": "B-CP01",
+ "as_of": "2026-11-13",
+ "status": "COMPLETE",
+ "source_queue": "QA03_AUDIT_388_QUEUE.json",
+ "source_queue_sha256": "b42fdebc0027548ce3458e188ff748c963bf7ff5c6c8d675ddaf2d4a82148e08",
+ "queue_positions": [
+  1,
+  25
+ ],
+ "examined": 25,
+ "target_ids": [
+  "CC2002:ART.115",
+  "CC2002:ART.116",
+  "CC2002:ART.117",
+  "CC2002:ART.118",
+  "CC2002:ART.119",
+  "CC2002:ART.120",
+  "CC2002:ART.121",
+  "CC2002:ART.122",
+  "CC2002:ART.123",
+  "CC2002:ART.124",
+  "CC2002:ART.125",
+  "CC2002:ART.126",
+  "CC2002:ART.127",
+  "CC2002:ART.128",
+  "CC2002:ART.129",
+  "CC2002:ART.130",
+  "CC2002:ART.131",
+  "CC2002:ART.132",
+  "CC2002:ART.133",
+  "CC2002:ART.134",
+  "CC2002:ART.135",
+  "CC2002:ART.136",
+  "CC2002:ART.137",
+  "CC2002:ART.139",
+  "CC2002:ART.140"
+ ],
+ "findings": 0,
+ "finding_counts": {},
+ "protected_sha256": {
+  "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+  "lookup": "60f1de336f2f9ecbc5e671d0a6a9223cf20e47ab5826a5501b53f9a67551866e",
+  "payload": "9fb3f3a1b6f1c1926eda0818fc753f2d0348194cf25b0a333fc6fa18c48222cb",
+  "qa02_corrections": "0d8cce6b3b9c335e7f71502b88c81488ae53732a7927708f2f83701504896e6b"
+ },
+ "records": [
+  {
+   "queue_position": 1,
+   "target_id": "CC2002:ART.115",
+   "explanation_id": "ENTENDA/CC2002:ART.115/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.115:CAPUT\tOs poderes de representação conferem-se por lei ou pelo interessado.",
+   "source_snapshot_sha256": "ad26fc6c5f8da63b19abb19a7e7c3240f00663dd5fd19e6c6d1523120f29ba8e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.115:CAPUT",
+     "text": "Os poderes de representação conferem-se por lei ou pelo interessado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Os poderes de representação conferem-se por lei ou pelo interessado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "192c578e6f640a54ad548cd14d661cab56ccb6b3607abbbfbe828782c2b3cb8e",
+     "o_que_significa": "678da685046ca71b84d1988f88b3314c66e32a82fe72b05020a00472569085cd",
+     "exemplo_pratico": "065ae0ce83a73c014a4d6dda33ee7a335691b6d80779e57dfe0602349935ca32",
+     "atencao": "c98e0570198b6e1df648a8c0ad5956404a5118f92e164a3519fba71b178b71f4",
+     "palavras_dificeis": "93db6036a3c479ed12f63a90b62841c95fb6ce5b42c542bbaefce86e862f522a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.115, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “A representação pode nascer diretamente da lei ou da vontade da pessoa representada.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 2,
+   "target_id": "CC2002:ART.116",
+   "explanation_id": "ENTENDA/CC2002:ART.116/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.116:CAPUT\tA manifestação de vontade pelo representante, nos limites de seus poderes, produz efeitos em relação ao representado.",
+   "source_snapshot_sha256": "f6f9b2687244ec305212e206866b27685f076f0b8125ebe69ccc6f471f6407ba",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.116:CAPUT",
+     "text": "A manifestação de vontade pelo representante, nos limites de seus poderes, produz efeitos em relação ao representado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A manifestação de vontade pelo representante, nos limites de seus poderes, produz efeitos em relação ao representado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a0ea2ab2d7ec99894c0350306c8c111912ee71a1aa7e4c5b585e555deefcfe45",
+     "o_que_significa": "f0be98b12956a5391b0ed51a40bef08b1ea762bd45ee6ab384f60b5df0880dac",
+     "exemplo_pratico": "ea0fbe6088df09e5dfda4c188153604970b30736a4f6c8fec91e9e5aa3f8575e",
+     "atencao": "639967fa72b74a1f13ae4e0235c343aebfb93ec0171eab6ef12bca8d99991d6b",
+     "palavras_dificeis": "7f43572b51bca9a10ed7ae51fd9397748214b56ef552aee75f372811b3cf347d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.116, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “A declaração feita pelo representante dentro dos poderes recebidos produz efeitos diretamente para o representado.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 3,
+   "target_id": "CC2002:ART.117",
+   "explanation_id": "ENTENDA/CC2002:ART.117/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.117:CAPUT\tSalvo se o permitir a lei ou o representado, é anulável o negócio jurídico que o representante, no seu interesse ou por conta de outrem, celebrar consigo mesmo.\nCC2002:ART.117:PAR.UNICO\tPara esse efeito, tem-se como celebrado pelo representante o negócio realizado por aquele em quem os poderes houverem sido subestabelecidos.",
+   "source_snapshot_sha256": "55ba54619e604e5bc321c0b25134c9a6401c937d0b9f33d98d5750c110f4e181",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.117:CAPUT",
+     "text": "Salvo se o permitir a lei ou o representado, é anulável o negócio jurídico que o representante, no seu interesse ou por conta de outrem, celebrar consigo mesmo."
+    },
+    {
+     "label": "CC2002:ART.117:PAR.UNICO",
+     "text": "Para esse efeito, tem-se como celebrado pelo representante o negócio realizado por aquele em quem os poderes houverem sido subestabelecidos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Salvo se o permitir a lei ou o representado, é anulável o negócio jurídico que o representante, no seu interesse ou por conta de outrem, celebrar consigo mesmo. | Para esse efeito, tem-se como celebrado pelo representante o negócio realizado por aquele em quem os poderes houverem sido subestabelecidos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a98617791cc60905f9a73f26f7d2acb2ffd4e9e9a2d3f51e4272ff508a93c9e0",
+     "o_que_significa": "0f01e780d2c56a07cbcf84fa7aff56c970d672bb42f0480180e3fe50478abb82",
+     "exemplo_pratico": "a06462d9003980fc6c8229ccee8bd2c522dd2e2ef6c046724355b12320c1d6aa",
+     "atencao": "0639e22baaea36b7bb7646355349180c153a19c10a76b8f6618248dc693c1612",
+     "palavras_dificeis": "f5f2a48f675d13b108171d28b1125869c96cd0f948158c8ce1c709f6ebc7b60e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.117, foram cotejados 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos. A baseline sintetiza a regra como: “Em regra, é anulável o negócio em que o representante contrata consigo mesmo, direta ou indiretamente, salvo autorização da lei ou do representado.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 4,
+   "target_id": "CC2002:ART.118",
+   "explanation_id": "ENTENDA/CC2002:ART.118/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.118:CAPUT\tO representante é obrigado a provar às pessoas, com quem tratar em nome do representado, a sua qualidade e a extensão de seus poderes, sob pena de, não o fazendo, responder pelos atos que a estes excederem.",
+   "source_snapshot_sha256": "e92686c121ffc74baff89ab23d4c1c126ac25cda47acb91f8b765c63a1d6e197",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.118:CAPUT",
+     "text": "O representante é obrigado a provar às pessoas, com quem tratar em nome do representado, a sua qualidade e a extensão de seus poderes, sob pena de, não o fazendo, responder pelos atos que a estes excederem."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O representante é obrigado a provar às pessoas, com quem tratar em nome do representado, a sua qualidade e a extensão de seus poderes, sob pena de, não o fazendo, responder pelos atos que a estes excederem.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "532a5adad9f396aecc9b00c442294da3335dc35f8ee0b85b7a4a2fd1b52e1859",
+     "o_que_significa": "43b19f03171bca003bb6d9ff293a4610affa0f39a369881c665bd9a359770058",
+     "exemplo_pratico": "596faef51fe77de1f81baaf9b2664def68ef49d5f957b422c7fb67b6de80d44a",
+     "atencao": "81475a805f96d3c51c06369d28f412f2ffcda75341967dae8ba4b53076fc1bce",
+     "palavras_dificeis": "71884740eea9f5f3cf3e20bcf753c3ccd322b0b0ae5b98ec7c2a605007c6f4a7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.118, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “O representante deve demonstrar a terceiros sua condição e a extensão dos poderes que recebeu.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 5,
+   "target_id": "CC2002:ART.119",
+   "explanation_id": "ENTENDA/CC2002:ART.119/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.119:CAPUT\tÉ anulável o negócio concluído pelo representante em conflito de interesses com o representado, se tal fato era ou devia ser do conhecimento de quem com aquele tratou.\nCC2002:ART.119:PAR.UNICO\tÉ de cento e oitenta dias, a contar da conclusão do negócio ou da cessação da incapacidade, o prazo de decadência para pleitear-se a anulação prevista neste artigo.",
+   "source_snapshot_sha256": "7e5a786b9ab880e406d1985e129d1215404a2146c66bb8930fafaf41fbf28977",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.119:CAPUT",
+     "text": "É anulável o negócio concluído pelo representante em conflito de interesses com o representado, se tal fato era ou devia ser do conhecimento de quem com aquele tratou."
+    },
+    {
+     "label": "CC2002:ART.119:PAR.UNICO",
+     "text": "É de cento e oitenta dias, a contar da conclusão do negócio ou da cessação da incapacidade, o prazo de decadência para pleitear-se a anulação prevista neste artigo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: É anulável o negócio concluído pelo representante em conflito de interesses com o representado, se tal fato era ou devia ser do conhecimento de quem com aquele tratou. | É de cento e oitenta dias, a contar da conclusão do negócio ou da cessação da incapacidade, o prazo de decadência para pleitear-se a anulação prevista neste artigo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "43a55bf67bf129e265bd25b8ed055dbab9df3316f4b2a9d569c19256933623fd",
+     "o_que_significa": "cd1774941976b81a8cf091e8aa26b73ca5810441b7dfe83fd7b46bd26bc2d489",
+     "exemplo_pratico": "7f05472ae244ba69860facebdb1c2a828d78931a478310ea7abf2a9abb74ac4c",
+     "atencao": "25b8fbe06ddefeae6bd4c8602573bbeeb44cf6b98c5ba4c14616828b8c6f9d71",
+     "palavras_dificeis": "28ffb6a3baf2bc7bddca3e40860b946d47f804b0c6600d4b803a3823d2ec7379"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.119, foram cotejados 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos. A baseline sintetiza a regra como: “O negócio feito em conflito de interesses pode ser anulado quando o terceiro sabia ou deveria saber do conflito.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 6,
+   "target_id": "CC2002:ART.120",
+   "explanation_id": "ENTENDA/CC2002:ART.120/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.120:CAPUT\tOs requisitos e os efeitos da representação legal são os estabelecidos nas normas respectivas; os da representação voluntária são os da Parte Especial deste Código.",
+   "source_snapshot_sha256": "d8ec3e7a75f849692103566412a1d1791c05b87c49d9283afdf355daa0f5b6d6",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.120:CAPUT",
+     "text": "Os requisitos e os efeitos da representação legal são os estabelecidos nas normas respectivas; os da representação voluntária são os da Parte Especial deste Código."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Os requisitos e os efeitos da representação legal são os estabelecidos nas normas respectivas; os da representação voluntária são os da Parte Especial deste Código.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ea67fe4c034db0b614c9e97f8ec591d3d54a89a9570a5df17db536521e3d1304",
+     "o_que_significa": "a67d2d2fb340fe6bf5e4251e347517da832bb674099dfe1a7c4c23109b96541c",
+     "exemplo_pratico": "33cbb9f2f0b65c9a9ca26da304c99c4c86c83a981b0838e220ee4816217d9421",
+     "atencao": "3c8ee0dfce4eda4b7441f65d8d4694d67d5b74027df68dce11ca3753d53c7148",
+     "palavras_dificeis": "f46148acdc257896674d9a08cee62bb88b64b03fd2b4ca595129e82266518dff"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.120, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “A representação legal segue as normas específicas aplicáveis; a voluntária observa as regras da Parte Especial do Código.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 7,
+   "target_id": "CC2002:ART.121",
+   "explanation_id": "ENTENDA/CC2002:ART.121/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.121:CAPUT\tConsidera-se condição a cláusula que, derivando exclusivamente da vontade das partes, subordina o efeito do negócio jurídico a evento futuro e incerto.",
+   "source_snapshot_sha256": "39a5813b6d9ca51ea3eb85ed9991540f9f5e53c0cbc8a950409218e6399c5427",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.121:CAPUT",
+     "text": "Considera-se condição a cláusula que, derivando exclusivamente da vontade das partes, subordina o efeito do negócio jurídico a evento futuro e incerto."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Considera-se condição a cláusula que, derivando exclusivamente da vontade das partes, subordina o efeito do negócio jurídico a evento futuro e incerto.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f38485a4318d22a45b406a6d1cf3016dbdc94fb8a0db9120f3fae3209bf87ab5",
+     "o_que_significa": "e3123164330d1f913c820e92fb49a584b7a3ace7f0d20f63976f48c270193ed8",
+     "exemplo_pratico": "c66212b12244b1da78474b1b9466160ed576f63079af8a91ec1da16ce221136c",
+     "atencao": "8e23287b8bd6232a5cb74a0e12900c51e2ff9c1a77a3cf1a4209f55451c4e40c",
+     "palavras_dificeis": "5f266a6dcf4110a579a47060f571520f599fe10f9a17864f791e44e517c4b564"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.121, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Condição é cláusula voluntária que faz os efeitos do negócio dependerem de acontecimento futuro e incerto.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 8,
+   "target_id": "CC2002:ART.122",
+   "explanation_id": "ENTENDA/CC2002:ART.122/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.122:CAPUT\tSão lícitas, em geral, todas as condições não contrárias à lei, à ordem pública ou aos bons costumes; entre as condições defesas se incluem as que privarem de todo efeito o negócio jurídico, ou o sujeitarem ao puro arbítrio de uma das partes.",
+   "source_snapshot_sha256": "4dd54b5187fea958be2e62749b1d1184e82534b93eeddc62c569155981bfa238",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.122:CAPUT",
+     "text": "São lícitas, em geral, todas as condições não contrárias à lei, à ordem pública ou aos bons costumes; entre as condições defesas se incluem as que privarem de todo efeito o negócio jurídico, ou o sujeitarem ao puro arbítrio de uma das partes."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: São lícitas, em geral, todas as condições não contrárias à lei, à ordem pública ou aos bons costumes; entre as condições defesas se incluem as que privarem de todo efeito o negócio jurídico, ou o sujeitarem ao puro arbítrio de uma das partes.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c4c51aeede032d0c38742b567c133286c7646f06b5fa0636e7afedc8894f12a0",
+     "o_que_significa": "c3dfe70f439c2ea4fa02482e77de2322a851903db698675dd53136340d283a0d",
+     "exemplo_pratico": "0b54cdbf26b4cdfde6f7071c4acc781139e34e45ed1a47aab4969ed1436ec7dc",
+     "atencao": "ea622a2a5b93d4a91606cec24a69fde5acbd498793834c4b281a441418eb1225",
+     "palavras_dificeis": "944012d394b1a2692bece7b121efa539ce3d9fc043ab3b130bf5def446b7405b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.122, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Condições são admitidas quando respeitam lei, ordem pública e bons costumes, mas não podem eliminar todo efeito do negócio nem deixá-lo ao puro arbítrio de uma parte.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 9,
+   "target_id": "CC2002:ART.123",
+   "explanation_id": "ENTENDA/CC2002:ART.123/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.123:CAPUT\tInvalidam os negócios jurídicos que lhes são subordinados:\nCC2002:ART.123:INC.I\tas condições física ou juridicamente impossíveis, quando suspensivas;\nCC2002:ART.123:INC.II\tas condições ilícitas, ou de fazer coisa ilícita;\nCC2002:ART.123:INC.III\tas condições incompreensíveis ou contraditórias.",
+   "source_snapshot_sha256": "ef5e6068948e4f319527478a2a7584b1db109c3be19b5ab3260e73ad939b0821",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.123:CAPUT",
+     "text": "Invalidam os negócios jurídicos que lhes são subordinados:"
+    },
+    {
+     "label": "CC2002:ART.123:INC.I",
+     "text": "as condições física ou juridicamente impossíveis, quando suspensivas;"
+    },
+    {
+     "label": "CC2002:ART.123:INC.II",
+     "text": "as condições ilícitas, ou de fazer coisa ilícita;"
+    },
+    {
+     "label": "CC2002:ART.123:INC.III",
+     "text": "as condições incompreensíveis ou contraditórias."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: Invalidam os negócios jurídicos que lhes são subordinados: | as condições física ou juridicamente impossíveis, quando suspensivas; | as condições ilícitas, ou de fazer coisa ilícita; | as condições incompreensíveis ou contraditórias.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "44d901fef92300409c12d04e66d06809a130885cd203e88f21f1b6d52bb692ad",
+     "o_que_significa": "96af23514e879eed52669fbeacaa5ea837deb71c9f0ee8deba60083e8d396198",
+     "exemplo_pratico": "7c515d5f9d3932df0a8a1ab37d9c7bcd5242a3d2957679caecdf0d8cf93804f7",
+     "atencao": "e64ad8d35d931039f50d38f06343dcf40806b16be743a709b4f7dd388841055c",
+     "palavras_dificeis": "579f0e1a798473b8fd4796658f3f9a18642c7d2a9299f8ea368789e6160d6e41"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.123, foram cotejados 4 segmento(s) vigente(s) (CAPUT, INC.I, INC.II, INC.III) com os cinco campos. A baseline sintetiza a regra como: “Invalidam o negócio as condições suspensivas impossíveis, as condições ilícitas ou voltadas a ato ilícito e as incompreensíveis ou contraditórias.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 10,
+   "target_id": "CC2002:ART.124",
+   "explanation_id": "ENTENDA/CC2002:ART.124/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.124:CAPUT\tTêm-se por inexistentes as condições impossíveis, quando resolutivas, e as de não fazer coisa impossível.",
+   "source_snapshot_sha256": "27b1facbe5c269278804b35269a08787fcf5a211c1f3d4c35f7f0f3c634d5a3d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.124:CAPUT",
+     "text": "Têm-se por inexistentes as condições impossíveis, quando resolutivas, e as de não fazer coisa impossível."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Têm-se por inexistentes as condições impossíveis, quando resolutivas, e as de não fazer coisa impossível.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "42e82a0455bfd8ede5d49c6585c31f40bf00724fd9a56c495b7969eb7fe5ea5f",
+     "o_que_significa": "da28aa222cc5c577bff474f83e5753f97a9d483b9e108960151f8699b749df08",
+     "exemplo_pratico": "c7984f60ef7ad1cbe6c827ddc4385027d4c25f94df4892d5915a190b8f464868",
+     "atencao": "e1fa4bf6ba05a39aa027002267c85474a940acbfd7b8a9b1234c07ff912b85c7",
+     "palavras_dificeis": "bf20fe68d5c1d0af32d2b749a4a02abb09cc981209897e8f63219a25f6e65e06"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.124, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “A condição resolutiva impossível e a condição de não fazer algo impossível são tratadas como inexistentes.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 11,
+   "target_id": "CC2002:ART.125",
+   "explanation_id": "ENTENDA/CC2002:ART.125/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.125:CAPUT\tSubordinando-se a eficácia do negócio jurídico à condição suspensiva, enquanto esta se não verificar, não se terá adquirido o direito, a que ele visa.",
+   "source_snapshot_sha256": "af13a77aa9561de3f536edacd53740de86a78b0d2357152035c95367cf8ce6f0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.125:CAPUT",
+     "text": "Subordinando-se a eficácia do negócio jurídico à condição suspensiva, enquanto esta se não verificar, não se terá adquirido o direito, a que ele visa."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Subordinando-se a eficácia do negócio jurídico à condição suspensiva, enquanto esta se não verificar, não se terá adquirido o direito, a que ele visa.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "09a943cf633b4938597c8d9efcecf8295900622704d34d82f5b9b58161f2a66a",
+     "o_que_significa": "b77f2d449a69c6dc368c2402929a87ffde702883e1160cb098eb6a96f248d62f",
+     "exemplo_pratico": "56c5a62f2fe3c201503ba146d84f9797b6aefaec16e67a9825c992364d50dd56",
+     "atencao": "2cc617b0fb75e8d4e4a02805e3272f23b85a36181420ec5574dbdda55b0b20dd",
+     "palavras_dificeis": "db82fbf7a4a85dd81f788af4d9ed510d8a972175439f2a6ba5ff2a26b6dac4d3"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.125, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Enquanto a condição suspensiva não ocorrer, o direito pretendido pelo negócio ainda não é adquirido.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 12,
+   "target_id": "CC2002:ART.126",
+   "explanation_id": "ENTENDA/CC2002:ART.126/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.126:CAPUT\tSe alguém dispuser de uma coisa sob condição suspensiva, e, pendente esta, fizer quanto àquela novas disposições, estas não terão valor, realizada a condição, se com ela forem incompatíveis.",
+   "source_snapshot_sha256": "bb33febfad58d9c76b0971a77f65139c0d3b43953f398902dde5793c24d9a034",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.126:CAPUT",
+     "text": "Se alguém dispuser de uma coisa sob condição suspensiva, e, pendente esta, fizer quanto àquela novas disposições, estas não terão valor, realizada a condição, se com ela forem incompatíveis."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se alguém dispuser de uma coisa sob condição suspensiva, e, pendente esta, fizer quanto àquela novas disposições, estas não terão valor, realizada a condição, se com ela forem incompatíveis.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "dd06b7706dcf5174bcff6c1719ea3c91063e6f101d4a772eac1813c271606c8a",
+     "o_que_significa": "f808bcce665faaeb31d9294a07112d5748d58e02f3a2ab16f5f3855ee83c1d30",
+     "exemplo_pratico": "5a1b07b866a7dadef958bb29f82a8715826aa10ac7b64d2cf3db4cc50bed0315",
+     "atencao": "81c813676c293b23e3265a0ed29c5c58d2a49db776b223fa00296074779e66a9",
+     "palavras_dificeis": "cb79036a1e8841c2c89aa003193b60fec1f1cbdd929dddfcda50b14796aa33a7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.126, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Disposições posteriores sobre a coisa, feitas enquanto pende condição suspensiva, perdem eficácia quando incompatíveis com o direito que surge após a condição.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 13,
+   "target_id": "CC2002:ART.127",
+   "explanation_id": "ENTENDA/CC2002:ART.127/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.127:CAPUT\tSe for resolutiva a condição, enquanto esta se não realizar, vigorará o negócio jurídico, podendo exercer-se desde a conclusão deste o direito por ele estabelecido.",
+   "source_snapshot_sha256": "5d2211ef1ae9b50eb6be871c885a4b8af10daeeb1ad9e7051f9126c8ade78793",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.127:CAPUT",
+     "text": "Se for resolutiva a condição, enquanto esta se não realizar, vigorará o negócio jurídico, podendo exercer-se desde a conclusão deste o direito por ele estabelecido."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se for resolutiva a condição, enquanto esta se não realizar, vigorará o negócio jurídico, podendo exercer-se desde a conclusão deste o direito por ele estabelecido.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "99562854538272eb6295440709e56fff9705463d50aea63909e02c6873dee377",
+     "o_que_significa": "e16b968790885fcf1011c953e322e3ea13e856077fb47fa9e3551105315c9e26",
+     "exemplo_pratico": "944fcd7896dda64a7e37f3bda168755df1655ca78059c8c4d56031e568909453",
+     "atencao": "d082546b0e804aafa4c04a7809e981f6919b908a4c6fdc48429a454b4b10874a",
+     "palavras_dificeis": "70663bb62e390311ecdd89f19750fe2f74ea2529a20b5c32b56ddfcc37c4a0ed"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.127, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Na condição resolutiva, o negócio e o direito produzem efeitos desde o início, até que o evento previsto aconteça.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 14,
+   "target_id": "CC2002:ART.128",
+   "explanation_id": "ENTENDA/CC2002:ART.128/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.128:CAPUT\tSobrevindo a condição resolutiva, extingue-se, para todos os efeitos, o direito a que ela se opõe; mas, se aposta a um negócio de execução continuada ou periódica, a sua realização, salvo disposição em contrário, não tem eficácia quanto aos atos já praticados, desde que compatíveis com a natureza da condição pendente e conforme aos ditames de boa-fé.",
+   "source_snapshot_sha256": "ad43c1074d24960c2b178829085a41e0b2f0b8be277dfd837918f6e63f5ef2a1",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.128:CAPUT",
+     "text": "Sobrevindo a condição resolutiva, extingue-se, para todos os efeitos, o direito a que ela se opõe; mas, se aposta a um negócio de execução continuada ou periódica, a sua realização, salvo disposição em contrário, não tem eficácia quanto aos atos já praticados, desde que compatíveis com a natureza da condição pendente e conforme aos ditames de boa-fé."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Sobrevindo a condição resolutiva, extingue-se, para todos os efeitos, o direito a que ela se opõe; mas, se aposta a um negócio de execução continuada ou periódica, a sua realização, salvo disposição em contrário, não tem eficácia quanto aos atos já praticados, desde que compatíveis com a natureza da condição pendente e conforme aos ditames de boa-fé.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d55d25d737209a470c0bf740ad0d9c12a1150a8b516459c72ee2c3eaf85df6fe",
+     "o_que_significa": "e13f671c5475b764b806d7ee9c288c83c51abaef7f19391450f8b31cdf3ee54f",
+     "exemplo_pratico": "005e26b9fa7e9665592938ed85e6a05d1ef0972e85c6a42d9a84b42e33880962",
+     "atencao": "f10741e9355eafcf336ab89f50d9fc918edff21bb4a09fd1dfa55e9529971ad2",
+     "palavras_dificeis": "81bfeb70c75bbac52617cd1b459b5d7788ed4155b4d34f28bfebda4c5cf4dcbe"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.128, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Realizada a condição resolutiva, extingue-se o direito; em relações continuadas, atos anteriores compatíveis e praticados de boa-fé podem ser preservados.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 15,
+   "target_id": "CC2002:ART.129",
+   "explanation_id": "ENTENDA/CC2002:ART.129/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.129:CAPUT\tReputa-se verificada, quanto aos efeitos jurídicos, a condição cujo implemento for maliciosamente obstado pela parte a quem desfavorecer, considerando-se, ao contrário, não verificada a condição maliciosamente levada a efeito por aquele a quem aproveita o seu implemento.",
+   "source_snapshot_sha256": "7ccd9f1af7313e4c64ed8681a9e762d5b43e29f6b9ba29820583a4932122d1df",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.129:CAPUT",
+     "text": "Reputa-se verificada, quanto aos efeitos jurídicos, a condição cujo implemento for maliciosamente obstado pela parte a quem desfavorecer, considerando-se, ao contrário, não verificada a condição maliciosamente levada a efeito por aquele a quem aproveita o seu implemento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Reputa-se verificada, quanto aos efeitos jurídicos, a condição cujo implemento for maliciosamente obstado pela parte a quem desfavorecer, considerando-se, ao contrário, não verificada a condição maliciosamente levada a efeito por aquele a quem aproveita o seu implemento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "fdb9322bed8f3db0f61d2aae714c01b7dfce196ad419f88bef4ff93fe8f41eee",
+     "o_que_significa": "fb290ad7375b2f99619f5c00e579fff8ec5dc4c9d7c0a66959eafa203a7f9055",
+     "exemplo_pratico": "a9489f8a7b20e1c621e0bbcbea5af9fa589c27e13e65935a47c563002943c31a",
+     "atencao": "46e9a262bf39b6202c946eccb5b7d895312ae37d31bed9029a68a7267344263b",
+     "palavras_dificeis": "0904df4699018f90af04f1e89d45bdafb193232e2341ab15889ab1be518d5173"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.129, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “A lei neutraliza a interferência maliciosa de quem impede ou provoca a condição em benefício próprio.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 16,
+   "target_id": "CC2002:ART.130",
+   "explanation_id": "ENTENDA/CC2002:ART.130/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.130:CAPUT\tAo titular do direito eventual, nos casos de condição suspensiva ou resolutiva, é permitido praticar os atos destinados a conservá-lo.",
+   "source_snapshot_sha256": "03a083bf6c478c649858073f8612e924bb5727d03bc609f7e215c1648a65982a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.130:CAPUT",
+     "text": "Ao titular do direito eventual, nos casos de condição suspensiva ou resolutiva, é permitido praticar os atos destinados a conservá-lo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Ao titular do direito eventual, nos casos de condição suspensiva ou resolutiva, é permitido praticar os atos destinados a conservá-lo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0a398a2fb5725fab418bc1efea9b61d200161d9ced26299d3ba5bd683f2d3387",
+     "o_que_significa": "e5f4691fc9083bf50005409ede624888301e654b5c511e6fd63be1df164929f9",
+     "exemplo_pratico": "1fd7d52ddcdec21e7e3795d54b8ff9918d5acee326ade8735ae34a2e93457b28",
+     "atencao": "cd58eadabc49dd17be1bc12ec3487c2bd102b84a8d7b4f7c416c8a1c0c26b117",
+     "palavras_dificeis": "2323f6a2f9c2579ccacb4ef1c55045a205ae54680e6fc4c473090db74d22fc7c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.130, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “O titular de direito sujeito a condição pode praticar medidas destinadas a conservá-lo.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 17,
+   "target_id": "CC2002:ART.131",
+   "explanation_id": "ENTENDA/CC2002:ART.131/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.131:CAPUT\tO termo inicial suspende o exercício, mas não a aquisição do direito.",
+   "source_snapshot_sha256": "127b411894af911093aaecf8502dcf7eb8906986b1a883898eaff491774f908d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.131:CAPUT",
+     "text": "O termo inicial suspende o exercício, mas não a aquisição do direito."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O termo inicial suspende o exercício, mas não a aquisição do direito.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9138490c53719882fd0f06bc5ea87bbff2f48ac39573b9660292234d6ab955a9",
+     "o_que_significa": "c71802549553079af55c027899e60da66f999511115cc4c8972be589c293d35a",
+     "exemplo_pratico": "0f41db309fd019b283ef7af9e247b2546782e27f2b48a5aae31651a8aa6bef74",
+     "atencao": "666523fe8ce8ac60f0e867fec027d9aaed854046220fa46bff23271e071cac65",
+     "palavras_dificeis": "6b7a8f593b54a150f68cbc64b6524e3289ad24152a426bd8b0861666e47be023"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.131, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “O termo inicial impede o exercício imediato, mas o direito já é adquirido.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 18,
+   "target_id": "CC2002:ART.132",
+   "explanation_id": "ENTENDA/CC2002:ART.132/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.132:CAPUT\tSalvo disposição legal ou convencional em contrário, computam-se os prazos, excluído o dia do começo, e incluído o do vencimento.\nCC2002:ART.132:PAR.1\to Se o dia do vencimento cair em feriado, considerar-se-á prorrogado o prazo até o seguinte dia útil.\nCC2002:ART.132:PAR.2\to Meado considera-se, em qualquer mês, o seu décimo quinto dia.\nCC2002:ART.132:PAR.3\to Os prazos de meses e anos expiram no dia de igual número do de início, ou no imediato, se faltar exata correspondência.\nCC2002:ART.132:PAR.4\to Os prazos fixados por hora contar-se-ão de minuto a minuto.",
+   "source_snapshot_sha256": "9f2092054bed34f78f3b2ea32f33ca84e235a05716ab8d34c4583b648eaec739",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.132:CAPUT",
+     "text": "Salvo disposição legal ou convencional em contrário, computam-se os prazos, excluído o dia do começo, e incluído o do vencimento."
+    },
+    {
+     "label": "CC2002:ART.132:PAR.1",
+     "text": "o Se o dia do vencimento cair em feriado, considerar-se-á prorrogado o prazo até o seguinte dia útil."
+    },
+    {
+     "label": "CC2002:ART.132:PAR.2",
+     "text": "o Meado considera-se, em qualquer mês, o seu décimo quinto dia."
+    },
+    {
+     "label": "CC2002:ART.132:PAR.3",
+     "text": "o Os prazos de meses e anos expiram no dia de igual número do de início, ou no imediato, se faltar exata correspondência."
+    },
+    {
+     "label": "CC2002:ART.132:PAR.4",
+     "text": "o Os prazos fixados por hora contar-se-ão de minuto a minuto."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 5 segmentos vigentes do dispositivo: Salvo disposição legal ou convencional em contrário, computam-se os prazos, excluído o dia do começo, e incluído o do vencimento. | o Se o dia do vencimento cair em feriado, considerar-se-á prorrogado o prazo até o seguinte dia útil. | o Meado considera-se, em qualquer mês, o seu décimo quinto dia. | o Os prazos de meses e anos expiram no dia de igual número do de início, ou no imediato, se faltar exata correspondência. | o Os prazos fixados por hora contar-se-ão de minuto a minuto.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "aeba8bab9bf34fdafa1114620548e548800575466fa65d65dc17859fcb8e9e33",
+     "o_que_significa": "37ffad6103f05bd4fbc7d0b482e7d5e5809431c0341c32e3c46400f24f6e0d95",
+     "exemplo_pratico": "ffff370250282e8978da62c5af1c3c1e68fe499fe618a17b5c2d4cd37b89428e",
+     "atencao": "d201e8305aec1c5d2e3375b216f3a362aac48575769ca1216c6a9dc9c158a452",
+     "palavras_dificeis": "e9ba5f799234f7fbafb508d4069d53e891f8c04bb6f212b0fef22629d63896b0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.132, foram cotejados 5 segmento(s) vigente(s) (CAPUT, PAR.1, PAR.2, PAR.3, PAR.4) com os cinco campos. A baseline sintetiza a regra como: “A contagem civil exclui o dia inicial e inclui o vencimento, com regras para feriado, metade do mês, meses, anos e horas.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 19,
+   "target_id": "CC2002:ART.133",
+   "explanation_id": "ENTENDA/CC2002:ART.133/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.133:CAPUT\tNos testamentos, presume-se o prazo em favor do herdeiro, e, nos contratos, em proveito do devedor, salvo, quanto a esses, se do teor do instrumento, ou das circunstâncias, resultar que se estabeleceu a benefício do credor, ou de ambos os contratantes.",
+   "source_snapshot_sha256": "1f7d256240dccc7b9cd70bf7c14dc382fbcf582fda03e1de1ed2fca97d587424",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.133:CAPUT",
+     "text": "Nos testamentos, presume-se o prazo em favor do herdeiro, e, nos contratos, em proveito do devedor, salvo, quanto a esses, se do teor do instrumento, ou das circunstâncias, resultar que se estabeleceu a benefício do credor, ou de ambos os contratantes."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Nos testamentos, presume-se o prazo em favor do herdeiro, e, nos contratos, em proveito do devedor, salvo, quanto a esses, se do teor do instrumento, ou das circunstâncias, resultar que se estabeleceu a benefício do credor, ou de ambos os contratantes.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a1a01a0239b661d8c6eb3a9e968b9e9e61e4db179f7ac2c87f8cc7e5ad111bd1",
+     "o_que_significa": "4d71c5361707e63e9d583291dcff370b877048a519ac3ac25318e5f4a0e65351",
+     "exemplo_pratico": "d1575154fde2d575310ceeaab1f0d45e46b94b16dfc208331c881a1fe6709171",
+     "atencao": "a0e70b115366f413656f23cc1b3bf9e9703d1694c893935507aa1d0f4efecf07",
+     "palavras_dificeis": "8f64601389f4d51818d5c339e4291d9329c7ac750be30fb15c0bb289c9652c0c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.133, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Presume-se que o prazo beneficia o herdeiro no testamento e o devedor no contrato, salvo indicação de benefício do credor ou de ambos.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 20,
+   "target_id": "CC2002:ART.134",
+   "explanation_id": "ENTENDA/CC2002:ART.134/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.134:CAPUT\tOs negócios jurídicos entre vivos, sem prazo, são exeqüíveis desde logo, salvo se a execução tiver de ser feita em lugar diverso ou depender de tempo.",
+   "source_snapshot_sha256": "e0184aa2c9f3cd2b80c04b5dfe463522ea1f116e9c133b71e91ea8ef90ede0e7",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.134:CAPUT",
+     "text": "Os negócios jurídicos entre vivos, sem prazo, são exeqüíveis desde logo, salvo se a execução tiver de ser feita em lugar diverso ou depender de tempo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Os negócios jurídicos entre vivos, sem prazo, são exeqüíveis desde logo, salvo se a execução tiver de ser feita em lugar diverso ou depender de tempo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "3fd89e2febff6581df8c9e7c550fbcf709e996b29429b8ad202f2ea705c9f72a",
+     "o_que_significa": "cac3a1df23ac6467c73b5e8d6564223f17f1bdaf5ec4a8ba037e78773c13719f",
+     "exemplo_pratico": "06c9cc4166ed720604abd384a2cfd104d651145963b683f6b3953b764be3f6cc",
+     "atencao": "b17a8da218dd17b39e561ae49b4bf32257af3f0b1cb9907184832e351778326a",
+     "palavras_dificeis": "2b89986685f3a06661707c1e30bb951dde15a1c0ffd153d798157eef3a90954b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.134, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Negócios entre vivos sem prazo podem ser exigidos imediatamente, salvo necessidade de execução em outro lugar ou de tempo para cumprir.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 21,
+   "target_id": "CC2002:ART.135",
+   "explanation_id": "ENTENDA/CC2002:ART.135/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.135:CAPUT\tAo termo inicial e final aplicam-se, no que couber, as disposições relativas à condição suspensiva e resolutiva.",
+   "source_snapshot_sha256": "b228c7ef9ef1d95eaf548a45d9fa7f9c1e681ecd388ebf86b4d3bd8c1525b425",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.135:CAPUT",
+     "text": "Ao termo inicial e final aplicam-se, no que couber, as disposições relativas à condição suspensiva e resolutiva."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Ao termo inicial e final aplicam-se, no que couber, as disposições relativas à condição suspensiva e resolutiva.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b78471576f7157647426469c8463712f98be63a086dd7f579501ab98689d5caa",
+     "o_que_significa": "1a6d3a7b41e8afa84652a72925631fc24198755bb6cd180fbc00468a232ccf2f",
+     "exemplo_pratico": "c7b361c38a100803cadb861268495222003c0778ee6059ac209fdf838d246fca",
+     "atencao": "c39852b9e25bb3d1e0fdea57d9cff0933598ee0ef015074b6e259e96b9f684b3",
+     "palavras_dificeis": "29926a5edd380c7643a73c113569b365d24ab7f2064e377bb6ce54fbb2ce69c4"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.135, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “As regras de condição suspensiva e resolutiva aplicam-se, quando compatíveis, aos termos inicial e final.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 22,
+   "target_id": "CC2002:ART.136",
+   "explanation_id": "ENTENDA/CC2002:ART.136/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.136:CAPUT\tO encargo não suspende a aquisição nem o exercício do direito, salvo quando expressamente imposto no negócio jurídico, pelo disponente, como condição suspensiva.",
+   "source_snapshot_sha256": "c95a0023f4ec37478da92aabcf21637cc223e91bd2eed3226dca6d0a8a3dad8d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.136:CAPUT",
+     "text": "O encargo não suspende a aquisição nem o exercício do direito, salvo quando expressamente imposto no negócio jurídico, pelo disponente, como condição suspensiva."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O encargo não suspende a aquisição nem o exercício do direito, salvo quando expressamente imposto no negócio jurídico, pelo disponente, como condição suspensiva.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "219cd42f53fd2059e80c015392ed059802c39f6878b2e82ecba4d16dc2fdb6fa",
+     "o_que_significa": "f08bbbf46dcfa9db99fddb01241ddf44083516a0ea8edc704456a9b803c58fb7",
+     "exemplo_pratico": "8597916129b94599e2099c2d7f440b68addf50606b9cbdf5bc340873ecac9760",
+     "atencao": "996ddf4f25ed9226be5abb52436f4c14ac83125a8d7ef2a70c83503eb7a444c2",
+     "palavras_dificeis": "5f115820c91c60a009e141e1528875d62c3072ca117e8c141abf5640e820f748"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.136, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “O encargo normalmente não impede adquirir nem exercer o direito, salvo se o disponente o tiver imposto expressamente como condição suspensiva.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 23,
+   "target_id": "CC2002:ART.137",
+   "explanation_id": "ENTENDA/CC2002:ART.137/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.137:CAPUT\tConsidera-se não escrito o encargo ilícito ou impossível, salvo se constituir o motivo determinante da liberalidade, caso em que se invalida o negócio jurídico.",
+   "source_snapshot_sha256": "8ee2b28a518168d9b0cc33ca2bbc7615ff9ea789661d2802a40433f0c1951d56",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.137:CAPUT",
+     "text": "Considera-se não escrito o encargo ilícito ou impossível, salvo se constituir o motivo determinante da liberalidade, caso em que se invalida o negócio jurídico."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Considera-se não escrito o encargo ilícito ou impossível, salvo se constituir o motivo determinante da liberalidade, caso em que se invalida o negócio jurídico.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e5a8a0f6991731fbbc5882387a66cbdef9b849c84ac279b18e15fe9211166dfa",
+     "o_que_significa": "fa4b84635f3750acbca9b6506d5212953239e6e50200ea2b675e6d6692a0e8a0",
+     "exemplo_pratico": "14b4fc373679a21c1fcb22f28b9a40bb19f24dd78f790cd71ea78e9e77f283a0",
+     "atencao": "7161377e18ec259b7404c54bdafde82634e371b1c668de329dd9d9a69ecaff0b",
+     "palavras_dificeis": "8133184794909ad2c0c68e1ebc17d7d31209dfec4faf7804b891ab90709daa4a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.137, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Encargo ilícito ou impossível é desconsiderado, mas invalida a liberalidade quando foi seu motivo determinante.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 24,
+   "target_id": "CC2002:ART.139",
+   "explanation_id": "ENTENDA/CC2002:ART.139/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.139:CAPUT\tO erro é substancial quando:\nCC2002:ART.139:INC.I\tinteressa à natureza do negócio, ao objeto principal da declaração, ou a alguma das qualidades a ele essenciais;\nCC2002:ART.139:INC.II\tconcerne à identidade ou à qualidade essencial da pessoa a quem se refira a declaração de vontade, desde que tenha influído nesta de modo relevante;\nCC2002:ART.139:INC.III\tsendo de direito e não implicando recusa à aplicação da lei, for o motivo único ou principal do negócio jurídico.",
+   "source_snapshot_sha256": "0dd3f50aaead1289e4ac613b0b91070d216215511c3e62d6aec6bc2a5c7df7f3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.139:CAPUT",
+     "text": "O erro é substancial quando:"
+    },
+    {
+     "label": "CC2002:ART.139:INC.I",
+     "text": "interessa à natureza do negócio, ao objeto principal da declaração, ou a alguma das qualidades a ele essenciais;"
+    },
+    {
+     "label": "CC2002:ART.139:INC.II",
+     "text": "concerne à identidade ou à qualidade essencial da pessoa a quem se refira a declaração de vontade, desde que tenha influído nesta de modo relevante;"
+    },
+    {
+     "label": "CC2002:ART.139:INC.III",
+     "text": "sendo de direito e não implicando recusa à aplicação da lei, for o motivo único ou principal do negócio jurídico."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: O erro é substancial quando: | interessa à natureza do negócio, ao objeto principal da declaração, ou a alguma das qualidades a ele essenciais; | concerne à identidade ou à qualidade essencial da pessoa a quem se refira a declaração de vontade, desde que tenha influído nesta de modo relevante; | sendo de direito e não implicando recusa à aplicação da lei, for o motivo único ou principal do negócio jurídico.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4fd4a0fe0c019ea160013050bdec98846d959299b9091c327a531ad68d165fbc",
+     "o_que_significa": "6ded4e79869d09862f6aa4ba7251431b901c869c5cbcddd37807a0edc0ecced7",
+     "exemplo_pratico": "288410b2514cc80aeaada9f9b520443bdc64978a7759648f232305ac060378c5",
+     "atencao": "7098f12d80a67462745cd7f91bd3f16944c1ea707eec37172a3c6648cd73bcb8",
+     "palavras_dificeis": "e8bbf21309b0f344bd52395c52d1e444956c43bcf53ab021fbddb92db5a6c411"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.139, foram cotejados 4 segmento(s) vigente(s) (CAPUT, INC.I, INC.II, INC.III) com os cinco campos. A baseline sintetiza a regra como: “O erro é substancial quando recai sobre natureza ou objeto essencial do negócio, pessoa decisiva ou motivo jurídico principal que não represente recusa à lei.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 25,
+   "target_id": "CC2002:ART.140",
+   "explanation_id": "ENTENDA/CC2002:ART.140/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.140:CAPUT\tO falso motivo só vicia a declaração de vontade quando expresso como razão determinante.",
+   "source_snapshot_sha256": "fa9bb3a73ea9ced00dad809ed2e87822f5277146328548ea751bbaab642209b5",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.140:CAPUT",
+     "text": "O falso motivo só vicia a declaração de vontade quando expresso como razão determinante."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O falso motivo só vicia a declaração de vontade quando expresso como razão determinante.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "eb84ba247f343bf343f9a99cdf10cac333362f1da90f87c65722a4691b0d2526",
+     "o_que_significa": "11a36fd7efb698999180db3da2439ce3d50a653e61ed76685d4acc019e0e6187",
+     "exemplo_pratico": "98c1b8ddaf0a580aec5659aa99a64ca2d0abc95509f82ee93fe52d18a5b23519",
+     "atencao": "d14dc4972aa6a7a0352e008ee6dd4b802c61b31627055ba4ba2f5e29986ee4aa",
+     "palavras_dificeis": "7512e25b3964d8f5002ea839f0bd9310b081eb7c39a35cd82c8a14fe57983eaa"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.140, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Motivo falso só afeta a declaração quando foi expressamente apresentado como razão determinante.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  }
+ ]
+}
