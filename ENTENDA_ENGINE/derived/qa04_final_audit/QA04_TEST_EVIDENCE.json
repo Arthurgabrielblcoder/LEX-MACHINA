@@ -1,0 +1,32 @@
+{
+ "schema_version": 1,
+ "mission": "QA-04",
+ "as_of": "2026-11-13",
+ "status": "PASS",
+ "directed_regression": {
+  "scope": "CC-02 through CC-13 plus QA-02 through QA-04",
+  "executed": 159,
+  "passed": 159,
+  "failed": 0,
+  "errors": 0
+ },
+ "global_suite": {
+  "executed": 454,
+  "passed": 452,
+  "skipped": 2,
+  "failed": 0,
+  "errors": 0,
+  "elapsed_seconds": 133.656
+ },
+ "determinism": {
+  "status": "PASS",
+  "comparison": "byte-identical queue, candidate, indexes, checkpoints and consolidation",
+  "rebuilders": [
+   "qa04_prepare.py",
+   "qa04_editorial_prepare.py",
+   "qa04_correction_build.py",
+   "qa04_audit_build.py --through-checkpoint 20"
+  ]
+ },
+ "temporary_directory": ".tmp_qa04 within worktree"
+}
