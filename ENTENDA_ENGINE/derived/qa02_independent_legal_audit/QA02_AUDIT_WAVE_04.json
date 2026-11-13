@@ -2,19 +2,19 @@
  "schema_version": 1,
  "mission": "QA-02-WAVE-04",
  "as_of": "2026-11-12",
- "completed_through_checkpoint": 31,
+ "completed_through_checkpoint": 32,
  "status": "PARTIAL_REQUIRES_CONTINUATION",
- "audited_total": 350,
+ "audited_total": 375,
  "source_queue_positions_completed": [
   201,
-  550
+  575
  ],
- "next_source_queue_position": 551,
- "findings_total": 43,
+ "next_source_queue_position": 576,
+ "findings_total": 46,
  "finding_counts": {
   "ALTO": 30,
-  "CRÍTICO": 2,
-  "MÉDIO": 11
+  "CRÍTICO": 3,
+  "MÉDIO": 13
  },
  "protected_sha256": {
   "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
@@ -20288,6 +20288,1317 @@
    },
    "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
    "comparison": "A síntese específica do dispositivo — Doação expressamente saída da parte disponível é dispensada da colação até o limite; há presunção para descendente que então não seria herdeiro necessário. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 551,
+   "target_id": "CC2002:ART.2007",
+   "explanation_id": "ENTENDA/CC2002:ART.2007/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2007:CAPUT\tSão sujeitas à redução as doações em que se apurar excesso quanto ao que o doador poderia dispor, no momento da liberalidade.\nCC2002:ART.2007:PAR.1\to O excesso será apurado com base no valor que os bens doados tinham, no momento da liberalidade.\nCC2002:ART.2007:PAR.2\to A redução da liberalidade far-se-á pela restituição ao monte do excesso assim apurado; a restituição será em espécie, ou, se não mais existir o bem em poder do donatário, em dinheiro, segundo o seu valor ao tempo da abertura da sucessão, observadas, no que forem aplicáveis, as regras deste Código sobre a redução das disposições testamentárias.\nCC2002:ART.2007:PAR.3\to Sujeita-se a redução, nos termos do parágrafo antecedente, a parte da doação feita a herdeiros necessários que exceder a legítima e mais a quota disponível.\nCC2002:ART.2007:PAR.4\to Sendo várias as doações a herdeiros necessários, feitas em diferentes datas, serão elas reduzidas a partir da última, até a eliminação do excesso.",
+   "source_snapshot_sha256": "d694ecb5768b0958101740ef311edae9b81759ed62237fb82a5527c9306207b4",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2007:CAPUT",
+     "text": "São sujeitas à redução as doações em que se apurar excesso quanto ao que o doador poderia dispor, no momento da liberalidade."
+    },
+    {
+     "label": "CC2002:ART.2007:PAR.1",
+     "text": "o O excesso será apurado com base no valor que os bens doados tinham, no momento da liberalidade."
+    },
+    {
+     "label": "CC2002:ART.2007:PAR.2",
+     "text": "o A redução da liberalidade far-se-á pela restituição ao monte do excesso assim apurado; a restituição será em espécie, ou, se não mais existir o bem em poder do donatário, em dinheiro, segundo o seu valor ao tempo da abertura da sucessão, observadas, no que forem aplicáveis, as regras deste Código sobre a redução das disposições testamentárias."
+    },
+    {
+     "label": "CC2002:ART.2007:PAR.3",
+     "text": "o Sujeita-se a redução, nos termos do parágrafo antecedente, a parte da doação feita a herdeiros necessários que exceder a legítima e mais a quota disponível."
+    },
+    {
+     "label": "CC2002:ART.2007:PAR.4",
+     "text": "o Sendo várias as doações a herdeiros necessários, feitas em diferentes datas, serão elas reduzidas a partir da última, até a eliminação do excesso."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 5 segmentos vigentes do dispositivo: São sujeitas à redução as doações em que se apurar excesso quanto ao que o doador poderia dispor, no momento da liberalidade. | o O excesso será apurado com base no valor que os bens doados tinham, no momento da liberalidade. | o A redução da liberalidade far-se-á pela restituição ao monte do excesso assim apurado; a restituição será em espécie, ou, se não mais existir o bem em poder do donatário, em dinheiro, segundo o seu valor ao tempo da abertura da sucessão, observadas, no que forem aplicáveis, as regras deste Código sobre a redução das disposições testamentárias. | o Sujeita-se a redução, nos termos do parágrafo antecedente, a parte da doação feita a herdeiros necessários que exceder a legítima e mais a quota disponível. | o Sendo várias as doações a herdeiros necessários, feitas em diferentes datas, serão elas reduzidas a partir da última, até a eliminação do excesso.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "38545ea9715650949aef57716474b05b36408737d6113f771eb51eb526e84474",
+     "o_que_significa": "af1fe1e008aec6e783c2f51a2d1b8534f0ab26a21617897dc2997b35c37c6040",
+     "exemplo_pratico": "ee5d9bac1738f069095034541de193f13494bd954ad4b7b15989d3ae7154fefd",
+     "atencao": "d698cb98ffdbce91dfb42c6df4de33d2b21ecbdfe25f8fad7f12feefb6c2c1bf",
+     "palavras_dificeis": "4e8f9a7bb7f1d5d7bcf2ffc17361e99c315d574f4a1fcf667f4becbd3646f07e"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O § 2º do art. 2.007 distingue os marcos de avaliação: o excesso é apurado pelo valor no momento da liberalidade, mas, inexistindo o bem em poder do donatário, a restituição em dinheiro considera o valor na abertura da sucessão.",
+   "finding": {
+    "target_id": "CC2002:ART.2007",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "restitui-se em espécie ou dinheiro segundo regras legais",
+    "legal_basis": "O § 2º do art. 2.007 distingue os marcos de avaliação: o excesso é apurado pelo valor no momento da liberalidade, mas, inexistindo o bem em poder do donatário, a restituição em dinheiro considera o valor na abertura da sucessão.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_CRITERIO_DE_AVALIACAO",
+    "severity": "MÉDIO",
+    "legal_or_pedagogical_consequence": "A síntese não permite distinguir o valor usado para apurar o excesso daquele usado para a restituição pecuniária.",
+    "correction_direction": "Diferenciar expressamente o valor na liberalidade e o valor na abertura da sucessão.",
+    "confidence": "ALTA",
+    "human_review_required": false,
+    "checkpoint": 32,
+    "auditor": "/root/wave04_451_577"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 552,
+   "target_id": "CC2002:ART.2008",
+   "explanation_id": "ENTENDA/CC2002:ART.2008/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2008:CAPUT\tAquele que renunciou a herança ou dela foi excluído, deve, não obstante, conferir as doações recebidas, para o fim de repor o que exceder o disponível.",
+   "source_snapshot_sha256": "e1d2aaf9995696ad33df0567b9d431cdc685c677e5721325c7e9752321658fc3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2008:CAPUT",
+     "text": "Aquele que renunciou a herança ou dela foi excluído, deve, não obstante, conferir as doações recebidas, para o fim de repor o que exceder o disponível."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Aquele que renunciou a herança ou dela foi excluído, deve, não obstante, conferir as doações recebidas, para o fim de repor o que exceder o disponível.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "421a71230877e0e11abf7e2ec85b7658314b1c9389f6abdb59e9d54a4be7d41e",
+     "o_que_significa": "af0257c7bdcacc2c5f235eecaaab36eaf1c422d5c07904ef4cff0090b44b1750",
+     "exemplo_pratico": "dd9b0f972d79f14843b43be7c1ffe5446a034bce652e0f3f29971b8ab728faed",
+     "atencao": "9b3ed4a5b988d073384af96d39c3ab40ede15e738cd746c8118386e699e2d5a8",
+     "palavras_dificeis": "be68e55c07f3f757969774e5acb4ca94fd031a8238f6d93229ec895ef43a7a73"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Quem renunciou ou foi excluído da herança ainda deve conferir doações para devolver eventual excesso da parte disponível. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 553,
+   "target_id": "CC2002:ART.2009",
+   "explanation_id": "ENTENDA/CC2002:ART.2009/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2009:CAPUT\tQuando os netos, representando os seus pais, sucederem aos avós, serão obrigados a trazer à colação, ainda que não o hajam herdado, o que os pais teriam de conferir.",
+   "source_snapshot_sha256": "b6f54e429d98eba59b6d1a82149ad8addfe3d0e124022a99eede1d05d8517e38",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2009:CAPUT",
+     "text": "Quando os netos, representando os seus pais, sucederem aos avós, serão obrigados a trazer à colação, ainda que não o hajam herdado, o que os pais teriam de conferir."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Quando os netos, representando os seus pais, sucederem aos avós, serão obrigados a trazer à colação, ainda que não o hajam herdado, o que os pais teriam de conferir.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "879770ee4387166156b3e3fc656ce29a2df378c8f39df8c9efcda10af64635fa",
+     "o_que_significa": "fb0a1416f4e537b5eb84ba7e3b6e754d0b25bb32ffc423e976c3fbdf756a47ef",
+     "exemplo_pratico": "fc35bc39dc95079b606d71a779d7f148531a60c92a1f8d3d840c1196ead3b6ae",
+     "atencao": "b9baee78dedb00cc4f16c0a8da95b06c825953c29f4ed75bb3208c45ff31cca6",
+     "palavras_dificeis": "342897da485f1874425a9376546fb76ed449cc2bdee95532b9dfdd4d2b7b55fb"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Netos que sucedem por representação devem colacionar o que seus pais teriam de conferir, mesmo sem ter recebido esses bens. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 554,
+   "target_id": "CC2002:ART.2014",
+   "explanation_id": "ENTENDA/CC2002:ART.2014/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2014:CAPUT\tPode o testador indicar os bens e valores que devem compor os quinhões hereditários, deliberando ele próprio a partilha, que prevalecerá, salvo se o valor dos bens não corresponder às quotas estabelecidas.",
+   "source_snapshot_sha256": "660ff084c7bad31cdd8f1561149ce4af0d7699876007c5d4bd4a7aa6c931704d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2014:CAPUT",
+     "text": "Pode o testador indicar os bens e valores que devem compor os quinhões hereditários, deliberando ele próprio a partilha, que prevalecerá, salvo se o valor dos bens não corresponder às quotas estabelecidas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Pode o testador indicar os bens e valores que devem compor os quinhões hereditários, deliberando ele próprio a partilha, que prevalecerá, salvo se o valor dos bens não corresponder às quotas estabelecidas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "238f7fad73f424d6b34c5934e364e5671af5fda5878d59c9a1b84958b98d824f",
+     "o_que_significa": "cb3e53d74cf111b0fdaf9b2ed0e7345c0649e7df90defd8a783807c25b1e9ba9",
+     "exemplo_pratico": "6f8bd665c7969cca02a1e9f2c03f90a8cd1cb7d5e22ee0a4fe4be00936c3219b",
+     "atencao": "8a0e5fa5d2380e6b11c7a03cf9613c340935c833c7ba4f851fa67afc0074df7c",
+     "palavras_dificeis": "afec17a34f61538e86b650022bab2327ccbea34d851ec60839dab4b38845eb1c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — O testador pode distribuir bens entre quinhões, desde que os valores correspondam às quotas devidas. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 555,
+   "target_id": "CC2002:ART.2016",
+   "explanation_id": "ENTENDA/CC2002:ART.2016/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    },
+    {
+     "url": "https://atos.cnj.jus.br/atos/detalhar/5705",
+     "role": "BINDING_OR_COMPLEMENTARY_PRIMARY_SOURCE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2016:CAPUT\tSerá sempre judicial a partilha, se os herdeiros divergirem, assim como se algum deles for incapaz.",
+   "source_snapshot_sha256": "1d31aa44e5f5126937106d749f9e9f2a0ee9b238fa40a794896d0b90268ba7f6",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2016:CAPUT",
+     "text": "Será sempre judicial a partilha, se os herdeiros divergirem, assim como se algum deles for incapaz."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Será sempre judicial a partilha, se os herdeiros divergirem, assim como se algum deles for incapaz.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ecaa977b3a7852df8cca65d9d7376818f83bdd5fcce1e9a0881e709713672ce1",
+     "o_que_significa": "2d7b632081452e5600eb2ccfed943d59982a13a5dcf0d00afb8835743907b075",
+     "exemplo_pratico": "ca0647fef8588ff972677f5e2b2dfe50c2f1eac2954a6b5700746319e91cf1f0",
+     "atencao": "78ea1acdd9d9d152ed5485883c51502687efce702870d6fae6624ef71b15496d",
+     "palavras_dificeis": "4a8f93c49f34392c5e17829b270986c3f6cb88ed4f3d80a0a42ce954c0ff90d4"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "Embora o art. 2.016 conserve a redação literal, a Resolução CNJ nº 571/2024 incluiu o art. 12-A na Resolução nº 35/2007 e passou a admitir inventário e partilha por escritura pública com interessado menor ou incapaz, desde que o quinhão ou meação seja pago em parte ideal em cada bem, não haja disposição dos bens do incapaz e exista manifestação favorável do Ministério Público, entre outras salvaguardas.",
+   "finding": {
+    "target_id": "CC2002:ART.2016",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "Divergência entre herdeiros ou incapacidade de algum deles torna a partilha judicial.",
+    "legal_basis": "Embora o art. 2.016 conserve a redação literal, a Resolução CNJ nº 571/2024 incluiu o art. 12-A na Resolução nº 35/2007 e passou a admitir inventário e partilha por escritura pública com interessado menor ou incapaz, desde que o quinhão ou meação seja pago em parte ideal em cada bem, não haja disposição dos bens do incapaz e exista manifestação favorável do Ministério Público, entre outras salvaguardas.",
+    "source_url": "https://atos.cnj.jus.br/atos/detalhar/5705",
+    "nature": "REGRA_ATUAL_INCORRETA_POR_SUPERVENIENCIA_NORMATIVA",
+    "severity": "CRÍTICO",
+    "legal_or_pedagogical_consequence": "A afirmação absoluta de obrigatoriedade judicial induz o usuário a descartar uma via extrajudicial atualmente autorizada e regulamentada pelo CNJ.",
+    "correction_direction": "Manter a literalidade histórica do Código, mas informar destacadamente a exceção extrajudicial vigente e todos os requisitos do art. 12-A da Resolução CNJ nº 35/2007.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": 32,
+    "auditor": "/root/wave04_451_577"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 556,
+   "target_id": "CC2002:ART.2018",
+   "explanation_id": "ENTENDA/CC2002:ART.2018/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2018:CAPUT\tÉ válida a partilha feita por ascendente, por ato entre vivos ou de última vontade, contanto que não prejudique a legítima dos herdeiros necessários.",
+   "source_snapshot_sha256": "e8fbb89ca4821b1b9b8df1dae22ccfbac714933140b1b46420f23231ea90d7e2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2018:CAPUT",
+     "text": "É válida a partilha feita por ascendente, por ato entre vivos ou de última vontade, contanto que não prejudique a legítima dos herdeiros necessários."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: É válida a partilha feita por ascendente, por ato entre vivos ou de última vontade, contanto que não prejudique a legítima dos herdeiros necessários.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "dda60651864b874f6a2abcca88796dc722a165e74fa1659917a21b2965cc0582",
+     "o_que_significa": "44c5cdc1e71e604c40763aa8542611f7c6fd40421a97c5e9f158a10a3cb5f43f",
+     "exemplo_pratico": "eea4cbf04e28ac16101b2cb613e89a2e93c0e8a30ddb3ab299ff66de14571c99",
+     "atencao": "358f2549ebe24148cb90353bda51801ac88664b703cda5958342acc358464bc7",
+     "palavras_dificeis": "8f70c68a91e559d4b1765d44d64be3e65419fe2be914cbeb147d56a3fba3f5c8"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Ascendente pode partilhar em vida ou por última vontade, desde que preserve a legítima. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 557,
+   "target_id": "CC2002:ART.2019",
+   "explanation_id": "ENTENDA/CC2002:ART.2019/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2019:CAPUT\tOs bens insuscetíveis de divisão cômoda, que não couberem na meação do cônjuge sobrevivente ou no quinhão de um só herdeiro, serão vendidos judicialmente, partilhando-se o valor apurado, a não ser que haja acordo para serem adjudicados a todos.\nCC2002:ART.2019:PAR.1\to Não se fará a venda judicial se o cônjuge sobrevivente ou um ou mais herdeiros requererem lhes seja adjudicado o bem, repondo aos outros, em dinheiro, a diferença, após avaliação atualizada.\nCC2002:ART.2019:PAR.2\to Se a adjudicação for requerida por mais de um herdeiro, observar-se-á o processo da licitação.",
+   "source_snapshot_sha256": "47e15a08e836e4fa9e60634078d800bed112eaa7ccae0456c82f094d79028171",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2019:CAPUT",
+     "text": "Os bens insuscetíveis de divisão cômoda, que não couberem na meação do cônjuge sobrevivente ou no quinhão de um só herdeiro, serão vendidos judicialmente, partilhando-se o valor apurado, a não ser que haja acordo para serem adjudicados a todos."
+    },
+    {
+     "label": "CC2002:ART.2019:PAR.1",
+     "text": "o Não se fará a venda judicial se o cônjuge sobrevivente ou um ou mais herdeiros requererem lhes seja adjudicado o bem, repondo aos outros, em dinheiro, a diferença, após avaliação atualizada."
+    },
+    {
+     "label": "CC2002:ART.2019:PAR.2",
+     "text": "o Se a adjudicação for requerida por mais de um herdeiro, observar-se-á o processo da licitação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Os bens insuscetíveis de divisão cômoda, que não couberem na meação do cônjuge sobrevivente ou no quinhão de um só herdeiro, serão vendidos judicialmente, partilhando-se o valor apurado, a não ser que haja acordo para serem adjudicados a todos. | o Não se fará a venda judicial se o cônjuge sobrevivente ou um ou mais herdeiros requererem lhes seja adjudicado o bem, repondo aos outros, em dinheiro, a diferença, após avaliação atualizada. | o Se a adjudicação for requerida por mais de um herdeiro, observar-se-á o processo da licitação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "abff9b62a28fab8b4e7426187d70386f396becc2f48f57c9267b77ee87c27ee8",
+     "o_que_significa": "dd585729b64851ceb5f2df2a7cdee968c3063c4f15e336a5542ef19e0690396c",
+     "exemplo_pratico": "2922f124be5be6953cbb97de06eba901ac8277fceb49ed36f1dae1024b1fd844",
+     "atencao": "23cb9b8e74e2761f3085921ce0294b2bcf8eabe799700207069e48e4dfd96df7",
+     "palavras_dificeis": "496ce6c663ece2e5878cabd858ec122ae997c4c4ca5e36e6ea384fc96a012d18"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Bem indivisível que não caiba em um quinhão é vendido e o preço dividido, salvo adjudicação consensual ou requerida com reposição e licitação. — foi confrontada com os 3 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 558,
+   "target_id": "CC2002:ART.2020",
+   "explanation_id": "ENTENDA/CC2002:ART.2020/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2020:CAPUT\tOs herdeiros em posse dos bens da herança, o cônjuge sobrevivente e o inventariante são obrigados a trazer ao acervo os frutos que perceberam, desde a abertura da sucessão; têm direito ao reembolso das despesas necessárias e úteis que fizeram, e respondem pelo dano a que, por dolo ou culpa, deram causa.",
+   "source_snapshot_sha256": "837d8f7336e793a1392554b976ac4ec09bbdcf913165610c38d79146321a6fec",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2020:CAPUT",
+     "text": "Os herdeiros em posse dos bens da herança, o cônjuge sobrevivente e o inventariante são obrigados a trazer ao acervo os frutos que perceberam, desde a abertura da sucessão; têm direito ao reembolso das despesas necessárias e úteis que fizeram, e respondem pelo dano a que, por dolo ou culpa, deram causa."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Os herdeiros em posse dos bens da herança, o cônjuge sobrevivente e o inventariante são obrigados a trazer ao acervo os frutos que perceberam, desde a abertura da sucessão; têm direito ao reembolso das despesas necessárias e úteis que fizeram, e respondem pelo dano a que, por dolo ou culpa, deram causa.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a77e60e1e1a2b2520ea5daeea6e34a8d5344059734e9aec8b2d98765e377b951",
+     "o_que_significa": "12f60efedcd63916b61070892d3c4aa9e8cef74847210686d689d36fdba2c396",
+     "exemplo_pratico": "86d1d01c5c4dd9c5646623e567736463248c786375c7bbe1916f6a35f1c57983",
+     "atencao": "5e840b1826197e4f80a2ea055499b0c884a20bdd5fe042e20b846e895b43b2a9",
+     "palavras_dificeis": "892a6517dac1ef4dcda1050ea338db7467d3ccc338c8630abda6f273724ba7c9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Quem possui bens hereditários deve entregar frutos desde a abertura, recebe despesas necessárias e úteis e responde por dano culposo ou doloso. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 559,
+   "target_id": "CC2002:ART.2021",
+   "explanation_id": "ENTENDA/CC2002:ART.2021/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2021:CAPUT\tQuando parte da herança consistir em bens remotos do lugar do inventário, litigiosos, ou de liquidação morosa ou difícil, poderá proceder-se, no prazo legal, à partilha dos outros, reservando-se aqueles para uma ou mais sobrepartilhas, sob a guarda e a administração do mesmo ou diverso inventariante, e consentimento da maioria dos herdeiros.",
+   "source_snapshot_sha256": "daf97af70d9f5d4277c2970f7643fd87462f1aec908deed4e8fc248d123544bf",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2021:CAPUT",
+     "text": "Quando parte da herança consistir em bens remotos do lugar do inventário, litigiosos, ou de liquidação morosa ou difícil, poderá proceder-se, no prazo legal, à partilha dos outros, reservando-se aqueles para uma ou mais sobrepartilhas, sob a guarda e a administração do mesmo ou diverso inventariante, e consentimento da maioria dos herdeiros."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Quando parte da herança consistir em bens remotos do lugar do inventário, litigiosos, ou de liquidação morosa ou difícil, poderá proceder-se, no prazo legal, à partilha dos outros, reservando-se aqueles para uma ou mais sobrepartilhas, sob a guarda e a administração do mesmo ou diverso inventariante, e consentimento da maioria dos herdeiros.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1914bf41d2d5ab2bc285f5ef07272573ee3529d5be036f9de0b938ab514f445c",
+     "o_que_significa": "4bd86a6ac637bcf2df409d584eccf2811cbf658ab78cc2b9d5f823dbff8cb94a",
+     "exemplo_pratico": "a8ba6ea18bf69f590630d7c0051b00f79c4690f625be8ac4a75d682081d388c9",
+     "atencao": "981af3cab9335502ae6b98179f4c35c5661f4d726a5bb8c5797389ee9a51657a",
+     "palavras_dificeis": "5e74ea1db634f760352442cae658fa151551681d9d5ca6266449ccf7adb4a44b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Bens remotos, litigiosos ou de liquidação difícil podem ficar para sobrepartilha, enquanto os demais são divididos. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 560,
+   "target_id": "CC2002:ART.2024",
+   "explanation_id": "ENTENDA/CC2002:ART.2024/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2024:CAPUT\tOs co-herdeiros são reciprocamente obrigados a indenizar-se no caso de evicção dos bens aquinhoados.",
+   "source_snapshot_sha256": "7b2402505b2bc2b31370e8d12437febf6d8966a3fbf40261299488f92fe4db75",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2024:CAPUT",
+     "text": "Os co-herdeiros são reciprocamente obrigados a indenizar-se no caso de evicção dos bens aquinhoados."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Os co-herdeiros são reciprocamente obrigados a indenizar-se no caso de evicção dos bens aquinhoados.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b93ba4cb5b15f269d200c6f7a7fb4706531ba99264a9062aacc6433bfeb98c03",
+     "o_que_significa": "d1551e8f449ac4e3ebb4e66d3238a6293faedd1eca5cf776d3bea71253bb74c0",
+     "exemplo_pratico": "3ee99e461f3fd1a85a7e04b2b0df0eaf1f6b940a0d2b2eaedb4b21bd61aad07a",
+     "atencao": "c906845bac08073b92484dc19e31e6de74b10a46ee16df05a0af3789349b9c02",
+     "palavras_dificeis": "73ac4cfa879350ea213e263a2ef38550f23db1d4abbe268cc5cf5b0defa040ea"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Co-herdeiros devem indenizar reciprocamente aquele que perder bem partilhado por evicção. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 561,
+   "target_id": "CC2002:ART.2026",
+   "explanation_id": "ENTENDA/CC2002:ART.2026/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2026:CAPUT\tO evicto será indenizado pelos co-herdeiros na proporção de suas quotas hereditárias, mas, se algum deles se achar insolvente, responderão os demais na mesma proporção, pela parte desse, menos a quota que corresponderia ao indenizado.",
+   "source_snapshot_sha256": "94ebdae43930584fa3b9bfe251947201bfd93795b24fb50bd7eb36c331e9c00b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2026:CAPUT",
+     "text": "O evicto será indenizado pelos co-herdeiros na proporção de suas quotas hereditárias, mas, se algum deles se achar insolvente, responderão os demais na mesma proporção, pela parte desse, menos a quota que corresponderia ao indenizado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O evicto será indenizado pelos co-herdeiros na proporção de suas quotas hereditárias, mas, se algum deles se achar insolvente, responderão os demais na mesma proporção, pela parte desse, menos a quota que corresponderia ao indenizado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e01e0bc13c5f1219dfc72847b46f606574aff6b336d220aa195abc8418abc815",
+     "o_que_significa": "42ff43fc13aa9a9077b1f5e2f1e50ae45855a42905b94214c5f632ab46a61e80",
+     "exemplo_pratico": "7f86964b466ed04d0058a8d520c63a872ccc09f5f3ed9b18d557b8cd776dba73",
+     "atencao": "cfea2a3b87cd31facfca3a7c51c2dc746d87322c826be1a768221d61b82fedcb",
+     "palavras_dificeis": "37027f516db8b85bd5ce0e78ef6a3978c3b519fa03cbaf9d090c40fa0a0f7caf"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — A indenização por evicção é proporcional às quotas; insolvência de co-herdeiro é redistribuída, descontada a parcela do próprio indenizado. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 562,
+   "target_id": "CC2002:ART.2027",
+   "explanation_id": "ENTENDA/CC2002:ART.2027/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2027:CAPUT\tA partilha é anulável pelos vícios e defeitos que invalidam, em geral, os negócios jurídicos. (Redação dada pela Lei nº 13.105, de 2015) (Vigência)\nCC2002:ART.2027:PAR.UNICO\tExtingue-se em um ano o direito de anular a partilha.",
+   "source_snapshot_sha256": "351bc7a24f214536ac41f41c064cb7508331c5ed1dabee8acf72904236a3e6d7",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2027:CAPUT",
+     "text": "A partilha é anulável pelos vícios e defeitos que invalidam, em geral, os negócios jurídicos. (Redação dada pela Lei nº 13.105, de 2015) (Vigência)"
+    },
+    {
+     "label": "CC2002:ART.2027:PAR.UNICO",
+     "text": "Extingue-se em um ano o direito de anular a partilha."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A partilha é anulável pelos vícios e defeitos que invalidam, em geral, os negócios jurídicos. (Redação dada pela Lei nº 13.105, de 2015) (Vigência) | Extingue-se em um ano o direito de anular a partilha.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "df5eb922b1ff37344ef6b2ca89b5afb3f4818aa5949ec8bfdb2aec3a152dcde8",
+     "o_que_significa": "28dda4f971403616635a5e9fd8f170e979f40958f8685288416b21b257b1be36",
+     "exemplo_pratico": "940cee675217f27d3baa7ff046bd0333cd73afc5b4af97d70908ca07e4e6c79d",
+     "atencao": "c5eb7751fe6675684394820172fb322ccbff04bde70f8a5cd3c432276c09c3d6",
+     "palavras_dificeis": "d268dca54c3c232a5cd2cbfeaac04f95fc8eb240ac3fa10a8197eae7c365867e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Partilha com vícios gerais dos negócios jurídicos é anulável, e a pretensão deve ser exercida em um ano. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 563,
+   "target_id": "CC2002:ART.2028",
+   "explanation_id": "ENTENDA/CC2002:ART.2028/BASE/1",
+   "book": "COMPLEMENTARES_E_FINAIS",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2028:CAPUT\tSerão os da lei anterior os prazos, quando reduzidos por este Código, e se, na data de sua entrada em vigor, já houver transcorrido mais da metade do tempo estabelecido na lei revogada.",
+   "source_snapshot_sha256": "2d021a5d2c08fb3cc1117e8e16055b689aa60946cb3a726abf8d6a884085ffb6",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2028:CAPUT",
+     "text": "Serão os da lei anterior os prazos, quando reduzidos por este Código, e se, na data de sua entrada em vigor, já houver transcorrido mais da metade do tempo estabelecido na lei revogada."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Serão os da lei anterior os prazos, quando reduzidos por este Código, e se, na data de sua entrada em vigor, já houver transcorrido mais da metade do tempo estabelecido na lei revogada.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9d280178bb9d792e0716f82440cc27d9abb6d0abed7a3fd0584f25b30577aacf",
+     "o_que_significa": "a38ae9d5f2f99fe2ab1100ca0fb0cf89c3ea72d91c0c7915c700258acb8fbf4a",
+     "exemplo_pratico": "fe35c528135579480eea668585056698c2ba827822fb6f249b1f1abb0ce31507",
+     "atencao": "52eb1188601c4f5602db6fdee85740853ece7ffc1ad72a53b3ce86b51aa6e3c1",
+     "palavras_dificeis": "ebe401f8a39cb6bb191e8a8f039823faf9313fbb7e5f9425ecc9504c9fb685a4"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Prazo reduzido pelo Código novo continua seguindo a lei anterior se, na entrada em vigor, já havia transcorrido mais da metade do prazo antigo. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 564,
+   "target_id": "CC2002:ART.2029",
+   "explanation_id": "ENTENDA/CC2002:ART.2029/BASE/1",
+   "book": "COMPLEMENTARES_E_FINAIS",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2029:CAPUT\tAté dois anos após a entrada em vigor deste Código, os prazos estabelecidos no parágrafo único do art. 1.238 e no parágrafo único do art. 1.242 serão acrescidos de dois anos, qualquer que seja o tempo transcorrido na vigência do anterior, Lei n o 3.071, de 1 o de janeiro de 1916.",
+   "source_snapshot_sha256": "d3d7df70b76630b17e594b02803d1d0b95741a049fb710eb648d3a823ce29539",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2029:CAPUT",
+     "text": "Até dois anos após a entrada em vigor deste Código, os prazos estabelecidos no parágrafo único do art. 1.238 e no parágrafo único do art. 1.242 serão acrescidos de dois anos, qualquer que seja o tempo transcorrido na vigência do anterior, Lei n o 3.071, de 1 o de janeiro de 1916."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Até dois anos após a entrada em vigor deste Código, os prazos estabelecidos no parágrafo único do art. 1.238 e no parágrafo único do art. 1.242 serão acrescidos de dois anos, qualquer que seja o tempo transcorrido na vigência do anterior, Lei n o 3.071, de 1 o de janeiro de 1916.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ac5ea09701f0b2c8c5181083fdad6e7793b621297403e1969f9d2b6d7abb9029",
+     "o_que_significa": "aa290b18344141c79506f457b87512fc8533e24c50b5826ec96d245e202b09a3",
+     "exemplo_pratico": "3cf0a20f8c350205a23b0f1bdf811168150a286f8590821f08f8e5acfe682564",
+     "atencao": "7161fad570d78cd0a2e48f9e75f0986ca5651f3a73c0455ead189d8f002a4706",
+     "palavras_dificeis": "6fa8bdea883597765570d66f920375ae09660873acd08746a3d8ccff16caddbf"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Durante os dois primeiros anos de vigência, determinados prazos de usucapião tiveram acréscimo temporário de dois anos. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 565,
+   "target_id": "CC2002:ART.2030",
+   "explanation_id": "ENTENDA/CC2002:ART.2030/BASE/1",
+   "book": "COMPLEMENTARES_E_FINAIS",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2030:CAPUT\tO acréscimo de que trata o artigo antecedente, será feito nos casos a que se refere o § 4 o do art. 1.228.",
+   "source_snapshot_sha256": "d94199848418a60b1011b6ef6594c01bbfb974dbdc416b86aec22980736cf15c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2030:CAPUT",
+     "text": "O acréscimo de que trata o artigo antecedente, será feito nos casos a que se refere o § 4 o do art. 1.228."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O acréscimo de que trata o artigo antecedente, será feito nos casos a que se refere o § 4 o do art. 1.228.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a3fd20e12860fee2e65d11f485dcb40cb5fbc9cb21b23228ab73e7293c2f338e",
+     "o_que_significa": "8fe41e4e143d1f565c588425e96771a5a0616ea9b2d0215ad1a6f2f7d1de6f36",
+     "exemplo_pratico": "c8a56559c86f67223c568392ead240c9f2b4969a2a9a7dbe133fafaf25bf75fd",
+     "atencao": "6494b24796b0e05d0bffc305cf94e990df09339d58f1eeb7dfc361a60a66820d",
+     "palavras_dificeis": "a9e00c5a23e66828dbf0017a9b425dc021125f5871a1e83c10481ebc72165a26"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — O acréscimo transitório anterior também alcançou a hipótese especial do art. 1.228, § 4º. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 566,
+   "target_id": "CC2002:ART.2031",
+   "explanation_id": "ENTENDA/CC2002:ART.2031/BASE/1",
+   "book": "COMPLEMENTARES_E_FINAIS",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2031:CAPUT\tAs associações, sociedades e fundações, constituídas na forma das leis anteriores, bem como os empresários, deverão se adaptar às disposições deste Código até 11 de janeiro de 2007. (Redação dada pela Lei nº 11.127, de 2005)\nCC2002:ART.2031:PAR.UNICO\tO disposto neste artigo não se aplica às organizações religiosas nem aos partidos políticos. (Incluído pela Lei nº 10.825, de 22.12.2003)",
+   "source_snapshot_sha256": "398f40366ce23d68e5e7e87c50eac380f813b890bba49ea17c7e7ec1ca6ec1d5",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2031:CAPUT",
+     "text": "As associações, sociedades e fundações, constituídas na forma das leis anteriores, bem como os empresários, deverão se adaptar às disposições deste Código até 11 de janeiro de 2007. (Redação dada pela Lei nº 11.127, de 2005)"
+    },
+    {
+     "label": "CC2002:ART.2031:PAR.UNICO",
+     "text": "O disposto neste artigo não se aplica às organizações religiosas nem aos partidos políticos. (Incluído pela Lei nº 10.825, de 22.12.2003)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: As associações, sociedades e fundações, constituídas na forma das leis anteriores, bem como os empresários, deverão se adaptar às disposições deste Código até 11 de janeiro de 2007. (Redação dada pela Lei nº 11.127, de 2005) | O disposto neste artigo não se aplica às organizações religiosas nem aos partidos políticos. (Incluído pela Lei nº 10.825, de 22.12.2003)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e2365c57dbc12219a40d6ae8d584f59afb460fc574c406342a81e1da1804ab4d",
+     "o_que_significa": "d6e5d5fa82b2209fd34abea2ead80e3c2e154c88b5673daab533afdf617c195d",
+     "exemplo_pratico": "3e8e6a467e101bdaa02b0039bcff01a45dda494a6694bf18aae81a39ec2eacca",
+     "atencao": "250c1e33a25c6042277b65fe6133c345984cf6662ec5ce7caf9f2fee9a886086",
+     "palavras_dificeis": "0baf1af1c2121a011743d492ecc4bb43d6d61e17962bca0a642d2c8a1bf6406d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Entidades e empresários anteriores tiveram prazo até 11 de janeiro de 2007 para adaptação, excetuados organizações religiosas e partidos. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 567,
+   "target_id": "CC2002:ART.2032",
+   "explanation_id": "ENTENDA/CC2002:ART.2032/BASE/1",
+   "book": "COMPLEMENTARES_E_FINAIS",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2032:CAPUT\tAs fundações, instituídas segundo a legislação anterior, inclusive as de fins diversos dos previstos no parágrafo único do art. 62, subordinam-se, quanto ao seu funcionamento, ao disposto neste Código.",
+   "source_snapshot_sha256": "0fe2022ce0a5e6fb5a23e301b0e8507445dd2260e62029ad5f3fe1575f2b4935",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2032:CAPUT",
+     "text": "As fundações, instituídas segundo a legislação anterior, inclusive as de fins diversos dos previstos no parágrafo único do art. 62, subordinam-se, quanto ao seu funcionamento, ao disposto neste Código."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: As fundações, instituídas segundo a legislação anterior, inclusive as de fins diversos dos previstos no parágrafo único do art. 62, subordinam-se, quanto ao seu funcionamento, ao disposto neste Código.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2421d48376b73602ab9a4a9bc0b63fcaab7bc79f05da6d91b5e684aad2d62163",
+     "o_que_significa": "7d165795191cf0262c2fefb5d155798870429b91135e79f77ee23986b9380ee2",
+     "exemplo_pratico": "c60ea2a1cf3da5453c8b913ab5ef58302df9a1d70c5e6a89d880605da8d7d19a",
+     "atencao": "decc359ba20c07cbd0b17e1e8640dea4d386cd90d68bcc3b52fab45300c01147",
+     "palavras_dificeis": "dec61f40e54c883048e086910e95b6605edb13bba8882f556223a612d063258b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Fundações criadas sob lei anterior passaram a seguir o Código quanto ao funcionamento, mesmo com finalidades antes admitidas. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 568,
+   "target_id": "CC2002:ART.2033",
+   "explanation_id": "ENTENDA/CC2002:ART.2033/BASE/1",
+   "book": "COMPLEMENTARES_E_FINAIS",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2033:CAPUT\tSalvo o disposto em lei especial, as modificações dos atos constitutivos das pessoas jurídicas referidas no art. 44, bem como a sua transformação, incorporação, cisão ou fusão, regem-se desde logo por este Código.",
+   "source_snapshot_sha256": "820f1bec58eb58d27e01e17e01477be0d153fee6473ae794f153e118a34ca771",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2033:CAPUT",
+     "text": "Salvo o disposto em lei especial, as modificações dos atos constitutivos das pessoas jurídicas referidas no art. 44, bem como a sua transformação, incorporação, cisão ou fusão, regem-se desde logo por este Código."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Salvo o disposto em lei especial, as modificações dos atos constitutivos das pessoas jurídicas referidas no art. 44, bem como a sua transformação, incorporação, cisão ou fusão, regem-se desde logo por este Código.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0a9745f2975e73dc118084c7a26674e42a7cb3f2811b1500054def1ab358474b",
+     "o_que_significa": "c9fd1762f2fdc6a48c00b4c0da7daacbf82f8be26593fe3bbc8c59ed7db85fc9",
+     "exemplo_pratico": "f25a0a1775b8c334b8048f6b2766f6308c67d958d83436c426ba47bbbca18ce1",
+     "atencao": "60b49e46242414d6c7086fb6e503d2bbc01d546af4abe15b4ae96a28f1562d55",
+     "palavras_dificeis": "e66a85b73cb92713356d82e1ec1930390940be09cc14199e22704121da992fc9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Alterações estruturais de pessoas jurídicas seguem imediatamente o Código, salvo lei especial. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 569,
+   "target_id": "CC2002:ART.2034",
+   "explanation_id": "ENTENDA/CC2002:ART.2034/BASE/1",
+   "book": "COMPLEMENTARES_E_FINAIS",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2034:CAPUT\tA dissolução e a liquidação das pessoas jurídicas referidas no artigo antecedente, quando iniciadas antes da vigência deste Código, obedecerão ao disposto nas leis anteriores.",
+   "source_snapshot_sha256": "daa0473ab2649d30add5486dcc7d018a575550957032c0af636e3f271b5241b4",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2034:CAPUT",
+     "text": "A dissolução e a liquidação das pessoas jurídicas referidas no artigo antecedente, quando iniciadas antes da vigência deste Código, obedecerão ao disposto nas leis anteriores."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A dissolução e a liquidação das pessoas jurídicas referidas no artigo antecedente, quando iniciadas antes da vigência deste Código, obedecerão ao disposto nas leis anteriores.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1023ef484fc2ac76e378028b3d93a4a501144a6959c4a9a350cdde9b7b126b34",
+     "o_que_significa": "926382b790953743ec42fb0a2b4c7507b8b7fa855ebbd6b99dcdf31e7254d588",
+     "exemplo_pratico": "b9b085bbe47cbe082afc44dbb6d94c48e1b5968c9695506817cd897828eeda42",
+     "atencao": "e890d036ddd8eb03a85d90d2fbeb03bd8e5a07d11664108922a86868a8ecd4a5",
+     "palavras_dificeis": "2977827423e13e4ad11eec2df3ed7c13ed3d16f63ea65ac35ac7d19482bf4961"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Dissolução ou liquidação iniciada antes da vigência do Código continua regida pela lei anterior. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 570,
+   "target_id": "CC2002:ART.2035",
+   "explanation_id": "ENTENDA/CC2002:ART.2035/BASE/1",
+   "book": "COMPLEMENTARES_E_FINAIS",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2035:CAPUT\tA validade dos negócios e demais atos jurídicos, constituídos antes da entrada em vigor deste Código, obedece ao disposto nas leis anteriores, referidas no art. 2.045, mas os seus efeitos, produzidos após a vigência deste Código, aos preceitos dele se subordinam, salvo se houver sido prevista pelas partes determinada forma de execução.\nCC2002:ART.2035:PAR.UNICO\tNenhuma convenção prevalecerá se contrariar preceitos de ordem pública, tais como os estabelecidos por este Código para assegurar a função social da propriedade e dos contratos.",
+   "source_snapshot_sha256": "8cdeb59628a8cd25a99c69522e5cd597ffbe47778f3a8f05995e6672d493f770",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2035:CAPUT",
+     "text": "A validade dos negócios e demais atos jurídicos, constituídos antes da entrada em vigor deste Código, obedece ao disposto nas leis anteriores, referidas no art. 2.045, mas os seus efeitos, produzidos após a vigência deste Código, aos preceitos dele se subordinam, salvo se houver sido prevista pelas partes determinada forma de execução."
+    },
+    {
+     "label": "CC2002:ART.2035:PAR.UNICO",
+     "text": "Nenhuma convenção prevalecerá se contrariar preceitos de ordem pública, tais como os estabelecidos por este Código para assegurar a função social da propriedade e dos contratos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A validade dos negócios e demais atos jurídicos, constituídos antes da entrada em vigor deste Código, obedece ao disposto nas leis anteriores, referidas no art. 2.045, mas os seus efeitos, produzidos após a vigência deste Código, aos preceitos dele se subordinam, salvo se houver sido prevista pelas partes determinada forma de execução. | Nenhuma convenção prevalecerá se contrariar preceitos de ordem pública, tais como os estabelecidos por este Código para assegurar a função social da propriedade e dos contratos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c52186e440d035f432e727e6170ea3feb6c54e65c3f426652556e0d673138985",
+     "o_que_significa": "14faf1f457124b303f169e4264e7a18061f1730e3389092de4b964013708fd25",
+     "exemplo_pratico": "e8c039cfefd8917bd9869e1cdb97ef847b376defebb113ab591c1576a5e2a3ce",
+     "atencao": "407d2749e9033c63cb27ffb5e221b6b7ad9e3413b2e541cca2f3bf3f65aca911",
+     "palavras_dificeis": "4a026a9d63fc2e4ed4001c2ca6992de0f91db310c5762fbb33ae7530953bd310"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Validade de atos anteriores segue a lei antiga; efeitos posteriores seguem o Código novo, salvo execução prevista, sempre subordinada à ordem pública. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 571,
+   "target_id": "CC2002:ART.2037",
+   "explanation_id": "ENTENDA/CC2002:ART.2037/BASE/1",
+   "book": "COMPLEMENTARES_E_FINAIS",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2037:CAPUT\tSalvo disposição em contrário, aplicam-se aos empresários e sociedades empresárias as disposições de lei não revogadas por este Código, referentes a comerciantes, ou a sociedades comerciais, bem como a atividades mercantis.",
+   "source_snapshot_sha256": "fddeff82d0fbe5db73156257e54a6d5c9150717e007e9b1cdf021dbd91ff46fb",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2037:CAPUT",
+     "text": "Salvo disposição em contrário, aplicam-se aos empresários e sociedades empresárias as disposições de lei não revogadas por este Código, referentes a comerciantes, ou a sociedades comerciais, bem como a atividades mercantis."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Salvo disposição em contrário, aplicam-se aos empresários e sociedades empresárias as disposições de lei não revogadas por este Código, referentes a comerciantes, ou a sociedades comerciais, bem como a atividades mercantis.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1662ac20c2f3806410dbd8ac24cbf50e3787e606d0ecdaede49c456d5147366c",
+     "o_que_significa": "f6abc4ed559d575f0a7d1e9e0ecfacf214c58069d3dbb5c1a7d3dc497611aec1",
+     "exemplo_pratico": "db807117bd146f3caf97ae73449f3a13bc304600ded725e55fc29a6a90d307ef",
+     "atencao": "10d9b4eb66e67602eda93b60be41cd4171a428eeeb6bf2bd4c7d062c4d3026a9",
+     "palavras_dificeis": "40d7dff8cda5ef86dfc0043e5483bf85313f821ef1cb0ac424c62c6e4bfb487d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Normas comerciais anteriores não revogadas continuam aplicáveis a empresários e sociedades, salvo disposição contrária. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 572,
+   "target_id": "CC2002:ART.2039",
+   "explanation_id": "ENTENDA/CC2002:ART.2039/BASE/1",
+   "book": "COMPLEMENTARES_E_FINAIS",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2039:CAPUT\tO regime de bens nos casamentos celebrados na vigência do Código Civil anterior, Lei n o 3.071, de 1 o de janeiro de 1916, é o por ele estabelecido.",
+   "source_snapshot_sha256": "e590870a682b5caec3e4f9147b1a83ead44bc9ed0b538cae6f7e197fe723212b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2039:CAPUT",
+     "text": "O regime de bens nos casamentos celebrados na vigência do Código Civil anterior, Lei n o 3.071, de 1 o de janeiro de 1916, é o por ele estabelecido."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O regime de bens nos casamentos celebrados na vigência do Código Civil anterior, Lei n o 3.071, de 1 o de janeiro de 1916, é o por ele estabelecido.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "cf0db8349e89a31c89acf68a3d90abb67ec1543b4943b1d330aea547228f854d",
+     "o_que_significa": "88bd7f83a7a017c4ae10e56bec24bfbe0e33f4ce8ba9fa1b9203736fa0a90e96",
+     "exemplo_pratico": "8109903a43099f4494113002ed2a54c65f13b38ac5641868e3769eca82ee38b2",
+     "atencao": "9cd0a4d71b59ddf6a4e2df691567929bd8cb067326ecbd1a08377ea60417eabe",
+     "palavras_dificeis": "46c4cb5139d39198f8e58397673177889fa53a74e32de6856ca66914b62a84e5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Casamentos celebrados sob o Código de 1916 mantêm o regime de bens então estabelecido. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 573,
+   "target_id": "CC2002:ART.2040",
+   "explanation_id": "ENTENDA/CC2002:ART.2040/BASE/1",
+   "book": "COMPLEMENTARES_E_FINAIS",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2040:CAPUT\tA hipoteca legal dos bens do tutor ou curador, inscrita em conformidade com o inciso IV do art. 827 do Código Civil anterior, Lei n o 3.071, de 1 o de janeiro de 1916, poderá ser cancelada, obedecido o disposto no parágrafo único do art. 1.745 deste Código.",
+   "source_snapshot_sha256": "67c55c06946a1cb565e2054016d4f1769b5a7e6ade5390b823d0f7c63543d497",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2040:CAPUT",
+     "text": "A hipoteca legal dos bens do tutor ou curador, inscrita em conformidade com o inciso IV do art. 827 do Código Civil anterior, Lei n o 3.071, de 1 o de janeiro de 1916, poderá ser cancelada, obedecido o disposto no parágrafo único do art. 1.745 deste Código."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A hipoteca legal dos bens do tutor ou curador, inscrita em conformidade com o inciso IV do art. 827 do Código Civil anterior, Lei n o 3.071, de 1 o de janeiro de 1916, poderá ser cancelada, obedecido o disposto no parágrafo único do art. 1.745 deste Código.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7dff6a5e742546f11986e2efa428b159954d32f4222a6bf4f946b21c0cef02be",
+     "o_que_significa": "a1f7a45485e8e7235dcdba0f80cf2df0589dde68ed2486701e8ca8c1de5db367",
+     "exemplo_pratico": "7f4e04d0934edc7fba52374f6815e38fa7707e8577e183cf66b77faef7f55735",
+     "atencao": "7a9172902ab3b892b7210085195cc8f5ee04945064ce6510e7f9ed0888af05df",
+     "palavras_dificeis": "6aeef21580c904827c18c7ea65728a8dfd208511d90b72313816b97479954e33"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O art. 2.040 remete ao parágrafo único do art. 1.745, que permite ao juiz exigir caução bastante quando o patrimônio do menor for considerável, mas também autoriza dispensá-la se o tutor for de reconhecida idoneidade; não há exigência invariável de garantia substitutiva.",
+   "finding": {
+    "target_id": "CC2002:ART.2040",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "conforme a garantia substitutiva prevista no Código atual",
+    "legal_basis": "O art. 2.040 remete ao parágrafo único do art. 1.745, que permite ao juiz exigir caução bastante quando o patrimônio do menor for considerável, mas também autoriza dispensá-la se o tutor for de reconhecida idoneidade; não há exigência invariável de garantia substitutiva.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "IMPRECISAO_SOBRE_GARANTIA",
+    "severity": "MÉDIO",
+    "legal_or_pedagogical_consequence": "A explicação pode fazer parecer que o cancelamento sempre depende de substituição do gravame por outra garantia, ignorando a dispensa judicial prevista na norma remetida.",
+    "correction_direction": "Explicar a remissão ao art. 1.745, parágrafo único, incluindo tanto a caução judicialmente exigível quanto sua possível dispensa por idoneidade reconhecida.",
+    "confidence": "ALTA",
+    "human_review_required": false,
+    "checkpoint": 32,
+    "auditor": "/root/wave04_451_577"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 574,
+   "target_id": "CC2002:ART.2041",
+   "explanation_id": "ENTENDA/CC2002:ART.2041/BASE/1",
+   "book": "COMPLEMENTARES_E_FINAIS",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2041:CAPUT\tAs disposições deste Código relativas à ordem da vocação hereditária (arts. 1.829 a 1.844) não se aplicam à sucessão aberta antes de sua vigência, prevalecendo o disposto na lei anterior (Lei n o 3.071, de 1 o de janeiro de 1916).",
+   "source_snapshot_sha256": "09922b7ae623f614e589bbe5f068fa510372db72be58a11f8931611b37d2a817",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2041:CAPUT",
+     "text": "As disposições deste Código relativas à ordem da vocação hereditária (arts. 1.829 a 1.844) não se aplicam à sucessão aberta antes de sua vigência, prevalecendo o disposto na lei anterior (Lei n o 3.071, de 1 o de janeiro de 1916)."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: As disposições deste Código relativas à ordem da vocação hereditária (arts. 1.829 a 1.844) não se aplicam à sucessão aberta antes de sua vigência, prevalecendo o disposto na lei anterior (Lei n o 3.071, de 1 o de janeiro de 1916).",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "bf189f9b1da1b0b000df20cbc4eeb035d9e195996a2c8818f38607d6e1b79e8a",
+     "o_que_significa": "f1f7a381c62a6dad7c5ef35192ebc85ff41a23bb5a1a6fdd63f847db6b2515b7",
+     "exemplo_pratico": "52a0e957d3d4d468db5a41ba87ea194d496e5b9a68bfb378fada14d5a69a88c8",
+     "atencao": "aef63d3498ea86caa2b087a6dc342be5d58a575c38778514bba94737b257d20d",
+     "palavras_dificeis": "3931788e0db28a462f3cbd1d9c28ede710ede94eb63034fd7d718bd3ad8599b0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — A ordem sucessória do Código novo não rege sucessões abertas antes de sua vigência; aplica-se a lei anterior. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 575,
+   "target_id": "CC2002:ART.2042",
+   "explanation_id": "ENTENDA/CC2002:ART.2042/BASE/1",
+   "book": "COMPLEMENTARES_E_FINAIS",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2042:CAPUT\tAplica-se o disposto no caput do art. 1.848, quando aberta a sucessão no prazo de um ano após a entrada em vigor deste Código, ainda que o testamento tenha sido feito na vigência do anterior, Lei n o 3.071, de 1 o de janeiro de 1916; se, no prazo, o testador não aditar o testamento para declarar a justa causa de cláusula aposta à legítima, não subsistirá a restrição.",
+   "source_snapshot_sha256": "6b477e905c95a75d67e1c54eced73fa5db4d9353dc81fb6ec14ef9f9dce8aba0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2042:CAPUT",
+     "text": "Aplica-se o disposto no caput do art. 1.848, quando aberta a sucessão no prazo de um ano após a entrada em vigor deste Código, ainda que o testamento tenha sido feito na vigência do anterior, Lei n o 3.071, de 1 o de janeiro de 1916; se, no prazo, o testador não aditar o testamento para declarar a justa causa de cláusula aposta à legítima, não subsistirá a restrição."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Aplica-se o disposto no caput do art. 1.848, quando aberta a sucessão no prazo de um ano após a entrada em vigor deste Código, ainda que o testamento tenha sido feito na vigência do anterior, Lei n o 3.071, de 1 o de janeiro de 1916; se, no prazo, o testador não aditar o testamento para declarar a justa causa de cláusula aposta à legítima, não subsistirá a restrição.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "efbe0e9cc4c02a4bd20ebee3fd12174425d31be6d0bafcc3935e86fd1cf71faf",
+     "o_que_significa": "b706c1f2a0a2e22e064d614be42db4db15ba0ae3ca9ac4056084d109b2107562",
+     "exemplo_pratico": "db572a959df5596d9df3f8d22da7e64f7a5900d6ffa37906a5c32aefcd9b8957",
+     "atencao": "1e635f685571166e5e44d6cb15fa09d9961c1fdc1237714a5341f5ca024aa4f3",
+     "palavras_dificeis": "99bbb26d542fe7dea43c80f87b2dc0dfc78b016c332d429e769c3ca67118c62a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Restrição testamentária à legítima em sucessão aberta no primeiro ano do Código exigia aditamento com justa causa, sob pena de desaparecer. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
    "finding": null,
    "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
    "reviewer": "delegated-independent-auditor"
