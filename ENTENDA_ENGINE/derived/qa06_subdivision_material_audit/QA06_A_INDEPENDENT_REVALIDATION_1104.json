@@ -1,0 +1,72 @@
+{
+ "schema_version": 1,
+ "mission": "QA-06-FRONT-A",
+ "as_of": "2026-11-13",
+ "status": "INDEPENDENT_REVALIDATION_COMPLETE_REQUIRES_CHANGES",
+ "total": 1,
+ "decision_counts": {
+  "REQUIRES_CHANGES": 1
+ },
+ "records": [
+  {
+   "target_id": "CC2002:ART.1104",
+   "proposal_file": "QA06_A_EDITORIAL_PROPOSAL_1104.json",
+   "proposal_sha256": "d179a852122324b1f2345ae998f1f0d350abbd1c22eaca690e0f8f17f7a48a32",
+   "decision": "REQUIRES_CHANGES",
+   "confidence": "ALTA",
+   "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "official_source_checked_on": "2026-11-13",
+   "legal_evidence": {
+    "art_1102": "Dissolvida a sociedade e nomeado o liquidante, procede-se à liquidação conforme o capítulo, ressalvados o ato constitutivo ou o instrumento de dissolução; o parágrafo único disciplina a investidura do liquidante que não seja administrador.",
+    "art_1103": "Enumera os deveres operacionais do liquidante, incluindo no inciso VI apresentação semestral de relatório e balanço do estado da liquidação.",
+    "art_1104": "As obrigações e a responsabilidade do liquidante regem-se pelos preceitos peculiares às dos administradores da sociedade liquidanda.",
+    "art_1105": "Disciplina a representação da sociedade, os atos necessários à liquidação e os limites especiais de atuação do liquidante."
+   },
+   "field_assessments": {
+    "o_que_diz": {
+     "status": "REQUIRES_CHANGE",
+     "finding": "A expressão 'no que couber' não consta do art. 1.104 e introduz um limitador textual desnecessário à submissão das obrigações e da responsabilidade do liquidante aos preceitos próprios dos administradores.",
+     "required_change": "Remover 'no que couber'. Redação sugerida: 'As obrigações e a responsabilidade do liquidante seguem os preceitos próprios das obrigações e da responsabilidade dos administradores da sociedade em liquidação.'"
+    },
+    "o_que_significa": {
+     "status": "CONFIRMED",
+     "finding": "Representa corretamente a regra de equiparação normativa quanto às obrigações do cargo e à responsabilidade, sem importar a lista operacional do art. 1.103."
+    },
+    "exemplo_pratico": {
+     "status": "CONFIRMED",
+     "finding": "Ilustra adequadamente a aplicação do regime de responsabilidade dos administradores a prejuízo causado pelo liquidante, sem afirmar dever operacional ou periodicidade estranhos ao art. 1.104."
+    },
+    "atencao": {
+     "status": "CONFIRMED",
+     "finding": "Delimita corretamente o art. 1.104 em relação aos deveres do art. 1.103 e aos poderes e limites do art. 1.105, além de afastar a periodicidade indevidamente atribuída ao dispositivo."
+    },
+    "palavras_dificeis": {
+     "status": "CONFIRMED",
+     "finding": "A definição de 'sociedade liquidanda' é fiel, pertinente e substitui glossário antes deslocado do art. 1.103."
+    }
+   },
+   "objections": [
+    {
+     "code": "UNSTATED_LIMITER_NO_QUE_COUBER",
+     "severity": "MÉDIO",
+     "field": "o_que_diz",
+     "problematic_excerpt": "seguem, no que couber, os preceitos próprios",
+     "basis": "O texto oficial do art. 1.104 estabelece diretamente que as obrigações e a responsabilidade do liquidante se regem pelos preceitos peculiares às dos administradores, sem a cláusula 'no que couber'.",
+     "resolution_required": "Excluir a cláusula e submeter a proposta ajustada a nova confirmação independente."
+    }
+   ],
+   "neighbor_boundary_result": "PASS_EXCEPT_FOR_OBJECTION_IN_O_QUE_DIZ",
+   "periodicity_error_removed": true,
+   "art_1103_operational_duties_removed": true,
+   "art_1105_powers_not_misattributed": true,
+   "independence_declaration": {
+    "reviewer_role": "INDEPENDENT_LEGAL_REVALIDATOR",
+    "reviewer_was_editor": false,
+    "review_started_from_official_text": true,
+    "historical_editorial_approval_used_as_proof": false
+   },
+   "human_approval_claimed": false,
+   "human_review_required": true
+  }
+ ]
+}
