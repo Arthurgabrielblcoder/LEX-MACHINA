@@ -3,13 +3,13 @@
  "mission": "QA-03-FRONT-B",
  "as_of": "2026-11-13",
  "status": "PARTIAL_REQUIRES_CONTINUATION",
- "completed_through_checkpoint": "B-CP07",
- "audited_total": 175,
+ "completed_through_checkpoint": "B-CP08",
+ "audited_total": 200,
  "queue_positions_completed": [
   1,
-  175
+  200
  ],
- "next_queue_position": 176,
+ "next_queue_position": 201,
  "findings_total": 2,
  "finding_counts": {
   "ALTO": 1,
@@ -9110,6 +9110,1255 @@
    "finding": null,
    "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
    "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 176,
+   "target_id": "CC2002:ART.299",
+   "explanation_id": "ENTENDA/CC2002:ART.299/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.299:CAPUT\tÉ facultado a terceiro assumir a obrigação do devedor, com o consentimento expresso do credor, ficando exonerado o devedor primitivo, salvo se aquele, ao tempo da assunção, era insolvente e o credor o ignorava.\nCC2002:ART.299:PAR.UNICO\tQualquer das partes pode assinar prazo ao credor para que consinta na assunção da dívida, interpretando-se o seu silêncio como recusa.",
+   "source_snapshot_sha256": "ce9d570c6e5ce5d39b38033b1f37e49c16f7bd3f2cdb15878a7ba24fa17f5a22",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.299:CAPUT",
+     "text": "É facultado a terceiro assumir a obrigação do devedor, com o consentimento expresso do credor, ficando exonerado o devedor primitivo, salvo se aquele, ao tempo da assunção, era insolvente e o credor o ignorava."
+    },
+    {
+     "label": "CC2002:ART.299:PAR.UNICO",
+     "text": "Qualquer das partes pode assinar prazo ao credor para que consinta na assunção da dívida, interpretando-se o seu silêncio como recusa."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: É facultado a terceiro assumir a obrigação do devedor, com o consentimento expresso do credor, ficando exonerado o devedor primitivo, salvo se aquele, ao tempo da assunção, era insolvente e o credor o ignorava. | Qualquer das partes pode assinar prazo ao credor para que consinta na assunção da dívida, interpretando-se o seu silêncio como recusa.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "93af558e907cff2b2d4412e18ed70b80c46e24664f36348d32d0c025e7619bf0",
+     "o_que_significa": "51adfef55679d6f86bfab29419184c5363a21f2aca3c5df2d77cb86393d1ee3e",
+     "exemplo_pratico": "ac69c502dc11fd8eddc887888e7a903c6e948745bb615545bde8c46f21fe0d7c",
+     "atencao": "6e05715f821367da68039bff86e55814a82842262f21d66ba138dfec35c2cecc",
+     "palavras_dificeis": "d3c68567b73ef1aa230cfd70e35686b809a7d2e4cf64a27d1c0efbc8b822808b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.299, foram cotejados 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos. A baseline sintetiza a regra como: “Terceiro pode assumir a dívida com consentimento expresso do credor, liberando o devedor original, salvo insolvência anterior do substituto ignorada pelo credor. O silêncio do credor, após prazo fixado, vale como recusa.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 177,
+   "target_id": "CC2002:ART.300",
+   "explanation_id": "ENTENDA/CC2002:ART.300/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.300:CAPUT\tSalvo assentimento expresso do devedor primitivo, consideram-se extintas, a partir da assunção da dívida, as garantias especiais por ele originariamente dadas ao credor.",
+   "source_snapshot_sha256": "4a8d0905cb0fdc3abb78a1c0ddb4920d774b051f64e3b6e1dff7a1fb1778584b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.300:CAPUT",
+     "text": "Salvo assentimento expresso do devedor primitivo, consideram-se extintas, a partir da assunção da dívida, as garantias especiais por ele originariamente dadas ao credor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Salvo assentimento expresso do devedor primitivo, consideram-se extintas, a partir da assunção da dívida, as garantias especiais por ele originariamente dadas ao credor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d873c5413ed3d729ac421571cd37a82d8bf34b672a019098f8222ac30f5d7b42",
+     "o_que_significa": "5d7fbb5a14505f76afe5d983f7bc77469768efc2ed82c7cfc5e54813b9837602",
+     "exemplo_pratico": "95a81388c6adcf509eeb33bb0c97974c0ba107181c363b1e456585a53c99def0",
+     "atencao": "48ff02e3a2da35ec49c7deee279b81de11a9d0cbfca8072b4d8bf2891b52d28d",
+     "palavras_dificeis": "e0cf406c29b036eb4fee47707edb80b5c0b706f6a05ee581bc09260a4298958b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.300, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Com a assunção da dívida, garantias especiais fornecidas pelo devedor original se extinguem, salvo consentimento expresso dele para mantê-las.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 178,
+   "target_id": "CC2002:ART.301",
+   "explanation_id": "ENTENDA/CC2002:ART.301/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.301:CAPUT\tSe a substituição do devedor vier a ser anulada, restaura-se o débito, com todas as suas garantias, salvo as garantias prestadas por terceiros, exceto se este conhecia o vício que inquinava a obrigação.",
+   "source_snapshot_sha256": "e9e86b6a979815d430222ef3729260458d3ebbb71028256773809fb8b019482a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.301:CAPUT",
+     "text": "Se a substituição do devedor vier a ser anulada, restaura-se o débito, com todas as suas garantias, salvo as garantias prestadas por terceiros, exceto se este conhecia o vício que inquinava a obrigação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se a substituição do devedor vier a ser anulada, restaura-se o débito, com todas as suas garantias, salvo as garantias prestadas por terceiros, exceto se este conhecia o vício que inquinava a obrigação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "940c98d1ea485187ee08e23d4e0a55aee40e00734f26b224f3e635eaae274556",
+     "o_que_significa": "27aeb2b60089c640b0cc314be118ac2b910cb23f98acf8fb152c4db0240c62b7",
+     "exemplo_pratico": "0a9c40c683b8cf7d3c6701a5eacecbf2129d9e86803eca770fd5bf689394d3b0",
+     "atencao": "5766f0599736023c9a950c579132acea327e215a28677dbb746280e922fa73c9",
+     "palavras_dificeis": "286627e7c1e61037e490cd81ed6056bef7753df15754124816f0ef5530b419a3"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.301, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Anulada a substituição do devedor, a dívida e suas garantias são restauradas. Garantias de terceiros não retornam, salvo se o garantidor conhecia o vício da assunção.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 179,
+   "target_id": "CC2002:ART.303",
+   "explanation_id": "ENTENDA/CC2002:ART.303/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.303:CAPUT\tO adquirente de imóvel hipotecado pode tomar a seu cargo o pagamento do crédito garantido; se o credor, notificado, não impugnar em trinta dias a transferência do débito, entender-se-á dado o assentimento.",
+   "source_snapshot_sha256": "afcbe45aa497fb7a5fd63865eb19750b42358d5fb52b6ef56a790e1e369c71d9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.303:CAPUT",
+     "text": "O adquirente de imóvel hipotecado pode tomar a seu cargo o pagamento do crédito garantido; se o credor, notificado, não impugnar em trinta dias a transferência do débito, entender-se-á dado o assentimento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O adquirente de imóvel hipotecado pode tomar a seu cargo o pagamento do crédito garantido; se o credor, notificado, não impugnar em trinta dias a transferência do débito, entender-se-á dado o assentimento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "af6cc0f53960f78ea7fbcbaade75f82841ed4dcac86833c9745a6de1c8872d25",
+     "o_que_significa": "38b748ca69a0039740422ef7a123313b6bfefab06d787b891398e113f7824587",
+     "exemplo_pratico": "f3b9681fb589cc1ad3a3025e5ace6586cedffed1d592db9027387feebd795103",
+     "atencao": "31d7938d4a3894fc1ae0d6852b157932dd9bd86daffb2a9b3a09cde8635d8630",
+     "palavras_dificeis": "0377b62ed3018ab22efc7a855ddb75b09bd6c96e18c838c0f89c5710ba01b1bb"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.303, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “O comprador de imóvel hipotecado pode assumir a dívida garantida. Notificado, o credor que não se opõe em trinta dias é considerado concordante.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 180,
+   "target_id": "CC2002:ART.304",
+   "explanation_id": "ENTENDA/CC2002:ART.304/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.304:CAPUT\tQualquer interessado na extinção da dívida pode pagá-la, usando, se o credor se opuser, dos meios conducentes à exoneração do devedor.\nCC2002:ART.304:PAR.UNICO\tIgual direito cabe ao terceiro não interessado, se o fizer em nome e à conta do devedor, salvo oposição deste.",
+   "source_snapshot_sha256": "892a6cda346c23fd5ec06668a86b640d147790b6aa538e86acd765b34c71f995",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.304:CAPUT",
+     "text": "Qualquer interessado na extinção da dívida pode pagá-la, usando, se o credor se opuser, dos meios conducentes à exoneração do devedor."
+    },
+    {
+     "label": "CC2002:ART.304:PAR.UNICO",
+     "text": "Igual direito cabe ao terceiro não interessado, se o fizer em nome e à conta do devedor, salvo oposição deste."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Qualquer interessado na extinção da dívida pode pagá-la, usando, se o credor se opuser, dos meios conducentes à exoneração do devedor. | Igual direito cabe ao terceiro não interessado, se o fizer em nome e à conta do devedor, salvo oposição deste.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "bc9b4613e153dfc0d546dd38ad485aa2328962a3d5c82a1faafc5e036757b198",
+     "o_que_significa": "cd5c07232e3e1b64f6238f811dfdda4121ec2a9693b62aceda26b443a3c10c21",
+     "exemplo_pratico": "1cf6b24f957dd1802bf25a27f1224ff531c288042254eb372547d9dbd3cfbbc0",
+     "atencao": "52b5839aeba7ba41e91f69cbc2fab50006157598b1b44a4980006697fbcc9270",
+     "palavras_dificeis": "e43a56a50fb69249d7bc6b47d413e132631f5ed72cc9757f65aaf32fe515fdd9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.304, foram cotejados 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos. A baseline sintetiza a regra como: “Qualquer pessoa com interesse jurídico na extinção da dívida pode pagá-la e, diante de oposição do credor, usar meios para liberar o devedor. Terceiro sem interesse também pode pagar em nome e por conta do devedor, salvo oposição deste.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 181,
+   "target_id": "CC2002:ART.305",
+   "explanation_id": "ENTENDA/CC2002:ART.305/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.305:CAPUT\tO terceiro não interessado, que paga a dívida em seu próprio nome, tem direito a reembolsar-se do que pagar; mas não se sub-roga nos direitos do credor.\nCC2002:ART.305:PAR.UNICO\tSe pagar antes de vencida a dívida, só terá direito ao reembolso no vencimento.",
+   "source_snapshot_sha256": "ad0c685fbbc0660e6134a54ec051ca2f4c67ffaff49e13fb51fadbb187584588",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.305:CAPUT",
+     "text": "O terceiro não interessado, que paga a dívida em seu próprio nome, tem direito a reembolsar-se do que pagar; mas não se sub-roga nos direitos do credor."
+    },
+    {
+     "label": "CC2002:ART.305:PAR.UNICO",
+     "text": "Se pagar antes de vencida a dívida, só terá direito ao reembolso no vencimento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O terceiro não interessado, que paga a dívida em seu próprio nome, tem direito a reembolsar-se do que pagar; mas não se sub-roga nos direitos do credor. | Se pagar antes de vencida a dívida, só terá direito ao reembolso no vencimento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d0f2d3c3680488779087da468779d4463f4fb6ebbff6118fb05289c9260f0e2e",
+     "o_que_significa": "a4d6616410c4257cab3f48401704394824387495f0c2e8b772d3c7dec6545984",
+     "exemplo_pratico": "f1551c6aa4418206361a89ac8beb7fa85343be41598398b8beca229a0780c148",
+     "atencao": "4f974c88259ff44114fabc537ac385ad0123f2e55e3a50449010fc03dee036ae",
+     "palavras_dificeis": "ec3887e30ed929b50b094da3cd8233b69751c9f97e8459e0ed4eb28003409bd7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.305, foram cotejados 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos. A baseline sintetiza a regra como: “Terceiro sem interesse que paga em nome próprio pode pedir reembolso, mas não assume os direitos e garantias do credor. Se antecipa dívida, só cobra no vencimento.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 182,
+   "target_id": "CC2002:ART.306",
+   "explanation_id": "ENTENDA/CC2002:ART.306/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.306:CAPUT\tO pagamento feito por terceiro, com desconhecimento ou oposição do devedor, não obriga a reembolsar aquele que pagou, se o devedor tinha meios para ilidir a ação.",
+   "source_snapshot_sha256": "24d8ab7c397746cc75596074040f19d535af09b63849f9335a5930b9fe1f0fc0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.306:CAPUT",
+     "text": "O pagamento feito por terceiro, com desconhecimento ou oposição do devedor, não obriga a reembolsar aquele que pagou, se o devedor tinha meios para ilidir a ação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O pagamento feito por terceiro, com desconhecimento ou oposição do devedor, não obriga a reembolsar aquele que pagou, se o devedor tinha meios para ilidir a ação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a49f7d152e315e85701f5783631ce46bfe22e1c65eab220a50e5ee9622119692",
+     "o_que_significa": "341b70846f7b5d7975058203512a95bc3a77725901937bffcd811827b3bd1fb7",
+     "exemplo_pratico": "235d756e3609acda88b345156c0be47042c8d0a68d3eacfd6863b105ddbf5f2c",
+     "atencao": "d4208c7fc1fa9d65a715d20b5a84d15b43cc6ea684d72236f31ea4215834f02c",
+     "palavras_dificeis": "1984e0fc96db0a72278ffd052b5be4251a80f91182d91335d6f518bdab08184e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.306, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Pagamento feito sem conhecimento ou contra a vontade do devedor não gera reembolso se o devedor tinha defesa capaz de impedir a cobrança.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 183,
+   "target_id": "CC2002:ART.307",
+   "explanation_id": "ENTENDA/CC2002:ART.307/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.307:CAPUT\tSó terá eficácia o pagamento que importar transmissão da propriedade, quando feito por quem possa alienar o objeto em que ele consistiu.\nCC2002:ART.307:PAR.UNICO\tSe se der em pagamento coisa fungível, não se poderá mais reclamar do credor que, de boa-fé, a recebeu e consumiu, ainda que o solvente não tivesse o direito de aliená-la.",
+   "source_snapshot_sha256": "448256eded9af1fef22df391e29e01e71cce3861c6a4a9ccd219c087270c47b9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.307:CAPUT",
+     "text": "Só terá eficácia o pagamento que importar transmissão da propriedade, quando feito por quem possa alienar o objeto em que ele consistiu."
+    },
+    {
+     "label": "CC2002:ART.307:PAR.UNICO",
+     "text": "Se se der em pagamento coisa fungível, não se poderá mais reclamar do credor que, de boa-fé, a recebeu e consumiu, ainda que o solvente não tivesse o direito de aliená-la."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Só terá eficácia o pagamento que importar transmissão da propriedade, quando feito por quem possa alienar o objeto em que ele consistiu. | Se se der em pagamento coisa fungível, não se poderá mais reclamar do credor que, de boa-fé, a recebeu e consumiu, ainda que o solvente não tivesse o direito de aliená-la.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "588352dfa5750841d7ac24c109d825cf5d9c791d76ad6a4321837bbb27b49b3c",
+     "o_que_significa": "afd1172053aeb49d00dc4058c88ffe7e73e3290fa15d9b6ff4612cbaf1f0ddf6",
+     "exemplo_pratico": "081e9d6eee52f1043949957776f7a29e114d2d6412da1249cc5d23354fa4d39d",
+     "atencao": "2ac78c426f11524218e42793d5b805144d4f96b6edec9e1997b80f32a6feabda",
+     "palavras_dificeis": "7bcd925eb8d6909b9058e5d121b1d48937c29416f51a983e9a4dfab31103a2eb"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.307, foram cotejados 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos. A baseline sintetiza a regra como: “Pagamento que transfere propriedade só é eficaz se realizado por quem podia alienar o objeto. Porém, coisa fungível recebida e consumida de boa-fé pelo credor não pode ser reclamada dele.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 184,
+   "target_id": "CC2002:ART.308",
+   "explanation_id": "ENTENDA/CC2002:ART.308/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.308:CAPUT\tO pagamento deve ser feito ao credor ou a quem de direito o represente, sob pena de só valer depois de por ele ratificado, ou tanto quanto reverter em seu proveito.",
+   "source_snapshot_sha256": "778498a86db3d1afcc6e72a0e373d71c0b16be4cb42928524614c5392b8cc74f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.308:CAPUT",
+     "text": "O pagamento deve ser feito ao credor ou a quem de direito o represente, sob pena de só valer depois de por ele ratificado, ou tanto quanto reverter em seu proveito."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O pagamento deve ser feito ao credor ou a quem de direito o represente, sob pena de só valer depois de por ele ratificado, ou tanto quanto reverter em seu proveito.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d17558d8aae62d7ea6a00cd1b286af3773f99336e16cc5f87ce04f04b80f1c7a",
+     "o_que_significa": "365a93442b04bc918b237f9006417ab4337935e7a5829f538231dd8664efb563",
+     "exemplo_pratico": "512a6ddd6bde68891dced9b6f7fe0f558f7e4184dd1dc8f8863ce078d1f2e2fe",
+     "atencao": "70aae35fa2e0a0630785fd937e3e78d418bbddadc372cba72df79632a7615a0b",
+     "palavras_dificeis": "c5e6da6032d63e485fc90cd35b074cda24a771a09b8a90980627d4f7470c0010"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.308, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “O pagamento deve ser feito ao credor ou representante legítimo. Se entregue a outra pessoa, só vale quando ratificado pelo credor ou na medida em que efetivamente o beneficia.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 185,
+   "target_id": "CC2002:ART.309",
+   "explanation_id": "ENTENDA/CC2002:ART.309/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.309:CAPUT\tO pagamento feito de boa-fé ao credor putativo é válido, ainda provado depois que não era credor.",
+   "source_snapshot_sha256": "e2ebcbe090a5dc3ff62b0c4267eaf76d7b81929bf7d4c4ef23e3edd2ef36e516",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.309:CAPUT",
+     "text": "O pagamento feito de boa-fé ao credor putativo é válido, ainda provado depois que não era credor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O pagamento feito de boa-fé ao credor putativo é válido, ainda provado depois que não era credor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b7a94291947fc0313bddfd2d62cfa9642445d959bb586d55fa0a05474d3807c2",
+     "o_que_significa": "30fcb61d34f8676ccfce533d3fc53cfc3e8a909f4aeaa2aa13c590aab149aee6",
+     "exemplo_pratico": "d659cd4d415b7f19c96963a2b7b6cb61477126c63cebc10f0f38559ecb16a727",
+     "atencao": "8e70305ecdf5fcf20157a6e4d7b4276f6f478f1976ac2881978688de234e056d",
+     "palavras_dificeis": "187146d4b6bbefe1ecd40ea7ec48d7a70afc262f98bc3d127916f20255829384"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.309, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “É válido o pagamento feito de boa-fé a quem aparentava ser credor, mesmo que depois se prove que não era.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 186,
+   "target_id": "CC2002:ART.310",
+   "explanation_id": "ENTENDA/CC2002:ART.310/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.310:CAPUT\tNão vale o pagamento cientemente feito ao credor incapaz de quitar, se o devedor não provar que em benefício dele efetivamente reverteu.",
+   "source_snapshot_sha256": "6a4daf1dcd354c01990db6137a88e184e471127b9492767f0d6659f13a99d3f9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.310:CAPUT",
+     "text": "Não vale o pagamento cientemente feito ao credor incapaz de quitar, se o devedor não provar que em benefício dele efetivamente reverteu."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não vale o pagamento cientemente feito ao credor incapaz de quitar, se o devedor não provar que em benefício dele efetivamente reverteu.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2cd2b9b60189a62bb49e53236dfbd0793017a934ecec3167afaf18caa5d2add5",
+     "o_que_significa": "f84ae8484026fb8c5a46855a4c1cbc47602030baef5ad1618e3cadeb3c184456",
+     "exemplo_pratico": "562329bb1399b4f69a6cbb0c1a1d15e1b85a642cc2149e2832981d3b20213922",
+     "atencao": "2a10c1769bf797a4fb830edc2a1366b1e5d36b4f7a27adcdf7984cf6c1a51861",
+     "palavras_dificeis": "22977e5ff8bb80d2f31a02d8ca70f102e6897b7ae3f0797cdd7e9f13c4d733c5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.310, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Pagamento conscientemente feito a credor incapaz de dar quitação não vale, salvo prova de que o valor ou bem efetivamente reverteu em benefício dele.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 187,
+   "target_id": "CC2002:ART.311",
+   "explanation_id": "ENTENDA/CC2002:ART.311/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.311:CAPUT\tConsidera-se autorizado a receber o pagamento o portador da quitação, salvo se as circunstâncias contrariarem a presunção daí resultante.",
+   "source_snapshot_sha256": "bd1f28bb7b83ccfc88701bdc09e53db50ef7332e6d7ae6b7e7be99e305e5521e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.311:CAPUT",
+     "text": "Considera-se autorizado a receber o pagamento o portador da quitação, salvo se as circunstâncias contrariarem a presunção daí resultante."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Considera-se autorizado a receber o pagamento o portador da quitação, salvo se as circunstâncias contrariarem a presunção daí resultante.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "bacf64a2f28294b679b79efcd565b9d5a510dcf432b7e838e2cba49fe3b92ecb",
+     "o_que_significa": "01bb4d9c7795e506c9e09b24b89e3017bd8c146e85dca4e20b5270395d646c9b",
+     "exemplo_pratico": "0b23a07b2d713064936694296b1a9db37acfc9a89e5f0f9b5b481ee3f20211e5",
+     "atencao": "c7204d6bcb47cc374c669236d29bfdf35e87e3e60d55317be0df71f018c5a4d6",
+     "palavras_dificeis": "e0790b3b40c71724a8790f82234263ae63d60ce9a4019a29c96e5132daa8f156"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.311, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Quem apresenta a quitação é presumido autorizado a receber o pagamento, a menos que as circunstâncias afastem essa conclusão.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 188,
+   "target_id": "CC2002:ART.312",
+   "explanation_id": "ENTENDA/CC2002:ART.312/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.312:CAPUT\tSe o devedor pagar ao credor, apesar de intimado da penhora feita sobre o crédito, ou da impugnação a ele oposta por terceiros, o pagamento não valerá contra estes, que poderão constranger o devedor a pagar de novo, ficando-lhe ressalvado o regresso contra o credor.",
+   "source_snapshot_sha256": "232b45b91aa188e87171a1e86b6d4c57517d7fa6591d901fc4c40f11008507eb",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.312:CAPUT",
+     "text": "Se o devedor pagar ao credor, apesar de intimado da penhora feita sobre o crédito, ou da impugnação a ele oposta por terceiros, o pagamento não valerá contra estes, que poderão constranger o devedor a pagar de novo, ficando-lhe ressalvado o regresso contra o credor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o devedor pagar ao credor, apesar de intimado da penhora feita sobre o crédito, ou da impugnação a ele oposta por terceiros, o pagamento não valerá contra estes, que poderão constranger o devedor a pagar de novo, ficando-lhe ressalvado o regresso contra o credor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "3c1136d688aec4a535366d177ce5f28a1c21d70cb5c3fd5990b4cd170061cbec",
+     "o_que_significa": "d727d88850ded47b31171af58c5f4c8bdcd49b5ee3c3ce1ec2d5a4d48f8d924d",
+     "exemplo_pratico": "9e8e22bf6e1e4ba3841cda960e67efa007543c38688709f43887114c61a3ee3b",
+     "atencao": "a14ba2949448dc17d62974cedacc50469a9a8de400c8e8dcdf3e796035b87604",
+     "palavras_dificeis": "5d405283535ae0d310565207b35bb04b4c75264b56edc31292abea2fdb384f0d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.312, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “O pagamento feito ao credor depois de o devedor ser intimado de penhora sobre o crédito ou de oposição de terceiro não produz efeito contra esse terceiro.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 189,
+   "target_id": "CC2002:ART.313",
+   "explanation_id": "ENTENDA/CC2002:ART.313/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.313:CAPUT\tO credor não é obrigado a receber prestação diversa da que lhe é devida, ainda que mais valiosa.",
+   "source_snapshot_sha256": "aac608d1a74b6c72702407820ba4a53349e5e71cfb79b53ffcdee12e7f518569",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.313:CAPUT",
+     "text": "O credor não é obrigado a receber prestação diversa da que lhe é devida, ainda que mais valiosa."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O credor não é obrigado a receber prestação diversa da que lhe é devida, ainda que mais valiosa.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9fefb3a82202dc07159a92e3c5376b6d038bec2311e9d9b159697d18fcde181f",
+     "o_que_significa": "c2ea3766394d48b6022ae2c6e760e1e9517fb9e65b46fc1bcc04864948885f39",
+     "exemplo_pratico": "f007ecac87378500a485807b019347986d4c1ba98e6f5f36a1dc5f55d77f990c",
+     "atencao": "fcae71f6150af6c53fdeb115c6d7358620250ec57438deb57ac9b1e545eb5ad8",
+     "palavras_dificeis": "ebf47ed8f1c4060a78a64948ee288423f91527cafe71cc85ce66f5cca913dc19"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.313, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “O credor pode recusar prestação diferente da contratada, mesmo que a substituta tenha valor econômico maior.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 190,
+   "target_id": "CC2002:ART.314",
+   "explanation_id": "ENTENDA/CC2002:ART.314/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.314:CAPUT\tAinda que a obrigação tenha por objeto prestação divisível, não pode o credor ser obrigado a receber, nem o devedor a pagar, por partes, se assim não se ajustou.",
+   "source_snapshot_sha256": "c3d691b59bf2f0625d18c9f8e66ef9d481254e011b6f642b03f01b62cdd59c19",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.314:CAPUT",
+     "text": "Ainda que a obrigação tenha por objeto prestação divisível, não pode o credor ser obrigado a receber, nem o devedor a pagar, por partes, se assim não se ajustou."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Ainda que a obrigação tenha por objeto prestação divisível, não pode o credor ser obrigado a receber, nem o devedor a pagar, por partes, se assim não se ajustou.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ab3a54ba8229a39924097d83637e1d6e1f18cdd888f2d60f9c666ad1c77ccf66",
+     "o_que_significa": "7ab5b4876dcfcb2745340038e2c0bdaf04d93a1609eb97d26ac5c9ea9a3cccdf",
+     "exemplo_pratico": "850ce93ec7952d52ea4ef61c9ac77c9c6837536266c368752421dea7a1f4140f",
+     "atencao": "8f94e949242dfaf01e095ae5c7c85c053f8caa81b8ac7f54ad1f3e9e1f7f925a",
+     "palavras_dificeis": "3e632767d7f36c3c750fcf3d83fd466b1af7eebdd100bc45739d47fef3aef04c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.314, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Sem ajuste permitindo fracionamento, nenhuma parte pode impor à outra pagamento parcial, ainda que a prestação seja materialmente divisível.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 191,
+   "target_id": "CC2002:ART.315",
+   "explanation_id": "ENTENDA/CC2002:ART.315/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.315:CAPUT\tAs dívidas em dinheiro deverão ser pagas no vencimento, em moeda corrente e pelo valor nominal, salvo o disposto nos artigos subseqüentes.",
+   "source_snapshot_sha256": "083b22cf5fcb629c9a1f4681cdabcd755f829fbb46ea948cef0817d969a312a0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.315:CAPUT",
+     "text": "As dívidas em dinheiro deverão ser pagas no vencimento, em moeda corrente e pelo valor nominal, salvo o disposto nos artigos subseqüentes."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: As dívidas em dinheiro deverão ser pagas no vencimento, em moeda corrente e pelo valor nominal, salvo o disposto nos artigos subseqüentes.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e55ca10a8cf2c3ec04331154e6943396124f0c66c84c470840ca1c2531f93c78",
+     "o_que_significa": "d64639502a0c4eb0a06483a501beddea01168c928fd94139f7339cbf2962c596",
+     "exemplo_pratico": "593d3aef14dcbdf783900d13c0e4d60585533be18e680ae87a769c507dc02ce4",
+     "atencao": "9d27afeee68e1b190e2d28bd0b3f3577743c194a99f9e60e756e2e550913d992",
+     "palavras_dificeis": "a9f10b7280750982778ed98da4f70caa38a88719a4e9de7aec7ed7a43c1bb203"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.315, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Dívidas pecuniárias são satisfeitas no vencimento, em moeda de curso legal e pelo montante nominal, ressalvadas as regras seguintes.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 192,
+   "target_id": "CC2002:ART.316",
+   "explanation_id": "ENTENDA/CC2002:ART.316/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.316:CAPUT\tÉ lícito convencionar o aumento progressivo de prestações sucessivas.",
+   "source_snapshot_sha256": "3ca0bce37e8a77d3105c43b5c06f787435e8af6e34147783d32bea4c86fc1e8d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.316:CAPUT",
+     "text": "É lícito convencionar o aumento progressivo de prestações sucessivas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: É lícito convencionar o aumento progressivo de prestações sucessivas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e54473f8697d3006d596492bf2408f10bcf5a2f76510d4f9f89781bdb403f4b1",
+     "o_que_significa": "ca65faf1b9a04ec08376cf636bee21a08383ea1781893324519453565d73803c",
+     "exemplo_pratico": "9f4744c302d0eeafa44d0b7e49287ff5da97603f510ed78282023a07db7e562a",
+     "atencao": "bc13f41a488c51f7009984b8ca6e1c8088ce682137f0b9d7bd813f4bbbc068d7",
+     "palavras_dificeis": "48f7f24a50dc3f4c319cbe5bfd494d7662dde6c08b0910d53287820c2f1b1f7f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.316, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “As partes podem estipular crescimento gradual do valor de prestações que se repetem ao longo do tempo.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 193,
+   "target_id": "CC2002:ART.317",
+   "explanation_id": "ENTENDA/CC2002:ART.317/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.317:CAPUT\tQuando, por motivos imprevisíveis, sobrevier desproporção manifesta entre o valor da prestação devida e o do momento de sua execução, poderá o juiz corrigi-lo, a pedido da parte, de modo que assegure, quanto possível, o valor real da prestação.",
+   "source_snapshot_sha256": "b19d05b8a2a2c6fb3cb239a149245c5513d9c3d81b69129a80587a40c80ad82d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.317:CAPUT",
+     "text": "Quando, por motivos imprevisíveis, sobrevier desproporção manifesta entre o valor da prestação devida e o do momento de sua execução, poderá o juiz corrigi-lo, a pedido da parte, de modo que assegure, quanto possível, o valor real da prestação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Quando, por motivos imprevisíveis, sobrevier desproporção manifesta entre o valor da prestação devida e o do momento de sua execução, poderá o juiz corrigi-lo, a pedido da parte, de modo que assegure, quanto possível, o valor real da prestação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "131ff4d02080e93fe237891b85a4478df0c228745ca3acef046c2af727eb2fee",
+     "o_que_significa": "a49572ab0ae6aaeeec8a2ca930884426fc6ae6b0612a1f054f837bce49d859f5",
+     "exemplo_pratico": "0f6aefa572fc8f818f4b663b6154abda394f9d67f85d87655b1b8214843f9e6b",
+     "atencao": "babb0278f68e341769841ba426fd74b9a98eac134bb5ad38767cc45144aee5db",
+     "palavras_dificeis": "4305c3c9107723dc9a3678b4c735719cf816b8ec979e8bf770c403553d4c7acc"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.317, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “A parte pode pedir ao juiz correção do valor da prestação quando fato imprevisível criar desequilíbrio manifesto entre o valor devido e o existente no momento de cumprir.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 194,
+   "target_id": "CC2002:ART.318",
+   "explanation_id": "ENTENDA/CC2002:ART.318/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.318:CAPUT\tSão nulas as convenções de pagamento em ouro ou em moeda estrangeira, bem como para compensar a diferença entre o valor desta e o da moeda nacional, excetuados os casos previstos na legislação especial.",
+   "source_snapshot_sha256": "45aea5546c4efa0d13276d3473c9e4beea2766cb92b828feac9bfbce1c20b925",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.318:CAPUT",
+     "text": "São nulas as convenções de pagamento em ouro ou em moeda estrangeira, bem como para compensar a diferença entre o valor desta e o da moeda nacional, excetuados os casos previstos na legislação especial."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: São nulas as convenções de pagamento em ouro ou em moeda estrangeira, bem como para compensar a diferença entre o valor desta e o da moeda nacional, excetuados os casos previstos na legislação especial.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "efbef12ea9edd6ba974c3dda1e7fec0affa2d536687be68c983f99e43484e1bd",
+     "o_que_significa": "0c63f18a4f5fcbf133280d57903cef24c2fb61c063ad8bf2f6b4974b8c772a56",
+     "exemplo_pratico": "a57ac3c8f022a8f1ba0faebf7286f1bd83ffa054bfe7efa02361f585aee95dd4",
+     "atencao": "dd063b232c5e0e187d916495c67638467cd4d2d865ccf8ac93364cb64d21cdcd",
+     "palavras_dificeis": "653972169eee9cc99ac54f02f4c715e25499674485e00c5f51cc7afe4e340e93"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.318, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Em regra, são nulas cláusulas que imponham pagamento em ouro, moeda estrangeira ou equivalência com esta, salvo autorização de legislação especial.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 195,
+   "target_id": "CC2002:ART.319",
+   "explanation_id": "ENTENDA/CC2002:ART.319/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.319:CAPUT\tO devedor que paga tem direito a quitação regular, e pode reter o pagamento, enquanto não lhe seja dada.",
+   "source_snapshot_sha256": "c2f2440055f4a57843547217ffb841f0338011e89083799cbc92d4a809bd9f94",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.319:CAPUT",
+     "text": "O devedor que paga tem direito a quitação regular, e pode reter o pagamento, enquanto não lhe seja dada."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O devedor que paga tem direito a quitação regular, e pode reter o pagamento, enquanto não lhe seja dada.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "54cf6535dc0734d1a5919a3172b512b04991480881042a6ff73c1d3f1a65d867",
+     "o_que_significa": "6b9239b73b7e071fd5c73c45ee464497e75e39f5253d0d5110f342afd3ba0666",
+     "exemplo_pratico": "bab607fe460465715d3c5acfa50c23514d534fc9e950e43e41149b23a8913b14",
+     "atencao": "8b91c9cbb7ad685f23ae2c626ac4f921a4c73217292a2a12978c63da3f79c759",
+     "palavras_dificeis": "966342a5ca81001004022602786d57ef2e1281c6826b310517b6337f963cb9c3"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.319, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que O devedor que paga tem direito a quitação regular, e pode reter o pagamento, enquanto não lhe seja dada. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 196,
+   "target_id": "CC2002:ART.320",
+   "explanation_id": "ENTENDA/CC2002:ART.320/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.320:CAPUT\tA quitação, que sempre poderá ser dada por instrumento particular, designará o valor e a espécie da dívida quitada, o nome do devedor, ou quem por este pagou, o tempo e o lugar do pagamento, com a assinatura do credor, ou do seu representante.\nCC2002:ART.320:PAR.UNICO\tAinda sem os requisitos estabelecidos neste artigo valerá a quitação, se de seus termos ou das circunstâncias resultar haver sido paga a dívida.",
+   "source_snapshot_sha256": "4487ef20bf0f382224b17b5265112a7fbd4f6cf8548edff90023b340042387cf",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.320:CAPUT",
+     "text": "A quitação, que sempre poderá ser dada por instrumento particular, designará o valor e a espécie da dívida quitada, o nome do devedor, ou quem por este pagou, o tempo e o lugar do pagamento, com a assinatura do credor, ou do seu representante."
+    },
+    {
+     "label": "CC2002:ART.320:PAR.UNICO",
+     "text": "Ainda sem os requisitos estabelecidos neste artigo valerá a quitação, se de seus termos ou das circunstâncias resultar haver sido paga a dívida."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A quitação, que sempre poderá ser dada por instrumento particular, designará o valor e a espécie da dívida quitada, o nome do devedor, ou quem por este pagou, o tempo e o lugar do pagamento, com a assinatura do credor, ou do seu representante. | Ainda sem os requisitos estabelecidos neste artigo valerá a quitação, se de seus termos ou das circunstâncias resultar haver sido paga a dívida.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9d1a2c4a54cccd09a475252b7977ff7bf39b4215fdc714667306a5da3f3b0558",
+     "o_que_significa": "151c8d96d149ba15e776f4b05dcf0d426e4e63d5f9a85956680fa9400fa42d6f",
+     "exemplo_pratico": "17efbdbe5d8eb177c4e32c5a011f1f8b2a441a7a89c833f7367604e3b5880f4c",
+     "atencao": "cfd962831080bf958d95be96b5a0695e5863389a70cdd7e7d751688fcba4618a",
+     "palavras_dificeis": "20838bb4abc227280137317ea0f1ea7e21bfd31ccc10eff0769c110b03af05c7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.320, foram confrontados individualmente os 2 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que A quitação, que sempre poderá ser dada por instrumento particular, designará o valor e a espécie da dívida quitada, o nome do devedor, ou quem por este pagou, o tempo e o lugar do pagamento, com a assinatura do credor, ou do seu representante. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 197,
+   "target_id": "CC2002:ART.321",
+   "explanation_id": "ENTENDA/CC2002:ART.321/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.321:CAPUT\tNos débitos, cuja quitação consista na devolução do título, perdido este, poderá o devedor exigir, retendo o pagamento, declaração do credor que inutilize o título desaparecido.",
+   "source_snapshot_sha256": "81b08e52b36c57a0e23e992f9a56482490ca61f558443a376a9f64f12fb9eb98",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.321:CAPUT",
+     "text": "Nos débitos, cuja quitação consista na devolução do título, perdido este, poderá o devedor exigir, retendo o pagamento, declaração do credor que inutilize o título desaparecido."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Nos débitos, cuja quitação consista na devolução do título, perdido este, poderá o devedor exigir, retendo o pagamento, declaração do credor que inutilize o título desaparecido.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "68456f6feeaeb260cfb5db758688f31bbfac7b6a4d601c26c23a1f1112d11c08",
+     "o_que_significa": "f00a9a88d116f87e1a73bbd74e2427b1538f2736c67c4db0f8d31d75c3f8c0d0",
+     "exemplo_pratico": "125c389f2e5c358c8b6c37360be1e4708caddbbacba082b1dd1e6ce2fc371d1a",
+     "atencao": "790356184d68c7a092432b73c00f6dadee9ba1471906422e84ecb395d11fb9e8",
+     "palavras_dificeis": "36697643dff0f576a35fc70259e5b649062b3e5727b1f82305892d75be1297d7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.321, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Nos débitos, cuja quitação consista na devolução do título, perdido este, poderá o devedor exigir, retendo o pagamento, declaração do credor que inutilize o título desaparecido. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 198,
+   "target_id": "CC2002:ART.322",
+   "explanation_id": "ENTENDA/CC2002:ART.322/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.322:CAPUT\tQuando o pagamento for em quotas periódicas, a quitação da última estabelece, até prova em contrário, a presunção de estarem solvidas as anteriores.",
+   "source_snapshot_sha256": "26407c2d7fa2fe3c6be92f0379a87add56f09eee7efc989451a04694b984285a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.322:CAPUT",
+     "text": "Quando o pagamento for em quotas periódicas, a quitação da última estabelece, até prova em contrário, a presunção de estarem solvidas as anteriores."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Quando o pagamento for em quotas periódicas, a quitação da última estabelece, até prova em contrário, a presunção de estarem solvidas as anteriores.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "cbfc8f1cd7462bca50d503c519478e88fe2f6a79ad811bcb78a5dad46e76a421",
+     "o_que_significa": "52172a501506e472ca360caf138fdf89572e1839f8485b94128ca616dde63880",
+     "exemplo_pratico": "9e8d7103ebbcfb0486ca97da88fceb852f3db59da4a0c15e1360501c6bff531a",
+     "atencao": "14bb895b93d644776e1d58e21a71a720b776e9bdcc71164dace8256f791aa997",
+     "palavras_dificeis": "a58d64ed8c40fb58040adcf7dd77831ad2c3a4c21899d7a5b5d6900733819d4a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.322, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Quando o pagamento for em quotas periódicas, a quitação da última estabelece, até prova em contrário, a presunção de estarem solvidas as anteriores. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 199,
+   "target_id": "CC2002:ART.323",
+   "explanation_id": "ENTENDA/CC2002:ART.323/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.323:CAPUT\tSendo a quitação do capital sem reserva dos juros, estes presumem-se pagos.",
+   "source_snapshot_sha256": "59c21709a776c08e9238a6118bd331a01f09e67fe17a928c1ae794a8906e4c82",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.323:CAPUT",
+     "text": "Sendo a quitação do capital sem reserva dos juros, estes presumem-se pagos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Sendo a quitação do capital sem reserva dos juros, estes presumem-se pagos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e1aeb866c2cfbab6339440c95ef0b66ac8198c28f396be574a626ffc7157113d",
+     "o_que_significa": "df1ed43b2c2152831cba4885177cf2cc9136816454efaa8091716f533de62be3",
+     "exemplo_pratico": "38590d1922d24e21d641f252e2c094feed797b4402f09a7629493d6e65cac107",
+     "atencao": "0b751300fc0e447baafb0e43136fcf19cc33d67c8522937d7e8344efa89a1dee",
+     "palavras_dificeis": "057115d45b88c625a8884dae02b680f87e8ce232e3e54b09085eb1ae9b80e901"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.323, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Sendo a quitação do capital sem reserva dos juros, estes presumem-se pagos. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 200,
+   "target_id": "CC2002:ART.324",
+   "explanation_id": "ENTENDA/CC2002:ART.324/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.324:CAPUT\tA entrega do título ao devedor firma a presunção do pagamento.\nCC2002:ART.324:PAR.UNICO\tFicará sem efeito a quitação assim operada se o credor provar, em sessenta dias, a falta do pagamento.",
+   "source_snapshot_sha256": "3062c44d9f10ce264ebf1ff140b64c4ae7934361e63dee2ff2e4c5d6f13cfde4",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.324:CAPUT",
+     "text": "A entrega do título ao devedor firma a presunção do pagamento."
+    },
+    {
+     "label": "CC2002:ART.324:PAR.UNICO",
+     "text": "Ficará sem efeito a quitação assim operada se o credor provar, em sessenta dias, a falta do pagamento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A entrega do título ao devedor firma a presunção do pagamento. | Ficará sem efeito a quitação assim operada se o credor provar, em sessenta dias, a falta do pagamento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f60629a35b17caded13f13528c595c99838b3f842c673dd5304416da34629289",
+     "o_que_significa": "5503a1c414e7cd500117009c0f88461efc077dcef4691cc940fbe7b8ad145fc1",
+     "exemplo_pratico": "989c03147da31da8da276295212bb51d15dfb3c9a5a53d155a28784088c65e93",
+     "atencao": "f45df2735967c05ff9f48701781685a3beed1083a2931e6832d2699c8b16cf54",
+     "palavras_dificeis": "fe5c67181014e8c424611a70a149fe24a5219db10d0d3c670579e6ef5610d707"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.324, foram confrontados individualmente os 2 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que A entrega do título ao devedor firma a presunção do pagamento. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
   }
  ]
 }
