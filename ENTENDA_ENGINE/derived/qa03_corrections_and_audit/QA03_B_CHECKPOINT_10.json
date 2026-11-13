@@ -1,0 +1,1317 @@
+{
+ "schema_version": 1,
+ "mission": "QA-03-FRONT-B",
+ "checkpoint": "B-CP10",
+ "as_of": "2026-11-13",
+ "status": "COMPLETE",
+ "source_queue": "QA03_AUDIT_388_QUEUE.json",
+ "source_queue_sha256": "b42fdebc0027548ce3458e188ff748c963bf7ff5c6c8d675ddaf2d4a82148e08",
+ "queue_positions": [
+  226,
+  250
+ ],
+ "examined": 25,
+ "target_ids": [
+  "CC2002:ART.350",
+  "CC2002:ART.351",
+  "CC2002:ART.352",
+  "CC2002:ART.353",
+  "CC2002:ART.354",
+  "CC2002:ART.355",
+  "CC2002:ART.356",
+  "CC2002:ART.357",
+  "CC2002:ART.358",
+  "CC2002:ART.359",
+  "CC2002:ART.360",
+  "CC2002:ART.361",
+  "CC2002:ART.362",
+  "CC2002:ART.363",
+  "CC2002:ART.364",
+  "CC2002:ART.365",
+  "CC2002:ART.366",
+  "CC2002:ART.367",
+  "CC2002:ART.368",
+  "CC2002:ART.369",
+  "CC2002:ART.370",
+  "CC2002:ART.371",
+  "CC2002:ART.372",
+  "CC2002:ART.373",
+  "CC2002:ART.375"
+ ],
+ "findings": 1,
+ "finding_counts": {
+  "ALTO": 1
+ },
+ "protected_sha256": {
+  "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+  "lookup": "60f1de336f2f9ecbc5e671d0a6a9223cf20e47ab5826a5501b53f9a67551866e",
+  "payload": "9fb3f3a1b6f1c1926eda0818fc753f2d0348194cf25b0a333fc6fa18c48222cb",
+  "qa02_corrections": "0d8cce6b3b9c335e7f71502b88c81488ae53732a7927708f2f83701504896e6b"
+ },
+ "records": [
+  {
+   "queue_position": 226,
+   "target_id": "CC2002:ART.350",
+   "explanation_id": "ENTENDA/CC2002:ART.350/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.350:CAPUT\tNa sub-rogação legal o sub-rogado não poderá exercer os direitos e as ações do credor, senão até à soma que tiver desembolsado para desobrigar o devedor.",
+   "source_snapshot_sha256": "6f2883ed06e119aa52bfa479d49f0f9052c6f9e546e49e5fb28c93f4b8bbfb3e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.350:CAPUT",
+     "text": "Na sub-rogação legal o sub-rogado não poderá exercer os direitos e as ações do credor, senão até à soma que tiver desembolsado para desobrigar o devedor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Na sub-rogação legal o sub-rogado não poderá exercer os direitos e as ações do credor, senão até à soma que tiver desembolsado para desobrigar o devedor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "34ce76547fb91477eb1a736112ee62838d538f41ec2ce49b800a70cfa3349020",
+     "o_que_significa": "18c7f2b3f75bd6c96f142287fecc08b8eb09eb5e8809e20264eae5e6a6e2e406",
+     "exemplo_pratico": "5b26684ca03056275f757e0954238a9c0cd8ef3e7f0b07cf3f064652a9e9194a",
+     "atencao": "f7c034ba0b3f2681990817ff280250e413f1f440f6c5d05c95e8ecba4686129d",
+     "palavras_dificeis": "3def004d3fd929dab4380306bb6871e9b128f550aed1089f155802fdb247a753"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.350, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Na sub-rogação legal o sub-rogado não poderá exercer os direitos e as ações do credor, senão até à soma que tiver desembolsado para desobrigar o devedor. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 227,
+   "target_id": "CC2002:ART.351",
+   "explanation_id": "ENTENDA/CC2002:ART.351/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.351:CAPUT\tO credor originário, só em parte reembolsado, terá preferência ao sub-rogado, na cobrança da dívida restante, se os bens do devedor não chegarem para saldar inteiramente o que a um e outro dever.",
+   "source_snapshot_sha256": "d4a8ee9cd1fa8297d01a5ed8ae90b538f685b720b3a60347f81434a9ecdef047",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.351:CAPUT",
+     "text": "O credor originário, só em parte reembolsado, terá preferência ao sub-rogado, na cobrança da dívida restante, se os bens do devedor não chegarem para saldar inteiramente o que a um e outro dever."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O credor originário, só em parte reembolsado, terá preferência ao sub-rogado, na cobrança da dívida restante, se os bens do devedor não chegarem para saldar inteiramente o que a um e outro dever.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "abb2baf00c8a06a6226c0d6e403ebb6525b0ffff6e1a74789b83163c15327d3f",
+     "o_que_significa": "a61770f23cabe6b686041580076620f500e9c753d4ee916afa083409fc0bb22e",
+     "exemplo_pratico": "ca5b1775b63b578aef30c88284409fb0f2652a1094d2a07ebf4ab11f4ab1131f",
+     "atencao": "6d1012e75556613d5dcb5efcf4bf95e1fb93b895b045e66ae1de6065135e53ec",
+     "palavras_dificeis": "0b1b93f60131d1f15dec0f62f67d6683b43f10a2bb671e776b8668876e84e03a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.351, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que O credor originário, só em parte reembolsado, terá preferência ao sub-rogado, na cobrança da dívida restante, se os bens do devedor não chegarem para saldar inteiramente o que a um e outro dever. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 228,
+   "target_id": "CC2002:ART.352",
+   "explanation_id": "ENTENDA/CC2002:ART.352/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.352:CAPUT\tA pessoa obrigada por dois ou mais débitos da mesma natureza, a um só credor, tem o direito de indicar a qual deles oferece pagamento, se todos forem líquidos e vencidos.",
+   "source_snapshot_sha256": "cd33949b571b8505de2ed62b04c316cd7330d8cd65858ed226b2a10d20749cea",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.352:CAPUT",
+     "text": "A pessoa obrigada por dois ou mais débitos da mesma natureza, a um só credor, tem o direito de indicar a qual deles oferece pagamento, se todos forem líquidos e vencidos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A pessoa obrigada por dois ou mais débitos da mesma natureza, a um só credor, tem o direito de indicar a qual deles oferece pagamento, se todos forem líquidos e vencidos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a528bde30a39e67da5f07da06ac73a5ee95c3f87f238a1cd84ad69531aaa06cb",
+     "o_que_significa": "a31caa618c683fccd8c1189d82b53d061dd9c5e2ddcb283454fe32772b94e211",
+     "exemplo_pratico": "68d8793e7f1b7f452847b2921ad33fc5d165a347c868c171737d186b915cdd4d",
+     "atencao": "849b9096d55bf926ebac63539512ed02ec532c7f4394bff882343914dfc41b54",
+     "palavras_dificeis": "4310783dcd8ead0e8ed243f1f340ae2331dddabd95d4de0e6e9f32bf74fb6817"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.352, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que A pessoa obrigada por dois ou mais débitos da mesma natureza, a um só credor, tem o direito de indicar a qual deles oferece pagamento, se todos forem líquidos e vencidos. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 229,
+   "target_id": "CC2002:ART.353",
+   "explanation_id": "ENTENDA/CC2002:ART.353/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.353:CAPUT\tNão tendo o devedor declarado em qual das dívidas líquidas e vencidas quer imputar o pagamento, se aceitar a quitação de uma delas, não terá direito a reclamar contra a imputação feita pelo credor, salvo provando haver ele cometido violência ou dolo.",
+   "source_snapshot_sha256": "046d30b4bd8f3f49189e577478564dedf70f3a8bd61d65f004bf3bba6d65d4bb",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.353:CAPUT",
+     "text": "Não tendo o devedor declarado em qual das dívidas líquidas e vencidas quer imputar o pagamento, se aceitar a quitação de uma delas, não terá direito a reclamar contra a imputação feita pelo credor, salvo provando haver ele cometido violência ou dolo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não tendo o devedor declarado em qual das dívidas líquidas e vencidas quer imputar o pagamento, se aceitar a quitação de uma delas, não terá direito a reclamar contra a imputação feita pelo credor, salvo provando haver ele cometido violência ou dolo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6019bcdcd9896b08d51af3c1874a2e018824b38167943d981383e31a70380aa3",
+     "o_que_significa": "eca2310bb85ea629be01962d3e98e6e9a973ec6792da5ce6d7ed0a10bc79b8e7",
+     "exemplo_pratico": "ca78098c68525254d91d03c5e171b6473c37de4e8843c4ba5752081dbaa52472",
+     "atencao": "986689be280fb2e38a0c4bcedf1a72bff3fbd94ee95a13ccf005530204dfdff2",
+     "palavras_dificeis": "808df4c0dd5b2a8bb1c1cc7778a05aa84887950ea197be8e46ef39157f6f0e07"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.353, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Não tendo o devedor declarado em qual das dívidas líquidas e vencidas quer imputar o pagamento, se aceitar a quitação de uma delas, não terá direito a reclamar contra a imputação feita pelo credor, salvo provando haver ele cometido violência ou dolo. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 230,
+   "target_id": "CC2002:ART.354",
+   "explanation_id": "ENTENDA/CC2002:ART.354/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.354:CAPUT\tHavendo capital e juros, o pagamento imputar-se-á primeiro nos juros vencidos, e depois no capital, salvo estipulação em contrário, ou se o credor passar a quitação por conta do capital.",
+   "source_snapshot_sha256": "8518225f7b5010dad164fe17291ee93bdfd3bf57091ea3b52753ce22529d713c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.354:CAPUT",
+     "text": "Havendo capital e juros, o pagamento imputar-se-á primeiro nos juros vencidos, e depois no capital, salvo estipulação em contrário, ou se o credor passar a quitação por conta do capital."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Havendo capital e juros, o pagamento imputar-se-á primeiro nos juros vencidos, e depois no capital, salvo estipulação em contrário, ou se o credor passar a quitação por conta do capital.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "35a14e9b259881eff2aad10fdf8ced533b4d8fa785a0b34eab6b12994468a626",
+     "o_que_significa": "ab7cfa1d99f6cbb4a5e82ac5bd80ce30fa3b15f793ccce5709473379d7dc4dc7",
+     "exemplo_pratico": "7fbda52059eb1c03441709fbada020da6680b150ea3ee00836716290095990b7",
+     "atencao": "b20ff89700b5824c622c25ef25d22af5484cb52afb012616c4078059aaa41298",
+     "palavras_dificeis": "28772d636f9cc7c51bc78a5dc6d9f48e91fb5f02b8df979dda459de8fab90301"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.354, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Havendo capital e juros, o pagamento imputar-se-á primeiro nos juros vencidos, e depois no capital, salvo estipulação em contrário, ou se o credor passar a quitação por conta do capital. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 231,
+   "target_id": "CC2002:ART.355",
+   "explanation_id": "ENTENDA/CC2002:ART.355/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.355:CAPUT\tSe o devedor não fizer a indicação do art. 352, e a quitação for omissa quanto à imputação, esta se fará nas dívidas líquidas e vencidas em primeiro lugar. Se as dívidas forem todas líquidas e vencidas ao mesmo tempo, a imputação far-se-á na mais onerosa.",
+   "source_snapshot_sha256": "228f23852d71d64b7b570d0e106df8fbcc744c2db1782a9f3d52b73d6588f9b7",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.355:CAPUT",
+     "text": "Se o devedor não fizer a indicação do art. 352, e a quitação for omissa quanto à imputação, esta se fará nas dívidas líquidas e vencidas em primeiro lugar. Se as dívidas forem todas líquidas e vencidas ao mesmo tempo, a imputação far-se-á na mais onerosa."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o devedor não fizer a indicação do art. 352, e a quitação for omissa quanto à imputação, esta se fará nas dívidas líquidas e vencidas em primeiro lugar. Se as dívidas forem todas líquidas e vencidas ao mesmo tempo, a imputação far-se-á na mais onerosa.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "52cfc92eec11c97de348ea0e079e9df71da85e85b40e89e7b3305096b03d3b1e",
+     "o_que_significa": "891b682280b4e581dbe11e25d8165eef3d637c2b9aeb9196c04cd955a47b75e1",
+     "exemplo_pratico": "15a2dac6c4e9bf33bb5e618cdc3ab6516e572a65d0fb378f3cfee9f20fd0f1f1",
+     "atencao": "11167231ff5c4f6e409fcf55dd1775b354bde5f514812b552fb2ab399162cd4f",
+     "palavras_dificeis": "15016fd6e272d06e7a40637c713a1f3e6591b17e427f0401774b963003de45f7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.355, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Se o devedor não fizer a indicação do art. 352, e a quitação for omissa quanto à imputação, esta se fará nas dívidas líquidas e vencidas em primeiro lugar. Se as dívidas forem todas líquidas e vencidas ao mesmo tempo, a imputação far-se-á na mais... e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 232,
+   "target_id": "CC2002:ART.356",
+   "explanation_id": "ENTENDA/CC2002:ART.356/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.356:CAPUT\tO credor pode consentir em receber prestação diversa da que lhe é devida.",
+   "source_snapshot_sha256": "5d917d6c9f80f225ffe842aedf57c7fb4307f2a8cd7c777e78b16b8f01afe9f9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.356:CAPUT",
+     "text": "O credor pode consentir em receber prestação diversa da que lhe é devida."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O credor pode consentir em receber prestação diversa da que lhe é devida.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5c674a94053237c1beef7bf28bedbf1739e051b14db41df83e3e11c14bc2f4f4",
+     "o_que_significa": "206c3b59fc626e465f1d0e4f5a0c3e54c699dbcdd8869ae5544223580adc132b",
+     "exemplo_pratico": "c1374a53150598f63e5ef03b2551cb355ada4c58135e3373d10f74acd581bf12",
+     "atencao": "c60cfbbc803f86ada48c6cff4dcdca072462130d281804005408307dfd0193d5",
+     "palavras_dificeis": "ed334c5895238402a30e86fbd25f0685b2aad06ffd13fab39a8f368fedafc80e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.356, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que O credor pode consentir em receber prestação diversa da que lhe é devida. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 233,
+   "target_id": "CC2002:ART.357",
+   "explanation_id": "ENTENDA/CC2002:ART.357/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.357:CAPUT\tDeterminado o preço da coisa dada em pagamento, as relações entre as partes regular-se-ão pelas normas do contrato de compra e venda.",
+   "source_snapshot_sha256": "48bf214ba23c18dfb7dedcd8b7e064617a1172d7e6e8aa3b1584ba19cc127a69",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.357:CAPUT",
+     "text": "Determinado o preço da coisa dada em pagamento, as relações entre as partes regular-se-ão pelas normas do contrato de compra e venda."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Determinado o preço da coisa dada em pagamento, as relações entre as partes regular-se-ão pelas normas do contrato de compra e venda.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7431257bf308aa7d4aa3da6bf39a02103b1af04e31c0fc2cffdaf95f16638cbb",
+     "o_que_significa": "f74fed1e1793b4fd4cd79526f1076049aef1f4cc493eeb21df50a87a37298bd9",
+     "exemplo_pratico": "3789307c9140bfe932b156df6c1aed517e0411e69340de9468b21c6991e8f40a",
+     "atencao": "2743088ab40cf65f49da4b967afe9d978e5e9d5f590a5cac5dcdfd4e97e16f80",
+     "palavras_dificeis": "4ec6e42d611b9b9880b2d3200101b3f0f2813e2ce6bbfc3d2e4212bfdd3af101"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.357, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Determinado o preço da coisa dada em pagamento, as relações entre as partes regular-se-ão pelas normas do contrato de compra e venda. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 234,
+   "target_id": "CC2002:ART.358",
+   "explanation_id": "ENTENDA/CC2002:ART.358/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.358:CAPUT\tSe for título de crédito a coisa dada em pagamento, a transferência importará em cessão.",
+   "source_snapshot_sha256": "92aa17b5b800423d5057a7957d3f5236c8f1aedd01eb1f165fb12ab9962d97bc",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.358:CAPUT",
+     "text": "Se for título de crédito a coisa dada em pagamento, a transferência importará em cessão."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se for título de crédito a coisa dada em pagamento, a transferência importará em cessão.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c7cd38bcf4ce191970ad4bfedb7203eacadf25067a49098ccfe33bd80fe50508",
+     "o_que_significa": "ee0a35324031cd482eaa287b0415740980325192a062d12a4a2f2372a11e2df1",
+     "exemplo_pratico": "07da50e66082995e8abbbe817c38ffce5eae0074cb859d22bce39f1d03141b77",
+     "atencao": "752b73ce77a191d45617f41afd9c361fcdb71021a69a4558da481748293c3b90",
+     "palavras_dificeis": "4b5ecf6c1c77fe6ed54d9aecd6503178f6f42e2827ad5ea720eec39c06e8e8ed"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.358, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Se for título de crédito a coisa dada em pagamento, a transferência importará em cessão. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 235,
+   "target_id": "CC2002:ART.359",
+   "explanation_id": "ENTENDA/CC2002:ART.359/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.359:CAPUT\tSe o credor for evicto da coisa recebida em pagamento, restabelecer-se-á a obrigação primitiva, ficando sem efeito a quitação dada, ressalvados os direitos de terceiros.",
+   "source_snapshot_sha256": "9789b38305636e2de3cee7586f574f2963a544fd00049b337de088fab2d49f2e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.359:CAPUT",
+     "text": "Se o credor for evicto da coisa recebida em pagamento, restabelecer-se-á a obrigação primitiva, ficando sem efeito a quitação dada, ressalvados os direitos de terceiros."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o credor for evicto da coisa recebida em pagamento, restabelecer-se-á a obrigação primitiva, ficando sem efeito a quitação dada, ressalvados os direitos de terceiros.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5234eb4597e99c8ee094367be39a36181f6a9f7291d32835650ef4ea0c97027b",
+     "o_que_significa": "a864b89f862b3cd68aaa02dbd29f24cac9fcb9869dd2eacc1a93daba8d6403c7",
+     "exemplo_pratico": "65119df7ce49fdb791d292958bb767ee989afd36da771c103e95079c5dc15724",
+     "atencao": "a1f2c33938a1032abfcad447df1c0d37ef2f7f2178e9c751d8378d2a4df44ab3",
+     "palavras_dificeis": "87f2850e52410bf65fc2c503c84024bf4bc30e32019fd584f510d7d0b4b716eb"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.359, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Se o credor for evicto da coisa recebida em pagamento, restabelecer-se-á a obrigação primitiva, ficando sem efeito a quitação dada, ressalvados os direitos de terceiros. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 236,
+   "target_id": "CC2002:ART.360",
+   "explanation_id": "ENTENDA/CC2002:ART.360/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.360:CAPUT\tDá-se a novação:\nCC2002:ART.360:INC.I\tquando o devedor contrai com o credor nova dívida para extinguir e substituir a anterior;\nCC2002:ART.360:INC.II\tquando novo devedor sucede ao antigo, ficando este quite com o credor;\nCC2002:ART.360:INC.III\tquando, em virtude de obrigação nova, outro credor é substituído ao antigo, ficando o devedor quite com este.",
+   "source_snapshot_sha256": "84d32605fd0984bb0d81bc1d48769a74e1465bbefa5fe780542dceaf426e83ac",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.360:CAPUT",
+     "text": "Dá-se a novação:"
+    },
+    {
+     "label": "CC2002:ART.360:INC.I",
+     "text": "quando o devedor contrai com o credor nova dívida para extinguir e substituir a anterior;"
+    },
+    {
+     "label": "CC2002:ART.360:INC.II",
+     "text": "quando novo devedor sucede ao antigo, ficando este quite com o credor;"
+    },
+    {
+     "label": "CC2002:ART.360:INC.III",
+     "text": "quando, em virtude de obrigação nova, outro credor é substituído ao antigo, ficando o devedor quite com este."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: Dá-se a novação: | quando o devedor contrai com o credor nova dívida para extinguir e substituir a anterior; | quando novo devedor sucede ao antigo, ficando este quite com o credor; | quando, em virtude de obrigação nova, outro credor é substituído ao antigo, ficando o devedor quite com este.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "eade3edd6d64d3d8d38e7ea825ac3108c2d5157b1571b3dac7757be8b3e40fa5",
+     "o_que_significa": "c3bec7e2807747a030afb6908885bdc977ec189114ab4b008d19774447d21e58",
+     "exemplo_pratico": "18f09f5488296dd706def5edd5c697ae6e7cfa13b390900d118baa979537e073",
+     "atencao": "10e899c2b2d503e1049962df69663462735da153345192a2a1a32882085454e8",
+     "palavras_dificeis": "489623dc4432a34b3a5c556eae1c31c1f18b672fc273bbc6fb9334818b752a92"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.360, foram confrontados individualmente os 4 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Dá-se a novação: e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 237,
+   "target_id": "CC2002:ART.361",
+   "explanation_id": "ENTENDA/CC2002:ART.361/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.361:CAPUT\tNão havendo ânimo de novar, expresso ou tácito mas inequívoco, a segunda obrigação confirma simplesmente a primeira.",
+   "source_snapshot_sha256": "0e1700812d758a780ec839654d107ca8854e62e7e95418320de923e291d4d3c9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.361:CAPUT",
+     "text": "Não havendo ânimo de novar, expresso ou tácito mas inequívoco, a segunda obrigação confirma simplesmente a primeira."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não havendo ânimo de novar, expresso ou tácito mas inequívoco, a segunda obrigação confirma simplesmente a primeira.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a73a1f9cc1fa00c20fecd648db8fc0e42644e5012a3ea4a34943943ffe90ed6c",
+     "o_que_significa": "45ef32b790ee7a8a1d8f7dcf99745de3f2e4c4b1c1dc5b8b80dc24df6130792b",
+     "exemplo_pratico": "43134e152300978156d93e80049d5e589edb539a094d45ef6be970f090cc8009",
+     "atencao": "157ea1987ee3518473e5fbcf3be0079e7025dd4ac0023c1dac2e4a0c3e379e6b",
+     "palavras_dificeis": "3cc4784314aa6f27d84e8ea9ea61ae5517647f6138d7b516d8a45bf5fe7a76f7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.361, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Não havendo ânimo de novar, expresso ou tácito mas inequívoco, a segunda obrigação confirma simplesmente a primeira. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 238,
+   "target_id": "CC2002:ART.362",
+   "explanation_id": "ENTENDA/CC2002:ART.362/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.362:CAPUT\tA novação por substituição do devedor pode ser efetuada independentemente de consentimento deste.",
+   "source_snapshot_sha256": "7553edfc480de7ce3326a73cc9a57713ed5f3b7d27b892e99f0b155faeef48f5",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.362:CAPUT",
+     "text": "A novação por substituição do devedor pode ser efetuada independentemente de consentimento deste."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A novação por substituição do devedor pode ser efetuada independentemente de consentimento deste.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0a45324b15bad49ed1d15ad08549df7fc23b7189a247db916a270d951418e4a5",
+     "o_que_significa": "04f72b013e50063ad3e19349eebbb328dffb26ff038c9f2b96e735e4c980f7af",
+     "exemplo_pratico": "64972f5954eaaa696ab81cffeecf863dbc8d81434c24583a82c5169db58ba404",
+     "atencao": "32729914579f9da7f6261c1755de12b8be84d316598fd29e2202ae4dc5127c0f",
+     "palavras_dificeis": "4d41fa52c6689f7c74819dac343acaf8bbedf69b97626524b9d4d5127eedf967"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.362, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que A novação por substituição do devedor pode ser efetuada independentemente de consentimento deste. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 239,
+   "target_id": "CC2002:ART.363",
+   "explanation_id": "ENTENDA/CC2002:ART.363/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.363:CAPUT\tSe o novo devedor for insolvente, não tem o credor, que o aceitou, ação regressiva contra o primeiro, salvo se este obteve por má-fé a substituição.",
+   "source_snapshot_sha256": "79fb2903207f5939a5a8d11601144c9be2c8f9a1a76007de1adfaa9362d3bacb",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.363:CAPUT",
+     "text": "Se o novo devedor for insolvente, não tem o credor, que o aceitou, ação regressiva contra o primeiro, salvo se este obteve por má-fé a substituição."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o novo devedor for insolvente, não tem o credor, que o aceitou, ação regressiva contra o primeiro, salvo se este obteve por má-fé a substituição.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "88676cc37c1299ffca151842a50a4ed9bda4201779c6949e8308f3c7ed96c1bb",
+     "o_que_significa": "3e9bd9311973ebc4e00ef300fc85aa61e60b014b0ab4644e7d7a8e6d27b40bee",
+     "exemplo_pratico": "9bba323e30d5836424855da292030b0b9fbc191c53079e78644d9e61b06a4d8f",
+     "atencao": "7767df5314043a6aa451beb606809c64190efc45707d5834dd2768600ccfb389",
+     "palavras_dificeis": "c2d3d92176b7a927a1c349c14039089aa3f970c0d9e06a4e7221a7564451748b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.363, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Se o novo devedor for insolvente, não tem o credor, que o aceitou, ação regressiva contra o primeiro, salvo se este obteve por má-fé a substituição. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 240,
+   "target_id": "CC2002:ART.364",
+   "explanation_id": "ENTENDA/CC2002:ART.364/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.364:CAPUT\tA novação extingue os acessórios e garantias da dívida, sempre que não houver estipulação em contrário. Não aproveitará, contudo, ao credor ressalvar o penhor, a hipoteca ou a anticrese, se os bens dados em garantia pertencerem a terceiro que não foi parte na novação.",
+   "source_snapshot_sha256": "b865f0e443550803c9e15f5e40fccb2a7b2499ee648c4bc00b48461841f66b89",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.364:CAPUT",
+     "text": "A novação extingue os acessórios e garantias da dívida, sempre que não houver estipulação em contrário. Não aproveitará, contudo, ao credor ressalvar o penhor, a hipoteca ou a anticrese, se os bens dados em garantia pertencerem a terceiro que não foi parte na novação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A novação extingue os acessórios e garantias da dívida, sempre que não houver estipulação em contrário. Não aproveitará, contudo, ao credor ressalvar o penhor, a hipoteca ou a anticrese, se os bens dados em garantia pertencerem a terceiro que não foi parte na novação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e35a7c8d3182de9fd75dcbb9528eac856fbb6d90d83c37abf9c2005e5dea23fc",
+     "o_que_significa": "02a1552762f45ad16dc713ead132bcb28ef921d9d1c57e3370c7c3b3b6491c77",
+     "exemplo_pratico": "bed5ebed5af3719becc95cb746df8056b7bc5481c07e38211873b758b9fc515e",
+     "atencao": "20749ff6aa7298fd1082ffa1ed5ae2705542efc36caaec1f12063462f75481a0",
+     "palavras_dificeis": "7842e663ad099af67f0be778d4790abd6c925a1734f00808e03c96154774cf5e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.364, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que A novação extingue os acessórios e garantias da dívida, sempre que não houver estipulação em contrário. Não aproveitará, contudo, ao credor ressalvar o penhor, a hipoteca ou a anticrese, se os bens dados em garantia pertencerem a terceiro que não... e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 241,
+   "target_id": "CC2002:ART.365",
+   "explanation_id": "ENTENDA/CC2002:ART.365/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.365:CAPUT\tOperada a novação entre o credor e um dos devedores solidários, somente sobre os bens do que contrair a nova obrigação subsistem as preferências e garantias do crédito novado. Os outros devedores solidários ficam por esse fato exonerados.",
+   "source_snapshot_sha256": "ddc8fd4fdbdacf54bde850f08907757672870d052888330c8e5930b8913f2094",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.365:CAPUT",
+     "text": "Operada a novação entre o credor e um dos devedores solidários, somente sobre os bens do que contrair a nova obrigação subsistem as preferências e garantias do crédito novado. Os outros devedores solidários ficam por esse fato exonerados."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Operada a novação entre o credor e um dos devedores solidários, somente sobre os bens do que contrair a nova obrigação subsistem as preferências e garantias do crédito novado. Os outros devedores solidários ficam por esse fato exonerados.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1690a1814e9f1ef865e2c3b6abefaeccb9dc729bf10f54c0810ab04a21e5bce6",
+     "o_que_significa": "e0144bfdecfcd76f26432ba2e85b2a21291f3b516bd59f28972c1f1076937281",
+     "exemplo_pratico": "e78a2ff1ba54c13f529b9cf775262eaddeb79a3f0b3b201badd9d935d1171aff",
+     "atencao": "ca04e8761be75371de7ed54e23da888f42a1f1eac3c717eaa712b2d1a7d538b4",
+     "palavras_dificeis": "ab84eefd8f8ddd1fc955338629cd7c71d7e495b4281e1eb61ead80c664f28121"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.365, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Operada a novação entre o credor e um dos devedores solidários, somente sobre os bens do que contrair a nova obrigação subsistem as preferências e garantias do crédito novado. Os outros devedores solidários ficam por esse fato exonerados. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 242,
+   "target_id": "CC2002:ART.366",
+   "explanation_id": "ENTENDA/CC2002:ART.366/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.366:CAPUT\tImporta exoneração do fiador a novação feita sem seu consenso com o devedor principal.",
+   "source_snapshot_sha256": "604d49805d4ca62d2320e48f575221006e3ae51718a9900f19daf6a251d357d9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.366:CAPUT",
+     "text": "Importa exoneração do fiador a novação feita sem seu consenso com o devedor principal."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Importa exoneração do fiador a novação feita sem seu consenso com o devedor principal.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "3da41f2613cbe3241a637913628d8ade055e75b5d57c6b0a0526a7464f714997",
+     "o_que_significa": "f3ae6294712acca1ae6cb2c2230a902276e96340cf0d99f5203205e4694207a5",
+     "exemplo_pratico": "e73ce88fe8b4aefb24c02af610c9de28f4018f05ac2cf3db6b871608fe673026",
+     "atencao": "23db477b02df58a9c203b0c4b8fd118991f0481be1d3452441c08873d4d6c810",
+     "palavras_dificeis": "a0ca42ac3d29356d4b501667dc874ada9232aed00ca6169ec2f11e0b2941564e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.366, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Importa exoneração do fiador a novação feita sem seu consenso com o devedor principal. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 243,
+   "target_id": "CC2002:ART.367",
+   "explanation_id": "ENTENDA/CC2002:ART.367/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.367:CAPUT\tSalvo as obrigações simplesmente anuláveis, não podem ser objeto de novação obrigações nulas ou extintas.",
+   "source_snapshot_sha256": "e7f1e3445759eb240c8acb840e55847b2bc0239d6e27f447835c226bcc5e3c83",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.367:CAPUT",
+     "text": "Salvo as obrigações simplesmente anuláveis, não podem ser objeto de novação obrigações nulas ou extintas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Salvo as obrigações simplesmente anuláveis, não podem ser objeto de novação obrigações nulas ou extintas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8a3e47e7815dca0b9ca3ab66fa1212456cc5863933cc603d905701a4e176840d",
+     "o_que_significa": "911c98e6291979bb6b6fb8be1e82904c7e2c3c83f9cab07a52552beb26abe680",
+     "exemplo_pratico": "8da682d685ec8cc24a6cc51552870afdd9d4ac42c2aaa9098aaa77fbf814ce90",
+     "atencao": "7bad354162f402d5187b9e2ebf57d8d70fdf38a586040ad692e4e0cee5589abd",
+     "palavras_dificeis": "47f352a82e20d17138f8c78e02e6aa680520a1a874580dbd7e870a76605d6af4"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.367, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Salvo as obrigações simplesmente anuláveis, não podem ser objeto de novação obrigações nulas ou extintas. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 244,
+   "target_id": "CC2002:ART.368",
+   "explanation_id": "ENTENDA/CC2002:ART.368/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.368:CAPUT\tSe duas pessoas forem ao mesmo tempo credor e devedor uma da outra, as duas obrigações extinguem-se, até onde se compensarem.",
+   "source_snapshot_sha256": "22bf1c7e33840d2b8dd8d72d3ce70d868c9e97e0de43f8c0b26965c5cb7e6015",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.368:CAPUT",
+     "text": "Se duas pessoas forem ao mesmo tempo credor e devedor uma da outra, as duas obrigações extinguem-se, até onde se compensarem."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se duas pessoas forem ao mesmo tempo credor e devedor uma da outra, as duas obrigações extinguem-se, até onde se compensarem.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8da7b7f73be26072f6b019c78153f1879e65dc09b92cd62142db3cbfb4f64a04",
+     "o_que_significa": "5c329a1f65b28a38636a6bc30349f56daacb62518815d1e56bc322badfff154a",
+     "exemplo_pratico": "0a4b615659d285609e6a3395d4f7265387806999921bf5df544030c2ed32c41e",
+     "atencao": "3335cc8e3bf8d98234d6b0771eebbe7e0e32ea5bb8cf36478e1fcaabfb553edd",
+     "palavras_dificeis": "9b0894f1cecbe116a7e4307d47739945b9d8cce94012f26803337af33e99245f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.368, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Se duas pessoas forem ao mesmo tempo credor e devedor uma da outra, as duas obrigações extinguem-se, até onde se compensarem. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 245,
+   "target_id": "CC2002:ART.369",
+   "explanation_id": "ENTENDA/CC2002:ART.369/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.369:CAPUT\tA compensação efetua-se entre dívidas líquidas, vencidas e de coisas fungíveis.",
+   "source_snapshot_sha256": "2b842621faaf6459f8b4c5f0ffadbb5369c72ea997f4b87898cc11880ae4e771",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.369:CAPUT",
+     "text": "A compensação efetua-se entre dívidas líquidas, vencidas e de coisas fungíveis."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A compensação efetua-se entre dívidas líquidas, vencidas e de coisas fungíveis.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4fd6195a8ea30ebcd2319e7105d589917c02263c6072566a6ce0d6695f4998d8",
+     "o_que_significa": "831cda5cb09c5e038cfc36e2b1ba1fbdd44bf536ae760efd6693e03e3fca9d4e",
+     "exemplo_pratico": "98317557003b6bb9ca0707f8325bc7862a4cf26258f1b7cd4580058234ed8c9c",
+     "atencao": "696b278b1d0e2c38ec66fccb41fe84fa68adeb4e5af8b6687153262445e6591e",
+     "palavras_dificeis": "e48a6831e1aaa9a4efa5fd8996951f2046a963aa8590fa85b77a96b057d7d839"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.369, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que A compensação efetua-se entre dívidas líquidas, vencidas e de coisas fungíveis. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 246,
+   "target_id": "CC2002:ART.370",
+   "explanation_id": "ENTENDA/CC2002:ART.370/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.370:CAPUT\tEmbora sejam do mesmo gênero as coisas fungíveis, objeto das duas prestações, não se compensarão, verificando-se que diferem na qualidade, quando especificada no contrato.",
+   "source_snapshot_sha256": "41a053b15e004a01ca79e0d1c6658d44adf0b6dbd8f30522b3b865d0ce725b77",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.370:CAPUT",
+     "text": "Embora sejam do mesmo gênero as coisas fungíveis, objeto das duas prestações, não se compensarão, verificando-se que diferem na qualidade, quando especificada no contrato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Embora sejam do mesmo gênero as coisas fungíveis, objeto das duas prestações, não se compensarão, verificando-se que diferem na qualidade, quando especificada no contrato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e4aa0ab9e6bbb3622ac5709fd01328aabaeb5c50c7bc8179329559d0191f7334",
+     "o_que_significa": "b3d454f69507003f97b5d8f337f1f9042932e56ccf4b0e11af3163a8bb6e4855",
+     "exemplo_pratico": "e24b5cec90d4297b4a493c57e04fef832941e9858222f40514e5085feebb64cf",
+     "atencao": "10840f113de1fdc8232a57f0bbd0546d0a383dcdd9cad12f66ff94ba197e15ee",
+     "palavras_dificeis": "a5bed48ade297349ac7263bcd663c0ba037b01b01cdc06be09f3254e48263786"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.370, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Embora sejam do mesmo gênero as coisas fungíveis, objeto das duas prestações, não se compensarão, verificando-se que diferem na qualidade, quando especificada no contrato. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 247,
+   "target_id": "CC2002:ART.371",
+   "explanation_id": "ENTENDA/CC2002:ART.371/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.371:CAPUT\tO devedor somente pode compensar com o credor o que este lhe dever; mas o fiador pode compensar sua dívida com a de seu credor ao afiançado.",
+   "source_snapshot_sha256": "cee50d859288985b20e9a3dec4f9b1bc1a80013065569a9716e06ad8d776b2ed",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.371:CAPUT",
+     "text": "O devedor somente pode compensar com o credor o que este lhe dever; mas o fiador pode compensar sua dívida com a de seu credor ao afiançado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O devedor somente pode compensar com o credor o que este lhe dever; mas o fiador pode compensar sua dívida com a de seu credor ao afiançado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "92f4c6769f966e75cc3ad1d862b15ada18a70f7687431de8b66f0b47fe9aa6c7",
+     "o_que_significa": "ab45972e21102376c7ae0108bd176654b0727dcf4c0481c489ffa9d837896292",
+     "exemplo_pratico": "fa9ed843fbf45b5c2e0c80c236d1ccf30d909e16ad8e48853761476a6be6d28f",
+     "atencao": "ce0fc65859bcd4b1665adcb07bddde99af9ff1196355398ab03ac0e3865f417b",
+     "palavras_dificeis": "23a5c669f137d599eaff7bd59d0e8f3c219f689f1041ecdd9078e44d93be5be3"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O art. 371 autoriza o fiador a compensar sua dívida com a dívida do credor ao afiançado, isto é, a opor o crédito que o devedor principal tem contra o credor. A explicação transforma essa exceção em uso de crédito próprio do fiador, hipótese já abrangida pela regra geral de reciprocidade.",
+   "finding": {
+    "target_id": "CC2002:ART.371",
+    "audit_wave": "QA03_FRONT_B",
+    "problematic_field": "o_que_diz; o_que_significa",
+    "problematic_excerpt": "o fiador pode usar crédito que tenha contra o credor do afiançado; ele pode invocar crédito que possua contra quem é credor da dívida garantida",
+    "legal_basis": "O art. 371 autoriza o fiador a compensar sua dívida com a dívida do credor ao afiançado, isto é, a opor o crédito que o devedor principal tem contra o credor. A explicação transforma essa exceção em uso de crédito próprio do fiador, hipótese já abrangida pela regra geral de reciprocidade.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "ERRO_NA_TITULARIDADE_DO_CREDITO_COMPENSAVEL",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "Atribui a exceção legal à pessoa errada e pode impedir o fiador de invocar crédito pertencente ao afiançado ou apresentar como excepcional uma compensação de crédito próprio.",
+    "correction_direction": "Explicar que o fiador, além de seus próprios créditos compensáveis pela regra geral, pode opor ao credor o crédito que este deve ao afiançado.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": "B-CP10",
+    "auditor": "qa03_audit_195_388"
+   },
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 248,
+   "target_id": "CC2002:ART.372",
+   "explanation_id": "ENTENDA/CC2002:ART.372/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.372:CAPUT\tOs prazos de favor, embora consagrados pelo uso geral, não obstam a compensação.",
+   "source_snapshot_sha256": "29f6e6f552f11ffec61da589cbc54833c299b50f05572ec8e473dc8de32e5c39",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.372:CAPUT",
+     "text": "Os prazos de favor, embora consagrados pelo uso geral, não obstam a compensação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Os prazos de favor, embora consagrados pelo uso geral, não obstam a compensação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4cda58b31633a9abc52ab39762219ec0c7d3b9180a884de85ead3f7c5b199000",
+     "o_que_significa": "99a7583d0e92dcde7dc21e3bcc2590f34b1442dd2f6407f3fec408054c884630",
+     "exemplo_pratico": "7de69d1013c7d93a84d067d74b59722b93f4c1a51afa11502078f535f861f0a9",
+     "atencao": "bc626a168b62bd80ccfc5a66aded784c41eb8845aab40bb654b66317a1e204c7",
+     "palavras_dificeis": "f561e8d8ac490069cfebb7f3eb3861fd0c12c555c8a792356a4dd163077b2ac9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.372, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Os prazos de favor, embora consagrados pelo uso geral, não obstam a compensação. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 249,
+   "target_id": "CC2002:ART.373",
+   "explanation_id": "ENTENDA/CC2002:ART.373/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.373:CAPUT\tA diferença de causa nas dívidas não impede a compensação, exceto:\nCC2002:ART.373:INC.I\tse provier de esbulho, furto ou roubo;\nCC2002:ART.373:INC.II\tse uma se originar de comodato, depósito ou alimentos;\nCC2002:ART.373:INC.III\tse uma for de coisa não suscetível de penhora.",
+   "source_snapshot_sha256": "a42ba4ff71d0ea2b0f775dad6e6d1a984c7b21d53cfe311c93d6ff8d0d19b5f3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.373:CAPUT",
+     "text": "A diferença de causa nas dívidas não impede a compensação, exceto:"
+    },
+    {
+     "label": "CC2002:ART.373:INC.I",
+     "text": "se provier de esbulho, furto ou roubo;"
+    },
+    {
+     "label": "CC2002:ART.373:INC.II",
+     "text": "se uma se originar de comodato, depósito ou alimentos;"
+    },
+    {
+     "label": "CC2002:ART.373:INC.III",
+     "text": "se uma for de coisa não suscetível de penhora."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: A diferença de causa nas dívidas não impede a compensação, exceto: | se provier de esbulho, furto ou roubo; | se uma se originar de comodato, depósito ou alimentos; | se uma for de coisa não suscetível de penhora.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b39b76eb358dadf85ae6ecdcc91687b8549bd85169939bd81ec4d23e1194408e",
+     "o_que_significa": "4eb1215c3384fb42f9837239abae4245500bb3caceb06bd3cee9ca7fdca51c4a",
+     "exemplo_pratico": "09b1d758464381e686b3a3ee3960f9fdda768563016dbe4ad38ea7871a179f1b",
+     "atencao": "e8be2fbeaec7622195fd042e436b5298b97445647134d60956b2839273c6d496",
+     "palavras_dificeis": "2cebd356103cf4f8134e1b105bcc352b0ea4530aca5e241e4280b33bb221eb4d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.373, foram confrontados individualmente os 4 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que A diferença de causa nas dívidas não impede a compensação, exceto: e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 250,
+   "target_id": "CC2002:ART.375",
+   "explanation_id": "ENTENDA/CC2002:ART.375/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.375:CAPUT\tNão haverá compensação quando as partes, por mútuo acordo, a excluírem, ou no caso de renúncia prévia de uma delas.",
+   "source_snapshot_sha256": "393696655f1a764055f51ac8d3ed11d411cd64a466a7729e6ea5d5036bea6953",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.375:CAPUT",
+     "text": "Não haverá compensação quando as partes, por mútuo acordo, a excluírem, ou no caso de renúncia prévia de uma delas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não haverá compensação quando as partes, por mútuo acordo, a excluírem, ou no caso de renúncia prévia de uma delas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e97827519db386fb64cc7f6836b15b0f883786d46cf77c1b28c1efb2ea5be17d",
+     "o_que_significa": "6d291734b14dc8bc8d32f0531571202c62e3a739049e51d8ce679e4cd8d7e01f",
+     "exemplo_pratico": "83be1cbaffd2bfd29bc9784b4ac7a091dd01b09bf9a1c1694a4d44287d44c7f5",
+     "atencao": "1f502eae752473c532139378b51c1b8cabd0b3171fcdbfe56e94f92006869710",
+     "palavras_dificeis": "5cc47f10764d9b2bfe5d55e45c2c0fdd9de62f38edb834f587a555305b9baabd"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.375, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Não haverá compensação quando as partes, por mútuo acordo, a excluírem, ou no caso de renúncia prévia de uma delas. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  }
+ ]
+}
