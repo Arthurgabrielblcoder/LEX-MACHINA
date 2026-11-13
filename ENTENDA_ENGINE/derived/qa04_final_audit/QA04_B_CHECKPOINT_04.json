@@ -1,0 +1,2664 @@
+{
+ "schema_version": 1,
+ "mission": "QA-04-FRONT-B",
+ "checkpoint": "B-CP04",
+ "as_of": "2026-11-13",
+ "status": "COMPLETE",
+ "source_queue": "QA04_AUDIT_1000_QUEUE.json",
+ "source_queue_sha256": "cfbba3ab37b1f757e26b0855e692c3113d8cf61d3ef8bb722942223da9dc44cc",
+ "residual_positions": [
+  151,
+  200
+ ],
+ "original_queue_positions": [
+  539,
+  588
+ ],
+ "examined": 50,
+ "target_ids": [
+  "CC2002:ART.669",
+  "CC2002:ART.670",
+  "CC2002:ART.671",
+  "CC2002:ART.672",
+  "CC2002:ART.673",
+  "CC2002:ART.674",
+  "CC2002:ART.675",
+  "CC2002:ART.676",
+  "CC2002:ART.677",
+  "CC2002:ART.678",
+  "CC2002:ART.679",
+  "CC2002:ART.680",
+  "CC2002:ART.681",
+  "CC2002:ART.682",
+  "CC2002:ART.683",
+  "CC2002:ART.684",
+  "CC2002:ART.685",
+  "CC2002:ART.686",
+  "CC2002:ART.687",
+  "CC2002:ART.688",
+  "CC2002:ART.689",
+  "CC2002:ART.690",
+  "CC2002:ART.691",
+  "CC2002:ART.692",
+  "CC2002:ART.693",
+  "CC2002:ART.694",
+  "CC2002:ART.695",
+  "CC2002:ART.696",
+  "CC2002:ART.697",
+  "CC2002:ART.699",
+  "CC2002:ART.700",
+  "CC2002:ART.701",
+  "CC2002:ART.702",
+  "CC2002:ART.703",
+  "CC2002:ART.704",
+  "CC2002:ART.705",
+  "CC2002:ART.706",
+  "CC2002:ART.707",
+  "CC2002:ART.708",
+  "CC2002:ART.709",
+  "CC2002:ART.710",
+  "CC2002:ART.711",
+  "CC2002:ART.712",
+  "CC2002:ART.713",
+  "CC2002:ART.714",
+  "CC2002:ART.715",
+  "CC2002:ART.716",
+  "CC2002:ART.717",
+  "CC2002:ART.718",
+  "CC2002:ART.719"
+ ],
+ "findings": 0,
+ "finding_counts": {},
+ "protected_sha256": {
+  "qa03_corpus": "dad0a9414fd42b4e5c348ab7e87b90b99501ae4b77c950c5cbfd7dbaef58a496",
+  "qa03_lookup": "9cda2855e4534b7a7cefc833f2e2498a91cf81666395cf83a064d3d69705eeba",
+  "qa03_payload": "6a5ea56bffc14c06df9ac1f16c145b02e2115bacbfce1d87858ba342e77d6268",
+  "qa03_findings": "4fd7700b9c66c370405a8ce7d9004222a9af2202efa4cabf4c0a2ff581062ba1",
+  "qa03_remaining_queue": "8c798f79745f4d878b882e582bbfa71effbcb6c99c7763bf77cfc51e2b5151df",
+  "cc13_corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c"
+ },
+ "records": [
+  {
+   "queue_position": 539,
+   "target_id": "CC2002:ART.669",
+   "explanation_id": "ENTENDA/CC2002:ART.669/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.669:CAPUT\tO mandatário não pode compensar os prejuízos a que deu causa com os proveitos que, por outro lado, tenha granjeado ao seu constituinte.",
+   "source_snapshot_sha256": "7973738861112df1d0d094e6efb84a0e06399bd2630025ad7fa0a9a0cb1db346",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.669:CAPUT",
+     "text": "O mandatário não pode compensar os prejuízos a que deu causa com os proveitos que, por outro lado, tenha granjeado ao seu constituinte."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O mandatário não pode compensar os prejuízos a que deu causa com os proveitos que, por outro lado, tenha granjeado ao seu constituinte.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c338878a17a4debd023e5f3d034a87bba568d37e06f4ebe31743f0b0c063626d",
+     "o_que_significa": "bf1da667bb368df72be407fcdb6b7f7c1a81eb43a9cce11b8a994845a8917da6",
+     "exemplo_pratico": "9cd8c22c3933b88b7a6e20e40cd91f1addc73fc852b1603e25f70da75ac81551",
+     "atencao": "f4018c55db442133d8a14ed2ab9611c904a12605a846e4adf524e57f8842012d",
+     "palavras_dificeis": "1e51f5673302f6a75422af655d33eb9ac3b4ab169890c465f04d5b662f0dd109"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.669, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O mandatário não pode compensar prejuízo que causou com vantagem obtida em outro ponto da gestão.’. O campo de atenção registra: ‘O cálculo global de contas pode considerar valores devidos, mas não suprime a identificação e reparação do prejuízo causado.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 151,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 540,
+   "target_id": "CC2002:ART.670",
+   "explanation_id": "ENTENDA/CC2002:ART.670/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.670:CAPUT\tPelas somas que devia entregar ao mandante ou recebeu para despesa, mas empregou em proveito seu, pagará o mandatário juros, desde o momento em que abusou.",
+   "source_snapshot_sha256": "586388f67d1ffb747e040b08035cc63546eb1e4af561e2226ea06e3da65b57cf",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.670:CAPUT",
+     "text": "Pelas somas que devia entregar ao mandante ou recebeu para despesa, mas empregou em proveito seu, pagará o mandatário juros, desde o momento em que abusou."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Pelas somas que devia entregar ao mandante ou recebeu para despesa, mas empregou em proveito seu, pagará o mandatário juros, desde o momento em que abusou.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a82a98a2b6a9a907f6f480a8f031cbb9da26a2ec4b3b5eca8a598f2972714e52",
+     "o_que_significa": "ccf8f4fe50656e9adf44ffab63c427f4c53a2a7e826c75bf07b1401d61271c94",
+     "exemplo_pratico": "266d9be04d0dca1a6d44fe7ee9cec8725cbd74a9172bf5898bdf425ea02cf3dd",
+     "atencao": "0ace2f92096b8d2270cdddec1215ed69dbb8f28bf2c9d7693928bc88eb7b966a",
+     "palavras_dificeis": "5744267f255ad5cd925e8e801f65445fa12da5a4e5302205148e7f86b6870f60"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.670, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O mandatário paga juros desde o desvio quando usa em benefício próprio quantias que deveria entregar ao mandante ou aplicar em despesas.’. O campo de atenção registra: ‘Além dos juros, outros prejuízos comprovados podem ser devidos. É necessário identificar o momento do abuso.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 152,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 541,
+   "target_id": "CC2002:ART.671",
+   "explanation_id": "ENTENDA/CC2002:ART.671/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.671:CAPUT\tSe o mandatário, tendo fundos ou crédito do mandante, comprar, em nome próprio, algo que devera comprar para o mandante, por ter sido expressamente designado no mandato, terá este ação para obrigá-lo à entrega da coisa comprada.",
+   "source_snapshot_sha256": "ea9499bd6ffce3e85d2ae61358b81fb163d75e63a94f9d6768b70eb1f8c09be6",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.671:CAPUT",
+     "text": "Se o mandatário, tendo fundos ou crédito do mandante, comprar, em nome próprio, algo que devera comprar para o mandante, por ter sido expressamente designado no mandato, terá este ação para obrigá-lo à entrega da coisa comprada."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o mandatário, tendo fundos ou crédito do mandante, comprar, em nome próprio, algo que devera comprar para o mandante, por ter sido expressamente designado no mandato, terá este ação para obrigá-lo à entrega da coisa comprada.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0144e7b021e6e422f846fe4188ea273f742215e42d4306b4507b07a07277a82f",
+     "o_que_significa": "03ccde3620b4e10f0326c9efcc437802ed8fad017bdb5ec3673def69dd126192",
+     "exemplo_pratico": "cfef342d12da7a1b3dd88f726227a5c1e5342b1c9433928c9fd030723825e858",
+     "atencao": "fabf7fc610758568f8d2566a888163ab595b1bd876444427f5d531ea62120c1d",
+     "palavras_dificeis": "6e87929c0fee375d6bc260ed564fb01899f74da68b5d0137b76dd314a2c79685"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.671, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se o mandatário usa recursos ou crédito do mandante para adquirir em nome próprio o bem que deveria comprar para ele, o mandante pode exigir judicialmente a entrega.’. O campo de atenção registra: ‘A ação pressupõe correspondência entre a compra realizada e a incumbência expressa. Eventuais perdas adicionais dependem de prova.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 153,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 542,
+   "target_id": "CC2002:ART.672",
+   "explanation_id": "ENTENDA/CC2002:ART.672/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.672:CAPUT\tSendo dois ou mais os mandatários nomeados no mesmo instrumento, qualquer deles poderá exercer os poderes outorgados, se não forem expressamente declarados conjuntos, nem especificamente designados para atos diferentes, ou subordinados a atos sucessivos. Se os mandatários forem declarados conjuntos, não terá eficácia o ato praticado sem interferência de todos, salvo havendo ratificação, que retroagirá à data do ato.",
+   "source_snapshot_sha256": "5e051c4739cd360077edc55835d626d7e01db0c49e1562b7b96b6114ae2b9ae8",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.672:CAPUT",
+     "text": "Sendo dois ou mais os mandatários nomeados no mesmo instrumento, qualquer deles poderá exercer os poderes outorgados, se não forem expressamente declarados conjuntos, nem especificamente designados para atos diferentes, ou subordinados a atos sucessivos. Se os mandatários forem declarados conjuntos, não terá eficácia o ato praticado sem interferência de todos, salvo havendo ratificação, que retroagirá à data do ato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Sendo dois ou mais os mandatários nomeados no mesmo instrumento, qualquer deles poderá exercer os poderes outorgados, se não forem expressamente declarados conjuntos, nem especificamente designados para atos diferentes, ou subordinados a atos sucessivos. Se os mandatários forem declarados conjuntos, não terá eficácia o ato praticado sem interferência de todos, salvo havendo ratificação, que retroagirá à data do ato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6fd86d9c1d8f1aac68d064b99606a7af2351dfdae7a79e390b3c8a5c87dc13d4",
+     "o_que_significa": "78c9dc54bf59e33fb8327d09994553d9efaed6925c90961ddf2fed0d492bf7b4",
+     "exemplo_pratico": "04fbb508f81befc3424c17be42c56792db41ce8c200c4b9e0b10cc5d3206e0cc",
+     "atencao": "693ee72db1177ae0087b4e6f68170007e21aabf2628b8a36952a562469e17361",
+     "palavras_dificeis": "6c185e088ae20ec2590c8c9256603d737411b70053a0a10f3655f83c2c01a1d1"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.672, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Havendo vários mandatários no mesmo instrumento, cada um pode agir separadamente, salvo se os poderes forem conjuntos, repartidos por atos ou organizados em sequência. A atuação conjunta incompleta pode ser ratificada.’. O campo de atenção registra: ‘Ratificação posterior retroage, mas não deve ser presumida. É indispensável ler como os poderes foram distribuídos.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 154,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 543,
+   "target_id": "CC2002:ART.673",
+   "explanation_id": "ENTENDA/CC2002:ART.673/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.673:CAPUT\tO terceiro que, depois de conhecer os poderes do mandatário, com ele celebrar negócio jurídico exorbitante do mandato, não tem ação contra o mandatário, salvo se este lhe prometeu ratificação do mandante ou se responsabilizou pessoalmente.",
+   "source_snapshot_sha256": "3c09c5a4e98d970403f5e515d2a52dc65f81196db1a32b7eb9bb7f92d1342d79",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.673:CAPUT",
+     "text": "O terceiro que, depois de conhecer os poderes do mandatário, com ele celebrar negócio jurídico exorbitante do mandato, não tem ação contra o mandatário, salvo se este lhe prometeu ratificação do mandante ou se responsabilizou pessoalmente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O terceiro que, depois de conhecer os poderes do mandatário, com ele celebrar negócio jurídico exorbitante do mandato, não tem ação contra o mandatário, salvo se este lhe prometeu ratificação do mandante ou se responsabilizou pessoalmente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9c962fb3d7f7c2f270d9c505ee6eb092414a0482c37bb1b00f3c1c33ba388ba9",
+     "o_que_significa": "b6fd538e007e1daa69bb9b8764e98232e15e9c4b11daee66c04da77232d580fc",
+     "exemplo_pratico": "7e98c191420060135a87cdf730673382d9f755cedc4dc09ae8fd5f01ac7c3392",
+     "atencao": "3f231bb99cf684310df09fef5d85f7e6d7d8aa8f3a5a8e0bd8216c3678c93fdb",
+     "palavras_dificeis": "30c9bd15a3e9302867043c827a0a18e6fe45b0ff9cb8576e1ea3959384f725fe"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.673, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Terceiro que conhece os limites da procuração e mesmo assim contrata além deles não pode cobrar do mandatário, salvo se este prometeu obter ratificação ou assumiu responsabilidade pessoal.’. O campo de atenção registra: ‘A regra depende da ciência do terceiro. Se o mandatário ocultou a insuficiência de poderes, outras consequências podem ser aplicáveis.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 155,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 544,
+   "target_id": "CC2002:ART.674",
+   "explanation_id": "ENTENDA/CC2002:ART.674/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.674:CAPUT\tEmbora ciente da morte, interdição ou mudança de estado do mandante, deve o mandatário concluir o negócio já começado, se houver perigo na demora.",
+   "source_snapshot_sha256": "fb96ab3b74666408f78b23f04e1cf737dac90d1ec4f30e349dd2c374ed3c5908",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.674:CAPUT",
+     "text": "Embora ciente da morte, interdição ou mudança de estado do mandante, deve o mandatário concluir o negócio já começado, se houver perigo na demora."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Embora ciente da morte, interdição ou mudança de estado do mandante, deve o mandatário concluir o negócio já começado, se houver perigo na demora.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "49cabb66b196f419bdf101932d8d6a810cf27ca7a33875f3b86e48cd1d588c09",
+     "o_que_significa": "c2160cb70cf4f9c4b9a40b94c7a35fa7b8d2e36194ed9c4d5aae350611f90ad7",
+     "exemplo_pratico": "09ca543ff338869b088e25b6aa9591b7616f0c5e13aac486563d09234fa627be",
+     "atencao": "e3c1d0a8fceff93c6bbd588220402482007037a25b3daaca6098ee8d0c284726",
+     "palavras_dificeis": "9de66451fd24679e05ff103fb36fff3eef50ee7eb39a52151e8fb8da02769185"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.674, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Mesmo sabendo da morte, interdição ou mudança de estado do mandante, o mandatário deve terminar negócio já iniciado quando a demora puder causar perigo.’. O campo de atenção registra: ‘A autorização é conservatória e ligada ao perigo da demora; não permite iniciar livremente novos negócios após a causa extintiva.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 156,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 545,
+   "target_id": "CC2002:ART.675",
+   "explanation_id": "ENTENDA/CC2002:ART.675/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.675:CAPUT\tO mandante é obrigado a satisfazer todas as obrigações contraídas pelo mandatário, na conformidade do mandato conferido, e adiantar a importância das despesas necessárias à execução dele, quando o mandatário lho pedir.",
+   "source_snapshot_sha256": "d6b474ed2ce197def0dbba6b783c2bdc3eae742a69659e22793d5eb086c5d3d7",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.675:CAPUT",
+     "text": "O mandante é obrigado a satisfazer todas as obrigações contraídas pelo mandatário, na conformidade do mandato conferido, e adiantar a importância das despesas necessárias à execução dele, quando o mandatário lho pedir."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O mandante é obrigado a satisfazer todas as obrigações contraídas pelo mandatário, na conformidade do mandato conferido, e adiantar a importância das despesas necessárias à execução dele, quando o mandatário lho pedir.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1e13853d2ffbff293fa39498b2ce64a85144aff31d5f7caaf05df6fcd6163748",
+     "o_que_significa": "3eece38429327ffd30f53d858e48776089c6f5607a2fb28ac9d6fb4e063165e8",
+     "exemplo_pratico": "2b6a3c1fd431031638599acaa684e93f0f29f69171290f14fc3e088d32de50cf",
+     "atencao": "184245a80727ba9faeca382f1f375a2378e7a1718a9069b04f043ad9c05a85ec",
+     "palavras_dificeis": "83831e12543ed8df128ad0eeac5c6bc5f8532ab8485dcdfa5e1315031b4033fc"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.675, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O mandante deve cumprir as obrigações que o mandatário assumiu dentro dos poderes recebidos e, quando solicitado, adiantar os valores necessários à execução da incumbência.’. O campo de atenção registra: ‘Obrigações fora dos poderes não são automaticamente assumidas pelo mandante. A necessidade e o vínculo das despesas com a tarefa devem ser demonstrados.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 157,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 546,
+   "target_id": "CC2002:ART.676",
+   "explanation_id": "ENTENDA/CC2002:ART.676/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.676:CAPUT\tÉ obrigado o mandante a pagar ao mandatário a remuneração ajustada e as despesas da execução do mandato, ainda que o negócio não surta o esperado efeito, salvo tendo o mandatário culpa.",
+   "source_snapshot_sha256": "8904576ee65d75bc97af25773d08d544960aab25e171b0bfa19bf0d2df3c7c15",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.676:CAPUT",
+     "text": "É obrigado o mandante a pagar ao mandatário a remuneração ajustada e as despesas da execução do mandato, ainda que o negócio não surta o esperado efeito, salvo tendo o mandatário culpa."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: É obrigado o mandante a pagar ao mandatário a remuneração ajustada e as despesas da execução do mandato, ainda que o negócio não surta o esperado efeito, salvo tendo o mandatário culpa.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0fa8430a7ccacab5604635071ec449e666239f712f1f39e7d83bdbff5c350c47",
+     "o_que_significa": "a53aa17fb63386621b3ad35da723f1b937bfa0c77689ca14aa96c51e791887fc",
+     "exemplo_pratico": "52f1a68bf190213604ba353d8ca636638469600c65e01c1e7c835f7c3f9414f7",
+     "atencao": "a5661073ee492cf9321e671a1370fe2d4ea87f873b02b19adb9160809439329b",
+     "palavras_dificeis": "e2164c24960b79f83c5b0433c373c7af9a844298f773ad8b00c619e64b5a9462"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.676, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O mandante paga a remuneração combinada e reembolsa as despesas da execução, mesmo que o resultado esperado não ocorra, salvo quando o insucesso decorrer de culpa do mandatário.’. O campo de atenção registra: ‘Deve-se distinguir simples insucesso de execução culposa. O contrato também pode estabelecer condições legítimas para a remuneração.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 158,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 547,
+   "target_id": "CC2002:ART.677",
+   "explanation_id": "ENTENDA/CC2002:ART.677/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.677:CAPUT\tAs somas adiantadas pelo mandatário, para a execução do mandato, vencem juros desde a data do desembolso.",
+   "source_snapshot_sha256": "5f9b73decc1913ff61e06359b3ded03a49e5cfc22a079698c0a024d680c2e108",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.677:CAPUT",
+     "text": "As somas adiantadas pelo mandatário, para a execução do mandato, vencem juros desde a data do desembolso."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: As somas adiantadas pelo mandatário, para a execução do mandato, vencem juros desde a data do desembolso.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c63ad94e8b3c888392d4a8e9e812b0651dfb01ed102c8964a5e609a00563d22a",
+     "o_que_significa": "446e5bcb456fb365cf83e2d58017ba26bbec1128677961d97ebca61a9500741f",
+     "exemplo_pratico": "427c153b4a1c9785f23efdeeaba736cd180323e846e9399c9985609e9f45cdae",
+     "atencao": "dba84f0d45f55f536e4afb73da076375ddfce9aeabfefda40612f3cff900346d",
+     "palavras_dificeis": "4a773285bfbfde6c8f9783abd467ec661c3a4f4027d60e8022a909a44945047e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.677, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Valores que o mandatário adianta para cumprir o mandato geram juros em seu favor desde cada desembolso.’. O campo de atenção registra: ‘A despesa deve estar vinculada à execução do mandato. Taxa, cálculo e eventual convenção precisam observar o regime jurídico aplicável.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 159,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 548,
+   "target_id": "CC2002:ART.678",
+   "explanation_id": "ENTENDA/CC2002:ART.678/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.678:CAPUT\tÉ igualmente obrigado o mandante a ressarcir ao mandatário as perdas que este sofrer com a execução do mandato, sempre que não resultem de culpa sua ou de excesso de poderes.",
+   "source_snapshot_sha256": "96502b231c436b5f348eb6d2eefe632b4eb30825381500a3b9d15f5412bd2c1a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.678:CAPUT",
+     "text": "É igualmente obrigado o mandante a ressarcir ao mandatário as perdas que este sofrer com a execução do mandato, sempre que não resultem de culpa sua ou de excesso de poderes."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: É igualmente obrigado o mandante a ressarcir ao mandatário as perdas que este sofrer com a execução do mandato, sempre que não resultem de culpa sua ou de excesso de poderes.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "391edec02828e82005396b9bcc8ee6dd93bfbceb5339bcefb1b6d324cc7536d4",
+     "o_que_significa": "7f8cd6cec0d25dfe10732938bcd84b3c3c1c2f0606c9aacf18f70e4cb28518c4",
+     "exemplo_pratico": "c56141ff81f1909d572dd76ff1414a3df17d1f312461756f61ef97909cffc302",
+     "atencao": "989e9fffe13c5351e6a6accd1bc59ded7248733099a4855cef7c33a5298b06b6",
+     "palavras_dificeis": "421e4f51ab93d074909c15ec71c239b65bf3dc7d57fbb133a6f6dc6de0569519"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.678, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O mandante deve indenizar perdas sofridas pelo mandatário durante a execução, desde que não resultem de culpa do próprio mandatário nem de excesso de poderes.’. O campo de atenção registra: ‘Não basta o dano coincidir no tempo com o mandato; é necessário vínculo com a execução regular e ausência das causas excludentes indicadas.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 160,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 549,
+   "target_id": "CC2002:ART.679",
+   "explanation_id": "ENTENDA/CC2002:ART.679/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.679:CAPUT\tAinda que o mandatário contrarie as instruções do mandante, se não exceder os limites do mandato, ficará o mandante obrigado para com aqueles com quem o seu procurador contratou; mas terá contra este ação pelas perdas e danos resultantes da inobservância das instruções.",
+   "source_snapshot_sha256": "5f29512825ab7420330813fd24c71e211e6ee7c205c0c2eb4c304b3764a5a8c9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.679:CAPUT",
+     "text": "Ainda que o mandatário contrarie as instruções do mandante, se não exceder os limites do mandato, ficará o mandante obrigado para com aqueles com quem o seu procurador contratou; mas terá contra este ação pelas perdas e danos resultantes da inobservância das instruções."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Ainda que o mandatário contrarie as instruções do mandante, se não exceder os limites do mandato, ficará o mandante obrigado para com aqueles com quem o seu procurador contratou; mas terá contra este ação pelas perdas e danos resultantes da inobservância das instruções.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7a74f552ee080bbdcf4ac28dbaa69a0588ade37c11a192baf7d2a0c391e2cbdb",
+     "o_que_significa": "79df21bbbdacdc7f0b719aa32c89ebc5bc9477106e963940d5873e547634a235",
+     "exemplo_pratico": "ab7226404279d70818cf626567a6089ee685d49fb5a26d14d84278e50b5cf6e7",
+     "atencao": "fb73380bd125013cd844ece34e59417e509d82ba8902c36de981b9680a3befc1",
+     "palavras_dificeis": "1f9381d99df937f920014bc54b8795347fcf7cee27a55da27a4402f5a445d084"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.679, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se o mandatário desobedece instruções internas, mas permanece dentro dos poderes externos, o mandante continua obrigado perante terceiros e pode cobrar do mandatário os danos causados.’. O campo de atenção registra: ‘Se houver excesso dos poderes conferidos, o regime muda. Também importa verificar a boa-fé e o conhecimento do terceiro.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 161,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 550,
+   "target_id": "CC2002:ART.680",
+   "explanation_id": "ENTENDA/CC2002:ART.680/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.680:CAPUT\tSe o mandato for outorgado por duas ou mais pessoas, e para negócio comum, cada uma ficará solidariamente responsável ao mandatário por todos os compromissos e efeitos do mandato, salvo direito regressivo, pelas quantias que pagar, contra os outros mandantes.",
+   "source_snapshot_sha256": "d61b7487db4260e858540ef87dce5612ad54fbe53424bc254bb1448ca47361c9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.680:CAPUT",
+     "text": "Se o mandato for outorgado por duas ou mais pessoas, e para negócio comum, cada uma ficará solidariamente responsável ao mandatário por todos os compromissos e efeitos do mandato, salvo direito regressivo, pelas quantias que pagar, contra os outros mandantes."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o mandato for outorgado por duas ou mais pessoas, e para negócio comum, cada uma ficará solidariamente responsável ao mandatário por todos os compromissos e efeitos do mandato, salvo direito regressivo, pelas quantias que pagar, contra os outros mandantes.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ae036dbf41746f8fa52efa0b6ee058c5bd3b9b621061dbd81c3d68b3c8c6b9a3",
+     "o_que_significa": "169f6ccf8cfdb4f86a694539ab1b322301c91f7b7bca3b17d82b186a779d6d38",
+     "exemplo_pratico": "24adefd63cc1cb4a034c8f618f7af77c57a725ded89949844b126754b3bbcffc",
+     "atencao": "04c536c2c383f643caa04a8d035deda247e28be4a37558d627269da498005675",
+     "palavras_dificeis": "144b3334b478a4c4dc8c035b49253e62c12a9a1a747f26f4608341b193ecdcdf"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.680, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quando várias pessoas concedem mandato para negócio comum, todas respondem solidariamente perante o mandatário pelos compromissos e efeitos da incumbência, preservado o regresso entre elas.’. O campo de atenção registra: ‘A solidariedade exige mandato plural para interesse comum. O direito regressivo não reduz a proteção externa do mandatário.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 162,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 551,
+   "target_id": "CC2002:ART.681",
+   "explanation_id": "ENTENDA/CC2002:ART.681/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.681:CAPUT\tO mandatário tem sobre a coisa de que tenha a posse em virtude do mandato, direito de retenção, até se reembolsar do que no desempenho do encargo despendeu.",
+   "source_snapshot_sha256": "9a9ab6e339e2cf583bc0f23d0607a42eb18fcb83aa2e21ca1bd70a7a570af832",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.681:CAPUT",
+     "text": "O mandatário tem sobre a coisa de que tenha a posse em virtude do mandato, direito de retenção, até se reembolsar do que no desempenho do encargo despendeu."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O mandatário tem sobre a coisa de que tenha a posse em virtude do mandato, direito de retenção, até se reembolsar do que no desempenho do encargo despendeu.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "244a130222f8598e6cf46df3ca90fe9b944573cd2c1ed333c13af3736bbf577e",
+     "o_que_significa": "bfcef7c125afb89a43244c7c4996c8b0046bf9bb6e800fd9320f9bf233e5ac87",
+     "exemplo_pratico": "0c4186c73100e8223282928e0ae9824e8e7a52f5ef4e8bfc9ba297c5dc334596",
+     "atencao": "e11ab7623409bd7a49c4c558d6201acceddc7342a862473591621316aa44315d",
+     "palavras_dificeis": "6304ce0bbe1d89bc228f7cd91ea47d8e61194d5f784fa6c77822e4ceb9463f2e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.681, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O mandatário pode reter a coisa que possui por causa do mandato até ser reembolsado das despesas realizadas no cumprimento da incumbência.’. O campo de atenção registra: ‘O crédito deve decorrer do encargo e a retenção precisa recair sobre coisa legitimamente possuída em razão dele. Não autoriza apropriação definitiva.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 163,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 552,
+   "target_id": "CC2002:ART.682",
+   "explanation_id": "ENTENDA/CC2002:ART.682/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.682:CAPUT\tCessa o mandato:\nCC2002:ART.682:INC.I\tpela revogação ou pela renúncia;\nCC2002:ART.682:INC.II\tpela morte ou interdição de uma das partes;\nCC2002:ART.682:INC.III\tpela mudança de estado que inabilite o mandante a conferir os poderes, ou o mandatário para os exercer;\nCC2002:ART.682:INC.IV\tpelo término do prazo ou pela conclusão do negócio.",
+   "source_snapshot_sha256": "0aa572e68e64c9887f2fa4d310fe3d0adf28f17e61449e32ef920c4c015ad609",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.682:CAPUT",
+     "text": "Cessa o mandato:"
+    },
+    {
+     "label": "CC2002:ART.682:INC.I",
+     "text": "pela revogação ou pela renúncia;"
+    },
+    {
+     "label": "CC2002:ART.682:INC.II",
+     "text": "pela morte ou interdição de uma das partes;"
+    },
+    {
+     "label": "CC2002:ART.682:INC.III",
+     "text": "pela mudança de estado que inabilite o mandante a conferir os poderes, ou o mandatário para os exercer;"
+    },
+    {
+     "label": "CC2002:ART.682:INC.IV",
+     "text": "pelo término do prazo ou pela conclusão do negócio."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 5 segmentos vigentes do dispositivo: Cessa o mandato: | pela revogação ou pela renúncia; | pela morte ou interdição de uma das partes; | pela mudança de estado que inabilite o mandante a conferir os poderes, ou o mandatário para os exercer; | pelo término do prazo ou pela conclusão do negócio.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b208fe413cee304bd2190f2e18f2bef4201b71c65f8ac207e51096f782ed2f3f",
+     "o_que_significa": "84559b6c30306f38c2f722542e37b203dd49f2e38f59ace4b438551699234baf",
+     "exemplo_pratico": "4b809df4dc6e93cbcb5f339103de09ad81053e6d569a5accc2eb9e4a586ef251",
+     "atencao": "767fc43d47862b75c98ae8b1af606d07a1767c52c9ccc5cd4d4498001e4aee63",
+     "palavras_dificeis": "dedda37faffe8fcfc9398e49acb9a1208e0eae88fdaf496537a627bbbe2fd099"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.682, foram cotejados individualmente 5 segmento(s) vigente(s) (CAPUT, INC.I, INC.II, INC.III, INC.IV) com os cinco campos ENTENDA. A síntese ativa informa: ‘O mandato termina por revogação ou renúncia, morte ou interdição de uma das partes, mudança de estado incapacitante, fim do prazo ou conclusão do negócio.’. O campo de atenção registra: ‘A extinção não desfaz automaticamente atos anteriores. Cláusulas de irrevogabilidade, mandato em causa própria e proteção de terceiros recebem disciplina especial.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 164,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 553,
+   "target_id": "CC2002:ART.683",
+   "explanation_id": "ENTENDA/CC2002:ART.683/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.683:CAPUT\tQuando o mandato contiver a cláusula de irrevogabilidade e o mandante o revogar, pagará perdas e danos.",
+   "source_snapshot_sha256": "8d4bde4483c755d2d280e895b8d7486061688bce64373ea766d8b089330ab6a9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.683:CAPUT",
+     "text": "Quando o mandato contiver a cláusula de irrevogabilidade e o mandante o revogar, pagará perdas e danos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Quando o mandato contiver a cláusula de irrevogabilidade e o mandante o revogar, pagará perdas e danos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "dfd44b80d1b0371539dcfe9302c7694b0b992c6bef169d5c9cb6f604ab0043ea",
+     "o_que_significa": "2ef05e693e5d42c66e6209caff3aaa02ef70299ef6f05c5b487bfb28d4141bb1",
+     "exemplo_pratico": "ff0c02e5f4e2c8203fb13ec865650b274360f70aa5fa66fde68d8a8c6ecb3f27",
+     "atencao": "d1a79839d961ead9d1f49fb2825888b59cb6ddd928d85dcc1b80be569d59489a",
+     "palavras_dificeis": "7c573e70731057e84e0b53c579b1130b531c24485f6332bbb33f583b52c10553"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.683, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se o mandato declarado irrevogável for revogado pelo mandante, ele deve reparar as perdas e os danos causados.’. O campo de atenção registra: ‘Não se confunde com as hipóteses seguintes, em que a revogação pode ser juridicamente ineficaz. A indenização exige dano e nexo causal.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 165,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 554,
+   "target_id": "CC2002:ART.684",
+   "explanation_id": "ENTENDA/CC2002:ART.684/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.684:CAPUT\tQuando a cláusula de irrevogabilidade for condição de um negócio bilateral, ou tiver sido estipulada no exclusivo interesse do mandatário, a revogação do mandato será ineficaz.",
+   "source_snapshot_sha256": "d0bf32c73b286947402079add6e29c73a25e18ee2b9c86a3106e498a4a720279",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.684:CAPUT",
+     "text": "Quando a cláusula de irrevogabilidade for condição de um negócio bilateral, ou tiver sido estipulada no exclusivo interesse do mandatário, a revogação do mandato será ineficaz."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Quando a cláusula de irrevogabilidade for condição de um negócio bilateral, ou tiver sido estipulada no exclusivo interesse do mandatário, a revogação do mandato será ineficaz.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "735a82558d84a78608ec9ea181cc9ca1b9f3ffa29e56ce57e5bbb83d53a66178",
+     "o_que_significa": "522ae926d8d03dff3a4b4a98a33c63fb1f57895ec79b77e1170aa1d913319bc5",
+     "exemplo_pratico": "e19eba5e92e77eb2de90b480c8de6732d5ab9ec9755aa3ff01033e9fdc78af8b",
+     "atencao": "1208e13d65148fcd49957f745da447826709d0e89e771681bd37ad8d2570bd42",
+     "palavras_dificeis": "15527d32bd98476f64b5b414726e472e6a972e0634b6e6cf8a97e84f539c47ee"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.684, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A revogação não produz efeito quando a irrevogabilidade integra negócio bilateral ou foi estabelecida exclusivamente em benefício do mandatário.’. O campo de atenção registra: ‘É necessário demonstrar a vinculação ao negócio bilateral ou o interesse exclusivo do mandatário. A mera palavra 'irrevogável' pode conduzir ao regime indenizatório do artigo anterior.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 166,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 555,
+   "target_id": "CC2002:ART.685",
+   "explanation_id": "ENTENDA/CC2002:ART.685/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.685:CAPUT\tConferido o mandato com a cláusula \"em causa própria\", a sua revogação não terá eficácia, nem se extinguirá pela morte de qualquer das partes, ficando o mandatário dispensado de prestar contas, e podendo transferir para si os bens móveis ou imóveis objeto do mandato, obedecidas as formalidades legais.",
+   "source_snapshot_sha256": "1877382683131d6118c96132ccf134338427fda17f2f2b091f5a64e318e3c6cb",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.685:CAPUT",
+     "text": "Conferido o mandato com a cláusula \"em causa própria\", a sua revogação não terá eficácia, nem se extinguirá pela morte de qualquer das partes, ficando o mandatário dispensado de prestar contas, e podendo transferir para si os bens móveis ou imóveis objeto do mandato, obedecidas as formalidades legais."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Conferido o mandato com a cláusula \"em causa própria\", a sua revogação não terá eficácia, nem se extinguirá pela morte de qualquer das partes, ficando o mandatário dispensado de prestar contas, e podendo transferir para si os bens móveis ou imóveis objeto do mandato, obedecidas as formalidades legais.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ad10de7c6f72a86e8aea0c5f32cc2170e82286c683291436adadf7a1c7b0e28b",
+     "o_que_significa": "c545d3b9b6791277e2928baccf0d913ab609dcc705aca14657ccfc2e4e040c96",
+     "exemplo_pratico": "a92154609c6e6c2b3da89b27ac2b0536a16861add96892174ad64e93f5ef97ca",
+     "atencao": "a19684cc546cfb6a6a626f1c2f4018a7dc2d231c669e60e1059706cbc652b396",
+     "palavras_dificeis": "c726ac107906cb5e1ac0d2e2edf19854db95d274f4c163b21706523b6dc43e5a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.685, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘No mandato em causa própria, a revogação é ineficaz e a morte das partes não encerra os poderes. O mandatário não presta contas e pode transferir a si os bens abrangidos, cumpridas as formalidades legais.’. O campo de atenção registra: ‘A cláusula não dispensa escritura, registro ou outras formas exigidas para o bem. Seu alcance deve ser expresso e não se presume.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 167,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 556,
+   "target_id": "CC2002:ART.686",
+   "explanation_id": "ENTENDA/CC2002:ART.686/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.686:CAPUT\tA revogação do mandato, notificada somente ao mandatário, não se pode opor aos terceiros que, ignorando-a, de boa-fé com ele trataram; mas ficam salvas ao constituinte as ações que no caso lhe possam caber contra o procurador.\nCC2002:ART.686:PAR.UNICO\tÉ irrevogável o mandato que contenha poderes de cumprimento ou confirmação de negócios encetados, aos quais se ache vinculado.",
+   "source_snapshot_sha256": "9ca7ccf6f6fdbbef0582d0c18022851c8c69fd874ab8ec79e9651d5d284ffa8a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.686:CAPUT",
+     "text": "A revogação do mandato, notificada somente ao mandatário, não se pode opor aos terceiros que, ignorando-a, de boa-fé com ele trataram; mas ficam salvas ao constituinte as ações que no caso lhe possam caber contra o procurador."
+    },
+    {
+     "label": "CC2002:ART.686:PAR.UNICO",
+     "text": "É irrevogável o mandato que contenha poderes de cumprimento ou confirmação de negócios encetados, aos quais se ache vinculado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A revogação do mandato, notificada somente ao mandatário, não se pode opor aos terceiros que, ignorando-a, de boa-fé com ele trataram; mas ficam salvas ao constituinte as ações que no caso lhe possam caber contra o procurador. | É irrevogável o mandato que contenha poderes de cumprimento ou confirmação de negócios encetados, aos quais se ache vinculado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "56cdb7472403de0ac6c2d67260799c7fba55bcb3d3ec333bf666767348321186",
+     "o_que_significa": "cce8f82a0b7efed7928532f282ce36692775d73b8f60e53565ae69d4059c8501",
+     "exemplo_pratico": "555e15ca48179396a944c1c82e657d3d983384137d987de745ffaca22f622c3b",
+     "atencao": "c9da99625a421adf5ddc724618249f4c457d2557bb65b011b27826425b75a7bd",
+     "palavras_dificeis": "976b47ba114aa6d650392417b499de7218b749e53e9e734e8a4727c827c25c04"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.686, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Revogação comunicada apenas ao mandatário não prejudica terceiros que, sem conhecê-la e de boa-fé, ainda contratam com ele. O mandante conserva pretensões contra o procurador. Certos poderes ligados a negócios já iniciados são irrevogáveis.’. O campo de atenção registra: ‘A proteção exige desconhecimento e boa-fé. Após ciência da revogação, o terceiro não pode invocar esta regra.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 168,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 557,
+   "target_id": "CC2002:ART.687",
+   "explanation_id": "ENTENDA/CC2002:ART.687/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.687:CAPUT\tTanto que for comunicada ao mandatário a nomeação de outro, para o mesmo negócio, considerar-se-á revogado o mandato anterior.",
+   "source_snapshot_sha256": "a618656e78eb361dc9fba0d04e434d95ab1b027bbde2f5c9350560391f2b4275",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.687:CAPUT",
+     "text": "Tanto que for comunicada ao mandatário a nomeação de outro, para o mesmo negócio, considerar-se-á revogado o mandato anterior."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Tanto que for comunicada ao mandatário a nomeação de outro, para o mesmo negócio, considerar-se-á revogado o mandato anterior.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ed25499f357fff6ef0ebe7efb9e507ea3fe7cf6280f895b9b25431e7068623fb",
+     "o_que_significa": "45b5439cbebb437f24a04201f35b7b88d91d812b788d24a5d7b230c33cbeddbc",
+     "exemplo_pratico": "8cb585ac96c875ada23640e9b5824b3f1f4ecf01721c84f963cd9736ca1a0055",
+     "atencao": "c07d6864270a2981bb5c52ed6efcb88d1654b19ea6168f4b130f89125cd2ca9d",
+     "palavras_dificeis": "594ae23900ba55500adb0421c343f1ffbe43b2f7843c63353141870552b6644e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.687, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A comunicação ao mandatário de que outra pessoa foi nomeada para o mesmo negócio revoga o mandato anterior.’. O campo de atenção registra: ‘Nomeação para tarefa distinta não produz necessariamente esse efeito. Até a comunicação, devem ser consideradas a boa-fé e as demais regras do mandato.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 169,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 558,
+   "target_id": "CC2002:ART.688",
+   "explanation_id": "ENTENDA/CC2002:ART.688/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.688:CAPUT\tA renúncia do mandato será comunicada ao mandante, que, se for prejudicado pela sua inoportunidade, ou pela falta de tempo, a fim de prover à substituição do procurador, será indenizado pelo mandatário, salvo se este provar que não podia continuar no mandato sem prejuízo considerável, e que não lhe era dado substabelecer.",
+   "source_snapshot_sha256": "717f613dd42e4044eff39217664a87a43f06d26e824caca7aecfad3cbde4253a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.688:CAPUT",
+     "text": "A renúncia do mandato será comunicada ao mandante, que, se for prejudicado pela sua inoportunidade, ou pela falta de tempo, a fim de prover à substituição do procurador, será indenizado pelo mandatário, salvo se este provar que não podia continuar no mandato sem prejuízo considerável, e que não lhe era dado substabelecer."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A renúncia do mandato será comunicada ao mandante, que, se for prejudicado pela sua inoportunidade, ou pela falta de tempo, a fim de prover à substituição do procurador, será indenizado pelo mandatário, salvo se este provar que não podia continuar no mandato sem prejuízo considerável, e que não lhe era dado substabelecer.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "92d22273b217b436a9065084b0657c59bd8b483de4774a50921b84fd21fe646e",
+     "o_que_significa": "5576c54ee4291de65eeb9120566d81f628d6a09ba8779ef355e3b3423f73d977",
+     "exemplo_pratico": "540f20828d6409a59485977655eca4f2bafb175899a8adbd0c74ce449fe9aea5",
+     "atencao": "8064cf27a88c2099c9619e967fdc1c95ef80c5b65359eae9a9f8d34eb3055a3e",
+     "palavras_dificeis": "0178235a03fd9743edd983332a4a90a036355ec423ec1ae274820069100ed76c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.688, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O mandatário que renuncia deve avisar o mandante. Se o momento ou a falta de prazo para substituição causar prejuízo, haverá indenização, salvo impossibilidade de continuar sem dano considerável e ausência de possibilidade de substabelecer.’. O campo de atenção registra: ‘A indenização não é automática: exige dano ligado à inoportunidade ou ao aviso insuficiente, além da análise conjunta das justificativas legais.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 170,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 559,
+   "target_id": "CC2002:ART.689",
+   "explanation_id": "ENTENDA/CC2002:ART.689/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.689:CAPUT\tSão válidos, a respeito dos contratantes de boa-fé, os atos com estes ajustados em nome do mandante pelo mandatário, enquanto este ignorar a morte daquele ou a extinção do mandato, por qualquer outra causa.",
+   "source_snapshot_sha256": "e993f37fb7a79d74f30e3b06f763378b6dc82cb094c82afc336ba4f4c1810863",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.689:CAPUT",
+     "text": "São válidos, a respeito dos contratantes de boa-fé, os atos com estes ajustados em nome do mandante pelo mandatário, enquanto este ignorar a morte daquele ou a extinção do mandato, por qualquer outra causa."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: São válidos, a respeito dos contratantes de boa-fé, os atos com estes ajustados em nome do mandante pelo mandatário, enquanto este ignorar a morte daquele ou a extinção do mandato, por qualquer outra causa.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "290ad0e75b180ff1542f93117df6e91ce4ba614259e324e484e859e94b0b9164",
+     "o_que_significa": "26a628fe9247c9e510505c3b29b6a807214734e7e37ceaf670dcbf8a32d346f8",
+     "exemplo_pratico": "695cfe496e511e71ce16f673d44ab5a515f4cca540a69bf65b8d7d2826dd29b8",
+     "atencao": "33a6e4e361aec80b1e9e86f576373a8df79cd20edb5102bda70c6236a732b38a",
+     "palavras_dificeis": "47497816b1909c8ccc5c654b991298d9cca38b2f9c451c3f34762a091b01a351"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.689, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Atos celebrados em nome do mandante com contratantes de boa-fé permanecem válidos enquanto o mandatário desconhecer a morte do mandante ou outra causa de extinção.’. O campo de atenção registra: ‘A regra exige ignorância do mandatário e boa-fé do contratante. Conhecimento da extinção afasta essa proteção, ressalvadas situações urgentes próprias.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 171,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 560,
+   "target_id": "CC2002:ART.690",
+   "explanation_id": "ENTENDA/CC2002:ART.690/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.690:CAPUT\tSe falecer o mandatário, pendente o negócio a ele cometido, os herdeiros, tendo ciência do mandato, avisarão o mandante, e providenciarão a bem dele, como as circunstâncias exigirem.",
+   "source_snapshot_sha256": "ffa0e65db5d5d04ff2b9dcef348569b9cec2976de9d41cf9c3e37dbff1ed06bb",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.690:CAPUT",
+     "text": "Se falecer o mandatário, pendente o negócio a ele cometido, os herdeiros, tendo ciência do mandato, avisarão o mandante, e providenciarão a bem dele, como as circunstâncias exigirem."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se falecer o mandatário, pendente o negócio a ele cometido, os herdeiros, tendo ciência do mandato, avisarão o mandante, e providenciarão a bem dele, como as circunstâncias exigirem.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "960c7563ed8dffab3500548bb13121731f66fc4f087f7525d7ddebd6af2114cb",
+     "o_que_significa": "a39eeaf45790cde5f5cfdcdd34406b860bcf8753c262a367a8155dc69d198c23",
+     "exemplo_pratico": "4daadbee81d8de2b292d31041b7dd3330623675b5fe0bf9cb7a752fd44732cae",
+     "atencao": "72d6712231a3b40b26eb653be74fb4586e2e872d8702a07a26ba1199b764d906",
+     "palavras_dificeis": "35c64541a65011a2bf2ebee0490a1d15e144294403d1ca1109736d571ca67983"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.690, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Morrendo o mandatário com negócio pendente, seus herdeiros que souberem do mandato devem avisar o mandante e tomar as providências exigidas pelas circunstâncias para protegê-lo.’. O campo de atenção registra: ‘O dever pressupõe ciência do mandato. A extensão das providências é limitada pelo artigo seguinte e pela urgência concreta.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 172,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 561,
+   "target_id": "CC2002:ART.691",
+   "explanation_id": "ENTENDA/CC2002:ART.691/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.691:CAPUT\tOs herdeiros, no caso do artigo antecedente, devem limitar-se às medidas conservatórias, ou continuar os negócios pendentes que se não possam demorar sem perigo, regulando-se os seus serviços dentro desse limite, pelas mesmas normas a que os do mandatário estão sujeitos.",
+   "source_snapshot_sha256": "ad081071bea0022451d8cbc4d2465486c27afd4ee9adb3bab22b4013f529b546",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.691:CAPUT",
+     "text": "Os herdeiros, no caso do artigo antecedente, devem limitar-se às medidas conservatórias, ou continuar os negócios pendentes que se não possam demorar sem perigo, regulando-se os seus serviços dentro desse limite, pelas mesmas normas a que os do mandatário estão sujeitos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Os herdeiros, no caso do artigo antecedente, devem limitar-se às medidas conservatórias, ou continuar os negócios pendentes que se não possam demorar sem perigo, regulando-se os seus serviços dentro desse limite, pelas mesmas normas a que os do mandatário estão sujeitos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0721cbddabd16123a4e7fc08b1d6592020b9c7f95172d10326a146f83a2923d3",
+     "o_que_significa": "28b6892b3655f2d194703941bb5111e818d148fcbe3b760e3b6f0bd19a5deef5",
+     "exemplo_pratico": "11c888c2e2e39aee734f1ace813606b0b24f56fe9018f4b41faa5fc5e1afc16b",
+     "atencao": "b26bd9e5f02162239a5e81f83d0897b27a9d482131eb3745165202de878e40df",
+     "palavras_dificeis": "f102354e4bfce714c51bd3ca9e30430b64a1baae2ff9bf8d88d6987b712820b9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.691, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Os herdeiros do mandatário devem restringir-se a medidas de conservação ou continuar apenas negócios que não possam esperar sem risco, sujeitos, nesse limite, às regras aplicáveis ao mandatário.’. O campo de atenção registra: ‘Providências além da conservação ou da urgência não encontram autorização neste artigo. Os herdeiros respondem segundo as normas do mandato dentro da atuação permitida.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 173,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 562,
+   "target_id": "CC2002:ART.692",
+   "explanation_id": "ENTENDA/CC2002:ART.692/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.692:CAPUT\tO mandato judicial fica subordinado às normas que lhe dizem respeito, constantes da legislação processual, e, supletivamente, às estabelecidas neste Código.",
+   "source_snapshot_sha256": "2b5f91d5208be30be66e1546e3d404969d00a31ab7e9f48538d360670cbe8ece",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.692:CAPUT",
+     "text": "O mandato judicial fica subordinado às normas que lhe dizem respeito, constantes da legislação processual, e, supletivamente, às estabelecidas neste Código."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O mandato judicial fica subordinado às normas que lhe dizem respeito, constantes da legislação processual, e, supletivamente, às estabelecidas neste Código.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1fc5225f5d8b8875f8acb276e65ea09a9025e500548a3560adb299b5864f6110",
+     "o_que_significa": "939ba520a19822b66688c22ef038444c34796569aca4ec07f7af27e4d46a3c0c",
+     "exemplo_pratico": "e895804ee8f9002f655b6389e2b2f9f137132ca7c3249a46825eec3337762e74",
+     "atencao": "cb9e93a72fe606ad030336fe70cf51634f4636b1807bc7abbe3b5fdfd874d1c0",
+     "palavras_dificeis": "f96d994ea95e16bd67411d0c858c27217b3c2bda3b7040bca2e4dfb669d78eb1"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.692, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O mandato judicial segue prioritariamente a legislação processual e utiliza as regras civis do mandato apenas de forma suplementar.’. O campo de atenção registra: ‘Não se deve transportar automaticamente toda regra do mandato civil para a representação em juízo. A norma processual especial prevalece.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 174,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 563,
+   "target_id": "CC2002:ART.693",
+   "explanation_id": "ENTENDA/CC2002:ART.693/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.693:CAPUT\tO contrato de comissão tem por objeto a compra ou venda de bens ou a realização de mútuo ou outro negócio jurídico de crédito pelo comissário, em seu próprio nome, à conta do comitente. (Redação dada pela Lei nº 14.690, de 2023) Vigência",
+   "source_snapshot_sha256": "87b3036d79812fcf365b022d9d869997c8a79dcf667f05a9f0986f684fe6535c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.693:CAPUT",
+     "text": "O contrato de comissão tem por objeto a compra ou venda de bens ou a realização de mútuo ou outro negócio jurídico de crédito pelo comissário, em seu próprio nome, à conta do comitente. (Redação dada pela Lei nº 14.690, de 2023) Vigência"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O contrato de comissão tem por objeto a compra ou venda de bens ou a realização de mútuo ou outro negócio jurídico de crédito pelo comissário, em seu próprio nome, à conta do comitente. (Redação dada pela Lei nº 14.690, de 2023) Vigência",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "af8c9a31647231d44f880556594e0d9a24649ed7310ce998afcc07d04f8cb280",
+     "o_que_significa": "a44e56c08d8bf537655f4436e8496c4afc352ac929b9df5c15641913983eeeda",
+     "exemplo_pratico": "5f686d562c0dc8c1e3c9decbe607dff4de7d8b3da1d8545553f9af5e6fcd3043",
+     "atencao": "a44346419bac5c2b7f22e7179e0ec83bcbd2ca6da438a7c6448461b08315ef6a",
+     "palavras_dificeis": "5af0113297c89ca59dbe22eb0f1b21620f22b66fc524d4d149588d7da6256f7a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.693, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Na comissão, o comissário realiza compra, venda, mútuo ou outro negócio de crédito em nome próprio, mas por conta econômica do comitente.’. O campo de atenção registra: ‘Comissão não é simples representação: o comitente não aparece diretamente no contrato externo. Obrigações perante terceiros seguem o artigo seguinte.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 175,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 564,
+   "target_id": "CC2002:ART.694",
+   "explanation_id": "ENTENDA/CC2002:ART.694/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.694:CAPUT\tO comissário fica diretamente obrigado para com as pessoas com quem contratar, sem que estas tenham ação contra o comitente, nem este contra elas, salvo se o comissário ceder seus direitos a qualquer das partes.",
+   "source_snapshot_sha256": "9ac041ba72a3255af0c4419d0286122100aa53343c9f645c002c9bcd80ff2651",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.694:CAPUT",
+     "text": "O comissário fica diretamente obrigado para com as pessoas com quem contratar, sem que estas tenham ação contra o comitente, nem este contra elas, salvo se o comissário ceder seus direitos a qualquer das partes."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O comissário fica diretamente obrigado para com as pessoas com quem contratar, sem que estas tenham ação contra o comitente, nem este contra elas, salvo se o comissário ceder seus direitos a qualquer das partes.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "51d08e899d8180af585370462c4a0a84cac8c969efa3542a193f18897dff8c7c",
+     "o_que_significa": "a1e9b3c9588ba97907c484a41bd24a2f8cc31fb95f22437759107d47a4076d0d",
+     "exemplo_pratico": "c3b0fb13e50841ae973b9ad72755ead84881d22dcac7708f65dcd41cd428c3e7",
+     "atencao": "5bc5851f58a61f12fe887fa6c00c412ec8235a18b10a871d704dc03f3a92f982",
+     "palavras_dificeis": "8fc7d366c46db6c023635f9768eb88b88e37a4676af9e2f963a209406b78afe7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.694, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O comissário fica diretamente vinculado às pessoas com quem contrata; em regra, terceiros e comitente não têm ação direta entre si, salvo cessão dos direitos do comissário.’. O campo de atenção registra: ‘A cessão transfere direitos, não apaga automaticamente obrigações nem dispensa requisitos próprios. A regra distingue comissão de mandato representativo.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 176,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 565,
+   "target_id": "CC2002:ART.695",
+   "explanation_id": "ENTENDA/CC2002:ART.695/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.695:CAPUT\tO comissário é obrigado a agir de conformidade com as ordens e instruções do comitente, devendo, na falta destas, não podendo pedi-las a tempo, proceder segundo os usos em casos semelhantes.\nCC2002:ART.695:PAR.UNICO\tTer-se-ão por justificados os atos do comissário, se deles houver resultado vantagem para o comitente, e ainda no caso em que, não admitindo demora a realização do negócio, o comissário agiu de acordo com os usos.",
+   "source_snapshot_sha256": "aa3d982de7dd5745573758642f4b0f3114ca500dd9a5c42dee178667a95f879d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.695:CAPUT",
+     "text": "O comissário é obrigado a agir de conformidade com as ordens e instruções do comitente, devendo, na falta destas, não podendo pedi-las a tempo, proceder segundo os usos em casos semelhantes."
+    },
+    {
+     "label": "CC2002:ART.695:PAR.UNICO",
+     "text": "Ter-se-ão por justificados os atos do comissário, se deles houver resultado vantagem para o comitente, e ainda no caso em que, não admitindo demora a realização do negócio, o comissário agiu de acordo com os usos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O comissário é obrigado a agir de conformidade com as ordens e instruções do comitente, devendo, na falta destas, não podendo pedi-las a tempo, proceder segundo os usos em casos semelhantes. | Ter-se-ão por justificados os atos do comissário, se deles houver resultado vantagem para o comitente, e ainda no caso em que, não admitindo demora a realização do negócio, o comissário agiu de acordo com os usos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "83129753a8b588cbbb7ea2565c6decab8a15dcafa4e6b80c5fe63d09f9a90d2b",
+     "o_que_significa": "2dc33f5738d5af9b40204141ae692efef8727e017e3b922161cf462e10160630",
+     "exemplo_pratico": "f69e9b52adac193d452f1cf7c9c90613345e701be13b07538783fe87d35a7477",
+     "atencao": "6ef031866c41d4e747e9d537059f08b777ec399dcfd22b82f464935d7599e7aa",
+     "palavras_dificeis": "6eece2c8d2eeddb1ce1684be5232c75b897dc238e331ee27a509b60c545ce8f7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.695, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘O comissário deve cumprir ordens e instruções. Se elas faltarem e não puder consultá-las a tempo, segue os usos de negócios semelhantes. Atos úteis ao comitente ou urgentes e conformes aos usos podem ser justificados.’. O campo de atenção registra: ‘Vantagem posterior não legitima qualquer desobediência deliberada. Devem ser comprovadas urgência, impossibilidade de consulta ou utilidade prevista no parágrafo.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 177,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 566,
+   "target_id": "CC2002:ART.696",
+   "explanation_id": "ENTENDA/CC2002:ART.696/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.696:CAPUT\tNo desempenho das suas incumbências o comissário é obrigado a agir com cuidado e diligência, não só para evitar qualquer prejuízo ao comitente, mas ainda para lhe proporcionar o lucro que razoavelmente se podia esperar do negócio.\nCC2002:ART.696:PAR.UNICO\tResponderá o comissário, salvo motivo de força maior, por qualquer prejuízo que, por ação ou omissão, ocasionar ao comitente.",
+   "source_snapshot_sha256": "6d193461f7c39e45296717654c1ff6f47b5d9aca53d166d01cb8ae54b29099bf",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.696:CAPUT",
+     "text": "No desempenho das suas incumbências o comissário é obrigado a agir com cuidado e diligência, não só para evitar qualquer prejuízo ao comitente, mas ainda para lhe proporcionar o lucro que razoavelmente se podia esperar do negócio."
+    },
+    {
+     "label": "CC2002:ART.696:PAR.UNICO",
+     "text": "Responderá o comissário, salvo motivo de força maior, por qualquer prejuízo que, por ação ou omissão, ocasionar ao comitente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: No desempenho das suas incumbências o comissário é obrigado a agir com cuidado e diligência, não só para evitar qualquer prejuízo ao comitente, mas ainda para lhe proporcionar o lucro que razoavelmente se podia esperar do negócio. | Responderá o comissário, salvo motivo de força maior, por qualquer prejuízo que, por ação ou omissão, ocasionar ao comitente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "92d4354df8345da36e10f05e0b88bd3405dc1b5b895a7ccdd8e9c314f60b986e",
+     "o_que_significa": "24460338c5b6158577cd7f3cf0dd0a68f947c0bb720f3cfd224fbc032d886b5f",
+     "exemplo_pratico": "4381aa96e9186e10f48b081e68366769f27069c869be8fda3c38e7eb1b84fcbd",
+     "atencao": "f7e500f209c31a71fc84d8ed6d56212024f91d2c0e009650e17a2231ec18c961",
+     "palavras_dificeis": "c85b891e5da801f855187cb0fe82dc4d3cc920b84c1bbbe451439163c8e2c27d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.696, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘O comissário deve atuar com cuidado para evitar prejuízo e buscar o lucro razoavelmente esperado. Responde por dano causado por ação ou omissão, salvo força maior.’. O campo de atenção registra: ‘Lucro razoável não equivale a garantia de resultado. É preciso considerar instruções, condições do mercado, nexo causal e eventual força maior.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 178,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 567,
+   "target_id": "CC2002:ART.697",
+   "explanation_id": "ENTENDA/CC2002:ART.697/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.697:CAPUT\tO comissário não responde pela insolvência das pessoas com quem tratar, exceto em caso de culpa e no do artigo seguinte.",
+   "source_snapshot_sha256": "b26b5a99bb6ec1e0380f1c6f1bdc2e57e401b0d666a1f941a9cc8cc06ca34632",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.697:CAPUT",
+     "text": "O comissário não responde pela insolvência das pessoas com quem tratar, exceto em caso de culpa e no do artigo seguinte."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O comissário não responde pela insolvência das pessoas com quem tratar, exceto em caso de culpa e no do artigo seguinte.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "922648e5f9e6a8d8eca7eff2e73adca231a697afcb0e2f84385e0d3cd8a5cc51",
+     "o_que_significa": "2f5cc8dfe4a6c96553c79ac5b0f0a021c057e375688f488a2a01ef72dee564b2",
+     "exemplo_pratico": "29c5bbeddf04a393ba09c0ccf9a71e87d0199d14c7284666a30843d33c91ada2",
+     "atencao": "7939ef9b6be0edb5b8e90435e91eeed256e7a7aa3ca789893a754dc29819ac59",
+     "palavras_dificeis": "9565ef06e453c9f03b01539c4dfabab8aa21e8fd5aab57ad4332607b03411513"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.697, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Em regra, o comissário não garante a solvência das pessoas com quem negocia. Ele responde se agiu com culpa ou assumiu a garantia especial prevista no artigo seguinte.’. O campo de atenção registra: ‘Insolvência não se confunde com inadimplemento pontual. A culpa na escolha ou condução precisa ser examinada concretamente.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 179,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 568,
+   "target_id": "CC2002:ART.699",
+   "explanation_id": "ENTENDA/CC2002:ART.699/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.699:CAPUT\tPresume-se o comissário autorizado a conceder dilação do prazo para pagamento, na conformidade dos usos do lugar onde se realizar o negócio, se não houver instruções diversas do comitente.",
+   "source_snapshot_sha256": "825b2297f08befe46679cfc41d29b93c49c3d49413fbbf35aacd0a5568876b9c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.699:CAPUT",
+     "text": "Presume-se o comissário autorizado a conceder dilação do prazo para pagamento, na conformidade dos usos do lugar onde se realizar o negócio, se não houver instruções diversas do comitente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Presume-se o comissário autorizado a conceder dilação do prazo para pagamento, na conformidade dos usos do lugar onde se realizar o negócio, se não houver instruções diversas do comitente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "aaaa0fb4b9358baf3a8dda24d5db87e0398524fe6e97c3318b62a1627d99537b",
+     "o_que_significa": "697c9e3cc6dac0ad1cc61e70c94fcd39c056e386b6dcb9205786342b2acabc3f",
+     "exemplo_pratico": "66857cdf8f67f8f3b8367edb3faead38196ddcb59381a5b29b556dc054273218",
+     "atencao": "543d6aaa16ea1a964fc3402087d7788afdb3c4625f95bee43180d2c9f451ece0",
+     "palavras_dificeis": "8052f4bc510847cc7ae924283abb8138457dd8f5d3671ad44f5e89557c5b05a3"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.699, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Na ausência de instrução contrária, presume-se que o comissário pode conceder prazo de pagamento conforme os usos do lugar do negócio.’. O campo de atenção registra: ‘A presunção cede a instruções do comitente e depende de prova dos usos pertinentes. Prazo fora do padrão recebe o tratamento do artigo seguinte.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 180,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 569,
+   "target_id": "CC2002:ART.700",
+   "explanation_id": "ENTENDA/CC2002:ART.700/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.700:CAPUT\tSe houver instruções do comitente proibindo prorrogação de prazos para pagamento, ou se esta não for conforme os usos locais, poderá o comitente exigir que o comissário pague incontinenti ou responda pelas conseqüências da dilação concedida, procedendo-se de igual modo se o comissário não der ciência ao comitente dos prazos concedidos e de quem é seu beneficiário.",
+   "source_snapshot_sha256": "ad5639ee56b9dd9954a2f9b4f3fd0cfbc2c07352ba2afdd3292e15d235cbcaa0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.700:CAPUT",
+     "text": "Se houver instruções do comitente proibindo prorrogação de prazos para pagamento, ou se esta não for conforme os usos locais, poderá o comitente exigir que o comissário pague incontinenti ou responda pelas conseqüências da dilação concedida, procedendo-se de igual modo se o comissário não der ciência ao comitente dos prazos concedidos e de quem é seu beneficiário."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se houver instruções do comitente proibindo prorrogação de prazos para pagamento, ou se esta não for conforme os usos locais, poderá o comitente exigir que o comissário pague incontinenti ou responda pelas conseqüências da dilação concedida, procedendo-se de igual modo se o comissário não der ciência ao comitente dos prazos concedidos e de quem é seu beneficiário.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d17ab02046f7b335ceaa6cf8a7890003681e7740bedbc7e8a42f24a1c56e3b55",
+     "o_que_significa": "ca419bd544594e1892d833ef639bbae20a00a990d074a26b8a98b2b13b8b961f",
+     "exemplo_pratico": "4ed2cb6179ee21aea7498f4974f85bd257e58d3b4b2a4895d63647c47367f62c",
+     "atencao": "0c9b6ee6ec81a092f2d078fe4153a683b90871ab122833f5826e849e7932be9e",
+     "palavras_dificeis": "3e9be12f9ba6d53d35137fc2957e27dc2eae5e07a5819e838483cbcbf75df89b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.700, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se o comitente proibir prazo adicional, se a dilação contrariar os usos locais ou se faltar informação sobre prazo e beneficiário, ele pode exigir pagamento imediato do comissário ou responsabilizá-lo pelas consequências.’. O campo de atenção registra: ‘As alternativas e consequências dependem da violação ocorrida. Comunicação completa e conformidade com instruções e usos devem ser documentadas.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 181,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 570,
+   "target_id": "CC2002:ART.701",
+   "explanation_id": "ENTENDA/CC2002:ART.701/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.701:CAPUT\tNão estipulada a remuneração devida ao comissário, será ela arbitrada segundo os usos correntes no lugar.",
+   "source_snapshot_sha256": "00b024c60f64bbfcd5d7636de575f723938a65a5e84c3f478b95a780545cd0a3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.701:CAPUT",
+     "text": "Não estipulada a remuneração devida ao comissário, será ela arbitrada segundo os usos correntes no lugar."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não estipulada a remuneração devida ao comissário, será ela arbitrada segundo os usos correntes no lugar.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "679f837586317cf853bd1ad1eee51494b817a60b578d7e0ff6aa75a202eb56f4",
+     "o_que_significa": "3c85fbbb94f2edf9dad0aaa92496741aaa012cacd34c3be89f9794c618e9aebd",
+     "exemplo_pratico": "962b3f8dda6e53e08d253ff91f6e6895807e19ab5e2f0335eb23f6fddf2e1cf6",
+     "atencao": "3a5cde64098d5674f8846f2c5f5aeba46ba97f2fd270fdf8bbf431c3f978e40e",
+     "palavras_dificeis": "4fbfbc1bca3abff72a36289d9e09e76627e205582d897263c25b55d39eb6757b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.701, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Sem remuneração previamente definida, a comissão do intermediário é calculada conforme as práticas usuais do local.’. O campo de atenção registra: ‘A regra é subsidiária: prevalecem valor contratado e norma especial aplicável.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 182,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 571,
+   "target_id": "CC2002:ART.702",
+   "explanation_id": "ENTENDA/CC2002:ART.702/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.702:CAPUT\tNo caso de morte do comissário, ou, quando, por motivo de força maior, não puder concluir o negócio, será devida pelo comitente uma remuneração proporcional aos trabalhos realizados.",
+   "source_snapshot_sha256": "0d20196a1509699b33704e69cac812f67339e3d7cb3f0dbd95eca7f79d903ada",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.702:CAPUT",
+     "text": "No caso de morte do comissário, ou, quando, por motivo de força maior, não puder concluir o negócio, será devida pelo comitente uma remuneração proporcional aos trabalhos realizados."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: No caso de morte do comissário, ou, quando, por motivo de força maior, não puder concluir o negócio, será devida pelo comitente uma remuneração proporcional aos trabalhos realizados.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0e9ab7f3943bbfd8e638b507f91d0ee74b7d02084cdc58b93d073b87e2be2108",
+     "o_que_significa": "35c699e3f975651d1edb943fd5bee8b3475ae00a4f7ac8db9a8f2276f62d994d",
+     "exemplo_pratico": "09f5fd1c0a4f4430a775d4838ee724edfbb0f6b4043c05a14b31043cd3fe0e59",
+     "atencao": "7db7d0ed827e3b5b534eea3d34a84910e44d203ce04d953098b0160b829c30e6",
+     "palavras_dificeis": "84ba898711877392ffc880bda1af43fa876b234c8b8725ff8131bab73fa94131"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.702, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se o comissário morrer ou for impedido por força maior antes de terminar o negócio, o comitente paga valor proporcional ao trabalho realizado.’. O campo de atenção registra: ‘A proporção depende da extensão e utilidade dos atos, e o impedimento precisa decorrer de força maior.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 183,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 572,
+   "target_id": "CC2002:ART.703",
+   "explanation_id": "ENTENDA/CC2002:ART.703/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.703:CAPUT\tAinda que tenha dado motivo à dispensa, terá o comissário direito a ser remunerado pelos serviços úteis prestados ao comitente, ressalvado a este o direito de exigir daquele os prejuízos sofridos.",
+   "source_snapshot_sha256": "b0553cc8440a54a919ba023986d299294243b7972c8b02f60c9ef85a16ee03d2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.703:CAPUT",
+     "text": "Ainda que tenha dado motivo à dispensa, terá o comissário direito a ser remunerado pelos serviços úteis prestados ao comitente, ressalvado a este o direito de exigir daquele os prejuízos sofridos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Ainda que tenha dado motivo à dispensa, terá o comissário direito a ser remunerado pelos serviços úteis prestados ao comitente, ressalvado a este o direito de exigir daquele os prejuízos sofridos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "bb5cf603bc9a6129c931b55285c1a100d5b790d8e5c9e121d66b200fe71df976",
+     "o_que_significa": "9576fe817d2973aa20938d07b1f54fdcf0dd116ea9d845f2428cb75b74f7ee9b",
+     "exemplo_pratico": "5af1966249de122bf10df16bf908560df82a4e0081f1dcde088d1b00204516f8",
+     "atencao": "d3ae851ffe29a31ff4faea88bb78bd4e95fd4c16839921d48680751788770e65",
+     "palavras_dificeis": "71442199bf22e6c0d9bdb3b5c4676c880b6116d6bd16d18feefd7e3d133bd490"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.703, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Mesmo quando provocou sua dispensa, o comissário recebe pelos serviços úteis, mas responde pelos prejuízos causados ao comitente.’. O campo de atenção registra: ‘O pagamento não apaga a responsabilidade, e a indenização exige prejuízo e ligação causal.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 184,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 573,
+   "target_id": "CC2002:ART.704",
+   "explanation_id": "ENTENDA/CC2002:ART.704/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.704:CAPUT\tSalvo disposição em contrário, pode o comitente, a qualquer tempo, alterar as instruções dadas ao comissário, entendendo-se por elas regidos também os negócios pendentes.",
+   "source_snapshot_sha256": "2036967dec1a195b46eda881640a88397ac6f3b8963f98b1d603bd449b0d31ff",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.704:CAPUT",
+     "text": "Salvo disposição em contrário, pode o comitente, a qualquer tempo, alterar as instruções dadas ao comissário, entendendo-se por elas regidos também os negócios pendentes."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Salvo disposição em contrário, pode o comitente, a qualquer tempo, alterar as instruções dadas ao comissário, entendendo-se por elas regidos também os negócios pendentes.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "399f5192eaa71c2e690ea9afc90b5c9c4f70f9208c7b0a3654379e9e6a414805",
+     "o_que_significa": "84d8034cd15e9864c553570cfc06f963d1f0d1eda807bc26e10d9fdb0879c3a2",
+     "exemplo_pratico": "fd375629ad5bc0df3049adac2a17676c29bd7a8e1d8045c3699666f1ad7a46e1",
+     "atencao": "176e0b14eb00e284981e129da9ff88de478ff72e73a6726db4979cd6ac871295",
+     "palavras_dificeis": "d8d51b72529ea0e1defc243dd48626c9aaa5eb431c876f0d4f3bc7c3085f45ad"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.704, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Em regra, o comitente pode modificar as instruções a qualquer momento, inclusive para negócios ainda pendentes.’. O campo de atenção registra: ‘Alteração tardia não desfaz automaticamente negócio já concluído nem afasta despesas ou responsabilidades anteriores.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 185,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 574,
+   "target_id": "CC2002:ART.705",
+   "explanation_id": "ENTENDA/CC2002:ART.705/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.705:CAPUT\tSe o comissário for despedido sem justa causa, terá direito a ser remunerado pelos trabalhos prestados, bem como a ser ressarcido pelas perdas e danos resultantes de sua dispensa.",
+   "source_snapshot_sha256": "8eb5833f4f9af37395b647745a36846345757914a20ccb02d1fcdde9a1035e7b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.705:CAPUT",
+     "text": "Se o comissário for despedido sem justa causa, terá direito a ser remunerado pelos trabalhos prestados, bem como a ser ressarcido pelas perdas e danos resultantes de sua dispensa."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o comissário for despedido sem justa causa, terá direito a ser remunerado pelos trabalhos prestados, bem como a ser ressarcido pelas perdas e danos resultantes de sua dispensa.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "99eecd5d50dc41dd83a3dfc7d7800aa2192d67a78d3cefbe7fb1f0e007a3aca4",
+     "o_que_significa": "29a24d6b6c8663dc3b209420c1da4848d8a4b36c396f05f502e996ba759e7613",
+     "exemplo_pratico": "471af1d534ed85ef165c8c5df963116fc2685c2353219dbad54c071a02403ff2",
+     "atencao": "814c14cfaa4d84780138c63c0655aeca4639aa1adc848e0292050db5ce586877",
+     "palavras_dificeis": "8e0de13e6d7daff41288a9a4b404d5e26377b434dcb295cee2462d98816b7ce3"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.705, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Dispensado sem causa legítima, o comissário recebe pelo trabalho feito e reparação pelos danos decorrentes da dispensa.’. O campo de atenção registra: ‘Perdas e danos não são automáticas em valor presumido; devem resultar da dispensa sem justa causa.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 186,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 575,
+   "target_id": "CC2002:ART.706",
+   "explanation_id": "ENTENDA/CC2002:ART.706/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.706:CAPUT\tO comitente e o comissário são obrigados a pagar juros um ao outro; o primeiro pelo que o comissário houver adiantado para cumprimento de suas ordens; e o segundo pela mora na entrega dos fundos que pertencerem ao comitente.",
+   "source_snapshot_sha256": "3b67750377512b031bccef9990f09bcb1abb1609856f82fccfb4c6c0e9545c32",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.706:CAPUT",
+     "text": "O comitente e o comissário são obrigados a pagar juros um ao outro; o primeiro pelo que o comissário houver adiantado para cumprimento de suas ordens; e o segundo pela mora na entrega dos fundos que pertencerem ao comitente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O comitente e o comissário são obrigados a pagar juros um ao outro; o primeiro pelo que o comissário houver adiantado para cumprimento de suas ordens; e o segundo pela mora na entrega dos fundos que pertencerem ao comitente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ffad2895f01f48740c346d8e52ef206ad03919254d03633d5f522cc4924ab91b",
+     "o_que_significa": "450dbde12c974989f64164ffad1253d76169ae2be847221d246c6d0026ccd443",
+     "exemplo_pratico": "8e5a42ebc4a4a7eeffa2922e214cd7eb85af606a9c820720a38d9dbfc9603edc",
+     "atencao": "108cce8570d0912eebc7d43c7bdac2012b7f90f5d44c9644719ea3f7de236be2",
+     "palavras_dificeis": "4137325a0f7865fc315266ac9c5dfb6baf5a500a07e926cf157cf785db65cf65"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.706, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Há juros recíprocos: o comitente os paga sobre adiantamentos feitos pelo comissário; este os paga se atrasar a entrega de valores do comitente.’. O campo de atenção registra: ‘É necessário distinguir adiantamento autorizado de despesa indevida e identificar o início da mora.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 187,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 576,
+   "target_id": "CC2002:ART.707",
+   "explanation_id": "ENTENDA/CC2002:ART.707/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.707:CAPUT\tO crédito do comissário, relativo a comissões e despesas feitas, goza de privilégio geral, no caso de falência ou insolvência do comitente.",
+   "source_snapshot_sha256": "43cadccb3355118473ab2df633e4b963458c377883a191b5d3dc68caa5116e96",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.707:CAPUT",
+     "text": "O crédito do comissário, relativo a comissões e despesas feitas, goza de privilégio geral, no caso de falência ou insolvência do comitente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O crédito do comissário, relativo a comissões e despesas feitas, goza de privilégio geral, no caso de falência ou insolvência do comitente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5e3cc50f7d3898a63b2479f8dde02a04ab1d364b9931d8d1ababff522f6dc91b",
+     "o_que_significa": "ca1b383495908bf2e43197cf4c3b27d04b8a6c7a6efa406e5691d0b177548d65",
+     "exemplo_pratico": "619fb0bc32cd1a74f9b1521a213368d9c98db98a45ba8223ea095b9f1b2da26b",
+     "atencao": "7bc32d32f7614622a19b2ae4eaca5ef7ce59282902b9f24b71092076d6a15049",
+     "palavras_dificeis": "87b2008850ff52b37c8af647ec0bb0a5cc1b2a087f04d769d497070e548f8261"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.707, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Créditos do comissário por remuneração e despesas têm privilégio geral na insolvência ou falência do comitente.’. O campo de atenção registra: ‘Privilégio geral não significa pagamento garantido nem preferência sobre todas as classes da legislação concursal.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 188,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 577,
+   "target_id": "CC2002:ART.708",
+   "explanation_id": "ENTENDA/CC2002:ART.708/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.708:CAPUT\tPara reembolso das despesas feitas, bem como para recebimento das comissões devidas, tem o comissário direito de retenção sobre os bens e valores em seu poder em virtude da comissão.",
+   "source_snapshot_sha256": "3fccc2a013ba23e0f7aa9982eb6645da3dafb6e8a173c2b8b5ead930c333f0d8",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.708:CAPUT",
+     "text": "Para reembolso das despesas feitas, bem como para recebimento das comissões devidas, tem o comissário direito de retenção sobre os bens e valores em seu poder em virtude da comissão."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Para reembolso das despesas feitas, bem como para recebimento das comissões devidas, tem o comissário direito de retenção sobre os bens e valores em seu poder em virtude da comissão.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ab21670765823cf6821a26ded16f6b57b144260889b8f5a9ded426b8faaa46d3",
+     "o_que_significa": "258f7765bac3abde45204d93ce48c8c017b4520ea0b78937f95c430fc40c7beb",
+     "exemplo_pratico": "90f3ce8bf4e339e79873b08b77085627b62e80791bb2fcd40e077cd0d0218b1a",
+     "atencao": "28449815cb3546617b96c0be2a37c88898a4d0a17f33286a3a9398b746dfbadc",
+     "palavras_dificeis": "5a7de87794cbb9ff7aef2f59c3863e906abb276f25248cd2aa1caac08cc811fd"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.708, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O comissário pode reter bens e valores recebidos pela comissão até obter reembolso de despesas e pagamento de comissões.’. O campo de atenção registra: ‘O direito não autoriza apropriação definitiva nem alcança automaticamente dívidas estranhas à comissão.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 189,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 578,
+   "target_id": "CC2002:ART.709",
+   "explanation_id": "ENTENDA/CC2002:ART.709/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.709:CAPUT\tSão aplicáveis à comissão, no que couber, as regras sobre mandato.",
+   "source_snapshot_sha256": "a2fba1d2eef4c166f199fcef025624c36879ffd5c0a91ce6d10b0b50696a9e18",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.709:CAPUT",
+     "text": "São aplicáveis à comissão, no que couber, as regras sobre mandato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: São aplicáveis à comissão, no que couber, as regras sobre mandato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "727b241a3f185e216c83f75f75392e4965db35bdacd9089c863077e935731102",
+     "o_que_significa": "58cb77d4c762bf2644fb5134cb0d7aa8f73f5edbfb26ee6b8abddccb52b44d56",
+     "exemplo_pratico": "aeb4ff48ffa862f1c035d4fd3544928a83e2c6eab3cca44682302743265ccba2",
+     "atencao": "7348f40487cf49956e7a1538b7024baa48a89a3fb8051bf9fcf18f07ce54aa6c",
+     "palavras_dificeis": "f42afbf1e71e48c3291e4af8ffb2a05dbdbfbd8ccaa1cd8706e1fed521aed544"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.709, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘As normas do mandato complementam o contrato de comissão quando forem compatíveis.’. O campo de atenção registra: ‘A remissão é subsidiária e não transforma o comissário em representante direto do comitente.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 190,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 579,
+   "target_id": "CC2002:ART.710",
+   "explanation_id": "ENTENDA/CC2002:ART.710/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.710:CAPUT\tPelo contrato de agência, uma pessoa assume, em caráter não eventual e sem vínculos de dependência, a obrigação de promover, à conta de outra, mediante retribuição, a realização de certos negócios, em zona determinada, caracterizando-se a distribuição quando o agente tiver à sua disposição a coisa a ser negociada.\nCC2002:ART.710:PAR.UNICO\tO proponente pode conferir poderes ao agente para que este o represente na conclusão dos contratos.",
+   "source_snapshot_sha256": "6d6ff18668fab7f61235490e6e0590d49de6f875348bf0ba223c85f878e74bd2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.710:CAPUT",
+     "text": "Pelo contrato de agência, uma pessoa assume, em caráter não eventual e sem vínculos de dependência, a obrigação de promover, à conta de outra, mediante retribuição, a realização de certos negócios, em zona determinada, caracterizando-se a distribuição quando o agente tiver à sua disposição a coisa a ser negociada."
+    },
+    {
+     "label": "CC2002:ART.710:PAR.UNICO",
+     "text": "O proponente pode conferir poderes ao agente para que este o represente na conclusão dos contratos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Pelo contrato de agência, uma pessoa assume, em caráter não eventual e sem vínculos de dependência, a obrigação de promover, à conta de outra, mediante retribuição, a realização de certos negócios, em zona determinada, caracterizando-se a distribuição quando o agente tiver à sua disposição a coisa a ser negociada. | O proponente pode conferir poderes ao agente para que este o represente na conclusão dos contratos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "102370d78aedd5eda3ba53bf52c322b3e56a8c3044afd7aef69375ab3df74da0",
+     "o_que_significa": "eaeee179379c88d87f87acac4d7d0145381e66e91599589cd04dbc814bf26c2c",
+     "exemplo_pratico": "d79bbbc6dadbb2538459939a4d4608348cfd42afc5e26b71303418ed55de8da7",
+     "atencao": "98d32ba3a0d03647030e89420679133830c3c443dfb3ba508e71a1afa2a14625",
+     "palavras_dificeis": "fbbfdc00adb737a796f51e0b6ef044afc3977a22b1660374a2185bd6fc7475c1"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.710, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Agente promove negócios de forma contínua, remunerada, independente e em zona definida, por conta do proponente. Há distribuição quando dispõe da coisa negociada; podem existir poderes de representação.’. O campo de atenção registra: ‘Agência não se confunde automaticamente com emprego, mandato ou revenda; o vínculo depende dos elementos concretos.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 191,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 580,
+   "target_id": "CC2002:ART.711",
+   "explanation_id": "ENTENDA/CC2002:ART.711/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.711:CAPUT\tSalvo ajuste, o proponente não pode constituir, ao mesmo tempo, mais de um agente, na mesma zona, com idêntica incumbência; nem pode o agente assumir o encargo de nela tratar de negócios do mesmo gênero, à conta de outros proponentes.",
+   "source_snapshot_sha256": "00794779d12a2d5f1e729000675e6f5bfd2b09e0320976f87962f4233bace324",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.711:CAPUT",
+     "text": "Salvo ajuste, o proponente não pode constituir, ao mesmo tempo, mais de um agente, na mesma zona, com idêntica incumbência; nem pode o agente assumir o encargo de nela tratar de negócios do mesmo gênero, à conta de outros proponentes."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Salvo ajuste, o proponente não pode constituir, ao mesmo tempo, mais de um agente, na mesma zona, com idêntica incumbência; nem pode o agente assumir o encargo de nela tratar de negócios do mesmo gênero, à conta de outros proponentes.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "46ebae4bad467106dd11538666608d5977a0b97ec19c951c55632fbc8471bf88",
+     "o_que_significa": "34e16ab83e64cb011885031fef51e69d65847ee46e85d9d9e77071ff8afda103",
+     "exemplo_pratico": "361ee16d144bad9431b16f4d653b4e146796e8a12d50c0fe6b84b3a5af2f81f3",
+     "atencao": "b8d49bda6b772efa89359bbd609f3b8d59b8ef76e917ef68ae293806b9ffe3ff",
+     "palavras_dificeis": "a53ebce5c5da7242132ed5b83f715e1ff1e45cb93e8c50a55075ea6e05098800"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.711, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Na falta de ajuste diferente, proponente e agente devem respeitar exclusividade recíproca na mesma zona e para negócios do mesmo gênero.’. O campo de atenção registra: ‘As partes podem afastar ou delimitar a exclusividade; zona, gênero e incumbência precisam estar identificados.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 192,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 581,
+   "target_id": "CC2002:ART.712",
+   "explanation_id": "ENTENDA/CC2002:ART.712/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.712:CAPUT\tO agente, no desempenho que lhe foi cometido, deve agir com toda diligência, atendo-se às instruções recebidas do proponente.",
+   "source_snapshot_sha256": "7d5d4ca2ca791cbfe9ea69849e3288f70b3e5b119ab5330353634f9f0a1c3d51",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.712:CAPUT",
+     "text": "O agente, no desempenho que lhe foi cometido, deve agir com toda diligência, atendo-se às instruções recebidas do proponente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O agente, no desempenho que lhe foi cometido, deve agir com toda diligência, atendo-se às instruções recebidas do proponente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c270ae03f1920784629a64f5ff44fdc9642ab55ebd42756ed7d83c9f1160e138",
+     "o_que_significa": "130386dfaa3abd5269af74e48159d72707fe71af2b0cf91efe2b3387114968db",
+     "exemplo_pratico": "0785fcf0a27019498c46d03fb3cf6dab43b52605daf783f73cc67a14ac94c30b",
+     "atencao": "a944b13fdae3ba868fc042479d10b9d6c42652ee530922420cc811e653eeb185",
+     "palavras_dificeis": "14676d807aaffc4f4a0819c23663cf485d8f26aa51da99eefdc11af88de5523a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.712, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O agente deve executar a incumbência com diligência e seguir as instruções do proponente.’. O campo de atenção registra: ‘Instruções não podem alterar unilateralmente a natureza do contrato nem justificar conduta ilícita.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 193,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 582,
+   "target_id": "CC2002:ART.713",
+   "explanation_id": "ENTENDA/CC2002:ART.713/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.713:CAPUT\tSalvo estipulação diversa, todas as despesas com a agência ou distribuição correm a cargo do agente ou distribuidor.",
+   "source_snapshot_sha256": "eff82f32c618e47a6541b41fc5e51579b58b4acf8e9016932711d3349c084dfd",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.713:CAPUT",
+     "text": "Salvo estipulação diversa, todas as despesas com a agência ou distribuição correm a cargo do agente ou distribuidor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Salvo estipulação diversa, todas as despesas com a agência ou distribuição correm a cargo do agente ou distribuidor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d5f01bc3fb3424faf5d9fb564368db1de96d0600c43907897589174f36decc39",
+     "o_que_significa": "251ba038fb21f0b598071536dc4ed1dff11bffed106e27b1542a8c516f068472",
+     "exemplo_pratico": "3df7987677e78a1c1a0928a6ae800708345f3ed12684f89d22abf389f0dddf55",
+     "atencao": "1e8224332218838085ff94ae57d6948cb539ddf2add745449b1e32bf3eefb104",
+     "palavras_dificeis": "41396b578acf180190f00193947e3a85246c4eddd24b70ea6aaedbc0688400ef"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.713, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Salvo cláusula diversa, as despesas da agência ou distribuição são suportadas pelo próprio agente ou distribuidor.’. O campo de atenção registra: ‘Despesa extraordinária solicitada pelo proponente deve ser examinada à luz do contrato e das instruções dadas.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 194,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 583,
+   "target_id": "CC2002:ART.714",
+   "explanation_id": "ENTENDA/CC2002:ART.714/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.714:CAPUT\tSalvo ajuste, o agente ou distribuidor terá direito à remuneração correspondente aos negócios concluídos dentro de sua zona, ainda que sem a sua interferência.",
+   "source_snapshot_sha256": "0070c8f3d6ce3d20b5260d1318644de9ef4fae7c9d308cd0b8e83a777f083f9e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.714:CAPUT",
+     "text": "Salvo ajuste, o agente ou distribuidor terá direito à remuneração correspondente aos negócios concluídos dentro de sua zona, ainda que sem a sua interferência."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Salvo ajuste, o agente ou distribuidor terá direito à remuneração correspondente aos negócios concluídos dentro de sua zona, ainda que sem a sua interferência.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8a45f89f8508ca86278303c9ff56143002b2a283a090c1450cb1fd3ada37a35d",
+     "o_que_significa": "d99bc68d39b9c4811bab75192a61c6f5880ef60c1454af0e980d9643cdff9a26",
+     "exemplo_pratico": "eefe25c3c5e55c260223e496eb36d23b2b7b0e62b8aefb86094ecd0d886c4a07",
+     "atencao": "d186f06855be593fd63a9f42a6daba9fffc85346af6d63abb4194b889d5fc1e0",
+     "palavras_dificeis": "d0b4da4eee00de7cb1033ed137966fd24626ed65ffd03a7548c0f9abc05dbd9c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.714, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Em regra, o agente ou distribuidor recebe pelos negócios fechados em sua zona, mesmo sem participação direta.’. O campo de atenção registra: ‘É preciso provar que o negócio pertence à zona e ao objeto contratual; cláusula diversa pode modificar a regra.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 195,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 584,
+   "target_id": "CC2002:ART.715",
+   "explanation_id": "ENTENDA/CC2002:ART.715/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.715:CAPUT\tO agente ou distribuidor tem direito à indenização se o proponente, sem justa causa, cessar o atendimento das propostas ou reduzi-lo tanto que se torna antieconômica a continuação do contrato.",
+   "source_snapshot_sha256": "6d815bc80c5de538dc12e858caef0cea73720d3f6bef27c283240e2c0fc41d71",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.715:CAPUT",
+     "text": "O agente ou distribuidor tem direito à indenização se o proponente, sem justa causa, cessar o atendimento das propostas ou reduzi-lo tanto que se torna antieconômica a continuação do contrato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O agente ou distribuidor tem direito à indenização se o proponente, sem justa causa, cessar o atendimento das propostas ou reduzi-lo tanto que se torna antieconômica a continuação do contrato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "38a588f1bba5fad5a70bc2aa479c1117669109c02a638261744ba8dacaea7e84",
+     "o_que_significa": "36dffe573e8cefc5c61b43140547954e49f77058e764f641f200795d5067aa0a",
+     "exemplo_pratico": "47c724035fc9c1f9d62bf92bb4473091722c312bb0de284d168cdc12c5706bc3",
+     "atencao": "bfad3e2f11cf925ebe3d2a2e71ec7b935c2ec01685c40c5a0d32b1c3a085a3e3",
+     "palavras_dificeis": "e1ff6ae166399376b377591a958b9807a6210a0f4d6d77e9e98c131885740aaf"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.715, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O intermediário tem direito a indenização quando o proponente, sem justa causa, interrompe ou reduz propostas a ponto de tornar o contrato antieconômico.’. O campo de atenção registra: ‘A queda deve ser relevante e imputável ao proponente; oscilações normais do mercado não bastam.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 196,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 585,
+   "target_id": "CC2002:ART.716",
+   "explanation_id": "ENTENDA/CC2002:ART.716/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.716:CAPUT\tA remuneração será devida ao agente também quando o negócio deixar de ser realizado por fato imputável ao proponente.",
+   "source_snapshot_sha256": "825f4fd357a7b311c558fef4e432c4c61c4fe71831de38cb20bb93018943fff2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.716:CAPUT",
+     "text": "A remuneração será devida ao agente também quando o negócio deixar de ser realizado por fato imputável ao proponente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A remuneração será devida ao agente também quando o negócio deixar de ser realizado por fato imputável ao proponente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "33306a0ce3babebc01adadae656af1807ddd5b2ac02057f2992d0c69ba7af6a7",
+     "o_que_significa": "7dc7192e28490aac85cdd4701fc65c5f247a0efc053952121cd722e7bd31a116",
+     "exemplo_pratico": "f416984fdc50458ecaba3351ddc95c4d1d71b0240fe318ea185c3aa9fbf8122f",
+     "atencao": "59eb5439277c21e2d9c0abae6f6c46d97c35e89513640422291793accfe521c9",
+     "palavras_dificeis": "6bea6195255dc3b1a83dd38ab327f0255dede37e861fc78795507e85378e7c72"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.716, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O agente recebe remuneração quando o negócio deixa de ocorrer por fato atribuível ao proponente.’. O campo de atenção registra: ‘É necessário demonstrar o nexo entre a conduta do proponente e a não conclusão do negócio.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 197,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 586,
+   "target_id": "CC2002:ART.717",
+   "explanation_id": "ENTENDA/CC2002:ART.717/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.717:CAPUT\tAinda que dispensado por justa causa, terá o agente direito a ser remunerado pelos serviços úteis prestados ao proponente, sem embargo de haver este perdas e danos pelos prejuízos sofridos.",
+   "source_snapshot_sha256": "3629474e8838ce352a360f80b91fa2e5aee26166cca74f908d556835920ae85c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.717:CAPUT",
+     "text": "Ainda que dispensado por justa causa, terá o agente direito a ser remunerado pelos serviços úteis prestados ao proponente, sem embargo de haver este perdas e danos pelos prejuízos sofridos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Ainda que dispensado por justa causa, terá o agente direito a ser remunerado pelos serviços úteis prestados ao proponente, sem embargo de haver este perdas e danos pelos prejuízos sofridos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "55bb784ca01ba9c21c40b6c85e0b7d39d8c5bd3f9dd1c08c1001c5d35c58ca21",
+     "o_que_significa": "166c99f56fd9a478092e77189f2ef1e608cfd6a6b6e7f37e344988987610d882",
+     "exemplo_pratico": "c603153e1c0c2f4ed651734b5dba85c5de13abbe67b9b139d29bcfb8d6cf5bac",
+     "atencao": "9dfaa3c6a367d2a240c8892f9d0f8ab91ff943905865be18081cf80e85c8bc93",
+     "palavras_dificeis": "10a6dff7425e4fb1955b1556c54e05b2a8da571b311e42a11989fdd4ea3d3961"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.717, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Mesmo dispensado por justa causa, o agente recebe pelos serviços úteis, sem impedir que o proponente cobre seus prejuízos.’. O campo de atenção registra: ‘A compensação entre valores depende da apuração dos créditos e não autoriza punição superior ao prejuízo.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 198,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 587,
+   "target_id": "CC2002:ART.718",
+   "explanation_id": "ENTENDA/CC2002:ART.718/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.718:CAPUT\tSe a dispensa se der sem culpa do agente, terá ele direito à remuneração até então devida, inclusive sobre os negócios pendentes, além das indenizações previstas em lei especial.",
+   "source_snapshot_sha256": "933ec43cbfe59b8983cf991f6d746d7f1ba8e3ea6c5f462ff8485eaee1bebc3e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.718:CAPUT",
+     "text": "Se a dispensa se der sem culpa do agente, terá ele direito à remuneração até então devida, inclusive sobre os negócios pendentes, além das indenizações previstas em lei especial."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se a dispensa se der sem culpa do agente, terá ele direito à remuneração até então devida, inclusive sobre os negócios pendentes, além das indenizações previstas em lei especial.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "3d0e8f9ecb0926978676b2cf8334dd0d449062db38bee161b68989679289e89a",
+     "o_que_significa": "3b7361bd9fd788751e568874f83173bb42cb1f154730fb5e13208f67939bbecd",
+     "exemplo_pratico": "2dd01631be0d904d4c743543a1654378823a12a520ccaf99c04666cf5f6d12ba",
+     "atencao": "d91369eb927c393732e09d5cd2a3864e903dca912759d2566cba972061b8ae70",
+     "palavras_dificeis": "aa7ee5be80a1cdde0588fd238bd1703cb39151f736019938b75079e2ae18f3f8"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.718, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Dispensa sem culpa do agente assegura remuneração vencida, comissão sobre negócios pendentes e indenizações previstas em lei especial.’. O campo de atenção registra: ‘A indenização especial pertence à camada legislativa externa e exige conferir seus requisitos próprios.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 199,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 588,
+   "target_id": "CC2002:ART.719",
+   "explanation_id": "ENTENDA/CC2002:ART.719/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.719:CAPUT\tSe o agente não puder continuar o trabalho por motivo de força maior, terá direito à remuneração correspondente aos serviços realizados, cabendo esse direito aos herdeiros no caso de morte.",
+   "source_snapshot_sha256": "a8a669c0864a14d9fcc066cc1c19725f36811a8dd94b1da97ee483bef22f3633",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.719:CAPUT",
+     "text": "Se o agente não puder continuar o trabalho por motivo de força maior, terá direito à remuneração correspondente aos serviços realizados, cabendo esse direito aos herdeiros no caso de morte."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o agente não puder continuar o trabalho por motivo de força maior, terá direito à remuneração correspondente aos serviços realizados, cabendo esse direito aos herdeiros no caso de morte.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ec67868e8fec68c6d20153dc0a9742a31a7a914c3d2a05995a7c25a5e50b78e5",
+     "o_que_significa": "735cbd8206753b0388d8a0142f2cb836da4d8afcdc59264e376fe1556430d6e1",
+     "exemplo_pratico": "7bf55c401fc595c3c288e8a0d3327f9506d8c21796ed20fad1bc9fc976826154",
+     "atencao": "1826ce8b2532e4ef40912e787e6a1955f8ccb3ea4719479336714acd3bedb5c1",
+     "palavras_dificeis": "e7f1c51d97c8330d5a5320f8c1975c8781fd4e2f366cb9822072c7f3fd12ffb5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.719, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Impedido por força maior, o agente recebe proporcionalmente pelos serviços realizados; se morrer, o direito passa aos herdeiros.’. O campo de atenção registra: ‘O valor depende do serviço efetivo, e a força maior deve realmente impedir a continuidade.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 200,
+   "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  }
+ ]
+}
