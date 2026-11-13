@@ -1,0 +1,1496 @@
+{
+ "schema_version": 1,
+ "mission": "QA-03-FRONT-B",
+ "checkpoint": "B-CP04",
+ "as_of": "2026-11-13",
+ "status": "COMPLETE",
+ "source_queue": "QA03_AUDIT_388_QUEUE.json",
+ "source_queue_sha256": "b42fdebc0027548ce3458e188ff748c963bf7ff5c6c8d675ddaf2d4a82148e08",
+ "queue_positions": [
+  76,
+  100
+ ],
+ "examined": 25,
+ "target_ids": [
+  "CC2002:ART.193",
+  "CC2002:ART.195",
+  "CC2002:ART.196",
+  "CC2002:ART.197",
+  "CC2002:ART.198",
+  "CC2002:ART.199",
+  "CC2002:ART.200",
+  "CC2002:ART.201",
+  "CC2002:ART.203",
+  "CC2002:ART.204",
+  "CC2002:ART.205",
+  "CC2002:ART.206",
+  "CC2002:ART.206-A",
+  "CC2002:ART.207",
+  "CC2002:ART.208",
+  "CC2002:ART.209",
+  "CC2002:ART.210",
+  "CC2002:ART.211",
+  "CC2002:ART.212",
+  "CC2002:ART.213",
+  "CC2002:ART.214",
+  "CC2002:ART.215",
+  "CC2002:ART.216",
+  "CC2002:ART.217",
+  "CC2002:ART.218"
+ ],
+ "findings": 0,
+ "finding_counts": {},
+ "protected_sha256": {
+  "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+  "lookup": "60f1de336f2f9ecbc5e671d0a6a9223cf20e47ab5826a5501b53f9a67551866e",
+  "payload": "9fb3f3a1b6f1c1926eda0818fc753f2d0348194cf25b0a333fc6fa18c48222cb",
+  "qa02_corrections": "0d8cce6b3b9c335e7f71502b88c81488ae53732a7927708f2f83701504896e6b"
+ },
+ "records": [
+  {
+   "queue_position": 76,
+   "target_id": "CC2002:ART.193",
+   "explanation_id": "ENTENDA/CC2002:ART.193/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.193:CAPUT\tA prescrição pode ser alegada em qualquer grau de jurisdição, pela parte a quem aproveita.",
+   "source_snapshot_sha256": "3582036025129d81ea988c8c09a7dc2ee802a066d46d0e62c519655d663359b7",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.193:CAPUT",
+     "text": "A prescrição pode ser alegada em qualquer grau de jurisdição, pela parte a quem aproveita."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A prescrição pode ser alegada em qualquer grau de jurisdição, pela parte a quem aproveita.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9f0b14b8aafb683c02aa64868b4f2a5f14db5d9f7288a654a9a107393fdb1999",
+     "o_que_significa": "c71a24745eaf39267826ac5ec210c168f7ad4055506137fcb489270d094c9eff",
+     "exemplo_pratico": "ced8af9b7557ef40e977b7175dc9596eda2263f01b5a7aabeb8539e90ab705a2",
+     "atencao": "d84a3b7c680cd70b2fb0f5e3f2674d12d5170c220a2f878548db7bd349bbb22d",
+     "palavras_dificeis": "163324e76f0b66301a3f288ee32d54403fcd262527756f27aaca5153208de62f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.193, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “A parte beneficiada pode alegar prescrição em qualquer grau de jurisdição.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 77,
+   "target_id": "CC2002:ART.195",
+   "explanation_id": "ENTENDA/CC2002:ART.195/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.195:CAPUT\tOs relativamente incapazes e as pessoas jurídicas têm ação contra os seus assistentes ou representantes legais, que derem causa à prescrição, ou não a alegarem oportunamente.",
+   "source_snapshot_sha256": "a7df42608a9aba6eb9ef2a7f7a7f57bbd27b0347413fd9b06993f9b04c77cdf3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.195:CAPUT",
+     "text": "Os relativamente incapazes e as pessoas jurídicas têm ação contra os seus assistentes ou representantes legais, que derem causa à prescrição, ou não a alegarem oportunamente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Os relativamente incapazes e as pessoas jurídicas têm ação contra os seus assistentes ou representantes legais, que derem causa à prescrição, ou não a alegarem oportunamente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "70ee40ead8a46686469eba6f7850e50fd704ae2c28aee910a1c81c42474119c2",
+     "o_que_significa": "86d8a5b871ea3bc7a8b534b84befb613c7ca75f1ae070dc262e39e5cd9a057b5",
+     "exemplo_pratico": "6069920fa8fc6cc58271938c204bf37a2da97a1c788e64fce9994ed1f6ca3ee9",
+     "atencao": "cffcc8281d3066d95c297c4acca60fb8a66dc1db039ffa3d96a6b31a4b31af26",
+     "palavras_dificeis": "525368eb80428baba3af0268da359658008278253042d4538de9178562f2c836"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.195, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Relativamente incapazes e pessoas jurídicas podem cobrar de assistentes ou representantes o prejuízo causado por deixar a prescrição ocorrer ou por não alegá-la a tempo.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 78,
+   "target_id": "CC2002:ART.196",
+   "explanation_id": "ENTENDA/CC2002:ART.196/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.196:CAPUT\tA prescrição iniciada contra uma pessoa continua a correr contra o seu sucessor.",
+   "source_snapshot_sha256": "5c0d05b6398946ff88eaa01cf172b66855a61ed75dc0f240a1b001a6ecd921d6",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.196:CAPUT",
+     "text": "A prescrição iniciada contra uma pessoa continua a correr contra o seu sucessor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A prescrição iniciada contra uma pessoa continua a correr contra o seu sucessor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e742ec63fb3db7173c79966e502c1f196ed2359c76cc2808df0910a3c6ac5a54",
+     "o_que_significa": "9c9ce0fc770190396de442e9baa57ccef39e354dba4d06fda1f0d426e8f50cdd",
+     "exemplo_pratico": "4191cad995afbfe121016f0756fffc96f3c9a5eb34035cb964eca42145e02e8a",
+     "atencao": "80a18ec9a79b705a7200bd787881ac3587aeaad335aa6b11582ff7e6aaeddbe6",
+     "palavras_dificeis": "f133ea7c9c0a4b96d3a6ba18fcedb5eabfc090a827c403e9df364cf831f7c65b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.196, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Prescrição já iniciada continua correndo contra o sucessor da pessoa originalmente atingida.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 79,
+   "target_id": "CC2002:ART.197",
+   "explanation_id": "ENTENDA/CC2002:ART.197/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.197:CAPUT\tNão corre a prescrição:\nCC2002:ART.197:INC.I\tentre os cônjuges, na constância da sociedade conjugal;\nCC2002:ART.197:INC.II\tentre ascendentes e descendentes, durante o poder familiar;\nCC2002:ART.197:INC.III\tentre tutelados ou curatelados e seus tutores ou curadores, durante a tutela ou curatela.",
+   "source_snapshot_sha256": "6ccee5270b3c127570b4b307ea4da2f5d81f5debfb9bf3391d0d7c54fb82fb72",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.197:CAPUT",
+     "text": "Não corre a prescrição:"
+    },
+    {
+     "label": "CC2002:ART.197:INC.I",
+     "text": "entre os cônjuges, na constância da sociedade conjugal;"
+    },
+    {
+     "label": "CC2002:ART.197:INC.II",
+     "text": "entre ascendentes e descendentes, durante o poder familiar;"
+    },
+    {
+     "label": "CC2002:ART.197:INC.III",
+     "text": "entre tutelados ou curatelados e seus tutores ou curadores, durante a tutela ou curatela."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: Não corre a prescrição: | entre os cônjuges, na constância da sociedade conjugal; | entre ascendentes e descendentes, durante o poder familiar; | entre tutelados ou curatelados e seus tutores ou curadores, durante a tutela ou curatela.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "3b586e190c183e93ca156955084972163b367a50b54988a95c1546069cb443e3",
+     "o_que_significa": "949c07022c459cb29736427a37d997df587a31ebf181e974bbb4b3631f03ae4d",
+     "exemplo_pratico": "6875b6c6089021f6983a16b3a9489dc188ec7b36342542cbbf888b81486ee053",
+     "atencao": "2682a120c639e900ccff79e1db55dc0a1f72659fb4d9ae9ad8795a313c352751",
+     "palavras_dificeis": "4904870cf6d82b6b477c1a16b648abc43c47a3b1b86880dc185fd9ad433fa8b5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.197, foram cotejados 4 segmento(s) vigente(s) (CAPUT, INC.I, INC.II, INC.III) com os cinco campos. A baseline sintetiza a regra como: “A prescrição não corre entre cônjuges durante a sociedade conjugal, entre ascendentes e descendentes durante o poder familiar, nem entre incapazes e seus tutores ou curadores durante o encargo.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 80,
+   "target_id": "CC2002:ART.198",
+   "explanation_id": "ENTENDA/CC2002:ART.198/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.198:CAPUT\tTambém não corre a prescrição:\nCC2002:ART.198:INC.I\tcontra os incapazes de que trata o art. 3 o ;\nCC2002:ART.198:INC.II\tcontra os ausentes do País em serviço público da União, dos Estados ou dos Municípios;\nCC2002:ART.198:INC.III\tcontra os que se acharem servindo nas Forças Armadas, em tempo de guerra.",
+   "source_snapshot_sha256": "97abef7ca15a52455006d9793ecd3e0942f6b449aa18e57702410c8d2506c22b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.198:CAPUT",
+     "text": "Também não corre a prescrição:"
+    },
+    {
+     "label": "CC2002:ART.198:INC.I",
+     "text": "contra os incapazes de que trata o art. 3 o ;"
+    },
+    {
+     "label": "CC2002:ART.198:INC.II",
+     "text": "contra os ausentes do País em serviço público da União, dos Estados ou dos Municípios;"
+    },
+    {
+     "label": "CC2002:ART.198:INC.III",
+     "text": "contra os que se acharem servindo nas Forças Armadas, em tempo de guerra."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: Também não corre a prescrição: | contra os incapazes de que trata o art. 3 o ; | contra os ausentes do País em serviço público da União, dos Estados ou dos Municípios; | contra os que se acharem servindo nas Forças Armadas, em tempo de guerra.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9b860eae883d151fd89e42d33d43f46257d85a3b5c93d197e92af4759504b537",
+     "o_que_significa": "7c81058e158c2ba157bc3cd0b930bf2914805e7c00fe72b11e9d1d9d57cde1e6",
+     "exemplo_pratico": "8d564b116c781fb4afd5ddf2dc1eff969adf60ec2536337f1298c061dd428ffa",
+     "atencao": "66b7d8f829f1772d16beb141539446f2b80fb4c3734fb315dd90219bc975c3ac",
+     "palavras_dificeis": "26cbb2565eb3436731a89b158248cc4448bd2626ff93874edd0d96d58b4101d5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.198, foram cotejados 4 segmento(s) vigente(s) (CAPUT, INC.I, INC.II, INC.III) com os cinco campos. A baseline sintetiza a regra como: “A prescrição não corre contra menores de dezesseis anos, agentes públicos ausentes do país em serviço e militares em guerra.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 81,
+   "target_id": "CC2002:ART.199",
+   "explanation_id": "ENTENDA/CC2002:ART.199/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.199:CAPUT\tNão corre igualmente a prescrição:\nCC2002:ART.199:INC.I\tpendendo condição suspensiva;\nCC2002:ART.199:INC.II\tnão estando vencido o prazo;\nCC2002:ART.199:INC.III\tpendendo ação de evicção.",
+   "source_snapshot_sha256": "825dcd8d1880526af8d3c549f6d5792c63923eafac89a31952f6144780f30cc2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.199:CAPUT",
+     "text": "Não corre igualmente a prescrição:"
+    },
+    {
+     "label": "CC2002:ART.199:INC.I",
+     "text": "pendendo condição suspensiva;"
+    },
+    {
+     "label": "CC2002:ART.199:INC.II",
+     "text": "não estando vencido o prazo;"
+    },
+    {
+     "label": "CC2002:ART.199:INC.III",
+     "text": "pendendo ação de evicção."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: Não corre igualmente a prescrição: | pendendo condição suspensiva; | não estando vencido o prazo; | pendendo ação de evicção.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1095603e5cb66bb29c2eb3d3be610e5c5e103e71fdf0ae238b7943271a906cca",
+     "o_que_significa": "09e50d801f2374da0e0b51a0601b7730d777316efb19cb697dabaf973b973490",
+     "exemplo_pratico": "c84d91be12678fc5b7bf169e993d9c6f9b7c2e16e3c57eff699e3d4dcd2937f3",
+     "atencao": "eb7f3806654f8482c87135696cc670e45201ea5ab98eaff7452e0b962ac4449b",
+     "palavras_dificeis": "08873801c877de7ce5171f6a1a8bd59bd61370472e551822843bd30fdf34cec4"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.199, foram cotejados 4 segmento(s) vigente(s) (CAPUT, INC.I, INC.II, INC.III) com os cinco campos. A baseline sintetiza a regra como: “Também não corre prescrição enquanto pende condição suspensiva, antes do vencimento ou durante ação de evicção.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 82,
+   "target_id": "CC2002:ART.200",
+   "explanation_id": "ENTENDA/CC2002:ART.200/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.200:CAPUT\tQuando a ação se originar de fato que deva ser apurado no juízo criminal, não correrá a prescrição antes da respectiva sentença definitiva.",
+   "source_snapshot_sha256": "4e0dc209472c48229b688cf24ac5eefe9ec12fd74cd297f453e18fa568af76fe",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.200:CAPUT",
+     "text": "Quando a ação se originar de fato que deva ser apurado no juízo criminal, não correrá a prescrição antes da respectiva sentença definitiva."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Quando a ação se originar de fato que deva ser apurado no juízo criminal, não correrá a prescrição antes da respectiva sentença definitiva.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2802a2257bfbd5ec44417c3f4cf3e1b45fac841bd58c2749b5fc67b8495982dd",
+     "o_que_significa": "961ff0025068a01b64f7398096e805661319bc7408da7aa473e3730b20952e2f",
+     "exemplo_pratico": "a47c6605ea6e721d3cfc3a13958609558b23185b9a2746799bb8da70c483b2c9",
+     "atencao": "5b3c9ec310dfba894919ba1fd4df87b9a6c69e693866f6c7668b914f61d1737c",
+     "palavras_dificeis": "3491b593aa757c4b3efddec01d1e3d3f5f0e8e75ea0a45c58c6a65014b90174f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.200, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Se a pretensão civil depende de fato que deve ser apurado criminalmente, a prescrição não corre antes da sentença penal definitiva.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 83,
+   "target_id": "CC2002:ART.201",
+   "explanation_id": "ENTENDA/CC2002:ART.201/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.201:CAPUT\tSuspensa a prescrição em favor de um dos credores solidários, só aproveitam os outros se a obrigação for indivisível.",
+   "source_snapshot_sha256": "85774a2ced7b69d58e22c8e9cfe1ac781ef5029ba504c509649ce6449d5b3595",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.201:CAPUT",
+     "text": "Suspensa a prescrição em favor de um dos credores solidários, só aproveitam os outros se a obrigação for indivisível."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Suspensa a prescrição em favor de um dos credores solidários, só aproveitam os outros se a obrigação for indivisível.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "dd8f55eccf30e1e44057a6bed590cbec9ba337401bfb924f8918a1396e8ee49d",
+     "o_que_significa": "f698542247b4ee03c7c001d72f34bfc05f29095dc146358e913ce1b89a8d59c9",
+     "exemplo_pratico": "62c40e3ded5c7e551bd19b2749d734fccddb6dca39eabde0ef32946a72c81d5a",
+     "atencao": "c2ff4b8f9f6ce7061b18cbefdefdcda28dad4e256f4fea46da1ae4f826e3b389",
+     "palavras_dificeis": "82a4ae53eb9ef51e077c2a729aca8f7f9617ae80a0394824ad0de4c729b8cca4"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.201, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Suspensão favorável a um credor solidário só beneficia os demais quando a obrigação é indivisível.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 84,
+   "target_id": "CC2002:ART.203",
+   "explanation_id": "ENTENDA/CC2002:ART.203/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.203:CAPUT\tA prescrição pode ser interrompida por qualquer interessado.",
+   "source_snapshot_sha256": "4fb5dc04698cedb19867a5b1d72c7c5fad4258830ba00a1c74bef4e007d89101",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.203:CAPUT",
+     "text": "A prescrição pode ser interrompida por qualquer interessado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A prescrição pode ser interrompida por qualquer interessado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f043a9715b1a2fccb352ac1bab25161b1013b977a1c5c60d915f023cbe7b7283",
+     "o_que_significa": "16dd69c17d514764b61478b7a3c9269008518f9a2df18dc61e6f70cb1b04e6b9",
+     "exemplo_pratico": "cc7d158924f2168bc89d8acb60fe518e289e2ead01bf60ada4d9b73a7c72cc49",
+     "atencao": "913c231401ab9bb9842de31c51ffdf2323d90d14df111dae9eb4ef07951e0bc1",
+     "palavras_dificeis": "e318fae3019077b4cd7abfaf9a13c647d5b201ef63ddf5050df95294a9e37eca"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.203, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Qualquer pessoa juridicamente interessada pode provocar a interrupção da prescrição.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 85,
+   "target_id": "CC2002:ART.204",
+   "explanation_id": "ENTENDA/CC2002:ART.204/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.204:CAPUT\tA interrupção da prescrição por um credor não aproveita aos outros; semelhantemente, a interrupção operada contra o co-devedor, ou seu herdeiro, não prejudica aos demais coobrigados.\nCC2002:ART.204:PAR.1\to A interrupção por um dos credores solidários aproveita aos outros; assim como a interrupção efetuada contra o devedor solidário envolve os demais e seus herdeiros.\nCC2002:ART.204:PAR.2\to A interrupção operada contra um dos herdeiros do devedor solidário não prejudica os outros herdeiros ou devedores, senão quando se trate de obrigações e direitos indivisíveis.\nCC2002:ART.204:PAR.3\to A interrupção produzida contra o principal devedor prejudica o fiador.",
+   "source_snapshot_sha256": "bc1932a1d473893195682d24d5860434b7c5c3c96f69772bb14d796c9e82f9a5",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.204:CAPUT",
+     "text": "A interrupção da prescrição por um credor não aproveita aos outros; semelhantemente, a interrupção operada contra o co-devedor, ou seu herdeiro, não prejudica aos demais coobrigados."
+    },
+    {
+     "label": "CC2002:ART.204:PAR.1",
+     "text": "o A interrupção por um dos credores solidários aproveita aos outros; assim como a interrupção efetuada contra o devedor solidário envolve os demais e seus herdeiros."
+    },
+    {
+     "label": "CC2002:ART.204:PAR.2",
+     "text": "o A interrupção operada contra um dos herdeiros do devedor solidário não prejudica os outros herdeiros ou devedores, senão quando se trate de obrigações e direitos indivisíveis."
+    },
+    {
+     "label": "CC2002:ART.204:PAR.3",
+     "text": "o A interrupção produzida contra o principal devedor prejudica o fiador."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: A interrupção da prescrição por um credor não aproveita aos outros; semelhantemente, a interrupção operada contra o co-devedor, ou seu herdeiro, não prejudica aos demais coobrigados. | o A interrupção por um dos credores solidários aproveita aos outros; assim como a interrupção efetuada contra o devedor solidário envolve os demais e seus herdeiros. | o A interrupção operada contra um dos herdeiros do devedor solidário não prejudica os outros herdeiros ou devedores, senão quando se trate de obrigações e direitos indivisíveis. | o A interrupção produzida contra o principal devedor prejudica o fiador.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f6be53b6d06444c59ab5598a715e56eb5ea3ced40d320a0d4713dfff99f994e9",
+     "o_que_significa": "aae8d9e985363108c96392f79329720b4ed2423b7ef452350012a308025c919d",
+     "exemplo_pratico": "52eb9eb8dcac039c00acd227b25760a3991e4c8d7fd1a8ba3ef1ebaef3c3bdb8",
+     "atencao": "beb8089f7575dddc912473a8a7cbbfcc7ca964305dab63047a4a78cca741f187",
+     "palavras_dificeis": "89af947317c1db18b796fc1ab352534e4ff49cf3c1f2483544196a67091ef27e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.204, foram cotejados 4 segmento(s) vigente(s) (CAPUT, PAR.1, PAR.2, PAR.3) com os cinco campos. A baseline sintetiza a regra como: “Em regra, interrupção por um credor ou contra um devedor não se estende aos demais, com exceções para solidariedade, indivisibilidade e fiança.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 86,
+   "target_id": "CC2002:ART.205",
+   "explanation_id": "ENTENDA/CC2002:ART.205/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.205:CAPUT\tA prescrição ocorre em dez anos, quando a lei não lhe haja fixado prazo menor.",
+   "source_snapshot_sha256": "455f4f6aadeb27c7f486eae94c2084687611e53d8750d59e15b696e07fa29b70",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.205:CAPUT",
+     "text": "A prescrição ocorre em dez anos, quando a lei não lhe haja fixado prazo menor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A prescrição ocorre em dez anos, quando a lei não lhe haja fixado prazo menor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0a736b146d8a6e17d6adf4022c756b1bd16625ff4179b0bed1a7264bc836c167",
+     "o_que_significa": "b6fee7dab4b6d355fa9360b3c0b2d105f7024cc66ff66dea244ab19b246ad066",
+     "exemplo_pratico": "287cdc490f2d255c8904d497f80cc5cdfed36bed6f6a83703243ebb530e3c487",
+     "atencao": "26bcd1f09057a329cefccb13228258c8c6c79644fb128ec34714d9ae3e5d0dd4",
+     "palavras_dificeis": "f7aa7b118d5c3b9946c66d382a3599aa730d6468917f894e2b998224fd42e50f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.205, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Na ausência de prazo menor previsto em lei, a prescrição ocorre em dez anos.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 87,
+   "target_id": "CC2002:ART.206",
+   "explanation_id": "ENTENDA/CC2002:ART.206/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.206:CAPUT\tPrescreve:\nCC2002:ART.206:PAR.1\to Em um ano:\nCC2002:ART.206:PAR.1:INC.I\ta pretensão dos hospedeiros ou fornecedores de víveres destinados a consumo no próprio estabelecimento, para o pagamento da hospedagem ou dos alimentos;\nCC2002:ART.206:PAR.1:INC.II\t(Revogado pela Lei nº 15.040, de 2024) Vigência\nCC2002:ART.206:PAR.1:INC.III\ta pretensão dos tabeliães, auxiliares da justiça, serventuários judiciais, árbitros e peritos, pela percepção de emolumentos, custas e honorários;\nCC2002:ART.206:PAR.1:INC.IV\ta pretensão contra os peritos, pela avaliação dos bens que entraram para a formação do capital de sociedade anônima, contado da publicação da ata da assembléia que aprovar o laudo;\nCC2002:ART.206:PAR.1:INC.V\ta pretensão dos credores não pagos contra os sócios ou acionistas e os liquidantes, contado o prazo da publicação da ata de encerramento da liquidação da sociedade.\nCC2002:ART.206:PAR.2\to Em dois anos, a pretensão para haver prestações alimentares, a partir da data em que se vencerem.\nCC2002:ART.206:PAR.3\to Em três anos:\nCC2002:ART.206:PAR.3:INC.I\ta pretensão relativa a aluguéis de prédios urbanos ou rústicos;\nCC2002:ART.206:PAR.3:INC.II\ta pretensão para receber prestações vencidas de rendas temporárias ou vitalícias;\nCC2002:ART.206:PAR.3:INC.III\ta pretensão para haver juros, dividendos ou quaisquer prestações acessórias, pagáveis, em períodos não maiores de um ano, com capitalização ou sem ela;\nCC2002:ART.206:PAR.3:INC.IV\ta pretensão de ressarcimento de enriquecimento sem causa;\nCC2002:ART.206:PAR.3:INC.V\ta pretensão de reparação civil;\nCC2002:ART.206:PAR.3:INC.VI\ta pretensão de restituição dos lucros ou dividendos recebidos de má-fé, correndo o prazo da data em que foi deliberada a distribuição;\nCC2002:ART.206:PAR.3:INC.VII\ta pretensão contra as pessoas em seguida indicadas por violação da lei ou do estatuto, contado o prazo:\nCC2002:ART.206:PAR.3:INC.VII:AL.a\tpara os fundadores, da publicação dos atos constitutivos da sociedade anônima;\nCC2002:ART.206:PAR.3:INC.VII:AL.b\tpara os administradores, ou fiscais, da apresentação, aos sócios, do balanço referente ao exercício em que a violação tenha sido praticada, ou da reunião ou assembléia geral que dela deva tomar conhecimento;\nCC2002:ART.206:PAR.3:INC.VII:AL.c\tpara os liquidantes, da primeira assembléia semestral posterior à violação;\nCC2002:ART.206:PAR.3:INC.VIII\ta pretensão para haver o pagamento de título de crédito, a contar do vencimento, ressalvadas as disposições de lei especial;\nCC2002:ART.206:PAR.3:INC.IX\ta pretensão do beneficiário contra o segurador, e a do terceiro prejudicado, no caso de seguro de responsabilidade civil obrigatório.\nCC2002:ART.206:PAR.4\tEm quatro anos, a pretensão relativa à tutela, a contar da data da aprovação das contas.\nCC2002:ART.206:PAR.5\tEm cinco anos:\nCC2002:ART.206:PAR.5:INC.I\ta pretensão de cobrança de dívidas líquidas constantes de instrumento público ou particular;\nCC2002:ART.206:PAR.5:INC.II\ta pretensão dos profissionais liberais em geral, procuradores judiciais, curadores e professores pelos seus honorários, contado o prazo da conclusão dos serviços, da cessação dos respectivos contratos ou mandato;\nCC2002:ART.206:PAR.5:INC.III\ta pretensão do vencedor para haver do vencido o que despendeu em juízo.",
+   "source_snapshot_sha256": "9637048be9df61631b8a7b9ea6e929227df57fd0014aa2cfdbb5210804c63929",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.206:CAPUT",
+     "text": "Prescreve:"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.1",
+     "text": "o Em um ano:"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.1:INC.I",
+     "text": "a pretensão dos hospedeiros ou fornecedores de víveres destinados a consumo no próprio estabelecimento, para o pagamento da hospedagem ou dos alimentos;"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.1:INC.II",
+     "text": "(Revogado pela Lei nº 15.040, de 2024) Vigência"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.1:INC.III",
+     "text": "a pretensão dos tabeliães, auxiliares da justiça, serventuários judiciais, árbitros e peritos, pela percepção de emolumentos, custas e honorários;"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.1:INC.IV",
+     "text": "a pretensão contra os peritos, pela avaliação dos bens que entraram para a formação do capital de sociedade anônima, contado da publicação da ata da assembléia que aprovar o laudo;"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.1:INC.V",
+     "text": "a pretensão dos credores não pagos contra os sócios ou acionistas e os liquidantes, contado o prazo da publicação da ata de encerramento da liquidação da sociedade."
+    },
+    {
+     "label": "CC2002:ART.206:PAR.2",
+     "text": "o Em dois anos, a pretensão para haver prestações alimentares, a partir da data em que se vencerem."
+    },
+    {
+     "label": "CC2002:ART.206:PAR.3",
+     "text": "o Em três anos:"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.3:INC.I",
+     "text": "a pretensão relativa a aluguéis de prédios urbanos ou rústicos;"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.3:INC.II",
+     "text": "a pretensão para receber prestações vencidas de rendas temporárias ou vitalícias;"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.3:INC.III",
+     "text": "a pretensão para haver juros, dividendos ou quaisquer prestações acessórias, pagáveis, em períodos não maiores de um ano, com capitalização ou sem ela;"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.3:INC.IV",
+     "text": "a pretensão de ressarcimento de enriquecimento sem causa;"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.3:INC.V",
+     "text": "a pretensão de reparação civil;"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.3:INC.VI",
+     "text": "a pretensão de restituição dos lucros ou dividendos recebidos de má-fé, correndo o prazo da data em que foi deliberada a distribuição;"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.3:INC.VII",
+     "text": "a pretensão contra as pessoas em seguida indicadas por violação da lei ou do estatuto, contado o prazo:"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.3:INC.VII:AL.a",
+     "text": "para os fundadores, da publicação dos atos constitutivos da sociedade anônima;"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.3:INC.VII:AL.b",
+     "text": "para os administradores, ou fiscais, da apresentação, aos sócios, do balanço referente ao exercício em que a violação tenha sido praticada, ou da reunião ou assembléia geral que dela deva tomar conhecimento;"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.3:INC.VII:AL.c",
+     "text": "para os liquidantes, da primeira assembléia semestral posterior à violação;"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.3:INC.VIII",
+     "text": "a pretensão para haver o pagamento de título de crédito, a contar do vencimento, ressalvadas as disposições de lei especial;"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.3:INC.IX",
+     "text": "a pretensão do beneficiário contra o segurador, e a do terceiro prejudicado, no caso de seguro de responsabilidade civil obrigatório."
+    },
+    {
+     "label": "CC2002:ART.206:PAR.4",
+     "text": "Em quatro anos, a pretensão relativa à tutela, a contar da data da aprovação das contas."
+    },
+    {
+     "label": "CC2002:ART.206:PAR.5",
+     "text": "Em cinco anos:"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.5:INC.I",
+     "text": "a pretensão de cobrança de dívidas líquidas constantes de instrumento público ou particular;"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.5:INC.II",
+     "text": "a pretensão dos profissionais liberais em geral, procuradores judiciais, curadores e professores pelos seus honorários, contado o prazo da conclusão dos serviços, da cessação dos respectivos contratos ou mandato;"
+    },
+    {
+     "label": "CC2002:ART.206:PAR.5:INC.III",
+     "text": "a pretensão do vencedor para haver do vencido o que despendeu em juízo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 26 segmentos vigentes do dispositivo: Prescreve: | o Em um ano: | a pretensão dos hospedeiros ou fornecedores de víveres destinados a consumo no próprio estabelecimento, para o pagamento da hospedagem ou dos alimentos; | (Revogado pela Lei nº 15.040, de 2024) Vigência | a pretensão dos tabeliães, auxiliares da justiça, serventuários judiciais, árbitros e peritos, pela percepção de emolumentos, custas e honorários; | a pretensão contra os peritos, pela avaliação dos bens que entraram para a formação do capital de sociedade anônima, contado da publicação da ata da assembléia que aprovar o laudo; | a pretensão dos credores não pagos contra os sócios ou acionistas e os liquidantes, contado o prazo da publicação da ata de encerramento da liquidação da sociedade. | o Em dois anos, a pretensão para haver prestações alimentares, a partir da data em que se vencerem. | o Em três anos: | a pretensão relativa a aluguéis de prédios urbanos ou rústicos; | a pretensão para receber prestações vencidas de rendas temporárias ou vitalícias; | a pretensão para haver juros, dividendos ou quaisquer prestações acessórias, pagáveis, em períodos não maiores de um ano, com capitalização ou sem ela; | a pretensão de ressarcimento de enriquecimento sem causa; | a pretensão de reparação civil; | a pretensão de restituição dos lucros ou dividendos recebidos de má-fé, correndo o prazo da data em que foi deliberada a distribuição; | a pretensão contra as pessoas em seguida indicadas por violação da lei ou do estatuto, contado o prazo: | para os fundadores, da publicação dos atos constitutivos da sociedade anônima; | para os administradores, ou fiscais, da apresentação, aos sócios, do balanço referente ao exercício em que a violação tenha sido praticada, ou da reunião ou assembléia geral que dela deva tomar conhecimento; | para os liquidantes, da primeira assembléia semestral posterior à violação; | a pretensão para haver o pagamento de título de crédito, a contar do vencimento, ressalvadas as disposições de lei especial; | a pretensão do beneficiário contra o segurador, e a do terceiro prejudicado, no caso de seguro de responsabilidade civil obrigatório. | Em quatro anos, a pretensão relativa à tutela, a contar da data da aprovação das contas. | Em cinco anos: | a pretensão de cobrança de dívidas líquidas constantes de instrumento público ou particular; | a pretensão dos profissionais liberais em geral, procuradores judiciais, curadores e professores pelos seus honorários, contado o prazo da conclusão dos serviços, da cessação dos respectivos contratos ou mandato; | a pretensão do vencedor para haver do vencido o que despendeu em juízo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "15a4a812e7947d2e933badbb1ed7f60fb517c087648540cdc6a2a6e739a1126e",
+     "o_que_significa": "540fa0c0d5889b668382a4a9df8a3d1050a71aa7b56c906f02a654973ba795ca",
+     "exemplo_pratico": "5de2476a377b15e126b608b44bae940eadf37b8d24dd503dac117ac4387c8831",
+     "atencao": "adb31aae4d609d8305f08c7331e2d8a72e450a370db93d482e0fadae78a9c4de",
+     "palavras_dificeis": "17373ccec6ab282a3e36af011f86ff576a01c27c0c054343fe15e8bbd93105a4"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.206, foram cotejados 26 segmento(s) vigente(s) (CAPUT, PAR.1, PAR.1:INC.I, PAR.1:INC.II, PAR.1:INC.III, PAR.1:INC.IV, PAR.1:INC.V, PAR.2, PAR.3, PAR.3:INC.I, PAR.3:INC.II, PAR.3:INC.III, PAR.3:INC.IV, PAR.3:INC.V, PAR.3:INC.VI, PAR.3:INC.VII, PAR.3:INC.VII:AL.a, PAR.3:INC.VII:AL.b, PAR.3:INC.VII:AL.c, PAR.3:INC.VIII, PAR.3:INC.IX, PAR.4, PAR.5, PAR.5:INC.I, PAR.5:INC.II, PAR.5:INC.III) com os cinco campos. A baseline sintetiza a regra como: “O artigo fixa prazos especiais de um, dois, três, quatro e cinco anos para pretensões expressamente enumeradas.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 88,
+   "target_id": "CC2002:ART.206-A",
+   "explanation_id": "ENTENDA/CC2002:ART.206-A/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.206-A:CAPUT\tA prescrição intercorrente observará o mesmo prazo de prescrição da pretensão, observadas as causas de impedimento, de suspensão e de interrupção da prescrição previstas neste Código e observado o disposto no art. 921 da Lei nº 13.105, de 16 de março de 2015 (Código de Processo Civil). (Redação dada pela Lei nº 14.382, de 2022)",
+   "source_snapshot_sha256": "931fbace18f464693972496bad06be5890c0f5709316c1b2ce6ce8a8d0e622a0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.206-A:CAPUT",
+     "text": "A prescrição intercorrente observará o mesmo prazo de prescrição da pretensão, observadas as causas de impedimento, de suspensão e de interrupção da prescrição previstas neste Código e observado o disposto no art. 921 da Lei nº 13.105, de 16 de março de 2015 (Código de Processo Civil). (Redação dada pela Lei nº 14.382, de 2022)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A prescrição intercorrente observará o mesmo prazo de prescrição da pretensão, observadas as causas de impedimento, de suspensão e de interrupção da prescrição previstas neste Código e observado o disposto no art. 921 da Lei nº 13.105, de 16 de março de 2015 (Código de Processo Civil). (Redação dada pela Lei nº 14.382, de 2022)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4f7980dfe87dcbfffde19636b4316b913ffd5a5f37942516e888754ff3369c54",
+     "o_que_significa": "48ad7557f482de9a1f320c1dc8bc387895ecac04fb188a2523d4d4237efc2a6b",
+     "exemplo_pratico": "8fa2160add67349dc3da4d16bd6c63256036af2463de382149af619951cb7bb1",
+     "atencao": "879f8e5a1ce54a93338fdc51ca333ada9c56fcd64989887940d1bc137f991d9d",
+     "palavras_dificeis": "430c3abd136bb43d270994c7ab4b4e88738cd71ca7d31c91f0a5b8402acf63fb"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.206-A, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “A prescrição intercorrente segue o mesmo prazo da pretensão e observa impedimento, suspensão, interrupção e a disciplina processual da execução.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 89,
+   "target_id": "CC2002:ART.207",
+   "explanation_id": "ENTENDA/CC2002:ART.207/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.207:CAPUT\tSalvo disposição legal em contrário, não se aplicam à decadência as normas que impedem, suspendem ou interrompem a prescrição.",
+   "source_snapshot_sha256": "f6647758f8302a33b40321d0b9ed05cd5439f3f67ab2ccfbe85b613ec62444f7",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.207:CAPUT",
+     "text": "Salvo disposição legal em contrário, não se aplicam à decadência as normas que impedem, suspendem ou interrompem a prescrição."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Salvo disposição legal em contrário, não se aplicam à decadência as normas que impedem, suspendem ou interrompem a prescrição.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "df0f0482af2c1cb7724e23f08018069a0d0d0e9a14b5144bcd16e4001eee506e",
+     "o_que_significa": "1916a0fc65ac95d6ce6f44ab4763799319a77b291b9bd31a6818af446033b3ba",
+     "exemplo_pratico": "df77980dbd7b440d1494b71a5ab4c55aa69e716fad5cd98b118071850dd296a7",
+     "atencao": "3e37ac7be1d4238c1b827c4e8ad8893e16aded5cc12250a532c02bc02d44dd0a",
+     "palavras_dificeis": "461ec59ce894e1d541d780061217dc48b9ce866499f76a4d9e7effadfcb1171e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.207, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Regras que impedem, suspendem ou interrompem prescrição não se aplicam à decadência, salvo previsão legal contrária.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 90,
+   "target_id": "CC2002:ART.208",
+   "explanation_id": "ENTENDA/CC2002:ART.208/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.208:CAPUT\tAplica-se à decadência o disposto nos arts. 195 e 198, inciso I.",
+   "source_snapshot_sha256": "fb9273cf845d4b57f6cac368d1f3b73dc2da6f023d74e4f077c44d27f52366c1",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.208:CAPUT",
+     "text": "Aplica-se à decadência o disposto nos arts. 195 e 198, inciso I."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Aplica-se à decadência o disposto nos arts. 195 e 198, inciso I.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "003733c3f27fdc2f6bd63cdacecbec62da741d66f1c8052311552bfeef1fa43d",
+     "o_que_significa": "0b1fafa7b0de8feee7f4edfa1570062279c6a25082a1cb2c9f7c62a0f35f828f",
+     "exemplo_pratico": "1302f049e98258ae4cde7ef475bb8c2c4f98cc108eee2c92b81ef923fb010820",
+     "atencao": "a8ec7f46697d695cd1c63a662ba021913f9a44a3a821e09605840d3d5ca27522",
+     "palavras_dificeis": "76ce7701b17cf1d0dca63fbc2502e39136c92c08ae4cb8521acdb3ee6b5b5c68"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.208, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “À decadência aplicam-se a responsabilidade do representante que causou a perda do prazo e a proteção do absolutamente incapaz.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 91,
+   "target_id": "CC2002:ART.209",
+   "explanation_id": "ENTENDA/CC2002:ART.209/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.209:CAPUT\tÉ nula a renúncia à decadência fixada em lei.",
+   "source_snapshot_sha256": "ce034d86e92432112c63cc1121da0651ccddde0a8249285c34146edf2aad28f2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.209:CAPUT",
+     "text": "É nula a renúncia à decadência fixada em lei."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: É nula a renúncia à decadência fixada em lei.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7fa1c6b75257eae6665e8fd0c0190fd055aaa334c09d8f685e11a05dd30a513c",
+     "o_que_significa": "19d4fd1e294542be38f6328c5787c783a5b23920ebd28cd090d51c82dc6a7b6a",
+     "exemplo_pratico": "78eeacf0fed81edbf75634fefa18ac3fa74562fa7f13a147f2ea9e0a8a9ca491",
+     "atencao": "9eb7274e704b10882eba23803434535ab6b97beaa2af4092b289d0a39453f962",
+     "palavras_dificeis": "a126fb330c98a12ea1c2d3b41b5a03d61620daf0884f3ccade325c4a36acc75b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.209, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “É nula a renúncia a prazo decadencial estabelecido por lei.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 92,
+   "target_id": "CC2002:ART.210",
+   "explanation_id": "ENTENDA/CC2002:ART.210/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.210:CAPUT\tDeve o juiz, de ofício, conhecer da decadência, quando estabelecida por lei.",
+   "source_snapshot_sha256": "4c38075f06b3de279e3a3e771548410590687f72836f6cb961fffa2746774f7f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.210:CAPUT",
+     "text": "Deve o juiz, de ofício, conhecer da decadência, quando estabelecida por lei."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Deve o juiz, de ofício, conhecer da decadência, quando estabelecida por lei.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4715b3240aaeb498060e6641ba284807ca30e2b1c5bf1ebb76f7ec4766c8f03c",
+     "o_que_significa": "a0f2a7de1b173ad510e1e74bc06ce63adfd5d34ca834c8bb0912fdaa595d0a8c",
+     "exemplo_pratico": "32f759b9f69208701dc2b05b938901b0b867cdb81b6e20cf62e293a797589077",
+     "atencao": "10275b22241d6916d5585b0140b38363830d2ef3854600ea70ba19d2e60c79ac",
+     "palavras_dificeis": "fb28b95a4d3f153882a1dbe046b5459b152403f48eeaedd9c64fe7c5e80d8fc3"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.210, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “O juiz deve reconhecer de ofício a decadência estabelecida em lei.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 93,
+   "target_id": "CC2002:ART.211",
+   "explanation_id": "ENTENDA/CC2002:ART.211/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.211:CAPUT\tSe a decadência for convencional, a parte a quem aproveita pode alegá-la em qualquer grau de jurisdição, mas o juiz não pode suprir a alegação.",
+   "source_snapshot_sha256": "590355cb3cf2b5c7dcb22447d1d03f6f155535d9ae72515e1617d42a5173a1dd",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.211:CAPUT",
+     "text": "Se a decadência for convencional, a parte a quem aproveita pode alegá-la em qualquer grau de jurisdição, mas o juiz não pode suprir a alegação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se a decadência for convencional, a parte a quem aproveita pode alegá-la em qualquer grau de jurisdição, mas o juiz não pode suprir a alegação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d4b62113b027ec6116577008b096d7c775de64e42fa9b79024230d81b080186d",
+     "o_que_significa": "4f7d6defdae1902ccd478ce0dba9d8affff19833c33dc2e5ff1d6770478cd2a9",
+     "exemplo_pratico": "d171ae8cccb58f2c6478a5cc7beee1ad9ea04b1bab1384888adb4b609d9f816e",
+     "atencao": "16598283d49827cff8476bcef7efa3226e04e4c4d28b6eb23b27e669c8be307e",
+     "palavras_dificeis": "e0ef618b9fa06da52205f75ce5fccf4eba7e66d3ec8b4604d744d0556e7d7cca"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.211, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Decadência criada por convenção pode ser alegada pela parte beneficiada em qualquer grau, mas não pode ser suprida pelo juiz.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 94,
+   "target_id": "CC2002:ART.212",
+   "explanation_id": "ENTENDA/CC2002:ART.212/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.212:CAPUT\tSalvo o negócio a que se impõe forma especial, o fato jurídico pode ser provado mediante:\nCC2002:ART.212:INC.I\tconfissão;\nCC2002:ART.212:INC.II\tdocumento;\nCC2002:ART.212:INC.III\ttestemunha;\nCC2002:ART.212:INC.IV\tpresunção;\nCC2002:ART.212:INC.V\tperícia.",
+   "source_snapshot_sha256": "9de62b94edf49300645abc6de88bff91cc0714e5c5e3682fbe66a660d877adf0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.212:CAPUT",
+     "text": "Salvo o negócio a que se impõe forma especial, o fato jurídico pode ser provado mediante:"
+    },
+    {
+     "label": "CC2002:ART.212:INC.I",
+     "text": "confissão;"
+    },
+    {
+     "label": "CC2002:ART.212:INC.II",
+     "text": "documento;"
+    },
+    {
+     "label": "CC2002:ART.212:INC.III",
+     "text": "testemunha;"
+    },
+    {
+     "label": "CC2002:ART.212:INC.IV",
+     "text": "presunção;"
+    },
+    {
+     "label": "CC2002:ART.212:INC.V",
+     "text": "perícia."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 6 segmentos vigentes do dispositivo: Salvo o negócio a que se impõe forma especial, o fato jurídico pode ser provado mediante: | confissão; | documento; | testemunha; | presunção; | perícia.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5d1043481dfd2c16f66e660d3009304a705ccf04d470b4f425d7e84faacde41a",
+     "o_que_significa": "9e930c4ae94439b32f349e982091621a5204687af81c5abc3bd0db77aa6eac0d",
+     "exemplo_pratico": "63fe9d35f3ada90e35f3e7331712b1808fa6815a80328a5d38a1432af55f5638",
+     "atencao": "7bb6522489dfd111974b873a40f3419c1618e3cc0f8afd83226356b423f73c2b",
+     "palavras_dificeis": "0f54719333d5f48762ea6a21bb38ecabecbc6fd709d321b186f9170dc08b5c9f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.212, foram cotejados 6 segmento(s) vigente(s) (CAPUT, INC.I, INC.II, INC.III, INC.IV, INC.V) com os cinco campos. A baseline sintetiza a regra como: “Fatos jurídicos podem ser provados por confissão, documento, testemunha, presunção e perícia, salvo exigência de forma especial.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 95,
+   "target_id": "CC2002:ART.213",
+   "explanation_id": "ENTENDA/CC2002:ART.213/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.213:CAPUT\tNão tem eficácia a confissão se provém de quem não é capaz de dispor do direito a que se referem os fatos confessados.\nCC2002:ART.213:PAR.UNICO\tSe feita a confissão por um representante, somente é eficaz nos limites em que este pode vincular o representado.",
+   "source_snapshot_sha256": "ff753f6d871021145164b6a56155ad26d04955fb5597b036fe87f7c750b25224",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.213:CAPUT",
+     "text": "Não tem eficácia a confissão se provém de quem não é capaz de dispor do direito a que se referem os fatos confessados."
+    },
+    {
+     "label": "CC2002:ART.213:PAR.UNICO",
+     "text": "Se feita a confissão por um representante, somente é eficaz nos limites em que este pode vincular o representado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Não tem eficácia a confissão se provém de quem não é capaz de dispor do direito a que se referem os fatos confessados. | Se feita a confissão por um representante, somente é eficaz nos limites em que este pode vincular o representado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9817394863af4ae5749f426e38ce0841a2f096906643267ebc26ccfbe9aec612",
+     "o_que_significa": "56b9cc09844c017bc6a84e4e1514fd71da3e527f2673ccc46f3ca97ca3909e2d",
+     "exemplo_pratico": "16523de18f625079f19c81daafe7540bc9fb8c23151f61d16a9d99395a9a20ed",
+     "atencao": "5badb3431909fe570a3102ffbfb6788d19a96a5951ef4474554adeaa8ad6cc4e",
+     "palavras_dificeis": "06a59f28f0e66feb44e1227d5b1fc3241d349750260bda6080ab66935e60faee"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.213, foram cotejados 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos. A baseline sintetiza a regra como: “Confissão só é eficaz se feita por pessoa capaz de dispor do direito; representante confessa apenas dentro de seus poderes.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 96,
+   "target_id": "CC2002:ART.214",
+   "explanation_id": "ENTENDA/CC2002:ART.214/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.214:CAPUT\tA confissão é irrevogável, mas pode ser anulada se decorreu de erro de fato ou de coação.",
+   "source_snapshot_sha256": "6b1af34bc3c2c2e01e4f011080e51f531bb983b32026abfdb7d708aaed6364d7",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.214:CAPUT",
+     "text": "A confissão é irrevogável, mas pode ser anulada se decorreu de erro de fato ou de coação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A confissão é irrevogável, mas pode ser anulada se decorreu de erro de fato ou de coação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "bbd1fb6cbb5e6b94515ddbc4774e8197e9bd1000964524fcdb8f793c33b1d6ed",
+     "o_que_significa": "ac4ee5db241e665874582044207761c07341f15eb2672bb0219cce15a8477292",
+     "exemplo_pratico": "e9d94021c0b87f3a9634b0cab9f28d3f128e5e52fdef68d1bd11f77d5e43e261",
+     "atencao": "69c974ebbd82e10b2c4e9cdba972d0c08dcfc348190ee6b2e392ce6edafb7834",
+     "palavras_dificeis": "981b5c95407b7b956ef72f2001173d17ea389c029de1325adb5128ee766a0ea3"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.214, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Confissão não pode ser simplesmente retirada, mas pode ser anulada quando decorreu de erro de fato ou coação.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 97,
+   "target_id": "CC2002:ART.215",
+   "explanation_id": "ENTENDA/CC2002:ART.215/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.215:CAPUT\tA escritura pública, lavrada em notas de tabelião, é documento dotado de fé pública, fazendo prova plena.\nCC2002:ART.215:PAR.1\to Salvo quando exigidos por lei outros requisitos, a escritura pública deve conter:\nCC2002:ART.215:PAR.1:INC.I\tdata e local de sua realização;\nCC2002:ART.215:PAR.1:INC.II\treconhecimento da identidade e capacidade das partes e de quantos hajam comparecido ao ato, por si, como representantes, intervenientes ou testemunhas;\nCC2002:ART.215:PAR.1:INC.III\tnome, nacionalidade, estado civil, profissão, domicílio e residência das partes e demais comparecentes, com a indicação, quando necessário, do regime de bens do casamento, nome do outro cônjuge e filiação;\nCC2002:ART.215:PAR.1:INC.IV\tmanifestação clara da vontade das partes e dos intervenientes;\nCC2002:ART.215:PAR.1:INC.V\treferência ao cumprimento das exigências legais e fiscais inerentes à legitimidade do ato;\nCC2002:ART.215:PAR.1:INC.VI\tdeclaração de ter sido lida na presença das partes e demais comparecentes, ou de que todos a leram;\nCC2002:ART.215:PAR.1:INC.VII\tassinatura das partes e dos demais comparecentes, bem como a do tabelião ou seu substituto legal, encerrando o ato.\nCC2002:ART.215:PAR.2\to Se algum comparecente não puder ou não souber escrever, outra pessoa capaz assinará por ele, a seu rogo.\nCC2002:ART.215:PAR.3\to A escritura será redigida na língua nacional.\nCC2002:ART.215:PAR.4\to Se qualquer dos comparecentes não souber a língua nacional e o tabelião não entender o idioma em que se expressa, deverá comparecer tradutor público para servir de intérprete, ou, não o havendo na localidade, outra pessoa capaz que, a juízo do tabelião, tenha idoneidade e conhecimento bastantes.\nCC2002:ART.215:PAR.5\to Se algum dos comparecentes não for conhecido do tabelião, nem puder identificar-se por documento, deverão participar do ato pelo menos duas testemunhas que o conheçam e atestem sua identidade.",
+   "source_snapshot_sha256": "742ec741c00d0a4bfa8e4af6ba4363fc637060db941c3fced17c5839794ad343",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.215:CAPUT",
+     "text": "A escritura pública, lavrada em notas de tabelião, é documento dotado de fé pública, fazendo prova plena."
+    },
+    {
+     "label": "CC2002:ART.215:PAR.1",
+     "text": "o Salvo quando exigidos por lei outros requisitos, a escritura pública deve conter:"
+    },
+    {
+     "label": "CC2002:ART.215:PAR.1:INC.I",
+     "text": "data e local de sua realização;"
+    },
+    {
+     "label": "CC2002:ART.215:PAR.1:INC.II",
+     "text": "reconhecimento da identidade e capacidade das partes e de quantos hajam comparecido ao ato, por si, como representantes, intervenientes ou testemunhas;"
+    },
+    {
+     "label": "CC2002:ART.215:PAR.1:INC.III",
+     "text": "nome, nacionalidade, estado civil, profissão, domicílio e residência das partes e demais comparecentes, com a indicação, quando necessário, do regime de bens do casamento, nome do outro cônjuge e filiação;"
+    },
+    {
+     "label": "CC2002:ART.215:PAR.1:INC.IV",
+     "text": "manifestação clara da vontade das partes e dos intervenientes;"
+    },
+    {
+     "label": "CC2002:ART.215:PAR.1:INC.V",
+     "text": "referência ao cumprimento das exigências legais e fiscais inerentes à legitimidade do ato;"
+    },
+    {
+     "label": "CC2002:ART.215:PAR.1:INC.VI",
+     "text": "declaração de ter sido lida na presença das partes e demais comparecentes, ou de que todos a leram;"
+    },
+    {
+     "label": "CC2002:ART.215:PAR.1:INC.VII",
+     "text": "assinatura das partes e dos demais comparecentes, bem como a do tabelião ou seu substituto legal, encerrando o ato."
+    },
+    {
+     "label": "CC2002:ART.215:PAR.2",
+     "text": "o Se algum comparecente não puder ou não souber escrever, outra pessoa capaz assinará por ele, a seu rogo."
+    },
+    {
+     "label": "CC2002:ART.215:PAR.3",
+     "text": "o A escritura será redigida na língua nacional."
+    },
+    {
+     "label": "CC2002:ART.215:PAR.4",
+     "text": "o Se qualquer dos comparecentes não souber a língua nacional e o tabelião não entender o idioma em que se expressa, deverá comparecer tradutor público para servir de intérprete, ou, não o havendo na localidade, outra pessoa capaz que, a juízo do tabelião, tenha idoneidade e conhecimento bastantes."
+    },
+    {
+     "label": "CC2002:ART.215:PAR.5",
+     "text": "o Se algum dos comparecentes não for conhecido do tabelião, nem puder identificar-se por documento, deverão participar do ato pelo menos duas testemunhas que o conheçam e atestem sua identidade."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 13 segmentos vigentes do dispositivo: A escritura pública, lavrada em notas de tabelião, é documento dotado de fé pública, fazendo prova plena. | o Salvo quando exigidos por lei outros requisitos, a escritura pública deve conter: | data e local de sua realização; | reconhecimento da identidade e capacidade das partes e de quantos hajam comparecido ao ato, por si, como representantes, intervenientes ou testemunhas; | nome, nacionalidade, estado civil, profissão, domicílio e residência das partes e demais comparecentes, com a indicação, quando necessário, do regime de bens do casamento, nome do outro cônjuge e filiação; | manifestação clara da vontade das partes e dos intervenientes; | referência ao cumprimento das exigências legais e fiscais inerentes à legitimidade do ato; | declaração de ter sido lida na presença das partes e demais comparecentes, ou de que todos a leram; | assinatura das partes e dos demais comparecentes, bem como a do tabelião ou seu substituto legal, encerrando o ato. | o Se algum comparecente não puder ou não souber escrever, outra pessoa capaz assinará por ele, a seu rogo. | o A escritura será redigida na língua nacional. | o Se qualquer dos comparecentes não souber a língua nacional e o tabelião não entender o idioma em que se expressa, deverá comparecer tradutor público para servir de intérprete, ou, não o havendo na localidade, outra pessoa capaz que, a juízo do tabelião, tenha idoneidade e conhecimento bastantes. | o Se algum dos comparecentes não for conhecido do tabelião, nem puder identificar-se por documento, deverão participar do ato pelo menos duas testemunhas que o conheçam e atestem sua identidade.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "64ef8af574c8033376eef1cab0190837d372532f394f35843761a437ba8b4186",
+     "o_que_significa": "e7db4fee60d5c58c700b56f9bbdb1fb00b2c706ad9be5dfa6af59681cbe6f4b5",
+     "exemplo_pratico": "aff284b9b52d552dc61ceef880f6f9a6242edfef40a3e7182fc6f0144449ad4c",
+     "atencao": "bd165582169b2abbd972acd3755147de2d6d62040417d7b23ec753acc8d90a78",
+     "palavras_dificeis": "7619de458a8efd51859af214950b3f5f611df91a83e8aa2e0e657f0d92010b63"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.215, foram cotejados 13 segmento(s) vigente(s) (CAPUT, PAR.1, PAR.1:INC.I, PAR.1:INC.II, PAR.1:INC.III, PAR.1:INC.IV, PAR.1:INC.V, PAR.1:INC.VI, PAR.1:INC.VII, PAR.2, PAR.3, PAR.4, PAR.5) com os cinco campos. A baseline sintetiza a regra como: “Escritura pública lavrada por tabelião tem fé pública e deve conter identificação, capacidade, vontade, requisitos legais, leitura, assinaturas e demais formalidades previstas.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 98,
+   "target_id": "CC2002:ART.216",
+   "explanation_id": "ENTENDA/CC2002:ART.216/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.216:CAPUT\tFarão a mesma prova que os originais as certidões textuais de qualquer peça judicial, do protocolo das audiências, ou de outro qualquer livro a cargo do escrivão, sendo extraídas por ele, ou sob a sua vigilância, e por ele subscritas, assim como os traslados de autos, quando por outro escrivão consertados.",
+   "source_snapshot_sha256": "c34056e9cd984884fe3f9d22d60f5cbc3b853e3c8c27a27a469a9bbeb2405971",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.216:CAPUT",
+     "text": "Farão a mesma prova que os originais as certidões textuais de qualquer peça judicial, do protocolo das audiências, ou de outro qualquer livro a cargo do escrivão, sendo extraídas por ele, ou sob a sua vigilância, e por ele subscritas, assim como os traslados de autos, quando por outro escrivão consertados."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Farão a mesma prova que os originais as certidões textuais de qualquer peça judicial, do protocolo das audiências, ou de outro qualquer livro a cargo do escrivão, sendo extraídas por ele, ou sob a sua vigilância, e por ele subscritas, assim como os traslados de autos, quando por outro escrivão consertados.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f2b80d0d956a6b526e1714f7c901b1e5b09c7703337312e15d21349b3e0fa0ea",
+     "o_que_significa": "4dfaaadaa6b2fb4c2aa4b018f532ece9b488aef56f02f075bff240982f7d09d6",
+     "exemplo_pratico": "f76eb481dc211e7112a91a81d758a08cffeffd3e056bbd24c53a362b0d8a524c",
+     "atencao": "efd4cda7709a11d19dea515c2ce1ae06b17a67c77ca1c9bb31edf4fec533b90c",
+     "palavras_dificeis": "bd00dcc903b0ab4aade413f6d6f02b1f92d913efc97f28bb39939e4f717b047f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.216, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Certidões textuais e traslados judiciais extraídos e subscritos por escrivão competente fazem a mesma prova que os originais.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 99,
+   "target_id": "CC2002:ART.217",
+   "explanation_id": "ENTENDA/CC2002:ART.217/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.217:CAPUT\tTerão a mesma força probante os traslados e as certidões, extraídos por tabelião ou oficial de registro, de instrumentos ou documentos lançados em suas notas.",
+   "source_snapshot_sha256": "1449090ef69ee2d9dfb89156a58740fc6c10d7404dd8a085696821fba40681e3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.217:CAPUT",
+     "text": "Terão a mesma força probante os traslados e as certidões, extraídos por tabelião ou oficial de registro, de instrumentos ou documentos lançados em suas notas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Terão a mesma força probante os traslados e as certidões, extraídos por tabelião ou oficial de registro, de instrumentos ou documentos lançados em suas notas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a5aa62d9a21ef3fd722770946c50914e213029faff99282e47a1168bb73f4266",
+     "o_que_significa": "9798e60f7b808e800b5539785fcf965409d94dbee9eff445f1cd630937e7e8fa",
+     "exemplo_pratico": "60be94ab2eb091c8678b0e7e36bf6355f629e7b010165c29a68fa3c912bf52f8",
+     "atencao": "3754bdd6c131c8e63f41988887026d7ce2b67d323404437bd16505faab857fe2",
+     "palavras_dificeis": "ee9c4daba308d0b4d207392e85d28080b3950457a0a61c675255d6dfcf1e7ec5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.217, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Traslados e certidões emitidos por tabelião ou oficial de registro têm a mesma força probatória dos documentos registrados em suas notas.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 100,
+   "target_id": "CC2002:ART.218",
+   "explanation_id": "ENTENDA/CC2002:ART.218/BASE/1",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC-06",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.218:CAPUT\tOs traslados e as certidões considerar-se-ão instrumentos públicos, se os originais se houverem produzido em juízo como prova de algum ato.",
+   "source_snapshot_sha256": "8573194aa0d871217aad67bd1c2e9cae2c0b94b566633b67a8595c695af41522",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.218:CAPUT",
+     "text": "Os traslados e as certidões considerar-se-ão instrumentos públicos, se os originais se houverem produzido em juízo como prova de algum ato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Os traslados e as certidões considerar-se-ão instrumentos públicos, se os originais se houverem produzido em juízo como prova de algum ato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "39788e5421d2851ea48db53e4ef26a78da45c3d63aff3b04d4e3c5e9b0ef24ce",
+     "o_que_significa": "580fccdef0d333dd8f60c1105c32582335e2380f1a1df9e484532e691ccea27d",
+     "exemplo_pratico": "1fbd55d86eef58409c403c14bf7adf2c4ac737c8eac0b7821c7b0607f33c8655",
+     "atencao": "37a55cc026b55413cbc6368f3f9a341f3fd93b37b462b2fa7027ac106d4bc4ff",
+     "palavras_dificeis": "088a126b2dc80f86b230c43452c69ec7802f1ac8d66f28bdf309a427ea9333ae"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.218, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Traslados e certidões tornam-se instrumentos públicos quando os originais foram produzidos em juízo como prova de ato.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  }
+ ]
+}
