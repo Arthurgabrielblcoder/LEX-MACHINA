@@ -1,0 +1,222 @@
+{
+ "schema_version": 1,
+ "mission": "QA-04-FRONT-A",
+ "as_of": "2026-11-13",
+ "status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+ "total": 4,
+ "source_inventory": "QA04_CORRECTION_INVENTORY_4.json",
+ "records": [
+  {
+   "target_id": "CC2002:ART.228",
+   "severity": "ALTO",
+   "source_finding": {
+    "target_id": "CC2002:ART.228",
+    "audit_wave": "QA03_FRONT_B",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "certos parentes das partes",
+    "legal_basis": "O art. 228, V, identifica precisamente os parentes não admitidos em regra: cônjuges, ascendentes, descendentes e colaterais até o terceiro grau de alguma das partes, por consanguinidade ou afinidade. A expressão genérica não permite ao leitor saber quem integra a restrição.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_SUJEITOS_LEGALMENTE_ENUMERADOS",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "O leitor não consegue determinar pelo ENTENDA quais vínculos familiares integram a regra de inadmissibilidade e pode excluir parentes fora do alcance legal ou admitir pessoas expressamente enumeradas.",
+    "correction_direction": "Enumerar cônjuge, ascendentes, descendentes e colaterais até o terceiro grau, por consanguinidade ou afinidade, mantendo separadas a exceção do § 1º e a garantia do § 2º.",
+    "confidence": "ALTA",
+    "human_review_required": false,
+    "checkpoint": "B-CP05",
+    "auditor": "qa03_audit_001_194"
+   },
+   "source_finding_sha256": "4f6024142b95487c2e215bfad1fc1cbf491136aa8ccff0e2035e01fd8b0ae8b3",
+   "finding_confirmed": true,
+   "finding_confirmation_rationale": "O art. 228, V, identifica precisamente os parentes não admitidos em regra: cônjuges, ascendentes, descendentes e colaterais até o terceiro grau de alguma das partes, por consanguinidade ou afinidade. A expressão genérica não permite ao leitor saber quem integra a restrição.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.228/BASE/1",
+   "baseline_content_sha256": "a6638b61d988e3bb761586505a05440e4831151374ea917dbfbe8ca30c365b83",
+   "proposed_content": {
+    "o_que_diz": "Em regra, não são admitidos como testemunhas o menor de dezesseis anos, o interessado no litígio, o amigo íntimo ou inimigo capital e, em relação a qualquer das partes, seu cônjuge, ascendentes, descendentes e parentes colaterais até o terceiro grau, tanto por consanguinidade quanto por afinidade. O juiz pode ouvir essas pessoas sobre fatos conhecidos somente por elas. A pessoa com deficiência testemunha em igualdade de condições e com os recursos assistivos necessários.",
+    "o_que_significa": "A regra identifica situações que podem comprometer a independência do depoimento, mas não cria exclusão absoluta: a necessidade da prova pode justificar a oitiva. Os incisos II e III estão revogados, e deficiência não constitui impedimento para testemunhar.",
+    "exemplo_pratico": "O cunhado de uma das partes, parente por afinidade, é alcançado pela restrição; se apenas ele presenciou o fato, o juiz pode admitir seu depoimento.",
+    "atencao": "É preciso distinguir parentesco por sangue de parentesco por afinidade e observar o limite do terceiro grau para colaterais. A exceção probatória não elimina a avaliação judicial da credibilidade.",
+    "palavras_dificeis": [
+     {
+      "termo": "Afinidade",
+      "explicacao": "vínculo familiar formado pelo casamento ou união com os parentes do cônjuge ou companheiro"
+     }
+    ]
+   },
+   "changed_fields": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "official_sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "correction_status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+   "editor_identifier": "qa04_primary_editor",
+   "independent_approval_claimed": false
+  },
+  {
+   "target_id": "CC2002:ART.288",
+   "severity": "MÉDIO",
+   "source_finding": {
+    "target_id": "CC2002:ART.288",
+    "audit_wave": "QA03_FRONT_B",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "instrumento particular com as solenidades legais referidas",
+    "legal_basis": "O art. 288 remete expressamente ao art. 654, § 1º. Para eficácia da cessão perante terceiros, o instrumento particular deve indicar o lugar em que foi passado, a qualificação do outorgante e do outorgado, a data e o objetivo da outorga, com designação e extensão dos poderes conferidos.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_REQUISITOS_FORMAIS_POR_REFERENCIA_CRUZADA",
+    "severity": "MÉDIO",
+    "legal_or_pedagogical_consequence": "A regra central de oponibilidade está correta, mas o leitor não recebe os requisitos concretos necessários para reconhecer o instrumento particular qualificado exigido pelo dispositivo.",
+    "correction_direction": "Explicitar no campo principal ou de significado as formalidades do art. 654, § 1º, preservando a distinção entre eficácia perante terceiros e validade entre as partes.",
+    "confidence": "ALTA",
+    "human_review_required": false,
+    "checkpoint": "B-CP07",
+    "auditor": "qa03_audit_001_194"
+   },
+   "source_finding_sha256": "67737bb957cafe68819afad48e2838a8e9f9dae76711ec37f5b929a705c3328d",
+   "finding_confirmed": true,
+   "finding_confirmation_rationale": "O art. 288 remete expressamente ao art. 654, § 1º. Para eficácia da cessão perante terceiros, o instrumento particular deve indicar o lugar em que foi passado, a qualificação do outorgante e do outorgado, a data e o objetivo da outorga, com designação e extensão dos poderes conferidos.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.288/BASE/1",
+   "baseline_content_sha256": "e1f4209bb1f992ea62642cc26f5fc12121d11489e014afde8d293282ac68dd59",
+   "proposed_content": {
+    "o_que_diz": "Para que a cessão de crédito produza efeitos contra terceiros, ela deve constar de instrumento público ou de documento particular com as formalidades remetidas pelo art. 654, § 1º: lugar de celebração, identificação das partes, data, finalidade do ato e indicação do objeto e da extensão dos poderes ou efeitos conferidos.",
+    "o_que_significa": "A exigência protege terceiros ao tornar a transmissão documentalmente verificável. A falta dessa forma qualificada impede opor a cessão a terceiros, mas não torna, por si só, inválido o acordo existente entre cedente e cessionário.",
+    "exemplo_pratico": "Cedente e cessionário celebram cessão sem documento apto a identificar data, partes e objeto. O ajuste pode vinculá-los, mas não prevalece automaticamente contra terceiro que dispute o mesmo crédito.",
+    "atencao": "Eficácia perante terceiros e validade entre as partes são questões diferentes. Além da forma do art. 288, devem ser verificadas as demais regras da cessão e a situação concreta do terceiro.",
+    "palavras_dificeis": [
+     {
+      "termo": "Eficácia perante terceiros",
+      "explicacao": "possibilidade de fazer o negócio produzir efeitos contra pessoas que não participaram dele"
+     }
+    ]
+   },
+   "changed_fields": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "official_sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "correction_status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+   "editor_identifier": "qa04_primary_editor",
+   "independent_approval_claimed": false
+  },
+  {
+   "target_id": "CC2002:ART.371",
+   "severity": "ALTO",
+   "source_finding": {
+    "target_id": "CC2002:ART.371",
+    "audit_wave": "QA03_FRONT_B",
+    "problematic_field": "o_que_diz; o_que_significa",
+    "problematic_excerpt": "o fiador pode usar crédito que tenha contra o credor do afiançado; ele pode invocar crédito que possua contra quem é credor da dívida garantida",
+    "legal_basis": "O art. 371 autoriza o fiador a compensar sua dívida com a dívida do credor ao afiançado, isto é, a opor o crédito que o devedor principal tem contra o credor. A explicação transforma essa exceção em uso de crédito próprio do fiador, hipótese já abrangida pela regra geral de reciprocidade.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "ERRO_NA_TITULARIDADE_DO_CREDITO_COMPENSAVEL",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "Atribui a exceção legal à pessoa errada e pode impedir o fiador de invocar crédito pertencente ao afiançado ou apresentar como excepcional uma compensação de crédito próprio.",
+    "correction_direction": "Explicar que o fiador, além de seus próprios créditos compensáveis pela regra geral, pode opor ao credor o crédito que este deve ao afiançado.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": "B-CP10",
+    "auditor": "qa03_audit_195_388"
+   },
+   "source_finding_sha256": "70b95fe3848e4f689c24b65391e3470f422435ee392316eb44ea0089bc5121aa",
+   "finding_confirmed": true,
+   "finding_confirmation_rationale": "O art. 371 autoriza o fiador a compensar sua dívida com a dívida do credor ao afiançado, isto é, a opor o crédito que o devedor principal tem contra o credor. A explicação transforma essa exceção em uso de crédito próprio do fiador, hipótese já abrangida pela regra geral de reciprocidade.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.371/BASE/1",
+   "baseline_content_sha256": "d78ed101631ee3cb0c328539af9068fe36de587463b810d59daf89586d0b5032",
+   "proposed_content": {
+    "o_que_diz": "Em regra, o devedor só pode compensar o que o próprio credor lhe deve. Na fiança há exceção: o fiador cobrado pode usar, para reduzir ou extinguir a dívida garantida, o crédito que o afiançado possui contra esse mesmo credor.",
+    "o_que_significa": "A reciprocidade normalmente é examinada entre as mesmas duas pessoas. Para proteger o garante, a lei permite que ele invoque também um crédito pertencente ao devedor principal contra o credor da obrigação garantida.",
+    "exemplo_pratico": "Um banco cobra do fiador dívida de uma empresa, mas deve à própria empresa uma quantia líquida e vencida. O fiador pode opor esse crédito da empresa ao banco, observados os demais requisitos da compensação.",
+    "atencao": "A exceção não se limita a crédito próprio do fiador: o crédito relevante pode pertencer ao afiançado. A compensação ainda depende dos requisitos legais aplicáveis às dívidas confrontadas.",
+    "palavras_dificeis": [
+     {
+      "termo": "Afiançado",
+      "explicacao": "devedor principal cuja obrigação foi garantida pelo fiador"
+     }
+    ]
+   },
+   "changed_fields": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "official_sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "correction_status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+   "editor_identifier": "qa04_primary_editor",
+   "independent_approval_claimed": false
+  },
+  {
+   "target_id": "CC2002:ART.500",
+   "severity": "ALTO",
+   "source_finding": {
+    "target_id": "CC2002:ART.500",
+    "audit_wave": "QA03_FRONT_B",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "o comprador pode exigir complemento, resolução ou abatimento; excesso pode exigir pagamento ou devolução",
+    "legal_basis": "O caput do art. 500 estabelece ordem condicionada: o comprador exige primeiro o complemento da área e, somente se isso não for possível, pode reclamar resolução ou abatimento proporcional. No excesso, o § 2º exige que o vendedor prove motivo para ignorar a medida exata e então atribui ao comprador a escolha entre completar o preço ou devolver o excesso.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_ORDEM_CONDICOES_E_TITULAR_DA_ESCOLHA",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A redação pode levar o leitor a tratar os três remédios como livremente intercambiáveis e a ignorar os pressupostos e a titularidade da escolha na área excedente.",
+    "correction_direction": "Apresentar o complemento como remédio prioritário; condicionar resolução ou abatimento à impossibilidade de complementar; e explicitar prova do vendedor e escolha do comprador no excesso.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": "B-CP16",
+    "auditor": "qa03_audit_195_388"
+   },
+   "source_finding_sha256": "4c26099455b6e829fcbe5fc6305e35d9803aa3d4e73d1cda9b2dae67908bd9cd",
+   "finding_confirmed": true,
+   "finding_confirmation_rationale": "O caput do art. 500 estabelece ordem condicionada: o comprador exige primeiro o complemento da área e, somente se isso não for possível, pode reclamar resolução ou abatimento proporcional. No excesso, o § 2º exige que o vendedor prove motivo para ignorar a medida exata e então atribui ao comprador a escolha entre completar o preço ou devolver o excesso.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.500/BASE/1",
+   "baseline_content_sha256": "2e483a9893308692ec31e58aae9886cd24907f92930dc86d723b6bd7681ed652",
+   "proposed_content": {
+    "o_que_diz": "Na venda de imóvel por medida, se faltar área, o comprador deve primeiro pedir o complemento. Apenas quando completar a área for impossível poderá escolher entre desfazer o contrato e obter redução proporcional do preço. Diferença de até um vigésimo presume indicação aproximada, salvo prova do comprador. Se houver área excedente e o vendedor demonstrar motivo justificável para desconhecer a medida exata, o comprador escolhe entre pagar a diferença correspondente ou devolver o excesso. Na venda de coisa certa, com dimensões apenas informativas, não há complemento nem devolução.",
+    "o_que_significa": "As soluções não são alternativas livres desde o início. A falta de área dá prioridade ao complemento; resolução ou abatimento são subsidiários. No excesso, a escolha é do comprador e somente surge depois da prova exigida do vendedor.",
+    "exemplo_pratico": "Um lote vendido por metro quadrado tem área menor que a contratada. O comprador busca primeiro completar a metragem; se isso for inviável, poderá resolver a compra ou pedir abatimento. Se a área for maior e o vendedor provar desconhecimento justificável, quem escolhe pagar ou devolver o excedente é o comprador.",
+    "atencao": "Devem ser apurados o modo da venda, a proporção da divergência, a possibilidade de complemento e, no excesso, a prova do vendedor. A presunção de diferença até cinco por cento admite prova contrária do comprador.",
+    "palavras_dificeis": [
+     {
+      "termo": "Venda ad corpus",
+      "explicacao": "venda do imóvel como bem certo, em que a medida indicada tem caráter apenas informativo"
+     }
+    ]
+   },
+   "changed_fields": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "official_sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "correction_status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+   "editor_identifier": "qa04_primary_editor",
+   "independent_approval_claimed": false
+  }
+ ]
+}
