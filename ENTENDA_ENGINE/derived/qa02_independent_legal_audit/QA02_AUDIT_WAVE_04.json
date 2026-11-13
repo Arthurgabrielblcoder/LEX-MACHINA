@@ -2,19 +2,19 @@
  "schema_version": 1,
  "mission": "QA-02-WAVE-04",
  "as_of": "2026-11-12",
- "completed_through_checkpoint": 22,
+ "completed_through_checkpoint": 23,
  "status": "PARTIAL_REQUIRES_CONTINUATION",
- "audited_total": 125,
+ "audited_total": 150,
  "source_queue_positions_completed": [
   201,
-  325
+  350
  ],
- "next_source_queue_position": 326,
- "findings_total": 18,
+ "next_source_queue_position": 351,
+ "findings_total": 20,
  "finding_counts": {
-  "ALTO": 14,
+  "ALTO": 15,
   "CRÍTICO": 1,
-  "MÉDIO": 3
+  "MÉDIO": 4
  },
  "protected_sha256": {
   "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
@@ -7793,6 +7793,1453 @@
    },
    "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
    "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O casamento pode ser anulado por vício da vontade, se houve por parte de um dos nubentes, ao consentir, erro essencial quanto à pessoa do outro; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 326,
+   "target_id": "CC2002:ART.1557",
+   "explanation_id": "ENTENDA/CC2002:ART.1557/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1557:CAPUT\tConsidera-se erro essencial sobre a pessoa do outro cônjuge:\nCC2002:ART.1557:INC.I\to que diz respeito à sua identidade, sua honra e boa fama, sendo esse erro tal que o seu conhecimento ulterior torne insuportável a vida em comum ao cônjuge enganado;\nCC2002:ART.1557:INC.II\ta ignorância de crime, anterior ao casamento, que, por sua natureza, torne insuportável a vida conjugal;\nCC2002:ART.1557:INC.III\ta ignorância, anterior ao casamento, de defeito físico irremediável que não caracterize deficiência ou de moléstia grave e transmissível, por contágio ou por herança, capaz de pôr em risco a saúde do outro cônjuge ou de sua descendência; (Redação dada pela Lei nº 13.146, de 2015) (Vigência)\nCC2002:ART.1557:INC.IV\t(Revogado) . (Redação dada pela Lei nº 13.146, de 2015) (Vigência)",
+   "source_snapshot_sha256": "7e2e9c8bb4280f6d6cdcff7726ddafe020cde4ba5cc9e99c6535bc028195b535",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1557:CAPUT",
+     "text": "Considera-se erro essencial sobre a pessoa do outro cônjuge:"
+    },
+    {
+     "label": "CC2002:ART.1557:INC.I",
+     "text": "o que diz respeito à sua identidade, sua honra e boa fama, sendo esse erro tal que o seu conhecimento ulterior torne insuportável a vida em comum ao cônjuge enganado;"
+    },
+    {
+     "label": "CC2002:ART.1557:INC.II",
+     "text": "a ignorância de crime, anterior ao casamento, que, por sua natureza, torne insuportável a vida conjugal;"
+    },
+    {
+     "label": "CC2002:ART.1557:INC.III",
+     "text": "a ignorância, anterior ao casamento, de defeito físico irremediável que não caracterize deficiência ou de moléstia grave e transmissível, por contágio ou por herança, capaz de pôr em risco a saúde do outro cônjuge ou de sua descendência; (Redação dada pela Lei nº 13.146, de 2015) (Vigência)"
+    },
+    {
+     "label": "CC2002:ART.1557:INC.IV",
+     "text": "(Revogado) . (Redação dada pela Lei nº 13.146, de 2015) (Vigência)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 5 segmentos vigentes do dispositivo: Considera-se erro essencial sobre a pessoa do outro cônjuge: | o que diz respeito à sua identidade, sua honra e boa fama, sendo esse erro tal que o seu conhecimento ulterior torne insuportável a vida em comum ao cônjuge enganado; | a ignorância de crime, anterior ao casamento, que, por sua natureza, torne insuportável a vida conjugal; | a ignorância, anterior ao casamento, de defeito físico irremediável que não caracterize deficiência ou de moléstia grave e transmissível, por contágio ou por herança, capaz de pôr em risco a saúde do outro cônjuge ou de sua descendência; (Redação dada pela Lei nº 13.146, de 2015) (Vigência) | (Revogado) . (Redação dada pela Lei nº 13.146, de 2015) (Vigência)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b6c9170048e19969a415bea9e858a2e2d2adc19fb766f28f20f2bae105cb65e0",
+     "o_que_significa": "a22ca1a830280f1518cff9f0f45dec55eda336ae46f328f1365e9d54d325b9d8",
+     "exemplo_pratico": "087a5cd5deae4524f4c309f893262eea11642ec08833939a87d0c0083ef10ded",
+     "atencao": "0859baea675212b257d82cb0d1ca8f437418a2ecb84c98eb74238edc70a91fe9",
+     "palavras_dificeis": "9bfb67f56a78f994cbe20d78b09b88923a91365cc9f9610a5718ff990540995f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1557 foi conferido em 5 segmento(s), incluindo a regra: Considera-se erro essencial sobre a pessoa do outro cônjuge:. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 327,
+   "target_id": "CC2002:ART.1558",
+   "explanation_id": "ENTENDA/CC2002:ART.1558/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1558:CAPUT\tÉ anulável o casamento em virtude de coação, quando o consentimento de um ou de ambos os cônjuges houver sido captado mediante fundado temor de mal considerável e iminente para a vida, a saúde e a honra, sua ou de seus familiares.",
+   "source_snapshot_sha256": "45f7e527286a484b9a39e4c4d731bbdd7eb6721eda63469b2fb63c28da342645",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1558:CAPUT",
+     "text": "É anulável o casamento em virtude de coação, quando o consentimento de um ou de ambos os cônjuges houver sido captado mediante fundado temor de mal considerável e iminente para a vida, a saúde e a honra, sua ou de seus familiares."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: É anulável o casamento em virtude de coação, quando o consentimento de um ou de ambos os cônjuges houver sido captado mediante fundado temor de mal considerável e iminente para a vida, a saúde e a honra, sua ou de seus familiares.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d807ee22f88f9e49b69346def0c90e45fcb7f10a279f87d947fb39f1c93704a9",
+     "o_que_significa": "b61c54ad322fe04b431635503096a3bc63a2cb68f2a4725778c991c30375e844",
+     "exemplo_pratico": "315a625d6453987c30ce58a0f5fd3f0638b015fad326c089513603dde326c8bb",
+     "atencao": "fd46aefc8025aec86b5a20faa790f797bb1ecf8bfebb9a0404cde4dac963b8b3",
+     "palavras_dificeis": "8adf8b2c7af60d38e150b51d9266acbaa36b2fa6301c45c2721c2b9977753367"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1558 foi conferido em 1 segmento(s), incluindo a regra: É anulável o casamento em virtude de coação, quando o consentimento de um ou de ambos os cônjuges houver sido captado mediante. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 328,
+   "target_id": "CC2002:ART.1559",
+   "explanation_id": "ENTENDA/CC2002:ART.1559/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1559:CAPUT\tSomente o cônjuge que incidiu em erro, ou sofreu coação, pode demandar a anulação do casamento; mas a coabitação, havendo ciência do vício, valida o ato, ressalvadas as hipóteses dos incisos III e IV do art. 1.557.",
+   "source_snapshot_sha256": "1979bbe030d37119896af5d88a46469651f157bea30cbb920ca94e2105e7dfc2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1559:CAPUT",
+     "text": "Somente o cônjuge que incidiu em erro, ou sofreu coação, pode demandar a anulação do casamento; mas a coabitação, havendo ciência do vício, valida o ato, ressalvadas as hipóteses dos incisos III e IV do art. 1.557."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Somente o cônjuge que incidiu em erro, ou sofreu coação, pode demandar a anulação do casamento; mas a coabitação, havendo ciência do vício, valida o ato, ressalvadas as hipóteses dos incisos III e IV do art. 1.557.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "21f14a90951511b8d412b4ffb016ebfdd5c4850ee323ca2310f652bde0af09cd",
+     "o_que_significa": "512861d45b5796af8b0212c6a4ac8c680d35427bde6a566d78d17fd96658d772",
+     "exemplo_pratico": "8d2e15e1ed21166eb6c63e5130ecce313beede3a8589d44cde4766c8f870288e",
+     "atencao": "04b14c906d1eb4eca6df07908f37a5df06bcf7f4f9c70e0fb13cc04f665ce2e3",
+     "palavras_dificeis": "c416c92ab5089358851a3b7544d5f9a79d233ff1d40ebc811871bc1841ffa26b"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O art. 1.559 ressalva expressamente as hipoteses dos incisos III e IV do art. 1.557 da convalidacao pela coabitacao; o inciso IV esta revogado e o inciso III conserva a excecao relativa a defeito fisico irremediavel nao caracterizador de deficiencia ou molestia grave transmissivel.",
+   "finding": {
+    "target_id": "CC2002:ART.1559",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "ressalvadas hipoteses legais especificas",
+    "legal_basis": "O art. 1.559 ressalva expressamente as hipoteses dos incisos III e IV do art. 1.557 da convalidacao pela coabitacao; o inciso IV esta revogado e o inciso III conserva a excecao relativa a defeito fisico irremediavel nao caracterizador de deficiencia ou molestia grave transmissivel.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_EXCECAO_IDENTIFICAVEL",
+    "severity": "MÉDIO",
+    "legal_or_pedagogical_consequence": "A formula generica nao permite ao leitor identificar qual vicio nao e convalidado pela coabitacao consciente.",
+    "correction_direction": "Identificar expressamente a excecao ainda vigente do inciso III e registrar que o inciso IV foi revogado.",
+    "confidence": "ALTA",
+    "human_review_required": false
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 329,
+   "target_id": "CC2002:ART.1560",
+   "explanation_id": "ENTENDA/CC2002:ART.1560/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1560:CAPUT\tO prazo para ser intentada a ação de anulação do casamento, a contar da data da celebração, é de:\nCC2002:ART.1560:INC.I\tcento e oitenta dias, no caso do inciso IV do art. 1.550;\nCC2002:ART.1560:INC.II\tdois anos, se incompetente a autoridade celebrante;\nCC2002:ART.1560:INC.III\ttrês anos, nos casos dos incisos I a IV do art. 1.557;\nCC2002:ART.1560:INC.IV\tquatro anos, se houver coação.\nCC2002:ART.1560:PAR.1\to Extingue-se, em cento e oitenta dias, o direito de anular o casamento dos menores de dezesseis anos, contado o prazo para o menor do dia em que perfez essa idade; e da data do casamento, para seus representantes legais ou ascendentes.\nCC2002:ART.1560:PAR.2\to Na hipótese do inciso V do art. 1.550, o prazo para anulação do casamento é de cento e oitenta dias, a partir da data em que o mandante tiver conhecimento da celebração.",
+   "source_snapshot_sha256": "e84f2cf782be173cef72b491aff100ba17b6ad4125ec45f350f9ea81a4fd4253",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1560:CAPUT",
+     "text": "O prazo para ser intentada a ação de anulação do casamento, a contar da data da celebração, é de:"
+    },
+    {
+     "label": "CC2002:ART.1560:INC.I",
+     "text": "cento e oitenta dias, no caso do inciso IV do art. 1.550;"
+    },
+    {
+     "label": "CC2002:ART.1560:INC.II",
+     "text": "dois anos, se incompetente a autoridade celebrante;"
+    },
+    {
+     "label": "CC2002:ART.1560:INC.III",
+     "text": "três anos, nos casos dos incisos I a IV do art. 1.557;"
+    },
+    {
+     "label": "CC2002:ART.1560:INC.IV",
+     "text": "quatro anos, se houver coação."
+    },
+    {
+     "label": "CC2002:ART.1560:PAR.1",
+     "text": "o Extingue-se, em cento e oitenta dias, o direito de anular o casamento dos menores de dezesseis anos, contado o prazo para o menor do dia em que perfez essa idade; e da data do casamento, para seus representantes legais ou ascendentes."
+    },
+    {
+     "label": "CC2002:ART.1560:PAR.2",
+     "text": "o Na hipótese do inciso V do art. 1.550, o prazo para anulação do casamento é de cento e oitenta dias, a partir da data em que o mandante tiver conhecimento da celebração."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 7 segmentos vigentes do dispositivo: O prazo para ser intentada a ação de anulação do casamento, a contar da data da celebração, é de: | cento e oitenta dias, no caso do inciso IV do art. 1.550; | dois anos, se incompetente a autoridade celebrante; | três anos, nos casos dos incisos I a IV do art. 1.557; | quatro anos, se houver coação. | o Extingue-se, em cento e oitenta dias, o direito de anular o casamento dos menores de dezesseis anos, contado o prazo para o menor do dia em que perfez essa idade; e da data do casamento, para seus representantes legais ou ascendentes. | o Na hipótese do inciso V do art. 1.550, o prazo para anulação do casamento é de cento e oitenta dias, a partir da data em que o mandante tiver conhecimento da celebração.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "291b6cc1bd1e83e5f0cc07a07fe7ddeb27679202bdb0a62fc2d7be34714f15af",
+     "o_que_significa": "36c2d7d9636538bb77aa2f6b75b359b21ec2ebd9058875bf505b0096ad85216b",
+     "exemplo_pratico": "35b031375a57f855dc7d58ab9e7513f2f6c86a5f6408c998adeddabf3c35e207",
+     "atencao": "cabc5b1c5e899270a05decb8f61535c9fd80ee7b2e09536f63df3d5a3877f1ad",
+     "palavras_dificeis": "37443673c62255b04fe647a84a58b63006e1788c72a6517edea29e5e45bec330"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O art. 1.560 fixa prazos decadenciais determinados: 180 dias para a hipotese do art. 1.550, IV; dois anos para incompetencia da autoridade; tres anos para erro essencial; quatro anos para coacao; alem dos termos iniciais especificos dos paragrafos 1 e 2.",
+   "finding": {
+    "target_id": "CC2002:ART.1560",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "prazos diferentes conforme incapacidade, autoridade incompetente, erro, coacao ou mandato",
+    "legal_basis": "O art. 1.560 fixa prazos decadenciais determinados: 180 dias para a hipotese do art. 1.550, IV; dois anos para incompetencia da autoridade; tres anos para erro essencial; quatro anos para coacao; alem dos termos iniciais especificos dos paragrafos 1 e 2.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_PRAZOS_E_TERMOS_INICIAIS",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A explicacao impede identificar o prazo aplicavel e o momento de inicio da decadencia em varias hipoteses.",
+    "correction_direction": "Enumerar os quatro prazos do caput e os termos iniciais especiais dos paragrafos.",
+    "confidence": "ALTA",
+    "human_review_required": false
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 330,
+   "target_id": "CC2002:ART.1562",
+   "explanation_id": "ENTENDA/CC2002:ART.1562/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1562:CAPUT\tAntes de mover a ação de nulidade do casamento, a de anulação, a de separação judicial, a de divórcio direto ou a de dissolução de união estável, poderá requerer a parte, comprovando sua necessidade, a separação de corpos, que será concedida pelo juiz com a possível brevidade.",
+   "source_snapshot_sha256": "5dbbc4517a9270400314dfa1601ec93e9d4bdfc9ebd053f255d762616e532022",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1562:CAPUT",
+     "text": "Antes de mover a ação de nulidade do casamento, a de anulação, a de separação judicial, a de divórcio direto ou a de dissolução de união estável, poderá requerer a parte, comprovando sua necessidade, a separação de corpos, que será concedida pelo juiz com a possível brevidade."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Antes de mover a ação de nulidade do casamento, a de anulação, a de separação judicial, a de divórcio direto ou a de dissolução de união estável, poderá requerer a parte, comprovando sua necessidade, a separação de corpos, que será concedida pelo juiz com a possível brevidade.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "94e812d9ce1356b9c01450ad144bb625bea08bc58fa302e9dcb098575d1b4f4f",
+     "o_que_significa": "1e78e51373e0ecdd64eb31ba9db3a3dd8b6d30dade7aeceaed9645dd6279db71",
+     "exemplo_pratico": "9095481049a7e65c5d4f00cb030e738fea07842c203f9ba199dee0888b5c5419",
+     "atencao": "7e4e23f0f6425d172f280a89b68823a3a97860004e81b4e4dd01d553dafc1ff3",
+     "palavras_dificeis": "33c8130c44850d9dcde3a050dc19220b74f41c970d86a45e3bd9be739c602e54"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1562 foi conferido em 1 segmento(s), incluindo a regra: Antes de mover a ação de nulidade do casamento, a de anulação, a de separação judicial, a de divórcio direto ou a. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 331,
+   "target_id": "CC2002:ART.1563",
+   "explanation_id": "ENTENDA/CC2002:ART.1563/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1563:CAPUT\tA sentença que decretar a nulidade do casamento retroagirá à data da sua celebração, sem prejudicar a aquisição de direitos, a título oneroso, por terceiros de boa-fé, nem a resultante de sentença transitada em julgado.",
+   "source_snapshot_sha256": "3c53234e3f823a5be33d6df08e5ce8da36913e7057f286c6b18a1ea90b16915a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1563:CAPUT",
+     "text": "A sentença que decretar a nulidade do casamento retroagirá à data da sua celebração, sem prejudicar a aquisição de direitos, a título oneroso, por terceiros de boa-fé, nem a resultante de sentença transitada em julgado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A sentença que decretar a nulidade do casamento retroagirá à data da sua celebração, sem prejudicar a aquisição de direitos, a título oneroso, por terceiros de boa-fé, nem a resultante de sentença transitada em julgado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6bdc61aaf765696fdd3206ac6d78ed45f4acbc4adf90bf2cf33a0c4eeb229f10",
+     "o_que_significa": "0dfd8091621bf09a463167678e1411c0a05c66d790fd4090d538443bf350653d",
+     "exemplo_pratico": "8e4fb3665f47b94ccfa8beda8d45ff1aa165b8ad14437ac6adc3e81e1929508f",
+     "atencao": "6889703903dc2d66f2dacbf063c477ff9e51ff5bad69253e66828e7c4df9d9e1",
+     "palavras_dificeis": "72e28339f8efca25ff23b88576c812e7a2da23b41cab7dff0d8d864dc504fb1e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1563 foi conferido em 1 segmento(s), incluindo a regra: A sentença que decretar a nulidade do casamento retroagirá à data da sua celebração, sem prejudicar a aquisição de direitos, a título. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 332,
+   "target_id": "CC2002:ART.1564",
+   "explanation_id": "ENTENDA/CC2002:ART.1564/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1564:CAPUT\tQuando o casamento for anulado por culpa de um dos cônjuges, este incorrerá:\nCC2002:ART.1564:INC.I\tna perda de todas as vantagens havidas do cônjuge inocente;\nCC2002:ART.1564:INC.II\tna obrigação de cumprir as promessas que lhe fez no contrato antenupcial.",
+   "source_snapshot_sha256": "21d089d39718a97c24b25d2b16491d0ee01cc1c29f50d9d0045853a035d1acdd",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1564:CAPUT",
+     "text": "Quando o casamento for anulado por culpa de um dos cônjuges, este incorrerá:"
+    },
+    {
+     "label": "CC2002:ART.1564:INC.I",
+     "text": "na perda de todas as vantagens havidas do cônjuge inocente;"
+    },
+    {
+     "label": "CC2002:ART.1564:INC.II",
+     "text": "na obrigação de cumprir as promessas que lhe fez no contrato antenupcial."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Quando o casamento for anulado por culpa de um dos cônjuges, este incorrerá: | na perda de todas as vantagens havidas do cônjuge inocente; | na obrigação de cumprir as promessas que lhe fez no contrato antenupcial.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "bd8a99f6c39e3157d9460a967172e3e168a3e43329fcf2b6a7f8b580a9cdf51e",
+     "o_que_significa": "245b3e5261e97ab08821e37dc7bc3e5f545cf35d22232899869caf55bcf375f4",
+     "exemplo_pratico": "f008fde0cfdb24696fa9bad8d9c72f47fae42eb6a0641dad9ba37d44c735ee27",
+     "atencao": "01a3d83e3368a5810f23dd317063ba809e640aa83dd3c0d5e58a10f64b5ca5dc",
+     "palavras_dificeis": "c5cc08feb1fc90561d968eb9d184f1fcb6fbb738eb70ca432ecd059fb8552b2a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1564 foi conferido em 3 segmento(s), incluindo a regra: Quando o casamento for anulado por culpa de um dos cônjuges, este incorrerá:. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 333,
+   "target_id": "CC2002:ART.1565",
+   "explanation_id": "ENTENDA/CC2002:ART.1565/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1565:CAPUT\tPelo casamento, homem e mulher assumem mutuamente a condição de consortes, companheiros e responsáveis pelos encargos da família.\nCC2002:ART.1565:PAR.1\to Qualquer dos nubentes, querendo, poderá acrescer ao seu o sobrenome do outro.\nCC2002:ART.1565:PAR.2\to O planejamento familiar é de livre decisão do casal, competindo ao Estado propiciar recursos educacionais e financeiros para o exercício desse direito, vedado qualquer tipo de coerção por parte de instituições privadas ou públicas.",
+   "source_snapshot_sha256": "14ab35c0a0d7e8f048fd0a280ca61956aa3717e64f2af4b77d897bfaa308fc8a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1565:CAPUT",
+     "text": "Pelo casamento, homem e mulher assumem mutuamente a condição de consortes, companheiros e responsáveis pelos encargos da família."
+    },
+    {
+     "label": "CC2002:ART.1565:PAR.1",
+     "text": "o Qualquer dos nubentes, querendo, poderá acrescer ao seu o sobrenome do outro."
+    },
+    {
+     "label": "CC2002:ART.1565:PAR.2",
+     "text": "o O planejamento familiar é de livre decisão do casal, competindo ao Estado propiciar recursos educacionais e financeiros para o exercício desse direito, vedado qualquer tipo de coerção por parte de instituições privadas ou públicas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Pelo casamento, homem e mulher assumem mutuamente a condição de consortes, companheiros e responsáveis pelos encargos da família. | o Qualquer dos nubentes, querendo, poderá acrescer ao seu o sobrenome do outro. | o O planejamento familiar é de livre decisão do casal, competindo ao Estado propiciar recursos educacionais e financeiros para o exercício desse direito, vedado qualquer tipo de coerção por parte de instituições privadas ou públicas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a1294ef238ac75b796d5ecd231a45a146aa4c64d48d05e308a5207b94a121268",
+     "o_que_significa": "92ea6fbf1e42d37654ba82a851bad3ba1983100b523df8ed5d3edc7c68305dea",
+     "exemplo_pratico": "63b0ffbcdf254570b6b563459149b61e4a8e4eaea846199b69985e18318779cc",
+     "atencao": "db94103624f282428acf448a0b550c91c944c98b649bd909447cb1a2cd52682e",
+     "palavras_dificeis": "e4094be9593c8044765707a81064e75d5f1490c3aa0ee6bc5d50813f002f6ebf"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1565 foi conferido em 3 segmento(s), incluindo a regra: Pelo casamento, homem e mulher assumem mutuamente a condição de consortes, companheiros e responsáveis pelos encargos da família.. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 334,
+   "target_id": "CC2002:ART.1566",
+   "explanation_id": "ENTENDA/CC2002:ART.1566/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1566:CAPUT\tSão deveres de ambos os cônjuges:\nCC2002:ART.1566:INC.I\tfidelidade recíproca;\nCC2002:ART.1566:INC.II\tvida em comum, no domicílio conjugal;\nCC2002:ART.1566:INC.III\tmútua assistência;\nCC2002:ART.1566:INC.IV\tsustento, guarda e educação dos filhos;\nCC2002:ART.1566:INC.V\trespeito e consideração mútuos.",
+   "source_snapshot_sha256": "55328cf4c8e2fe8dafa19952c12ddb716e2c097dc21bd4b9c5ec340590631f3e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1566:CAPUT",
+     "text": "São deveres de ambos os cônjuges:"
+    },
+    {
+     "label": "CC2002:ART.1566:INC.I",
+     "text": "fidelidade recíproca;"
+    },
+    {
+     "label": "CC2002:ART.1566:INC.II",
+     "text": "vida em comum, no domicílio conjugal;"
+    },
+    {
+     "label": "CC2002:ART.1566:INC.III",
+     "text": "mútua assistência;"
+    },
+    {
+     "label": "CC2002:ART.1566:INC.IV",
+     "text": "sustento, guarda e educação dos filhos;"
+    },
+    {
+     "label": "CC2002:ART.1566:INC.V",
+     "text": "respeito e consideração mútuos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 6 segmentos vigentes do dispositivo: São deveres de ambos os cônjuges: | fidelidade recíproca; | vida em comum, no domicílio conjugal; | mútua assistência; | sustento, guarda e educação dos filhos; | respeito e consideração mútuos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6c72d04cfeba3dc1bedabe75e59378da39f7a209ddb98082d2fe083fb2c31125",
+     "o_que_significa": "bb1bb52eaa623f9a044a11ea45f0cc2a7f7d1b9eb181edef80e8594e503162b7",
+     "exemplo_pratico": "dbb84d058840cb35ab964c01fbc52b116a14badc35c1db85aa3861f0641f8c0c",
+     "atencao": "99a4d6b4ab2aff32d0c4ab840047c099063a17b38f27bf3b422937870bafacf8",
+     "palavras_dificeis": "ac7a9476572dd18a90f631477af07837cf726cdbf6111bd738262bf40586fbd2"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1566 foi conferido em 6 segmento(s), incluindo a regra: São deveres de ambos os cônjuges:. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 335,
+   "target_id": "CC2002:ART.1567",
+   "explanation_id": "ENTENDA/CC2002:ART.1567/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1567:CAPUT\tA direção da sociedade conjugal será exercida, em colaboração, pelo marido e pela mulher, sempre no interesse do casal e dos filhos.\nCC2002:ART.1567:PAR.UNICO\tHavendo divergência, qualquer dos cônjuges poderá recorrer ao juiz, que decidirá tendo em consideração aqueles interesses.",
+   "source_snapshot_sha256": "430c71e9f329ae5b3395e8ca0ab40b87c692370c8a5241880fa52ec6c66f738e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1567:CAPUT",
+     "text": "A direção da sociedade conjugal será exercida, em colaboração, pelo marido e pela mulher, sempre no interesse do casal e dos filhos."
+    },
+    {
+     "label": "CC2002:ART.1567:PAR.UNICO",
+     "text": "Havendo divergência, qualquer dos cônjuges poderá recorrer ao juiz, que decidirá tendo em consideração aqueles interesses."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A direção da sociedade conjugal será exercida, em colaboração, pelo marido e pela mulher, sempre no interesse do casal e dos filhos. | Havendo divergência, qualquer dos cônjuges poderá recorrer ao juiz, que decidirá tendo em consideração aqueles interesses.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e828f5c94abeef7f703b48c0b6c3af4582fa863d1dab45f105aede9b02cae9b0",
+     "o_que_significa": "7c2b36d3be7cf20f5971fa336e03022792941df22976ff8a0a0d7990c96e09ff",
+     "exemplo_pratico": "99d47682b627cffa18bb195762fc3df1cf1c7a2d4a55ef277f81e23bb865b652",
+     "atencao": "63129ffb3bd815357fdbcb82b5bce03dde77b6220fb1854abde91e701ca0e78b",
+     "palavras_dificeis": "3b077ca5a00eb69112d92bccdd29b86ab7fde857c627f49b191c644e2c4701f2"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1567 foi conferido em 2 segmento(s), incluindo a regra: A direção da sociedade conjugal será exercida, em colaboração, pelo marido e pela mulher, sempre no interesse do casal e dos filhos.. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 336,
+   "target_id": "CC2002:ART.1568",
+   "explanation_id": "ENTENDA/CC2002:ART.1568/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1568:CAPUT\tOs cônjuges são obrigados a concorrer, na proporção de seus bens e dos rendimentos do trabalho, para o sustento da família e a educação dos filhos, qualquer que seja o regime patrimonial.",
+   "source_snapshot_sha256": "b5c603a3e16558d409a38c9a4d8be4abf0026cd260148472eb70f16926529dda",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1568:CAPUT",
+     "text": "Os cônjuges são obrigados a concorrer, na proporção de seus bens e dos rendimentos do trabalho, para o sustento da família e a educação dos filhos, qualquer que seja o regime patrimonial."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Os cônjuges são obrigados a concorrer, na proporção de seus bens e dos rendimentos do trabalho, para o sustento da família e a educação dos filhos, qualquer que seja o regime patrimonial.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f419c61cbb00add32b03be347bc58e1b98d3947b3369b90ba70a4a5647456a6f",
+     "o_que_significa": "2dd0358d2162a25d043cc588ebd69055695bc1fd499befdda09860517a1f3b0f",
+     "exemplo_pratico": "1d8b88bf0e623cea4f56af9cfd6301cc7ad7d5abfd589e4a72756845a691dea2",
+     "atencao": "6e786ac59f1efa84818d33be5d26cb82bf629c7913b158ef9633d1e36a7ffff7",
+     "palavras_dificeis": "a58e7657d3633838e1d13e4d7bcca2d56acc6ac0e7024c4f83c050e63b58161a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1568 foi conferido em 1 segmento(s), incluindo a regra: Os cônjuges são obrigados a concorrer, na proporção de seus bens e dos rendimentos do trabalho, para o sustento da família e. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 337,
+   "target_id": "CC2002:ART.1569",
+   "explanation_id": "ENTENDA/CC2002:ART.1569/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1569:CAPUT\tO domicílio do casal será escolhido por ambos os cônjuges, mas um e outro podem ausentar-se do domicílio conjugal para atender a encargos públicos, ao exercício de sua profissão, ou a interesses particulares relevantes.",
+   "source_snapshot_sha256": "0d8cfa94314fbe3880e2af05f85bc006654fdd206673e10fa4d4ac366d8e943b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1569:CAPUT",
+     "text": "O domicílio do casal será escolhido por ambos os cônjuges, mas um e outro podem ausentar-se do domicílio conjugal para atender a encargos públicos, ao exercício de sua profissão, ou a interesses particulares relevantes."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O domicílio do casal será escolhido por ambos os cônjuges, mas um e outro podem ausentar-se do domicílio conjugal para atender a encargos públicos, ao exercício de sua profissão, ou a interesses particulares relevantes.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "dd565b5440fa656b77157da3b7795ba1a13ffca71d45d77f69346ed50211c13b",
+     "o_que_significa": "3d4d14ce0996aef89d51572f4211a8dac410a6b1d4a1a503af9416496d839fbc",
+     "exemplo_pratico": "22ce498f406e4419967279a6d0ef254bd2d1f88bbbf75251a38d8b0998a3632f",
+     "atencao": "c986a5e057299e10e47e9992c2d8e1c78a6ea792dd704fcd2d1d95ecf40db426",
+     "palavras_dificeis": "9a8106fd8965539e7a23ce6d16e2578d4b3442287961602e82d1ce4fd13b3066"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1569 foi conferido em 1 segmento(s), incluindo a regra: O domicílio do casal será escolhido por ambos os cônjuges, mas um e outro podem ausentar-se do domicílio conjugal para atender a. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 338,
+   "target_id": "CC2002:ART.1570",
+   "explanation_id": "ENTENDA/CC2002:ART.1570/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1570:CAPUT\tSe qualquer dos cônjuges estiver em lugar remoto ou não sabido, encarcerado por mais de cento e oitenta dias, interditado judicialmente ou privado, episodicamente, de consciência, em virtude de enfermidade ou de acidente, o outro exercerá com exclusividade a direção da família, cabendo-lhe a administração dos bens.",
+   "source_snapshot_sha256": "42fa243d9a7b29d7a2de02fd17188dc96e31a5c7cb1132a51271aa308175fa88",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1570:CAPUT",
+     "text": "Se qualquer dos cônjuges estiver em lugar remoto ou não sabido, encarcerado por mais de cento e oitenta dias, interditado judicialmente ou privado, episodicamente, de consciência, em virtude de enfermidade ou de acidente, o outro exercerá com exclusividade a direção da família, cabendo-lhe a administração dos bens."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se qualquer dos cônjuges estiver em lugar remoto ou não sabido, encarcerado por mais de cento e oitenta dias, interditado judicialmente ou privado, episodicamente, de consciência, em virtude de enfermidade ou de acidente, o outro exercerá com exclusividade a direção da família, cabendo-lhe a administração dos bens.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "73620dcd505039a29137e004185da3e1cffc3cb14c687a4575b8b6b970d025f4",
+     "o_que_significa": "ceb8238568685c3c999ae5381a3635373365b8825d6009ef432af172220df929",
+     "exemplo_pratico": "24028b1d3f038b65d20815090600c14695dbf32ef1f67738871e735108af47e9",
+     "atencao": "13265dca21161fa9e7940fbf7db53897f778b57a2081fd04e249203910b747c5",
+     "palavras_dificeis": "75f57e2418ca39e0d80c3586b7e50b04891a9c7079656724e0658d673e91d1c7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1570 foi conferido em 1 segmento(s), incluindo a regra: Se qualquer dos cônjuges estiver em lugar remoto ou não sabido, encarcerado por mais de cento e oitenta dias, interditado judicialmente ou. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 339,
+   "target_id": "CC2002:ART.1571",
+   "explanation_id": "ENTENDA/CC2002:ART.1571/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1571:CAPUT\tA sociedade conjugal termina:\nCC2002:ART.1571:INC.I\tpela morte de um dos cônjuges;\nCC2002:ART.1571:INC.II\tpela nulidade ou anulação do casamento;\nCC2002:ART.1571:INC.III\tpela separação judicial;\nCC2002:ART.1571:INC.IV\tpelo divórcio.\nCC2002:ART.1571:PAR.1\to O casamento válido só se dissolve pela morte de um dos cônjuges ou pelo divórcio, aplicando-se a presunção estabelecida neste Código quanto ao ausente.\nCC2002:ART.1571:PAR.2\to Dissolvido o casamento pelo divórcio direto ou por conversão, o cônjuge poderá manter o nome de casado; salvo, no segundo caso, dispondo em contrário a sentença de separação judicial.",
+   "source_snapshot_sha256": "da80f30ae21410eb01285a40cdba535f6a84d2d16a3320fa0569e43dc315bc25",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1571:CAPUT",
+     "text": "A sociedade conjugal termina:"
+    },
+    {
+     "label": "CC2002:ART.1571:INC.I",
+     "text": "pela morte de um dos cônjuges;"
+    },
+    {
+     "label": "CC2002:ART.1571:INC.II",
+     "text": "pela nulidade ou anulação do casamento;"
+    },
+    {
+     "label": "CC2002:ART.1571:INC.III",
+     "text": "pela separação judicial;"
+    },
+    {
+     "label": "CC2002:ART.1571:INC.IV",
+     "text": "pelo divórcio."
+    },
+    {
+     "label": "CC2002:ART.1571:PAR.1",
+     "text": "o O casamento válido só se dissolve pela morte de um dos cônjuges ou pelo divórcio, aplicando-se a presunção estabelecida neste Código quanto ao ausente."
+    },
+    {
+     "label": "CC2002:ART.1571:PAR.2",
+     "text": "o Dissolvido o casamento pelo divórcio direto ou por conversão, o cônjuge poderá manter o nome de casado; salvo, no segundo caso, dispondo em contrário a sentença de separação judicial."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 7 segmentos vigentes do dispositivo: A sociedade conjugal termina: | pela morte de um dos cônjuges; | pela nulidade ou anulação do casamento; | pela separação judicial; | pelo divórcio. | o O casamento válido só se dissolve pela morte de um dos cônjuges ou pelo divórcio, aplicando-se a presunção estabelecida neste Código quanto ao ausente. | o Dissolvido o casamento pelo divórcio direto ou por conversão, o cônjuge poderá manter o nome de casado; salvo, no segundo caso, dispondo em contrário a sentença de separação judicial.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5a18ba110b445be0e48168b49caf9871cad1bc92517fcead62a9f549b09f698a",
+     "o_que_significa": "63350e3ce28824da6e2f59d79e731fc9a0c4605e07670a91a1f0cd244d7b624a",
+     "exemplo_pratico": "901a9aae237d73a7f3567f64c0b34e91aaf63f56ffffbecb0f5822b0ca7a21d1",
+     "atencao": "d33c7ce0671bbc6fe4662ad34ea060ef6f3f3849f691aa8d4f8de2e109455047",
+     "palavras_dificeis": "036bf369af5951fcfffcfe91ce341658ef710321ba405c4fe024705d192c692b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1571 foi conferido em 7 segmento(s), incluindo a regra: A sociedade conjugal termina:. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 340,
+   "target_id": "CC2002:ART.1572",
+   "explanation_id": "ENTENDA/CC2002:ART.1572/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1572:CAPUT\tQualquer dos cônjuges poderá propor a ação de separação judicial, imputando ao outro qualquer ato que importe grave violação dos deveres do casamento e torne insuportável a vida em comum.\nCC2002:ART.1572:PAR.1\to A separação judicial pode também ser pedida se um dos cônjuges provar ruptura da vida em comum há mais de um ano e a impossibilidade de sua reconstituição.\nCC2002:ART.1572:PAR.2\to O cônjuge pode ainda pedir a separação judicial quando o outro estiver acometido de doença mental grave, manifestada após o casamento, que torne impossível a continuação da vida em comum, desde que, após uma duração de dois anos, a enfermidade tenha sido reconhecida de cura improvável.\nCC2002:ART.1572:PAR.3\to No caso do parágrafo 2 o , reverterão ao cônjuge enfermo, que não houver pedido a separação judicial, os remanescentes dos bens que levou para o casamento, e se o regime dos bens adotado o permitir, a meação dos adquiridos na constância da sociedade conjugal.",
+   "source_snapshot_sha256": "d5d8fcf1e5503ba3b7e0519dec9961171436f27e37325961411b1b4cdb39d02f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1572:CAPUT",
+     "text": "Qualquer dos cônjuges poderá propor a ação de separação judicial, imputando ao outro qualquer ato que importe grave violação dos deveres do casamento e torne insuportável a vida em comum."
+    },
+    {
+     "label": "CC2002:ART.1572:PAR.1",
+     "text": "o A separação judicial pode também ser pedida se um dos cônjuges provar ruptura da vida em comum há mais de um ano e a impossibilidade de sua reconstituição."
+    },
+    {
+     "label": "CC2002:ART.1572:PAR.2",
+     "text": "o O cônjuge pode ainda pedir a separação judicial quando o outro estiver acometido de doença mental grave, manifestada após o casamento, que torne impossível a continuação da vida em comum, desde que, após uma duração de dois anos, a enfermidade tenha sido reconhecida de cura improvável."
+    },
+    {
+     "label": "CC2002:ART.1572:PAR.3",
+     "text": "o No caso do parágrafo 2 o , reverterão ao cônjuge enfermo, que não houver pedido a separação judicial, os remanescentes dos bens que levou para o casamento, e se o regime dos bens adotado o permitir, a meação dos adquiridos na constância da sociedade conjugal."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: Qualquer dos cônjuges poderá propor a ação de separação judicial, imputando ao outro qualquer ato que importe grave violação dos deveres do casamento e torne insuportável a vida em comum. | o A separação judicial pode também ser pedida se um dos cônjuges provar ruptura da vida em comum há mais de um ano e a impossibilidade de sua reconstituição. | o O cônjuge pode ainda pedir a separação judicial quando o outro estiver acometido de doença mental grave, manifestada após o casamento, que torne impossível a continuação da vida em comum, desde que, após uma duração de dois anos, a enfermidade tenha sido reconhecida de cura improvável. | o No caso do parágrafo 2 o , reverterão ao cônjuge enfermo, que não houver pedido a separação judicial, os remanescentes dos bens que levou para o casamento, e se o regime dos bens adotado o permitir, a meação dos adquiridos na constância da sociedade conjugal.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "03e5840f2fb74aec8fbbe13ca198c22be95e5ce4bf232eb8ea1745f3d3dcd94a",
+     "o_que_significa": "95c414d79352a19bda9633714d4a282f11fcf83dcf8e64e8aa36b02f78d687c7",
+     "exemplo_pratico": "80f7fcd5e1c7233d61ecacc505625f7af2687602ac0d0fb7e4356d8f680d923b",
+     "atencao": "761f2b4501d3d4a6726686ead7f4b6477fecf7ad84693014f807ba6e91a937b9",
+     "palavras_dificeis": "d78f070c1b559f3d789998bccaa7206e437ef9e844dd6b9b8080f0d254aaf558"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1572 foi conferido em 4 segmento(s), incluindo a regra: Qualquer dos cônjuges poderá propor a ação de separação judicial, imputando ao outro qualquer ato que importe grave violação dos deveres do. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 341,
+   "target_id": "CC2002:ART.1573",
+   "explanation_id": "ENTENDA/CC2002:ART.1573/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1573:CAPUT\tPodem caracterizar a impossibilidade da comunhão de vida a ocorrência de algum dos seguintes motivos:\nCC2002:ART.1573:INC.I\tadultério;\nCC2002:ART.1573:INC.II\ttentativa de morte;\nCC2002:ART.1573:INC.III\tsevícia ou injúria grave;\nCC2002:ART.1573:INC.IV\tabandono voluntário do lar conjugal, durante um ano contínuo;\nCC2002:ART.1573:INC.V\tcondenação por crime infamante;\nCC2002:ART.1573:INC.VI\tconduta desonrosa.\nCC2002:ART.1573:PAR.UNICO\tO juiz poderá considerar outros fatos que tornem evidente a impossibilidade da vida em comum.",
+   "source_snapshot_sha256": "783b9f65d6051f101e8664ebd289d57945679d8b1325288f1ed52385bcfc37b8",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1573:CAPUT",
+     "text": "Podem caracterizar a impossibilidade da comunhão de vida a ocorrência de algum dos seguintes motivos:"
+    },
+    {
+     "label": "CC2002:ART.1573:INC.I",
+     "text": "adultério;"
+    },
+    {
+     "label": "CC2002:ART.1573:INC.II",
+     "text": "tentativa de morte;"
+    },
+    {
+     "label": "CC2002:ART.1573:INC.III",
+     "text": "sevícia ou injúria grave;"
+    },
+    {
+     "label": "CC2002:ART.1573:INC.IV",
+     "text": "abandono voluntário do lar conjugal, durante um ano contínuo;"
+    },
+    {
+     "label": "CC2002:ART.1573:INC.V",
+     "text": "condenação por crime infamante;"
+    },
+    {
+     "label": "CC2002:ART.1573:INC.VI",
+     "text": "conduta desonrosa."
+    },
+    {
+     "label": "CC2002:ART.1573:PAR.UNICO",
+     "text": "O juiz poderá considerar outros fatos que tornem evidente a impossibilidade da vida em comum."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 8 segmentos vigentes do dispositivo: Podem caracterizar a impossibilidade da comunhão de vida a ocorrência de algum dos seguintes motivos: | adultério; | tentativa de morte; | sevícia ou injúria grave; | abandono voluntário do lar conjugal, durante um ano contínuo; | condenação por crime infamante; | conduta desonrosa. | O juiz poderá considerar outros fatos que tornem evidente a impossibilidade da vida em comum.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "89c2b8cc6c933a35d08f75bdf280c03492186e786178ae242ba0710973509ac7",
+     "o_que_significa": "54785a0e812ab61b6d17347dfbaa0832e0f6143189404a722b2f27d18ee14366",
+     "exemplo_pratico": "f9253af1bd3f1911bea9b17377f18c39625797a473cf65d965b750bc6db2fe14",
+     "atencao": "d93f6007b4efc9db3488b442e3e7cdaa211949fd24b6b028eab6d4f9f261aa87",
+     "palavras_dificeis": "c6e789245936551e8184a3c198deb81b1466722ad8fb2b59442503e4d4edc43b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1573 foi conferido em 8 segmento(s), incluindo a regra: Podem caracterizar a impossibilidade da comunhão de vida a ocorrência de algum dos seguintes motivos:. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 342,
+   "target_id": "CC2002:ART.1574",
+   "explanation_id": "ENTENDA/CC2002:ART.1574/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1574:CAPUT\tDar-se-á a separação judicial por mútuo consentimento dos cônjuges se forem casados por mais de um ano e o manifestarem perante o juiz, sendo por ele devidamente homologada a convenção.\nCC2002:ART.1574:PAR.UNICO\tO juiz pode recusar a homologação e não decretar a separação judicial se apurar que a convenção não preserva suficientemente os interesses dos filhos ou de um dos cônjuges.",
+   "source_snapshot_sha256": "5f53b23f3fcca6924b6c01ca0f6d52e0a2d448f899e8d21071e8af7a114dd93b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1574:CAPUT",
+     "text": "Dar-se-á a separação judicial por mútuo consentimento dos cônjuges se forem casados por mais de um ano e o manifestarem perante o juiz, sendo por ele devidamente homologada a convenção."
+    },
+    {
+     "label": "CC2002:ART.1574:PAR.UNICO",
+     "text": "O juiz pode recusar a homologação e não decretar a separação judicial se apurar que a convenção não preserva suficientemente os interesses dos filhos ou de um dos cônjuges."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Dar-se-á a separação judicial por mútuo consentimento dos cônjuges se forem casados por mais de um ano e o manifestarem perante o juiz, sendo por ele devidamente homologada a convenção. | O juiz pode recusar a homologação e não decretar a separação judicial se apurar que a convenção não preserva suficientemente os interesses dos filhos ou de um dos cônjuges.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "954dafacaf572eeaf6aa9437a281090aef328f61a08a269f4a26a272fbc63b22",
+     "o_que_significa": "67d2b201b609875d81739df13ff79db149c3e4d9e409442426ae59916e8dbe6f",
+     "exemplo_pratico": "04feecc639cc77853552ad324870933433ddc1d0ed0d051f39478df2e7c7d860",
+     "atencao": "35328e42d41fe5117768d7ac448f5238f7119b349a9ff070f6462519c8b435fd",
+     "palavras_dificeis": "a3eddc7e01e9ab42660960f8184cc6f784d01261800d114e580b7e4bc068f06f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1574 foi conferido em 2 segmento(s), incluindo a regra: Dar-se-á a separação judicial por mútuo consentimento dos cônjuges se forem casados por mais de um ano e o manifestarem perante o. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 343,
+   "target_id": "CC2002:ART.1575",
+   "explanation_id": "ENTENDA/CC2002:ART.1575/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1575:CAPUT\tA sentença de separação judicial importa a separação de corpos e a partilha de bens.\nCC2002:ART.1575:PAR.UNICO\tA partilha de bens poderá ser feita mediante proposta dos cônjuges e homologada pelo juiz ou por este decidida.",
+   "source_snapshot_sha256": "13dfca5503f6889f1f62474636682f25f369da42138be6ccc2f84afa4a3c5f28",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1575:CAPUT",
+     "text": "A sentença de separação judicial importa a separação de corpos e a partilha de bens."
+    },
+    {
+     "label": "CC2002:ART.1575:PAR.UNICO",
+     "text": "A partilha de bens poderá ser feita mediante proposta dos cônjuges e homologada pelo juiz ou por este decidida."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A sentença de separação judicial importa a separação de corpos e a partilha de bens. | A partilha de bens poderá ser feita mediante proposta dos cônjuges e homologada pelo juiz ou por este decidida.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6803c60de979a6ea22745c69d00d710572bc6f42930b3f77e5c12d4afcbdfe8c",
+     "o_que_significa": "c0a0e36b86c794105754b2abeef4331b1c8bc1f7c629cea8d13adf339b3af890",
+     "exemplo_pratico": "cd7476a2ce1a71fc1bb4fc8aa90e20286a7168a7bde4ce228236e1814cefd76a",
+     "atencao": "b44a7c838983e9f31e094cd3f9db736895e445cb5f2b3833c38095e54adc187d",
+     "palavras_dificeis": "247c3bab7d4d244c0a6f4166b9ddee3fe68db65421dba81c94baf89d9dabaa95"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1575 foi conferido em 2 segmento(s), incluindo a regra: A sentença de separação judicial importa a separação de corpos e a partilha de bens.. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 344,
+   "target_id": "CC2002:ART.1576",
+   "explanation_id": "ENTENDA/CC2002:ART.1576/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1576:CAPUT\tA separação judicial põe termo aos deveres de coabitação e fidelidade recíproca e ao regime de bens.\nCC2002:ART.1576:PAR.UNICO\tO procedimento judicial da separação caberá somente aos cônjuges, e, no caso de incapacidade, serão representados pelo curador, pelo ascendente ou pelo irmão.",
+   "source_snapshot_sha256": "4afd2048d15ab310b266e0e0ca1500b6f19721efc987ab4b9a70c439007798d4",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1576:CAPUT",
+     "text": "A separação judicial põe termo aos deveres de coabitação e fidelidade recíproca e ao regime de bens."
+    },
+    {
+     "label": "CC2002:ART.1576:PAR.UNICO",
+     "text": "O procedimento judicial da separação caberá somente aos cônjuges, e, no caso de incapacidade, serão representados pelo curador, pelo ascendente ou pelo irmão."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A separação judicial põe termo aos deveres de coabitação e fidelidade recíproca e ao regime de bens. | O procedimento judicial da separação caberá somente aos cônjuges, e, no caso de incapacidade, serão representados pelo curador, pelo ascendente ou pelo irmão.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "60f3429af8f4ef7681b9a19e0bca54156f77175040ded060b4f46ad8262aab96",
+     "o_que_significa": "988934ad11e25abf8c60f7497e5f30497ef86b29247fbaa73d3f85e7e5838d08",
+     "exemplo_pratico": "5a2243dfd04f56f7c206b73037d5df55f614c8d18f042ea9e1e68a1de5366e62",
+     "atencao": "f0973c3b85bd580d3bc33966b77435466b58f00f723ddbb036864b8fcc8bd9ab",
+     "palavras_dificeis": "4058c34b99ccf71bed8d8dd7a0a3c69cc4acff792a563c89dd7f2ed39da6f513"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1576 foi conferido em 2 segmento(s), incluindo a regra: A separação judicial põe termo aos deveres de coabitação e fidelidade recíproca e ao regime de bens.. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 345,
+   "target_id": "CC2002:ART.1577",
+   "explanation_id": "ENTENDA/CC2002:ART.1577/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1577:CAPUT\tSeja qual for a causa da separação judicial e o modo como esta se faça, é lícito aos cônjuges restabelecer, a todo tempo, a sociedade conjugal, por ato regular em juízo.\nCC2002:ART.1577:PAR.UNICO\tA reconciliação em nada prejudicará o direito de terceiros, adquirido antes e durante o estado de separado, seja qual for o regime de bens.",
+   "source_snapshot_sha256": "d7609e9e55aebec18cf6fbb1649b38c05da43b11f4339a95898acb2e01609d8e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1577:CAPUT",
+     "text": "Seja qual for a causa da separação judicial e o modo como esta se faça, é lícito aos cônjuges restabelecer, a todo tempo, a sociedade conjugal, por ato regular em juízo."
+    },
+    {
+     "label": "CC2002:ART.1577:PAR.UNICO",
+     "text": "A reconciliação em nada prejudicará o direito de terceiros, adquirido antes e durante o estado de separado, seja qual for o regime de bens."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Seja qual for a causa da separação judicial e o modo como esta se faça, é lícito aos cônjuges restabelecer, a todo tempo, a sociedade conjugal, por ato regular em juízo. | A reconciliação em nada prejudicará o direito de terceiros, adquirido antes e durante o estado de separado, seja qual for o regime de bens.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "dae4230e88ad54ef2f410e75f47bb71ba7a33df312b59235c683db0842df1b41",
+     "o_que_significa": "ed13e0f52499f1f42cfc59318c5ea594f6acc89ea64bd572f9b214ae1187ff67",
+     "exemplo_pratico": "d9f35084fee8083cf7d46cded6498b528b06a292184cef4945d57e1725e738df",
+     "atencao": "48273a48d663b958f26512b6626ba6abc86fc7d5754366c5d6e48570dc324a34",
+     "palavras_dificeis": "c366c8adeebc309b6fd2d87445be262e61f00f04364087df6844de7ff92202a1"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1577 foi conferido em 2 segmento(s), incluindo a regra: Seja qual for a causa da separação judicial e o modo como esta se faça, é lícito aos cônjuges restabelecer, a todo. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 346,
+   "target_id": "CC2002:ART.1578",
+   "explanation_id": "ENTENDA/CC2002:ART.1578/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1578:CAPUT\tO cônjuge declarado culpado na ação de separação judicial perde o direito de usar o sobrenome do outro, desde que expressamente requerido pelo cônjuge inocente e se a alteração não acarretar:\nCC2002:ART.1578:INC.I\tevidente prejuízo para a sua identificação;\nCC2002:ART.1578:INC.II\tmanifesta distinção entre o seu nome de família e o dos filhos havidos da união dissolvida;\nCC2002:ART.1578:INC.III\tdano grave reconhecido na decisão judicial.\nCC2002:ART.1578:PAR.1\to O cônjuge inocente na ação de separação judicial poderá renunciar, a qualquer momento, ao direito de usar o sobrenome do outro.\nCC2002:ART.1578:PAR.2\to Nos demais casos caberá a opção pela conservação do nome de casado.",
+   "source_snapshot_sha256": "3797c7af85dfee27c846f2661cca53e899cedd9fb282f7c56c9282c4f1157886",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1578:CAPUT",
+     "text": "O cônjuge declarado culpado na ação de separação judicial perde o direito de usar o sobrenome do outro, desde que expressamente requerido pelo cônjuge inocente e se a alteração não acarretar:"
+    },
+    {
+     "label": "CC2002:ART.1578:INC.I",
+     "text": "evidente prejuízo para a sua identificação;"
+    },
+    {
+     "label": "CC2002:ART.1578:INC.II",
+     "text": "manifesta distinção entre o seu nome de família e o dos filhos havidos da união dissolvida;"
+    },
+    {
+     "label": "CC2002:ART.1578:INC.III",
+     "text": "dano grave reconhecido na decisão judicial."
+    },
+    {
+     "label": "CC2002:ART.1578:PAR.1",
+     "text": "o O cônjuge inocente na ação de separação judicial poderá renunciar, a qualquer momento, ao direito de usar o sobrenome do outro."
+    },
+    {
+     "label": "CC2002:ART.1578:PAR.2",
+     "text": "o Nos demais casos caberá a opção pela conservação do nome de casado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 6 segmentos vigentes do dispositivo: O cônjuge declarado culpado na ação de separação judicial perde o direito de usar o sobrenome do outro, desde que expressamente requerido pelo cônjuge inocente e se a alteração não acarretar: | evidente prejuízo para a sua identificação; | manifesta distinção entre o seu nome de família e o dos filhos havidos da união dissolvida; | dano grave reconhecido na decisão judicial. | o O cônjuge inocente na ação de separação judicial poderá renunciar, a qualquer momento, ao direito de usar o sobrenome do outro. | o Nos demais casos caberá a opção pela conservação do nome de casado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "109529fff25f51e18f33963b20c99232b7b60b9fbcf38f82d2bc6464dfdf65a5",
+     "o_que_significa": "7d80f8765f05e00c96c37307b873b3d6d6a42446c125db7d123769060d6e7ee6",
+     "exemplo_pratico": "e425b21330803e65093b3737707b3b775954a92227892f79f766d1c3fbd5ed3d",
+     "atencao": "65b8fad7088efa1424839bc81017207f17a48eb50e9b1167ccc7e3f9b72bf303",
+     "palavras_dificeis": "b53a0098b9866549112a40131b5cc2573dc75d9f13f7b942a9bcdb481d678a79"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1578 foi conferido em 6 segmento(s), incluindo a regra: O cônjuge declarado culpado na ação de separação judicial perde o direito de usar o sobrenome do outro, desde que expressamente requerido. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 347,
+   "target_id": "CC2002:ART.1579",
+   "explanation_id": "ENTENDA/CC2002:ART.1579/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1579:CAPUT\tO divórcio não modificará os direitos e deveres dos pais em relação aos filhos.\nCC2002:ART.1579:PAR.UNICO\tNovo casamento de qualquer dos pais, ou de ambos, não poderá importar restrições aos direitos e deveres previstos neste artigo.",
+   "source_snapshot_sha256": "87eb80b1ceb589dfc0dbb9d668c96ba8dab6be658ecdc123474e8f193ab8ce37",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1579:CAPUT",
+     "text": "O divórcio não modificará os direitos e deveres dos pais em relação aos filhos."
+    },
+    {
+     "label": "CC2002:ART.1579:PAR.UNICO",
+     "text": "Novo casamento de qualquer dos pais, ou de ambos, não poderá importar restrições aos direitos e deveres previstos neste artigo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O divórcio não modificará os direitos e deveres dos pais em relação aos filhos. | Novo casamento de qualquer dos pais, ou de ambos, não poderá importar restrições aos direitos e deveres previstos neste artigo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "62a1ad71d010a233bcb763cf37d1d204111b88634855b09645b7f6bbb8e9d86d",
+     "o_que_significa": "0704f7121e3b163f634faff66d691ba76fd576523f496c0c641e07e2278c402d",
+     "exemplo_pratico": "02bad42e1203c85b425776fdc5028ed11bf0c26c0a90f59388d9abecf085c4eb",
+     "atencao": "de0e015aea8fbd0c00f0e091c3e4205fe413791bd2af1c7227db144922812869",
+     "palavras_dificeis": "cf7219ea9a06d5070828c87577cd089801ca5fa6f8bba442fb39de9cbd9cf1f3"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1579 foi conferido em 2 segmento(s), incluindo a regra: O divórcio não modificará os direitos e deveres dos pais em relação aos filhos.. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 348,
+   "target_id": "CC2002:ART.1580",
+   "explanation_id": "ENTENDA/CC2002:ART.1580/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1580:CAPUT\tDecorrido um ano do trânsito em julgado da sentença que houver decretado a separação judicial, ou da decisão concessiva da medida cautelar de separação de corpos, qualquer das partes poderá requerer sua conversão em divórcio.\nCC2002:ART.1580:PAR.1\to A conversão em divórcio da separação judicial dos cônjuges será decretada por sentença, da qual não constará referência à causa que a determinou.\nCC2002:ART.1580:PAR.2\to O divórcio poderá ser requerido, por um ou por ambos os cônjuges, no caso de comprovada separação de fato por mais de dois anos.",
+   "source_snapshot_sha256": "59e078eb39c6e11a12ca65f7da781f98f080b36a0970fc6aab0f06998a57ebf1",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1580:CAPUT",
+     "text": "Decorrido um ano do trânsito em julgado da sentença que houver decretado a separação judicial, ou da decisão concessiva da medida cautelar de separação de corpos, qualquer das partes poderá requerer sua conversão em divórcio."
+    },
+    {
+     "label": "CC2002:ART.1580:PAR.1",
+     "text": "o A conversão em divórcio da separação judicial dos cônjuges será decretada por sentença, da qual não constará referência à causa que a determinou."
+    },
+    {
+     "label": "CC2002:ART.1580:PAR.2",
+     "text": "o O divórcio poderá ser requerido, por um ou por ambos os cônjuges, no caso de comprovada separação de fato por mais de dois anos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Decorrido um ano do trânsito em julgado da sentença que houver decretado a separação judicial, ou da decisão concessiva da medida cautelar de separação de corpos, qualquer das partes poderá requerer sua conversão em divórcio. | o A conversão em divórcio da separação judicial dos cônjuges será decretada por sentença, da qual não constará referência à causa que a determinou. | o O divórcio poderá ser requerido, por um ou por ambos os cônjuges, no caso de comprovada separação de fato por mais de dois anos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1738a874d8fbbe21d69b68df52ae5dee1041e635bb2d57927d18c208f894c876",
+     "o_que_significa": "e56028bc4db8b958d8aac62cbe5a6eec8be38728f6b1888dc2c884ef220be2fe",
+     "exemplo_pratico": "c240f1390cf7e3e5b62fe741cfaa18a311eb378467d89bd0afa1d5e2e26cb4b7",
+     "atencao": "b74dfc862cac23a203c986b82a6158f021e9d3e599408884eb8a61efaf7dda4f",
+     "palavras_dificeis": "23067407097703adf84f73bdc805c121dc2b52a38bec1e2d613e1c7913904005"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1580 foi conferido em 3 segmento(s), incluindo a regra: Decorrido um ano do trânsito em julgado da sentença que houver decretado a separação judicial, ou da decisão concessiva da medida cautelar. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 349,
+   "target_id": "CC2002:ART.1581",
+   "explanation_id": "ENTENDA/CC2002:ART.1581/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1581:CAPUT\tO divórcio pode ser concedido sem que haja prévia partilha de bens.",
+   "source_snapshot_sha256": "c9494c2ca55a903ccb1b1345cb1df0dca7e6e5e0806da902a489626deecf0fd3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1581:CAPUT",
+     "text": "O divórcio pode ser concedido sem que haja prévia partilha de bens."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O divórcio pode ser concedido sem que haja prévia partilha de bens.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c47680560230e51c86475188f104e1ebf6890db1573e90638079682147b115a7",
+     "o_que_significa": "216a97e9b0ca9cd8ca4cb9a679a0562777c8feae4d788bbf847080de435d0629",
+     "exemplo_pratico": "d6347065f0582917335b387130bd053198d063d584d119d89de575b18594f4ad",
+     "atencao": "f0b276ff14bcc71cf3f11bcce0718376e5d7f52b08c13a94ed539fc36b66c95a",
+     "palavras_dificeis": "1e86318eb23322d39ed365203f417975c99d026aae02b1549caa2d6bf593eca1"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1581 foi conferido em 1 segmento(s), incluindo a regra: O divórcio pode ser concedido sem que haja prévia partilha de bens.. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 350,
+   "target_id": "CC2002:ART.1582",
+   "explanation_id": "ENTENDA/CC2002:ART.1582/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1582:CAPUT\tO pedido de divórcio somente competirá aos cônjuges.\nCC2002:ART.1582:PAR.UNICO\tSe o cônjuge for incapaz para propor a ação ou defender-se, poderá fazê-lo o curador, o ascendente ou o irmão.",
+   "source_snapshot_sha256": "9f679b0513e8279c580aca3069c2466a1218cc857f4b70493909cfca7890375f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1582:CAPUT",
+     "text": "O pedido de divórcio somente competirá aos cônjuges."
+    },
+    {
+     "label": "CC2002:ART.1582:PAR.UNICO",
+     "text": "Se o cônjuge for incapaz para propor a ação ou defender-se, poderá fazê-lo o curador, o ascendente ou o irmão."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O pedido de divórcio somente competirá aos cônjuges. | Se o cônjuge for incapaz para propor a ação ou defender-se, poderá fazê-lo o curador, o ascendente ou o irmão.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5e6d5279d1297f0af98ff54ce113d32a7437c70f4b1ec37034cffdca2d6446ec",
+     "o_que_significa": "217c4b2fe50beae86b729fccc515f744cdd4f097ca004820942bf6d199a89019",
+     "exemplo_pratico": "7aab3ba54b6b8f13b53d1bab35e3a244f9520ef4a21dfd92727393ff7c92f666",
+     "atencao": "7b310f1f5cafc7b6921fca65b12c65b805a02568e6dc16310946eca8a55729f7",
+     "palavras_dificeis": "001948af86d91ef102eb7d487e07272d225f043045df369f0a319470166ce66e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "O art. 1582 foi conferido em 2 segmento(s), incluindo a regra: O pedido de divórcio somente competirá aos cônjuges.. Os cinco campos foram confrontados com requisitos, excecoes, sujeitos, prazos e consequencias; nenhuma inconsistencia material foi identificada no escopo examinado.",
    "finding": null,
    "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
    "reviewer": "delegated-independent-auditor"
