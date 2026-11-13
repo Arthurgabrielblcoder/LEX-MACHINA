@@ -1,0 +1,1353 @@
+{
+ "schema_version": 1,
+ "mission": "QA-03-FRONT-B",
+ "checkpoint": "B-CP15",
+ "as_of": "2026-11-13",
+ "status": "COMPLETE",
+ "source_queue": "QA03_AUDIT_388_QUEUE.json",
+ "source_queue_sha256": "b42fdebc0027548ce3458e188ff748c963bf7ff5c6c8d675ddaf2d4a82148e08",
+ "queue_positions": [
+  351,
+  375
+ ],
+ "examined": 25,
+ "target_ids": [
+  "CC2002:ART.480",
+  "CC2002:ART.481",
+  "CC2002:ART.482",
+  "CC2002:ART.483",
+  "CC2002:ART.484",
+  "CC2002:ART.485",
+  "CC2002:ART.486",
+  "CC2002:ART.487",
+  "CC2002:ART.488",
+  "CC2002:ART.489",
+  "CC2002:ART.490",
+  "CC2002:ART.491",
+  "CC2002:ART.492",
+  "CC2002:ART.493",
+  "CC2002:ART.494",
+  "CC2002:ART.495",
+  "CC2002:ART.496",
+  "CC2002:ART.497",
+  "CC2002:ART.498",
+  "CC2002:ART.499",
+  "CC2002:ART.500",
+  "CC2002:ART.501",
+  "CC2002:ART.502",
+  "CC2002:ART.503",
+  "CC2002:ART.504"
+ ],
+ "findings": 1,
+ "finding_counts": {
+  "ALTO": 1
+ },
+ "protected_sha256": {
+  "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+  "lookup": "60f1de336f2f9ecbc5e671d0a6a9223cf20e47ab5826a5501b53f9a67551866e",
+  "payload": "9fb3f3a1b6f1c1926eda0818fc753f2d0348194cf25b0a333fc6fa18c48222cb",
+  "qa02_corrections": "0d8cce6b3b9c335e7f71502b88c81488ae53732a7927708f2f83701504896e6b"
+ },
+ "records": [
+  {
+   "queue_position": 351,
+   "target_id": "CC2002:ART.480",
+   "explanation_id": "ENTENDA/CC2002:ART.480/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.480:CAPUT\tSe no contrato as obrigações couberem a apenas uma das partes, poderá ela pleitear que a sua prestação seja reduzida, ou alterado o modo de executá-la, a fim de evitar a onerosidade excessiva.",
+   "source_snapshot_sha256": "e9b3c1b705327178a0e985e707e914fa28331baa5046b26cc5e58b2b1dc3253b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.480:CAPUT",
+     "text": "Se no contrato as obrigações couberem a apenas uma das partes, poderá ela pleitear que a sua prestação seja reduzida, ou alterado o modo de executá-la, a fim de evitar a onerosidade excessiva."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se no contrato as obrigações couberem a apenas uma das partes, poderá ela pleitear que a sua prestação seja reduzida, ou alterado o modo de executá-la, a fim de evitar a onerosidade excessiva.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6fc78c886830ef5c30e1c12ec80f81bf8f41046de0ba6fbc1199163a639eb043",
+     "o_que_significa": "ce112ec6a90d92dc17ae12e930468c69c9c50343b6dd0d6647d0350268cbd85d",
+     "exemplo_pratico": "b947ab4896895c8962819cdc0080b44faf7bbe9988282df5a3b9e08847a5fc24",
+     "atencao": "5685eaafdbbcc02a60721c821de2e060078fa235968f86d885a89181277d365b",
+     "palavras_dificeis": "125c48ea7a9f276555224c1a0b215ad831fac89c181ca4f1471a1dc49ce49b9c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.480, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Se no contrato as obrigações couberem a apenas uma das partes, poderá ela pleitear que a sua prestação seja reduzida, ou alterado o modo de executá-la, a fim de evitar a onerosidade excessiva. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 352,
+   "target_id": "CC2002:ART.481",
+   "explanation_id": "ENTENDA/CC2002:ART.481/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.481:CAPUT\tPelo contrato de compra e venda, um dos contratantes se obriga a transferir o domínio de certa coisa, e o outro, a pagar-lhe certo preço em dinheiro.",
+   "source_snapshot_sha256": "f4fd2d0564dd33bf5831ca680431bf5a822d18c8b3727f45922522d87148e11c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.481:CAPUT",
+     "text": "Pelo contrato de compra e venda, um dos contratantes se obriga a transferir o domínio de certa coisa, e o outro, a pagar-lhe certo preço em dinheiro."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Pelo contrato de compra e venda, um dos contratantes se obriga a transferir o domínio de certa coisa, e o outro, a pagar-lhe certo preço em dinheiro.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "57597256813df71640f41697488c246d3851371f9265fba361094e6e229a1389",
+     "o_que_significa": "371c17deb14053e68c800775d94348dd6bba4120c56f65473c3807133fa86169",
+     "exemplo_pratico": "3c64f6258988a4043e49461f133dda4dc1cea31e85ff256ef1f3a397a8e7690f",
+     "atencao": "7479186f62922d45611b082594fea57a1941007695fafcdafae2dab1036572ad",
+     "palavras_dificeis": "55a0a9a867c2eeb4d1dd0d297b97bc329685505e865c1a29fae071803e4f75f9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.481, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Pelo contrato de compra e venda, um dos contratantes se obriga a transferir o domínio de certa coisa, e o outro, a pagar-lhe certo preço em dinheiro. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 353,
+   "target_id": "CC2002:ART.482",
+   "explanation_id": "ENTENDA/CC2002:ART.482/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.482:CAPUT\tA compra e venda, quando pura, considerar-se-á obrigatória e perfeita, desde que as partes acordarem no objeto e no preço.",
+   "source_snapshot_sha256": "a0795be76f274c3b4983108f2a4e6b8f4918064345257c0f7627b2e62045bcb0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.482:CAPUT",
+     "text": "A compra e venda, quando pura, considerar-se-á obrigatória e perfeita, desde que as partes acordarem no objeto e no preço."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A compra e venda, quando pura, considerar-se-á obrigatória e perfeita, desde que as partes acordarem no objeto e no preço.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5a7f258fb8fdd2f48d6cc56cfb76aeebb2c3c1e600fa83f1939913b3e159b7a8",
+     "o_que_significa": "679c2532dd3dfb73fa49332467c62d176c5261776a4a2c6f68e78da33a43f133",
+     "exemplo_pratico": "9024440a8627c469dae8dd6cde5a94471a61a9b31437c294d82990a77e94dd1e",
+     "atencao": "473d578adbdd1f82c3ad6146dd5d7c9ddc7edef3964e9a93286b42eb6ec1bdff",
+     "palavras_dificeis": "9442170aa3896ddb85d74dcdeac679e629a4dedf4cad8655cc59956a9f008b71"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.482, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que A compra e venda, quando pura, considerar-se-á obrigatória e perfeita, desde que as partes acordarem no objeto e no preço. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 354,
+   "target_id": "CC2002:ART.483",
+   "explanation_id": "ENTENDA/CC2002:ART.483/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.483:CAPUT\tA compra e venda pode ter por objeto coisa atual ou futura. Neste caso, ficará sem efeito o contrato se esta não vier a existir, salvo se a intenção das partes era de concluir contrato aleatório.",
+   "source_snapshot_sha256": "5b968a0e28e2fdef996e60f7e37ead39df541c242361c67a8ca8f6f1febc6376",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.483:CAPUT",
+     "text": "A compra e venda pode ter por objeto coisa atual ou futura. Neste caso, ficará sem efeito o contrato se esta não vier a existir, salvo se a intenção das partes era de concluir contrato aleatório."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A compra e venda pode ter por objeto coisa atual ou futura. Neste caso, ficará sem efeito o contrato se esta não vier a existir, salvo se a intenção das partes era de concluir contrato aleatório.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0c2caf5f8672dd0f98a7cfb75dd5ff590234a80b5a8c35faff866c9f6b587c2a",
+     "o_que_significa": "68a65255516357ce0e9978e39a6db7287bc63622d77f3bbf01d20097ac049b87",
+     "exemplo_pratico": "945cfb3fae44640d0fb894f40d725c7533e2018d1666b72b86b3e3a927787aab",
+     "atencao": "f76f2c2579955de4707569bcf908325777153e79fa3d8bba8d3daed6abba9397",
+     "palavras_dificeis": "d14712c30d5a1562b971a0d25ced1dca579c59227591e2121d33e0a4bdc5f445"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.483, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que A compra e venda pode ter por objeto coisa atual ou futura. Neste caso, ficará sem efeito o contrato se esta não vier a existir, salvo se a intenção das partes era de concluir contrato aleatório. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 355,
+   "target_id": "CC2002:ART.484",
+   "explanation_id": "ENTENDA/CC2002:ART.484/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.484:CAPUT\tSe a venda se realizar à vista de amostras, protótipos ou modelos, entender-se-á que o vendedor assegura ter a coisa as qualidades que a elas correspondem.\nCC2002:ART.484:PAR.UNICO\tPrevalece a amostra, o protótipo ou o modelo, se houver contradição ou diferença com a maneira pela qual se descreveu a coisa no contrato.",
+   "source_snapshot_sha256": "f4805d0d4272e0fa54a5d706ab053a8d20f3f7cd29b5617c7634c70ff7a7466e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.484:CAPUT",
+     "text": "Se a venda se realizar à vista de amostras, protótipos ou modelos, entender-se-á que o vendedor assegura ter a coisa as qualidades que a elas correspondem."
+    },
+    {
+     "label": "CC2002:ART.484:PAR.UNICO",
+     "text": "Prevalece a amostra, o protótipo ou o modelo, se houver contradição ou diferença com a maneira pela qual se descreveu a coisa no contrato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Se a venda se realizar à vista de amostras, protótipos ou modelos, entender-se-á que o vendedor assegura ter a coisa as qualidades que a elas correspondem. | Prevalece a amostra, o protótipo ou o modelo, se houver contradição ou diferença com a maneira pela qual se descreveu a coisa no contrato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e4f57b9aaa53132acb337c8146267e20fcba487dd1c26d74b0897c0fa8d3361f",
+     "o_que_significa": "499ff36011cb40db8e980d848841ff0f47aba069b25dac3adbd4a34b52ee605e",
+     "exemplo_pratico": "56f03be473c1aad4234cb6be92d2cde9e629a821844a6cb63de2d368415a5de6",
+     "atencao": "c122514ce3a110f07f96e4d1a87cb84f573976f9fbb3da5cfed02845fd0584cd",
+     "palavras_dificeis": "b2e6c9c4f8e3457d5952c7eca469ef86a3990bb8850b378f368e7308b157c59e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.484, foram confrontados individualmente os 2 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Se a venda se realizar à vista de amostras, protótipos ou modelos, entender-se-á que o vendedor assegura ter a coisa as qualidades que a elas correspondem. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 356,
+   "target_id": "CC2002:ART.485",
+   "explanation_id": "ENTENDA/CC2002:ART.485/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.485:CAPUT\tA fixação do preço pode ser deixada ao arbítrio de terceiro, que os contratantes logo designarem ou prometerem designar. Se o terceiro não aceitar a incumbência, ficará sem efeito o contrato, salvo quando acordarem os contratantes designar outra pessoa.",
+   "source_snapshot_sha256": "348b26e0b0a3bd24c093e3f1af8401755f75fcf8726fac2fd620e15a5e8724cd",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.485:CAPUT",
+     "text": "A fixação do preço pode ser deixada ao arbítrio de terceiro, que os contratantes logo designarem ou prometerem designar. Se o terceiro não aceitar a incumbência, ficará sem efeito o contrato, salvo quando acordarem os contratantes designar outra pessoa."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A fixação do preço pode ser deixada ao arbítrio de terceiro, que os contratantes logo designarem ou prometerem designar. Se o terceiro não aceitar a incumbência, ficará sem efeito o contrato, salvo quando acordarem os contratantes designar outra pessoa.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4735fbd7e7959151c217a36bd7d7d1437496390a4fa081db436be0686689af1f",
+     "o_que_significa": "65b55b6b45f21be9a32ab418d7b7fc0bd44b07ec0d902f82865487c6b64da746",
+     "exemplo_pratico": "da62145b11242adb60a1f2bbea4de2e65e02cb4b3cfe4e71050b5dc06db55e06",
+     "atencao": "32c62e9b028ad0a113b8c95d93d58453b8e11a79986feb8c4e34b9781bb9b777",
+     "palavras_dificeis": "7ffdc397329c5f4f53031ebdda760bfe3a47559b173bb5dcc065c190c4acc1ad"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.485, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que A fixação do preço pode ser deixada ao arbítrio de terceiro, que os contratantes logo designarem ou prometerem designar. Se o terceiro não aceitar a incumbência, ficará sem efeito o contrato, salvo quando acordarem os contratantes designar outra p... e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 357,
+   "target_id": "CC2002:ART.486",
+   "explanation_id": "ENTENDA/CC2002:ART.486/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.486:CAPUT\tTambém se poderá deixar a fixação do preço à taxa de mercado ou de bolsa, em certo e determinado dia e lugar.",
+   "source_snapshot_sha256": "2900465cd916815dd13c94cee390e757c0c2a62cb2712c0fbf520bb00b0a7c53",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.486:CAPUT",
+     "text": "Também se poderá deixar a fixação do preço à taxa de mercado ou de bolsa, em certo e determinado dia e lugar."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Também se poderá deixar a fixação do preço à taxa de mercado ou de bolsa, em certo e determinado dia e lugar.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "960c9fd426cd649837c9977aff3442ca47f9fdae7bd0133e7afe55eea8147869",
+     "o_que_significa": "1ac33c71ec8f31ab3bd10bf32bddb0b98955990fe023569a8f6542e1e04721fb",
+     "exemplo_pratico": "bccec4b4166371e94b30bf19d6912be682337a87353ed0456e0636b4bc8371a2",
+     "atencao": "0951e6d8fad38f232e66ab79f46a31ba22fc8496b7a1ec239ee8f1437725958f",
+     "palavras_dificeis": "e65cabd248c17a7dfa2e5e54db3bbb8c32844a5f764b8a19b0910b8cc07c9d39"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.486, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Também se poderá deixar a fixação do preço à taxa de mercado ou de bolsa, em certo e determinado dia e lugar. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 358,
+   "target_id": "CC2002:ART.487",
+   "explanation_id": "ENTENDA/CC2002:ART.487/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.487:CAPUT\tÉ lícito às partes fixar o preço em função de índices ou parâmetros, desde que suscetíveis de objetiva determinação.",
+   "source_snapshot_sha256": "6756e22668dd7f486e84f0bdec54fc7cab7e18919725357215285e1528d16098",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.487:CAPUT",
+     "text": "É lícito às partes fixar o preço em função de índices ou parâmetros, desde que suscetíveis de objetiva determinação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: É lícito às partes fixar o preço em função de índices ou parâmetros, desde que suscetíveis de objetiva determinação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "dc0e3f4625c040c6b84e51b7aaf6beeeba96793f7ae4e3f49bf63a4b0b456790",
+     "o_que_significa": "b55e42fd92a8a887419c863b7a39c8823a589545921b13dfa2b1ec29223fc596",
+     "exemplo_pratico": "57aa8bc03b379b382861afe416e2641d7bf0f7a29e90eae872969a5ce575e05e",
+     "atencao": "b879f4a7b5f5da3b377314a7cf8902adbd9b72e240c308021ffbb6f456ab602b",
+     "palavras_dificeis": "aed547ecb4c8551aa8c40e4f69e0e2fb68d7a4e73bbc4e8ec8467d5037bfad9b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.487, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que É lícito às partes fixar o preço em função de índices ou parâmetros, desde que suscetíveis de objetiva determinação. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 359,
+   "target_id": "CC2002:ART.488",
+   "explanation_id": "ENTENDA/CC2002:ART.488/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.488:CAPUT\tConvencionada a venda sem fixação de preço ou de critérios para a sua determinação, se não houver tabelamento oficial, entende-se que as partes se sujeitaram ao preço corrente nas vendas habituais do vendedor.\nCC2002:ART.488:PAR.UNICO\tNa falta de acordo, por ter havido diversidade de preço, prevalecerá o termo médio.",
+   "source_snapshot_sha256": "d7fb9e461998763d124ff9bb1613637a928204057803871cc832193e5d745c8d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.488:CAPUT",
+     "text": "Convencionada a venda sem fixação de preço ou de critérios para a sua determinação, se não houver tabelamento oficial, entende-se que as partes se sujeitaram ao preço corrente nas vendas habituais do vendedor."
+    },
+    {
+     "label": "CC2002:ART.488:PAR.UNICO",
+     "text": "Na falta de acordo, por ter havido diversidade de preço, prevalecerá o termo médio."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Convencionada a venda sem fixação de preço ou de critérios para a sua determinação, se não houver tabelamento oficial, entende-se que as partes se sujeitaram ao preço corrente nas vendas habituais do vendedor. | Na falta de acordo, por ter havido diversidade de preço, prevalecerá o termo médio.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0fbb7f3a41290be369a96408dc7621a91b4fc2132e16cc31b728f45a7f0a937c",
+     "o_que_significa": "add0aae3f3e703a157d4316b28a8003d0f44dfa502e4f9d5233350bb637e7193",
+     "exemplo_pratico": "73cf3b12a543523cb65c13857ad690590ac419e77a4708deb483b87592df4966",
+     "atencao": "07aef42e100ee99c5c49b7e7edf9948e36832241f574e4900db5b06668bcec05",
+     "palavras_dificeis": "73c673d8c9cc8cdb8d4b01fba6fb40079c9e3198e7233f9a7acd479c5168a535"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.488, foram confrontados individualmente os 2 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Convencionada a venda sem fixação de preço ou de critérios para a sua determinação, se não houver tabelamento oficial, entende-se que as partes se sujeitaram ao preço corrente nas vendas habituais do vendedor. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 360,
+   "target_id": "CC2002:ART.489",
+   "explanation_id": "ENTENDA/CC2002:ART.489/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.489:CAPUT\tNulo é o contrato de compra e venda, quando se deixa ao arbítrio exclusivo de uma das partes a fixação do preço.",
+   "source_snapshot_sha256": "9045e0a4ec5ef0180280ef88e76417a6d7fa9df993046aef635bea3433b5ebad",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.489:CAPUT",
+     "text": "Nulo é o contrato de compra e venda, quando se deixa ao arbítrio exclusivo de uma das partes a fixação do preço."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Nulo é o contrato de compra e venda, quando se deixa ao arbítrio exclusivo de uma das partes a fixação do preço.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "17de5f43b5cbb2cbc780ef550d4b6a1f3e0d4fa29f4b9a8d383cac64c065c9c6",
+     "o_que_significa": "a4fb7048249c050e1767a3c5e9a8551726ada8e4e04686ea3cb038c77cd65849",
+     "exemplo_pratico": "8621f376823129a4ca9b8fd86b33cd3e1ee561030e240707a0dc834d5941caa4",
+     "atencao": "f1cf79e5444a3da4feb35efabbf53cf8d06d32a29a2970a81a96e6677540f7d3",
+     "palavras_dificeis": "9ee4e1898c3016854798dc4a2f1376f526bd8c7cf524335a150281d621fdb603"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.489, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Nulo é o contrato de compra e venda, quando se deixa ao arbítrio exclusivo de uma das partes a fixação do preço. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 361,
+   "target_id": "CC2002:ART.490",
+   "explanation_id": "ENTENDA/CC2002:ART.490/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.490:CAPUT\tSalvo cláusula em contrário, ficarão as despesas de escritura e registro a cargo do comprador, e a cargo do vendedor as da tradição.",
+   "source_snapshot_sha256": "5e1667ea176ab43587cd1809766982d68f738eb79ce666776094304a0bcce056",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.490:CAPUT",
+     "text": "Salvo cláusula em contrário, ficarão as despesas de escritura e registro a cargo do comprador, e a cargo do vendedor as da tradição."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Salvo cláusula em contrário, ficarão as despesas de escritura e registro a cargo do comprador, e a cargo do vendedor as da tradição.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "58e3bc79360c4f4372ca89dd44a568f9777572ade85406224d21e6994fe8b2ea",
+     "o_que_significa": "92e40a459ce2cff50b91539b1f71e3bb1e697ed39dcb5040a5e1f28b0530ebcd",
+     "exemplo_pratico": "1dcbf6bd2b55ae98f435c52a3ca3b4c820a32872a3adb6c3949b2d1e5fe5a638",
+     "atencao": "0bf37e0ffb571d4a0f464593d7641ac37fac358268060f49c4997b04d42a59f1",
+     "palavras_dificeis": "6b56171099c8435d640bc0a68515a21e434f47defff793cd087f9493923b5b6c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.490, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Salvo cláusula em contrário, ficarão as despesas de escritura e registro a cargo do comprador, e a cargo do vendedor as da tradição. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 362,
+   "target_id": "CC2002:ART.491",
+   "explanation_id": "ENTENDA/CC2002:ART.491/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.491:CAPUT\tNão sendo a venda a crédito, o vendedor não é obrigado a entregar a coisa antes de receber o preço.",
+   "source_snapshot_sha256": "3a2864c6bcee82d3bcf2410aee49ef0f17c8afc8c8f729f5bedd147d661791da",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.491:CAPUT",
+     "text": "Não sendo a venda a crédito, o vendedor não é obrigado a entregar a coisa antes de receber o preço."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não sendo a venda a crédito, o vendedor não é obrigado a entregar a coisa antes de receber o preço.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "dc947f3eb2a48a7fec358598e888a8578ad37c78663fe30c3a49a16462216e05",
+     "o_que_significa": "0ed0e4c47c04874d98c6e8e9bc27b382881b8e70849d46eac79991c80119cf1d",
+     "exemplo_pratico": "a09d171ea65115a562bf731e82cb878070f6570d047e93a23bc0b792b6e4035b",
+     "atencao": "a1bc70fa44223a1aa31a4c9d678e2468013d64a5e52d9fa3d2ee3f5f385e7a1c",
+     "palavras_dificeis": "1d62408535b91f838440bc8096a149c7ad51d62b316a6f402d2bcfe30d337651"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.491, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Não sendo a venda a crédito, o vendedor não é obrigado a entregar a coisa antes de receber o preço. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 363,
+   "target_id": "CC2002:ART.492",
+   "explanation_id": "ENTENDA/CC2002:ART.492/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.492:CAPUT\tAté o momento da tradição, os riscos da coisa correm por conta do vendedor, e os do preço por conta do comprador.\nCC2002:ART.492:PAR.1\to Todavia, os casos fortuitos, ocorrentes no ato de contar, marcar ou assinalar coisas, que comumente se recebem, contando, pesando, medindo ou assinalando, e que já tiverem sido postas à disposição do comprador, correrão por conta deste.\nCC2002:ART.492:PAR.2\to Correrão também por conta do comprador os riscos das referidas coisas, se estiver em mora de as receber, quando postas à sua disposição no tempo, lugar e pelo modo ajustados.",
+   "source_snapshot_sha256": "5dd8bc8bb6afb3abb1e4ddb35daf5a4a28b66118b62cabfacb8d23fa07186ed3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.492:CAPUT",
+     "text": "Até o momento da tradição, os riscos da coisa correm por conta do vendedor, e os do preço por conta do comprador."
+    },
+    {
+     "label": "CC2002:ART.492:PAR.1",
+     "text": "o Todavia, os casos fortuitos, ocorrentes no ato de contar, marcar ou assinalar coisas, que comumente se recebem, contando, pesando, medindo ou assinalando, e que já tiverem sido postas à disposição do comprador, correrão por conta deste."
+    },
+    {
+     "label": "CC2002:ART.492:PAR.2",
+     "text": "o Correrão também por conta do comprador os riscos das referidas coisas, se estiver em mora de as receber, quando postas à sua disposição no tempo, lugar e pelo modo ajustados."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Até o momento da tradição, os riscos da coisa correm por conta do vendedor, e os do preço por conta do comprador. | o Todavia, os casos fortuitos, ocorrentes no ato de contar, marcar ou assinalar coisas, que comumente se recebem, contando, pesando, medindo ou assinalando, e que já tiverem sido postas à disposição do comprador, correrão por conta deste. | o Correrão também por conta do comprador os riscos das referidas coisas, se estiver em mora de as receber, quando postas à sua disposição no tempo, lugar e pelo modo ajustados.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d4949cb7a44903d87efa966aedde79f0e860906a0034295b5a9d36673d26331e",
+     "o_que_significa": "6037ad7cb10e154b3adf7b70975f3b43f31e0c7ae89bb2a633db541bd576bdb2",
+     "exemplo_pratico": "8116c266fac67dd324c75cd1abffdb9bba5929e8881edd24e5fb8dfe1ef06f28",
+     "atencao": "2823c132196950bab31bb715f488efee4f9e293d9e394f591d46f02efc5c4ad7",
+     "palavras_dificeis": "95480cb558358b293ea86b8db64a05b501abda39db96d7522df3a4f4a9c0ae8e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.492, foram confrontados individualmente os 3 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Até o momento da tradição, os riscos da coisa correm por conta do vendedor, e os do preço por conta do comprador. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 364,
+   "target_id": "CC2002:ART.493",
+   "explanation_id": "ENTENDA/CC2002:ART.493/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.493:CAPUT\tA tradição da coisa vendida, na falta de estipulação expressa, dar-se-á no lugar onde ela se encontrava, ao tempo da venda.",
+   "source_snapshot_sha256": "e5ffe0532518582b88f3e56c9797787eaee2012ef0e526d2bacc838de066eadb",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.493:CAPUT",
+     "text": "A tradição da coisa vendida, na falta de estipulação expressa, dar-se-á no lugar onde ela se encontrava, ao tempo da venda."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A tradição da coisa vendida, na falta de estipulação expressa, dar-se-á no lugar onde ela se encontrava, ao tempo da venda.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "77ce0fe9a248b71286103833f627404111ddc2b6cee41ab8581509c35bb0db5d",
+     "o_que_significa": "431fd80503f01006e23a452c35a2eabd3f1d3f6750e91c2f6efeaaf38557140d",
+     "exemplo_pratico": "1096ff622cd85ad6afaf4948555b72945f3740d84ca515102cccd2c55ac71ddf",
+     "atencao": "699ee3f75a64de2adf495f41a5854c3486531b919949881bb8d8dea6b54b329a",
+     "palavras_dificeis": "0cfee11150a54a09e794933143a00dec8b59acc0015dab8b48f21f776d313934"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.493, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que A tradição da coisa vendida, na falta de estipulação expressa, dar-se-á no lugar onde ela se encontrava, ao tempo da venda. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 365,
+   "target_id": "CC2002:ART.494",
+   "explanation_id": "ENTENDA/CC2002:ART.494/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.494:CAPUT\tSe a coisa for expedida para lugar diverso, por ordem do comprador, por sua conta correrão os riscos, uma vez entregue a quem haja de transportá-la, salvo se das instruções dele se afastar o vendedor.",
+   "source_snapshot_sha256": "a51548b3e93e49660bcc68446dfe7b198a21c8e6600be2c3a0e66937a371e173",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.494:CAPUT",
+     "text": "Se a coisa for expedida para lugar diverso, por ordem do comprador, por sua conta correrão os riscos, uma vez entregue a quem haja de transportá-la, salvo se das instruções dele se afastar o vendedor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se a coisa for expedida para lugar diverso, por ordem do comprador, por sua conta correrão os riscos, uma vez entregue a quem haja de transportá-la, salvo se das instruções dele se afastar o vendedor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "707d0962e7ea08f54c286a27436444ab65d5b3aa46530192a4292c22d510aff9",
+     "o_que_significa": "665ec6591efb6d8fbcea83588ce93eec2e04f51f23abd30522d3561c2a357167",
+     "exemplo_pratico": "d9e5f3170f29e70e58b892eadecf75591c8b4be9d9d2d5aa7cfd183303917bd4",
+     "atencao": "df2ba720d388dfbd1d207e31bbaf812f87f7707cfb26dd4273ef2b444e1e9cf3",
+     "palavras_dificeis": "b9083b53b7ac55d29f150771a05fe67d26b445048ca9828be33a143bf8c5c5f0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.494, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Se a coisa for expedida para lugar diverso, por ordem do comprador, por sua conta correrão os riscos, uma vez entregue a quem haja de transportá-la, salvo se das instruções dele se afastar o vendedor. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 366,
+   "target_id": "CC2002:ART.495",
+   "explanation_id": "ENTENDA/CC2002:ART.495/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.495:CAPUT\tNão obstante o prazo ajustado para o pagamento, se antes da tradição o comprador cair em insolvência, poderá o vendedor sobrestar na entrega da coisa, até que o comprador lhe dê caução de pagar no tempo ajustado.",
+   "source_snapshot_sha256": "18b9f6274b41b58d47d1c79db6da420511bebc823ac358a7b12f35980c2a0c9c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.495:CAPUT",
+     "text": "Não obstante o prazo ajustado para o pagamento, se antes da tradição o comprador cair em insolvência, poderá o vendedor sobrestar na entrega da coisa, até que o comprador lhe dê caução de pagar no tempo ajustado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não obstante o prazo ajustado para o pagamento, se antes da tradição o comprador cair em insolvência, poderá o vendedor sobrestar na entrega da coisa, até que o comprador lhe dê caução de pagar no tempo ajustado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7ae63f5af528eff77c1008dec3c48e177fa095e4ddc11b99b75015501866cac7",
+     "o_que_significa": "515373c80eff8e127ed991b77f33de8269b75e4868e721f0e2f1fedf58d277e1",
+     "exemplo_pratico": "7db998248c136553b8dfe0f2a7e749ca88d6a62d7bf87ef4a8681ac6b3efb600",
+     "atencao": "19dd690a1a1da8791edc6a5e046b5bb39d39047dcd310735617fad594be17aa2",
+     "palavras_dificeis": "983a7540599f702d06ffe729b0e8847e701fcfa98aea5d0fd06146f34dcac29b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.495, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Não obstante o prazo ajustado para o pagamento, se antes da tradição o comprador cair em insolvência, poderá o vendedor sobrestar na entrega da coisa, até que o comprador lhe dê caução de pagar no tempo ajustado. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 367,
+   "target_id": "CC2002:ART.496",
+   "explanation_id": "ENTENDA/CC2002:ART.496/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.496:CAPUT\tÉ anulável a venda de ascendente a descendente, salvo se os outros descendentes e o cônjuge do alienante expressamente houverem consentido.\nCC2002:ART.496:PAR.UNICO\tEm ambos os casos, dispensa-se o consentimento do cônjuge se o regime de bens for o da separação obrigatória.",
+   "source_snapshot_sha256": "97d57734796276da69f0b26bf537a332737c2f7a979f2e4ebb05696efc889d36",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.496:CAPUT",
+     "text": "É anulável a venda de ascendente a descendente, salvo se os outros descendentes e o cônjuge do alienante expressamente houverem consentido."
+    },
+    {
+     "label": "CC2002:ART.496:PAR.UNICO",
+     "text": "Em ambos os casos, dispensa-se o consentimento do cônjuge se o regime de bens for o da separação obrigatória."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: É anulável a venda de ascendente a descendente, salvo se os outros descendentes e o cônjuge do alienante expressamente houverem consentido. | Em ambos os casos, dispensa-se o consentimento do cônjuge se o regime de bens for o da separação obrigatória.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e19edb5f64cb749f79af17645df9880baddb9274e70cda5706ceac0533384cf8",
+     "o_que_significa": "2f3ef232aa8921163ecc267642fc35aa804eb7a92a1f6a763f97b338ef83df6c",
+     "exemplo_pratico": "2fd4a1f2aeeaf690d9d8e31184a12f1aafc2254f8070607b5e64a630ca1b4e41",
+     "atencao": "532c0770bd99581b5c267c8bf2fa8c5744df9aff867967a821ffd30f5a82470c",
+     "palavras_dificeis": "f1b5bff51cec3772104930d3f482575830f3972b361a7fbb33b64cb63d048ec0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.496, foram confrontados individualmente os 2 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que É anulável a venda de ascendente a descendente, salvo se os outros descendentes e o cônjuge do alienante expressamente houverem consentido. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 368,
+   "target_id": "CC2002:ART.497",
+   "explanation_id": "ENTENDA/CC2002:ART.497/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.497:CAPUT\tSob pena de nulidade, não podem ser comprados, ainda que em hasta pública:\nCC2002:ART.497:INC.I\tpelos tutores, curadores, testamenteiros e administradores, os bens confiados à sua guarda ou administração;\nCC2002:ART.497:INC.II\tpelos servidores públicos, em geral, os bens ou direitos da pessoa jurídica a que servirem, ou que estejam sob sua administração direta ou indireta;\nCC2002:ART.497:INC.III\tpelos juízes, secretários de tribunais, arbitradores, peritos e outros serventuários ou auxiliares da justiça, os bens ou direitos sobre que se litigar em tribunal, juízo ou conselho, no lugar onde servirem, ou a que se estender a sua autoridade;\nCC2002:ART.497:INC.IV\tpelos leiloeiros e seus prepostos, os bens de cuja venda estejam encarregados.\nCC2002:ART.497:PAR.UNICO\tAs proibições deste artigo estendem-se à cessão de crédito.",
+   "source_snapshot_sha256": "417e6442cb9e3dde91343ffdc5df94cf566565acf6fdaa85ba302506fcb01f59",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.497:CAPUT",
+     "text": "Sob pena de nulidade, não podem ser comprados, ainda que em hasta pública:"
+    },
+    {
+     "label": "CC2002:ART.497:INC.I",
+     "text": "pelos tutores, curadores, testamenteiros e administradores, os bens confiados à sua guarda ou administração;"
+    },
+    {
+     "label": "CC2002:ART.497:INC.II",
+     "text": "pelos servidores públicos, em geral, os bens ou direitos da pessoa jurídica a que servirem, ou que estejam sob sua administração direta ou indireta;"
+    },
+    {
+     "label": "CC2002:ART.497:INC.III",
+     "text": "pelos juízes, secretários de tribunais, arbitradores, peritos e outros serventuários ou auxiliares da justiça, os bens ou direitos sobre que se litigar em tribunal, juízo ou conselho, no lugar onde servirem, ou a que se estender a sua autoridade;"
+    },
+    {
+     "label": "CC2002:ART.497:INC.IV",
+     "text": "pelos leiloeiros e seus prepostos, os bens de cuja venda estejam encarregados."
+    },
+    {
+     "label": "CC2002:ART.497:PAR.UNICO",
+     "text": "As proibições deste artigo estendem-se à cessão de crédito."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 6 segmentos vigentes do dispositivo: Sob pena de nulidade, não podem ser comprados, ainda que em hasta pública: | pelos tutores, curadores, testamenteiros e administradores, os bens confiados à sua guarda ou administração; | pelos servidores públicos, em geral, os bens ou direitos da pessoa jurídica a que servirem, ou que estejam sob sua administração direta ou indireta; | pelos juízes, secretários de tribunais, arbitradores, peritos e outros serventuários ou auxiliares da justiça, os bens ou direitos sobre que se litigar em tribunal, juízo ou conselho, no lugar onde servirem, ou a que se estender a sua autoridade; | pelos leiloeiros e seus prepostos, os bens de cuja venda estejam encarregados. | As proibições deste artigo estendem-se à cessão de crédito.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "14cbb4730dd797d295c5fdae849139db5bc9e56f356400fb7a51619998777dee",
+     "o_que_significa": "724bf890e9dde039596f8ee224bd06e24eef39d9d3a08be82c7584fede3fe68a",
+     "exemplo_pratico": "0d90e80b96103429847602af9d5e55b66692b0cbe990308a680301e04bfbebf8",
+     "atencao": "76587330d3855745c451d3cdde5c4484b4101b395eeced299dc92b42f88a03c8",
+     "palavras_dificeis": "5dfa8381ee3b4b9f5ee5d432e2de45580edb78b7bbb15a09237723145d7dd3dd"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.497, foram confrontados individualmente os 6 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Sob pena de nulidade, não podem ser comprados, ainda que em hasta pública: e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 369,
+   "target_id": "CC2002:ART.498",
+   "explanation_id": "ENTENDA/CC2002:ART.498/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.498:CAPUT\tA proibição contida no inciso III do artigo antecedente, não compreende os casos de compra e venda ou cessão entre co-herdeiros, ou em pagamento de dívida, ou para garantia de bens já pertencentes a pessoas designadas no referido inciso.",
+   "source_snapshot_sha256": "9bb47434969e79c84ab6ffff8c366720aadc7384fa5695cf1bc8ea5bda73a10e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.498:CAPUT",
+     "text": "A proibição contida no inciso III do artigo antecedente, não compreende os casos de compra e venda ou cessão entre co-herdeiros, ou em pagamento de dívida, ou para garantia de bens já pertencentes a pessoas designadas no referido inciso."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A proibição contida no inciso III do artigo antecedente, não compreende os casos de compra e venda ou cessão entre co-herdeiros, ou em pagamento de dívida, ou para garantia de bens já pertencentes a pessoas designadas no referido inciso.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7f3fd55a85b987a196274132d262ebad8a6385c2c28380a4f41e8caabbbf97fb",
+     "o_que_significa": "9b6146bcee75b2644ba9809aa6de5162716b8e8da81022483537f90e2292fdc6",
+     "exemplo_pratico": "c40d99b3ac937c89358c30579753e9dbf9fa95969d486dddceed5d4e4f86571f",
+     "atencao": "0e45d7644657fa6ebe4958c325b8d2b81ea8d22415ab3aeae2d82985ae53f9a3",
+     "palavras_dificeis": "dd6a62f17262f3df12be970590df4a99c7810b3bfdbd719e40ae3ba67e4ffdbd"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.498, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que A proibição contida no inciso III do artigo antecedente, não compreende os casos de compra e venda ou cessão entre co-herdeiros, ou em pagamento de dívida, ou para garantia de bens já pertencentes a pessoas designadas no referido inciso. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 370,
+   "target_id": "CC2002:ART.499",
+   "explanation_id": "ENTENDA/CC2002:ART.499/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.499:CAPUT\tÉ lícita a compra e venda entre cônjuges, com relação a bens excluídos da comunhão.",
+   "source_snapshot_sha256": "a5227b42dac4192bf3e509dc3c67432cbe68d2ff91860e47a9202051ca3bace3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.499:CAPUT",
+     "text": "É lícita a compra e venda entre cônjuges, com relação a bens excluídos da comunhão."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: É lícita a compra e venda entre cônjuges, com relação a bens excluídos da comunhão.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d240d232e3f79a56549a31a58173cf055841c4384bc84b3969748e99e8c493c0",
+     "o_que_significa": "cf6cbb0ecc6ed19c4272e669b14316d38650a1a2a51c48c92d2c099b3f14709c",
+     "exemplo_pratico": "c6c5e803fe511563cdbc2e851209cc3141bb3076c1c341a0b8b6cb368d22776e",
+     "atencao": "4020054f19611a0463bd744dee4624a5b85a5612813386717a9efaa6091f16b7",
+     "palavras_dificeis": "e2c7f55b55558d819f61c4131d1d2c020e9ede0b16709aae9a7201adc85f07ac"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.499, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que É lícita a compra e venda entre cônjuges, com relação a bens excluídos da comunhão. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 371,
+   "target_id": "CC2002:ART.500",
+   "explanation_id": "ENTENDA/CC2002:ART.500/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.500:CAPUT\tSe, na venda de um imóvel, se estipular o preço por medida de extensão, ou se determinar a respectiva área, e esta não corresponder, em qualquer dos casos, às dimensões dadas, o comprador terá o direito de exigir o complemento da área, e, não sendo isso possível, o de reclamar a resolução do contrato ou abatimento proporcional ao preço.\nCC2002:ART.500:PAR.1\to Presume-se que a referência às dimensões foi simplesmente enunciativa, quando a diferença encontrada não exceder de um vigésimo da área total enunciada, ressalvado ao comprador o direito de provar que, em tais circunstâncias, não teria realizado o negócio.\nCC2002:ART.500:PAR.2\to Se em vez de falta houver excesso, e o vendedor provar que tinha motivos para ignorar a medida exata da área vendida, caberá ao comprador, à sua escolha, completar o valor correspondente ao preço ou devolver o excesso.\nCC2002:ART.500:PAR.3\to Não haverá complemento de área, nem devolução de excesso, se o imóvel for vendido como coisa certa e discriminada, tendo sido apenas enunciativa a referência às suas dimensões, ainda que não conste, de modo expresso, ter sido a venda ad corpus .",
+   "source_snapshot_sha256": "93e8ecc892f5ec2f0e59a9a81609756be0e1f36c05f8c9c7599001b97cc0dfbe",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.500:CAPUT",
+     "text": "Se, na venda de um imóvel, se estipular o preço por medida de extensão, ou se determinar a respectiva área, e esta não corresponder, em qualquer dos casos, às dimensões dadas, o comprador terá o direito de exigir o complemento da área, e, não sendo isso possível, o de reclamar a resolução do contrato ou abatimento proporcional ao preço."
+    },
+    {
+     "label": "CC2002:ART.500:PAR.1",
+     "text": "o Presume-se que a referência às dimensões foi simplesmente enunciativa, quando a diferença encontrada não exceder de um vigésimo da área total enunciada, ressalvado ao comprador o direito de provar que, em tais circunstâncias, não teria realizado o negócio."
+    },
+    {
+     "label": "CC2002:ART.500:PAR.2",
+     "text": "o Se em vez de falta houver excesso, e o vendedor provar que tinha motivos para ignorar a medida exata da área vendida, caberá ao comprador, à sua escolha, completar o valor correspondente ao preço ou devolver o excesso."
+    },
+    {
+     "label": "CC2002:ART.500:PAR.3",
+     "text": "o Não haverá complemento de área, nem devolução de excesso, se o imóvel for vendido como coisa certa e discriminada, tendo sido apenas enunciativa a referência às suas dimensões, ainda que não conste, de modo expresso, ter sido a venda ad corpus ."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: Se, na venda de um imóvel, se estipular o preço por medida de extensão, ou se determinar a respectiva área, e esta não corresponder, em qualquer dos casos, às dimensões dadas, o comprador terá o direito de exigir o complemento da área, e, não sendo isso possível, o de reclamar a resolução do contrato ou abatimento proporcional ao preço. | o Presume-se que a referência às dimensões foi simplesmente enunciativa, quando a diferença encontrada não exceder de um vigésimo da área total enunciada, ressalvado ao comprador o direito de provar que, em tais circunstâncias, não teria realizado o negócio. | o Se em vez de falta houver excesso, e o vendedor provar que tinha motivos para ignorar a medida exata da área vendida, caberá ao comprador, à sua escolha, completar o valor correspondente ao preço ou devolver o excesso. | o Não haverá complemento de área, nem devolução de excesso, se o imóvel for vendido como coisa certa e discriminada, tendo sido apenas enunciativa a referência às suas dimensões, ainda que não conste, de modo expresso, ter sido a venda ad corpus .",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "65a3f3f7cb93e436056570e6e3afcaf5509d3e06769e3fec793573a42e9791f7",
+     "o_que_significa": "b05e128aa703d1dc249c1a4542683a79f555e09419748ee7ae40362ed0c761c6",
+     "exemplo_pratico": "837d6695e9e72e1bfd2a582ffcf00d8836a150c4d23d712b2f99074ec9b479a8",
+     "atencao": "6326bb431f2fb7ccbaa952544b0a32d426359acba481b521cc791cbc44e5f30f",
+     "palavras_dificeis": "9269a8d6f4b007cfb45804183fc66e7d8ade626b9a194d5b38462022059f686d"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O caput do art. 500 estabelece ordem condicionada: o comprador exige primeiro o complemento da área e, somente se isso não for possível, pode reclamar resolução ou abatimento proporcional. No excesso, o § 2º exige que o vendedor prove motivo para ignorar a medida exata e então atribui ao comprador a escolha entre completar o preço ou devolver o excesso.",
+   "finding": {
+    "target_id": "CC2002:ART.500",
+    "audit_wave": "QA03_FRONT_B",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "o comprador pode exigir complemento, resolução ou abatimento; excesso pode exigir pagamento ou devolução",
+    "legal_basis": "O caput do art. 500 estabelece ordem condicionada: o comprador exige primeiro o complemento da área e, somente se isso não for possível, pode reclamar resolução ou abatimento proporcional. No excesso, o § 2º exige que o vendedor prove motivo para ignorar a medida exata e então atribui ao comprador a escolha entre completar o preço ou devolver o excesso.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_ORDEM_CONDICOES_E_TITULAR_DA_ESCOLHA",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A redação pode levar o leitor a tratar os três remédios como livremente intercambiáveis e a ignorar os pressupostos e a titularidade da escolha na área excedente.",
+    "correction_direction": "Apresentar o complemento como remédio prioritário; condicionar resolução ou abatimento à impossibilidade de complementar; e explicitar prova do vendedor e escolha do comprador no excesso.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": "B-CP16",
+    "auditor": "qa03_audit_195_388"
+   },
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 372,
+   "target_id": "CC2002:ART.501",
+   "explanation_id": "ENTENDA/CC2002:ART.501/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.501:CAPUT\tDecai do direito de propor as ações previstas no artigo antecedente o vendedor ou o comprador que não o fizer no prazo de um ano, a contar do registro do título.\nCC2002:ART.501:PAR.UNICO\tSe houver atraso na imissão de posse no imóvel, atribuível ao alienante, a partir dela fluirá o prazo de decadência.",
+   "source_snapshot_sha256": "a15927e0889740cfa1b48b5e251d6a136340a30f97fda60db718a8459f004752",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.501:CAPUT",
+     "text": "Decai do direito de propor as ações previstas no artigo antecedente o vendedor ou o comprador que não o fizer no prazo de um ano, a contar do registro do título."
+    },
+    {
+     "label": "CC2002:ART.501:PAR.UNICO",
+     "text": "Se houver atraso na imissão de posse no imóvel, atribuível ao alienante, a partir dela fluirá o prazo de decadência."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Decai do direito de propor as ações previstas no artigo antecedente o vendedor ou o comprador que não o fizer no prazo de um ano, a contar do registro do título. | Se houver atraso na imissão de posse no imóvel, atribuível ao alienante, a partir dela fluirá o prazo de decadência.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "362c398809ab9c436a29d06fb5cffc50b7945361da98bf0a1d20b04692ab3bb1",
+     "o_que_significa": "c7287d9f151d43556f4d7b311e4bb185b8544e5ebe99136d863066cb2ee5f131",
+     "exemplo_pratico": "a343308ab6aec4c5706f93b0c94826b82cfabc42d5ac12b65617df849a32c983",
+     "atencao": "5e7077491a5ce0f52f953450e949607d6bcaa236fc5113c04fc30f41af25e5f5",
+     "palavras_dificeis": "4f9bf96a5256d8ccb548caea7fc837d761977222f30f0ff8adb3f8ca6cf83cd3"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.501, foram confrontados individualmente os 2 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Decai do direito de propor as ações previstas no artigo antecedente o vendedor ou o comprador que não o fizer no prazo de um ano, a contar do registro do título. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 373,
+   "target_id": "CC2002:ART.502",
+   "explanation_id": "ENTENDA/CC2002:ART.502/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.502:CAPUT\tO vendedor, salvo convenção em contrário, responde por todos os débitos que gravem a coisa até o momento da tradição.",
+   "source_snapshot_sha256": "292481ba930134cf0395c7f6f3507efc1aab79bf3f23bcea58133601c2ce854a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.502:CAPUT",
+     "text": "O vendedor, salvo convenção em contrário, responde por todos os débitos que gravem a coisa até o momento da tradição."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O vendedor, salvo convenção em contrário, responde por todos os débitos que gravem a coisa até o momento da tradição.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "125ea98616b96cad6d1c991af37ddb325734304bdd3e38f4e5ccae76da154329",
+     "o_que_significa": "e2e4cf08f6472aa457e735b556ef94149ddaeaa7847709248a47839bb9d2d02b",
+     "exemplo_pratico": "b3a96dc49d918935e81d1452679552fc066d9f8a1ae8388bdefa341a9c005698",
+     "atencao": "4ae100834d5523a802f45a1114e86f5220d7999a20a66855f40720a4ce69a3f2",
+     "palavras_dificeis": "7a0cf59d2a0bc1b23a68e1164be3747c15285b606e5fed167122fa4839485c9e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.502, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que O vendedor, salvo convenção em contrário, responde por todos os débitos que gravem a coisa até o momento da tradição. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 374,
+   "target_id": "CC2002:ART.503",
+   "explanation_id": "ENTENDA/CC2002:ART.503/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.503:CAPUT\tNas coisas vendidas conjuntamente, o defeito oculto de uma não autoriza a rejeição de todas.",
+   "source_snapshot_sha256": "d0edea37d8e30cd769be7bbdb69beada3aa8ccdd004b96eba05ac9c1ccbe40e9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.503:CAPUT",
+     "text": "Nas coisas vendidas conjuntamente, o defeito oculto de uma não autoriza a rejeição de todas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Nas coisas vendidas conjuntamente, o defeito oculto de uma não autoriza a rejeição de todas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7c5be578d30523589467c67c8de74bbb2341934617ded4854e5f4f20cac4dc37",
+     "o_que_significa": "980832ac87cf15882afd97c32d26ed4ec1511a4bbdbc983c659e8cc82b6a8f5c",
+     "exemplo_pratico": "70623fe325b608aa10c3c0cfbc895c35c84c1a28406fbe2e018e2440e97c53ac",
+     "atencao": "fdb5764c0ed26ca476a94a877d3d6a1d3c351b1fdfbe6b9184ea3e64255ada5e",
+     "palavras_dificeis": "b8ba1e4f6a07002c37c6606dc9dfd99101d777cf3bda633b98aba2b2255872c6"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.503, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Nas coisas vendidas conjuntamente, o defeito oculto de uma não autoriza a rejeição de todas. e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  },
+  {
+   "queue_position": 375,
+   "target_id": "CC2002:ART.504",
+   "explanation_id": "ENTENDA/CC2002:ART.504/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.504:CAPUT\tNão pode um condômino em coisa indivisível vender a sua parte a estranhos, se outro consorte a quiser, tanto por tanto. O condômino, a quem não se der conhecimento da venda, poderá, depositando o preço, haver para si a parte vendida a estranhos, se o requerer no prazo de cento e oitenta dias, sob pena de decadência.\nCC2002:ART.504:PAR.UNICO\tSendo muitos os condôminos, preferirá o que tiver benfeitorias de maior valor e, na falta de benfeitorias, o de quinhão maior. Se as partes forem iguais, haverão a parte vendida os comproprietários, que a quiserem, depositando previamente o preço.",
+   "source_snapshot_sha256": "378b4f0abcde8446254b21a2201a28da0dfca58c86940580737ce92a31619eb4",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.504:CAPUT",
+     "text": "Não pode um condômino em coisa indivisível vender a sua parte a estranhos, se outro consorte a quiser, tanto por tanto. O condômino, a quem não se der conhecimento da venda, poderá, depositando o preço, haver para si a parte vendida a estranhos, se o requerer no prazo de cento e oitenta dias, sob pena de decadência."
+    },
+    {
+     "label": "CC2002:ART.504:PAR.UNICO",
+     "text": "Sendo muitos os condôminos, preferirá o que tiver benfeitorias de maior valor e, na falta de benfeitorias, o de quinhão maior. Se as partes forem iguais, haverão a parte vendida os comproprietários, que a quiserem, depositando previamente o preço."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Não pode um condômino em coisa indivisível vender a sua parte a estranhos, se outro consorte a quiser, tanto por tanto. O condômino, a quem não se der conhecimento da venda, poderá, depositando o preço, haver para si a parte vendida a estranhos, se o requerer no prazo de cento e oitenta dias, sob pena de decadência. | Sendo muitos os condôminos, preferirá o que tiver benfeitorias de maior valor e, na falta de benfeitorias, o de quinhão maior. Se as partes forem iguais, haverão a parte vendida os comproprietários, que a quiserem, depositando previamente o preço.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c6b126e6006d101c040dbdd1a3d745ef6213e5ce70ff3d90b02d6d21ac9d8605",
+     "o_que_significa": "7296ba70f85142416091bdadf5f3bacfcef7652090a2ffea0e27b4fefb697784",
+     "exemplo_pratico": "59ee74503e968fc714a8cdf39c9a1315b01d38fbe1e7fdd192a60f3e354cf7ab",
+     "atencao": "879edae1d97917ce8aa287b5a2428a2d75e9dfd8004a7a7737c2bb1925ab3817",
+     "palavras_dificeis": "d6b7d3b48466ccd57252bf219f079df76262cd9f4449672fdd2b0e90b4499608"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.504, foram confrontados individualmente os 2 segmentos vigentes com os cinco campos da versão congelada. A explicação preserva a regra específica de que Não pode um condômino em coisa indivisível vender a sua parte a estranhos, se outro consorte a quiser, tanto por tanto. O condômino, a quem não se der conhecimento da venda, poderá, depositando o preço, haver para si a parte vendida a estranhos, s... e não foi identificada, no escopo examinado, contradição, requisito inventado, troca de sujeito, prazo incorreto ou omissão material.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "qa03_audit_195_388"
+  }
+ ]
+}
