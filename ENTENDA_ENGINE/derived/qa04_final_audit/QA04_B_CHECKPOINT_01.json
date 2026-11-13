@@ -1,0 +1,2704 @@
+{
+ "schema_version": 1,
+ "mission": "QA-04-FRONT-B",
+ "checkpoint": "B-CP01",
+ "as_of": "2026-11-13",
+ "status": "COMPLETE",
+ "source_queue": "QA04_AUDIT_1000_QUEUE.json",
+ "source_queue_sha256": "cfbba3ab37b1f757e26b0855e692c3113d8cf61d3ef8bb722942223da9dc44cc",
+ "residual_positions": [
+  1,
+  50
+ ],
+ "original_queue_positions": [
+  389,
+  438
+ ],
+ "examined": 50,
+ "target_ids": [
+  "CC2002:ART.518",
+  "CC2002:ART.519",
+  "CC2002:ART.520",
+  "CC2002:ART.521",
+  "CC2002:ART.522",
+  "CC2002:ART.523",
+  "CC2002:ART.524",
+  "CC2002:ART.525",
+  "CC2002:ART.526",
+  "CC2002:ART.527",
+  "CC2002:ART.528",
+  "CC2002:ART.529",
+  "CC2002:ART.530",
+  "CC2002:ART.531",
+  "CC2002:ART.532",
+  "CC2002:ART.533",
+  "CC2002:ART.534",
+  "CC2002:ART.535",
+  "CC2002:ART.536",
+  "CC2002:ART.537",
+  "CC2002:ART.538",
+  "CC2002:ART.539",
+  "CC2002:ART.540",
+  "CC2002:ART.541",
+  "CC2002:ART.542",
+  "CC2002:ART.543",
+  "CC2002:ART.544",
+  "CC2002:ART.545",
+  "CC2002:ART.546",
+  "CC2002:ART.547",
+  "CC2002:ART.548",
+  "CC2002:ART.549",
+  "CC2002:ART.550",
+  "CC2002:ART.551",
+  "CC2002:ART.552",
+  "CC2002:ART.553",
+  "CC2002:ART.554",
+  "CC2002:ART.555",
+  "CC2002:ART.556",
+  "CC2002:ART.557",
+  "CC2002:ART.558",
+  "CC2002:ART.559",
+  "CC2002:ART.560",
+  "CC2002:ART.561",
+  "CC2002:ART.562",
+  "CC2002:ART.563",
+  "CC2002:ART.564",
+  "CC2002:ART.565",
+  "CC2002:ART.566",
+  "CC2002:ART.567"
+ ],
+ "findings": 0,
+ "finding_counts": {},
+ "protected_sha256": {
+  "qa03_corpus": "dad0a9414fd42b4e5c348ab7e87b90b99501ae4b77c950c5cbfd7dbaef58a496",
+  "qa03_lookup": "9cda2855e4534b7a7cefc833f2e2498a91cf81666395cf83a064d3d69705eeba",
+  "qa03_payload": "6a5ea56bffc14c06df9ac1f16c145b02e2115bacbfce1d87858ba342e77d6268",
+  "qa03_findings": "4fd7700b9c66c370405a8ce7d9004222a9af2202efa4cabf4c0a2ff581062ba1",
+  "qa03_remaining_queue": "8c798f79745f4d878b882e582bbfa71effbcb6c99c7763bf77cfc51e2b5151df",
+  "cc13_corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c"
+ },
+ "records": [
+  {
+   "queue_position": 389,
+   "target_id": "CC2002:ART.518",
+   "explanation_id": "ENTENDA/CC2002:ART.518/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.518:CAPUT\tResponderá por perdas e danos o comprador, se alienar a coisa sem ter dado ao vendedor ciência do preço e das vantagens que por ela lhe oferecem. Responderá solidariamente o adquirente, se tiver procedido de má-fé.",
+   "source_snapshot_sha256": "01134fe68b9b9ed8f7154419baf5fcee31c0d08bfccb4ae9e6586f3d70e9fc03",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.518:CAPUT",
+     "text": "Responderá por perdas e danos o comprador, se alienar a coisa sem ter dado ao vendedor ciência do preço e das vantagens que por ela lhe oferecem. Responderá solidariamente o adquirente, se tiver procedido de má-fé."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Responderá por perdas e danos o comprador, se alienar a coisa sem ter dado ao vendedor ciência do preço e das vantagens que por ela lhe oferecem. Responderá solidariamente o adquirente, se tiver procedido de má-fé.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "76f5e518544ce1add29ee900e9db34a39f00c8bb8ac1a6d6767a99d1d412eb14",
+     "o_que_significa": "dd866f7ec241e4d8b2023d1a2996cbb352d04ba6de3add030bf924cebe3d3118",
+     "exemplo_pratico": "257a2061a24d1bf6ac3d90145785efaeebc56dee678e437480b3511524bc518e",
+     "atencao": "2a269a493247db49d4481ffd3f27791c817cd6b674f3d55a64e4b0bded4544e0",
+     "palavras_dificeis": "f0673178195823a1cbafaf6bc2f25c2cd1a3f2dd998ae99a5dc9223f616e2887"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.518, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Comprador que aliena sem informar ao preferente preço e vantagens responde por perdas e danos; o terceiro adquirente de má-fé responde solidariamente.’. O campo de atenção registra: ‘O artigo prevê indenização, não aquisição automática da coisa. Dano, nexo e má-fé do terceiro precisam ser demonstrados.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 1,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 390,
+   "target_id": "CC2002:ART.519",
+   "explanation_id": "ENTENDA/CC2002:ART.519/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.519:CAPUT\tSe a coisa expropriada para fins de necessidade ou utilidade pública, ou por interesse social, não tiver o destino para que se desapropriou, ou não for utilizada em obras ou serviços públicos, caberá ao expropriado direito de preferência, pelo preço atual da coisa.",
+   "source_snapshot_sha256": "c17983842ac966f5527c9b2d8f438cbbdc0f851e99cea662f380415f4c16b9cd",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.519:CAPUT",
+     "text": "Se a coisa expropriada para fins de necessidade ou utilidade pública, ou por interesse social, não tiver o destino para que se desapropriou, ou não for utilizada em obras ou serviços públicos, caberá ao expropriado direito de preferência, pelo preço atual da coisa."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se a coisa expropriada para fins de necessidade ou utilidade pública, ou por interesse social, não tiver o destino para que se desapropriou, ou não for utilizada em obras ou serviços públicos, caberá ao expropriado direito de preferência, pelo preço atual da coisa.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4ce6756cabdd210d57189e01ccec92848f46941d4e45a220dd3e100809954505",
+     "o_que_significa": "db772b671872807813e35daf09090011e1763cf40750745e547c1d20e638dfdb",
+     "exemplo_pratico": "b55ffcae28330ec9324eb1dbb7f449d04c05d15b4756a478caa8a94e2ae28e9c",
+     "atencao": "06b90cb8630bb59dda35729ca076a6386b81a3ecb57b0902e4118ea1096673e4",
+     "palavras_dificeis": "ec1c535a1fb34433a0ac171ef2cffa79a3c18d0a9b79003b572a086868c9a433"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.519, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se bem desapropriado não receber o destino público que justificou a expropriação, o antigo proprietário tem preferência para adquiri-lo pelo valor atual.’. O campo de atenção registra: ‘Devem ser verificados destino efetivo, finalidade pública alternativa e regime jurídico da desapropriação. O artigo estabelece preferência, não nulidade automática.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 2,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 391,
+   "target_id": "CC2002:ART.520",
+   "explanation_id": "ENTENDA/CC2002:ART.520/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.520:CAPUT\tO direito de preferência não se pode ceder nem passa aos herdeiros.",
+   "source_snapshot_sha256": "e00818370540538ef081526c4f5d23451d8bfc72f9dfd2c75590e3871d3eefc7",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.520:CAPUT",
+     "text": "O direito de preferência não se pode ceder nem passa aos herdeiros."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O direito de preferência não se pode ceder nem passa aos herdeiros.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e76ddac1926dce0359496fab6d7473a7d7b13d998202a201c857987e54449f05",
+     "o_que_significa": "7569f3a04c4f1dbc01abc81b1b4652efa208c2a7392503a79ae2155591065501",
+     "exemplo_pratico": "b29d9c27791aee0b430bb83cd6f5a89fdc496b3c40825ebad7313da2653b6b5d",
+     "atencao": "078c830fe44ec7123a20217de185f8748c512b3a5d1609311b87f13f76e33fc0",
+     "palavras_dificeis": "32555929e03053635b63e1bd77c43a6765e515737c61e1a050a668cc043fd95d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.520, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O direito de preferência contratual não pode ser cedido e não é transmitido aos herdeiros.’. O campo de atenção registra: ‘A intransmissibilidade deste artigo não deve ser confundida com o direito de retrovenda, que possui regra expressa de cessão e sucessão.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 3,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 392,
+   "target_id": "CC2002:ART.521",
+   "explanation_id": "ENTENDA/CC2002:ART.521/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.521:CAPUT\tNa venda de coisa móvel, pode o vendedor reservar para si a propriedade, até que o preço esteja integralmente pago.",
+   "source_snapshot_sha256": "25a843ecac4c2e1ee6f5128470c19bdb6e64743ed29a0b0a4d6260a004b164d0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.521:CAPUT",
+     "text": "Na venda de coisa móvel, pode o vendedor reservar para si a propriedade, até que o preço esteja integralmente pago."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Na venda de coisa móvel, pode o vendedor reservar para si a propriedade, até que o preço esteja integralmente pago.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ae1e288c3d7ae3d6387b80e438aa377b04c99c26d8be6983ada799e1c4adc429",
+     "o_que_significa": "105cd33c760b723bcafc121cddf47a3e8dacc81d1cff5809fb52c39c698147b0",
+     "exemplo_pratico": "1ff1c8ea0ecdef3fb41636faea731d704a96dcf90cb747a0ec3f6fccdd5ee72d",
+     "atencao": "3535c6cb2a27f5d7b37f04b4cc2820033de6c947e49bbacb58c55a18d7a29ce4",
+     "palavras_dificeis": "bc8abfd98b3694aa7bf3b0501119cedf2ca23d9b00dc061bf90f486904ed73d4"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.521, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Na venda de bem móvel, o vendedor pode conservar a propriedade até receber todo o preço.’. O campo de atenção registra: ‘A reserva deve observar as formalidades dos artigos seguintes. Ela não significa que o vendedor suporte os riscos depois da entrega.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 4,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 393,
+   "target_id": "CC2002:ART.522",
+   "explanation_id": "ENTENDA/CC2002:ART.522/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.522:CAPUT\tA cláusula de reserva de domínio será estipulada por escrito e depende de registro no domicílio do comprador para valer contra terceiros.",
+   "source_snapshot_sha256": "8378d8364c57d6da7d2cc23410ac19874cfdd010090747fde309810415ec1c82",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.522:CAPUT",
+     "text": "A cláusula de reserva de domínio será estipulada por escrito e depende de registro no domicílio do comprador para valer contra terceiros."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A cláusula de reserva de domínio será estipulada por escrito e depende de registro no domicílio do comprador para valer contra terceiros.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "03b1ba436a6091a21d01b503f6f1d2795b825645d53db2b52347f1c082360346",
+     "o_que_significa": "3ba66ad6cd20c5c2cd7558e4c8970bf7b0bce0680c350688896fdb4df4032954",
+     "exemplo_pratico": "0c4bd0f4d4d6ed478686144c2fa90f7862bf10dffada9804ec8c9586fd5afb16",
+     "atencao": "1b3a1f726d3f43c04efb2757ebeae164b21abec247b970d16883f61d44852563",
+     "palavras_dificeis": "9b4ffd238f0bf0c1596de7bfd6496b06d8267c9e8b6fa6ace0a67318c1055cfb"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.522, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A reserva de domínio precisa constar de documento escrito e ser registrada no domicílio do comprador para produzir efeitos perante terceiros.’. O campo de atenção registra: ‘Sem registro, a cláusula pode vincular as partes, mas não é oponível a terceiros. O artigo não dispensa outras formalidades eventualmente aplicáveis ao bem.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 5,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 394,
+   "target_id": "CC2002:ART.523",
+   "explanation_id": "ENTENDA/CC2002:ART.523/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.523:CAPUT\tNão pode ser objeto de venda com reserva de domínio a coisa insuscetível de caracterização perfeita, para estremá-la de outras congêneres. Na dúvida, decide-se a favor do terceiro adquirente de boa-fé.",
+   "source_snapshot_sha256": "149cfbeeaa71a00de51228b7a22efbd95975f12d9e79932146747203a534962a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.523:CAPUT",
+     "text": "Não pode ser objeto de venda com reserva de domínio a coisa insuscetível de caracterização perfeita, para estremá-la de outras congêneres. Na dúvida, decide-se a favor do terceiro adquirente de boa-fé."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não pode ser objeto de venda com reserva de domínio a coisa insuscetível de caracterização perfeita, para estremá-la de outras congêneres. Na dúvida, decide-se a favor do terceiro adquirente de boa-fé.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "53c8ecb7b82668b99f9176cbd6c7d08eb383ed71694651eb691968478ddc091d",
+     "o_que_significa": "4b3d4198b33254753b538663941b8dff6f770614e5cfcc3a5e0bd8ffb2ea7919",
+     "exemplo_pratico": "a8bb4cf6424f03fe117d415f197fe351e6373e2a05f9e038ac5839fbdf73e15a",
+     "atencao": "4c481d4450bc00c3880c67cb46db39372f868c6cabb0768b1fe9733b16e957e4",
+     "palavras_dificeis": "3f1649262f22060862111b78e8a45e07a68c3e3c0c41171b84bc76085a3f8deb"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.523, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Somente bem perfeitamente identificável pode ser vendido com reserva de domínio; dúvida sobre a individualização favorece terceiro adquirente de boa-fé.’. O campo de atenção registra: ‘A identificação deve permitir separar exatamente o bem. Má-fé do terceiro afasta a proteção específica baseada na dúvida.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 6,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 395,
+   "target_id": "CC2002:ART.524",
+   "explanation_id": "ENTENDA/CC2002:ART.524/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.524:CAPUT\tA transferência de propriedade ao comprador dá-se no momento em que o preço esteja integralmente pago. Todavia, pelos riscos da coisa responde o comprador, a partir de quando lhe foi entregue.",
+   "source_snapshot_sha256": "c6ff403250e885e760bf51d96aae35412b7fa1d3d4f9b740feecbc45fd39aed0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.524:CAPUT",
+     "text": "A transferência de propriedade ao comprador dá-se no momento em que o preço esteja integralmente pago. Todavia, pelos riscos da coisa responde o comprador, a partir de quando lhe foi entregue."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A transferência de propriedade ao comprador dá-se no momento em que o preço esteja integralmente pago. Todavia, pelos riscos da coisa responde o comprador, a partir de quando lhe foi entregue.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "df555c5c86c0a1483ef6bccd144ac65efb6b42008c0056b85a19925d67575aaa",
+     "o_que_significa": "c88b167ccd172a9d0ee406efd06833ea684b23a7def52a1199cdf80937b82050",
+     "exemplo_pratico": "0e74a2fc094f77d0aeb1aaad9b08086c4f86b07789dc7832259072a175f416cd",
+     "atencao": "d6fd70bf644ad7d6f663beaa26bcb7e14c859522a9d8b8f6c9ce366266f75238",
+     "palavras_dificeis": "0d4c9df414ac1319bf4ac7d8373683ba538d16cdfda0dcb556f121b97c5eadc2"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.524, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Na reserva de domínio, a propriedade passa ao comprador com a quitação, mas os riscos da coisa são dele desde a entrega.’. O campo de atenção registra: ‘A regra pressupõe entrega e deve ser conjugada com culpa, mora, seguro e outras normas aplicáveis. Propriedade reservada e responsabilidade pelo risco seguem marcos diferentes.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 7,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 396,
+   "target_id": "CC2002:ART.525",
+   "explanation_id": "ENTENDA/CC2002:ART.525/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.525:CAPUT\tO vendedor somente poderá executar a cláusula de reserva de domínio após constituir o comprador em mora, mediante protesto do título ou interpelação judicial.",
+   "source_snapshot_sha256": "2f295f0127096556a5eaa379a896033b272a7574f604c1309672dfe662fd55e2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.525:CAPUT",
+     "text": "O vendedor somente poderá executar a cláusula de reserva de domínio após constituir o comprador em mora, mediante protesto do título ou interpelação judicial."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O vendedor somente poderá executar a cláusula de reserva de domínio após constituir o comprador em mora, mediante protesto do título ou interpelação judicial.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5f71d33960b5df90165a5cf06c26e869ac295a8a06f5d655ae4aaa60f6ec07bd",
+     "o_que_significa": "2f28f07270a6cbeafb91a10190fbf3a888caa6000073115d5f86f0a9646f899a",
+     "exemplo_pratico": "db7491ecb0c041c9d19b1495fbcca4ea2c659a34e81bba03f52d7e5063f3ff6e",
+     "atencao": "2f4ebc9fc41fea5d122b1f97a334063ef195a049362544d405e7bf4fbde70abd",
+     "palavras_dificeis": "8d602bd1f8d932e1c1f507e8687db609fb5b8bae0caa97a3ffa84da7e82ebd5d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.525, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O vendedor só pode acionar a reserva de domínio depois de constituir o comprador em mora por protesto do título ou interpelação judicial.’. O campo de atenção registra: ‘A exigência é própria da execução da reserva de domínio. O ato escolhido deve ser válido e identificar adequadamente a obrigação vencida.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 8,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 397,
+   "target_id": "CC2002:ART.526",
+   "explanation_id": "ENTENDA/CC2002:ART.526/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.526:CAPUT\tVerificada a mora do comprador, poderá o vendedor mover contra ele a competente ação de cobrança das prestações vencidas e vincendas e o mais que lhe for devido; ou poderá recuperar a posse da coisa vendida.",
+   "source_snapshot_sha256": "516dafe1fb530a787bc78516d21e657730598f8e880ceb978263c4ffce0e52cf",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.526:CAPUT",
+     "text": "Verificada a mora do comprador, poderá o vendedor mover contra ele a competente ação de cobrança das prestações vencidas e vincendas e o mais que lhe for devido; ou poderá recuperar a posse da coisa vendida."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Verificada a mora do comprador, poderá o vendedor mover contra ele a competente ação de cobrança das prestações vencidas e vincendas e o mais que lhe for devido; ou poderá recuperar a posse da coisa vendida.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9695591b383dcc5fea732fe7a075c564a320aa17de31deab82f690f65a763bc6",
+     "o_que_significa": "d59c4f0388389abfab395f144ea1ee539f18530b90997757d472cd6211424e07",
+     "exemplo_pratico": "5f86af3b2548f1bf98a828a93f33dfd8d16d469a9d565dc49c202fd6ec893317",
+     "atencao": "550fda501c1947b4ca8d36d011cd2619efaacb8851092c3d4c54eef62e554d9a",
+     "palavras_dificeis": "e56ce6b6b7616ca8b8005c2c02818e280b2718dfc31bc69a37f7ecd83cec4db5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.526, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Constituída a mora, o vendedor pode cobrar parcelas vencidas, vincendas e demais valores devidos, ou buscar a recuperação da posse do bem.’. O campo de atenção registra: ‘As medidas devem seguir a legislação processual. A cobrança de parcelas futuras e outros valores depende do título e dos limites jurídicos aplicáveis.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 9,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 398,
+   "target_id": "CC2002:ART.527",
+   "explanation_id": "ENTENDA/CC2002:ART.527/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.527:CAPUT\tNa segunda hipótese do artigo antecedente, é facultado ao vendedor reter as prestações pagas até o necessário para cobrir a depreciação da coisa, as despesas feitas e o mais que de direito lhe for devido. O excedente será devolvido ao comprador; e o que faltar lhe será cobrado, tudo na forma da lei processual.",
+   "source_snapshot_sha256": "49b37205c7c0c36f91f821f3ffa663072cc077893b8b1abbf8616867bab399d6",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.527:CAPUT",
+     "text": "Na segunda hipótese do artigo antecedente, é facultado ao vendedor reter as prestações pagas até o necessário para cobrir a depreciação da coisa, as despesas feitas e o mais que de direito lhe for devido. O excedente será devolvido ao comprador; e o que faltar lhe será cobrado, tudo na forma da lei processual."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Na segunda hipótese do artigo antecedente, é facultado ao vendedor reter as prestações pagas até o necessário para cobrir a depreciação da coisa, as despesas feitas e o mais que de direito lhe for devido. O excedente será devolvido ao comprador; e o que faltar lhe será cobrado, tudo na forma da lei processual.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "bc723f9934fd3d32975a7e5a710959092197eca27c641ab050d467e855a85a98",
+     "o_que_significa": "dbe263fd98a350fa9c30199db4b14c4065c8bf968d67b98a9bc25b733de981dd",
+     "exemplo_pratico": "8af70758cb9d2d4b1a09a627266145bdc899310055e9065deafdcff6a07520b9",
+     "atencao": "7444d76d0adb1fef30d2bf9538fe8c00429cf25f481f040525b0aeb9bb529831",
+     "palavras_dificeis": "0b0e95420ea8c09d55bbab63c7afc73fed2eabd43bac9c049f3ed66fbf1dd2ab"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.527, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se recuperar a coisa, o vendedor pode reter do que foi pago apenas o necessário para depreciação, despesas e créditos legítimos, devolvendo o excedente ou cobrando a diferença.’. O campo de atenção registra: ‘A retenção não é penalidade ilimitada. Depreciação, despesas e demais créditos precisam ser demonstrados, evitando enriquecimento sem causa.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 10,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 399,
+   "target_id": "CC2002:ART.528",
+   "explanation_id": "ENTENDA/CC2002:ART.528/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.528:CAPUT\tSe o vendedor receber o pagamento à vista, ou, posteriormente, mediante financiamento de instituição do mercado de capitais, a esta caberá exercer os direitos e ações decorrentes do contrato, a benefício de qualquer outro. A operação financeira e a respectiva ciência do comprador constarão do registro do contrato.",
+   "source_snapshot_sha256": "44872662a833e2cf7589e287d77476812e723da15ad50a005f89550a3ca015cc",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.528:CAPUT",
+     "text": "Se o vendedor receber o pagamento à vista, ou, posteriormente, mediante financiamento de instituição do mercado de capitais, a esta caberá exercer os direitos e ações decorrentes do contrato, a benefício de qualquer outro. A operação financeira e a respectiva ciência do comprador constarão do registro do contrato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o vendedor receber o pagamento à vista, ou, posteriormente, mediante financiamento de instituição do mercado de capitais, a esta caberá exercer os direitos e ações decorrentes do contrato, a benefício de qualquer outro. A operação financeira e a respectiva ciência do comprador constarão do registro do contrato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d1bbd171e5beb368c281a6ab918695c548c9709f997c4afefb9c662661b77128",
+     "o_que_significa": "4f8c5087ae669ee21b9c78a47b880728d0ce92ed89c0c01fe383ff8438a3d22e",
+     "exemplo_pratico": "012213e2df34d7aad047abb14447ddfb25c986b66f37bed6f784814dcc631b13",
+     "atencao": "20b5f088bca3cb55a8e4ae5aa05d3aed24e7667bbd236c30534e04ecac8eda08",
+     "palavras_dificeis": "2e0e524c840966812c130b8a289dc3f7e97889aa14873394996f2315bf1b3a10"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.528, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quando instituição do mercado de capitais financia o preço recebido pelo vendedor, ela exerce os direitos e ações contratuais em benefício do interessado; financiamento e ciência do comprador devem constar do registro.’. O campo de atenção registra: ‘O registro deve revelar a operação e a ciência do comprador. A norma não autoriza cobrança além do contrato nem elimina defesas legalmente cabíveis.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 11,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 400,
+   "target_id": "CC2002:ART.529",
+   "explanation_id": "ENTENDA/CC2002:ART.529/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.529:CAPUT\tNa venda sobre documentos, a tradição da coisa é substituída pela entrega do seu título representativo e dos outros documentos exigidos pelo contrato ou, no silêncio deste, pelos usos.\nCC2002:ART.529:PAR.UNICO\tAchando-se a documentação em ordem, não pode o comprador recusar o pagamento, a pretexto de defeito de qualidade ou do estado da coisa vendida, salvo se o defeito já houver sido comprovado.",
+   "source_snapshot_sha256": "eab3e1286be88958ee0c326384aa8691b0056d4053dd8b1cc4ce6b6d3205dadf",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.529:CAPUT",
+     "text": "Na venda sobre documentos, a tradição da coisa é substituída pela entrega do seu título representativo e dos outros documentos exigidos pelo contrato ou, no silêncio deste, pelos usos."
+    },
+    {
+     "label": "CC2002:ART.529:PAR.UNICO",
+     "text": "Achando-se a documentação em ordem, não pode o comprador recusar o pagamento, a pretexto de defeito de qualidade ou do estado da coisa vendida, salvo se o defeito já houver sido comprovado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Na venda sobre documentos, a tradição da coisa é substituída pela entrega do seu título representativo e dos outros documentos exigidos pelo contrato ou, no silêncio deste, pelos usos. | Achando-se a documentação em ordem, não pode o comprador recusar o pagamento, a pretexto de defeito de qualidade ou do estado da coisa vendida, salvo se o defeito já houver sido comprovado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "70fa34ea714e0ce38fe1fb8ffa5fbcd6389e64622a2666581ffd55cce3250b2c",
+     "o_que_significa": "d0ecf4446abf4f9d97041351b904cb02ccba275cdad43acb3d269679b8ca87de",
+     "exemplo_pratico": "5218308f905e76f599a5ec4fa24f51ed9a80b772ef37c6a8dd86e94eb4ab9397",
+     "atencao": "bcbe79278aea1d8b2ed04477eff705131d730cacfd64c8f80bc8e2ddadff4c3f",
+     "palavras_dificeis": "98e53eb79c6261b4bbbf0a52ab4c8da8b41ef3490570e5bcc5ee95036705418d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.529, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Na venda sobre documentos, a entrega dos papéis representativos substitui a entrega material da mercadoria; com documentação regular, o comprador normalmente não pode suspender o pagamento por alegar defeito ainda não comprovado.’. O campo de atenção registra: ‘Documentos em ordem não eliminam garantias por defeito. A exceção permite recusa quando o problema de qualidade ou estado já está comprovado.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 12,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 401,
+   "target_id": "CC2002:ART.530",
+   "explanation_id": "ENTENDA/CC2002:ART.530/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.530:CAPUT\tNão havendo estipulação em contrário, o pagamento deve ser efetuado na data e no lugar da entrega dos documentos.",
+   "source_snapshot_sha256": "1fe1198dec0036c3236fe17e0751d4165d938f7c315d858a6f40628696e020be",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.530:CAPUT",
+     "text": "Não havendo estipulação em contrário, o pagamento deve ser efetuado na data e no lugar da entrega dos documentos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não havendo estipulação em contrário, o pagamento deve ser efetuado na data e no lugar da entrega dos documentos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9010c573843c61ab68ccbe09ff29baf722ba4fa15eee53947ac8500e9c35103e",
+     "o_que_significa": "ac9f3db7233f9bf19f06ce9eb81db7afa717a23cde2a4be915e508f1f5e411b9",
+     "exemplo_pratico": "7ba2c684e6d3da99cc1d5cabac04944c839a45db2c1b7c286e69b3203226d22d",
+     "atencao": "324fa0cf41395a0a21118e45c852d7421bd930c1f4652fd02aa4dce775d3c490",
+     "palavras_dificeis": "dcb8dee2f6f37c55416546c092cfd1c74b9bc3cdddacd0ef234b1c983b6cd1f9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.530, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Sem cláusula diferente, o comprador paga no mesmo momento e local em que recebe os documentos da venda.’. O campo de atenção registra: ‘A norma vale no silêncio do contrato. Deve-se distinguir entrega dos documentos de chegada física da mercadoria, que pode ocorrer depois.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 13,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 402,
+   "target_id": "CC2002:ART.531",
+   "explanation_id": "ENTENDA/CC2002:ART.531/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.531:CAPUT\tSe entre os documentos entregues ao comprador figurar apólice de seguro que cubra os riscos do transporte, correm estes à conta do comprador, salvo se, ao ser concluído o contrato, tivesse o vendedor ciência da perda ou avaria da coisa.",
+   "source_snapshot_sha256": "165d64f25f077e521ff232adcb5eef046a81fc01965b7e8d8bb9c0ab84592e07",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.531:CAPUT",
+     "text": "Se entre os documentos entregues ao comprador figurar apólice de seguro que cubra os riscos do transporte, correm estes à conta do comprador, salvo se, ao ser concluído o contrato, tivesse o vendedor ciência da perda ou avaria da coisa."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se entre os documentos entregues ao comprador figurar apólice de seguro que cubra os riscos do transporte, correm estes à conta do comprador, salvo se, ao ser concluído o contrato, tivesse o vendedor ciência da perda ou avaria da coisa.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b70664e8019ae65f371797fde74e5a47f60b6309dfac4eefad44dcaf89a09ad1",
+     "o_que_significa": "1a72257c6f1e955d37ea21a77c6da954bd512201d9f7b5afcd7eea24adf048e8",
+     "exemplo_pratico": "af5c01959e8a541060a57a8cb00d5f9e0268a0da3b3b3e7e45ec1c050be3f504",
+     "atencao": "ea28e1b5bd336493f9d356e9995743dfff4b6fc898c88f55a5ed552438106fb3",
+     "palavras_dificeis": "ad61b6c45b31dd661edca370a03dd086837595e79f66d67cde66087921d4afee"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.531, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se os documentos incluem seguro do transporte, o risco coberto fica com o comprador, salvo quando o vendedor já sabia da perda ou avaria ao contratar.’. O campo de atenção registra: ‘É necessário conferir cobertura, momento do dano e conhecimento do vendedor. A simples presença de apólice não cobre risco excluído do seguro.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 14,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 403,
+   "target_id": "CC2002:ART.532",
+   "explanation_id": "ENTENDA/CC2002:ART.532/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.532:CAPUT\tEstipulado o pagamento por intermédio de estabelecimento bancário, caberá a este efetuá-lo contra a entrega dos documentos, sem obrigação de verificar a coisa vendida, pela qual não responde.\nCC2002:ART.532:PAR.UNICO\tNesse caso, somente após a recusa do estabelecimento bancário a efetuar o pagamento, poderá o vendedor pretendê-lo, diretamente do comprador.",
+   "source_snapshot_sha256": "a349da4e1e49bfeaac593e8e661bc439612077ff743b3bc0bc2081debc395e8b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.532:CAPUT",
+     "text": "Estipulado o pagamento por intermédio de estabelecimento bancário, caberá a este efetuá-lo contra a entrega dos documentos, sem obrigação de verificar a coisa vendida, pela qual não responde."
+    },
+    {
+     "label": "CC2002:ART.532:PAR.UNICO",
+     "text": "Nesse caso, somente após a recusa do estabelecimento bancário a efetuar o pagamento, poderá o vendedor pretendê-lo, diretamente do comprador."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Estipulado o pagamento por intermédio de estabelecimento bancário, caberá a este efetuá-lo contra a entrega dos documentos, sem obrigação de verificar a coisa vendida, pela qual não responde. | Nesse caso, somente após a recusa do estabelecimento bancário a efetuar o pagamento, poderá o vendedor pretendê-lo, diretamente do comprador.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4d4a7642143c11a2299724879c6a8fb014a6142d7e6e1a5449b38ff87fc021d0",
+     "o_que_significa": "9e6ad77ba3ba5398bc1b36cff51d0d57786d49815bb983d993c3673a3e82e80c",
+     "exemplo_pratico": "3b2893267f3bd203ecad464067d762952954408c182db5b56633b79644bfcae2",
+     "atencao": "a3f57f37a357cae4fd2f3854acdb940b16d29817d733ca7f30b8a64d415c2c6a",
+     "palavras_dificeis": "bdbf19769753b19d399f3220307d6ea84d49a6cb5e3125bc64271a2b90e6084a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.532, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se o pagamento foi atribuído a banco, ele paga contra documentos e não precisa examinar a mercadoria; o vendedor só cobra diretamente do comprador depois de recusa bancária.’. O campo de atenção registra: ‘A ausência de verificação da coisa não dispensa o banco de conferir os documentos segundo o ajuste. A responsabilidade do vendedor pelo bem permanece.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 15,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 404,
+   "target_id": "CC2002:ART.533",
+   "explanation_id": "ENTENDA/CC2002:ART.533/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.533:CAPUT\tAplicam-se à troca as disposições referentes à compra e venda, com as seguintes modificações:\nCC2002:ART.533:INC.I\tsalvo disposição em contrário, cada um dos contratantes pagará por metade as despesas com o instrumento da troca;\nCC2002:ART.533:INC.II\té anulável a troca de valores desiguais entre ascendentes e descendentes, sem consentimento dos outros descendentes e do cônjuge do alienante.",
+   "source_snapshot_sha256": "1d07ac7a1c00c75a6a56b6423dbef2cbe829684d601e0bd4837176ff12543073",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.533:CAPUT",
+     "text": "Aplicam-se à troca as disposições referentes à compra e venda, com as seguintes modificações:"
+    },
+    {
+     "label": "CC2002:ART.533:INC.I",
+     "text": "salvo disposição em contrário, cada um dos contratantes pagará por metade as despesas com o instrumento da troca;"
+    },
+    {
+     "label": "CC2002:ART.533:INC.II",
+     "text": "é anulável a troca de valores desiguais entre ascendentes e descendentes, sem consentimento dos outros descendentes e do cônjuge do alienante."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Aplicam-se à troca as disposições referentes à compra e venda, com as seguintes modificações: | salvo disposição em contrário, cada um dos contratantes pagará por metade as despesas com o instrumento da troca; | é anulável a troca de valores desiguais entre ascendentes e descendentes, sem consentimento dos outros descendentes e do cônjuge do alienante.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a9f2411dd96bd5a70f6847c60701de5a7ef263093d6a695e9b5ccaed66105c26",
+     "o_que_significa": "b1fe97ad940d3d4d6cbaa77f5ba3f1b564590afe8a18211e76906a757e4d9a77",
+     "exemplo_pratico": "7a705c091913c46ce44552169f8142f917a368ca80721134a7696dea0beea4aa",
+     "atencao": "a101542ac0648701d2ca7bc076b5eb246dd2530c50e7d611258745e099ac46b2",
+     "palavras_dificeis": "3f18d60c41b855f3192d04794e58e5c1fbfe08c9dd5f3515232d366e78ac5d9c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.533, foram cotejados individualmente 3 segmento(s) vigente(s) (CAPUT, INC.I, INC.II) com os cinco campos ENTENDA. A síntese ativa informa: ‘A permuta segue, em geral, as regras da compra e venda; salvo ajuste diverso, cada parte arca com metade das despesas do instrumento, e troca desigual entre ascendente e descendente exige os consentimentos legais.’. O campo de atenção registra: ‘A sanção indicada para a troca familiar desigual é anulabilidade, não nulidade automática. É preciso apurar valores e consentimentos.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 16,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 405,
+   "target_id": "CC2002:ART.534",
+   "explanation_id": "ENTENDA/CC2002:ART.534/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.534:CAPUT\tPelo contrato estimatório, o consignante entrega bens móveis ao consignatário, que fica autorizado a vendê-los, pagando àquele o preço ajustado, salvo se preferir, no prazo estabelecido, restituir-lhe a coisa consignada.",
+   "source_snapshot_sha256": "2c7b30768e41cb9c00e617bd47989ae109290d0d021948d55090c28c694eaa1c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.534:CAPUT",
+     "text": "Pelo contrato estimatório, o consignante entrega bens móveis ao consignatário, que fica autorizado a vendê-los, pagando àquele o preço ajustado, salvo se preferir, no prazo estabelecido, restituir-lhe a coisa consignada."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Pelo contrato estimatório, o consignante entrega bens móveis ao consignatário, que fica autorizado a vendê-los, pagando àquele o preço ajustado, salvo se preferir, no prazo estabelecido, restituir-lhe a coisa consignada.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "82d834c0de26e564028d13e90daaa17ce5372c10f9e2aacd5288c315e2b8683b",
+     "o_que_significa": "5e59bfeffbf002b5c1eb930bf99e8fa2568756656f05f44666a6645013478b3f",
+     "exemplo_pratico": "ab71d00e95df390ed7a104fa114b0608d03fbcbc06bd3a22ee1c8e7852ac8398",
+     "atencao": "5339b31a54cadb6d30d035b2c74218ea45a14acb1a06460c63abfac0b88c0b33",
+     "palavras_dificeis": "0646638394ab3ab7756d1e1457745ea0e0e66f19188fcd0f36d898533e287765"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.534, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘No contrato estimatório, o consignante entrega bem móvel ao consignatário, que pode vendê-lo e pagar o valor ajustado ou devolvê-lo no prazo.’. O campo de atenção registra: ‘Não é simples mandato nem compra e venda definitiva desde a entrega. A restituição deve observar prazo e integridade, conforme o artigo seguinte.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 17,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 406,
+   "target_id": "CC2002:ART.535",
+   "explanation_id": "ENTENDA/CC2002:ART.535/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.535:CAPUT\tO consignatário não se exonera da obrigação de pagar o preço, se a restituição da coisa, em sua integridade, se tornar impossível, ainda que por fato a ele não imputável.",
+   "source_snapshot_sha256": "6563a939e9994a49bd54049c0c686e4a2748e4466a1dd6ccfcb57afacd4090e5",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.535:CAPUT",
+     "text": "O consignatário não se exonera da obrigação de pagar o preço, se a restituição da coisa, em sua integridade, se tornar impossível, ainda que por fato a ele não imputável."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O consignatário não se exonera da obrigação de pagar o preço, se a restituição da coisa, em sua integridade, se tornar impossível, ainda que por fato a ele não imputável.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9f49f073a8b29b3f114416808535b859ec8ac79e8f22afd97d7a4a3ff0386d3d",
+     "o_que_significa": "623917b5141860b95c60a76df8c72ced10f903a70467b8c0298711469e85fb3a",
+     "exemplo_pratico": "b61a7fe6f0ab57b513f7c7265a3b7d8677f556107e59a1834391cfbea85a51aa",
+     "atencao": "6868e29be655c4f889b542b73d3807a9c4ccc25bd378c3e5963326acb221d0ae",
+     "palavras_dificeis": "88bc6bba4d3cf7efeb3049ac1361cf6ed39354ecffcc554855022bf137e4489f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.535, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O consignatário continua obrigado a pagar o preço se não puder devolver a coisa íntegra, mesmo quando a impossibilidade não decorre de culpa sua.’. O campo de atenção registra: ‘A regra é mais rigorosa que a responsabilidade comum por culpa. Seguro e direito regressivo contra terceiro não eliminam o dever perante o consignante.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 18,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 407,
+   "target_id": "CC2002:ART.536",
+   "explanation_id": "ENTENDA/CC2002:ART.536/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.536:CAPUT\tA coisa consignada não pode ser objeto de penhora ou seqüestro pelos credores do consignatário, enquanto não pago integralmente o preço.",
+   "source_snapshot_sha256": "9a306f9403d4b2502ec59ac69a4007eaa1793035a55fdf16f4e2184b3433ba65",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.536:CAPUT",
+     "text": "A coisa consignada não pode ser objeto de penhora ou seqüestro pelos credores do consignatário, enquanto não pago integralmente o preço."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A coisa consignada não pode ser objeto de penhora ou seqüestro pelos credores do consignatário, enquanto não pago integralmente o preço.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "13352ee9279ebf1e3b53d520d3960d3552a5885b6c1f960e45f19f95ef455dab",
+     "o_que_significa": "bdb22b282ba4df73e67513aff45e85d587387fc81bd8bb74d561a5d465ff2fcd",
+     "exemplo_pratico": "8c9916d6545d3c4c8236d8bc95392404b25c54dfed7620c3ed73eb40e36147e0",
+     "atencao": "a6f1e90f2075915a22b1e987713a30bda2526976815d7eeb307f8c6a697a1f80",
+     "palavras_dificeis": "a3ec6b3f62379ce1f03961bdace3ffee6182cf171c91321618b59b4e5bce6cc1"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.536, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Enquanto o preço não for integralmente pago, credores do consignatário não podem penhorar ou sequestrar o bem consignado.’. O campo de atenção registra: ‘A proteção exige demonstrar o contrato e identificar a coisa. Depois do pagamento integral, muda a base patrimonial relevante.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 19,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 408,
+   "target_id": "CC2002:ART.537",
+   "explanation_id": "ENTENDA/CC2002:ART.537/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.537:CAPUT\tO consignante não pode dispor da coisa antes de lhe ser restituída ou de lhe ser comunicada a restituição.",
+   "source_snapshot_sha256": "4308a4b97826ba7a8ee9a712038ae51cb248fc64f19b2b10efbae4de749c86d3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.537:CAPUT",
+     "text": "O consignante não pode dispor da coisa antes de lhe ser restituída ou de lhe ser comunicada a restituição."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O consignante não pode dispor da coisa antes de lhe ser restituída ou de lhe ser comunicada a restituição.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c1d5122ff31c0cbb94213aaccfd03c37a35840b6c14a1ef4fa719e7a3b7cb132",
+     "o_que_significa": "3a6898b0763e6cac3d2045c059e0bab24f0effae8b4e7122ad5b8ab2bd176bea",
+     "exemplo_pratico": "7c728ac5e5c869d86b561ddfc09bff928a46addb309f75b7cdd91e405572c858",
+     "atencao": "9cd7268254ed036c452827f6dd379fa6efac5b2d05f53744a8aa931c441de62e",
+     "palavras_dificeis": "5a784106fae88f8e59955148e11a171c576e940f7f73beb739019ff19e0a5d20"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.537, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O consignante não pode alienar ou onerar a coisa enquanto ela não for devolvida, nem antes de receber comunicação de que será restituída.’. O campo de atenção registra: ‘A simples vontade do consignante não encerra o contrato fora de seus termos. Deve haver restituição efetiva ou comunicação juridicamente adequada.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 20,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 409,
+   "target_id": "CC2002:ART.538",
+   "explanation_id": "ENTENDA/CC2002:ART.538/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.538:CAPUT\tConsidera-se doação o contrato em que uma pessoa, por liberalidade, transfere do seu patrimônio bens ou vantagens para o de outra.",
+   "source_snapshot_sha256": "5206a1f5df2a0ab73b9058fd5a2684b31c76099cd48497ffea43c5b4ffcd6c71",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.538:CAPUT",
+     "text": "Considera-se doação o contrato em que uma pessoa, por liberalidade, transfere do seu patrimônio bens ou vantagens para o de outra."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Considera-se doação o contrato em que uma pessoa, por liberalidade, transfere do seu patrimônio bens ou vantagens para o de outra.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8500b0ead413c5b95f8e9d0b0c444da6f41617b17b1242d85746c4cfbf54ec48",
+     "o_que_significa": "b725203a2247b0a1189bc525c9b0b325e4eaaaeac93a5ca2c18ed1a09189a303",
+     "exemplo_pratico": "a46e183de444bd001b0925322ab0742efbbfea292866a4d50bffaf2941628428",
+     "atencao": "6752cd9913754864551b7b9aa7bdc75787885ca77d0d56e1027973ddbf407f41",
+     "palavras_dificeis": "55fed23c3925b39ac1e5211a92e51ce2821de6707658786332b3fb7f49270dcf"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.538, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Doação é o contrato pelo qual alguém, por liberalidade, transfere bem ou vantagem do próprio patrimônio para outra pessoa.’. O campo de atenção registra: ‘Nem toda vantagem gratuita é doação. É preciso verificar a estrutura do ato, a diminuição patrimonial e eventual disciplina especial.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 21,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 410,
+   "target_id": "CC2002:ART.539",
+   "explanation_id": "ENTENDA/CC2002:ART.539/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.539:CAPUT\tO doador pode fixar prazo ao donatário, para declarar se aceita ou não a liberalidade. Desde que o donatário, ciente do prazo, não faça, dentro dele, a declaração, entender-se-á que aceitou, se a doação não for sujeita a encargo.",
+   "source_snapshot_sha256": "a07eadfd0e5e054d5d47bb768c02d74d9590ad3b382e6b92310cea21bd73f680",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.539:CAPUT",
+     "text": "O doador pode fixar prazo ao donatário, para declarar se aceita ou não a liberalidade. Desde que o donatário, ciente do prazo, não faça, dentro dele, a declaração, entender-se-á que aceitou, se a doação não for sujeita a encargo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O doador pode fixar prazo ao donatário, para declarar se aceita ou não a liberalidade. Desde que o donatário, ciente do prazo, não faça, dentro dele, a declaração, entender-se-á que aceitou, se a doação não for sujeita a encargo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9613e0fac5d22a86aada36eac76c88f66f3e681ea3bd529e79b49832ae115f08",
+     "o_que_significa": "0ce86dd2c08972421ea9a05dac34753c657ad5b6f1c9e296ce36c865b45b9e1b",
+     "exemplo_pratico": "299dc8a463fc3e78527ebfc9df8bd115501e74219be9a2c72e1f471ac58248b6",
+     "atencao": "fb8d04c8a24688b0a433eb9acf9bc3d0ea6b55c836a8281ebdb5bf6d8655acb5",
+     "palavras_dificeis": "396f0402ec2374cf7a86d33ea987419041c343584c6a12a131e54a9ad732d07e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.539, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O doador pode dar prazo para o donatário aceitar; se este conhece o prazo e permanece em silêncio, a doação pura é considerada aceita.’. O campo de atenção registra: ‘Silêncio não vale como aceitação de doação onerada por encargo. Ciência do prazo e ausência de manifestação também precisam ser comprovadas.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 22,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 411,
+   "target_id": "CC2002:ART.540",
+   "explanation_id": "ENTENDA/CC2002:ART.540/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.540:CAPUT\tA doação feita em contemplação do merecimento do donatário não perde o caráter de liberalidade, como não o perde a doação remuneratória, ou a gravada, no excedente ao valor dos serviços remunerados ou ao encargo imposto.",
+   "source_snapshot_sha256": "81d13731eecac827533f1e80a5207313fc886160764ea119de4f0c175a4c8e41",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.540:CAPUT",
+     "text": "A doação feita em contemplação do merecimento do donatário não perde o caráter de liberalidade, como não o perde a doação remuneratória, ou a gravada, no excedente ao valor dos serviços remunerados ou ao encargo imposto."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A doação feita em contemplação do merecimento do donatário não perde o caráter de liberalidade, como não o perde a doação remuneratória, ou a gravada, no excedente ao valor dos serviços remunerados ou ao encargo imposto.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c2f76338f9d817ce92a7c6199bfe1b38e613f39b20f5fe13d6e9ca06f9de991a",
+     "o_que_significa": "8380aad6210fc90db58ce32ba127fd49af6697015cca3ccb86f6caf6e1287273",
+     "exemplo_pratico": "443f3844a170b67eba2c9891918992d9446c72c9d316037c40c3aafde623656d",
+     "atencao": "4caab9d2d37524388b1120cd318cd6f729138cb656b800702c79caf3297105b5",
+     "palavras_dificeis": "c7e7a31519af9b405538a4e37473d9ca4301d2e9c91a4c3b4411d5aa8cd0a60e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.540, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Doação motivada pelo mérito do beneficiário, remuneratória ou com encargo continua gratuita na parcela que excede serviço recompensado ou obrigação imposta.’. O campo de atenção registra: ‘É necessário separar a parcela remuneratória ou onerosa do excedente gratuito, pois os efeitos jurídicos podem variar entre elas.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 23,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 412,
+   "target_id": "CC2002:ART.541",
+   "explanation_id": "ENTENDA/CC2002:ART.541/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.541:CAPUT\tA doação far-se-á por escritura pública ou instrumento particular.\nCC2002:ART.541:PAR.UNICO\tA doação verbal será válida, se, versando sobre bens móveis e de pequeno valor, se lhe seguir incontinenti a tradição.",
+   "source_snapshot_sha256": "062ee633addd0cbe38e5f60c5a9f3b10b55aff52707a5cfe19a77c62ac1fe0ea",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.541:CAPUT",
+     "text": "A doação far-se-á por escritura pública ou instrumento particular."
+    },
+    {
+     "label": "CC2002:ART.541:PAR.UNICO",
+     "text": "A doação verbal será válida, se, versando sobre bens móveis e de pequeno valor, se lhe seguir incontinenti a tradição."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A doação far-se-á por escritura pública ou instrumento particular. | A doação verbal será válida, se, versando sobre bens móveis e de pequeno valor, se lhe seguir incontinenti a tradição.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7a411eb0d827710842b806c733e8068dbc0c9aaea9fa845c2974d0954bc2a888",
+     "o_que_significa": "7d896d228676d93d45f9d3f7576d18fa4dec97653e45b53847725fbd8d3efca7",
+     "exemplo_pratico": "ea54ef6a9238173ab84d6b0b9b5d6abb7bf1d07ed0b76784594260fadfb64c56",
+     "atencao": "d64cdb2033ca3ee340d2a0fe395523b5ed0f45fe17efc9bccd176a2ff403c97f",
+     "palavras_dificeis": "4bd57f2e98589ed1d704a0d40c340093993d30cb8f57da990e45ec966da7c7fd"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.541, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘A doação deve ser formalizada por escritura pública ou instrumento particular; a verbal só vale para móvel de pequeno valor entregue imediatamente.’. O campo de atenção registra: ‘Pequeno valor é avaliado no contexto patrimonial e concreto. Doação verbal de imóvel ou sem entrega imediata não se enquadra na exceção.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 24,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 413,
+   "target_id": "CC2002:ART.542",
+   "explanation_id": "ENTENDA/CC2002:ART.542/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.542:CAPUT\tA doação feita ao nascituro valerá, sendo aceita pelo seu representante legal.",
+   "source_snapshot_sha256": "794da9da56baee477d236ba935dc8ad79685de7045f3763b607b2d1d2817b762",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.542:CAPUT",
+     "text": "A doação feita ao nascituro valerá, sendo aceita pelo seu representante legal."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A doação feita ao nascituro valerá, sendo aceita pelo seu representante legal.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "03633a40219b2ad25678965234c2f9ad1d80e383961144e9893a64288c9cbedb",
+     "o_que_significa": "384620f71eab559dd8b011a1db0ea82cb417b3650cc363017f35c451164fea6d",
+     "exemplo_pratico": "e2d445dbde680a29c28f5d9d5d17e6421829ef4c612ba81ae3b9e94edd8900fb",
+     "atencao": "6e85a9a18d80f9e8adfc9f766d9d89e0951e1420d3ef7e998b4c6dd635d2946f",
+     "palavras_dificeis": "7baad5a1a697490cf063fb97ba521568b67cf86478f34101d4a04ad6755755f4"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.542, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A doação destinada a nascituro produz efeitos se seu representante legal a aceitar.’. O campo de atenção registra: ‘A norma exige nascituro e aceitação por representante legal. A consolidação dos efeitos deve ser compatibilizada com as regras gerais sobre direitos do concebido.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 25,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 414,
+   "target_id": "CC2002:ART.543",
+   "explanation_id": "ENTENDA/CC2002:ART.543/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.543:CAPUT\tSe o donatário for absolutamente incapaz, dispensa-se a aceitação, desde que se trate de doação pura.",
+   "source_snapshot_sha256": "e12eccf9af3f0e7532bfbf5563fe3f6fbd42c09a2c2d10fdb423b6a37cad9ae2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.543:CAPUT",
+     "text": "Se o donatário for absolutamente incapaz, dispensa-se a aceitação, desde que se trate de doação pura."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o donatário for absolutamente incapaz, dispensa-se a aceitação, desde que se trate de doação pura.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "389dc80fdabdce0dc3882c25a07fa0d18ae56600b215ff5ee51e4dfb2b789c46",
+     "o_que_significa": "e0146d5afed8d41d7b238dc95cc64bede43e286e3a89d9e98977c662c154990a",
+     "exemplo_pratico": "c3464b9cdeb2f6a04c2ff5a7e5d184d5b19bb458e6f6c6068a2b909a5c8f6429",
+     "atencao": "460bbe76e788043560fe46500686160e64e93aee00ad5c39b0cf980f35b37f99",
+     "palavras_dificeis": "dd52087d99c57ce0ff9e0e0d1e654e7f87a1e756a9075afd93091787ceddfefb"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.543, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Na doação pura a pessoa absolutamente incapaz, a aceitação é dispensada.’. O campo de atenção registra: ‘A dispensa depende de doação pura. Havendo encargo, condição onerosa ou risco de prejuízo, aplicam-se representação e controles próprios.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 26,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 415,
+   "target_id": "CC2002:ART.544",
+   "explanation_id": "ENTENDA/CC2002:ART.544/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.544:CAPUT\tA doação de ascendentes a descendentes, ou de um cônjuge a outro, importa adiantamento do que lhes cabe por herança.",
+   "source_snapshot_sha256": "6ce73b400f5f55a8ba13cce7e75513d3e225840aae39a4ba2edcea175fe11b25",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.544:CAPUT",
+     "text": "A doação de ascendentes a descendentes, ou de um cônjuge a outro, importa adiantamento do que lhes cabe por herança."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A doação de ascendentes a descendentes, ou de um cônjuge a outro, importa adiantamento do que lhes cabe por herança.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "28e243ffbaae1343f67180a0f392285403a06ca621138169c21e04484bd8270d",
+     "o_que_significa": "e04b47f960b9dfaec4f4c05a156e1b5694f6f540651d6a3b7ef8df21c1140aa0",
+     "exemplo_pratico": "30e2d8f183dc273185a521f1c2dc8bd17cecff6776996180b7359b5c5001980b",
+     "atencao": "a4a8590d1b01efdb0d254bdbaef063fcf0be427ef144256987aa780f7c582c72",
+     "palavras_dificeis": "6e257ad2d5b54b83f4109d09fd02dec87e53b546288a70c9e7b2adb9f491dcfc"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.544, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Doação de ascendente a descendente, ou entre cônjuges, é tratada como antecipação da herança que caberá ao beneficiário.’. O campo de atenção registra: ‘A norma não declara a doação inválida. Dispensa de colação, parte disponível, regime de bens e outras regras sucessórias exigem análise própria.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 27,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 416,
+   "target_id": "CC2002:ART.545",
+   "explanation_id": "ENTENDA/CC2002:ART.545/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.545:CAPUT\tA doação em forma de subvenção periódica ao beneficiado extingue-se morrendo o doador, salvo se este outra coisa dispuser, mas não poderá ultrapassar a vida do donatário.",
+   "source_snapshot_sha256": "f9dde3fd8732d9bdc2c754a860212f2e8a889bfb194cb58c085ccbca0bf91bb6",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.545:CAPUT",
+     "text": "A doação em forma de subvenção periódica ao beneficiado extingue-se morrendo o doador, salvo se este outra coisa dispuser, mas não poderá ultrapassar a vida do donatário."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A doação em forma de subvenção periódica ao beneficiado extingue-se morrendo o doador, salvo se este outra coisa dispuser, mas não poderá ultrapassar a vida do donatário.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "efbaee48ab197a52c834d6fcde84b8f26bd8d6389f08ea8a07a0d192f6978b8f",
+     "o_que_significa": "657e030eac7a170cddb52bc79ad27013d6042176238eddc8ecf93ffa56418040",
+     "exemplo_pratico": "b590f7e7e48219aca18cdd73e9d44fb9d6cf84e72368390bf0b4637ae5c30d87",
+     "atencao": "ba8c87baa2eb698887916de5e0ce1121f9e45a140fbf395d73d5749a57992532",
+     "palavras_dificeis": "878ac9a274e90dc3186ef2bb092d4bd33ec3d4c71093f7e239d3736b4734cb6e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.545, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Subvenção doada em pagamentos periódicos termina com a morte do doador, salvo disposição diferente, e jamais pode continuar além da vida do donatário.’. O campo de atenção registra: ‘A cláusula pode alterar o efeito da morte do doador, não o limite ligado à vida do donatário. Deve-se examinar fonte de pagamento e forma da liberalidade.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 28,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 417,
+   "target_id": "CC2002:ART.546",
+   "explanation_id": "ENTENDA/CC2002:ART.546/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.546:CAPUT\tA doação feita em contemplação de casamento futuro com certa e determinada pessoa, quer pelos nubentes entre si, quer por terceiro a um deles, a ambos, ou aos filhos que, de futuro, houverem um do outro, não pode ser impugnada por falta de aceitação, e só ficará sem efeito se o casamento não se realizar.",
+   "source_snapshot_sha256": "fa430fdd316a35d4851a4c724c39c0211565ad7b69ff952c73236ab427a62f44",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.546:CAPUT",
+     "text": "A doação feita em contemplação de casamento futuro com certa e determinada pessoa, quer pelos nubentes entre si, quer por terceiro a um deles, a ambos, ou aos filhos que, de futuro, houverem um do outro, não pode ser impugnada por falta de aceitação, e só ficará sem efeito se o casamento não se realizar."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A doação feita em contemplação de casamento futuro com certa e determinada pessoa, quer pelos nubentes entre si, quer por terceiro a um deles, a ambos, ou aos filhos que, de futuro, houverem um do outro, não pode ser impugnada por falta de aceitação, e só ficará sem efeito se o casamento não se realizar.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "43e1eba13941422e12fbbece991297175bb4e84454ac70e1f952880b630676e5",
+     "o_que_significa": "62311eb4cd6a309af5fc5b45f0cde5dc20775a0292b19a4d17a9df1002f69639",
+     "exemplo_pratico": "7ecb78552c25af96a050e23335fd09e71afe51bfe0a39001518e0ed22198b883",
+     "atencao": "2df871c08d563aef352061fbb42538946a816e16de8e8019453f583748272083",
+     "palavras_dificeis": "33dbc749e1c561571771bf4ace8fd2448e1544d7451776374830896af627667e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.546, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Doação feita em consideração a casamento futuro determinado não pode ser contestada por falta de aceitação e perde efeito se o casamento não ocorrer.’. O campo de atenção registra: ‘O casamento precisa ser com a pessoa determinada. A dispensa de impugnação por falta de aceitação não afasta forma, capacidade e outros requisitos legais.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 29,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 418,
+   "target_id": "CC2002:ART.547",
+   "explanation_id": "ENTENDA/CC2002:ART.547/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.547:CAPUT\tO doador pode estipular que os bens doados voltem ao seu patrimônio, se sobreviver ao donatário.\nCC2002:ART.547:PAR.UNICO\tNão prevalece cláusula de reversão em favor de terceiro.",
+   "source_snapshot_sha256": "be436c3147ae68a6366d3ab383b5d09ff823f38644a204e947c25512fe00e5a2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.547:CAPUT",
+     "text": "O doador pode estipular que os bens doados voltem ao seu patrimônio, se sobreviver ao donatário."
+    },
+    {
+     "label": "CC2002:ART.547:PAR.UNICO",
+     "text": "Não prevalece cláusula de reversão em favor de terceiro."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O doador pode estipular que os bens doados voltem ao seu patrimônio, se sobreviver ao donatário. | Não prevalece cláusula de reversão em favor de terceiro.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0023444e5275f0f3c8b40ee6d1efdf9387fd349328dac9c7b0e7f30e11fbced9",
+     "o_que_significa": "d5dafadea91ddfcd657b9d3c8b23ec642a66102f524ee1d6b7a1a8b3929dda02",
+     "exemplo_pratico": "e2e1197972475064a47a40a57099fd949f0d6f8f4e9085781f23d31155fccc22",
+     "atencao": "d93daf714020418f6d5df07880cd13715366262b029a3c63018965b60914bdfb",
+     "palavras_dificeis": "a9fa9859613ae59ef5d1514dc5796f3b21da00e2d96be274e40a5f03c46fd600"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.547, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘O doador pode prever retorno do bem ao próprio patrimônio se sobreviver ao donatário, mas não pode estabelecer reversão em favor de terceiro.’. O campo de atenção registra: ‘A reversão depende de estipulação e da sobrevivência do doador. Sem ela, o bem segue o regime patrimonial e sucessório do donatário.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 30,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 419,
+   "target_id": "CC2002:ART.548",
+   "explanation_id": "ENTENDA/CC2002:ART.548/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.548:CAPUT\tÉ nula a doação de todos os bens sem reserva de parte, ou renda suficiente para a subsistência do doador.",
+   "source_snapshot_sha256": "1e55d80958d2085be94a0bf1a72dd56b901b252644db2c5b1e9355ef0fad2287",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.548:CAPUT",
+     "text": "É nula a doação de todos os bens sem reserva de parte, ou renda suficiente para a subsistência do doador."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: É nula a doação de todos os bens sem reserva de parte, ou renda suficiente para a subsistência do doador.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "edb924b4cbbaef5b3b05749824100a9e664e0eb897e7eb26ca9efcad075bcff5",
+     "o_que_significa": "ce524ab73cf5564a524cdddc36caf00e091888adb424aedff13b033ba8bc49de",
+     "exemplo_pratico": "311ceff60a0cb14b9299dd4a82b263ae457d7377b2d5c3a2d17c478c884c26c6",
+     "atencao": "c2ef4b9cdcfa7a6afcd74d32ee764233d7673fbc9120142f0779aa9636b30ccb",
+     "palavras_dificeis": "2c2c410f444e226f87a6a7e05682622874b49f815d08486c34a97c93de020a29"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.548, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘É nula a doação de todo o patrimônio quando o doador não conserva bens ou renda suficientes para sua manutenção.’. O campo de atenção registra: ‘A análise considera reserva efetivamente suficiente, não apenas existência nominal de algum bem. A nulidade não se confunde com simples arrependimento posterior.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 31,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 420,
+   "target_id": "CC2002:ART.549",
+   "explanation_id": "ENTENDA/CC2002:ART.549/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.549:CAPUT\tNula é também a doação quanto à parte que exceder à de que o doador, no momento da liberalidade, poderia dispor em testamento.",
+   "source_snapshot_sha256": "5bd2d30715c54c9055610b705a7b00cb0c0698a8ab2f42a496dc4d3d580fe390",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.549:CAPUT",
+     "text": "Nula é também a doação quanto à parte que exceder à de que o doador, no momento da liberalidade, poderia dispor em testamento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Nula é também a doação quanto à parte que exceder à de que o doador, no momento da liberalidade, poderia dispor em testamento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "724fb0cbec354f0156a1e70735b23e34768987f67b04f49eb55dabf01fea526f",
+     "o_que_significa": "3e7da91c1a7867d174309a405aeaa05c88085284e24924b92027585e13d56327",
+     "exemplo_pratico": "80fbd1c33f97f8d865aa4031b8aa1bee9561d09bea36f7abb31ecb23f2174ff9",
+     "atencao": "2e93daf69460634c4ef84a5ed7f87bac5427b3d05e2c0b8d526d9e1aec88ddd4",
+     "palavras_dificeis": "7622c78762ad8b9226eebce23b6692dbca73a202144975deb08a518d738d40a6"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.549, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘É nula a parcela da doação que ultrapassa o que o doador poderia deixar por testamento na data do ato.’. O campo de atenção registra: ‘O cálculo usa patrimônio e situação sucessória existentes no momento da doação. A nulidade alcança o excesso, não necessariamente o negócio inteiro.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 32,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 421,
+   "target_id": "CC2002:ART.550",
+   "explanation_id": "ENTENDA/CC2002:ART.550/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-08",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.550:CAPUT\tA doação do cônjuge adúltero ao seu cúmplice pode ser anulada pelo outro cônjuge, ou por seus herdeiros necessários, até dois anos depois de dissolvida a sociedade conjugal.",
+   "source_snapshot_sha256": "167ee8b346740acfc8786cb4e914ee98c528dc698b64fdb1f67a083eb85a4cbb",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.550:CAPUT",
+     "text": "A doação do cônjuge adúltero ao seu cúmplice pode ser anulada pelo outro cônjuge, ou por seus herdeiros necessários, até dois anos depois de dissolvida a sociedade conjugal."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A doação do cônjuge adúltero ao seu cúmplice pode ser anulada pelo outro cônjuge, ou por seus herdeiros necessários, até dois anos depois de dissolvida a sociedade conjugal.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "769af0fe310ca0bdfaae8dfc02ec063e8ff7a2df47a4dde717ff6189aba304c3",
+     "o_que_significa": "6d355b129477cec47211bd9bdb22b1cce70538b0ed20e6c53bffc696fa3fff90",
+     "exemplo_pratico": "daeb5c2e329bafce5f61b2b9f1439fcfbe344f41ce0ac25cd386b6728a8b863e",
+     "atencao": "1387cfaa5d7e12716943dd8b8d447faa16adb6cf0b5b257278a98bf2cae39177",
+     "palavras_dificeis": "e0bcacee282c1813eeb5dfbcec5ab0c699f17332a06096550194e7bd62c4febe"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.550, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Liberalidade destinada ao parceiro de relação extraconjugal é anulável por iniciativa do outro cônjuge ou dos herdeiros necessários deste. O prazo é de dois anos, contado do encerramento da sociedade conjugal.’. O campo de atenção registra: ‘O negócio é anulável, não automaticamente nulo. É preciso provar os pressupostos da regra, a legitimidade de quem demanda e a observância do prazo.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 33,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 422,
+   "target_id": "CC2002:ART.551",
+   "explanation_id": "ENTENDA/CC2002:ART.551/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.551:CAPUT\tSalvo declaração em contrário, a doação em comum a mais de uma pessoa entende-se distribuída entre elas por igual.\nCC2002:ART.551:PAR.UNICO\tSe os donatários, em tal caso, forem marido e mulher, subsistirá na totalidade a doação para o cônjuge sobrevivo.",
+   "source_snapshot_sha256": "604d9421a07c0377f9541291e493e5db3521c581e722116b841d9653d7ec2b5d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.551:CAPUT",
+     "text": "Salvo declaração em contrário, a doação em comum a mais de uma pessoa entende-se distribuída entre elas por igual."
+    },
+    {
+     "label": "CC2002:ART.551:PAR.UNICO",
+     "text": "Se os donatários, em tal caso, forem marido e mulher, subsistirá na totalidade a doação para o cônjuge sobrevivo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Salvo declaração em contrário, a doação em comum a mais de uma pessoa entende-se distribuída entre elas por igual. | Se os donatários, em tal caso, forem marido e mulher, subsistirá na totalidade a doação para o cônjuge sobrevivo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "86905e6c47132b96c25696790d14325637aa12963252498bf92c06f277156c00",
+     "o_que_significa": "8b5ca7b26611a2fe8c9a79b34df9059aadcd9c575b6b3feb8a92796c5cc38cdc",
+     "exemplo_pratico": "a25814771638ca7ef62755ded5a7dbdf9f602dad328977622573d55e5d00b75c",
+     "atencao": "a4166f93822834a9dabda7c7af0888a478eb3d8874accc09b9627ae5ae239331",
+     "palavras_dificeis": "be1f7960946869e9c0f414fd2729dc401dbe06974ecad2386385a71202debdf3"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.551, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Na doação conjunta a várias pessoas, a divisão é igual, salvo declaração diferente. Entre cônjuges donatários, a parte do falecido acresce ao sobrevivente.’. O campo de atenção registra: ‘A solução pode ser afastada por declaração expressa. Para donatários que não sejam cônjuges, a morte não produz esse acréscimo automático.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 34,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 423,
+   "target_id": "CC2002:ART.552",
+   "explanation_id": "ENTENDA/CC2002:ART.552/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.552:CAPUT\tO doador não é obrigado a pagar juros moratórios, nem é sujeito às conseqüências da evicção ou do vício redibitório. Nas doações para casamento com certa e determinada pessoa, o doador ficará sujeito à evicção, salvo convenção em contrário.",
+   "source_snapshot_sha256": "708131adbd31f54639a3016e5299dd51877cf65e14f0f2abc69ff4bda146aff0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.552:CAPUT",
+     "text": "O doador não é obrigado a pagar juros moratórios, nem é sujeito às conseqüências da evicção ou do vício redibitório. Nas doações para casamento com certa e determinada pessoa, o doador ficará sujeito à evicção, salvo convenção em contrário."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O doador não é obrigado a pagar juros moratórios, nem é sujeito às conseqüências da evicção ou do vício redibitório. Nas doações para casamento com certa e determinada pessoa, o doador ficará sujeito à evicção, salvo convenção em contrário.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5204597be35b05649c4620729e32931271f83d853f9cecfa9f1ca634173819b9",
+     "o_que_significa": "d78b03cf7f097e490ae00191fb77cdaeec75e3d5c787d9eb88751ec58405254e",
+     "exemplo_pratico": "6eeb2a92007b6c174f0dacfee1e26ecdf5445b2580f0823b7c9b4dddfb28711f",
+     "atencao": "b1991b1df3c2c0f4b4a60545f4bb15fc619c381a6fc3f8a3cd9c1bcfea6b2859",
+     "palavras_dificeis": "92d5461744e0b5775615e535e05c40e6efacc68453031cb1f1ddcb3726b60b88"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.552, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Em regra, o doador não paga juros de mora nem responde por evicção ou defeito oculto. Na doação destinada a casamento determinado, responde por evicção, salvo pacto contrário.’. O campo de atenção registra: ‘A exceção legal refere-se à evicção, não transforma toda doação em contrato oneroso nem elimina cláusula válida em sentido contrário.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 35,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 424,
+   "target_id": "CC2002:ART.553",
+   "explanation_id": "ENTENDA/CC2002:ART.553/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.553:CAPUT\tO donatário é obrigado a cumprir os encargos da doação, caso forem a benefício do doador, de terceiro, ou do interesse geral.\nCC2002:ART.553:PAR.UNICO\tSe desta última espécie for o encargo, o Ministério Público poderá exigir sua execução, depois da morte do doador, se este não tiver feito.",
+   "source_snapshot_sha256": "c1314fcf00bd8122773f05762581d90f7e31427716ca7aa293c2972d84205445",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.553:CAPUT",
+     "text": "O donatário é obrigado a cumprir os encargos da doação, caso forem a benefício do doador, de terceiro, ou do interesse geral."
+    },
+    {
+     "label": "CC2002:ART.553:PAR.UNICO",
+     "text": "Se desta última espécie for o encargo, o Ministério Público poderá exigir sua execução, depois da morte do doador, se este não tiver feito."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O donatário é obrigado a cumprir os encargos da doação, caso forem a benefício do doador, de terceiro, ou do interesse geral. | Se desta última espécie for o encargo, o Ministério Público poderá exigir sua execução, depois da morte do doador, se este não tiver feito.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ab6c65fb2e9db51b2188f0e2e2a9a792efc33794ca01febb5eb9fa537f40b6c5",
+     "o_que_significa": "c66ee5a707690effa1e42b9d776dc4423578cfa51676b215fc786c9ee01cb38d",
+     "exemplo_pratico": "886542e48f9fcb63f1f398fbf25d902f212e6a5a4857741a763e8a35e508f3b3",
+     "atencao": "54fce3185fff3464ac81c371409892b06f4222b18e4cfb35100624232bc38cda",
+     "palavras_dificeis": "e5b9143fd816000ff5fe9c7e8af04b82f57e052c02e61af6e6e3b972681e1a02"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.553, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quem recebe doação com encargo deve cumpri-lo, seja ele favorável ao doador, a terceiro ou ao interesse coletivo. Se for coletivo, o Ministério Público pode cobrá-lo após a morte do doador omisso.’. O campo de atenção registra: ‘Encargo não se confunde com simples conselho. A intervenção do Ministério Público exige interesse geral e as condições temporais indicadas no artigo.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 36,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 425,
+   "target_id": "CC2002:ART.554",
+   "explanation_id": "ENTENDA/CC2002:ART.554/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.554:CAPUT\tA doação a entidade futura caducará se, em dois anos, esta não estiver constituída regularmente.",
+   "source_snapshot_sha256": "f9a701c5d0a25d483a76e0216a8afe2febf28faff5857c209f65e53f32fffa1f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.554:CAPUT",
+     "text": "A doação a entidade futura caducará se, em dois anos, esta não estiver constituída regularmente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A doação a entidade futura caducará se, em dois anos, esta não estiver constituída regularmente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "84f4dccf76d64ae1605dfc108a99f2c579a6b500f89e8fceddf99aba1e683d05",
+     "o_que_significa": "702bb186886c11a656672f41fd905a16f14b9e4ce92391990845336cce98ac5a",
+     "exemplo_pratico": "4183a433610eb62a23ecd3980e35502c646f798abc0823e14a0b0e9836ec18af",
+     "atencao": "2888ea045405e71b6974860879bd4ce30b6b2b0d9c6a1dc74fbae438abdc3b47",
+     "palavras_dificeis": "19898ccf2d36edbd9dc2a615706ab102cb72048112a8d214e97123844459a1b4"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.554, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A doação destinada a entidade que ainda será criada perde eficácia se ela não for regularmente constituída em dois anos.’. O campo de atenção registra: ‘Não basta atuação informal: a entidade deve estar juridicamente constituída. O prazo legal não se confunde com prazo contratual para cumprir encargo.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 37,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 426,
+   "target_id": "CC2002:ART.555",
+   "explanation_id": "ENTENDA/CC2002:ART.555/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.555:CAPUT\tA doação pode ser revogada por ingratidão do donatário, ou por inexecução do encargo.",
+   "source_snapshot_sha256": "a4db657451465d082228ddc39be7653d0d9f914984b822e7c8016a024567cf32",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.555:CAPUT",
+     "text": "A doação pode ser revogada por ingratidão do donatário, ou por inexecução do encargo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A doação pode ser revogada por ingratidão do donatário, ou por inexecução do encargo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "61593316f5903e81ee9c8fe4593fb1f568b4f5c52f38896a513400362fad1474",
+     "o_que_significa": "5787126e6c4006a9bf52d2daf07ca9395a7aa1acb151b6762e1aa063f7d299d3",
+     "exemplo_pratico": "f6929d9ac5757bf4e2ef97fc9a4655b6f0d8635b42df857e7384eea537003dc5",
+     "atencao": "b4e80aca871a1f544fbc9558ec32f9aafd91528f034f6844deaa8d568a7579f6",
+     "palavras_dificeis": "166274c8c1479f5daf1d27381bb8dcc24468d3c6bd61eb6545087a2f860308e9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.555, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A doação pode ser desfeita por grave ingratidão do beneficiário ou por descumprimento do encargo imposto.’. O campo de atenção registra: ‘As duas causas possuem requisitos e efeitos próprios nos artigos seguintes. O negócio não se desfaz automaticamente com a alegação do doador.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 38,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 427,
+   "target_id": "CC2002:ART.556",
+   "explanation_id": "ENTENDA/CC2002:ART.556/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.556:CAPUT\tNão se pode renunciar antecipadamente o direito de revogar a liberalidade por ingratidão do donatário.",
+   "source_snapshot_sha256": "69cfb108558d5b3e20a1b34e59097f514357286843798dbf7d1ba67bb3ebbcb0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.556:CAPUT",
+     "text": "Não se pode renunciar antecipadamente o direito de revogar a liberalidade por ingratidão do donatário."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não se pode renunciar antecipadamente o direito de revogar a liberalidade por ingratidão do donatário.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "bbad124f486889a21a5d3587336961f228c9ec2223b2cbbab976ecc316b8987f",
+     "o_que_significa": "7b9a9dcecf36883782a9d66b2f2727b71053668c6d2a36d0761afc9d132e2693",
+     "exemplo_pratico": "6b7ca23d5644092334ccb7a7be7252e02632ffea55b8fc03af334a329deac6ce",
+     "atencao": "8dbf1b13a472b76049b5fe73fc4cdb652aae7010391f203d942e0821c293a6b9",
+     "palavras_dificeis": "7c5f7a08ebd354dfacd321a626d7697d8d04f3a007da3ce923c2b3da492d4a7e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.556, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O doador não pode abrir mão antecipadamente do direito de revogar a doação por ingratidão futura.’. O campo de atenção registra: ‘O artigo trata da renúncia antecipada. Perdão ou outras condutas posteriores ao fato exigem análise própria e não se confundem com essa vedação.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 39,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 428,
+   "target_id": "CC2002:ART.557",
+   "explanation_id": "ENTENDA/CC2002:ART.557/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.557:CAPUT\tPodem ser revogadas por ingratidão as doações:\nCC2002:ART.557:INC.I\tse o donatário atentou contra a vida do doador ou cometeu crime de homicídio doloso contra ele;\nCC2002:ART.557:INC.II\tse cometeu contra ele ofensa física;\nCC2002:ART.557:INC.III\tse o injuriou gravemente ou o caluniou;\nCC2002:ART.557:INC.IV\tse, podendo ministrá-los, recusou ao doador os alimentos de que este necessitava.",
+   "source_snapshot_sha256": "ebdc223fcd7ab3d819a4d14f732472748b1cf6ae7e7fbbd6eb14730212327f18",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.557:CAPUT",
+     "text": "Podem ser revogadas por ingratidão as doações:"
+    },
+    {
+     "label": "CC2002:ART.557:INC.I",
+     "text": "se o donatário atentou contra a vida do doador ou cometeu crime de homicídio doloso contra ele;"
+    },
+    {
+     "label": "CC2002:ART.557:INC.II",
+     "text": "se cometeu contra ele ofensa física;"
+    },
+    {
+     "label": "CC2002:ART.557:INC.III",
+     "text": "se o injuriou gravemente ou o caluniou;"
+    },
+    {
+     "label": "CC2002:ART.557:INC.IV",
+     "text": "se, podendo ministrá-los, recusou ao doador os alimentos de que este necessitava."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 5 segmentos vigentes do dispositivo: Podem ser revogadas por ingratidão as doações: | se o donatário atentou contra a vida do doador ou cometeu crime de homicídio doloso contra ele; | se cometeu contra ele ofensa física; | se o injuriou gravemente ou o caluniou; | se, podendo ministrá-los, recusou ao doador os alimentos de que este necessitava.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8a6d65fa8c48d89685b68194b3adb19332f5b0730005c939fee2dbcf438f6cac",
+     "o_que_significa": "e293f4f3249d3ef1076bc2e07da09c3ad5728c2cbefa8d63b4140f91226847f6",
+     "exemplo_pratico": "dd374f4dfd4b13c6ed31aa4cb192029f2bb4a731943b601c1611b69b9d278f9f",
+     "atencao": "8f0dd76c2a9119fd3ca52d99058bb6adb949030bdf0d91b9305f2a4bed1ec876",
+     "palavras_dificeis": "4209e7ef24a932f9f148ac43afca60a61bc3872d67b2775029bf222a1364eda1"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.557, foram cotejados individualmente 5 segmento(s) vigente(s) (CAPUT, INC.I, INC.II, INC.III, INC.IV) com os cinco campos ENTENDA. A síntese ativa informa: ‘A ingratidão autoriza revogação quando o donatário atenta contra a vida do doador, pratica homicídio doloso, ofensa física, injúria grave, calúnia ou recusa alimentos necessários que podia fornecer.’. O campo de atenção registra: ‘Desavença comum ou simples falta de gratidão não bastam. A conduta deve se enquadrar em hipótese legal e observar prazo e legitimidade.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 40,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 429,
+   "target_id": "CC2002:ART.558",
+   "explanation_id": "ENTENDA/CC2002:ART.558/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.558:CAPUT\tPode ocorrer também a revogação quando o ofendido, nos casos do artigo anterior, for o cônjuge, ascendente, descendente, ainda que adotivo, ou irmão do doador.",
+   "source_snapshot_sha256": "2afd9f5c95338abec9d799ea7b8b9159639753b5816c3436440e8ab2858e5b17",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.558:CAPUT",
+     "text": "Pode ocorrer também a revogação quando o ofendido, nos casos do artigo anterior, for o cônjuge, ascendente, descendente, ainda que adotivo, ou irmão do doador."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Pode ocorrer também a revogação quando o ofendido, nos casos do artigo anterior, for o cônjuge, ascendente, descendente, ainda que adotivo, ou irmão do doador.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f79a5f7363046f72a1a49229a9e35d5d9503bd116a853efd6079efbc7b16037e",
+     "o_que_significa": "277842be8cdcf629ed94502e9c456726fc231799da73c07ed627ea714a5bb2ad",
+     "exemplo_pratico": "fa2d29cac7e26517f069555e98e8fbcdf56aabd27cdc37ab8696f3eb79371eec",
+     "atencao": "d58bf16aeee2daf8e0dbc5b0b06128d125442b1487d2dc8f356baa65b5fff21c",
+     "palavras_dificeis": "432f75343ce10cd1fbecb0c21065c597fceb3273c1cb13194ff0fb211244d9bb"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.558, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A revogação por ingratidão também é possível quando a vítima da conduta grave é cônjuge, ascendente, descendente, inclusive adotivo, ou irmão do doador.’. O campo de atenção registra: ‘A extensão alcança somente as pessoas indicadas e continua dependente de uma das condutas tipificadas no artigo anterior.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 41,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 430,
+   "target_id": "CC2002:ART.559",
+   "explanation_id": "ENTENDA/CC2002:ART.559/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.559:CAPUT\tA revogação por qualquer desses motivos deverá ser pleiteada dentro de um ano, a contar de quando chegue ao conhecimento do doador o fato que a autorizar, e de ter sido o donatário o seu autor.",
+   "source_snapshot_sha256": "b6a6955c1a0015084feee530e6fa17450cb838cd2ab502d3e69267bde3222427",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.559:CAPUT",
+     "text": "A revogação por qualquer desses motivos deverá ser pleiteada dentro de um ano, a contar de quando chegue ao conhecimento do doador o fato que a autorizar, e de ter sido o donatário o seu autor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A revogação por qualquer desses motivos deverá ser pleiteada dentro de um ano, a contar de quando chegue ao conhecimento do doador o fato que a autorizar, e de ter sido o donatário o seu autor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7340d2613861476d3df4eaf117b492964cc39efb309378679f8d1d92753016b5",
+     "o_que_significa": "4f171b37544c51aa1b74761edec6dd869d5eb6b3072cf1c278d8962f4246a571",
+     "exemplo_pratico": "bdea8282d121bc6e20b3b5f40c93f4cd0d454407397547eb9d96b7e7cc179fc6",
+     "atencao": "0a9d9ee8b41fbebf7ae5d8a2bac953d15091d0731d0f556521ccbe2b9f7ca5bc",
+     "palavras_dificeis": "b70bd7d9cd3a2ecad825b54b01ba610cdf2f7792bd253aa270e416b4ea4fcb2a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.559, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O pedido de revogação por ingratidão deve ser apresentado em um ano contado da ciência, pelo doador, do fato e de sua autoria pelo donatário.’. O campo de atenção registra: ‘A demora em conhecer a autoria pode afetar o termo inicial, mas ciência e datas precisam ser provadas. O prazo não vale indistintamente para revogação por encargo.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 42,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 431,
+   "target_id": "CC2002:ART.560",
+   "explanation_id": "ENTENDA/CC2002:ART.560/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.560:CAPUT\tO direito de revogar a doação não se transmite aos herdeiros do doador, nem prejudica os do donatário. Mas aqueles podem prosseguir na ação iniciada pelo doador, continuando-a contra os herdeiros do donatário, se este falecer depois de ajuizada a lide.",
+   "source_snapshot_sha256": "054ff384097512194e881852ef09c2124139c2b7fd4f8c5be1a07d0eb717a8fc",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.560:CAPUT",
+     "text": "O direito de revogar a doação não se transmite aos herdeiros do doador, nem prejudica os do donatário. Mas aqueles podem prosseguir na ação iniciada pelo doador, continuando-a contra os herdeiros do donatário, se este falecer depois de ajuizada a lide."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O direito de revogar a doação não se transmite aos herdeiros do doador, nem prejudica os do donatário. Mas aqueles podem prosseguir na ação iniciada pelo doador, continuando-a contra os herdeiros do donatário, se este falecer depois de ajuizada a lide.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8188402fea08514010b173e605d4c910d58b787e550f1d2dd0531343db58a78d",
+     "o_que_significa": "72a0de07247e57226fe09ac5aabb26a340f8f4327ed56d2e2271fba45cf063ad",
+     "exemplo_pratico": "3f7d92de32cffc18b0952aabae8b1315f9f65a52d2e0369d44fcf1e84885296e",
+     "atencao": "f51013903a122f5380b7a379424ea77fa11adf8dd4cd6150392dad9274b45be8",
+     "palavras_dificeis": "edb3987ed0f93c1a83a7c44232df3cc8f1ec58e420556b4d42f2c62b52b9cf49"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.560, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O direito de iniciar revogação não passa aos herdeiros do doador nem atinge automaticamente os do donatário. Se a ação já começou, porém, pode prosseguir entre os respectivos sucessores.’. O campo de atenção registra: ‘Sem ação iniciada pelo doador, os herdeiros não podem inaugurar o pedido, ressalvada a exceção específica do homicídio doloso.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 43,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 432,
+   "target_id": "CC2002:ART.561",
+   "explanation_id": "ENTENDA/CC2002:ART.561/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.561:CAPUT\tNo caso de homicídio doloso do doador, a ação caberá aos seus herdeiros, exceto se aquele houver perdoado.",
+   "source_snapshot_sha256": "010ee20696ff7c6396590459e4f01ada24807a5907547cf47462af45436447f9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.561:CAPUT",
+     "text": "No caso de homicídio doloso do doador, a ação caberá aos seus herdeiros, exceto se aquele houver perdoado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: No caso de homicídio doloso do doador, a ação caberá aos seus herdeiros, exceto se aquele houver perdoado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "3af85711a6216294407d6fb046ed769678a32eed5655a2d5e4a600178fb55b20",
+     "o_que_significa": "5028b0a361e7aa5c54e2c17ae7cb306d6ecf17102ba40f37331d732bfedf2478",
+     "exemplo_pratico": "dc2c585aab7439ae0ddb9c694a76829c16b6b4b2e5d3cddc5523cb499309f554",
+     "atencao": "338de1fe1ff0dc1c02c47991c82ba8307c0da90f302734db524df2535af0a827",
+     "palavras_dificeis": "0c33c149682b9d04e9bdca6e0c65aa52d88a5a17f7b1f74d7e511f48e4989e3a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.561, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se o doador for vítima de homicídio doloso praticado pelo donatário, seus herdeiros podem pedir a revogação, salvo perdão do falecido.’. O campo de atenção registra: ‘É necessária conduta dolosa e ausência de perdão. A exceção não autoriza herdeiros a iniciar ação em qualquer outra hipótese de ingratidão.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 44,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 433,
+   "target_id": "CC2002:ART.562",
+   "explanation_id": "ENTENDA/CC2002:ART.562/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.562:CAPUT\tA doação onerosa pode ser revogada por inexecução do encargo, se o donatário incorrer em mora. Não havendo prazo para o cumprimento, o doador poderá notificar judicialmente o donatário, assinando-lhe prazo razoável para que cumpra a obrigação assumida.",
+   "source_snapshot_sha256": "35a83cfc783c57be44e79d809c596a304f8943606068736f4fe437711484459b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.562:CAPUT",
+     "text": "A doação onerosa pode ser revogada por inexecução do encargo, se o donatário incorrer em mora. Não havendo prazo para o cumprimento, o doador poderá notificar judicialmente o donatário, assinando-lhe prazo razoável para que cumpra a obrigação assumida."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A doação onerosa pode ser revogada por inexecução do encargo, se o donatário incorrer em mora. Não havendo prazo para o cumprimento, o doador poderá notificar judicialmente o donatário, assinando-lhe prazo razoável para que cumpra a obrigação assumida.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "07d2bd7cda71409a08c6bec170cf6d2a25a185ae25a72f1be3931f5566c62d15",
+     "o_que_significa": "d269d22a1fa82e77e25239f26efe791650db6996d6a327b93b8ce11054672491",
+     "exemplo_pratico": "278715457f8cf1d1918b03264381a414731b081258faa697bcadbe34af318ab5",
+     "atencao": "40600f096e7fb525a2d04b36012a42cabfc3aca591390884a2ecc9b382d6aea6",
+     "palavras_dificeis": "2404134ae01199b571bf5989fa84a1547211bb7df0c8a12fcf72185fc27649b7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.562, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A doação com encargo pode ser revogada quando o donatário, em mora, não o cumpre. Sem prazo definido, o doador pode notificá-lo judicialmente e conceder período razoável.’. O campo de atenção registra: ‘Descumprimento e mora precisam ser demonstrados. A revogação não deve ser confundida com a cobrança direta do encargo.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 45,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 434,
+   "target_id": "CC2002:ART.563",
+   "explanation_id": "ENTENDA/CC2002:ART.563/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.563:CAPUT\tA revogação por ingratidão não prejudica os direitos adquiridos por terceiros, nem obriga o donatário a restituir os frutos percebidos antes da citação válida; mas sujeita-o a pagar os posteriores, e, quando não possa restituir em espécie as coisas doadas, a indenizá-la pelo meio termo do seu valor.",
+   "source_snapshot_sha256": "033c889f6da3ddc9c3f5b6235e8742072c4b83c03660d733cc26b85341a709a5",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.563:CAPUT",
+     "text": "A revogação por ingratidão não prejudica os direitos adquiridos por terceiros, nem obriga o donatário a restituir os frutos percebidos antes da citação válida; mas sujeita-o a pagar os posteriores, e, quando não possa restituir em espécie as coisas doadas, a indenizá-la pelo meio termo do seu valor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A revogação por ingratidão não prejudica os direitos adquiridos por terceiros, nem obriga o donatário a restituir os frutos percebidos antes da citação válida; mas sujeita-o a pagar os posteriores, e, quando não possa restituir em espécie as coisas doadas, a indenizá-la pelo meio termo do seu valor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d77def55fa7cc0330a841047e55f5add87826fad753c3f96212fb836eb17a8aa",
+     "o_que_significa": "b3a7b0c70de76d0dd11377ada89bbbd45c64697eb04621c8279341410429c317",
+     "exemplo_pratico": "bc1598d281650f6805167d9894dd0f1fb1f2bb5af7beb8e20eba4e5f056b9e37",
+     "atencao": "ed8218c0a64c8d6f3da74188f75cb3ce6d487a9c88b333f362362a613f09d85d",
+     "palavras_dificeis": "483f47ea7b2e7e5d7c6b2344a26810269fb9cedc7b72f87fd96552d4411a9f13"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.563, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A revogação por ingratidão preserva direitos de terceiros e frutos anteriores à citação válida. O donatário deve entregar os frutos posteriores e, se não puder devolver o bem, indenizar por valor intermediário.’. O campo de atenção registra: ‘O artigo disciplina ingratidão. Direitos de terceiros não são apagados pela revogação, e a indenização não corresponde automaticamente ao maior valor possível.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 46,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 435,
+   "target_id": "CC2002:ART.564",
+   "explanation_id": "ENTENDA/CC2002:ART.564/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.564:CAPUT\tNão se revogam por ingratidão:\nCC2002:ART.564:INC.I\tas doações puramente remuneratórias;\nCC2002:ART.564:INC.II\tas oneradas com encargo já cumprido;\nCC2002:ART.564:INC.III\tas que se fizerem em cumprimento de obrigação natural;\nCC2002:ART.564:INC.IV\tas feitas para determinado casamento.",
+   "source_snapshot_sha256": "0e1cfc188ddb76fc424c330dfbe828efa61291798011879dd5bd430be61c9387",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.564:CAPUT",
+     "text": "Não se revogam por ingratidão:"
+    },
+    {
+     "label": "CC2002:ART.564:INC.I",
+     "text": "as doações puramente remuneratórias;"
+    },
+    {
+     "label": "CC2002:ART.564:INC.II",
+     "text": "as oneradas com encargo já cumprido;"
+    },
+    {
+     "label": "CC2002:ART.564:INC.III",
+     "text": "as que se fizerem em cumprimento de obrigação natural;"
+    },
+    {
+     "label": "CC2002:ART.564:INC.IV",
+     "text": "as feitas para determinado casamento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 5 segmentos vigentes do dispositivo: Não se revogam por ingratidão: | as doações puramente remuneratórias; | as oneradas com encargo já cumprido; | as que se fizerem em cumprimento de obrigação natural; | as feitas para determinado casamento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "abaa2192aed023ca533a793f32dd40d3680d607790adef96bc2006ebe4b8a0ad",
+     "o_que_significa": "4fdb6a51d9eaf2f860ea6589023909c97863f9f4bbf66c63f10bf8792fc0c76c",
+     "exemplo_pratico": "9b10adbcd49115222dbac3ce93ba111f088b8a21014776a41dd29cb232329db6",
+     "atencao": "12bc05c88e0c85ba0a4284b60afcb33574a9300ba260ef864e4c9bbdf20162ac",
+     "palavras_dificeis": "5318cb04eac0fdac0a8f64f5f783920648b02bd59852fb096fa586daec2d1dc9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.564, foram cotejados individualmente 5 segmento(s) vigente(s) (CAPUT, INC.I, INC.II, INC.III, INC.IV) com os cinco campos ENTENDA. A síntese ativa informa: ‘Não cabe revogação por ingratidão nas doações remuneratórias, nas doações com encargo já cumprido, nas feitas para satisfazer obrigação natural ou para casamento determinado.’. O campo de atenção registra: ‘A exclusão é específica da ingratidão. Outros defeitos do negócio ou causas legais distintas não são automaticamente afastados.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 47,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 436,
+   "target_id": "CC2002:ART.565",
+   "explanation_id": "ENTENDA/CC2002:ART.565/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.565:CAPUT\tNa locação de coisas, uma das partes se obriga a ceder à outra, por tempo determinado ou não, o uso e gozo de coisa não fungível, mediante certa retribuição.",
+   "source_snapshot_sha256": "1638899619f0d3368a17a2698001c3aa1adf00956ba7d90c8914db384b2e00c9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.565:CAPUT",
+     "text": "Na locação de coisas, uma das partes se obriga a ceder à outra, por tempo determinado ou não, o uso e gozo de coisa não fungível, mediante certa retribuição."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Na locação de coisas, uma das partes se obriga a ceder à outra, por tempo determinado ou não, o uso e gozo de coisa não fungível, mediante certa retribuição.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "500569d7c0d166120a823b260be37176803879a130adc5711cb15dd71175ec7f",
+     "o_que_significa": "fb045258c75cb6b9b52b63c5989e8a6394fa0acd83909bd2dfc5e773d53ab40b",
+     "exemplo_pratico": "6eabd3530769eb8a696a85c0e4c331b2c243d92ea113ffa7527ffc6051f84983",
+     "atencao": "e61a95409954c5537a1a2dea283cc1d82a44a0bdca9e2693dd14955c4d2633f0",
+     "palavras_dificeis": "67b181bc4d6903505ab9522f65fb3909938bc02a97ca65122fb722b8dcdcae84"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.565, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Locação de coisa é o contrato pelo qual se cede, mediante remuneração, o uso e a fruição de bem não fungível por prazo determinado ou indeterminado.’. O campo de atenção registra: ‘Regras especiais podem reger certas locações. Coisa consumível substituível e empréstimo gratuito pertencem a regimes jurídicos diferentes.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 48,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 437,
+   "target_id": "CC2002:ART.566",
+   "explanation_id": "ENTENDA/CC2002:ART.566/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.566:CAPUT\tO locador é obrigado:\nCC2002:ART.566:INC.I\ta entregar ao locatário a coisa alugada, com suas pertenças, em estado de servir ao uso a que se destina, e a mantê-la nesse estado, pelo tempo do contrato, salvo cláusula expressa em contrário;\nCC2002:ART.566:INC.II\ta garantir-lhe, durante o tempo do contrato, o uso pacífico da coisa.",
+   "source_snapshot_sha256": "2c2eccdf6ba9b4a261c52b16f12868842eb0bc33021ed15c55056929e1294e49",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.566:CAPUT",
+     "text": "O locador é obrigado:"
+    },
+    {
+     "label": "CC2002:ART.566:INC.I",
+     "text": "a entregar ao locatário a coisa alugada, com suas pertenças, em estado de servir ao uso a que se destina, e a mantê-la nesse estado, pelo tempo do contrato, salvo cláusula expressa em contrário;"
+    },
+    {
+     "label": "CC2002:ART.566:INC.II",
+     "text": "a garantir-lhe, durante o tempo do contrato, o uso pacífico da coisa."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: O locador é obrigado: | a entregar ao locatário a coisa alugada, com suas pertenças, em estado de servir ao uso a que se destina, e a mantê-la nesse estado, pelo tempo do contrato, salvo cláusula expressa em contrário; | a garantir-lhe, durante o tempo do contrato, o uso pacífico da coisa.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f264b05b1875a6826eb2a65805fb3233212a8273097da0525d17ab098e6b7c3c",
+     "o_que_significa": "956dc1b0c4dd36b51edfad885902773bcb46b1f1ca539f9806e57ae5f8ccdab6",
+     "exemplo_pratico": "7e881b0f6899c5f92ceb1fbf44cda5c4c12f62a0379706ad80bb32ddbd3ce635",
+     "atencao": "3b92b760d3ac7454c69357d21ddefc4a7da75c68fffed244f09e75eb499caee5",
+     "palavras_dificeis": "7ba41edd231f3dc0f005291dd623d04526f49c5753c8f92bb739fd87c5bd9adc"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.566, foram cotejados individualmente 3 segmento(s) vigente(s) (CAPUT, INC.I, INC.II) com os cinco campos ENTENDA. A síntese ativa informa: ‘O locador deve entregar a coisa e suas pertenças em condições de uso, conservá-la assim durante o contrato, salvo pacto expresso, e assegurar posse tranquila ao locatário.’. O campo de atenção registra: ‘Cláusula expressa pode redistribuir a manutenção dentro dos limites aplicáveis. Desgaste causado pelo locatário não é dever normal do locador.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 49,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 438,
+   "target_id": "CC2002:ART.567",
+   "explanation_id": "ENTENDA/CC2002:ART.567/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.567:CAPUT\tSe, durante a locação, se deteriorar a coisa alugada, sem culpa do locatário, a este caberá pedir redução proporcional do aluguel, ou resolver o contrato, caso já não sirva a coisa para o fim a que se destinava.",
+   "source_snapshot_sha256": "ecdf925c21429d728a9a9f3b038d9d2368f3faa904d496f2630c1c198baab4be",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.567:CAPUT",
+     "text": "Se, durante a locação, se deteriorar a coisa alugada, sem culpa do locatário, a este caberá pedir redução proporcional do aluguel, ou resolver o contrato, caso já não sirva a coisa para o fim a que se destinava."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se, durante a locação, se deteriorar a coisa alugada, sem culpa do locatário, a este caberá pedir redução proporcional do aluguel, ou resolver o contrato, caso já não sirva a coisa para o fim a que se destinava.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "dd1fd4bc6384a846d2966f7e33020aecda45bd7d77aee6429713ac30b89bb577",
+     "o_que_significa": "e2fde25f352fa973df5f7d16e72986aa9b000648c3537b72bbe60ac154176473",
+     "exemplo_pratico": "33e27e62edccaaf84cb5f852f6cd0929aa8c9b8a78255c7c656e4fc69cf5b94b",
+     "atencao": "0b74b6722aaa4f455f04f7407d381dda89ed9ffbf05fab12d3c87eb8fa0e5173",
+     "palavras_dificeis": "b7f529e55a0fcd92809751eb4cd727319d08b1c2d2c2608e574da0c9fb9c9f5e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.567, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se a coisa se deteriora sem culpa do locatário, ele pode obter redução proporcional do aluguel ou encerrar o contrato quando o bem já não atende à finalidade prevista.’. O campo de atenção registra: ‘É preciso provar deterioração, ausência de culpa e impacto funcional. A resolução não decorre de defeito irrelevante.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 50,
+   "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  }
+ ]
+}
