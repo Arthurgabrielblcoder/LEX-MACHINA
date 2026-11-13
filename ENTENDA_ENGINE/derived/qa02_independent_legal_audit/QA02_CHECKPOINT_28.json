@@ -1,0 +1,1434 @@
+{
+ "schema_version": 1,
+ "mission": "QA-02-WAVE-04",
+ "checkpoint": 28,
+ "as_of": "2026-11-12",
+ "source_queue": "QA02_PENDING_PRIORITY_WAVE_04.json",
+ "source_queue_sha256": "0933db90fea763f457c91b5ea30f1f39a688e6ba3e094f9479cb0bac541828b9",
+ "source_queue_positions": [
+  451,
+  475
+ ],
+ "examined": 25,
+ "target_ids": [
+  "CC2002:ART.1818",
+  "CC2002:ART.1822",
+  "CC2002:ART.1824",
+  "CC2002:ART.1826",
+  "CC2002:ART.1827",
+  "CC2002:ART.1830",
+  "CC2002:ART.1831",
+  "CC2002:ART.1832",
+  "CC2002:ART.1835",
+  "CC2002:ART.1836",
+  "CC2002:ART.1837",
+  "CC2002:ART.1843",
+  "CC2002:ART.1844",
+  "CC2002:ART.1845",
+  "CC2002:ART.1847",
+  "CC2002:ART.1848",
+  "CC2002:ART.1851",
+  "CC2002:ART.1853",
+  "CC2002:ART.1857",
+  "CC2002:ART.1859",
+  "CC2002:ART.1860",
+  "CC2002:ART.1864",
+  "CC2002:ART.1866",
+  "CC2002:ART.1867",
+  "CC2002:ART.1868"
+ ],
+ "findings": 4,
+ "finding_counts": {
+  "ALTO": 3,
+  "MÉDIO": 1
+ },
+ "protected_sha256": {
+  "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+  "lookup": "60f1de336f2f9ecbc5e671d0a6a9223cf20e47ab5826a5501b53f9a67551866e",
+  "payload": "9fb3f3a1b6f1c1926eda0818fc753f2d0348194cf25b0a333fc6fa18c48222cb"
+ },
+ "records": [
+  {
+   "queue_position": 451,
+   "target_id": "CC2002:ART.1818",
+   "explanation_id": "ENTENDA/CC2002:ART.1818/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1818:CAPUT\tAquele que incorreu em atos que determinem a exclusão da herança será admitido a suceder, se o ofendido o tiver expressamente reabilitado em testamento, ou em outro ato autêntico.\nCC2002:ART.1818:PAR.UNICO\tNão havendo reabilitação expressa, o indigno, contemplado em testamento do ofendido, quando o testador, ao testar, já conhecia a causa da indignidade, pode suceder no limite da disposição testamentária.",
+   "source_snapshot_sha256": "06a39220cf78dc6c0a5b9d0c51c5b319f2d16ec86db14a16ecdb98467a58f4a2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1818:CAPUT",
+     "text": "Aquele que incorreu em atos que determinem a exclusão da herança será admitido a suceder, se o ofendido o tiver expressamente reabilitado em testamento, ou em outro ato autêntico."
+    },
+    {
+     "label": "CC2002:ART.1818:PAR.UNICO",
+     "text": "Não havendo reabilitação expressa, o indigno, contemplado em testamento do ofendido, quando o testador, ao testar, já conhecia a causa da indignidade, pode suceder no limite da disposição testamentária."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Aquele que incorreu em atos que determinem a exclusão da herança será admitido a suceder, se o ofendido o tiver expressamente reabilitado em testamento, ou em outro ato autêntico. | Não havendo reabilitação expressa, o indigno, contemplado em testamento do ofendido, quando o testador, ao testar, já conhecia a causa da indignidade, pode suceder no limite da disposição testamentária.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "dd5e1ec1d424e7a3975e04f6eb1e3b4a5ca6a141ca925f287bd9392ce1e38339",
+     "o_que_significa": "8b0a266e3e1cc608dd941f45a25646018b5095876d56285eec61a196398bffad",
+     "exemplo_pratico": "6501963263a1d42b8e83f6098273d9ed23602880a61c1f825ddd38d06020201e",
+     "atencao": "c90476a4edce4301aba2ff3a51808bb70852c7c9d6a1f6cf4645f5ee09726e5c",
+     "palavras_dificeis": "745ff37e7c6644154d5941e1dbe420f618c4ca26198ab0d0feb16e22a936721f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — O ofendido pode reabilitar expressamente o indigno em testamento ou ato autêntico; disposição posterior, sabendo da causa, permite suceder no limite deixado. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 452,
+   "target_id": "CC2002:ART.1822",
+   "explanation_id": "ENTENDA/CC2002:ART.1822/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1822:CAPUT\tA declaração de vacância da herança não prejudicará os herdeiros que legalmente se habilitarem; mas, decorridos cinco anos da abertura da sucessão, os bens arrecadados passarão ao domínio do Município ou do Distrito Federal, se localizados nas respectivas circunscrições, incorporando-se ao domínio da União quando situados em território federal.\nCC2002:ART.1822:PAR.UNICO\tNão se habilitando até a declaração de vacância, os colaterais ficarão excluídos da sucessão.",
+   "source_snapshot_sha256": "b69937fef9e76fe91adcefa46beb46ef213f66ebfe284444d8a10e23c4ba1345",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1822:CAPUT",
+     "text": "A declaração de vacância da herança não prejudicará os herdeiros que legalmente se habilitarem; mas, decorridos cinco anos da abertura da sucessão, os bens arrecadados passarão ao domínio do Município ou do Distrito Federal, se localizados nas respectivas circunscrições, incorporando-se ao domínio da União quando situados em território federal."
+    },
+    {
+     "label": "CC2002:ART.1822:PAR.UNICO",
+     "text": "Não se habilitando até a declaração de vacância, os colaterais ficarão excluídos da sucessão."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A declaração de vacância da herança não prejudicará os herdeiros que legalmente se habilitarem; mas, decorridos cinco anos da abertura da sucessão, os bens arrecadados passarão ao domínio do Município ou do Distrito Federal, se localizados nas respectivas circunscrições, incorporando-se ao domínio da União quando situados em território federal. | Não se habilitando até a declaração de vacância, os colaterais ficarão excluídos da sucessão.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "28e68dfec4ef9cbdefaebceb323493fef59f6084c37e7d86395fae9f1a59d5a2",
+     "o_que_significa": "ebf6cc8b19e4154d8e4106c36306410a0a34a70872bdadf1d343288e34226782",
+     "exemplo_pratico": "44ae5e6f89d27525a1948f6553966f14bee25f75613bf865df3e773815bc5303",
+     "atencao": "ab99d6f117a910e159dc644638aa119bb022590c5cf54e1a2b215a6f782b44e0",
+     "palavras_dificeis": "dbed84d5621ba9be68716710dff933ff2130df45e9178f9b495451c0143da12f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — A vacância não prejudica habilitação oportuna, mas após cinco anos da morte os bens passam ao ente público competente conforme localização. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 453,
+   "target_id": "CC2002:ART.1824",
+   "explanation_id": "ENTENDA/CC2002:ART.1824/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    },
+    {
+     "url": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/pesquisa.jsp?cod_tema_final=1200&cod_tema_inicial=1200&novaConsulta=true&tipo_pesquisa=T",
+     "role": "BINDING_OR_COMPLEMENTARY_PRIMARY_SOURCE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1824:CAPUT\tO herdeiro pode, em ação de petição de herança, demandar o reconhecimento de seu direito sucessório, para obter a restituição da herança, ou de parte dela, contra quem, na qualidade de herdeiro, ou mesmo sem título, a possua.",
+   "source_snapshot_sha256": "9c7088936dbed3274b836c4d0039699a482d0de6de5a73695749999d0557593e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1824:CAPUT",
+     "text": "O herdeiro pode, em ação de petição de herança, demandar o reconhecimento de seu direito sucessório, para obter a restituição da herança, ou de parte dela, contra quem, na qualidade de herdeiro, ou mesmo sem título, a possua."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O herdeiro pode, em ação de petição de herança, demandar o reconhecimento de seu direito sucessório, para obter a restituição da herança, ou de parte dela, contra quem, na qualidade de herdeiro, ou mesmo sem título, a possua.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "25e1b62ba469af3add0471abdc0835100f2a3be42fc7e94293e6f50cdebcf26e",
+     "o_que_significa": "52d51d5c722a6df6c60c42ed99cec005e09fd1b988f7c4cdb38cd289f53c669d",
+     "exemplo_pratico": "2fe58952897b33d6c6b43b9a9016f350c263146a91c6c48b2b0f09dbb595778b",
+     "atencao": "51639417d992227c445738caa8692f438edb605da1a28455e9eb6c6c56f5b390",
+     "palavras_dificeis": "42e1506aa8a414a8d83b09e0444dd22450dd5755703a65a96ae512a5144b712c"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O Tema Repetitivo 1.200 do STJ fixou que o prazo prescricional da petição de herança se inicia na abertura da sucessão e não é impedido, suspenso ou interrompido pela ação de reconhecimento de filiação; a orientação também aplica o prazo geral decenal do art. 205 do Código Civil.",
+   "finding": {
+    "target_id": "CC2002:ART.1824",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "atencao",
+    "problematic_excerpt": "Questões de prescrição e boa-fé devem ser analisadas conforme jurisprudência e fatos.",
+    "legal_basis": "O Tema Repetitivo 1.200 do STJ fixou que o prazo prescricional da petição de herança se inicia na abertura da sucessão e não é impedido, suspenso ou interrompido pela ação de reconhecimento de filiação; a orientação também aplica o prazo geral decenal do art. 205 do Código Civil.",
+    "source_url": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/pesquisa.jsp?cod_tema_final=1200&cod_tema_inicial=1200&novaConsulta=true&tipo_pesquisa=T",
+    "nature": "OMISSAO_DE_PRECEDENTE_QUALIFICADO",
+    "severity": "MÉDIO",
+    "legal_or_pedagogical_consequence": "O alerta genérico não informa ao leitor o termo inicial objetivo já uniformizado em precedente qualificado, relevante para evitar a prescrição da pretensão hereditária.",
+    "correction_direction": "Indicar o prazo decenal e a tese do Tema 1.200 sobre contagem desde a abertura da sucessão, ressalvadas as causas legais gerais de suspensão ou interrupção aplicáveis ao caso.",
+    "confidence": "ALTA",
+    "human_review_required": false,
+    "checkpoint": 28,
+    "auditor": "/root/wave04_451_577"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 454,
+   "target_id": "CC2002:ART.1826",
+   "explanation_id": "ENTENDA/CC2002:ART.1826/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1826:CAPUT\tO possuidor da herança está obrigado à restituição dos bens do acervo, fixando-se-lhe a responsabilidade segundo a sua posse, observado o disposto nos arts. 1.214 a 1.222.\nCC2002:ART.1826:PAR.UNICO\tA partir da citação, a responsabilidade do possuidor se há de aferir pelas regras concernentes à posse de má-fé e à mora.",
+   "source_snapshot_sha256": "6bbc491dd6e6bcc3dff77a373f5c5cd6e06cf8f60f94628eeae4ab6eec2b2c3e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1826:CAPUT",
+     "text": "O possuidor da herança está obrigado à restituição dos bens do acervo, fixando-se-lhe a responsabilidade segundo a sua posse, observado o disposto nos arts. 1.214 a 1.222."
+    },
+    {
+     "label": "CC2002:ART.1826:PAR.UNICO",
+     "text": "A partir da citação, a responsabilidade do possuidor se há de aferir pelas regras concernentes à posse de má-fé e à mora."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O possuidor da herança está obrigado à restituição dos bens do acervo, fixando-se-lhe a responsabilidade segundo a sua posse, observado o disposto nos arts. 1.214 a 1.222. | A partir da citação, a responsabilidade do possuidor se há de aferir pelas regras concernentes à posse de má-fé e à mora.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7400fdc641a6693c35671844c411b7a7b7d87ba186d1ad60f4dbcc5ddccc616c",
+     "o_que_significa": "2214bbf3ba1066f881cac014e134e44397d841d1df0633ec5cc10f2cb9fff61e",
+     "exemplo_pratico": "9a6e415c46e4ca3a0d49ceb66b396981aa5a3b4d0fcfefd0489b1ca69fe25e45",
+     "atencao": "225ca33a5ec5ca1a703fad0aa4651560486613441470a7b87b3253a76cf8d2ea",
+     "palavras_dificeis": "3b65b5fa96ea3c1fa83cfb73bad7ab9f89a11bf705136058780498b096c8164a"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O parágrafo único do art. 1.826 determina regra objetiva específica: a partir da citação, a responsabilidade do possuidor é aferida pelas normas da posse de má-fé e da mora.",
+   "finding": {
+    "target_id": "CC2002:ART.1826",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "respondendo segundo boa ou má-fé e as regras gerais de posse",
+    "legal_basis": "O parágrafo único do art. 1.826 determina regra objetiva específica: a partir da citação, a responsabilidade do possuidor é aferida pelas normas da posse de má-fé e da mora.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_MARCO_DE_RESPONSABILIDADE",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A explicação não permite identificar que a citação altera obrigatoriamente o regime de responsabilidade, inclusive com incidência da mora.",
+    "correction_direction": "Acrescentar expressamente que, desde a citação, aplicam-se as regras da posse de má-fé e da mora.",
+    "confidence": "ALTA",
+    "human_review_required": false,
+    "checkpoint": 28,
+    "auditor": "/root/wave04_451_577"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 455,
+   "target_id": "CC2002:ART.1827",
+   "explanation_id": "ENTENDA/CC2002:ART.1827/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1827:CAPUT\tO herdeiro pode demandar os bens da herança, mesmo em poder de terceiros, sem prejuízo da responsabilidade do possuidor originário pelo valor dos bens alienados.\nCC2002:ART.1827:PAR.UNICO\tSão eficazes as alienações feitas, a título oneroso, pelo herdeiro aparente a terceiro de boa-fé.",
+   "source_snapshot_sha256": "f9ab3f0b1821bd0ab17ffcb888cede61fd48a356514dedf60a826beced38f7a2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1827:CAPUT",
+     "text": "O herdeiro pode demandar os bens da herança, mesmo em poder de terceiros, sem prejuízo da responsabilidade do possuidor originário pelo valor dos bens alienados."
+    },
+    {
+     "label": "CC2002:ART.1827:PAR.UNICO",
+     "text": "São eficazes as alienações feitas, a título oneroso, pelo herdeiro aparente a terceiro de boa-fé."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O herdeiro pode demandar os bens da herança, mesmo em poder de terceiros, sem prejuízo da responsabilidade do possuidor originário pelo valor dos bens alienados. | São eficazes as alienações feitas, a título oneroso, pelo herdeiro aparente a terceiro de boa-fé.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9b6f0f2176cbc0c8142473f9e99ef4c028aade0cc3bc5018dfcbc2b8cb77ae5d",
+     "o_que_significa": "9e4ec32bc32169aa1c15e46619b076dd91d5e42ed471cfb2c16adb52fbf98e93",
+     "exemplo_pratico": "b6b02efcc2c310f87f88a9020e046ab32540a7f11d499e7672702689fab62a77",
+     "atencao": "2f4bed51e25565ff69e3f5b61d96ddb224762b10fa00e73176e1de2139221702",
+     "palavras_dificeis": "7b9251c9e185700a0dd8029d4d4a65a77ad8119bf6d5956162a7f57b2876d0a9"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O parágrafo único do art. 1.827 declara eficaz a alienação onerosa realizada pelo herdeiro aparente a terceiro de boa-fé, exceção material à recuperação do bem hereditário.",
+   "finding": {
+    "target_id": "CC2002:ART.1827",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "preservada a responsabilidade do possuidor originário pelo que alienou",
+    "legal_basis": "O parágrafo único do art. 1.827 declara eficaz a alienação onerosa realizada pelo herdeiro aparente a terceiro de boa-fé, exceção material à recuperação do bem hereditário.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_EXCECAO_PROTETIVA",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "O leitor pode concluir que todo bem alienado é perseguível contra o terceiro, ignorando a eficácia da aquisição onerosa e de boa-fé.",
+    "correction_direction": "Explicitar a preservação da alienação onerosa feita pelo herdeiro aparente ao terceiro de boa-fé e separar essa hipótese da responsabilidade do alienante.",
+    "confidence": "ALTA",
+    "human_review_required": false,
+    "checkpoint": 28,
+    "auditor": "/root/wave04_451_577"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 456,
+   "target_id": "CC2002:ART.1830",
+   "explanation_id": "ENTENDA/CC2002:ART.1830/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1830:CAPUT\tSomente é reconhecido direito sucessório ao cônjuge sobrevivente se, ao tempo da morte do outro, não estavam separados judicialmente, nem separados de fato há mais de dois anos, salvo prova, neste caso, de que essa convivência se tornara impossível sem culpa do sobrevivente.",
+   "source_snapshot_sha256": "5655b3974d7b068fbe3b6188327fd06725f1a3dc6a5e8d3145fff78ea1d8cb5c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1830:CAPUT",
+     "text": "Somente é reconhecido direito sucessório ao cônjuge sobrevivente se, ao tempo da morte do outro, não estavam separados judicialmente, nem separados de fato há mais de dois anos, salvo prova, neste caso, de que essa convivência se tornara impossível sem culpa do sobrevivente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Somente é reconhecido direito sucessório ao cônjuge sobrevivente se, ao tempo da morte do outro, não estavam separados judicialmente, nem separados de fato há mais de dois anos, salvo prova, neste caso, de que essa convivência se tornara impossível sem culpa do sobrevivente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "36c244cc434255db52c8dfb9f15621218238ba7f91d000f893aea617f77fbf81",
+     "o_que_significa": "4c78eb3899d9d1bcdb18d3dd07e1d3c76dce6eb31ee55b03eddc8725c4899608",
+     "exemplo_pratico": "ba3fc8eba9f3453c07048d475c4b318d428efdd421ded5f3a1612bbfd26ff379",
+     "atencao": "b1f15674c74cb83c53a79e51ffa98d08289da3a9038d3a88deb14a98bb9c4e0a",
+     "palavras_dificeis": "d4707f6106934d3c545d4556e4bc4a207d3ae74ae9d8bbfd63710cd9c593dd5a"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O art. 1.830 estabelece critério temporal expresso de separação de fato há mais de dois anos e, nessa hipótese, ressalva a prova de que a convivência se tornou impossível sem culpa do sobrevivente.",
+   "finding": {
+    "target_id": "CC2002:ART.1830",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "separação judicial ou de fato prolongada",
+    "legal_basis": "O art. 1.830 estabelece critério temporal expresso de separação de fato há mais de dois anos e, nessa hipótese, ressalva a prova de que a convivência se tornou impossível sem culpa do sobrevivente.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_PRAZO_LEGAL",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A expressão indeterminada 'prolongada' omite o marco de dois anos que define literalmente a incidência da ressalva sucessória.",
+    "correction_direction": "Informar o prazo legal de mais de dois anos e explicar separadamente a ressalva probatória prevista no dispositivo.",
+    "confidence": "ALTA",
+    "human_review_required": false,
+    "checkpoint": 28,
+    "auditor": "/root/wave04_451_577"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 457,
+   "target_id": "CC2002:ART.1831",
+   "explanation_id": "ENTENDA/CC2002:ART.1831/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1831:CAPUT\tAo cônjuge sobrevivente, qualquer que seja o regime de bens, será assegurado, sem prejuízo da participação que lhe caiba na herança, o direito real de habitação relativamente ao imóvel destinado à residência da família, desde que seja o único daquela natureza a inventariar.",
+   "source_snapshot_sha256": "a9fa0073a8bcce0b120f15ac9d2768fa8e50476830a3c5c9996115ac1355f0fd",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1831:CAPUT",
+     "text": "Ao cônjuge sobrevivente, qualquer que seja o regime de bens, será assegurado, sem prejuízo da participação que lhe caiba na herança, o direito real de habitação relativamente ao imóvel destinado à residência da família, desde que seja o único daquela natureza a inventariar."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Ao cônjuge sobrevivente, qualquer que seja o regime de bens, será assegurado, sem prejuízo da participação que lhe caiba na herança, o direito real de habitação relativamente ao imóvel destinado à residência da família, desde que seja o único daquela natureza a inventariar.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ff2a7c135e4e2417ab638a65e97705229e872f65a5fb685b7690c4a6b5054529",
+     "o_que_significa": "fe2576bd19838fd4ad733265dc6842f421e40c9fc7f0392ed558df8b4e7051bd",
+     "exemplo_pratico": "6efeb685e51ab956adb182967d3aff6c5de79e336acd42253b4cdd137a7db09b",
+     "atencao": "02f851e2631685ec3d0f044bca48a45de602459fe12983e39dfb39c79de53252",
+     "palavras_dificeis": "a5450b203a36a588d7a38732522c602fce37c68b112d3a9dffec00c8642b3241"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — O sobrevivente conserva direito real de morar no único imóvel residencial familiar do inventário, além da herança que lhe couber. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 458,
+   "target_id": "CC2002:ART.1832",
+   "explanation_id": "ENTENDA/CC2002:ART.1832/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1832:CAPUT\tEm concorrência com os descendentes (art. 1.829, inciso I) caberá ao cônjuge quinhão igual ao dos que sucederem por cabeça, não podendo a sua quota ser inferior à quarta parte da herança, se for ascendente dos herdeiros com que concorrer.",
+   "source_snapshot_sha256": "25247aca16de25ff8423f60d65f4da0b0c1bf77d4d75e96794810f0aa21d5b67",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1832:CAPUT",
+     "text": "Em concorrência com os descendentes (art. 1.829, inciso I) caberá ao cônjuge quinhão igual ao dos que sucederem por cabeça, não podendo a sua quota ser inferior à quarta parte da herança, se for ascendente dos herdeiros com que concorrer."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Em concorrência com os descendentes (art. 1.829, inciso I) caberá ao cônjuge quinhão igual ao dos que sucederem por cabeça, não podendo a sua quota ser inferior à quarta parte da herança, se for ascendente dos herdeiros com que concorrer.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ed93c889b0e08225dfc168d2f0b240628cbc0fe57ff0371be3c371961c20d8a5",
+     "o_que_significa": "4f3d55dd4a54217330c308c191d9fe64128d879066192b9956497d9141dd97d6",
+     "exemplo_pratico": "4a8e263aa8d6f99d9ba53fe822feb8341fd392d7a2d1a8076ce04a561f962a5c",
+     "atencao": "4efd0f76c36142fb1dee1ec619097f6d324b367cde4d93a3c73dda2c82f2b078",
+     "palavras_dificeis": "f3827979900fe92cb9a636f099cc926aa8cdafc9cf4dd6de584f34dc21eba360"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Concorrendo com descendentes, o cônjuge recebe quota igual à de quem herda por cabeça e, sendo ascendente comum, tem piso de um quarto. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 459,
+   "target_id": "CC2002:ART.1835",
+   "explanation_id": "ENTENDA/CC2002:ART.1835/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1835:CAPUT\tNa linha descendente, os filhos sucedem por cabeça, e os outros descendentes, por cabeça ou por estirpe, conforme se achem ou não no mesmo grau.",
+   "source_snapshot_sha256": "5bc55bda284607db8aaf7d09822b18bc25bc5cb483cc4c9463b2bccd502dcaf8",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1835:CAPUT",
+     "text": "Na linha descendente, os filhos sucedem por cabeça, e os outros descendentes, por cabeça ou por estirpe, conforme se achem ou não no mesmo grau."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Na linha descendente, os filhos sucedem por cabeça, e os outros descendentes, por cabeça ou por estirpe, conforme se achem ou não no mesmo grau.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e6e8ea0ce2862433df8004aea08c0630ee7505ed3465104f7f510649a659bbdd",
+     "o_que_significa": "663ccb6316aaf85bdafc3b86ecc938109471f3590165520fee03d747edc06973",
+     "exemplo_pratico": "50e65cdf28373f89339ea17c22948ed908aad044552a7f9604993c9f29b00ff2",
+     "atencao": "8a1998683b0ae69538463ff52af10e85ac6be4fdd27bebb9229b92b8c33c9ed2",
+     "palavras_dificeis": "030c2c05871144d497b51e1776b49034b6a15cd339335fcc3f10c353c3ef0bf5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Filhos dividem por pessoa; outros descendentes recebem por pessoa ou por ramo conforme estejam no mesmo grau ou representem ascendente. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 460,
+   "target_id": "CC2002:ART.1836",
+   "explanation_id": "ENTENDA/CC2002:ART.1836/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1836:CAPUT\tNa falta de descendentes, são chamados à sucessão os ascendentes, em concorrência com o cônjuge sobrevivente.\nCC2002:ART.1836:PAR.1\to Na classe dos ascendentes, o grau mais próximo exclui o mais remoto, sem distinção de linhas.\nCC2002:ART.1836:PAR.2\to Havendo igualdade em grau e diversidade em linha, os ascendentes da linha paterna herdam a metade, cabendo a outra aos da linha materna.",
+   "source_snapshot_sha256": "4d370a6d3d185e58c9c167e48f63f4e4dede99326d111162f9f46f3f5bb1890c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1836:CAPUT",
+     "text": "Na falta de descendentes, são chamados à sucessão os ascendentes, em concorrência com o cônjuge sobrevivente."
+    },
+    {
+     "label": "CC2002:ART.1836:PAR.1",
+     "text": "o Na classe dos ascendentes, o grau mais próximo exclui o mais remoto, sem distinção de linhas."
+    },
+    {
+     "label": "CC2002:ART.1836:PAR.2",
+     "text": "o Havendo igualdade em grau e diversidade em linha, os ascendentes da linha paterna herdam a metade, cabendo a outra aos da linha materna."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Na falta de descendentes, são chamados à sucessão os ascendentes, em concorrência com o cônjuge sobrevivente. | o Na classe dos ascendentes, o grau mais próximo exclui o mais remoto, sem distinção de linhas. | o Havendo igualdade em grau e diversidade em linha, os ascendentes da linha paterna herdam a metade, cabendo a outra aos da linha materna.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "abf8c5443e2eecd439fff0faab576b14d8f62f8f16434e3f6a84c7712866f309",
+     "o_que_significa": "a3fdfe65e2bba004fb54e77177e4a370a1d0341713da715ccd8d2460c5820da4",
+     "exemplo_pratico": "49f279e66cf533b251ff0dbd7b43974c4882eac645be41b00e8799390b459570",
+     "atencao": "07524d9c9dd3acccb3e0f45f2d6865321b8ab9d85565be105d49e3502418a83f",
+     "palavras_dificeis": "87251d3ddf89cc753aee531d6e8583c28cbb892fd9ed3d34de6aed11d149073b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Sem descendentes, ascendentes concorrem com o cônjuge; o grau próximo exclui o remoto e linhas paterna e materna dividem igualmente quando equivalentes. — foi confrontada com os 3 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 461,
+   "target_id": "CC2002:ART.1837",
+   "explanation_id": "ENTENDA/CC2002:ART.1837/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1837:CAPUT\tConcorrendo com ascendente em primeiro grau, ao cônjuge tocará um terço da herança; caber-lhe-á a metade desta se houver um só ascendente, ou se maior for aquele grau.",
+   "source_snapshot_sha256": "2173f9a1e638842e35d80c70a6f228d619d5845d2232dece4445f518e2bfd913",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1837:CAPUT",
+     "text": "Concorrendo com ascendente em primeiro grau, ao cônjuge tocará um terço da herança; caber-lhe-á a metade desta se houver um só ascendente, ou se maior for aquele grau."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Concorrendo com ascendente em primeiro grau, ao cônjuge tocará um terço da herança; caber-lhe-á a metade desta se houver um só ascendente, ou se maior for aquele grau.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f395221c669749dbd5d81066b5ecc13baf1e62908d9aa8ca65c89e845415424f",
+     "o_que_significa": "5cec7c3e9126610cba02c1f1233834952d4a54cb644a8df5cee5657eb5879b48",
+     "exemplo_pratico": "28c75f251d0e93f2e688e9c1696e3673efa9998be1ae517ed8dc69b5490d5180",
+     "atencao": "6a73a01aa18b58807fad6076ba357097ee8f8508ef31a98d976418a65059fe9e",
+     "palavras_dificeis": "b3036893939a2f489b6f831e412f6501c21091382c6587873b654ccb438490c3"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Na concorrência com pai e mãe, o cônjuge recebe um terço; recebe metade se houver apenas um ascendente de primeiro grau ou ascendentes mais remotos. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 462,
+   "target_id": "CC2002:ART.1843",
+   "explanation_id": "ENTENDA/CC2002:ART.1843/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1843:CAPUT\tNa falta de irmãos, herdarão os filhos destes e, não os havendo, os tios.\nCC2002:ART.1843:PAR.1\to Se concorrerem à herança somente filhos de irmãos falecidos, herdarão por cabeça.\nCC2002:ART.1843:PAR.2\to Se concorrem filhos de irmãos bilaterais com filhos de irmãos unilaterais, cada um destes herdará a metade do que herdar cada um daqueles.\nCC2002:ART.1843:PAR.3\to Se todos forem filhos de irmãos bilaterais, ou todos de irmãos unilaterais, herdarão por igual.",
+   "source_snapshot_sha256": "cc1937c931fda4737a728b252a1582df70c5b3083791f357942628033881b05e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1843:CAPUT",
+     "text": "Na falta de irmãos, herdarão os filhos destes e, não os havendo, os tios."
+    },
+    {
+     "label": "CC2002:ART.1843:PAR.1",
+     "text": "o Se concorrerem à herança somente filhos de irmãos falecidos, herdarão por cabeça."
+    },
+    {
+     "label": "CC2002:ART.1843:PAR.2",
+     "text": "o Se concorrem filhos de irmãos bilaterais com filhos de irmãos unilaterais, cada um destes herdará a metade do que herdar cada um daqueles."
+    },
+    {
+     "label": "CC2002:ART.1843:PAR.3",
+     "text": "o Se todos forem filhos de irmãos bilaterais, ou todos de irmãos unilaterais, herdarão por igual."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: Na falta de irmãos, herdarão os filhos destes e, não os havendo, os tios. | o Se concorrerem à herança somente filhos de irmãos falecidos, herdarão por cabeça. | o Se concorrem filhos de irmãos bilaterais com filhos de irmãos unilaterais, cada um destes herdará a metade do que herdar cada um daqueles. | o Se todos forem filhos de irmãos bilaterais, ou todos de irmãos unilaterais, herdarão por igual.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c1961c1817b90b45c3ebea357d2a1dcef57492237a2766461a9081538f71c1b5",
+     "o_que_significa": "eaab548d13bd9a6c9bbbdc60b318b546d32b39d305c6e8f1f229f538fc79b5ee",
+     "exemplo_pratico": "cda881f6539bb99718a50fb720c2fe6a3f5e7963741a7b72742d48d9e642eb25",
+     "atencao": "fa8ff9428ae44f1d6c741d3835352c5023b10927034e9a412454e0b2feba7f7b",
+     "palavras_dificeis": "4762329b8c2c4759ea03459ca8d5cbee763593babaa3054719da0f8e10e6247a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Sem irmãos, sucedem os sobrinhos e, na falta deles, os tios; a divisão entre sobrinhos varia conforme a origem bilateral ou unilateral. — foi confrontada com os 4 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 463,
+   "target_id": "CC2002:ART.1844",
+   "explanation_id": "ENTENDA/CC2002:ART.1844/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1844:CAPUT\tNão sobrevivendo cônjuge, ou companheiro, nem parente algum sucessível, ou tendo eles renunciado a herança, esta se devolve ao Município ou ao Distrito Federal, se localizada nas respectivas circunscrições, ou à União, quando situada em território federal.",
+   "source_snapshot_sha256": "2d69f694e90c783b323ec76654f5a8d866a71725b89765133b479981ded05035",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1844:CAPUT",
+     "text": "Não sobrevivendo cônjuge, ou companheiro, nem parente algum sucessível, ou tendo eles renunciado a herança, esta se devolve ao Município ou ao Distrito Federal, se localizada nas respectivas circunscrições, ou à União, quando situada em território federal."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não sobrevivendo cônjuge, ou companheiro, nem parente algum sucessível, ou tendo eles renunciado a herança, esta se devolve ao Município ou ao Distrito Federal, se localizada nas respectivas circunscrições, ou à União, quando situada em território federal.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c5386a75fdbd64e165604eea9025743db4acdd3eacebc2ccaa5c00c4e66cd8f7",
+     "o_que_significa": "67d0af8ca57c9db1281a70a8a8cf0e44139247e5a514fc9ffd90c8637ea9f5c3",
+     "exemplo_pratico": "83c20253cef7966d9e35db0c70b654b314df7c3347fc895c0f369e7364ef5c47",
+     "atencao": "624ee614ef9edbef67877d4bc30e105f4b2c1b6135d0da1b569f495b53ea2ab2",
+     "palavras_dificeis": "55ae80460a17ed816afbfd872375d769820e330c1a735ec0bf920571a4803048"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Sem cônjuge, companheiro ou parente sucessível, ou havendo renúncia de todos, a herança cabe ao ente público indicado pela localização. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 464,
+   "target_id": "CC2002:ART.1845",
+   "explanation_id": "ENTENDA/CC2002:ART.1845/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1845:CAPUT\tSão herdeiros necessários os descendentes, os ascendentes e o cônjuge.",
+   "source_snapshot_sha256": "2941e8a47e41c091e2069bad1188a9739a07bf19d1d84dad812e19bb9254103b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1845:CAPUT",
+     "text": "São herdeiros necessários os descendentes, os ascendentes e o cônjuge."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: São herdeiros necessários os descendentes, os ascendentes e o cônjuge.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a2dbbb7d77b9ecaa630ee96a4e9417e45be56266e245adf6878ba9b7af9321e1",
+     "o_que_significa": "4d58c6971edf1888d56954c329a4c560255849f165d8c8909da0cef6e6b0d524",
+     "exemplo_pratico": "cdcd9823d1ecf94572262c04d5a48208c96a133e447f3674fc61d8b5178d0775",
+     "atencao": "415b7d2f42057a070a88a772c9796de38b174a21ce183101f28fb31c136fc94a",
+     "palavras_dificeis": "8f329ae9d8fc378f52768dc745cfee1390b1a23c949bfc887466416b12db7044"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Descendentes, ascendentes e cônjuge são herdeiros necessários. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 465,
+   "target_id": "CC2002:ART.1847",
+   "explanation_id": "ENTENDA/CC2002:ART.1847/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1847:CAPUT\tCalcula-se a legítima sobre o valor dos bens existentes na abertura da sucessão, abatidas as dívidas e as despesas do funeral, adicionando-se, em seguida, o valor dos bens sujeitos a colação.",
+   "source_snapshot_sha256": "26a23926a40e0a1876758bca70dd14e3146fe7cb12e5c3ff4b0ce385527beca8",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1847:CAPUT",
+     "text": "Calcula-se a legítima sobre o valor dos bens existentes na abertura da sucessão, abatidas as dívidas e as despesas do funeral, adicionando-se, em seguida, o valor dos bens sujeitos a colação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Calcula-se a legítima sobre o valor dos bens existentes na abertura da sucessão, abatidas as dívidas e as despesas do funeral, adicionando-se, em seguida, o valor dos bens sujeitos a colação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2e762fb252727c431d931a46098c5d5346838afc2061158939acb2facb32c386",
+     "o_que_significa": "d40f195b95737833294237378fd2e8c737b5416bc7804a6dd62e6b70b3bf47d4",
+     "exemplo_pratico": "f2bc790c6f2cffe2d28ebb3d43bc8fece96cc6beb1b68871ae4d27544b055246",
+     "atencao": "935ddcca611862307b4939a751553562ed8e1902ddb8d6ddc61c01e107a87579",
+     "palavras_dificeis": "664281eaf1697deb95ed564e97cd701d129c09466ed8cc20cc03784c1788d50a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — A legítima parte dos bens existentes na abertura, menos dívidas e funeral, acrescida do valor sujeito à colação. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 466,
+   "target_id": "CC2002:ART.1848",
+   "explanation_id": "ENTENDA/CC2002:ART.1848/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1848:CAPUT\tSalvo se houver justa causa, declarada no testamento, não pode o testador estabelecer cláusula de inalienabilidade, impenhorabilidade, e de incomunicabilidade, sobre os bens da legítima.\nCC2002:ART.1848:PAR.1\to Não é permitido ao testador estabelecer a conversão dos bens da legítima em outros de espécie diversa.\nCC2002:ART.1848:PAR.2\to Mediante autorização judicial e havendo justa causa, podem ser alienados os bens gravados, convertendo-se o produto em outros bens, que ficarão sub-rogados nos ônus dos primeiros.",
+   "source_snapshot_sha256": "8b694ea0a109b211726dea35a109073cf98df0939626fb7b9d2fe8bc691d1ca3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1848:CAPUT",
+     "text": "Salvo se houver justa causa, declarada no testamento, não pode o testador estabelecer cláusula de inalienabilidade, impenhorabilidade, e de incomunicabilidade, sobre os bens da legítima."
+    },
+    {
+     "label": "CC2002:ART.1848:PAR.1",
+     "text": "o Não é permitido ao testador estabelecer a conversão dos bens da legítima em outros de espécie diversa."
+    },
+    {
+     "label": "CC2002:ART.1848:PAR.2",
+     "text": "o Mediante autorização judicial e havendo justa causa, podem ser alienados os bens gravados, convertendo-se o produto em outros bens, que ficarão sub-rogados nos ônus dos primeiros."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Salvo se houver justa causa, declarada no testamento, não pode o testador estabelecer cláusula de inalienabilidade, impenhorabilidade, e de incomunicabilidade, sobre os bens da legítima. | o Não é permitido ao testador estabelecer a conversão dos bens da legítima em outros de espécie diversa. | o Mediante autorização judicial e havendo justa causa, podem ser alienados os bens gravados, convertendo-se o produto em outros bens, que ficarão sub-rogados nos ônus dos primeiros.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "004e253ed47f71a24b0b515267e874027b3ecac3d1c39b78b6211610bc9f60be",
+     "o_que_significa": "ea23e471386873808efaf6cf9b5651af8220cbe99bb22b3a133dfe5c5222c5c5",
+     "exemplo_pratico": "21790a557e241e04cadff2dd585057eb0cd0adae44e6febe2c46c4f6b527157a",
+     "atencao": "bee74eaecef440ba39efdf8b2908bfb46fe58a0f3b2eb59f71e6bd5ebc6bb86a",
+     "palavras_dificeis": "e22e60b398263fe95e3b7f169c35d88e11edb064529f11f63cfd25496624f837"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Restrições de alienar, penhorar ou comunicar bens da legítima exigem justa causa declarada; conversão e alienação dependem das condições legais. — foi confrontada com os 3 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 467,
+   "target_id": "CC2002:ART.1851",
+   "explanation_id": "ENTENDA/CC2002:ART.1851/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1851:CAPUT\tDá-se o direito de representação, quando a lei chama certos parentes do falecido a suceder em todos os direitos, em que ele sucederia, se vivo fosse.",
+   "source_snapshot_sha256": "607ee81a4f515800e34038bfcae6f7b494d5c200c12e7c7ab885e73c105a6b84",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1851:CAPUT",
+     "text": "Dá-se o direito de representação, quando a lei chama certos parentes do falecido a suceder em todos os direitos, em que ele sucederia, se vivo fosse."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Dá-se o direito de representação, quando a lei chama certos parentes do falecido a suceder em todos os direitos, em que ele sucederia, se vivo fosse.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6b61d5ee8136c960a9655d7e9f9e6ee3c2aa472ed7991b77af2a0aaea1eff293",
+     "o_que_significa": "0acbc778d3558b975d66bc846cdc43f0ea65cb23c5f8f6e766a4060663825eb4",
+     "exemplo_pratico": "90e60ce92ac4a3198f25eca9ef04e80ea84dd586d7b8d831874748edf75939f5",
+     "atencao": "12a68c37143ff408ea418f3a55f88003e3f4dd51d493fb38f2624a6085965afa",
+     "palavras_dificeis": "915919f22ce679a3ca5084b86f497655cd7f31800676ac69c6f83d3e294c36af"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — A representação chama determinados parentes para ocupar os direitos que caberiam ao representado se estivesse vivo. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 468,
+   "target_id": "CC2002:ART.1853",
+   "explanation_id": "ENTENDA/CC2002:ART.1853/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1853:CAPUT\tNa linha transversal, somente se dá o direito de representação em favor dos filhos de irmãos do falecido, quando com irmãos deste concorrerem.",
+   "source_snapshot_sha256": "2071db93dce197b0b40fc278403564f77f318a58c21ac78645a225d44def327f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1853:CAPUT",
+     "text": "Na linha transversal, somente se dá o direito de representação em favor dos filhos de irmãos do falecido, quando com irmãos deste concorrerem."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Na linha transversal, somente se dá o direito de representação em favor dos filhos de irmãos do falecido, quando com irmãos deste concorrerem.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "130772f9cf63905ebfd8b09a77ac7a10f7aee69ad6a145ce1fe99cb5b5737fa9",
+     "o_que_significa": "e1ca30e4599fd3fc88266495caaf6d52cde4bdded6fde489b8fb5a04b8be00fe",
+     "exemplo_pratico": "29dba85aaa5f40adfae6e8d6513b4d64e55987134541f6f67f7d7e08b0d485f1",
+     "atencao": "dcb4ebdef3a4d6b05dbfdc00fb3b84202a2edd4cbefa9a29917bb33b3f109cc1",
+     "palavras_dificeis": "6bfbff2b83300b9f7d315d4ed0d2c73b276815866446937bf425a92478b9e735"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Na linha colateral, a representação beneficia apenas filhos de irmãos quando concorrem com irmãos do falecido. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 469,
+   "target_id": "CC2002:ART.1857",
+   "explanation_id": "ENTENDA/CC2002:ART.1857/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1857:CAPUT\tToda pessoa capaz pode dispor, por testamento, da totalidade dos seus bens, ou de parte deles, para depois de sua morte.\nCC2002:ART.1857:PAR.1\to A legítima dos herdeiros necessários não poderá ser incluída no testamento.\nCC2002:ART.1857:PAR.2\to São válidas as disposições testamentárias de caráter não patrimonial, ainda que o testador somente a elas se tenha limitado.",
+   "source_snapshot_sha256": "a98f329f39413a4be44188bc2048148ded8b2c93884dedea948b9e5d36024c0f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1857:CAPUT",
+     "text": "Toda pessoa capaz pode dispor, por testamento, da totalidade dos seus bens, ou de parte deles, para depois de sua morte."
+    },
+    {
+     "label": "CC2002:ART.1857:PAR.1",
+     "text": "o A legítima dos herdeiros necessários não poderá ser incluída no testamento."
+    },
+    {
+     "label": "CC2002:ART.1857:PAR.2",
+     "text": "o São válidas as disposições testamentárias de caráter não patrimonial, ainda que o testador somente a elas se tenha limitado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Toda pessoa capaz pode dispor, por testamento, da totalidade dos seus bens, ou de parte deles, para depois de sua morte. | o A legítima dos herdeiros necessários não poderá ser incluída no testamento. | o São válidas as disposições testamentárias de caráter não patrimonial, ainda que o testador somente a elas se tenha limitado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f6ed3fbd3acb08d6a3c41b46e470b3a9dcc612eb7cba9cfa6da75b0a38d14a5f",
+     "o_que_significa": "3c8cf3d8e7590d827667223c22a0e116226caa00dd8863ce60ffd614a485ec79",
+     "exemplo_pratico": "d9983c91a739352acc42115f619583fd4407503d65d68cc6e48b707d678fedb0",
+     "atencao": "0a73c9924834323c3a1c45ffd68ebfbc0ed6630f184d2d604632e5c5e9b1f994",
+     "palavras_dificeis": "a372b8700085ad7e76c703793d175450591dbf4743bc6de5dd03bc31a307199e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Pessoa capaz pode testar sobre seus bens para depois da morte, preservando a legítima, e também fazer disposições não patrimoniais. — foi confrontada com os 3 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 470,
+   "target_id": "CC2002:ART.1859",
+   "explanation_id": "ENTENDA/CC2002:ART.1859/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1859:CAPUT\tExtingue-se em cinco anos o direito de impugnar a validade do testamento, contado o prazo da data do seu registro.",
+   "source_snapshot_sha256": "1ff70ab0cad833c43bb6539006ae95b9b6ba1a1f0dc49d50dd975bd95031fd5c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1859:CAPUT",
+     "text": "Extingue-se em cinco anos o direito de impugnar a validade do testamento, contado o prazo da data do seu registro."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Extingue-se em cinco anos o direito de impugnar a validade do testamento, contado o prazo da data do seu registro.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "26c818477a7c2a39165d3083a78a639a3dce0212a815024dc53d4ef293a53361",
+     "o_que_significa": "3a92bd7201cb6ec92a274da8627c141d93aa0f4b39df7e59d4804800559a9c87",
+     "exemplo_pratico": "7de8e7eea9ae790f50b6427b5b7ac89c6eef91f365e0c3600a5a2c8f2df8094d",
+     "atencao": "282af44d1668fdb74109f83c84576ee7ffcd171841ba9b4c29c6237dcccf744a",
+     "palavras_dificeis": "365b006db03299062e4321a40d1a10fe29a8728d0a8486bdf3d56558f706a38b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — O direito de contestar a validade do testamento extingue-se cinco anos após seu registro. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 471,
+   "target_id": "CC2002:ART.1860",
+   "explanation_id": "ENTENDA/CC2002:ART.1860/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1860:CAPUT\tAlém dos incapazes, não podem testar os que, no ato de fazê-lo, não tiverem pleno discernimento.\nCC2002:ART.1860:PAR.UNICO\tPodem testar os maiores de dezesseis anos.",
+   "source_snapshot_sha256": "eccd1aca685bbd75df15316b132c5e1820f81fa7aeca36d2cf45cfc793ef5e0e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1860:CAPUT",
+     "text": "Além dos incapazes, não podem testar os que, no ato de fazê-lo, não tiverem pleno discernimento."
+    },
+    {
+     "label": "CC2002:ART.1860:PAR.UNICO",
+     "text": "Podem testar os maiores de dezesseis anos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Além dos incapazes, não podem testar os que, no ato de fazê-lo, não tiverem pleno discernimento. | Podem testar os maiores de dezesseis anos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "adb29897cfa45f40b893ffdcf34f708589e46bd9d18cf466c387ed535876361f",
+     "o_que_significa": "86c3461eb0ef965714f89ffca2bf03a71d9ba0e649ad5c6ae9ab7ee7f5f57fdc",
+     "exemplo_pratico": "fb68442d6c3d2a7727889896e0ec0e1d35311c492ee1c357bed1420dda07213a",
+     "atencao": "0c9911c5fbdc5b3c2da530b0a320d3afa359738299264ce9c5987dd7b5aeb2a0",
+     "palavras_dificeis": "4e48d2515a9b04fa10b7a014a93b328efe1091fc1280654c8e375b75c68b95b7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Não testam os legalmente incapazes nem quem não tenha pleno discernimento no ato; maiores de dezesseis anos podem testar. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 472,
+   "target_id": "CC2002:ART.1864",
+   "explanation_id": "ENTENDA/CC2002:ART.1864/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1864:CAPUT\tSão requisitos essenciais do testamento público:\nCC2002:ART.1864:INC.I\tser escrito por tabelião ou por seu substituto legal em seu livro de notas, de acordo com as declarações do testador, podendo este servir-se de minuta, notas ou apontamentos;\nCC2002:ART.1864:INC.II\tlavrado o instrumento, ser lido em voz alta pelo tabelião ao testador e a duas testemunhas, a um só tempo; ou pelo testador, se o quiser, na presença destas e do oficial;\nCC2002:ART.1864:INC.III\tser o instrumento, em seguida à leitura, assinado pelo testador, pelas testemunhas e pelo tabelião.\nCC2002:ART.1864:PAR.UNICO\tO testamento público pode ser escrito manualmente ou mecanicamente, bem como ser feito pela inserção da declaração de vontade em partes impressas de livro de notas, desde que rubricadas todas as páginas pelo testador, se mais de uma.",
+   "source_snapshot_sha256": "a094a20d7ee2f1e2467adfd981239be482e946c6a8b28dc055c02799c8ed4efd",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1864:CAPUT",
+     "text": "São requisitos essenciais do testamento público:"
+    },
+    {
+     "label": "CC2002:ART.1864:INC.I",
+     "text": "ser escrito por tabelião ou por seu substituto legal em seu livro de notas, de acordo com as declarações do testador, podendo este servir-se de minuta, notas ou apontamentos;"
+    },
+    {
+     "label": "CC2002:ART.1864:INC.II",
+     "text": "lavrado o instrumento, ser lido em voz alta pelo tabelião ao testador e a duas testemunhas, a um só tempo; ou pelo testador, se o quiser, na presença destas e do oficial;"
+    },
+    {
+     "label": "CC2002:ART.1864:INC.III",
+     "text": "ser o instrumento, em seguida à leitura, assinado pelo testador, pelas testemunhas e pelo tabelião."
+    },
+    {
+     "label": "CC2002:ART.1864:PAR.UNICO",
+     "text": "O testamento público pode ser escrito manualmente ou mecanicamente, bem como ser feito pela inserção da declaração de vontade em partes impressas de livro de notas, desde que rubricadas todas as páginas pelo testador, se mais de uma."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 5 segmentos vigentes do dispositivo: São requisitos essenciais do testamento público: | ser escrito por tabelião ou por seu substituto legal em seu livro de notas, de acordo com as declarações do testador, podendo este servir-se de minuta, notas ou apontamentos; | lavrado o instrumento, ser lido em voz alta pelo tabelião ao testador e a duas testemunhas, a um só tempo; ou pelo testador, se o quiser, na presença destas e do oficial; | ser o instrumento, em seguida à leitura, assinado pelo testador, pelas testemunhas e pelo tabelião. | O testamento público pode ser escrito manualmente ou mecanicamente, bem como ser feito pela inserção da declaração de vontade em partes impressas de livro de notas, desde que rubricadas todas as páginas pelo testador, se mais de uma.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c598d80682f065299014f64cd65d59a81a8e1bee7fd24a3118cdceb5f10a8b30",
+     "o_que_significa": "af51da613473625cf8b310dea6823eb43dc7cfad336c8037039b3749a5fee552",
+     "exemplo_pratico": "b114c0a730e053b5ba3149f21f5f250bf23a35d2ba2cb566568557c2bf6bf5c4",
+     "atencao": "9c7ceb0e5e52815ef70a72f55e66f4b193f46d01d0510948ae43650871b28516",
+     "palavras_dificeis": "efd2a7fadf934d04360a1b5ae60e47a86ea9019a78541aca98927d0f8613912a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — O testamento público exige redação notarial, leitura perante testador e duas testemunhas e assinaturas, admitidos meios manuais ou mecânicos. — foi confrontada com os 5 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 473,
+   "target_id": "CC2002:ART.1866",
+   "explanation_id": "ENTENDA/CC2002:ART.1866/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1866:CAPUT\tO indivíduo inteiramente surdo, sabendo ler, lerá o seu testamento, e, se não o souber, designará quem o leia em seu lugar, presentes as testemunhas.",
+   "source_snapshot_sha256": "0757cf3643e5d61e1506c12e756415bf315d7e7ae289cc89eb641aadc7392e12",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1866:CAPUT",
+     "text": "O indivíduo inteiramente surdo, sabendo ler, lerá o seu testamento, e, se não o souber, designará quem o leia em seu lugar, presentes as testemunhas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O indivíduo inteiramente surdo, sabendo ler, lerá o seu testamento, e, se não o souber, designará quem o leia em seu lugar, presentes as testemunhas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "cd70133de68efb9e35847e723e821497a18a0918a22e13c6b523abb6639ec3e6",
+     "o_que_significa": "a53a32386e0b6e547bc7f612b078711cd199b11af2e75bf9367f3675344c38ef",
+     "exemplo_pratico": "8d9168fd650d6c72e575b99ec298d225895fe1890617de39afa39b31962eee89",
+     "atencao": "9ad658f04bd0a052dbff88f04148aa95a5f5254e65dacce55edbbb2146e47d5b",
+     "palavras_dificeis": "a5b95782f733d523de8295dd91a6b1ff3ad7b1dd3c3388a018851f53c4f058a6"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Pessoa surda que saiba ler deve ler o testamento; se não souber, escolhe leitor na presença das testemunhas. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 474,
+   "target_id": "CC2002:ART.1867",
+   "explanation_id": "ENTENDA/CC2002:ART.1867/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1867:CAPUT\tAo cego só se permite o testamento público, que lhe será lido, em voz alta, duas vezes, uma pelo tabelião ou por seu substituto legal, e a outra por uma das testemunhas, designada pelo testador, fazendo-se de tudo circunstanciada menção no testamento.",
+   "source_snapshot_sha256": "f10ee2033df65c0ec3129f9f1ec8cc37155fba01bf4a1a40b0bc38482f451c92",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1867:CAPUT",
+     "text": "Ao cego só se permite o testamento público, que lhe será lido, em voz alta, duas vezes, uma pelo tabelião ou por seu substituto legal, e a outra por uma das testemunhas, designada pelo testador, fazendo-se de tudo circunstanciada menção no testamento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Ao cego só se permite o testamento público, que lhe será lido, em voz alta, duas vezes, uma pelo tabelião ou por seu substituto legal, e a outra por uma das testemunhas, designada pelo testador, fazendo-se de tudo circunstanciada menção no testamento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "07e3c0ad9b3d2a88cbae7479cd0221f496735529bc1391bc762d2869626cf4a2",
+     "o_que_significa": "122866ac83827a3877193bff529f4823c84333d1568676d0d414f9d9958a2dfc",
+     "exemplo_pratico": "7213fa3da9efe49b3536add2798adfa5155bfdb6edb16527394a58047f51978c",
+     "atencao": "06c736fe8c22f7f85b0a18226711992b7be916895e35c50e3f5621fe9f47789a",
+     "palavras_dificeis": "1ea6740541bd98e6a92dd2c49fc64dcd3d8b5c3d508ce651e2241f0e8b41ba4f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Pessoa cega só pode usar testamento público, lido duas vezes por pessoas distintas, com registro detalhado. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 475,
+   "target_id": "CC2002:ART.1868",
+   "explanation_id": "ENTENDA/CC2002:ART.1868/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1868:CAPUT\tO testamento escrito pelo testador, ou por outra pessoa, a seu rogo, e por aquele assinado, será válido se aprovado pelo tabelião ou seu substituto legal, observadas as seguintes formalidades:\nCC2002:ART.1868:INC.I\tque o testador o entregue ao tabelião em presença de duas testemunhas;\nCC2002:ART.1868:INC.II\tque o testador declare que aquele é o seu testamento e quer que seja aprovado;\nCC2002:ART.1868:INC.III\tque o tabelião lavre, desde logo, o auto de aprovação, na presença de duas testemunhas, e o leia, em seguida, ao testador e testemunhas;\nCC2002:ART.1868:INC.IV\tque o auto de aprovação seja assinado pelo tabelião, pelas testemunhas e pelo testador.\nCC2002:ART.1868:PAR.UNICO\tO testamento cerrado pode ser escrito mecanicamente, desde que seu subscritor numere e autentique, com a sua assinatura, todas as paginas.",
+   "source_snapshot_sha256": "242cdf6a2c2dd9a10069093fc343d12216a58ab95e3cc0c3a4ccf27654f314c2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1868:CAPUT",
+     "text": "O testamento escrito pelo testador, ou por outra pessoa, a seu rogo, e por aquele assinado, será válido se aprovado pelo tabelião ou seu substituto legal, observadas as seguintes formalidades:"
+    },
+    {
+     "label": "CC2002:ART.1868:INC.I",
+     "text": "que o testador o entregue ao tabelião em presença de duas testemunhas;"
+    },
+    {
+     "label": "CC2002:ART.1868:INC.II",
+     "text": "que o testador declare que aquele é o seu testamento e quer que seja aprovado;"
+    },
+    {
+     "label": "CC2002:ART.1868:INC.III",
+     "text": "que o tabelião lavre, desde logo, o auto de aprovação, na presença de duas testemunhas, e o leia, em seguida, ao testador e testemunhas;"
+    },
+    {
+     "label": "CC2002:ART.1868:INC.IV",
+     "text": "que o auto de aprovação seja assinado pelo tabelião, pelas testemunhas e pelo testador."
+    },
+    {
+     "label": "CC2002:ART.1868:PAR.UNICO",
+     "text": "O testamento cerrado pode ser escrito mecanicamente, desde que seu subscritor numere e autentique, com a sua assinatura, todas as paginas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 6 segmentos vigentes do dispositivo: O testamento escrito pelo testador, ou por outra pessoa, a seu rogo, e por aquele assinado, será válido se aprovado pelo tabelião ou seu substituto legal, observadas as seguintes formalidades: | que o testador o entregue ao tabelião em presença de duas testemunhas; | que o testador declare que aquele é o seu testamento e quer que seja aprovado; | que o tabelião lavre, desde logo, o auto de aprovação, na presença de duas testemunhas, e o leia, em seguida, ao testador e testemunhas; | que o auto de aprovação seja assinado pelo tabelião, pelas testemunhas e pelo testador. | O testamento cerrado pode ser escrito mecanicamente, desde que seu subscritor numere e autentique, com a sua assinatura, todas as paginas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "eb5676e7b2cb931c37ba2291018c316d0ce508c42ab3d1584a35dd7d8b16b7b5",
+     "o_que_significa": "2a7ed70e618305f8a9bf759b941691e8fb5f106feee8ba7b95675e9122939433",
+     "exemplo_pratico": "d1e4894292b90b3fade6d18a67c0ddf97fe9af1f3b4ce1845728f8ed23d9c792",
+     "atencao": "d7a8c7515fa471c68376ed2e5feb8f81d73d58e0cbd2c06235b45fb29b466cec",
+     "palavras_dificeis": "0c89b6100e67f6beb224bb9c2733d687a491f90f777e043a5b3d9024fd762cf1"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — O testamento cerrado exige escrito assinado, entrega e declaração perante tabelião e duas testemunhas, auto de aprovação lido e assinado. — foi confrontada com os 6 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  }
+ ]
+}

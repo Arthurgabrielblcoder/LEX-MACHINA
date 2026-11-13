@@ -936,7 +936,71 @@
    "correction_direction": "Informar o prazo de trinta dias contado do conhecimento do fato e preservar o limite de satisfacao dos creditos.",
    "confidence": "ALTA",
    "human_review_required": false
+  },
+  {
+   "target_id": "CC2002:ART.1824",
+   "audit_wave": "QA02_WAVE_04",
+   "problematic_field": "atencao",
+   "problematic_excerpt": "Questões de prescrição e boa-fé devem ser analisadas conforme jurisprudência e fatos.",
+   "legal_basis": "O Tema Repetitivo 1.200 do STJ fixou que o prazo prescricional da petição de herança se inicia na abertura da sucessão e não é impedido, suspenso ou interrompido pela ação de reconhecimento de filiação; a orientação também aplica o prazo geral decenal do art. 205 do Código Civil.",
+   "source_url": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/pesquisa.jsp?cod_tema_final=1200&cod_tema_inicial=1200&novaConsulta=true&tipo_pesquisa=T",
+   "nature": "OMISSAO_DE_PRECEDENTE_QUALIFICADO",
+   "severity": "MÉDIO",
+   "legal_or_pedagogical_consequence": "O alerta genérico não informa ao leitor o termo inicial objetivo já uniformizado em precedente qualificado, relevante para evitar a prescrição da pretensão hereditária.",
+   "correction_direction": "Indicar o prazo decenal e a tese do Tema 1.200 sobre contagem desde a abertura da sucessão, ressalvadas as causas legais gerais de suspensão ou interrupção aplicáveis ao caso.",
+   "confidence": "ALTA",
+   "human_review_required": false,
+   "checkpoint": 28,
+   "auditor": "/root/wave04_451_577"
+  },
+  {
+   "target_id": "CC2002:ART.1826",
+   "audit_wave": "QA02_WAVE_04",
+   "problematic_field": "o_que_diz",
+   "problematic_excerpt": "respondendo segundo boa ou má-fé e as regras gerais de posse",
+   "legal_basis": "O parágrafo único do art. 1.826 determina regra objetiva específica: a partir da citação, a responsabilidade do possuidor é aferida pelas normas da posse de má-fé e da mora.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "OMISSAO_DE_MARCO_DE_RESPONSABILIDADE",
+   "severity": "ALTO",
+   "legal_or_pedagogical_consequence": "A explicação não permite identificar que a citação altera obrigatoriamente o regime de responsabilidade, inclusive com incidência da mora.",
+   "correction_direction": "Acrescentar expressamente que, desde a citação, aplicam-se as regras da posse de má-fé e da mora.",
+   "confidence": "ALTA",
+   "human_review_required": false,
+   "checkpoint": 28,
+   "auditor": "/root/wave04_451_577"
+  },
+  {
+   "target_id": "CC2002:ART.1827",
+   "audit_wave": "QA02_WAVE_04",
+   "problematic_field": "o_que_diz",
+   "problematic_excerpt": "preservada a responsabilidade do possuidor originário pelo que alienou",
+   "legal_basis": "O parágrafo único do art. 1.827 declara eficaz a alienação onerosa realizada pelo herdeiro aparente a terceiro de boa-fé, exceção material à recuperação do bem hereditário.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "OMISSAO_DE_EXCECAO_PROTETIVA",
+   "severity": "ALTO",
+   "legal_or_pedagogical_consequence": "O leitor pode concluir que todo bem alienado é perseguível contra o terceiro, ignorando a eficácia da aquisição onerosa e de boa-fé.",
+   "correction_direction": "Explicitar a preservação da alienação onerosa feita pelo herdeiro aparente ao terceiro de boa-fé e separar essa hipótese da responsabilidade do alienante.",
+   "confidence": "ALTA",
+   "human_review_required": false,
+   "checkpoint": 28,
+   "auditor": "/root/wave04_451_577"
+  },
+  {
+   "target_id": "CC2002:ART.1830",
+   "audit_wave": "QA02_WAVE_04",
+   "problematic_field": "o_que_diz",
+   "problematic_excerpt": "separação judicial ou de fato prolongada",
+   "legal_basis": "O art. 1.830 estabelece critério temporal expresso de separação de fato há mais de dois anos e, nessa hipótese, ressalva a prova de que a convivência se tornou impossível sem culpa do sobrevivente.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "OMISSAO_DE_PRAZO_LEGAL",
+   "severity": "ALTO",
+   "legal_or_pedagogical_consequence": "A expressão indeterminada 'prolongada' omite o marco de dois anos que define literalmente a incidência da ressalva sucessória.",
+   "correction_direction": "Informar o prazo legal de mais de dois anos e explicar separadamente a ressalva probatória prevista no dispositivo.",
+   "confidence": "ALTA",
+   "human_review_required": false,
+   "checkpoint": 28,
+   "auditor": "/root/wave04_451_577"
   }
  ],
- "total": 64
+ "total": 68
 }
