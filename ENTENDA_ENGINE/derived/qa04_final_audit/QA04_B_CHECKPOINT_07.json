@@ -1,0 +1,3221 @@
+{
+ "schema_version": 1,
+ "mission": "QA-04-FRONT-B",
+ "checkpoint": "B-CP07",
+ "as_of": "2026-11-13",
+ "status": "COMPLETE",
+ "source_queue": "QA04_AUDIT_1000_QUEUE.json",
+ "source_queue_sha256": "cfbba3ab37b1f757e26b0855e692c3113d8cf61d3ef8bb722942223da9dc44cc",
+ "residual_positions": [
+  301,
+  350
+ ],
+ "original_queue_positions": [
+  689,
+  738
+ ],
+ "examined": 50,
+ "target_ids": [
+  "CC2002:ART.871",
+  "CC2002:ART.873",
+  "CC2002:ART.874",
+  "CC2002:ART.876",
+  "CC2002:ART.877",
+  "CC2002:ART.878",
+  "CC2002:ART.881",
+  "CC2002:ART.882",
+  "CC2002:ART.885",
+  "CC2002:ART.886",
+  "CC2002:ART.888",
+  "CC2002:ART.890",
+  "CC2002:ART.892",
+  "CC2002:ART.893",
+  "CC2002:ART.894",
+  "CC2002:ART.895",
+  "CC2002:ART.896",
+  "CC2002:ART.897",
+  "CC2002:ART.898",
+  "CC2002:ART.900",
+  "CC2002:ART.901",
+  "CC2002:ART.903",
+  "CC2002:ART.904",
+  "CC2002:ART.905",
+  "CC2002:ART.906",
+  "CC2002:ART.907",
+  "CC2002:ART.908",
+  "CC2002:ART.909",
+  "CC2002:ART.910",
+  "CC2002:ART.911",
+  "CC2002:ART.912",
+  "CC2002:ART.913",
+  "CC2002:ART.914",
+  "CC2002:ART.915",
+  "CC2002:ART.916",
+  "CC2002:ART.917",
+  "CC2002:ART.918",
+  "CC2002:ART.919",
+  "CC2002:ART.920",
+  "CC2002:ART.921",
+  "CC2002:ART.922",
+  "CC2002:ART.923",
+  "CC2002:ART.924",
+  "CC2002:ART.925",
+  "CC2002:ART.926",
+  "CC2002:ART.927",
+  "CC2002:ART.928",
+  "CC2002:ART.929",
+  "CC2002:ART.930",
+  "CC2002:ART.931"
+ ],
+ "findings": 0,
+ "finding_counts": {},
+ "protected_sha256": {
+  "qa03_corpus": "dad0a9414fd42b4e5c348ab7e87b90b99501ae4b77c950c5cbfd7dbaef58a496",
+  "qa03_lookup": "9cda2855e4534b7a7cefc833f2e2498a91cf81666395cf83a064d3d69705eeba",
+  "qa03_payload": "6a5ea56bffc14c06df9ac1f16c145b02e2115bacbfce1d87858ba342e77d6268",
+  "qa03_findings": "4fd7700b9c66c370405a8ce7d9004222a9af2202efa4cabf4c0a2ff581062ba1",
+  "qa03_remaining_queue": "8c798f79745f4d878b882e582bbfa71effbcb6c99c7763bf77cfc51e2b5151df",
+  "cc13_corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c"
+ },
+ "records": [
+  {
+   "queue_position": 689,
+   "target_id": "CC2002:ART.871",
+   "explanation_id": "ENTENDA/CC2002:ART.871/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.871:CAPUT\tQuando alguém, na ausência do indivíduo obrigado a alimentos, por ele os prestar a quem se devem, poder-lhes-á reaver do devedor a importância, ainda que este não ratifique o ato.",
+   "source_snapshot_sha256": "1c205bf7f9d09c490a24dfc687c0b4ed1c4372e3818f3d105d022d1f29ff85c2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.871:CAPUT",
+     "text": "Quando alguém, na ausência do indivíduo obrigado a alimentos, por ele os prestar a quem se devem, poder-lhes-á reaver do devedor a importância, ainda que este não ratifique o ato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Quando alguém, na ausência do indivíduo obrigado a alimentos, por ele os prestar a quem se devem, poder-lhes-á reaver do devedor a importância, ainda que este não ratifique o ato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2232bcf69282e31c5538d50d5af9dd4adb14599de2efeb1fa0456ed83d60f788",
+     "o_que_significa": "c7b4d50cfa929f039b4742dc0c7511c815b65eed0ef49748e8801ac5e0e7e965",
+     "exemplo_pratico": "ab2ef2b924346849018c2bacf3c9d3caad8d3d0b65b366d10832fa177a94feec",
+     "atencao": "8a4f9b2d1750cc9bbd05cb5743cd95b44009adffc9661c3aaf21d7eba60ce054",
+     "palavras_dificeis": "2fa1b302d6ac23770f6019d466fa8501e5b36cbb7c2f00f4d8c9423b6f9d1bad"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.871, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quem, na ausência do obrigado, presta alimentos a quem tinha direito pode cobrar dele o valor, mesmo sem ratificação.’. O campo de atenção registra: ‘Devem existir obrigação alimentar e ausência do devedor; liberalidade pura pode afastar o regresso.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 301,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 690,
+   "target_id": "CC2002:ART.873",
+   "explanation_id": "ENTENDA/CC2002:ART.873/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.873:CAPUT\tA ratificação pura e simples do dono do negócio retroage ao dia do começo da gestão, e produz todos os efeitos do mandato.",
+   "source_snapshot_sha256": "6df937140d940da9c8b1f1483df948f2cc736e69c98ba073bff5723ff8efb36b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.873:CAPUT",
+     "text": "A ratificação pura e simples do dono do negócio retroage ao dia do começo da gestão, e produz todos os efeitos do mandato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A ratificação pura e simples do dono do negócio retroage ao dia do começo da gestão, e produz todos os efeitos do mandato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "de444a41542ba7bfd80988ca5b074ae494b3693a751e6295578afe921415b60c",
+     "o_que_significa": "06a5610dae555ad2e690b2cc4ffb9400c8a3422df07cfe198cb2181e54f980e1",
+     "exemplo_pratico": "8a09e7020ee443dca82d62bbdd6501e78f3449fbcdbb90ef6eccee415f0565b3",
+     "atencao": "457deb735937bc1fa2ea2d0dfb5fbe2246969f9aad30c30c59180dd8a336c95c",
+     "palavras_dificeis": "6d12fe9150a36d7ddd4313d7fbfe48d0dd7d19f5c3d7ef23611fc883fa257d1b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.873, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A ratificação pura e simples pelo dono retroage ao início da gestão e produz todos os efeitos do mandato.’. O campo de atenção registra: ‘Ratificação parcial, condicionada ou com reservas não se confunde com a forma pura e simples prevista.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 302,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 691,
+   "target_id": "CC2002:ART.874",
+   "explanation_id": "ENTENDA/CC2002:ART.874/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.874:CAPUT\tSe o dono do negócio, ou da coisa, desaprovar a gestão, considerando-a contrária aos seus interesses, vigorará o disposto nos arts. 862 e 863, salvo o estabelecido nos arts. 869 e 870.",
+   "source_snapshot_sha256": "abfdcb0469741f0b952f8142dbce8a39d0f8525b0dc200ba1169992b1bc7b114",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.874:CAPUT",
+     "text": "Se o dono do negócio, ou da coisa, desaprovar a gestão, considerando-a contrária aos seus interesses, vigorará o disposto nos arts. 862 e 863, salvo o estabelecido nos arts. 869 e 870."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o dono do negócio, ou da coisa, desaprovar a gestão, considerando-a contrária aos seus interesses, vigorará o disposto nos arts. 862 e 863, salvo o estabelecido nos arts. 869 e 870.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e1eea703a31373b80137af08401177270cc2e26f41fab142a5f8abcc4d8b1fff",
+     "o_que_significa": "58d16ff5f3a501d37fcb6e06dc71899328e0fb24942de3424101a381a8d79adb",
+     "exemplo_pratico": "3315a6fdeac031ae6e0df2f175cd72bc3f52ef3d862fc8a00be285656e92457d",
+     "atencao": "797b579e66064016e34fdfc4948853311ccec6c75779d935e23139ff417ad839",
+     "palavras_dificeis": "26ae901b1b4852f5bd7f32b0cdba44ca6d42fef6217c4874c9631b93cd07e514"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.874, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se o dono desaprovar a gestão por considerá-la contrária a seus interesses, aplicam-se as regras da atuação contra sua vontade, sem afastar o reembolso cabível quando houve gestão útil ou proveito.’. O campo de atenção registra: ‘A mera desaprovação não elimina as exceções dos arts. 869 e 870.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 303,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 692,
+   "target_id": "CC2002:ART.876",
+   "explanation_id": "ENTENDA/CC2002:ART.876/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.876:CAPUT\tTodo aquele que recebeu o que lhe não era devido fica obrigado a restituir; obrigação que incumbe àquele que recebe dívida condicional antes de cumprida a condição.",
+   "source_snapshot_sha256": "be146b2982c5a848bd2cff5a7c1f7edeefeff0b65cf0c33b7ec8c5c171c58623",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.876:CAPUT",
+     "text": "Todo aquele que recebeu o que lhe não era devido fica obrigado a restituir; obrigação que incumbe àquele que recebe dívida condicional antes de cumprida a condição."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Todo aquele que recebeu o que lhe não era devido fica obrigado a restituir; obrigação que incumbe àquele que recebe dívida condicional antes de cumprida a condição.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f399e3beaaad0dc8ce62f3ad8a3dba3d7865c7613b6402cf6fc2abb896586c36",
+     "o_que_significa": "fc56e74e87f3c5623028a84ec7213d36e1bc3e400220c824806f4150a14d8f74",
+     "exemplo_pratico": "c2c30f401f08b9bb9013f3b7f1cff60040bdad24dddb60132186a179ec52c70d",
+     "atencao": "73f75afdb3f5d89aeedb4f2fcac0c89e566378020b3d8a57aa055275d25256a2",
+     "palavras_dificeis": "3a6ad99135ee14f14ced536e43c42d7d45025eddbe71d7361d139548d9c8f270"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.876, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quem recebe o que não lhe era devido deve restituir, inclusive dívida condicional paga antes de a condição ocorrer.’. O campo de atenção registra: ‘A restituição depende de inexistência ou inexigibilidade atual da dívida e sofre as exceções dos artigos seguintes.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 304,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 693,
+   "target_id": "CC2002:ART.877",
+   "explanation_id": "ENTENDA/CC2002:ART.877/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.877:CAPUT\tÀquele que voluntariamente pagou o indevido incumbe a prova de tê-lo feito por erro.",
+   "source_snapshot_sha256": "ed620290b76885974bda323dd9e7f7806fbc35d4810333cfc23792f06e63a8aa",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.877:CAPUT",
+     "text": "Àquele que voluntariamente pagou o indevido incumbe a prova de tê-lo feito por erro."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Àquele que voluntariamente pagou o indevido incumbe a prova de tê-lo feito por erro.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "cdf72b6be4fd807c7e4603197cad90feaeecbc1d9fc9bcf7b59d769f6063a59d",
+     "o_que_significa": "400d62c651696b265921a03b012b3a3aa9a10dbb85368fe2034037c20fabbc7f",
+     "exemplo_pratico": "554f511cc08254875b6d36186b5c124fd78d8c815eb7697739d371cdb9a5de91",
+     "atencao": "b99f0f9e6eebab806c5f728f620abb79e4bc7a6736befbf6b198c0e9cc9bc4c5",
+     "palavras_dificeis": "dbe91d7cadd743711170f6d1a891282a61f425f67f4de3dfb2ab2601156c0d21"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.877, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quem pagou voluntariamente o indevido deve provar que o fez por erro.’. O campo de atenção registra: ‘Pagamento voluntário não significa doação, mas a prova do erro é requisito expresso desta hipótese.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 305,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 694,
+   "target_id": "CC2002:ART.878",
+   "explanation_id": "ENTENDA/CC2002:ART.878/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.878:CAPUT\tAos frutos, acessões, benfeitorias e deteriorações sobrevindas à coisa dada em pagamento indevido, aplica-se o disposto neste Código sobre o possuidor de boa-fé ou de má-fé, conforme o caso.",
+   "source_snapshot_sha256": "733530ec6dbee4ac9af408697e5753e46642c639d97b9656c27619fc3045f654",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.878:CAPUT",
+     "text": "Aos frutos, acessões, benfeitorias e deteriorações sobrevindas à coisa dada em pagamento indevido, aplica-se o disposto neste Código sobre o possuidor de boa-fé ou de má-fé, conforme o caso."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Aos frutos, acessões, benfeitorias e deteriorações sobrevindas à coisa dada em pagamento indevido, aplica-se o disposto neste Código sobre o possuidor de boa-fé ou de má-fé, conforme o caso.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "3430aeba415e58a29d0e932aec7b401769d80dd25c5b1fdbf7cf3f8a8bfcffe2",
+     "o_que_significa": "9033bb17dac4df1ec5f592e281e158fe80c57761b6e474b993ca9b68a56c686e",
+     "exemplo_pratico": "4cee6a6c4ba5245cf30b60b8df3209285bc412e0d09a6a5852c4f5b13071a1de",
+     "atencao": "7c4c6faca5ec3a357ddf5b303126a48e8dbdd38a08a31ddd006373b7997e24f8",
+     "palavras_dificeis": "9624628c9a922eb58d95ade8fc9f38f82598818acc36092e44ede45d5d1338e0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.878, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Frutos, acessões, benfeitorias e deteriorações da coisa recebida indevidamente seguem as regras do possuidor de boa-fé ou de má-fé.’. O campo de atenção registra: ‘É preciso qualificar a boa-fé em cada período; a ciência posterior pode mudar o regime.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 306,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 695,
+   "target_id": "CC2002:ART.881",
+   "explanation_id": "ENTENDA/CC2002:ART.881/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.881:CAPUT\tSe o pagamento indevido tiver consistido no desempenho de obrigação de fazer ou para eximir-se da obrigação de não fazer, aquele que recebeu a prestação fica na obrigação de indenizar o que a cumpriu, na medida do lucro obtido.",
+   "source_snapshot_sha256": "ace5147bf13b7a1312cf2d48f36e52eb700d7ee72b03b2daad5fa4417787d79a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.881:CAPUT",
+     "text": "Se o pagamento indevido tiver consistido no desempenho de obrigação de fazer ou para eximir-se da obrigação de não fazer, aquele que recebeu a prestação fica na obrigação de indenizar o que a cumpriu, na medida do lucro obtido."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o pagamento indevido tiver consistido no desempenho de obrigação de fazer ou para eximir-se da obrigação de não fazer, aquele que recebeu a prestação fica na obrigação de indenizar o que a cumpriu, na medida do lucro obtido.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "03dfe09ddd4b72e2a7995ca777f7b4b6d073930a2cedae9224f28389bb186aac",
+     "o_que_significa": "93676fc4fa0751b23e3f0c75c86cefc8f53854f93cc73357370c8a7326feff59",
+     "exemplo_pratico": "0ee3b5616321c0c118f13020fa46bafe2fe7effaf5bb17ce309ffbf9bec2d707",
+     "atencao": "6935ab4eece719e9e4cf31aaf406d893176dd4e7928a5950f74e15044eb97c53",
+     "palavras_dificeis": "8f476fe63667ce0d1406ac4dfe659c7b926b3f0f4a2db06058b82bf0c7ef45ad"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.881, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se o indevido foi prestação de fazer ou ato destinado a liberar obrigação de não fazer, o recebedor indeniza na medida do lucro obtido.’. O campo de atenção registra: ‘O limite é o lucro do recebedor, não necessariamente o preço usual integral do serviço.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 307,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 696,
+   "target_id": "CC2002:ART.882",
+   "explanation_id": "ENTENDA/CC2002:ART.882/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.882:CAPUT\tNão se pode repetir o que se pagou para solver dívida prescrita, ou cumprir obrigação judicialmente inexigível.",
+   "source_snapshot_sha256": "61666a3f5c26716b5301e4cd73dedd88184513a6bd0164e0b5d11b9f53d46d62",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.882:CAPUT",
+     "text": "Não se pode repetir o que se pagou para solver dívida prescrita, ou cumprir obrigação judicialmente inexigível."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não se pode repetir o que se pagou para solver dívida prescrita, ou cumprir obrigação judicialmente inexigível.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2fefef5b91c8b19fe424a651e1862ca8618a4ddfa0f2794302057a542d5ae73b",
+     "o_que_significa": "bf655c8f563cb92d861fa8829a2711c080927745d97c5c177a7b4ebb98b6ccbf",
+     "exemplo_pratico": "1d31a08f707a2e0dfb08d005d70528ee49061abad5e464cef2bc99f45c2a40c0",
+     "atencao": "4932a1ebe37e06330f4b09572e2a10775d746961f10e9246003dd3eaeb2ac7d4",
+     "palavras_dificeis": "fb827d40c51e8091b5f9499abe75b836a7f26882fc9455a4f92cea50428759cd"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.882, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Não se recupera o que foi pago para quitar dívida prescrita ou cumprir obrigação judicialmente inexigível.’. O campo de atenção registra: ‘Coação, fraude ou outro vício autônomo podem exigir análise própria; a regra trata do simples pagamento voluntário.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 308,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 697,
+   "target_id": "CC2002:ART.885",
+   "explanation_id": "ENTENDA/CC2002:ART.885/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.885:CAPUT\tA restituição é devida, não só quando não tenha havido causa que justifique o enriquecimento, mas também se esta deixou de existir.",
+   "source_snapshot_sha256": "7a62b01740e95cf38b64cccfb69303f2327135c8f2ffb5e03c4e1e11b567b73b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.885:CAPUT",
+     "text": "A restituição é devida, não só quando não tenha havido causa que justifique o enriquecimento, mas também se esta deixou de existir."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A restituição é devida, não só quando não tenha havido causa que justifique o enriquecimento, mas também se esta deixou de existir.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b368b5fc2206f80356368786dfb41b5e422b39910dcf3e70a25818a7d11d947c",
+     "o_que_significa": "d1e1bf0dde1569509b598d9117343952a67203a0e2cbd40d19e5d53ffabc4318",
+     "exemplo_pratico": "7496841ce9d39ec04dc83a19e2c3588d0fd35afeda497f8b9bffa33b16046db7",
+     "atencao": "b32ead0957ab96c95b5c43b4b5e122e254e1bd508c55f901a453c8f232de7a6b",
+     "palavras_dificeis": "ccfc7f15a1afbff5d130ae4886f2b7f1da0992f3702ba2d66f2ca6956e605dff"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.885, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A restituição é devida tanto quando nunca existiu causa para o enriquecimento quanto quando a causa existia e depois desapareceu.’. O campo de atenção registra: ‘A extinção da causa e seus efeitos devem ser demonstrados; regras contratuais específicas continuam relevantes.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 309,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 698,
+   "target_id": "CC2002:ART.886",
+   "explanation_id": "ENTENDA/CC2002:ART.886/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.886:CAPUT\tNão caberá a restituição por enriquecimento, se a lei conferir ao lesado outros meios para se ressarcir do prejuízo sofrido.",
+   "source_snapshot_sha256": "801f20f513f0188a96a5be4236432e768eff8c7a4b718d0cb1dcbcaf73974bd9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.886:CAPUT",
+     "text": "Não caberá a restituição por enriquecimento, se a lei conferir ao lesado outros meios para se ressarcir do prejuízo sofrido."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não caberá a restituição por enriquecimento, se a lei conferir ao lesado outros meios para se ressarcir do prejuízo sofrido.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "060bc23d49656e3b5668882ed7b33f9ff58761c22113cae0e42afb16ceb8b982",
+     "o_que_significa": "8bf8f0e54e6baca1df84786b20289e7ecaad3e2aeebf47e5a469c03a1ed4c2f6",
+     "exemplo_pratico": "f1f780e8bf547c6894f792f80a4345b9493f4c2e33fb85b2458d5a593ebd09b8",
+     "atencao": "12396d2ccc7761fa1a91dadbf74832a1106cbd8305e4f6abed3cb85a8e4a80c3",
+     "palavras_dificeis": "29573e1d4865d65d54e28abbbea14cb03145a1a64c7a2e40a7c78c1de79bd6ed"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.886, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Não cabe restituição por enriquecimento sem causa quando a lei oferece ao lesado outro meio de ressarcimento.’. O campo de atenção registra: ‘A existência concreta de outro meio, e não apenas uma referência abstrata, deve ser examinada no caso.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 310,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 699,
+   "target_id": "CC2002:ART.888",
+   "explanation_id": "ENTENDA/CC2002:ART.888/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.888:CAPUT\tA omissão de qualquer requisito legal, que tire ao escrito a sua validade como título de crédito, não implica a invalidade do negócio jurídico que lhe deu origem.",
+   "source_snapshot_sha256": "589ced76dc2d7563ecc4242d70378a04bd6ccf5b88bc6a0d606267d291f96881",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.888:CAPUT",
+     "text": "A omissão de qualquer requisito legal, que tire ao escrito a sua validade como título de crédito, não implica a invalidade do negócio jurídico que lhe deu origem."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A omissão de qualquer requisito legal, que tire ao escrito a sua validade como título de crédito, não implica a invalidade do negócio jurídico que lhe deu origem.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "63debecde30efc77884576a5a593967b5d8c197964490f38f48f9f9bb1e8cd36",
+     "o_que_significa": "5bfe0ce8fa402ed835189fdffc336b83b39b348ea64ae21e590ce2e1ab43b358",
+     "exemplo_pratico": "9c2cfe0d94a34f49bcd7df2507cd556437ac0429f6cd50a8ecc98e53f58d9439",
+     "atencao": "710c3333f761f6f55ae20d545bc2350e46b322ac5825e14aac9adccd0b4551da",
+     "palavras_dificeis": "777ce8ea98e9940db060b7752ad25c380ac165073b5a099857ad2f52361eb92a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.888, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A falta de requisito que invalide o escrito como título de crédito não invalida, por si só, o negócio jurídico que lhe deu origem.’. O campo de atenção registra: ‘A cobrança do negócio causal exige prova e procedimento próprios; não se preservam automaticamente vantagens do título.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 311,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 700,
+   "target_id": "CC2002:ART.890",
+   "explanation_id": "ENTENDA/CC2002:ART.890/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.890:CAPUT\tConsideram-se não escritas no título a cláusula de juros, a proibitiva de endosso, a excludente de responsabilidade pelo pagamento ou por despesas, a que dispense a observância de termos e formalidade prescritas, e a que, além dos limites fixados em lei, exclua ou restrinja direitos e obrigações.",
+   "source_snapshot_sha256": "60c1f41d27029af30d5a6e9301cc25e92d68734598ddb8b647c12f5a5f491606",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.890:CAPUT",
+     "text": "Consideram-se não escritas no título a cláusula de juros, a proibitiva de endosso, a excludente de responsabilidade pelo pagamento ou por despesas, a que dispense a observância de termos e formalidade prescritas, e a que, além dos limites fixados em lei, exclua ou restrinja direitos e obrigações."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Consideram-se não escritas no título a cláusula de juros, a proibitiva de endosso, a excludente de responsabilidade pelo pagamento ou por despesas, a que dispense a observância de termos e formalidade prescritas, e a que, além dos limites fixados em lei, exclua ou restrinja direitos e obrigações.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9f6db8a06c57478e5c250441eb85cc96fb88bf1c535d77ac1283370f4739ae91",
+     "o_que_significa": "c930e5f3b7b54f19e16f9bfcb2cc6567b54f61643b923e3be6e1d1555e05a61a",
+     "exemplo_pratico": "b66b33b29c332e84b9727ea3e511f34d99e4054969b6200f44167f1312022a7d",
+     "atencao": "e0caa9cea7e8f1ab08dd301466b6dda93b2eedd34a1347d725639e947642a46d",
+     "palavras_dificeis": "36a98d1cfbe649218a2530bd54f6751406ea60df6ea9d179be1562609bba0d52"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.890, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Consideram-se inexistentes cláusulas de juros, proibição de endosso, exclusão de responsabilidade por pagamento ou despesas, dispensa de formalidades e restrições de direitos além dos limites legais.’. O campo de atenção registra: ‘A regra geral pode ceder a disciplina expressa de lei especial do título.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 312,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 701,
+   "target_id": "CC2002:ART.892",
+   "explanation_id": "ENTENDA/CC2002:ART.892/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.892:CAPUT\tAquele que, sem ter poderes, ou excedendo os que tem, lança a sua assinatura em título de crédito, como mandatário ou representante de outrem, fica pessoalmente obrigado, e, pagando o título, tem ele os mesmos direitos que teria o suposto mandante ou representado.",
+   "source_snapshot_sha256": "328b2b59b1bf02839bc643306a1ae9038f5d79990ed1592143e8ac3113ab5c37",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.892:CAPUT",
+     "text": "Aquele que, sem ter poderes, ou excedendo os que tem, lança a sua assinatura em título de crédito, como mandatário ou representante de outrem, fica pessoalmente obrigado, e, pagando o título, tem ele os mesmos direitos que teria o suposto mandante ou representado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Aquele que, sem ter poderes, ou excedendo os que tem, lança a sua assinatura em título de crédito, como mandatário ou representante de outrem, fica pessoalmente obrigado, e, pagando o título, tem ele os mesmos direitos que teria o suposto mandante ou representado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d657f5484513a936d0ecc7946121f8b2c24e3b02b07330255df5e5a3eb368b79",
+     "o_que_significa": "aa0caf38336491dc588868443acfc8a5df4a2b5e1bde4456cefb298b550c5fd0",
+     "exemplo_pratico": "06b96b3c13aaaffb436c2946b4d58e6c81c80d625394966d54a77bc5d73b6b22",
+     "atencao": "67c0521b9dfc1af4c1e66eed420cd5b6e2c950c199a4b38e98632576bc469842",
+     "palavras_dificeis": "daa4c5a751bc7a3cec1ae793853c498e16c85c63d27b6091eb2099d5e09b6791"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.892, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quem assina título como representante sem poderes, ou além deles, fica pessoalmente obrigado; se pagar, adquire os direitos que teria o suposto representado.’. O campo de atenção registra: ‘Ratificação e regras especiais de representação podem alterar o resultado, mas precisam ser comprovadas.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 313,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 702,
+   "target_id": "CC2002:ART.893",
+   "explanation_id": "ENTENDA/CC2002:ART.893/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.893:CAPUT\tA transferência do título de crédito implica a de todos os direitos que lhe são inerentes.",
+   "source_snapshot_sha256": "6a0a9d9b25a8414ec10d3ddb28930cf7fa480eca91db233378efef5ca552a2af",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.893:CAPUT",
+     "text": "A transferência do título de crédito implica a de todos os direitos que lhe são inerentes."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A transferência do título de crédito implica a de todos os direitos que lhe são inerentes.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1f8bada7b36cfa0008fe17ce3223f5c87422882d88661d3950038defed94e878",
+     "o_que_significa": "111cf07d69a9a6d0d030f0b73359e6d33fbd1d6f8efc35e1d47c9bdb4af7339e",
+     "exemplo_pratico": "a470f1760441589e1eb3a55ce46bce62ae7d42aeafe1a4a8f3642f0f1f7621c7",
+     "atencao": "0b736e2329822fee106fcf0cff616b326aa87e0a04a0c20e213ba435720bb6d9",
+     "palavras_dificeis": "9d1bde684565b82a36add0e49780b186b74d29fc5ec8691c6526da5dc8559393"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.893, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A transferência do título leva consigo todos os direitos que lhe são inerentes.’. O campo de atenção registra: ‘Direitos estranhos ou expressamente pessoais não são transferidos apenas por esta regra.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 314,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 703,
+   "target_id": "CC2002:ART.894",
+   "explanation_id": "ENTENDA/CC2002:ART.894/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.894:CAPUT\tO portador de título representativo de mercadoria tem o direito de transferi-lo, de conformidade com as normas que regulam a sua circulação, ou de receber aquela independentemente de quaisquer formalidades, além da entrega do título devidamente quitado.",
+   "source_snapshot_sha256": "7b9b5d8878342841c571bb751216a15a6636fbb8dd5e96c1247af80d6cd72769",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.894:CAPUT",
+     "text": "O portador de título representativo de mercadoria tem o direito de transferi-lo, de conformidade com as normas que regulam a sua circulação, ou de receber aquela independentemente de quaisquer formalidades, além da entrega do título devidamente quitado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O portador de título representativo de mercadoria tem o direito de transferi-lo, de conformidade com as normas que regulam a sua circulação, ou de receber aquela independentemente de quaisquer formalidades, além da entrega do título devidamente quitado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "11393eacfad41ca69184a67fa9902863373908961cc644f3a72caa2ba352828d",
+     "o_que_significa": "07e7660682d62109074ddeeced0ab171e8c1473cdf80ecbd4a040ef3daa402a8",
+     "exemplo_pratico": "08289bbf46298630bf9ea327df8d07179bc7ebfb33b4d8249cdbf91274e06e70",
+     "atencao": "ebf1a95966569a0c841a59c56dac91359569b031d9aea7ea0b11b41afbdf500c",
+     "palavras_dificeis": "14a45f0957a8f1847a2f0cfb9221e36a2b9aefb7036c17d2711f653e0449b31a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.894, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O portador de título representativo de mercadoria pode transferi-lo conforme as regras de circulação ou receber a mercadoria mediante entrega do título quitado.’. O campo de atenção registra: ‘É indispensável legitimidade do portador e observância da lei especial da espécie documental.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 315,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 704,
+   "target_id": "CC2002:ART.895",
+   "explanation_id": "ENTENDA/CC2002:ART.895/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.895:CAPUT\tEnquanto o título de crédito estiver em circulação, só ele poderá ser dado em garantia, ou ser objeto de medidas judiciais, e não, separadamente, os direitos ou mercadorias que representa.",
+   "source_snapshot_sha256": "6532a2a7d4d937545bb486d9672f7dd5ccd75db841438035df979c17e975872b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.895:CAPUT",
+     "text": "Enquanto o título de crédito estiver em circulação, só ele poderá ser dado em garantia, ou ser objeto de medidas judiciais, e não, separadamente, os direitos ou mercadorias que representa."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Enquanto o título de crédito estiver em circulação, só ele poderá ser dado em garantia, ou ser objeto de medidas judiciais, e não, separadamente, os direitos ou mercadorias que representa.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b1f4541691e6ea57c3da64eefec039575ee09a94e792b91f3beb8d30ffd522e0",
+     "o_que_significa": "d02637fab6072dc72a4533df32ff1a4e512f58ad5dc5b23c49263bf5b49e681d",
+     "exemplo_pratico": "f7e7017a9f426aaa0b21a92e2434674f1c0a7d0611bf8ae4f852467ca38270b9",
+     "atencao": "55fe242b4db798d63061322585cf3f5a67aa0f7b561e139dd9a3a803e2f064af",
+     "palavras_dificeis": "e0eb03c7e78c061b7bb7fdd31c01e8594bf09bbab4a477a72739edbdb562524e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.895, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Enquanto o título circula, somente ele, e não separadamente os direitos ou mercadorias representados, pode ser dado em garantia ou sofrer medida judicial.’. O campo de atenção registra: ‘Encerrada a circulação ou aplicada lei especial, a disciplina pode mudar.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 316,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 705,
+   "target_id": "CC2002:ART.896",
+   "explanation_id": "ENTENDA/CC2002:ART.896/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.896:CAPUT\tO título de crédito não pode ser reivindicado do portador que o adquiriu de boa-fé e na conformidade das normas que disciplinam a sua circulação.",
+   "source_snapshot_sha256": "f60f0e8ea59a7e4320cbfa79a8b21415f22ae433bf83f6c35cf7a4b5a78e6b65",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.896:CAPUT",
+     "text": "O título de crédito não pode ser reivindicado do portador que o adquiriu de boa-fé e na conformidade das normas que disciplinam a sua circulação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O título de crédito não pode ser reivindicado do portador que o adquiriu de boa-fé e na conformidade das normas que disciplinam a sua circulação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4d174a22598a1b54c092eba6d8eaf576d6a8a27ae6c999e957a43e5fc69e4576",
+     "o_que_significa": "6311a125ff6f7338e8441aac7283338d9b9b60867a7580ef98493acf01988203",
+     "exemplo_pratico": "b441e3ebe4acd4d644e28c60e4a966f4048bff24653959bff4ddd305c0f45add",
+     "atencao": "d9769972ca86be46fbf0a9286b12b2947e3cfb268ed31dd65af5ebfcadddf636",
+     "palavras_dificeis": "04891d3f76cf2565f3a034cbd54711eb8f801defab562c61e0da5f2339b05993"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.896, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Não se pode reivindicar título de portador que o adquiriu de boa-fé e conforme as regras de circulação.’. O campo de atenção registra: ‘Má-fé ou circulação irregular afastam a proteção e devem ser demonstradas.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 317,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 706,
+   "target_id": "CC2002:ART.897",
+   "explanation_id": "ENTENDA/CC2002:ART.897/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.897:CAPUT\tO pagamento de título de crédito, que contenha obrigação de pagar soma determinada, pode ser garantido por aval.\nCC2002:ART.897:PAR.UNICO\tÉ vedado o aval parcial.",
+   "source_snapshot_sha256": "13516195f15ac5b9512ceee55af713741b0099450125b60a3894e81540a7f52c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.897:CAPUT",
+     "text": "O pagamento de título de crédito, que contenha obrigação de pagar soma determinada, pode ser garantido por aval."
+    },
+    {
+     "label": "CC2002:ART.897:PAR.UNICO",
+     "text": "É vedado o aval parcial."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O pagamento de título de crédito, que contenha obrigação de pagar soma determinada, pode ser garantido por aval. | É vedado o aval parcial.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1b8bf79e89428ec0adab3019c403522b3c2cbd18f398fab62f901b6d956c160b",
+     "o_que_significa": "ec937b2f1b40aa671e36beb54fbf94e6149ccfcf6c23261e84e1f45bdd4386e9",
+     "exemplo_pratico": "3e4386c628ff759da512983b4e0ad29f8d6f6c3fdc03e84c0d9c7ec72ae47cb2",
+     "atencao": "f22c7b25c058315fac46b51a76eb81d0da1e0c41015febb55e084ef8e3921025",
+     "palavras_dificeis": "1a41b2e48fff201ffbbfe67814824bc42e29710d69494d3e61ac953ca190796e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.897, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘O pagamento de título com obrigação de soma determinada pode ser garantido por aval, sendo proibido aval parcial.’. O campo de atenção registra: ‘Aval não é fiança civil: possui regime autônomo e deve observar a forma do título.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 318,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 707,
+   "target_id": "CC2002:ART.898",
+   "explanation_id": "ENTENDA/CC2002:ART.898/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.898:CAPUT\tO aval deve ser dado no verso ou no anverso do próprio título.\nCC2002:ART.898:PAR.1\tPara a validade do aval, dado no anverso do título, é suficiente a simples assinatura do avalista.\nCC2002:ART.898:PAR.2\tConsidera-se não escrito o aval cancelado.",
+   "source_snapshot_sha256": "72c67469d18665b04084d982417be08e8af46506bfa2fc957bd4f8356beaa5a2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.898:CAPUT",
+     "text": "O aval deve ser dado no verso ou no anverso do próprio título."
+    },
+    {
+     "label": "CC2002:ART.898:PAR.1",
+     "text": "Para a validade do aval, dado no anverso do título, é suficiente a simples assinatura do avalista."
+    },
+    {
+     "label": "CC2002:ART.898:PAR.2",
+     "text": "Considera-se não escrito o aval cancelado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: O aval deve ser dado no verso ou no anverso do próprio título. | Para a validade do aval, dado no anverso do título, é suficiente a simples assinatura do avalista. | Considera-se não escrito o aval cancelado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "212e5c9be1b8deb1ca067f48ba287339396a42fd11f55605c0b902ceb22e35aa",
+     "o_que_significa": "21731f5bbf542ae4337251577d0f243b331583724b07a044db02403b114c552e",
+     "exemplo_pratico": "92bad058dff5d5ca4df1953cbf427c8ee97f24fd1cc00a4b6f974e19884fb629",
+     "atencao": "b31e1e8fe2d493d48efeb06440288df57c79742b9e386a8a06731e01078d9696",
+     "palavras_dificeis": "c377fe1dacac950fe52d271c2df0c66004b89e5756c8ac067b04c3a0d6deb491"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.898, foram cotejados individualmente 3 segmento(s) vigente(s) (CAPUT, PAR.1, PAR.2) com os cinco campos ENTENDA. A síntese ativa informa: ‘O aval deve constar do verso ou anverso do título; no anverso, basta a assinatura do avalista. Aval cancelado é considerado não escrito.’. O campo de atenção registra: ‘Assinatura que tenha outra função claramente identificada não deve ser confundida; leis especiais podem detalhar a forma.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 319,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 708,
+   "target_id": "CC2002:ART.900",
+   "explanation_id": "ENTENDA/CC2002:ART.900/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.900:CAPUT\tO aval posterior ao vencimento produz os mesmos efeitos do anteriormente dado.",
+   "source_snapshot_sha256": "a223581231bdaacccf4f4ee65f2c6caf23549a0eacea35f904e474bcb913566c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.900:CAPUT",
+     "text": "O aval posterior ao vencimento produz os mesmos efeitos do anteriormente dado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O aval posterior ao vencimento produz os mesmos efeitos do anteriormente dado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7193fd0e69785e059dd9baa3c6b68ba76c97f9d187e08544a095a307c8a84604",
+     "o_que_significa": "63b6b64168b7a5c9f9249c4b6a3fcb4632b26d0f9b2419eac9a615ad22356ed4",
+     "exemplo_pratico": "a3e37af62c34561176ebed6436af783e9e07c49aa3627576e83ee24050c731c3",
+     "atencao": "cc8a76f504e88acf69c36b0ff66f1620030dcdccecf65cfbf531612018b80963",
+     "palavras_dificeis": "f46b58c9d4e4b4b09a679da334a03e859a3358f5bf8aca38673141e589e71272"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.900, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Aval prestado depois do vencimento produz os mesmos efeitos daquele dado antes.’. O campo de atenção registra: ‘A validade ainda depende dos demais requisitos formais e da disciplina especial do título.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 320,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 709,
+   "target_id": "CC2002:ART.901",
+   "explanation_id": "ENTENDA/CC2002:ART.901/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.901:CAPUT\tFica validamente desonerado o devedor que paga título de crédito ao legítimo portador, no vencimento, sem oposição, salvo se agiu de má-fé.\nCC2002:ART.901:PAR.UNICO\tPagando, pode o devedor exigir do credor, além da entrega do título, quitação regular.",
+   "source_snapshot_sha256": "fc077961575c339b744f542a3fdef2f59f19c84f3b12c719a01b48c5059f3d32",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.901:CAPUT",
+     "text": "Fica validamente desonerado o devedor que paga título de crédito ao legítimo portador, no vencimento, sem oposição, salvo se agiu de má-fé."
+    },
+    {
+     "label": "CC2002:ART.901:PAR.UNICO",
+     "text": "Pagando, pode o devedor exigir do credor, além da entrega do título, quitação regular."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Fica validamente desonerado o devedor que paga título de crédito ao legítimo portador, no vencimento, sem oposição, salvo se agiu de má-fé. | Pagando, pode o devedor exigir do credor, além da entrega do título, quitação regular.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1bed5c6c7d8b7246e4a479441537bf0ddf09a09c240d312e27573f2164e60397",
+     "o_que_significa": "1356f05c6954bf891e196970d9fa27c108c86f87ad886d4614deff3f120488e2",
+     "exemplo_pratico": "29e21f9f5c577e8be4a68b0fe6b452c655ade3b803ed70c054d0c1ac290f47d0",
+     "atencao": "71221f782010a6b2e03f0e60f5248ffa3605290e65fb34de86d32154534dd1a6",
+     "palavras_dificeis": "3f3eadd4949784ccb7b041487cdca7f77244f07da0f47dcfb1e14dce817636b2"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.901, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Libera-se validamente o devedor que, no vencimento e sem oposição, paga ao portador legítimo, salvo má-fé. Pode exigir entrega do título e quitação regular.’. O campo de atenção registra: ‘Oposição conhecida ou indícios de ilegitimidade podem impedir a liberação; a boa-fé do pagador é essencial.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 321,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 710,
+   "target_id": "CC2002:ART.903",
+   "explanation_id": "ENTENDA/CC2002:ART.903/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.903:CAPUT\tSalvo disposição diversa em lei especial, regem-se os títulos de crédito pelo disposto neste Código.",
+   "source_snapshot_sha256": "1bd4eae771e8a0c2cd22362debb27e73e4a175eaa3b99db0866940dd7b52d628",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.903:CAPUT",
+     "text": "Salvo disposição diversa em lei especial, regem-se os títulos de crédito pelo disposto neste Código."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Salvo disposição diversa em lei especial, regem-se os títulos de crédito pelo disposto neste Código.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "3e1ca5ca496a1e911f1c27d97b438268a8928a99b5a58fe29026197f4b0b3b03",
+     "o_que_significa": "0be05d48919012a8f8bce13086318a0d16d278ce1da2d1e5773f5c4a1f4b0be8",
+     "exemplo_pratico": "4d13722d8410ed392f145d73c9b1db7ee42ed17c799fa9a39f67c8cc02e646c6",
+     "atencao": "3f56884e5e2281c7a2d242b5aed30835131da7233b70a7142ec47caf1a9e06ed",
+     "palavras_dificeis": "ddb6eb5b46810d136cff0536200d970ebc6887cd69f9c28afd66ffa6171cfc64"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.903, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘As normas do Código Civil regem os títulos de crédito, salvo quando lei especial dispuser de modo diferente.’. O campo de atenção registra: ‘É necessário identificar a espécie do título antes de usar a regra do Código.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 322,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 711,
+   "target_id": "CC2002:ART.904",
+   "explanation_id": "ENTENDA/CC2002:ART.904/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.904:CAPUT\tA transferência de título ao portador se faz por simples tradição.",
+   "source_snapshot_sha256": "e955abb07867aea3a83636d92125d94e4c4a1666b16890d33122e1274a2763ce",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.904:CAPUT",
+     "text": "A transferência de título ao portador se faz por simples tradição."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A transferência de título ao portador se faz por simples tradição.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6598be743b8968f862c9d2433aff6d5c83085093a9b47004c0b7b9b0fa87c024",
+     "o_que_significa": "484fffa67f726b5c488c717856510ca8dd325dfff3305f431a6bd98c2fe05e31",
+     "exemplo_pratico": "3005b2cd6705cfeaaa2d4c6214fcde50c921b8f07d34436b1f9b13d1d63b58f2",
+     "atencao": "beff844e3fb76a40c32000a2f822bd5c64d81da8f0646b366509ca012a1d99d4",
+     "palavras_dificeis": "4df67402cb19517afe2a4d57030ac16b1fed5b74bc5d0a8e2cce1caea03ad846"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.904, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O título ao portador é transferido pela simples entrega.’. O campo de atenção registra: ‘A emissão e circulação de títulos ao portador sofrem limites legais específicos; simples posse obtida de má-fé não legitima.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 323,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 712,
+   "target_id": "CC2002:ART.905",
+   "explanation_id": "ENTENDA/CC2002:ART.905/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.905:CAPUT\tO possuidor de título ao portador tem direito à prestação nele indicada, mediante a sua simples apresentação ao devedor.\nCC2002:ART.905:PAR.UNICO\tA prestação é devida ainda que o título tenha entrado em circulação contra a vontade do emitente.",
+   "source_snapshot_sha256": "1dec37716fa9001962db1f9810d8e0a2147d2083eccaf59cd0a482ac72c42954",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.905:CAPUT",
+     "text": "O possuidor de título ao portador tem direito à prestação nele indicada, mediante a sua simples apresentação ao devedor."
+    },
+    {
+     "label": "CC2002:ART.905:PAR.UNICO",
+     "text": "A prestação é devida ainda que o título tenha entrado em circulação contra a vontade do emitente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O possuidor de título ao portador tem direito à prestação nele indicada, mediante a sua simples apresentação ao devedor. | A prestação é devida ainda que o título tenha entrado em circulação contra a vontade do emitente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "99dc93d8a7bc03d6d80fc9276d33332293d7694085861de900124dfef00b7f35",
+     "o_que_significa": "0d82a2907b264992beeccd4e97e5f6f795324236efa72a95d2a878109459ce88",
+     "exemplo_pratico": "5c13dd46e9d062e8bbf8e19d878dcac431b3edf5c00acbbdb21666a46637654d",
+     "atencao": "c459f62b71fdeef3c297ee298c03b270f36b0f92b3c6708793cebfdfc49f211f",
+     "palavras_dificeis": "f9330357a56824507fd08fe8959cbc7a5ff5f5c3e4c25a15be3f561b801d76bc"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.905, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quem possui título ao portador pode exigir a prestação nele indicada mediante simples apresentação, mesmo que o título tenha circulado contra a vontade do emitente.’. O campo de atenção registra: ‘A regra pressupõe título válido e não elimina defesas legalmente admitidas. A circulação involuntária não se confunde com nulidade do título.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 324,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 713,
+   "target_id": "CC2002:ART.906",
+   "explanation_id": "ENTENDA/CC2002:ART.906/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.906:CAPUT\tO devedor só poderá opor ao portador exceção fundada em direito pessoal, ou em nulidade de sua obrigação.",
+   "source_snapshot_sha256": "86271b28a4343735c6e1fbf2166b8724457585f4c2a978b0d6651f45caafa45a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.906:CAPUT",
+     "text": "O devedor só poderá opor ao portador exceção fundada em direito pessoal, ou em nulidade de sua obrigação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O devedor só poderá opor ao portador exceção fundada em direito pessoal, ou em nulidade de sua obrigação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1a7a43833aba0ed82d2f970f5ab7542a2a88669574a6808686b651761472ef82",
+     "o_que_significa": "5e10b6c5d13a0fd9a0c3d5f60eaaf77ade1e268ceb46490061d479812bb76b2f",
+     "exemplo_pratico": "5a639a592a0df3dd4a0227f2c71f33024708597e2d9296a5f58306296dd8a47b",
+     "atencao": "cc7011b91b7dde9a7fbf9fc8c8b4413f5dc18ca16e6f84c98e49b6ccb92df80d",
+     "palavras_dificeis": "f41ad3018a8f61fb04610fcc7fdac919f8270ada5d6e71ca70d37d7e42f0e4b8"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.906, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O devedor só pode opor ao portador defesa fundada em relação pessoal com ele ou na nulidade da própria obrigação.’. O campo de atenção registra: ‘Defesas existentes apenas contra possuidores anteriores, em regra, não atingem o portador atual de boa-fé.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 325,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 714,
+   "target_id": "CC2002:ART.907",
+   "explanation_id": "ENTENDA/CC2002:ART.907/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.907:CAPUT\tÉ nulo o título ao portador emitido sem autorização de lei especial.",
+   "source_snapshot_sha256": "416dacd32dfa792a2e5ef053d0cd1b9760df81fe031b4b9f2a32f952240f31fc",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.907:CAPUT",
+     "text": "É nulo o título ao portador emitido sem autorização de lei especial."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: É nulo o título ao portador emitido sem autorização de lei especial.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6b5fabc0bdfce1194cd7d4275daf73b0da860b37d276142a3a611524fd8304a5",
+     "o_que_significa": "1e9391f364ad606d31085b69a6b3e8b6131eb954d91f72046a9e513aacf5e954",
+     "exemplo_pratico": "57c35b4599a96e477ceff75273ca3bddc94344876f685841afc485874c930531",
+     "atencao": "43fd0bc53b54b3924333cc429a8ebb9479328821f792ff8679e539f2cd65063f",
+     "palavras_dificeis": "564de8fe1bd783b944946c19c50f02352f26a6978eda2bbadcb619094260a579"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.907, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘É nulo o título ao portador cuja emissão não esteja autorizada por lei especial.’. O campo de atenção registra: ‘A nulidade do título não resolve automaticamente eventuais relações causais entre as partes, que devem ser examinadas separadamente.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 326,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 715,
+   "target_id": "CC2002:ART.908",
+   "explanation_id": "ENTENDA/CC2002:ART.908/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.908:CAPUT\tO possuidor de título dilacerado, porém identificável, tem direito a obter do emitente a substituição do anterior, mediante a restituição do primeiro e o pagamento das despesas.",
+   "source_snapshot_sha256": "613958af130c4a81910e2b13b10b5c3eb606b652bba36742954bd4f5fceac7cd",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.908:CAPUT",
+     "text": "O possuidor de título dilacerado, porém identificável, tem direito a obter do emitente a substituição do anterior, mediante a restituição do primeiro e o pagamento das despesas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O possuidor de título dilacerado, porém identificável, tem direito a obter do emitente a substituição do anterior, mediante a restituição do primeiro e o pagamento das despesas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ba5833a341b8622255755b82a89fccb567363e42fa31b58e6bf28ece19cfd1b3",
+     "o_que_significa": "879ce347ab0f6c15ef86c32b47c948c4e0825fedaa262412acebbd19904b23a4",
+     "exemplo_pratico": "b9ac46f61eed0ef84728fc946f806a89bac2145b697ab09a2fbd18422cc0d997",
+     "atencao": "1c1e605eb2e54e5678cac0183217b685c8bf3ce7dc11cbf4b014295889c18040",
+     "palavras_dificeis": "446b33754a1d1e9726f2fa629dcf52831158cf8d74ba8bbb8e79ffc00b078788"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.908, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O possuidor de título rasgado ou danificado, mas ainda identificável, pode exigir substituição do emitente, devolvendo o original e pagando as despesas.’. O campo de atenção registra: ‘A substituição exige identificação segura e restituição do documento anterior; mero relato de perda segue regime diferente.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 327,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 716,
+   "target_id": "CC2002:ART.909",
+   "explanation_id": "ENTENDA/CC2002:ART.909/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.909:CAPUT\tO proprietário, que perder ou extraviar título, ou for injustamente desapossado dele, poderá obter novo título em juízo, bem como impedir sejam pagos a outrem capital e rendimentos.\nCC2002:ART.909:PAR.UNICO\tO pagamento, feito antes de ter ciência da ação referida neste artigo, exonera o devedor, salvo se se provar que ele tinha conhecimento do fato.",
+   "source_snapshot_sha256": "92bc0fc443a17b16125b150149d1fe5f843e9bfce1b299ffa0b258f728dad2ac",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.909:CAPUT",
+     "text": "O proprietário, que perder ou extraviar título, ou for injustamente desapossado dele, poderá obter novo título em juízo, bem como impedir sejam pagos a outrem capital e rendimentos."
+    },
+    {
+     "label": "CC2002:ART.909:PAR.UNICO",
+     "text": "O pagamento, feito antes de ter ciência da ação referida neste artigo, exonera o devedor, salvo se se provar que ele tinha conhecimento do fato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O proprietário, que perder ou extraviar título, ou for injustamente desapossado dele, poderá obter novo título em juízo, bem como impedir sejam pagos a outrem capital e rendimentos. | O pagamento, feito antes de ter ciência da ação referida neste artigo, exonera o devedor, salvo se se provar que ele tinha conhecimento do fato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c05cad476e4c08269eabe36dbb480de497386ccf092c715eb604826db6a6f86e",
+     "o_que_significa": "bf3b30f0f02e9a805263d7f91c4c2011edde221bb2701a5d9dbe7887029f2152",
+     "exemplo_pratico": "2aba61bc47e6fac68741ed05cdb0525c6e4ed54815031d6485bc00a83bafc68f",
+     "atencao": "66515b9414d076cba60e272e8ebaa4db22c93046521637f72c5fb25b43d52338",
+     "palavras_dificeis": "1faee74fb6a9ae202cdd56752bd12782257700774c78c90ca32bfb667e4fa87b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.909, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quem perde, extravia ou sofre desapossamento injusto de título pode pedir judicialmente outro e impedir o pagamento a terceiro. Pagamento anterior à ciência da ação libera o devedor, salvo prova de que conhecia o fato.’. O campo de atenção registra: ‘A exoneração depende da data e da boa-fé do pagamento. Depois de cientificado, o devedor deve respeitar a medida judicial.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 328,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 717,
+   "target_id": "CC2002:ART.910",
+   "explanation_id": "ENTENDA/CC2002:ART.910/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.910:CAPUT\tO endosso deve ser lançado pelo endossante no verso ou anverso do próprio título.\nCC2002:ART.910:PAR.1\tPode o endossante designar o endossatário, e para validade do endosso, dado no verso do título, é suficiente a simples assinatura do endossante.\nCC2002:ART.910:PAR.2\tA transferência por endosso completa-se com a tradição do título.\nCC2002:ART.910:PAR.3\tConsidera-se não escrito o endosso cancelado, total ou parcialmente.",
+   "source_snapshot_sha256": "c8b1bd24aff5e301cba625cfe573cf113f003362603ce6dd88dbc7d912c03237",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.910:CAPUT",
+     "text": "O endosso deve ser lançado pelo endossante no verso ou anverso do próprio título."
+    },
+    {
+     "label": "CC2002:ART.910:PAR.1",
+     "text": "Pode o endossante designar o endossatário, e para validade do endosso, dado no verso do título, é suficiente a simples assinatura do endossante."
+    },
+    {
+     "label": "CC2002:ART.910:PAR.2",
+     "text": "A transferência por endosso completa-se com a tradição do título."
+    },
+    {
+     "label": "CC2002:ART.910:PAR.3",
+     "text": "Considera-se não escrito o endosso cancelado, total ou parcialmente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: O endosso deve ser lançado pelo endossante no verso ou anverso do próprio título. | Pode o endossante designar o endossatário, e para validade do endosso, dado no verso do título, é suficiente a simples assinatura do endossante. | A transferência por endosso completa-se com a tradição do título. | Considera-se não escrito o endosso cancelado, total ou parcialmente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "729ff858c4fd20c7fb1d8314ec857236e7a608657ed6280080b5a814574c6fb8",
+     "o_que_significa": "b5f8d7ca3267220154543e672d53244e464d75ac9843ffc3579e92458165b85c",
+     "exemplo_pratico": "245bf2c4937cd3572d1b738d75785c409253a5bc6c8b57781efc09442b8b2440",
+     "atencao": "02479f6a8b336bae751069adf01639d2c692ed0bb466ac30f0d6cbf68fb8cee4",
+     "palavras_dificeis": "837750b2a0cdea299eca51ec2460bdb73963a16bfbe6f51cdff9b94e70a4fb75"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.910, foram cotejados individualmente 4 segmento(s) vigente(s) (CAPUT, PAR.1, PAR.2, PAR.3) com os cinco campos ENTENDA. A síntese ativa informa: ‘O endosso é escrito no verso ou anverso do título; no verso basta a assinatura. A transferência se completa com a entrega, e endosso cancelado considera-se não escrito.’. O campo de atenção registra: ‘Assinatura isolada no anverso pode ter outra função; forma, posição, entrega e eventual cancelamento precisam ser conferidos em conjunto.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 329,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 718,
+   "target_id": "CC2002:ART.911",
+   "explanation_id": "ENTENDA/CC2002:ART.911/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.911:CAPUT\tConsidera-se legítimo possuidor o portador do título à ordem com série regular e ininterrupta de endossos, ainda que o último seja em branco.\nCC2002:ART.911:PAR.UNICO\tAquele que paga o título está obrigado a verificar a regularidade da série de endossos, mas não a autenticidade das assinaturas.",
+   "source_snapshot_sha256": "3c4eea0b6bf50def020135dbf039dff7723023faa14bda8214833c57e1f1de29",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.911:CAPUT",
+     "text": "Considera-se legítimo possuidor o portador do título à ordem com série regular e ininterrupta de endossos, ainda que o último seja em branco."
+    },
+    {
+     "label": "CC2002:ART.911:PAR.UNICO",
+     "text": "Aquele que paga o título está obrigado a verificar a regularidade da série de endossos, mas não a autenticidade das assinaturas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Considera-se legítimo possuidor o portador do título à ordem com série regular e ininterrupta de endossos, ainda que o último seja em branco. | Aquele que paga o título está obrigado a verificar a regularidade da série de endossos, mas não a autenticidade das assinaturas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ad4022de5b53a767ae725b1d334cda11f036ce8dd1c1ebfb63c4eceaa440e040",
+     "o_que_significa": "1cbe17d37d7695e3b0c0acbb326c53bb4803b6f8b195e17d52e308b06ee57af1",
+     "exemplo_pratico": "167923ffb70933845e83026161bcf85741233ba5996e2cb4bd5569a1cafeb156",
+     "atencao": "872e48f442e149dc81cc248103087c1d3fa932e62fc7a5a4d5d6a598be8778ae",
+     "palavras_dificeis": "abdcac25a57770eb906fcdb0df95a71738bf02d80768bd01248af5dd31bd64e8"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.911, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘É possuidor legítimo quem apresenta série regular e ininterrupta de endossos, ainda que o último esteja em branco. Quem paga verifica a cadeia, mas não a autenticidade das assinaturas.’. O campo de atenção registra: ‘Irregularidade visível na cadeia impede presumir legitimação. A dispensa de verificar autenticidade não autoriza ignorar fraude conhecida.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 330,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 719,
+   "target_id": "CC2002:ART.912",
+   "explanation_id": "ENTENDA/CC2002:ART.912/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.912:CAPUT\tConsidera-se não escrita no endosso qualquer condição a que o subordine o endossante.\nCC2002:ART.912:PAR.UNICO\tÉ nulo o endosso parcial.",
+   "source_snapshot_sha256": "d32877bdcc179fc0d7b6ca5d746b476f7bad6c32422d224dbee52b1621cfdf65",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.912:CAPUT",
+     "text": "Considera-se não escrita no endosso qualquer condição a que o subordine o endossante."
+    },
+    {
+     "label": "CC2002:ART.912:PAR.UNICO",
+     "text": "É nulo o endosso parcial."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Considera-se não escrita no endosso qualquer condição a que o subordine o endossante. | É nulo o endosso parcial.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8122a1fdc9a3875e49c31fd71ad8a581d0a9d719a37854020df701064cbcb88e",
+     "o_que_significa": "26f12fec02537c2539e76255e0e1469170d27022bbfe0c304ef326bb19715848",
+     "exemplo_pratico": "a5fbaff46ccb9e04fc57059ab22ece48f9652ef9a5096f5a733b5669f4528ca6",
+     "atencao": "42abf401528d0227ed111cf10946c3880251e22dfb162a85f5be500b64805051",
+     "palavras_dificeis": "ee00326d465fd8d2ff3a506ce358f90adbd4210463fc5baf2b6846fd0ee6ff40"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.912, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Condição inserida no endosso é considerada não escrita, e o endosso de apenas parte do valor é nulo.’. O campo de atenção registra: ‘A nulidade do endosso parcial não equivale necessariamente à nulidade do próprio título ou da relação contratual subjacente.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 331,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 720,
+   "target_id": "CC2002:ART.913",
+   "explanation_id": "ENTENDA/CC2002:ART.913/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.913:CAPUT\tO endossatário de endosso em branco pode mudá-lo para endosso em preto, completando-o com o seu nome ou de terceiro; pode endossar novamente o título, em branco ou em preto; ou pode transferi-lo sem novo endosso.",
+   "source_snapshot_sha256": "871e9b17a1222c0c79e20c75b772e0b35e8034e919e5cd1021a701ed26dc13b0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.913:CAPUT",
+     "text": "O endossatário de endosso em branco pode mudá-lo para endosso em preto, completando-o com o seu nome ou de terceiro; pode endossar novamente o título, em branco ou em preto; ou pode transferi-lo sem novo endosso."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O endossatário de endosso em branco pode mudá-lo para endosso em preto, completando-o com o seu nome ou de terceiro; pode endossar novamente o título, em branco ou em preto; ou pode transferi-lo sem novo endosso.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4afaf08adef27f27af060d4fdb95423b01f604ed2224eb1f5433d11ce3282d50",
+     "o_que_significa": "1775872d5a888fbc8019cf9de52cb4e0ef3f090a5c6ba63326871b38b1292db9",
+     "exemplo_pratico": "6b2cb5bc26f009178cd2d22e6f00b59a58192fae838ef783af167f830339e0e5",
+     "atencao": "f5ac59ba60e09ce16759722de8be03ccb89d42a9d0d69204f0b603b136a871e3",
+     "palavras_dificeis": "e7d2af20f86f5a462c0aeb992a494cf1dddcb16c582995fdb036420b2bf1d031"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.913, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quem recebe endosso em branco pode completá-lo com seu nome ou o de terceiro, endossar novamente em branco ou em preto, ou entregar o título sem novo endosso.’. O campo de atenção registra: ‘A escolha altera a cadeia documental e a forma de legitimação; devem ser preservadas autenticidade e continuidade dos endossos.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 332,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 721,
+   "target_id": "CC2002:ART.914",
+   "explanation_id": "ENTENDA/CC2002:ART.914/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.914:CAPUT\tRessalvada cláusula expressa em contrário, constante do endosso, não responde o endossante pelo cumprimento da prestação constante do título.\nCC2002:ART.914:PAR.1\tAssumindo responsabilidade pelo pagamento, o endossante se torna devedor solidário.\nCC2002:ART.914:PAR.2\tPagando o título, tem o endossante ação de regresso contra os coobrigados anteriores.",
+   "source_snapshot_sha256": "3e971490d964928b701678507f4ddd8738d9c73d82d1cb9c92d8701e52f79f76",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.914:CAPUT",
+     "text": "Ressalvada cláusula expressa em contrário, constante do endosso, não responde o endossante pelo cumprimento da prestação constante do título."
+    },
+    {
+     "label": "CC2002:ART.914:PAR.1",
+     "text": "Assumindo responsabilidade pelo pagamento, o endossante se torna devedor solidário."
+    },
+    {
+     "label": "CC2002:ART.914:PAR.2",
+     "text": "Pagando o título, tem o endossante ação de regresso contra os coobrigados anteriores."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Ressalvada cláusula expressa em contrário, constante do endosso, não responde o endossante pelo cumprimento da prestação constante do título. | Assumindo responsabilidade pelo pagamento, o endossante se torna devedor solidário. | Pagando o título, tem o endossante ação de regresso contra os coobrigados anteriores.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4fa36a515d409954807a8625bb7faa9137ee58e35ccec5152d215fea80253c5e",
+     "o_que_significa": "af0cf7b318184311c978c1516df516e79653eb53daf1dbe5bae1f2f39504a575",
+     "exemplo_pratico": "6a6e02e085c54ad5762a9f5412220fb7b45ba1e122d4339ebf47252de5fb7f77",
+     "atencao": "bec4175571f272a54db9efe48c51f6aafc32e9894751717ebfd7f28c7e0916cb",
+     "palavras_dificeis": "271b6a93609d16ea16871ffee25789333bed74621a32176c70fe23f10908e4f1"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.914, foram cotejados individualmente 3 segmento(s) vigente(s) (CAPUT, PAR.1, PAR.2) com os cinco campos ENTENDA. A síntese ativa informa: ‘Em regra, o endossante não garante o pagamento, salvo cláusula expressa. Se assumir essa responsabilidade, torna-se devedor solidário e, pagando, pode regressar contra coobrigados anteriores.’. O campo de atenção registra: ‘A responsabilidade depende de texto expresso e das regras especiais do título; o regresso respeita a posição dos coobrigados.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 333,
+   "checkpoint": "B-CP07",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "residual_queue_position": 334,
+   "queue_position": 722,
+   "target_id": "CC2002:ART.915",
+   "checkpoint": "B-CP07",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.915, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão QA-03. Regra oficial verificada: O devedor, além das exceções fundadas nas relações pessoais que tiver com o portador, só poderá opor a este as exceções relativas à forma do título e ao seu conteúdo literal, à falsidade da própria assinatura, a defeito de capacidade ou de representação no momento da subscrição, e à falta de requisito necessário ao exercício da ação. Explicação ativa confrontada: Contra o portador, o devedor pode alegar relações pessoais diretas, forma ou conteúdo literal do título, falsidade da própria assinatura, incapacidade ou representação defeituosa ao assinar e falta de requisito da ação. Não se identificou, no escopo examinado, troca de sujeito, prazo incorreto, exceção invertida, requisito inventado ou omissão material.",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.915:CAPUT\tO devedor, além das exceções fundadas nas relações pessoais que tiver com o portador, só poderá opor a este as exceções relativas à forma do título e ao seu conteúdo literal, à falsidade da própria assinatura, a defeito de capacidade ou de representação no momento da subscrição, e à falta de requisito necessário ao exercício da ação.",
+   "source_snapshot_sha256": "e1d425052e958713bcb4008af6dc2d13dd63ef4ca34c1ae310a4471600daaad7",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.915:CAPUT",
+     "text": "O devedor, além das exceções fundadas nas relações pessoais que tiver com o portador, só poderá opor a este as exceções relativas à forma do título e ao seu conteúdo literal, à falsidade da própria assinatura, a defeito de capacidade ou de representação no momento da subscrição, e à falta de requisito necessário ao exercício da ação."
+    }
+   ],
+   "independent_rule_summary": "O devedor, além das exceções fundadas nas relações pessoais que tiver com o portador, só poderá opor a este as exceções relativas à forma do título e ao seu conteúdo literal, à falsidade da própria assinatura, a defeito de capacidade ou de representação no momento da subscrição, e à falta de requisito necessário ao exercício da ação.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.915/BASE/1",
+   "baseline_field_sha256": {
+    "o_que_diz": "59b6109726484a310424367b0727ae620e70d6326003cf68aec180ead37dc6a0",
+    "o_que_significa": "ef642422951874227c213e6cfe0d3e1b1ab294ccda9cd8dda873e9b3d47e755e",
+    "exemplo_pratico": "5bb131e979996242d03ab57a36545844ea117770b34180a5921b99f124ae58de",
+    "atencao": "0d0483e78a7ee48f324edd7f25c9f237c6253cba10663c3f9f18d48d610b3768",
+    "palavras_dificeis": "0d531423d921699da0422f74431db6313fbe2809ede63ca3227251d46fa17a60"
+   },
+   "field_review": {
+    "o_que_diz": {
+     "sha256": "59b6109726484a310424367b0727ae620e70d6326003cf68aec180ead37dc6a0",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "o_que_significa": {
+     "sha256": "ef642422951874227c213e6cfe0d3e1b1ab294ccda9cd8dda873e9b3d47e755e",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "exemplo_pratico": {
+     "sha256": "5bb131e979996242d03ab57a36545844ea117770b34180a5921b99f124ae58de",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "atencao": {
+     "sha256": "0d0483e78a7ee48f324edd7f25c9f237c6253cba10663c3f9f18d48d610b3768",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "palavras_dificeis": {
+     "sha256": "0d531423d921699da0422f74431db6313fbe2809ede63ca3227251d46fa17a60",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    }
+   },
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "subjects": true,
+    "deadlines": true,
+    "consequences": true,
+    "all_five_fields": true,
+    "field_sha256": {
+     "o_que_diz": "59b6109726484a310424367b0727ae620e70d6326003cf68aec180ead37dc6a0",
+     "o_que_significa": "ef642422951874227c213e6cfe0d3e1b1ab294ccda9cd8dda873e9b3d47e755e",
+     "exemplo_pratico": "5bb131e979996242d03ab57a36545844ea117770b34180a5921b99f124ae58de",
+     "atencao": "0d0483e78a7ee48f324edd7f25c9f237c6253cba10663c3f9f18d48d610b3768",
+     "palavras_dificeis": "0d531423d921699da0422f74431db6313fbe2809ede63ca3227251d46fa17a60"
+    }
+   },
+   "finding": null,
+   "review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "auditor": "qa04_audit_334_666",
+   "residual_position": 334,
+   "explanation_id": "ENTENDA/CC2002:ART.915/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "independent_review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "reviewer": "qa04_audit_334_666"
+  },
+  {
+   "residual_queue_position": 335,
+   "queue_position": 723,
+   "target_id": "CC2002:ART.916",
+   "checkpoint": "B-CP07",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.916, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão QA-03. Regra oficial verificada: As exceções, fundadas em relação do devedor com os portadores precedentes, somente poderão ser por ele opostas ao portador, se este, ao adquirir o título, tiver agido de má-fé. Explicação ativa confrontada: Defesa baseada na relação do devedor com portadores anteriores só pode atingir o atual se ele agiu de má-fé ao adquirir o título. Não se identificou, no escopo examinado, troca de sujeito, prazo incorreto, exceção invertida, requisito inventado ou omissão material.",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.916:CAPUT\tAs exceções, fundadas em relação do devedor com os portadores precedentes, somente poderão ser por ele opostas ao portador, se este, ao adquirir o título, tiver agido de má-fé.",
+   "source_snapshot_sha256": "e5c4285f2805272182a9967b2ad77703b49ebdd815dc1a0235bbd463074374a1",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.916:CAPUT",
+     "text": "As exceções, fundadas em relação do devedor com os portadores precedentes, somente poderão ser por ele opostas ao portador, se este, ao adquirir o título, tiver agido de má-fé."
+    }
+   ],
+   "independent_rule_summary": "As exceções, fundadas em relação do devedor com os portadores precedentes, somente poderão ser por ele opostas ao portador, se este, ao adquirir o título, tiver agido de má-fé.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.916/BASE/1",
+   "baseline_field_sha256": {
+    "o_que_diz": "cf10409585cbe9cf5535b7249c912138ec08bf8883d0a70c0adfd071662c49db",
+    "o_que_significa": "8ed9ffe8375f12f0128a44f8afecc55c6c347234b43ba2e7cca413442ee42b9d",
+    "exemplo_pratico": "7dd23bec2942ad6dcb28519acd89c0a713fe3c2673423a6bbf68ad24c8dc926c",
+    "atencao": "37b68fff4bf741a9686a42f552ee3b2a7f6b29171fe6db707cfb8c5baaed4dab",
+    "palavras_dificeis": "eb55eb1bca7545a76450ba58166346f23a6713dfacdfb39bb3af4c68a685f178"
+   },
+   "field_review": {
+    "o_que_diz": {
+     "sha256": "cf10409585cbe9cf5535b7249c912138ec08bf8883d0a70c0adfd071662c49db",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "o_que_significa": {
+     "sha256": "8ed9ffe8375f12f0128a44f8afecc55c6c347234b43ba2e7cca413442ee42b9d",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "exemplo_pratico": {
+     "sha256": "7dd23bec2942ad6dcb28519acd89c0a713fe3c2673423a6bbf68ad24c8dc926c",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "atencao": {
+     "sha256": "37b68fff4bf741a9686a42f552ee3b2a7f6b29171fe6db707cfb8c5baaed4dab",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "palavras_dificeis": {
+     "sha256": "eb55eb1bca7545a76450ba58166346f23a6713dfacdfb39bb3af4c68a685f178",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    }
+   },
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "subjects": true,
+    "deadlines": true,
+    "consequences": true,
+    "all_five_fields": true,
+    "field_sha256": {
+     "o_que_diz": "cf10409585cbe9cf5535b7249c912138ec08bf8883d0a70c0adfd071662c49db",
+     "o_que_significa": "8ed9ffe8375f12f0128a44f8afecc55c6c347234b43ba2e7cca413442ee42b9d",
+     "exemplo_pratico": "7dd23bec2942ad6dcb28519acd89c0a713fe3c2673423a6bbf68ad24c8dc926c",
+     "atencao": "37b68fff4bf741a9686a42f552ee3b2a7f6b29171fe6db707cfb8c5baaed4dab",
+     "palavras_dificeis": "eb55eb1bca7545a76450ba58166346f23a6713dfacdfb39bb3af4c68a685f178"
+    }
+   },
+   "finding": null,
+   "review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "auditor": "qa04_audit_334_666",
+   "residual_position": 335,
+   "explanation_id": "ENTENDA/CC2002:ART.916/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "independent_review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "reviewer": "qa04_audit_334_666"
+  },
+  {
+   "residual_queue_position": 336,
+   "queue_position": 724,
+   "target_id": "CC2002:ART.917",
+   "checkpoint": "B-CP07",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.917, foram confrontados individualmente os 4 segmentos vigentes com os cinco campos da versão QA-03. Regra oficial verificada: A cláusula constitutiva de mandato, lançada no endosso, confere ao endossatário o exercício dos direitos inerentes ao título, salvo restrição expressamente estatuída.; O endossatário de endosso-mandato só pode endossar novamente o título na qualidade de procurador, com os mesmos poderes que recebeu.; Com a morte ou a superveniente incapacidade do endossante, não perde eficácia o endosso-mandato.; Pode o devedor opor ao endossatário de endosso-mandato somente as exceções que tiver contra o endossante. Explicação ativa confrontada: O endosso-mandato permite ao endossatário exercer os direitos do título e reendossar apenas como procurador. Mantém eficácia após morte ou incapacidade do endossante, e admite defesas contra este. Não se identificou, no escopo examinado, troca de sujeito, prazo incorreto, exceção invertida, requisito inventado ou omissão material.",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.917:CAPUT\tA cláusula constitutiva de mandato, lançada no endosso, confere ao endossatário o exercício dos direitos inerentes ao título, salvo restrição expressamente estatuída.\nCC2002:ART.917:PAR.1\tO endossatário de endosso-mandato só pode endossar novamente o título na qualidade de procurador, com os mesmos poderes que recebeu.\nCC2002:ART.917:PAR.2\tCom a morte ou a superveniente incapacidade do endossante, não perde eficácia o endosso-mandato.\nCC2002:ART.917:PAR.3\tPode o devedor opor ao endossatário de endosso-mandato somente as exceções que tiver contra o endossante.",
+   "source_snapshot_sha256": "7a4cfc7dee0f751ceeb7cc529315c0ba1e934aff73eb87cc1a520da6c07c5746",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.917:CAPUT",
+     "text": "A cláusula constitutiva de mandato, lançada no endosso, confere ao endossatário o exercício dos direitos inerentes ao título, salvo restrição expressamente estatuída."
+    },
+    {
+     "label": "CC2002:ART.917:PAR.1",
+     "text": "O endossatário de endosso-mandato só pode endossar novamente o título na qualidade de procurador, com os mesmos poderes que recebeu."
+    },
+    {
+     "label": "CC2002:ART.917:PAR.2",
+     "text": "Com a morte ou a superveniente incapacidade do endossante, não perde eficácia o endosso-mandato."
+    },
+    {
+     "label": "CC2002:ART.917:PAR.3",
+     "text": "Pode o devedor opor ao endossatário de endosso-mandato somente as exceções que tiver contra o endossante."
+    }
+   ],
+   "independent_rule_summary": "A cláusula constitutiva de mandato, lançada no endosso, confere ao endossatário o exercício dos direitos inerentes ao título, salvo restrição expressamente estatuída. O endossatário de endosso-mandato só pode endossar novamente o título na qualidade de procurador, com os mesmos poderes que recebeu. Com a morte ou a superveniente incapacidade do endossante, não perde eficácia o endosso-mandato. Pode o devedor opor ao endossatário de endosso-mandato somente as exceções que tiver contra o endossante.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.917/BASE/1",
+   "baseline_field_sha256": {
+    "o_que_diz": "1c1732ff392687562e53bfaa1565ffef189e77ad3c44789c39adfdadc4d51f05",
+    "o_que_significa": "b86860e15f5d6c5458a4723b7ab9f6e8e2970a3425e0a66130a78d7dc7a7174d",
+    "exemplo_pratico": "55ecf4cb34491925a65e3a11df1e6893945b8daf4758d122e6f1a7e8918ecb2e",
+    "atencao": "1de0c5ffd192e9c9b4ec20c8ed5ce58be96fcc29000bc68a9bc0ce5e6050327e",
+    "palavras_dificeis": "020c548a3208f27c81e33bbc588c5dc9b6925a01e5e01455c55492f69efd70d0"
+   },
+   "field_review": {
+    "o_que_diz": {
+     "sha256": "1c1732ff392687562e53bfaa1565ffef189e77ad3c44789c39adfdadc4d51f05",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "o_que_significa": {
+     "sha256": "b86860e15f5d6c5458a4723b7ab9f6e8e2970a3425e0a66130a78d7dc7a7174d",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "exemplo_pratico": {
+     "sha256": "55ecf4cb34491925a65e3a11df1e6893945b8daf4758d122e6f1a7e8918ecb2e",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "atencao": {
+     "sha256": "1de0c5ffd192e9c9b4ec20c8ed5ce58be96fcc29000bc68a9bc0ce5e6050327e",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "palavras_dificeis": {
+     "sha256": "020c548a3208f27c81e33bbc588c5dc9b6925a01e5e01455c55492f69efd70d0",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    }
+   },
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "subjects": true,
+    "deadlines": true,
+    "consequences": true,
+    "all_five_fields": true,
+    "field_sha256": {
+     "o_que_diz": "1c1732ff392687562e53bfaa1565ffef189e77ad3c44789c39adfdadc4d51f05",
+     "o_que_significa": "b86860e15f5d6c5458a4723b7ab9f6e8e2970a3425e0a66130a78d7dc7a7174d",
+     "exemplo_pratico": "55ecf4cb34491925a65e3a11df1e6893945b8daf4758d122e6f1a7e8918ecb2e",
+     "atencao": "1de0c5ffd192e9c9b4ec20c8ed5ce58be96fcc29000bc68a9bc0ce5e6050327e",
+     "palavras_dificeis": "020c548a3208f27c81e33bbc588c5dc9b6925a01e5e01455c55492f69efd70d0"
+    }
+   },
+   "finding": null,
+   "review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "auditor": "qa04_audit_334_666",
+   "residual_position": 336,
+   "explanation_id": "ENTENDA/CC2002:ART.917/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "independent_review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "reviewer": "qa04_audit_334_666"
+  },
+  {
+   "residual_queue_position": 337,
+   "queue_position": 725,
+   "target_id": "CC2002:ART.918",
+   "checkpoint": "B-CP07",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.918, foram confrontados individualmente os 3 segmentos vigentes com os cinco campos da versão QA-03. Regra oficial verificada: A cláusula constitutiva de penhor, lançada no endosso, confere ao endossatário o exercício dos direitos inerentes ao título.; O endossatário de endosso-penhor só pode endossar novamente o título na qualidade de procurador.; Não pode o devedor opor ao endossatário de endosso-penhor as exceções que tinha contra o endossante, salvo se aquele tiver agido de má-fé. Explicação ativa confrontada: O endosso-penhor dá ao endossatário os direitos do título como garantia; ele só reendossa como procurador. Defesas contra o endossante não o atingem, salvo sua má-fé. Não se identificou, no escopo examinado, troca de sujeito, prazo incorreto, exceção invertida, requisito inventado ou omissão material.",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.918:CAPUT\tA cláusula constitutiva de penhor, lançada no endosso, confere ao endossatário o exercício dos direitos inerentes ao título.\nCC2002:ART.918:PAR.1\tO endossatário de endosso-penhor só pode endossar novamente o título na qualidade de procurador.\nCC2002:ART.918:PAR.2\tNão pode o devedor opor ao endossatário de endosso-penhor as exceções que tinha contra o endossante, salvo se aquele tiver agido de má-fé.",
+   "source_snapshot_sha256": "78718f19ec5536345c1cb4b725850350c68b7d18519f2d3068327aac02354397",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.918:CAPUT",
+     "text": "A cláusula constitutiva de penhor, lançada no endosso, confere ao endossatário o exercício dos direitos inerentes ao título."
+    },
+    {
+     "label": "CC2002:ART.918:PAR.1",
+     "text": "O endossatário de endosso-penhor só pode endossar novamente o título na qualidade de procurador."
+    },
+    {
+     "label": "CC2002:ART.918:PAR.2",
+     "text": "Não pode o devedor opor ao endossatário de endosso-penhor as exceções que tinha contra o endossante, salvo se aquele tiver agido de má-fé."
+    }
+   ],
+   "independent_rule_summary": "A cláusula constitutiva de penhor, lançada no endosso, confere ao endossatário o exercício dos direitos inerentes ao título. O endossatário de endosso-penhor só pode endossar novamente o título na qualidade de procurador. Não pode o devedor opor ao endossatário de endosso-penhor as exceções que tinha contra o endossante, salvo se aquele tiver agido de má-fé.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.918/BASE/1",
+   "baseline_field_sha256": {
+    "o_que_diz": "8f4bd2d6dbcb04b8f4b8af3c5ff49c20f2f375a96b4e19c18742988d4f431d04",
+    "o_que_significa": "4a49fde62a59fe91becc5ee06fee0fe12af7e4d55d0b33a83b7e4520e33c9c12",
+    "exemplo_pratico": "98e7c5eb414a1b8225b0fcdc470846886ad5f9844ed1c44f293d82ba8b0f26a5",
+    "atencao": "a26b4586396e00e2419501024105247cd0d3635a342fecb1bfe954bbfeb9cb07",
+    "palavras_dificeis": "63ac81798d683220f5a83589d02c26dbe6856dc0f90ade45b1009a8da1549ef1"
+   },
+   "field_review": {
+    "o_que_diz": {
+     "sha256": "8f4bd2d6dbcb04b8f4b8af3c5ff49c20f2f375a96b4e19c18742988d4f431d04",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "o_que_significa": {
+     "sha256": "4a49fde62a59fe91becc5ee06fee0fe12af7e4d55d0b33a83b7e4520e33c9c12",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "exemplo_pratico": {
+     "sha256": "98e7c5eb414a1b8225b0fcdc470846886ad5f9844ed1c44f293d82ba8b0f26a5",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "atencao": {
+     "sha256": "a26b4586396e00e2419501024105247cd0d3635a342fecb1bfe954bbfeb9cb07",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "palavras_dificeis": {
+     "sha256": "63ac81798d683220f5a83589d02c26dbe6856dc0f90ade45b1009a8da1549ef1",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    }
+   },
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "subjects": true,
+    "deadlines": true,
+    "consequences": true,
+    "all_five_fields": true,
+    "field_sha256": {
+     "o_que_diz": "8f4bd2d6dbcb04b8f4b8af3c5ff49c20f2f375a96b4e19c18742988d4f431d04",
+     "o_que_significa": "4a49fde62a59fe91becc5ee06fee0fe12af7e4d55d0b33a83b7e4520e33c9c12",
+     "exemplo_pratico": "98e7c5eb414a1b8225b0fcdc470846886ad5f9844ed1c44f293d82ba8b0f26a5",
+     "atencao": "a26b4586396e00e2419501024105247cd0d3635a342fecb1bfe954bbfeb9cb07",
+     "palavras_dificeis": "63ac81798d683220f5a83589d02c26dbe6856dc0f90ade45b1009a8da1549ef1"
+    }
+   },
+   "finding": null,
+   "review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "auditor": "qa04_audit_334_666",
+   "residual_position": 337,
+   "explanation_id": "ENTENDA/CC2002:ART.918/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "independent_review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "reviewer": "qa04_audit_334_666"
+  },
+  {
+   "residual_queue_position": 338,
+   "queue_position": 726,
+   "target_id": "CC2002:ART.919",
+   "checkpoint": "B-CP07",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.919, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão QA-03. Regra oficial verificada: A aquisição de título à ordem, por meio diverso do endosso, tem efeito de cessão civil. Explicação ativa confrontada: Se o título à ordem for adquirido por modo diferente do endosso, a operação produz efeitos de cessão civil. Não se identificou, no escopo examinado, troca de sujeito, prazo incorreto, exceção invertida, requisito inventado ou omissão material.",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.919:CAPUT\tA aquisição de título à ordem, por meio diverso do endosso, tem efeito de cessão civil.",
+   "source_snapshot_sha256": "9f54c7b37fee54946dadc6fcd38293a61ea27e90fc20950e3db299daeef200c7",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.919:CAPUT",
+     "text": "A aquisição de título à ordem, por meio diverso do endosso, tem efeito de cessão civil."
+    }
+   ],
+   "independent_rule_summary": "A aquisição de título à ordem, por meio diverso do endosso, tem efeito de cessão civil.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.919/BASE/1",
+   "baseline_field_sha256": {
+    "o_que_diz": "2364ab4372d6800d0c4e8e80ada469cc836958b7301fb31f7cf301e565c4838f",
+    "o_que_significa": "a3716c313adf9b0a7f1c6ab2f8a8d64124824781a71def4b307561035095b106",
+    "exemplo_pratico": "17cb71c37f66e4c41f16b206a69daaa335111530535969f2d7bfc15017c5ace5",
+    "atencao": "bb95ec3f17f9acbde270fa2d5bdc1f6d8ee0a332ef9ad75adf643cad1aa37acc",
+    "palavras_dificeis": "8361fc4906edab300e7eb6e1311f51c0902ab395eb3f9b94123ed9e059969af4"
+   },
+   "field_review": {
+    "o_que_diz": {
+     "sha256": "2364ab4372d6800d0c4e8e80ada469cc836958b7301fb31f7cf301e565c4838f",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "o_que_significa": {
+     "sha256": "a3716c313adf9b0a7f1c6ab2f8a8d64124824781a71def4b307561035095b106",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "exemplo_pratico": {
+     "sha256": "17cb71c37f66e4c41f16b206a69daaa335111530535969f2d7bfc15017c5ace5",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "atencao": {
+     "sha256": "bb95ec3f17f9acbde270fa2d5bdc1f6d8ee0a332ef9ad75adf643cad1aa37acc",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "palavras_dificeis": {
+     "sha256": "8361fc4906edab300e7eb6e1311f51c0902ab395eb3f9b94123ed9e059969af4",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    }
+   },
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "subjects": true,
+    "deadlines": true,
+    "consequences": true,
+    "all_five_fields": true,
+    "field_sha256": {
+     "o_que_diz": "2364ab4372d6800d0c4e8e80ada469cc836958b7301fb31f7cf301e565c4838f",
+     "o_que_significa": "a3716c313adf9b0a7f1c6ab2f8a8d64124824781a71def4b307561035095b106",
+     "exemplo_pratico": "17cb71c37f66e4c41f16b206a69daaa335111530535969f2d7bfc15017c5ace5",
+     "atencao": "bb95ec3f17f9acbde270fa2d5bdc1f6d8ee0a332ef9ad75adf643cad1aa37acc",
+     "palavras_dificeis": "8361fc4906edab300e7eb6e1311f51c0902ab395eb3f9b94123ed9e059969af4"
+    }
+   },
+   "finding": null,
+   "review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "auditor": "qa04_audit_334_666",
+   "residual_position": 338,
+   "explanation_id": "ENTENDA/CC2002:ART.919/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "independent_review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "reviewer": "qa04_audit_334_666"
+  },
+  {
+   "residual_queue_position": 339,
+   "queue_position": 727,
+   "target_id": "CC2002:ART.920",
+   "checkpoint": "B-CP07",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.920, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão QA-03. Regra oficial verificada: O endosso posterior ao vencimento produz os mesmos efeitos do anterior. Explicação ativa confrontada: O endosso realizado depois do vencimento produz os mesmos efeitos do endosso anterior ao vencimento. Não se identificou, no escopo examinado, troca de sujeito, prazo incorreto, exceção invertida, requisito inventado ou omissão material.",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.920:CAPUT\tO endosso posterior ao vencimento produz os mesmos efeitos do anterior.",
+   "source_snapshot_sha256": "1ca35965ad5043e9e835dbaccd401165ad8f755f7eff2d1c10732e15cf3a7e79",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.920:CAPUT",
+     "text": "O endosso posterior ao vencimento produz os mesmos efeitos do anterior."
+    }
+   ],
+   "independent_rule_summary": "O endosso posterior ao vencimento produz os mesmos efeitos do anterior.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.920/BASE/1",
+   "baseline_field_sha256": {
+    "o_que_diz": "1c7ed6fb368479d10639739c80dce0cfb839c14a736ccdb0ba6fb6cf9aeba51c",
+    "o_que_significa": "e428e91e7c186d5474abf0dba58e58af5dabf1d4c0dcc76c09206e5cc68bc44f",
+    "exemplo_pratico": "87a00945b691bab0e61546fdd5018cd3bad1c5c1fb5623466908cd9e8a4df0ee",
+    "atencao": "5e0d0d6f1b0738d9fc00889695eb60cf205e50956f86048860e4c83817cac181",
+    "palavras_dificeis": "b323da1d099ea603bbf2871e868b6338b9e97ad168a1358faf93a6abe86b0b80"
+   },
+   "field_review": {
+    "o_que_diz": {
+     "sha256": "1c7ed6fb368479d10639739c80dce0cfb839c14a736ccdb0ba6fb6cf9aeba51c",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "o_que_significa": {
+     "sha256": "e428e91e7c186d5474abf0dba58e58af5dabf1d4c0dcc76c09206e5cc68bc44f",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "exemplo_pratico": {
+     "sha256": "87a00945b691bab0e61546fdd5018cd3bad1c5c1fb5623466908cd9e8a4df0ee",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "atencao": {
+     "sha256": "5e0d0d6f1b0738d9fc00889695eb60cf205e50956f86048860e4c83817cac181",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "palavras_dificeis": {
+     "sha256": "b323da1d099ea603bbf2871e868b6338b9e97ad168a1358faf93a6abe86b0b80",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    }
+   },
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "subjects": true,
+    "deadlines": true,
+    "consequences": true,
+    "all_five_fields": true,
+    "field_sha256": {
+     "o_que_diz": "1c7ed6fb368479d10639739c80dce0cfb839c14a736ccdb0ba6fb6cf9aeba51c",
+     "o_que_significa": "e428e91e7c186d5474abf0dba58e58af5dabf1d4c0dcc76c09206e5cc68bc44f",
+     "exemplo_pratico": "87a00945b691bab0e61546fdd5018cd3bad1c5c1fb5623466908cd9e8a4df0ee",
+     "atencao": "5e0d0d6f1b0738d9fc00889695eb60cf205e50956f86048860e4c83817cac181",
+     "palavras_dificeis": "b323da1d099ea603bbf2871e868b6338b9e97ad168a1358faf93a6abe86b0b80"
+    }
+   },
+   "finding": null,
+   "review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "auditor": "qa04_audit_334_666",
+   "residual_position": 339,
+   "explanation_id": "ENTENDA/CC2002:ART.920/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "independent_review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "reviewer": "qa04_audit_334_666"
+  },
+  {
+   "residual_queue_position": 340,
+   "queue_position": 728,
+   "target_id": "CC2002:ART.921",
+   "checkpoint": "B-CP07",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.921, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão QA-03. Regra oficial verificada: É título nominativo o emitido em favor de pessoa cujo nome conste no registro do emitente. Explicação ativa confrontada: Título nominativo é aquele emitido em favor de pessoa cujo nome consta do registro mantido pelo emitente. Não se identificou, no escopo examinado, troca de sujeito, prazo incorreto, exceção invertida, requisito inventado ou omissão material.",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.921:CAPUT\tÉ título nominativo o emitido em favor de pessoa cujo nome conste no registro do emitente.",
+   "source_snapshot_sha256": "c5aec42bedbd4e0048ac4621dc9c645793660e2ce15e03541a28dd3cae8b9366",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.921:CAPUT",
+     "text": "É título nominativo o emitido em favor de pessoa cujo nome conste no registro do emitente."
+    }
+   ],
+   "independent_rule_summary": "É título nominativo o emitido em favor de pessoa cujo nome conste no registro do emitente.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.921/BASE/1",
+   "baseline_field_sha256": {
+    "o_que_diz": "1f9ad7945a9fcbc4c97c2c3d8e33c70805e9fe73ffc600eeb7bc8eb92213e1d3",
+    "o_que_significa": "67cdc10125cb0de5e65165765c710e4f8bc0de4237732b0ee866cd779c46fad0",
+    "exemplo_pratico": "f5871057e05cb1d7487767003030fb519cf9eced1d7e8705865ec8e451125767",
+    "atencao": "65abc437f44ac34c8c2eea4c33a4436ed6d966211e5d8434ddf945c7fec8b58b",
+    "palavras_dificeis": "0de04edd4998f11e8765717f55524978b807dcc11167e32ae848e8dd5d62661e"
+   },
+   "field_review": {
+    "o_que_diz": {
+     "sha256": "1f9ad7945a9fcbc4c97c2c3d8e33c70805e9fe73ffc600eeb7bc8eb92213e1d3",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "o_que_significa": {
+     "sha256": "67cdc10125cb0de5e65165765c710e4f8bc0de4237732b0ee866cd779c46fad0",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "exemplo_pratico": {
+     "sha256": "f5871057e05cb1d7487767003030fb519cf9eced1d7e8705865ec8e451125767",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "atencao": {
+     "sha256": "65abc437f44ac34c8c2eea4c33a4436ed6d966211e5d8434ddf945c7fec8b58b",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "palavras_dificeis": {
+     "sha256": "0de04edd4998f11e8765717f55524978b807dcc11167e32ae848e8dd5d62661e",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    }
+   },
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "subjects": true,
+    "deadlines": true,
+    "consequences": true,
+    "all_five_fields": true,
+    "field_sha256": {
+     "o_que_diz": "1f9ad7945a9fcbc4c97c2c3d8e33c70805e9fe73ffc600eeb7bc8eb92213e1d3",
+     "o_que_significa": "67cdc10125cb0de5e65165765c710e4f8bc0de4237732b0ee866cd779c46fad0",
+     "exemplo_pratico": "f5871057e05cb1d7487767003030fb519cf9eced1d7e8705865ec8e451125767",
+     "atencao": "65abc437f44ac34c8c2eea4c33a4436ed6d966211e5d8434ddf945c7fec8b58b",
+     "palavras_dificeis": "0de04edd4998f11e8765717f55524978b807dcc11167e32ae848e8dd5d62661e"
+    }
+   },
+   "finding": null,
+   "review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "auditor": "qa04_audit_334_666",
+   "residual_position": 340,
+   "explanation_id": "ENTENDA/CC2002:ART.921/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "independent_review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "reviewer": "qa04_audit_334_666"
+  },
+  {
+   "residual_queue_position": 341,
+   "queue_position": 729,
+   "target_id": "CC2002:ART.922",
+   "checkpoint": "B-CP07",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.922, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão QA-03. Regra oficial verificada: Transfere-se o título nominativo mediante termo, em registro do emitente, assinado pelo proprietário e pelo adquirente. Explicação ativa confrontada: O título nominativo transfere-se por termo no registro do emitente, assinado pelo proprietário e pelo adquirente. Não se identificou, no escopo examinado, troca de sujeito, prazo incorreto, exceção invertida, requisito inventado ou omissão material.",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.922:CAPUT\tTransfere-se o título nominativo mediante termo, em registro do emitente, assinado pelo proprietário e pelo adquirente.",
+   "source_snapshot_sha256": "668428ae94446857eba89e45b31498c36c0e3f7e3ce1542ef92a249e43a869b9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.922:CAPUT",
+     "text": "Transfere-se o título nominativo mediante termo, em registro do emitente, assinado pelo proprietário e pelo adquirente."
+    }
+   ],
+   "independent_rule_summary": "Transfere-se o título nominativo mediante termo, em registro do emitente, assinado pelo proprietário e pelo adquirente.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.922/BASE/1",
+   "baseline_field_sha256": {
+    "o_que_diz": "13dd9ac0ae1d39d8f776163e72d91fb9062ac5063f00139dde9f146a295e7394",
+    "o_que_significa": "f240aa7890d3ab6441d76c037418279acdab54eb919b302f4a6a4a7daf07634a",
+    "exemplo_pratico": "beb6dfb301e7a83e1a56c98ac68a66e24e73280a3de081479a25e7fd4b19beda",
+    "atencao": "af6bc567de5a10348182bae21302d885a142b87900fe2cba231267c55e4187fa",
+    "palavras_dificeis": "936f558b789fd5cbfe00dbd1871c825d32c30300bb3cdf2be97914ef64add3b5"
+   },
+   "field_review": {
+    "o_que_diz": {
+     "sha256": "13dd9ac0ae1d39d8f776163e72d91fb9062ac5063f00139dde9f146a295e7394",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "o_que_significa": {
+     "sha256": "f240aa7890d3ab6441d76c037418279acdab54eb919b302f4a6a4a7daf07634a",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "exemplo_pratico": {
+     "sha256": "beb6dfb301e7a83e1a56c98ac68a66e24e73280a3de081479a25e7fd4b19beda",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "atencao": {
+     "sha256": "af6bc567de5a10348182bae21302d885a142b87900fe2cba231267c55e4187fa",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "palavras_dificeis": {
+     "sha256": "936f558b789fd5cbfe00dbd1871c825d32c30300bb3cdf2be97914ef64add3b5",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    }
+   },
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "subjects": true,
+    "deadlines": true,
+    "consequences": true,
+    "all_five_fields": true,
+    "field_sha256": {
+     "o_que_diz": "13dd9ac0ae1d39d8f776163e72d91fb9062ac5063f00139dde9f146a295e7394",
+     "o_que_significa": "f240aa7890d3ab6441d76c037418279acdab54eb919b302f4a6a4a7daf07634a",
+     "exemplo_pratico": "beb6dfb301e7a83e1a56c98ac68a66e24e73280a3de081479a25e7fd4b19beda",
+     "atencao": "af6bc567de5a10348182bae21302d885a142b87900fe2cba231267c55e4187fa",
+     "palavras_dificeis": "936f558b789fd5cbfe00dbd1871c825d32c30300bb3cdf2be97914ef64add3b5"
+    }
+   },
+   "finding": null,
+   "review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "auditor": "qa04_audit_334_666",
+   "residual_position": 341,
+   "explanation_id": "ENTENDA/CC2002:ART.922/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "independent_review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "reviewer": "qa04_audit_334_666"
+  },
+  {
+   "residual_queue_position": 342,
+   "queue_position": 730,
+   "target_id": "CC2002:ART.923",
+   "checkpoint": "B-CP07",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.923, foram confrontados individualmente os 4 segmentos vigentes com os cinco campos da versão QA-03. Regra oficial verificada: O título nominativo também pode ser transferido por endosso que contenha o nome do endossatário.; A transferência mediante endosso só tem eficácia perante o emitente, uma vez feita a competente averbação em seu registro, podendo o emitente exigir do endossatário que comprove a autenticidade da assinatura do endossante.; O endossatário, legitimado por série regular e ininterrupta de endossos, tem o direito de obter a averbação no registro do emitente, comprovada a autenticidade das assinaturas de todos os endossa... Explicação ativa confrontada: O título nominativo também pode ser transferido por endosso nominal, mas só produz efeito perante emitente após averbação. O adquirente legitimado pode exigi-la e, quando cabível, obter novo título em seu nome. Não se identificou, no escopo examinado, troca de sujeito, prazo incorreto, exceção invertida, requisito inventado ou omissão material.",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.923:CAPUT\tO título nominativo também pode ser transferido por endosso que contenha o nome do endossatário.\nCC2002:ART.923:PAR.1\tA transferência mediante endosso só tem eficácia perante o emitente, uma vez feita a competente averbação em seu registro, podendo o emitente exigir do endossatário que comprove a autenticidade da assinatura do endossante.\nCC2002:ART.923:PAR.2\tO endossatário, legitimado por série regular e ininterrupta de endossos, tem o direito de obter a averbação no registro do emitente, comprovada a autenticidade das assinaturas de todos os endossantes.\nCC2002:ART.923:PAR.3\tCaso o título original contenha o nome do primitivo proprietário, tem direito o adquirente a obter do emitente novo título, em seu nome, devendo a emissão do novo título constar no registro do emitente.",
+   "source_snapshot_sha256": "558a3a0a5ebc589257c5ca64beb340c74c570237b774e9279f8114b48f10090a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.923:CAPUT",
+     "text": "O título nominativo também pode ser transferido por endosso que contenha o nome do endossatário."
+    },
+    {
+     "label": "CC2002:ART.923:PAR.1",
+     "text": "A transferência mediante endosso só tem eficácia perante o emitente, uma vez feita a competente averbação em seu registro, podendo o emitente exigir do endossatário que comprove a autenticidade da assinatura do endossante."
+    },
+    {
+     "label": "CC2002:ART.923:PAR.2",
+     "text": "O endossatário, legitimado por série regular e ininterrupta de endossos, tem o direito de obter a averbação no registro do emitente, comprovada a autenticidade das assinaturas de todos os endossantes."
+    },
+    {
+     "label": "CC2002:ART.923:PAR.3",
+     "text": "Caso o título original contenha o nome do primitivo proprietário, tem direito o adquirente a obter do emitente novo título, em seu nome, devendo a emissão do novo título constar no registro do emitente."
+    }
+   ],
+   "independent_rule_summary": "O título nominativo também pode ser transferido por endosso que contenha o nome do endossatário. A transferência mediante endosso só tem eficácia perante o emitente, uma vez feita a competente averbação em seu registro, podendo o emitente exigir do endossatário que comprove a autenticidade da assinatura do endossante. O endossatário, legitimado por série regular e ininterrupta de endossos, tem o direito de obter a averbação no registro do emitente, comprovada a autenticidade das assinaturas de todos os endossantes. Caso o título original contenha o nome do primitivo proprietário, tem direito o adquirente a obter do emitente novo título, em seu nome, devendo a emissão do novo título constar no registro do emitente.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.923/BASE/1",
+   "baseline_field_sha256": {
+    "o_que_diz": "e068da74bfd2f0acb9ca64b7806f124d7a87bcb4b44da4fb0016463c1e6eb0d5",
+    "o_que_significa": "0aa96c12f6bdbe6f46bfefd12c68772263e33782be60b4c9931d3d1300c09299",
+    "exemplo_pratico": "ebe0948c41dda608ad938232dd58efe07ab6d67b8af942a86b161555262585bb",
+    "atencao": "a7070b2e9827f19c658ce774a6180deb8aad97eade60f26a6a6724792b62164f",
+    "palavras_dificeis": "c739af95cbaa46291dae381f1974467ab2589f31cd2073c46c992ce8fba2d9e2"
+   },
+   "field_review": {
+    "o_que_diz": {
+     "sha256": "e068da74bfd2f0acb9ca64b7806f124d7a87bcb4b44da4fb0016463c1e6eb0d5",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "o_que_significa": {
+     "sha256": "0aa96c12f6bdbe6f46bfefd12c68772263e33782be60b4c9931d3d1300c09299",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "exemplo_pratico": {
+     "sha256": "ebe0948c41dda608ad938232dd58efe07ab6d67b8af942a86b161555262585bb",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "atencao": {
+     "sha256": "a7070b2e9827f19c658ce774a6180deb8aad97eade60f26a6a6724792b62164f",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "palavras_dificeis": {
+     "sha256": "c739af95cbaa46291dae381f1974467ab2589f31cd2073c46c992ce8fba2d9e2",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    }
+   },
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "subjects": true,
+    "deadlines": true,
+    "consequences": true,
+    "all_five_fields": true,
+    "field_sha256": {
+     "o_que_diz": "e068da74bfd2f0acb9ca64b7806f124d7a87bcb4b44da4fb0016463c1e6eb0d5",
+     "o_que_significa": "0aa96c12f6bdbe6f46bfefd12c68772263e33782be60b4c9931d3d1300c09299",
+     "exemplo_pratico": "ebe0948c41dda608ad938232dd58efe07ab6d67b8af942a86b161555262585bb",
+     "atencao": "a7070b2e9827f19c658ce774a6180deb8aad97eade60f26a6a6724792b62164f",
+     "palavras_dificeis": "c739af95cbaa46291dae381f1974467ab2589f31cd2073c46c992ce8fba2d9e2"
+    }
+   },
+   "finding": null,
+   "review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "auditor": "qa04_audit_334_666",
+   "residual_position": 342,
+   "explanation_id": "ENTENDA/CC2002:ART.923/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "independent_review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "reviewer": "qa04_audit_334_666"
+  },
+  {
+   "residual_queue_position": 343,
+   "queue_position": 731,
+   "target_id": "CC2002:ART.924",
+   "checkpoint": "B-CP07",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.924, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão QA-03. Regra oficial verificada: Ressalvada proibição legal, pode o título nominativo ser transformado em à ordem ou ao portador, a pedido do proprietário e à sua custa. Explicação ativa confrontada: Salvo proibição legal, o proprietário pode pedir, às suas custas, que título nominativo seja transformado em título à ordem ou ao portador. Não se identificou, no escopo examinado, troca de sujeito, prazo incorreto, exceção invertida, requisito inventado ou omissão material.",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.924:CAPUT\tRessalvada proibição legal, pode o título nominativo ser transformado em à ordem ou ao portador, a pedido do proprietário e à sua custa.",
+   "source_snapshot_sha256": "d82a9b67a440b8ef5885bbf3ec3bdd15167b1a4f0aa7a5eeb30542a46c2122ae",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.924:CAPUT",
+     "text": "Ressalvada proibição legal, pode o título nominativo ser transformado em à ordem ou ao portador, a pedido do proprietário e à sua custa."
+    }
+   ],
+   "independent_rule_summary": "Ressalvada proibição legal, pode o título nominativo ser transformado em à ordem ou ao portador, a pedido do proprietário e à sua custa.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.924/BASE/1",
+   "baseline_field_sha256": {
+    "o_que_diz": "90f32e9b5c661db6573d1bef2de280a49e07790b7239be8e4ee5d045c92d43e6",
+    "o_que_significa": "88d45790118c4f9e42cbe7675864d985642e192f641fff6a3e60936e4bae2750",
+    "exemplo_pratico": "2b3e841430f99928d1acd78bb3ec030dc9d04f8f1e42c025ff709182688a27b8",
+    "atencao": "f038640a1613ffe6b59efdd1b84cddf66c9b617e16334f27a69501153eb8e405",
+    "palavras_dificeis": "638789a2ba8e1e9175430cb855ff563a14de35a75dac7ac7210c2a08b637ffcf"
+   },
+   "field_review": {
+    "o_que_diz": {
+     "sha256": "90f32e9b5c661db6573d1bef2de280a49e07790b7239be8e4ee5d045c92d43e6",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "o_que_significa": {
+     "sha256": "88d45790118c4f9e42cbe7675864d985642e192f641fff6a3e60936e4bae2750",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "exemplo_pratico": {
+     "sha256": "2b3e841430f99928d1acd78bb3ec030dc9d04f8f1e42c025ff709182688a27b8",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "atencao": {
+     "sha256": "f038640a1613ffe6b59efdd1b84cddf66c9b617e16334f27a69501153eb8e405",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "palavras_dificeis": {
+     "sha256": "638789a2ba8e1e9175430cb855ff563a14de35a75dac7ac7210c2a08b637ffcf",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    }
+   },
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "subjects": true,
+    "deadlines": true,
+    "consequences": true,
+    "all_five_fields": true,
+    "field_sha256": {
+     "o_que_diz": "90f32e9b5c661db6573d1bef2de280a49e07790b7239be8e4ee5d045c92d43e6",
+     "o_que_significa": "88d45790118c4f9e42cbe7675864d985642e192f641fff6a3e60936e4bae2750",
+     "exemplo_pratico": "2b3e841430f99928d1acd78bb3ec030dc9d04f8f1e42c025ff709182688a27b8",
+     "atencao": "f038640a1613ffe6b59efdd1b84cddf66c9b617e16334f27a69501153eb8e405",
+     "palavras_dificeis": "638789a2ba8e1e9175430cb855ff563a14de35a75dac7ac7210c2a08b637ffcf"
+    }
+   },
+   "finding": null,
+   "review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "auditor": "qa04_audit_334_666",
+   "residual_position": 343,
+   "explanation_id": "ENTENDA/CC2002:ART.924/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "independent_review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "reviewer": "qa04_audit_334_666"
+  },
+  {
+   "residual_queue_position": 344,
+   "queue_position": 732,
+   "target_id": "CC2002:ART.925",
+   "checkpoint": "B-CP07",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.925, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão QA-03. Regra oficial verificada: Fica desonerado de responsabilidade o emitente que de boa-fé fizer a transferência pelos modos indicados nos artigos antecedentes. Explicação ativa confrontada: O emitente que, de boa-fé, efetua a transferência pelos modos previstos fica liberado de responsabilidade. Não se identificou, no escopo examinado, troca de sujeito, prazo incorreto, exceção invertida, requisito inventado ou omissão material.",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.925:CAPUT\tFica desonerado de responsabilidade o emitente que de boa-fé fizer a transferência pelos modos indicados nos artigos antecedentes.",
+   "source_snapshot_sha256": "3fe610b2f46a75347900e692882c44d923b767673ce010f7f9e3d188c06ab4b2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.925:CAPUT",
+     "text": "Fica desonerado de responsabilidade o emitente que de boa-fé fizer a transferência pelos modos indicados nos artigos antecedentes."
+    }
+   ],
+   "independent_rule_summary": "Fica desonerado de responsabilidade o emitente que de boa-fé fizer a transferência pelos modos indicados nos artigos antecedentes.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.925/BASE/1",
+   "baseline_field_sha256": {
+    "o_que_diz": "b45637cef1a705be37fea5cc4e3848142776e1b338eed0100f4392cbfd5bc1e0",
+    "o_que_significa": "98a49dfc2d773c69f25c2f79a0c381329eb48c758a781d7797e6da420e8bb299",
+    "exemplo_pratico": "4a6a1317992e0008bf23d5fa3b46ca06524f7e1782edd92a3b9cf6c5f0564f12",
+    "atencao": "da5edd3da7cb2b70f2f395a4682b74f8a6c166d1941b61eb785a297d2d65f64c",
+    "palavras_dificeis": "d8c2a640f4138e94208bb924f6134b3a2d609df262b68a6cabbf6ccb3e37937f"
+   },
+   "field_review": {
+    "o_que_diz": {
+     "sha256": "b45637cef1a705be37fea5cc4e3848142776e1b338eed0100f4392cbfd5bc1e0",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "o_que_significa": {
+     "sha256": "98a49dfc2d773c69f25c2f79a0c381329eb48c758a781d7797e6da420e8bb299",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "exemplo_pratico": {
+     "sha256": "4a6a1317992e0008bf23d5fa3b46ca06524f7e1782edd92a3b9cf6c5f0564f12",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "atencao": {
+     "sha256": "da5edd3da7cb2b70f2f395a4682b74f8a6c166d1941b61eb785a297d2d65f64c",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "palavras_dificeis": {
+     "sha256": "d8c2a640f4138e94208bb924f6134b3a2d609df262b68a6cabbf6ccb3e37937f",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    }
+   },
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "subjects": true,
+    "deadlines": true,
+    "consequences": true,
+    "all_five_fields": true,
+    "field_sha256": {
+     "o_que_diz": "b45637cef1a705be37fea5cc4e3848142776e1b338eed0100f4392cbfd5bc1e0",
+     "o_que_significa": "98a49dfc2d773c69f25c2f79a0c381329eb48c758a781d7797e6da420e8bb299",
+     "exemplo_pratico": "4a6a1317992e0008bf23d5fa3b46ca06524f7e1782edd92a3b9cf6c5f0564f12",
+     "atencao": "da5edd3da7cb2b70f2f395a4682b74f8a6c166d1941b61eb785a297d2d65f64c",
+     "palavras_dificeis": "d8c2a640f4138e94208bb924f6134b3a2d609df262b68a6cabbf6ccb3e37937f"
+    }
+   },
+   "finding": null,
+   "review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "auditor": "qa04_audit_334_666",
+   "residual_position": 344,
+   "explanation_id": "ENTENDA/CC2002:ART.925/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "independent_review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "reviewer": "qa04_audit_334_666"
+  },
+  {
+   "residual_queue_position": 345,
+   "queue_position": 733,
+   "target_id": "CC2002:ART.926",
+   "checkpoint": "B-CP07",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.926, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão QA-03. Regra oficial verificada: Qualquer negócio ou medida judicial, que tenha por objeto o título, só produz efeito perante o emitente ou terceiros, uma vez feita a competente averbação no registro do emitente. Explicação ativa confrontada: Negócio ou medida judicial sobre título nominativo só produz efeito perante o emitente ou terceiros depois de averbado no registro do emitente. Não se identificou, no escopo examinado, troca de sujeito, prazo incorreto, exceção invertida, requisito inventado ou omissão material.",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.926:CAPUT\tQualquer negócio ou medida judicial, que tenha por objeto o título, só produz efeito perante o emitente ou terceiros, uma vez feita a competente averbação no registro do emitente.",
+   "source_snapshot_sha256": "c2b6552e778e8bbeac8155146022f5887488b995a80df749726ea4fdf1d97552",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.926:CAPUT",
+     "text": "Qualquer negócio ou medida judicial, que tenha por objeto o título, só produz efeito perante o emitente ou terceiros, uma vez feita a competente averbação no registro do emitente."
+    }
+   ],
+   "independent_rule_summary": "Qualquer negócio ou medida judicial, que tenha por objeto o título, só produz efeito perante o emitente ou terceiros, uma vez feita a competente averbação no registro do emitente.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.926/BASE/1",
+   "baseline_field_sha256": {
+    "o_que_diz": "f8bb89d197b6fe759cf1a767e6321861de14224831e726e39df20649caf0d85d",
+    "o_que_significa": "130ef3bc035d4639a32aa50cd571162b5d4c3150fdd53ad24d7154239b34688f",
+    "exemplo_pratico": "e65ab641f9c189006e8520d55966e4d21c1af6ca95445e7d90f48624b606b025",
+    "atencao": "151a425f40cb75fc24a494ab0880e93389b477bf72722f27b17b98854f307d33",
+    "palavras_dificeis": "677c94fcd3876f20ef289bf2313f88d598e57dc4b50c9f8c92af7347cb72a33f"
+   },
+   "field_review": {
+    "o_que_diz": {
+     "sha256": "f8bb89d197b6fe759cf1a767e6321861de14224831e726e39df20649caf0d85d",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "o_que_significa": {
+     "sha256": "130ef3bc035d4639a32aa50cd571162b5d4c3150fdd53ad24d7154239b34688f",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "exemplo_pratico": {
+     "sha256": "e65ab641f9c189006e8520d55966e4d21c1af6ca95445e7d90f48624b606b025",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "atencao": {
+     "sha256": "151a425f40cb75fc24a494ab0880e93389b477bf72722f27b17b98854f307d33",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "palavras_dificeis": {
+     "sha256": "677c94fcd3876f20ef289bf2313f88d598e57dc4b50c9f8c92af7347cb72a33f",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    }
+   },
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "subjects": true,
+    "deadlines": true,
+    "consequences": true,
+    "all_five_fields": true,
+    "field_sha256": {
+     "o_que_diz": "f8bb89d197b6fe759cf1a767e6321861de14224831e726e39df20649caf0d85d",
+     "o_que_significa": "130ef3bc035d4639a32aa50cd571162b5d4c3150fdd53ad24d7154239b34688f",
+     "exemplo_pratico": "e65ab641f9c189006e8520d55966e4d21c1af6ca95445e7d90f48624b606b025",
+     "atencao": "151a425f40cb75fc24a494ab0880e93389b477bf72722f27b17b98854f307d33",
+     "palavras_dificeis": "677c94fcd3876f20ef289bf2313f88d598e57dc4b50c9f8c92af7347cb72a33f"
+    }
+   },
+   "finding": null,
+   "review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "auditor": "qa04_audit_334_666",
+   "residual_position": 345,
+   "explanation_id": "ENTENDA/CC2002:ART.926/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "independent_review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "reviewer": "qa04_audit_334_666"
+  },
+  {
+   "residual_queue_position": 346,
+   "queue_position": 734,
+   "target_id": "CC2002:ART.927",
+   "checkpoint": "B-CP07",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.927, foram confrontados individualmente os 2 segmentos vigentes com os cinco campos da versão QA-03. Regra oficial verificada: Aquele que, por ato ilícito (arts. 186 e 187), causar dano a outrem, fica obrigado a repará-lo. (Vide ADI nº 7055) (Vide ADI nº 6792); Haverá obrigação de reparar o dano, independentemente de culpa, nos casos especificados em lei, ou quando a atividade normalmente desenvolvida pelo autor do dano implicar, por sua natureza, risco para os direitos de outrem. Explicação ativa confrontada: Quem causa dano por ato ilícito deve repará-lo. A responsabilidade independe de culpa quando a lei assim determina ou quando a atividade normalmente exercida cria, por sua natureza, risco para direitos alheios. Não se identificou, no escopo examinado, troca de sujeito, prazo incorreto, exceção invertida, requisito inventado ou omissão material.",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.927:CAPUT\tAquele que, por ato ilícito (arts. 186 e 187), causar dano a outrem, fica obrigado a repará-lo. (Vide ADI nº 7055) (Vide ADI nº 6792)\nCC2002:ART.927:PAR.UNICO\tHaverá obrigação de reparar o dano, independentemente de culpa, nos casos especificados em lei, ou quando a atividade normalmente desenvolvida pelo autor do dano implicar, por sua natureza, risco para os direitos de outrem.",
+   "source_snapshot_sha256": "d83bcc8d5be09233d39208ed6057c38a411f910920ca8da3c5672e4f33d9524c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.927:CAPUT",
+     "text": "Aquele que, por ato ilícito (arts. 186 e 187), causar dano a outrem, fica obrigado a repará-lo. (Vide ADI nº 7055) (Vide ADI nº 6792)"
+    },
+    {
+     "label": "CC2002:ART.927:PAR.UNICO",
+     "text": "Haverá obrigação de reparar o dano, independentemente de culpa, nos casos especificados em lei, ou quando a atividade normalmente desenvolvida pelo autor do dano implicar, por sua natureza, risco para os direitos de outrem."
+    }
+   ],
+   "independent_rule_summary": "Aquele que, por ato ilícito (arts. 186 e 187), causar dano a outrem, fica obrigado a repará-lo. (Vide ADI nº 7055) (Vide ADI nº 6792) Haverá obrigação de reparar o dano, independentemente de culpa, nos casos especificados em lei, ou quando a atividade normalmente desenvolvida pelo autor do dano implicar, por sua natureza, risco para os direitos de outrem.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.927/BASE/1",
+   "baseline_field_sha256": {
+    "o_que_diz": "2b88bbc55eab5553bd3d49d3952d4a7139cd44772fd473b68f4301a4deecb0b6",
+    "o_que_significa": "d6925dc7f92b9a9119b93ddbc0c6854a2a46e690e51ca38cbd37ef8d4ed6d09f",
+    "exemplo_pratico": "ab7b8706b3dee9bcb757a196c657856f29d8e12eb0f7792fc02d97e76e014d1d",
+    "atencao": "27a04e56f79efa1c9c9c51e3aea69e7177b26d0e45424134562e84b2e99da7f6",
+    "palavras_dificeis": "b6db0d1811d6ffd33eb4b1da8b8b59953eb366f465be96f6c20dc046ca49eaa2"
+   },
+   "field_review": {
+    "o_que_diz": {
+     "sha256": "2b88bbc55eab5553bd3d49d3952d4a7139cd44772fd473b68f4301a4deecb0b6",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "o_que_significa": {
+     "sha256": "d6925dc7f92b9a9119b93ddbc0c6854a2a46e690e51ca38cbd37ef8d4ed6d09f",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "exemplo_pratico": {
+     "sha256": "ab7b8706b3dee9bcb757a196c657856f29d8e12eb0f7792fc02d97e76e014d1d",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "atencao": {
+     "sha256": "27a04e56f79efa1c9c9c51e3aea69e7177b26d0e45424134562e84b2e99da7f6",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "palavras_dificeis": {
+     "sha256": "b6db0d1811d6ffd33eb4b1da8b8b59953eb366f465be96f6c20dc046ca49eaa2",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    }
+   },
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "subjects": true,
+    "deadlines": true,
+    "consequences": true,
+    "all_five_fields": true,
+    "field_sha256": {
+     "o_que_diz": "2b88bbc55eab5553bd3d49d3952d4a7139cd44772fd473b68f4301a4deecb0b6",
+     "o_que_significa": "d6925dc7f92b9a9119b93ddbc0c6854a2a46e690e51ca38cbd37ef8d4ed6d09f",
+     "exemplo_pratico": "ab7b8706b3dee9bcb757a196c657856f29d8e12eb0f7792fc02d97e76e014d1d",
+     "atencao": "27a04e56f79efa1c9c9c51e3aea69e7177b26d0e45424134562e84b2e99da7f6",
+     "palavras_dificeis": "b6db0d1811d6ffd33eb4b1da8b8b59953eb366f465be96f6c20dc046ca49eaa2"
+    }
+   },
+   "finding": null,
+   "review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "auditor": "qa04_audit_334_666",
+   "residual_position": 346,
+   "explanation_id": "ENTENDA/CC2002:ART.927/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "independent_review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "reviewer": "qa04_audit_334_666"
+  },
+  {
+   "residual_queue_position": 347,
+   "queue_position": 735,
+   "target_id": "CC2002:ART.928",
+   "checkpoint": "B-CP07",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.928, foram confrontados individualmente os 2 segmentos vigentes com os cinco campos da versão QA-03. Regra oficial verificada: O incapaz responde pelos prejuízos que causar, se as pessoas por ele responsáveis não tiverem obrigação de fazê-lo ou não dispuserem de meios suficientes.; A indenização prevista neste artigo, que deverá ser eqüitativa, não terá lugar se privar do necessário o incapaz ou as pessoas que dele dependem. Explicação ativa confrontada: O incapaz indeniza o dano que causar se seus responsáveis não tiverem dever de fazê-lo ou não possuírem meios. A indenização é equitativa e não pode privá-lo, nem seus dependentes, do necessário. Não se identificou, no escopo examinado, troca de sujeito, prazo incorreto, exceção invertida, requisito inventado ou omissão material.",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.928:CAPUT\tO incapaz responde pelos prejuízos que causar, se as pessoas por ele responsáveis não tiverem obrigação de fazê-lo ou não dispuserem de meios suficientes.\nCC2002:ART.928:PAR.UNICO\tA indenização prevista neste artigo, que deverá ser eqüitativa, não terá lugar se privar do necessário o incapaz ou as pessoas que dele dependem.",
+   "source_snapshot_sha256": "bfc7638f7bf0bf9ae527211d711a5b60bdf2946f4e43fbb5627eca7797c5566d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.928:CAPUT",
+     "text": "O incapaz responde pelos prejuízos que causar, se as pessoas por ele responsáveis não tiverem obrigação de fazê-lo ou não dispuserem de meios suficientes."
+    },
+    {
+     "label": "CC2002:ART.928:PAR.UNICO",
+     "text": "A indenização prevista neste artigo, que deverá ser eqüitativa, não terá lugar se privar do necessário o incapaz ou as pessoas que dele dependem."
+    }
+   ],
+   "independent_rule_summary": "O incapaz responde pelos prejuízos que causar, se as pessoas por ele responsáveis não tiverem obrigação de fazê-lo ou não dispuserem de meios suficientes. A indenização prevista neste artigo, que deverá ser eqüitativa, não terá lugar se privar do necessário o incapaz ou as pessoas que dele dependem.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.928/BASE/1",
+   "baseline_field_sha256": {
+    "o_que_diz": "56dd32f01ef8229c7e19e235ae518dcc5802edff3558feba09798c0356c96191",
+    "o_que_significa": "213b45bb022986ed09baaca2aa300a152860d3d188672ee1c520f3e075c5e722",
+    "exemplo_pratico": "884b517f57de8137d5c6d4d221fdef7fb882ae4fb63f71b7e2123339a2a6e575",
+    "atencao": "566ed6722b14043b1bd3c9b403e63e7f4c375bda4f843dade7888b60c984bb21",
+    "palavras_dificeis": "5d082ed5b009f3726ecff32cbeafa3677cdb1ab01132c9aebb1a79cdf910ee7c"
+   },
+   "field_review": {
+    "o_que_diz": {
+     "sha256": "56dd32f01ef8229c7e19e235ae518dcc5802edff3558feba09798c0356c96191",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "o_que_significa": {
+     "sha256": "213b45bb022986ed09baaca2aa300a152860d3d188672ee1c520f3e075c5e722",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "exemplo_pratico": {
+     "sha256": "884b517f57de8137d5c6d4d221fdef7fb882ae4fb63f71b7e2123339a2a6e575",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "atencao": {
+     "sha256": "566ed6722b14043b1bd3c9b403e63e7f4c375bda4f843dade7888b60c984bb21",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "palavras_dificeis": {
+     "sha256": "5d082ed5b009f3726ecff32cbeafa3677cdb1ab01132c9aebb1a79cdf910ee7c",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    }
+   },
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "subjects": true,
+    "deadlines": true,
+    "consequences": true,
+    "all_five_fields": true,
+    "field_sha256": {
+     "o_que_diz": "56dd32f01ef8229c7e19e235ae518dcc5802edff3558feba09798c0356c96191",
+     "o_que_significa": "213b45bb022986ed09baaca2aa300a152860d3d188672ee1c520f3e075c5e722",
+     "exemplo_pratico": "884b517f57de8137d5c6d4d221fdef7fb882ae4fb63f71b7e2123339a2a6e575",
+     "atencao": "566ed6722b14043b1bd3c9b403e63e7f4c375bda4f843dade7888b60c984bb21",
+     "palavras_dificeis": "5d082ed5b009f3726ecff32cbeafa3677cdb1ab01132c9aebb1a79cdf910ee7c"
+    }
+   },
+   "finding": null,
+   "review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "auditor": "qa04_audit_334_666",
+   "residual_position": 347,
+   "explanation_id": "ENTENDA/CC2002:ART.928/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "independent_review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "reviewer": "qa04_audit_334_666"
+  },
+  {
+   "residual_queue_position": 348,
+   "queue_position": 736,
+   "target_id": "CC2002:ART.929",
+   "checkpoint": "B-CP07",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.929, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão QA-03. Regra oficial verificada: Se a pessoa lesada, ou o dono da coisa, no caso do inciso II do art. 188, não forem culpados do perigo, assistir-lhes-á direito à indenização do prejuízo que sofreram. Explicação ativa confrontada: Quando alguém sacrifica coisa alheia ou lesa pessoa para remover perigo iminente, a vítima sem culpa pelo perigo tem direito à indenização. Não se identificou, no escopo examinado, troca de sujeito, prazo incorreto, exceção invertida, requisito inventado ou omissão material.",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.929:CAPUT\tSe a pessoa lesada, ou o dono da coisa, no caso do inciso II do art. 188, não forem culpados do perigo, assistir-lhes-á direito à indenização do prejuízo que sofreram.",
+   "source_snapshot_sha256": "d49d171cd3eb0d0ea3ebf1e8f8e418a4ddce4035a2ab1b4957bc072dd5ab96ef",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.929:CAPUT",
+     "text": "Se a pessoa lesada, ou o dono da coisa, no caso do inciso II do art. 188, não forem culpados do perigo, assistir-lhes-á direito à indenização do prejuízo que sofreram."
+    }
+   ],
+   "independent_rule_summary": "Se a pessoa lesada, ou o dono da coisa, no caso do inciso II do art. 188, não forem culpados do perigo, assistir-lhes-á direito à indenização do prejuízo que sofreram.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.929/BASE/1",
+   "baseline_field_sha256": {
+    "o_que_diz": "719374b285d5beb67c5bd5e53baabe97b63797883566204577c28724de830e45",
+    "o_que_significa": "206a4c3997371520acb9362318bacb667077cb93632f7577c62e919d54c77656",
+    "exemplo_pratico": "f42b9084eae9427556b52ce063eb8332588400f72abe5050ec95b6e76a17b190",
+    "atencao": "d832788b8672d4df4f62984ca394aa299b64842a84364d48f856de0ffe4ed1ab",
+    "palavras_dificeis": "1e155465f7ae052e3afec1cad20912fd49320feb89fbb9d71793c09524d2644b"
+   },
+   "field_review": {
+    "o_que_diz": {
+     "sha256": "719374b285d5beb67c5bd5e53baabe97b63797883566204577c28724de830e45",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "o_que_significa": {
+     "sha256": "206a4c3997371520acb9362318bacb667077cb93632f7577c62e919d54c77656",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "exemplo_pratico": {
+     "sha256": "f42b9084eae9427556b52ce063eb8332588400f72abe5050ec95b6e76a17b190",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "atencao": {
+     "sha256": "d832788b8672d4df4f62984ca394aa299b64842a84364d48f856de0ffe4ed1ab",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "palavras_dificeis": {
+     "sha256": "1e155465f7ae052e3afec1cad20912fd49320feb89fbb9d71793c09524d2644b",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    }
+   },
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "subjects": true,
+    "deadlines": true,
+    "consequences": true,
+    "all_five_fields": true,
+    "field_sha256": {
+     "o_que_diz": "719374b285d5beb67c5bd5e53baabe97b63797883566204577c28724de830e45",
+     "o_que_significa": "206a4c3997371520acb9362318bacb667077cb93632f7577c62e919d54c77656",
+     "exemplo_pratico": "f42b9084eae9427556b52ce063eb8332588400f72abe5050ec95b6e76a17b190",
+     "atencao": "d832788b8672d4df4f62984ca394aa299b64842a84364d48f856de0ffe4ed1ab",
+     "palavras_dificeis": "1e155465f7ae052e3afec1cad20912fd49320feb89fbb9d71793c09524d2644b"
+    }
+   },
+   "finding": null,
+   "review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "auditor": "qa04_audit_334_666",
+   "residual_position": 348,
+   "explanation_id": "ENTENDA/CC2002:ART.929/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "independent_review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "reviewer": "qa04_audit_334_666"
+  },
+  {
+   "residual_queue_position": 349,
+   "queue_position": 737,
+   "target_id": "CC2002:ART.930",
+   "checkpoint": "B-CP07",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.930, foram confrontados individualmente os 2 segmentos vigentes com os cinco campos da versão QA-03. Regra oficial verificada: No caso do inciso II do art. 188, se o perigo ocorrer por culpa de terceiro, contra este terá o autor do dano ação regressiva para haver a importância que tiver ressarcido ao lesado.; A mesma ação competirá contra aquele em defesa de quem se causou o dano (art. 188, inciso I). Explicação ativa confrontada: Quem indeniza dano praticado em estado de necessidade pode regressar contra o terceiro culpado pelo perigo; na legítima defesa, pode regressar contra a pessoa em defesa de quem causou o dano. Não se identificou, no escopo examinado, troca de sujeito, prazo incorreto, exceção invertida, requisito inventado ou omissão material.",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.930:CAPUT\tNo caso do inciso II do art. 188, se o perigo ocorrer por culpa de terceiro, contra este terá o autor do dano ação regressiva para haver a importância que tiver ressarcido ao lesado.\nCC2002:ART.930:PAR.UNICO\tA mesma ação competirá contra aquele em defesa de quem se causou o dano (art. 188, inciso I).",
+   "source_snapshot_sha256": "430b99a22b70435e5e750cb208db23e6509e7239cc6037faf2b03f205093eab3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.930:CAPUT",
+     "text": "No caso do inciso II do art. 188, se o perigo ocorrer por culpa de terceiro, contra este terá o autor do dano ação regressiva para haver a importância que tiver ressarcido ao lesado."
+    },
+    {
+     "label": "CC2002:ART.930:PAR.UNICO",
+     "text": "A mesma ação competirá contra aquele em defesa de quem se causou o dano (art. 188, inciso I)."
+    }
+   ],
+   "independent_rule_summary": "No caso do inciso II do art. 188, se o perigo ocorrer por culpa de terceiro, contra este terá o autor do dano ação regressiva para haver a importância que tiver ressarcido ao lesado. A mesma ação competirá contra aquele em defesa de quem se causou o dano (art. 188, inciso I).",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.930/BASE/1",
+   "baseline_field_sha256": {
+    "o_que_diz": "78489f58e8098e1729af6975e7505893d0b5796e46d50a0cb5046d06a9899d52",
+    "o_que_significa": "8e8305a2c7f4ccfc14f856402d51c26e4e7388e73ab401f6cbfb0cebc6ecc2ec",
+    "exemplo_pratico": "784b1cca23a9f40c5f3a31b7a685a636383cc10ba1d2fc6b9749556fb5e86108",
+    "atencao": "40f4e8fec676f55d7c25e8cc63cd1636074e45d5b097f6d63b8042bc56f94609",
+    "palavras_dificeis": "cebbbfc8034245f1701ae73ff50716fd422665e5fefef03794b53fd3e55e8680"
+   },
+   "field_review": {
+    "o_que_diz": {
+     "sha256": "78489f58e8098e1729af6975e7505893d0b5796e46d50a0cb5046d06a9899d52",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "o_que_significa": {
+     "sha256": "8e8305a2c7f4ccfc14f856402d51c26e4e7388e73ab401f6cbfb0cebc6ecc2ec",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "exemplo_pratico": {
+     "sha256": "784b1cca23a9f40c5f3a31b7a685a636383cc10ba1d2fc6b9749556fb5e86108",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "atencao": {
+     "sha256": "40f4e8fec676f55d7c25e8cc63cd1636074e45d5b097f6d63b8042bc56f94609",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "palavras_dificeis": {
+     "sha256": "cebbbfc8034245f1701ae73ff50716fd422665e5fefef03794b53fd3e55e8680",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    }
+   },
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "subjects": true,
+    "deadlines": true,
+    "consequences": true,
+    "all_five_fields": true,
+    "field_sha256": {
+     "o_que_diz": "78489f58e8098e1729af6975e7505893d0b5796e46d50a0cb5046d06a9899d52",
+     "o_que_significa": "8e8305a2c7f4ccfc14f856402d51c26e4e7388e73ab401f6cbfb0cebc6ecc2ec",
+     "exemplo_pratico": "784b1cca23a9f40c5f3a31b7a685a636383cc10ba1d2fc6b9749556fb5e86108",
+     "atencao": "40f4e8fec676f55d7c25e8cc63cd1636074e45d5b097f6d63b8042bc56f94609",
+     "palavras_dificeis": "cebbbfc8034245f1701ae73ff50716fd422665e5fefef03794b53fd3e55e8680"
+    }
+   },
+   "finding": null,
+   "review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "auditor": "qa04_audit_334_666",
+   "residual_position": 349,
+   "explanation_id": "ENTENDA/CC2002:ART.930/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "independent_review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "reviewer": "qa04_audit_334_666"
+  },
+  {
+   "residual_queue_position": 350,
+   "queue_position": 738,
+   "target_id": "CC2002:ART.931",
+   "checkpoint": "B-CP07",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.931, foram confrontados individualmente os 1 segmentos vigentes com os cinco campos da versão QA-03. Regra oficial verificada: Ressalvados outros casos previstos em lei especial, os empresários individuais e as empresas respondem independentemente de culpa pelos danos causados pelos produtos postos em circulação. Explicação ativa confrontada: Empresários individuais e empresas respondem, sem necessidade de prova de culpa, pelos danos causados por produtos postos em circulação, ressalvadas outras regras de lei especial. Não se identificou, no escopo examinado, troca de sujeito, prazo incorreto, exceção invertida, requisito inventado ou omissão material.",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.931:CAPUT\tRessalvados outros casos previstos em lei especial, os empresários individuais e as empresas respondem independentemente de culpa pelos danos causados pelos produtos postos em circulação.",
+   "source_snapshot_sha256": "fdcaed751cade8e4647bf70d8d4911f75ba00a8b8ed612437b5e2c83102efa1e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.931:CAPUT",
+     "text": "Ressalvados outros casos previstos em lei especial, os empresários individuais e as empresas respondem independentemente de culpa pelos danos causados pelos produtos postos em circulação."
+    }
+   ],
+   "independent_rule_summary": "Ressalvados outros casos previstos em lei especial, os empresários individuais e as empresas respondem independentemente de culpa pelos danos causados pelos produtos postos em circulação.",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.931/BASE/1",
+   "baseline_field_sha256": {
+    "o_que_diz": "a78fc49d6a0175284d7e0f7c2fc38a326bc152c99a13c19b6cbd53802d0be692",
+    "o_que_significa": "eff8bf7f7b1eefc0986dffb7d0e9fba8da5825adb15b76c153fa6a269cc840e9",
+    "exemplo_pratico": "d6ece93075da8ecfee901eb5a037f7a9639a9b34c18df9eac093d2e991af6778",
+    "atencao": "a67882440a5dd5cf7f44d4cde18cd39bdd174a9889ef6c8435b249beb2ac9090",
+    "palavras_dificeis": "1f22d60e8fb8bc8aed03a917ff0b302d3bd1e80a389b62851c082d7f7104b9c7"
+   },
+   "field_review": {
+    "o_que_diz": {
+     "sha256": "a78fc49d6a0175284d7e0f7c2fc38a326bc152c99a13c19b6cbd53802d0be692",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "o_que_significa": {
+     "sha256": "eff8bf7f7b1eefc0986dffb7d0e9fba8da5825adb15b76c153fa6a269cc840e9",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "exemplo_pratico": {
+     "sha256": "d6ece93075da8ecfee901eb5a037f7a9639a9b34c18df9eac093d2e991af6778",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "atencao": {
+     "sha256": "a67882440a5dd5cf7f44d4cde18cd39bdd174a9889ef6c8435b249beb2ac9090",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    },
+    "palavras_dificeis": {
+     "sha256": "1f22d60e8fb8bc8aed03a917ff0b302d3bd1e80a389b62851c082d7f7104b9c7",
+     "status": "SEM_ACHADO_NO_ESCOPO_VERIFICADO"
+    }
+   },
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "subjects": true,
+    "deadlines": true,
+    "consequences": true,
+    "all_five_fields": true,
+    "field_sha256": {
+     "o_que_diz": "a78fc49d6a0175284d7e0f7c2fc38a326bc152c99a13c19b6cbd53802d0be692",
+     "o_que_significa": "eff8bf7f7b1eefc0986dffb7d0e9fba8da5825adb15b76c153fa6a269cc840e9",
+     "exemplo_pratico": "d6ece93075da8ecfee901eb5a037f7a9639a9b34c18df9eac093d2e991af6778",
+     "atencao": "a67882440a5dd5cf7f44d4cde18cd39bdd174a9889ef6c8435b249beb2ac9090",
+     "palavras_dificeis": "1f22d60e8fb8bc8aed03a917ff0b302d3bd1e80a389b62851c082d7f7104b9c7"
+    }
+   },
+   "finding": null,
+   "review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "auditor": "qa04_audit_334_666",
+   "residual_position": 350,
+   "explanation_id": "ENTENDA/CC2002:ART.931/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "independent_review_module": "QA04_FRONT_B_DELEGATED_INDEPENDENT_REVIEW",
+   "reviewer": "qa04_audit_334_666"
+  }
+ ]
+}
