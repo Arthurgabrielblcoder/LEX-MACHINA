@@ -3,17 +3,17 @@
  "mission": "QA-04-FRONT-B",
  "as_of": "2026-11-13",
  "status": "PARTIAL_REQUIRES_CONTINUATION",
- "completed_through_checkpoint": "B-CP04",
- "audited_total": 200,
+ "completed_through_checkpoint": "B-CP05",
+ "audited_total": 250,
  "residual_positions_completed": [
   1,
-  200
+  250
  ],
  "original_queue_positions_completed": [
   389,
-  588
+  638
  ],
- "next_residual_position": 201,
+ "next_residual_position": 251,
  "findings_total": 0,
  "finding_counts": {},
  "protected_sha256": {
@@ -10526,6 +10526,2636 @@
    "finding": null,
    "residual_position": 200,
    "checkpoint": "B-CP04",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 589,
+   "target_id": "CC2002:ART.720",
+   "explanation_id": "ENTENDA/CC2002:ART.720/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.720:CAPUT\tSe o contrato for por tempo indeterminado, qualquer das partes poderá resolvê-lo, mediante aviso prévio de noventa dias, desde que transcorrido prazo compatível com a natureza e o vulto do investimento exigido do agente.\nCC2002:ART.720:PAR.UNICO\tNo caso de divergência entre as partes, o juiz decidirá da razoabilidade do prazo e do valor devido.",
+   "source_snapshot_sha256": "eef4cdd22f261ccacf3e82a49e244b766a2de5ce62956877954a7fc16028c68b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.720:CAPUT",
+     "text": "Se o contrato for por tempo indeterminado, qualquer das partes poderá resolvê-lo, mediante aviso prévio de noventa dias, desde que transcorrido prazo compatível com a natureza e o vulto do investimento exigido do agente."
+    },
+    {
+     "label": "CC2002:ART.720:PAR.UNICO",
+     "text": "No caso de divergência entre as partes, o juiz decidirá da razoabilidade do prazo e do valor devido."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Se o contrato for por tempo indeterminado, qualquer das partes poderá resolvê-lo, mediante aviso prévio de noventa dias, desde que transcorrido prazo compatível com a natureza e o vulto do investimento exigido do agente. | No caso de divergência entre as partes, o juiz decidirá da razoabilidade do prazo e do valor devido.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "112a2bd68c966f820d57d9720b8ebc1b3389a83e6eb8a0f9a82378a2edcb167a",
+     "o_que_significa": "3c702bd110fd4ecc6663e25730f690ffabb50b94ab85bcef123160bcff21cb6c",
+     "exemplo_pratico": "15136f908de5b8dae26b8f49768f2e21ba0c4f4a70901322da3b1e6673d8cc47",
+     "atencao": "a4af851b87aca6fbd98451fbfc0baa374f8676fbd9c6d11adbbc0e370d2a8484",
+     "palavras_dificeis": "6e9a27b4124b17ff2b3b0337daa62e5bdaf320f534bd09a98519c0ab3372ca43"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.720, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Contrato de agência sem prazo pode ser encerrado por qualquer parte com aviso de noventa dias, após tempo compatível com o investimento exigido. Divergências podem ser decididas judicialmente.’. O campo de atenção registra: ‘O prazo fixo de aviso não dispensa avaliar se o investimento teve tempo razoável de retorno.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 201,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 590,
+   "target_id": "CC2002:ART.721",
+   "explanation_id": "ENTENDA/CC2002:ART.721/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.721:CAPUT\tAplicam-se ao contrato de agência e distribuição, no que couber, as regras concernentes ao mandato e à comissão e as constantes de lei especial.",
+   "source_snapshot_sha256": "594a704ea33822188f493b190e1bb093d5d5720e97361283971f82aa28f6abe2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.721:CAPUT",
+     "text": "Aplicam-se ao contrato de agência e distribuição, no que couber, as regras concernentes ao mandato e à comissão e as constantes de lei especial."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Aplicam-se ao contrato de agência e distribuição, no que couber, as regras concernentes ao mandato e à comissão e as constantes de lei especial.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d9b05d75f0f9b4344d30914945affc7c7da092ba645b7ec4ed0508c8090bff60",
+     "o_que_significa": "e38660754d234ee59f176f046a2fc26ada13b740a3a83405f8e8ac4388a584ab",
+     "exemplo_pratico": "39a087d5d8c725876bcee293218490415fa75509680edf388a919e6fdcf131e7",
+     "atencao": "590f2ddb409f7d0864e209e609f57091d7ebe59597c7ac1128ddb3058ab4a473",
+     "palavras_dificeis": "8f7c20da5ed69c96b3f5d72db03e047545d23aabc483c2cd6227b3f600bfb730"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.721, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Agência e distribuição recebem, quando compatíveis, regras do mandato, da comissão e de legislação especial.’. O campo de atenção registra: ‘A aplicação depende de compatibilidade; não se presume representação nem vínculo trabalhista.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 202,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 591,
+   "target_id": "CC2002:ART.722",
+   "explanation_id": "ENTENDA/CC2002:ART.722/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.722:CAPUT\tPelo contrato de corretagem, uma pessoa, não ligada a outra em virtude de mandato, de prestação de serviços ou por qualquer relação de dependência, obriga-se a obter para a segunda um ou mais negócios, conforme as instruções recebidas.",
+   "source_snapshot_sha256": "eb362664d317f8baa5d610f435f4a484e1c1dc3d1917ad3231f8a6eae10bb7e6",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.722:CAPUT",
+     "text": "Pelo contrato de corretagem, uma pessoa, não ligada a outra em virtude de mandato, de prestação de serviços ou por qualquer relação de dependência, obriga-se a obter para a segunda um ou mais negócios, conforme as instruções recebidas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Pelo contrato de corretagem, uma pessoa, não ligada a outra em virtude de mandato, de prestação de serviços ou por qualquer relação de dependência, obriga-se a obter para a segunda um ou mais negócios, conforme as instruções recebidas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e3e4c7eb2f71d52d5d4bb21a0119b591c86c6a03e15ab9b623e9a3e9bb74dba3",
+     "o_que_significa": "df9bd5d55b59887ed21719f00debbccfeae70d6e80a5eeb26db3f491a703ffc8",
+     "exemplo_pratico": "ca6fdaddb298742f5abd9ee9ae6c45f19ed48879a64cba775cf6dcd8310684da",
+     "atencao": "2b3136b8877290bc17a304f737f550faf8bbeab5df50484e8f6534b0ff232415",
+     "palavras_dificeis": "57fb905969b62ec50cf772b6634a092c9164e616cf6d0cc3b6531ab4b5875816"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.722, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Corretagem é a mediação independente pela qual alguém busca um ou mais negócios para o cliente, conforme instruções, sem mandato, emprego ou prestação de serviço subordinada.’. O campo de atenção registra: ‘A qualificação depende da autonomia e da ausência dos vínculos excluídos pela norma.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 203,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 592,
+   "target_id": "CC2002:ART.723",
+   "explanation_id": "ENTENDA/CC2002:ART.723/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.723:CAPUT\tO corretor é obrigado a executar a mediação com diligência e prudência, e a prestar ao cliente, espontaneamente, todas as informações sobre o andamento do negócio. (Redação dada pela Lei nº 12.236, de 2010 )\nCC2002:ART.723:PAR.UNICO\tSob pena de responder por perdas e danos, o corretor prestará ao cliente todos os esclarecimentos acerca da segurança ou do risco do negócio, das alterações de valores e de outros fatores que possam influir nos resultados da incumbência. (Incluído pela Lei nº 12.236, de 2010 )",
+   "source_snapshot_sha256": "148d9930a987613b8b76df4470ee97e62ae3cf7a76271f8aa06329033b836edb",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.723:CAPUT",
+     "text": "O corretor é obrigado a executar a mediação com diligência e prudência, e a prestar ao cliente, espontaneamente, todas as informações sobre o andamento do negócio. (Redação dada pela Lei nº 12.236, de 2010 )"
+    },
+    {
+     "label": "CC2002:ART.723:PAR.UNICO",
+     "text": "Sob pena de responder por perdas e danos, o corretor prestará ao cliente todos os esclarecimentos acerca da segurança ou do risco do negócio, das alterações de valores e de outros fatores que possam influir nos resultados da incumbência. (Incluído pela Lei nº 12.236, de 2010 )"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O corretor é obrigado a executar a mediação com diligência e prudência, e a prestar ao cliente, espontaneamente, todas as informações sobre o andamento do negócio. (Redação dada pela Lei nº 12.236, de 2010 ) | Sob pena de responder por perdas e danos, o corretor prestará ao cliente todos os esclarecimentos acerca da segurança ou do risco do negócio, das alterações de valores e de outros fatores que possam influir nos resultados da incumbência. (Incluído pela Lei nº 12.236, de 2010 )",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5e7107e57cc7f67d50b75b43797bd22c7c710828f0492ece035d71b333ae31ca",
+     "o_que_significa": "82001801062f47267d3ddf6fdcf80b3b729202e0d613e316c8b604317544e2d1",
+     "exemplo_pratico": "742d21de4ad79d2ebb500f21a65a66bb8fb59a54a7952b1712ef6926b205489f",
+     "atencao": "40bf5d4863b69fe9bbd8b2d7ab6fabf00baddf0b8352fd9c4ee89ddaf12c5b3b",
+     "palavras_dificeis": "4f3d5142326ce0b53f7ec5e0f3366acbf897fa672fba5cc0750505b2794990bf"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.723, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘O corretor deve agir com prudência e diligência, informar espontaneamente o andamento e esclarecer riscos, segurança, variações de valor e fatores relevantes, sob responsabilidade por danos.’. O campo de atenção registra: ‘Responsabilidade exige violação do dever, prejuízo e nexo; o corretor não garante todo resultado do negócio.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 204,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 593,
+   "target_id": "CC2002:ART.724",
+   "explanation_id": "ENTENDA/CC2002:ART.724/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.724:CAPUT\tA remuneração do corretor, se não estiver fixada em lei, nem ajustada entre as partes, será arbitrada segundo a natureza do negócio e os usos locais.",
+   "source_snapshot_sha256": "b9b17db9a910eaf94898ad70b79a85b3ba0dfe4410c9177d719e2a4a96b30dfd",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.724:CAPUT",
+     "text": "A remuneração do corretor, se não estiver fixada em lei, nem ajustada entre as partes, será arbitrada segundo a natureza do negócio e os usos locais."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A remuneração do corretor, se não estiver fixada em lei, nem ajustada entre as partes, será arbitrada segundo a natureza do negócio e os usos locais.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c56391bb711cbab80729ee2b326335fc549ad6bdb6d1f9b5b978985cc2209c5a",
+     "o_que_significa": "29012bafd83b4463e15f217842af68320a608a399f65649e8cc6b6b97fd9b7ac",
+     "exemplo_pratico": "cdaad21b808845a9ac9d3757351c6fecc96ff63cf9e6a6e36153ef8e12b0d024",
+     "atencao": "94aad4e69f15816779cf449d4b5aa6addcf820c50f0862318b2adcd6adde6703",
+     "palavras_dificeis": "fb717ac62c2f37c47bda20ffad071b40cd87ad0a849278fa1e182926ca20d914"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.724, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se lei e contrato não fixarem a remuneração do corretor, o valor será definido pela natureza do negócio e pelos usos locais.’. O campo de atenção registra: ‘Norma especial ou tabela legal prevalece sobre o arbitramento subsidiário.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 205,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 594,
+   "target_id": "CC2002:ART.725",
+   "explanation_id": "ENTENDA/CC2002:ART.725/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.725:CAPUT\tA remuneração é devida ao corretor uma vez que tenha conseguido o resultado previsto no contrato de mediação, ou ainda que este não se efetive em virtude de arrependimento das partes.",
+   "source_snapshot_sha256": "d19a0b3f50a41e03a8202476fe728a55b6ec17ca729db4ea146ec17247f2ba79",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.725:CAPUT",
+     "text": "A remuneração é devida ao corretor uma vez que tenha conseguido o resultado previsto no contrato de mediação, ou ainda que este não se efetive em virtude de arrependimento das partes."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A remuneração é devida ao corretor uma vez que tenha conseguido o resultado previsto no contrato de mediação, ou ainda que este não se efetive em virtude de arrependimento das partes.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4263f5733c8b156f9ee72d6b275591e7c3a51898b657bfc5009d4e06116539e6",
+     "o_que_significa": "6f3e56856e1a4ee152322350d10caec89571932f3bc41d0139b37e639e0cb0a9",
+     "exemplo_pratico": "ee9a42faec8b5b51f4d445c74693b9beaa281b03c1b81c907cff8691453207f1",
+     "atencao": "6b1e512eb8acbd23911779f72f884f40ae2ad0110c195b281d927d6d0e27fef1",
+     "palavras_dificeis": "be4715626198fae5cc9732024722d9901c371fd230d364a592730c286806dfd2"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.725, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A corretagem é devida quando o corretor alcança o resultado contratado, inclusive se o negócio não se efetiva por arrependimento das partes.’. O campo de atenção registra: ‘É essencial identificar qual resultado o contrato definiu e se ele foi efetivamente alcançado.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 206,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 595,
+   "target_id": "CC2002:ART.726",
+   "explanation_id": "ENTENDA/CC2002:ART.726/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.726:CAPUT\tIniciado e concluído o negócio diretamente entre as partes, nenhuma remuneração será devida ao corretor; mas se, por escrito, for ajustada a corretagem com exclusividade, terá o corretor direito à remuneração integral, ainda que realizado o negócio sem a sua mediação, salvo se comprovada sua inércia ou ociosidade.",
+   "source_snapshot_sha256": "bb94ecec341761dad4f763402ef8419df84eb712d61d51f67f8dff882b098fbd",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.726:CAPUT",
+     "text": "Iniciado e concluído o negócio diretamente entre as partes, nenhuma remuneração será devida ao corretor; mas se, por escrito, for ajustada a corretagem com exclusividade, terá o corretor direito à remuneração integral, ainda que realizado o negócio sem a sua mediação, salvo se comprovada sua inércia ou ociosidade."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Iniciado e concluído o negócio diretamente entre as partes, nenhuma remuneração será devida ao corretor; mas se, por escrito, for ajustada a corretagem com exclusividade, terá o corretor direito à remuneração integral, ainda que realizado o negócio sem a sua mediação, salvo se comprovada sua inércia ou ociosidade.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "bc9d9ac5eb93e7a5dc817380a057430c411d083a6b646c5baabc4fcb4c67afa9",
+     "o_que_significa": "33732b6f147df2bd765471d75e727c3583a54fe68dccc48c70a2523a3bd1cbc7",
+     "exemplo_pratico": "82bcb873a753f747e53b1790b1fc332eebea0214b2ab762a9a5cd4e4ba87f094",
+     "atencao": "262094c735fa3a0cdcb6fe917655431f9b6bc33639b05c58f3b2b6eb69f590a5",
+     "palavras_dificeis": "5d29bc30e0e998dab386de2b2f95588bd226e7d2f19f7c7ab87f4ba6002faf40"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.726, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Negócio fechado diretamente não gera comissão, salvo corretagem exclusiva por escrito; nessa hipótese, a remuneração integral subsiste, exceto se o corretor ficou inerte ou ocioso.’. O campo de atenção registra: ‘Exclusividade verbal não produz o efeito especial, e a inércia deve ser comprovada.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 207,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 596,
+   "target_id": "CC2002:ART.727",
+   "explanation_id": "ENTENDA/CC2002:ART.727/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.727:CAPUT\tSe, por não haver prazo determinado, o dono do negócio dispensar o corretor, e o negócio se realizar posteriormente, como fruto da sua mediação, a corretagem lhe será devida; igual solução se adotará se o negócio se realizar após a decorrência do prazo contratual, mas por efeito dos trabalhos do corretor.",
+   "source_snapshot_sha256": "c9239457cda7030f8f4d878d3455257b0916b69a9b2b71df89159874eb8bb7b2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.727:CAPUT",
+     "text": "Se, por não haver prazo determinado, o dono do negócio dispensar o corretor, e o negócio se realizar posteriormente, como fruto da sua mediação, a corretagem lhe será devida; igual solução se adotará se o negócio se realizar após a decorrência do prazo contratual, mas por efeito dos trabalhos do corretor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se, por não haver prazo determinado, o dono do negócio dispensar o corretor, e o negócio se realizar posteriormente, como fruto da sua mediação, a corretagem lhe será devida; igual solução se adotará se o negócio se realizar após a decorrência do prazo contratual, mas por efeito dos trabalhos do corretor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a79f3a65756dcb9d11533c0f06cfac58f48658f53b45e19fad7a33df91637168",
+     "o_que_significa": "e78be20069ebe7ff3d209d969d863513a10a4603a877aa4934714a9cb31f5125",
+     "exemplo_pratico": "98cee24e80ed7b4632a91839755c67696b4c6b402c9c82e44f0b5e00ca99f13d",
+     "atencao": "37a87d8867196894ddaab409efdd4271c86bf82ebb9899b76e03e91193d11265",
+     "palavras_dificeis": "482312be488b27bc2fb9c69eeff8a0fe86e00c86ff9e301091bc4c53f3de00ab"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.727, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Mesmo após dispensa ou fim do prazo, a comissão é devida se o negócio posterior resultar do trabalho do corretor.’. O campo de atenção registra: ‘A mera realização posterior não basta: deve ser fruto efetivo da mediação anterior.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 208,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 597,
+   "target_id": "CC2002:ART.728",
+   "explanation_id": "ENTENDA/CC2002:ART.728/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.728:CAPUT\tSe o negócio se concluir com a intermediação de mais de um corretor, a remuneração será paga a todos em partes iguais, salvo ajuste em contrário.",
+   "source_snapshot_sha256": "9526be3f02b056f7ad9e91131fe044d3ee84bf0b8a8cdc08d1afd659039fb975",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.728:CAPUT",
+     "text": "Se o negócio se concluir com a intermediação de mais de um corretor, a remuneração será paga a todos em partes iguais, salvo ajuste em contrário."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o negócio se concluir com a intermediação de mais de um corretor, a remuneração será paga a todos em partes iguais, salvo ajuste em contrário.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "05ca69b67186a41aabb74ed11e1e1ee158e4ef9bfbcdecc2ddb90d7021462d9b",
+     "o_que_significa": "5b59fdb2ad4e7c767e0130af61ca5bd983cb4e1552fb48974a13490b9c0dd9d6",
+     "exemplo_pratico": "ec0fa241b9275a07adae5245e657d8539d60249a1114dae51d20c3b8f1c9cd8f",
+     "atencao": "b4b066e602464824078108aa4b9685e1edf153c3ddf63af28fc023ae2a01423b",
+     "palavras_dificeis": "9c35ad9ac68fc9394c7e1c077439781367f10c9886ac3a1712643130675a97c5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.728, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quando vários corretores participam da conclusão, dividem a remuneração igualmente, salvo ajuste diferente.’. O campo de atenção registra: ‘Só participa do rateio quem efetivamente intermediou; o contrato pode fixar percentuais distintos.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 209,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 598,
+   "target_id": "CC2002:ART.729",
+   "explanation_id": "ENTENDA/CC2002:ART.729/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.729:CAPUT\tOs preceitos sobre corretagem constantes deste Código não excluem a aplicação de outras normas da legislação especial.",
+   "source_snapshot_sha256": "503a34539adcc68f3f78089fdc8f810c2772664cd9092956a9af7b3c61b429c2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.729:CAPUT",
+     "text": "Os preceitos sobre corretagem constantes deste Código não excluem a aplicação de outras normas da legislação especial."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Os preceitos sobre corretagem constantes deste Código não excluem a aplicação de outras normas da legislação especial.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5a9ebc1b05935e8fd47ee9d5718b4bd72e1eb88accf1553f78606dfba6beb27b",
+     "o_que_significa": "4fc275288fd39330dad141e221b0ed5400eb035098cc8818baded0989bfd529e",
+     "exemplo_pratico": "eab6dd25e10511032dea00b851244a0f9dfea1390d7ab7ed4461614b3bbb8f57",
+     "atencao": "91f96c1eb71609bdbc443f8903ccb7afefff619a4ef5f76c317621fec942e735",
+     "palavras_dificeis": "79e3ef44b63f7485b8ea070e69061a468f55fd5554148b780ca89dc8d03becf7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.729, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘As regras civis de corretagem convivem com normas especiais aplicáveis à atividade ou ao negócio.’. O campo de atenção registra: ‘A norma especial não deve ser presumida; é preciso identificar seu âmbito e vigência.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 210,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 599,
+   "target_id": "CC2002:ART.730",
+   "explanation_id": "ENTENDA/CC2002:ART.730/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.730:CAPUT\tPelo contrato de transporte alguém se obriga, mediante retribuição, a transportar, de um lugar para outro, pessoas ou coisas.",
+   "source_snapshot_sha256": "43f5260cb530fc39032c84bdd87d601efb2bca595460c806444fa53551d1a32d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.730:CAPUT",
+     "text": "Pelo contrato de transporte alguém se obriga, mediante retribuição, a transportar, de um lugar para outro, pessoas ou coisas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Pelo contrato de transporte alguém se obriga, mediante retribuição, a transportar, de um lugar para outro, pessoas ou coisas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e52a25f4a69d8d8b6515268095fac8814b7abe88cbf9733608f634ee45d8095f",
+     "o_que_significa": "722da7d8a8220d1d6ad4f85bbcd4251b82b1af06513119f7a94fdfc819e0d257",
+     "exemplo_pratico": "6558e81cb95d5200718686e7fa912ca61d8b122e57b5073f4eabb26ccc33a1ce",
+     "atencao": "6de395159ed2410ee249499429099f381a7c4966773cc9a7b36c86fabe473c7e",
+     "palavras_dificeis": "d546e54faaa1608c466639079c0e3eddec7413420fbb04b2f7a77003e90c05bd"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.730, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘No transporte remunerado, o transportador assume levar pessoas ou coisas de um local a outro.’. O campo de atenção registra: ‘Transporte gratuito por cortesia pode seguir regime diferente, e serviços públicos também têm regras próprias.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 211,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 600,
+   "target_id": "CC2002:ART.731",
+   "explanation_id": "ENTENDA/CC2002:ART.731/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.731:CAPUT\tO transporte exercido em virtude de autorização, permissão ou concessão, rege-se pelas normas regulamentares e pelo que for estabelecido naqueles atos, sem prejuízo do disposto neste Código.",
+   "source_snapshot_sha256": "6e389bdd9603d854abe436a558305a9c6cebf2a8d951eef4c85a940304d7fc82",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.731:CAPUT",
+     "text": "O transporte exercido em virtude de autorização, permissão ou concessão, rege-se pelas normas regulamentares e pelo que for estabelecido naqueles atos, sem prejuízo do disposto neste Código."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O transporte exercido em virtude de autorização, permissão ou concessão, rege-se pelas normas regulamentares e pelo que for estabelecido naqueles atos, sem prejuízo do disposto neste Código.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "07eb9ec57d12639e73f1f606099797795ffe7f37b2fe4e8c6a718e76a91e5447",
+     "o_que_significa": "3639b092b793537e72291b7adef84f37babb8122cb4d16ebddbb4b977d7417e7",
+     "exemplo_pratico": "0266fa03032fa6704bb8dd85b3848843e339bcee17b4c6c9173740480499d910",
+     "atencao": "949b1ab2cbac1651593bed3ae00c68311ccae8ff5fdc012901e39d66065bcb82",
+     "palavras_dificeis": "c8c321466ca150bdd698618046bf6763a85089ab2c7d8a58875d8467c05ed2b4"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.731, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Transporte prestado por autorização, permissão ou concessão segue a regulamentação e os atos administrativos correspondentes, além do Código Civil.’. O campo de atenção registra: ‘O Código não afasta tarifas, padrões de serviço e deveres estabelecidos pelo poder público.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 212,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 601,
+   "target_id": "CC2002:ART.732",
+   "explanation_id": "ENTENDA/CC2002:ART.732/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.732:CAPUT\tAos contratos de transporte, em geral, são aplicáveis, quando couber, desde que não contrariem as disposições deste Código, os preceitos constantes da legislação especial e de tratados e convenções internacionais.",
+   "source_snapshot_sha256": "7942d3e756ab187f56326ffadda4b81082b9751d9dc89f320fe292365817d093",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.732:CAPUT",
+     "text": "Aos contratos de transporte, em geral, são aplicáveis, quando couber, desde que não contrariem as disposições deste Código, os preceitos constantes da legislação especial e de tratados e convenções internacionais."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Aos contratos de transporte, em geral, são aplicáveis, quando couber, desde que não contrariem as disposições deste Código, os preceitos constantes da legislação especial e de tratados e convenções internacionais.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f18ef636a1c233c8f1299d233cc19a3691ac67bf310637ff6b14f6140fd3be6e",
+     "o_que_significa": "b59748f88a87f17ecffcef98eae8f9f81539969779490054d29c2758cd88231c",
+     "exemplo_pratico": "5d0452be7d1ca3b0833acbba73b692653585b57eff5cca9733b072958e7c0177",
+     "atencao": "1bde4fd4c6fd774b89c9ca5b70aa977272b575127ab6f391553234208bc56009",
+     "palavras_dificeis": "a05b1ff24ef302ef81b339a40f9f167ef1eb404a31f3547a84c42d8b840f0316"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.732, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Legislação especial e tratados internacionais complementam o transporte quando compatíveis com o Código Civil.’. O campo de atenção registra: ‘A incidência externa depende do tipo, percurso e âmbito do transporte; não é automática em toda operação.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 213,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 602,
+   "target_id": "CC2002:ART.733",
+   "explanation_id": "ENTENDA/CC2002:ART.733/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.733:CAPUT\tNos contratos de transporte cumulativo, cada transportador se obriga a cumprir o contrato relativamente ao respectivo percurso, respondendo pelos danos nele causados a pessoas e coisas.\nCC2002:ART.733:PAR.1\to O dano, resultante do atraso ou da interrupção da viagem, será determinado em razão da totalidade do percurso.\nCC2002:ART.733:PAR.2\to Se houver substituição de algum dos transportadores no decorrer do percurso, a responsabilidade solidária estender-se-á ao substituto.",
+   "source_snapshot_sha256": "0cb22f20c0f41bedf79e9fae8a030c15ddbb3bd54b12c9092412aa5e29ea1432",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.733:CAPUT",
+     "text": "Nos contratos de transporte cumulativo, cada transportador se obriga a cumprir o contrato relativamente ao respectivo percurso, respondendo pelos danos nele causados a pessoas e coisas."
+    },
+    {
+     "label": "CC2002:ART.733:PAR.1",
+     "text": "o O dano, resultante do atraso ou da interrupção da viagem, será determinado em razão da totalidade do percurso."
+    },
+    {
+     "label": "CC2002:ART.733:PAR.2",
+     "text": "o Se houver substituição de algum dos transportadores no decorrer do percurso, a responsabilidade solidária estender-se-á ao substituto."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Nos contratos de transporte cumulativo, cada transportador se obriga a cumprir o contrato relativamente ao respectivo percurso, respondendo pelos danos nele causados a pessoas e coisas. | o O dano, resultante do atraso ou da interrupção da viagem, será determinado em razão da totalidade do percurso. | o Se houver substituição de algum dos transportadores no decorrer do percurso, a responsabilidade solidária estender-se-á ao substituto.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c070e617fcd15dcc6f9f61d15793202b056389761f31aa6c899ad135eaa99288",
+     "o_que_significa": "cfb37dabe225f3be37b9865f0578ea5acef9578c46b44f03c7d5b1c98041de55",
+     "exemplo_pratico": "d683d785943103c83bb4b34fbea1f51451385d3de5b6174aecc378c7021759f4",
+     "atencao": "0da5f3e9546915e99ece0e112f8c21a671d9212fe192459ff825540c0ea3f890",
+     "palavras_dificeis": "18233025af5e9eeefa4bfadd1f46e0c585853d53452dd7f340dca802c2fd8ae2"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.733, foram cotejados individualmente 3 segmento(s) vigente(s) (CAPUT, PAR.1, PAR.2) com os cinco campos ENTENDA. A síntese ativa informa: ‘No transporte cumulativo, cada transportador responde por seu trecho. Atraso ou interrupção considera o percurso total, e substituto integra a solidariedade quando houver troca no caminho.’. O campo de atenção registra: ‘Responsabilidade perante o usuário e acerto interno entre transportadores são planos distintos.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 214,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 603,
+   "target_id": "CC2002:ART.734",
+   "explanation_id": "ENTENDA/CC2002:ART.734/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.734:CAPUT\tO transportador responde pelos danos causados às pessoas transportadas e suas bagagens, salvo motivo de força maior, sendo nula qualquer cláusula excludente da responsabilidade.\nCC2002:ART.734:PAR.UNICO\tÉ lícito ao transportador exigir a declaração do valor da bagagem a fim de fixar o limite da indenização.",
+   "source_snapshot_sha256": "54c430e108ad99778dfb2993ef32918fdb496e99270082e4cad1f2f42dd4d642",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.734:CAPUT",
+     "text": "O transportador responde pelos danos causados às pessoas transportadas e suas bagagens, salvo motivo de força maior, sendo nula qualquer cláusula excludente da responsabilidade."
+    },
+    {
+     "label": "CC2002:ART.734:PAR.UNICO",
+     "text": "É lícito ao transportador exigir a declaração do valor da bagagem a fim de fixar o limite da indenização."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O transportador responde pelos danos causados às pessoas transportadas e suas bagagens, salvo motivo de força maior, sendo nula qualquer cláusula excludente da responsabilidade. | É lícito ao transportador exigir a declaração do valor da bagagem a fim de fixar o limite da indenização.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "80c0d530774d9572f02f13fa9ec8abd9830f309fb0b760133537a06945c159b7",
+     "o_que_significa": "07d4653a57f28d448ef44db1ac962a853eb05912757dbefb24a74c49a9c3d620",
+     "exemplo_pratico": "6dd544283620e00ccc8e50da1d9e9dfcd23f67058a29bc529deb5191164fb3ce",
+     "atencao": "50fa404f72980fb5a4207cce1d00f34c906c52e30e2de9a6511a32c8eb9ba6bc",
+     "palavras_dificeis": "d71b22847468b0a3d03806796e0393d24a604f84362f14889380614a26e67fae"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.734, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘O transportador responde por danos ao passageiro e à bagagem, salvo força maior; cláusula que exclua essa responsabilidade é nula. Pode exigir declaração do valor da bagagem para limitar indenização.’. O campo de atenção registra: ‘A exceção exige força maior comprovada, e declaração de valor não elimina responsabilidade por outros danos.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 215,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 604,
+   "target_id": "CC2002:ART.735",
+   "explanation_id": "ENTENDA/CC2002:ART.735/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.735:CAPUT\tA responsabilidade contratual do transportador por acidente com o passageiro não é elidida por culpa de terceiro, contra o qual tem ação regressiva.",
+   "source_snapshot_sha256": "fff9931ca1a88b78f0431d4f048439036ce89b629d2767f063c8c66c5b08aa55",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.735:CAPUT",
+     "text": "A responsabilidade contratual do transportador por acidente com o passageiro não é elidida por culpa de terceiro, contra o qual tem ação regressiva."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A responsabilidade contratual do transportador por acidente com o passageiro não é elidida por culpa de terceiro, contra o qual tem ação regressiva.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0c89907dc1260160e1f95fe702a7ed1b9bb4b31901f5e27e0e451b427dc20233",
+     "o_que_significa": "1899a9a675260a9f7abfcce8b1eea3fa7151733203d1f65cb14b546e86aa6abb",
+     "exemplo_pratico": "bdc280d20ec9ed7baacd834a72bea8714c3501987add0adc3b7875d40fb934fa",
+     "atencao": "ef991ae3d648ffba4fca708633738490b046b683df5f755c5c0d60207cf4f9b8",
+     "palavras_dificeis": "696354a67c1ac5f01644ebebae8ff6c558d2718bbc859e5c8a8ac03814cfea31"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.735, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Culpa de terceiro não afasta a responsabilidade contratual do transportador perante o passageiro; depois de indenizar, ele pode cobrar do responsável.’. O campo de atenção registra: ‘A regra não impede apuração de força maior nem eventual contribuição da própria vítima.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 216,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 605,
+   "target_id": "CC2002:ART.736",
+   "explanation_id": "ENTENDA/CC2002:ART.736/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.736:CAPUT\tNão se subordina às normas do contrato de transporte o feito gratuitamente, por amizade ou cortesia.\nCC2002:ART.736:PAR.UNICO\tNão se considera gratuito o transporte quando, embora feito sem remuneração, o transportador auferir vantagens indiretas.",
+   "source_snapshot_sha256": "75099b2382d291247214763ffbb7ab82774453fb8388ed4d8524339f47a3c1db",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.736:CAPUT",
+     "text": "Não se subordina às normas do contrato de transporte o feito gratuitamente, por amizade ou cortesia."
+    },
+    {
+     "label": "CC2002:ART.736:PAR.UNICO",
+     "text": "Não se considera gratuito o transporte quando, embora feito sem remuneração, o transportador auferir vantagens indiretas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Não se subordina às normas do contrato de transporte o feito gratuitamente, por amizade ou cortesia. | Não se considera gratuito o transporte quando, embora feito sem remuneração, o transportador auferir vantagens indiretas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a5a239413c7e69b4053737509db67bedfa763f4b125c0a2729c8e16f4ed545fc",
+     "o_que_significa": "3609bf38c628bd2572e36c0ead87d1d0183aac38895820d9bf61cf64bc988479",
+     "exemplo_pratico": "dfb972c4449428d4d800703b08d5ac38cc53f7e6643e8f45370e8982028c8efe",
+     "atencao": "4003ecb2c398ed1c3111654ca30296712349c875a43b81af36d9e989c3c237c6",
+     "palavras_dificeis": "3409433daabc96bd20854ec6e7e387b7c074964a58fa4b2691d7b4dad0a3c80d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.736, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Transporte gratuito por amizade ou cortesia não segue o regime contratual de transporte; se houver vantagem indireta para o transportador, não é considerado gratuito.’. O campo de atenção registra: ‘A qualificação depende das circunstâncias, não apenas da inexistência de tarifa.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 217,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 606,
+   "target_id": "CC2002:ART.737",
+   "explanation_id": "ENTENDA/CC2002:ART.737/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.737:CAPUT\tO transportador está sujeito aos horários e itinerários previstos, sob pena de responder por perdas e danos, salvo motivo de força maior.",
+   "source_snapshot_sha256": "f3235578446b761c6da72426bbba6fcc12e43441325ae3989aa65c49dbd7ebdb",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.737:CAPUT",
+     "text": "O transportador está sujeito aos horários e itinerários previstos, sob pena de responder por perdas e danos, salvo motivo de força maior."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O transportador está sujeito aos horários e itinerários previstos, sob pena de responder por perdas e danos, salvo motivo de força maior.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "eac6654a7ca3f6674a988b5350218705c7b9346c84a07d275d432d347d0e2351",
+     "o_que_significa": "f0de03a36fde836d02560b08dfbd7674c86846f64c797fa10440bd63ec9a73c9",
+     "exemplo_pratico": "d41be92d44e1f1cd8a3aebcb44576b95fd16b08ffe6224f52ae8eb15d1cf394e",
+     "atencao": "b7e9b660d5f5a08837d29706a13a82d88d499efd8f3f220a33cf671ba7787c5d",
+     "palavras_dificeis": "d5c775d0e8d8eceb2094093ca7f4388e2bb8698522833c7d4cf438b8f14b4688"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.737, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O transportador deve cumprir horários e itinerários e indeniza danos pelo descumprimento, salvo força maior.’. O campo de atenção registra: ‘A indenização exige dano e nexo; atraso irrelevante não gera automaticamente qualquer reparação.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 218,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 607,
+   "target_id": "CC2002:ART.738",
+   "explanation_id": "ENTENDA/CC2002:ART.738/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.738:CAPUT\tA pessoa transportada deve sujeitar-se às normas estabelecidas pelo transportador, constantes no bilhete ou afixadas à vista dos usuários, abstendo-se de quaisquer atos que causem incômodo ou prejuízo aos passageiros, danifiquem o veículo, ou dificultem ou impeçam a execução normal do serviço.\nCC2002:ART.738:PAR.UNICO\tSe o prejuízo sofrido pela pessoa transportada for atribuível à transgressão de normas e instruções regulamentares, o juiz reduzirá eqüitativamente a indenização, na medida em que a vítima houver concorrido para a ocorrência do dano.",
+   "source_snapshot_sha256": "c5523a12c853e4dbdd7f0ed60cf0fdb48be9f88ebf7289d4f87b91362e59def0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.738:CAPUT",
+     "text": "A pessoa transportada deve sujeitar-se às normas estabelecidas pelo transportador, constantes no bilhete ou afixadas à vista dos usuários, abstendo-se de quaisquer atos que causem incômodo ou prejuízo aos passageiros, danifiquem o veículo, ou dificultem ou impeçam a execução normal do serviço."
+    },
+    {
+     "label": "CC2002:ART.738:PAR.UNICO",
+     "text": "Se o prejuízo sofrido pela pessoa transportada for atribuível à transgressão de normas e instruções regulamentares, o juiz reduzirá eqüitativamente a indenização, na medida em que a vítima houver concorrido para a ocorrência do dano."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A pessoa transportada deve sujeitar-se às normas estabelecidas pelo transportador, constantes no bilhete ou afixadas à vista dos usuários, abstendo-se de quaisquer atos que causem incômodo ou prejuízo aos passageiros, danifiquem o veículo, ou dificultem ou impeçam a execução normal do serviço. | Se o prejuízo sofrido pela pessoa transportada for atribuível à transgressão de normas e instruções regulamentares, o juiz reduzirá eqüitativamente a indenização, na medida em que a vítima houver concorrido para a ocorrência do dano.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0f84332075664b3f2b56e07f950da2e9838049a0b4fa03c18a1b173c68c7f36c",
+     "o_que_significa": "77e2e95510c2956906dec2e39032d1c9c20ff815965251e4564304475aad5f97",
+     "exemplo_pratico": "f1382b9dece1dd071aaeeb880994344ad5ebded9aeb70092cfb2ddb9acdbb41a",
+     "atencao": "e4fe8ac4dbd4d3cd775c9464035c0d90b210b713b0102b7a3274d9447e8a8449",
+     "palavras_dificeis": "2a435eff1186d45fab85292ef04bb3187c3cdfd884722552db15767db1fdef0f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.738, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Passageiro deve seguir regras visíveis ou constantes do bilhete e não prejudicar pessoas, veículo ou serviço. Se sua infração contribuir para o próprio dano, a indenização será reduzida proporcionalmente.’. O campo de atenção registra: ‘Redução exige relação causal e medida equitativa, não perda automática de todo o direito.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 219,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 608,
+   "target_id": "CC2002:ART.739",
+   "explanation_id": "ENTENDA/CC2002:ART.739/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.739:CAPUT\tO transportador não pode recusar passageiros, salvo os casos previstos nos regulamentos, ou se as condições de higiene ou de saúde do interessado o justificarem.",
+   "source_snapshot_sha256": "16defd1af8df621300a3dd4aa758332cd31184d648f2018b22a592d41f713176",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.739:CAPUT",
+     "text": "O transportador não pode recusar passageiros, salvo os casos previstos nos regulamentos, ou se as condições de higiene ou de saúde do interessado o justificarem."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O transportador não pode recusar passageiros, salvo os casos previstos nos regulamentos, ou se as condições de higiene ou de saúde do interessado o justificarem.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6668f942405a8711957bf4ef6fce51e4d845956c6fe37ae1bf63800e38d208b6",
+     "o_que_significa": "6dd7bba14e2ea101ef30c70f92e70b63b1f3dc1b88d1e8df3e876b2e99b67a5a",
+     "exemplo_pratico": "daa73a603144217778ff0d1454bffc80601c5f89df7ae2e484c7cdea08a0f172",
+     "atencao": "38012dcd1bb2b583cf1a6687b35798185ac17e2412114978cd50764dc142a6dd",
+     "palavras_dificeis": "77cf8af2e38bd24b8b35bedfc5bc109379bb738a832a130c2e76241c777b44d5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.739, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O transportador deve aceitar passageiros, salvo restrição regulamentar ou condição de higiene ou saúde que justifique a recusa.’. O campo de atenção registra: ‘A exceção não autoriza discriminação; o motivo deve ser legítimo, proporcional e demonstrável.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 220,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 609,
+   "target_id": "CC2002:ART.740",
+   "explanation_id": "ENTENDA/CC2002:ART.740/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.740:CAPUT\tO passageiro tem direito a rescindir o contrato de transporte antes de iniciada a viagem, sendo-lhe devida a restituição do valor da passagem, desde que feita a comunicação ao transportador em tempo de ser renegociada.\nCC2002:ART.740:PAR.1\to Ao passageiro é facultado desistir do transporte, mesmo depois de iniciada a viagem, sendo-lhe devida a restituição do valor correspondente ao trecho não utilizado, desde que provado que outra pessoa haja sido transportada em seu lugar.\nCC2002:ART.740:PAR.2\to Não terá direito ao reembolso do valor da passagem o usuário que deixar de embarcar, salvo se provado que outra pessoa foi transportada em seu lugar, caso em que lhe será restituído o valor do bilhete não utilizado.\nCC2002:ART.740:PAR.3\to Nas hipóteses previstas neste artigo, o transportador terá direito de reter até cinco por cento da importância a ser restituída ao passageiro, a título de multa compensatória.",
+   "source_snapshot_sha256": "772b048a7410c839412a9c294c7914abf6f821d9e46f6dea17d679e7e434f592",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.740:CAPUT",
+     "text": "O passageiro tem direito a rescindir o contrato de transporte antes de iniciada a viagem, sendo-lhe devida a restituição do valor da passagem, desde que feita a comunicação ao transportador em tempo de ser renegociada."
+    },
+    {
+     "label": "CC2002:ART.740:PAR.1",
+     "text": "o Ao passageiro é facultado desistir do transporte, mesmo depois de iniciada a viagem, sendo-lhe devida a restituição do valor correspondente ao trecho não utilizado, desde que provado que outra pessoa haja sido transportada em seu lugar."
+    },
+    {
+     "label": "CC2002:ART.740:PAR.2",
+     "text": "o Não terá direito ao reembolso do valor da passagem o usuário que deixar de embarcar, salvo se provado que outra pessoa foi transportada em seu lugar, caso em que lhe será restituído o valor do bilhete não utilizado."
+    },
+    {
+     "label": "CC2002:ART.740:PAR.3",
+     "text": "o Nas hipóteses previstas neste artigo, o transportador terá direito de reter até cinco por cento da importância a ser restituída ao passageiro, a título de multa compensatória."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: O passageiro tem direito a rescindir o contrato de transporte antes de iniciada a viagem, sendo-lhe devida a restituição do valor da passagem, desde que feita a comunicação ao transportador em tempo de ser renegociada. | o Ao passageiro é facultado desistir do transporte, mesmo depois de iniciada a viagem, sendo-lhe devida a restituição do valor correspondente ao trecho não utilizado, desde que provado que outra pessoa haja sido transportada em seu lugar. | o Não terá direito ao reembolso do valor da passagem o usuário que deixar de embarcar, salvo se provado que outra pessoa foi transportada em seu lugar, caso em que lhe será restituído o valor do bilhete não utilizado. | o Nas hipóteses previstas neste artigo, o transportador terá direito de reter até cinco por cento da importância a ser restituída ao passageiro, a título de multa compensatória.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7d6720fae58aac9aadcb713707091479d715e811509a15fb73c6255aa60e0878",
+     "o_que_significa": "6acc04135b1686f53c2fa91373a98317c181cc122132ba1ddecaf15b76ff37b0",
+     "exemplo_pratico": "801c4d0a2ed757d10daeaa240324aa0f53803503728c22fb60481b2799fa9400",
+     "atencao": "8b92c257bd56e99a6cb96a2a4445d97baa7fb2a30eae8a37ae14d2e38c327d6f",
+     "palavras_dificeis": "0f063e5fe95b12a7df32adb8a061ffd0e6a4206b9ecf50b2ba2654938ec874d6"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.740, foram cotejados individualmente 4 segmento(s) vigente(s) (CAPUT, PAR.1, PAR.2, PAR.3) com os cinco campos ENTENDA. A síntese ativa informa: ‘Antes da viagem, o passageiro pode desistir e receber o preço se houver tempo para revenda. Após o início ou em caso de não embarque, reembolso depende de substituição por outra pessoa; pode haver retenção de até cinco por cento.’. O campo de atenção registra: ‘Cada hipótese tem requisito próprio; ausência de comunicação ou de substituição pode afastar reembolso.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 221,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 610,
+   "target_id": "CC2002:ART.741",
+   "explanation_id": "ENTENDA/CC2002:ART.741/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.741:CAPUT\tInterrompendo-se a viagem por qualquer motivo alheio à vontade do transportador, ainda que em conseqüência de evento imprevisível, fica ele obrigado a concluir o transporte contratado em outro veículo da mesma categoria, ou, com a anuência do passageiro, por modalidade diferente, à sua custa, correndo também por sua conta as despesas de estada e alimentação do usuário, durante a espera de novo transporte.",
+   "source_snapshot_sha256": "a415d8bbde2aa13067d05373357b2f2ea5a2df07d3df58c025ef20ea9bd4c737",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.741:CAPUT",
+     "text": "Interrompendo-se a viagem por qualquer motivo alheio à vontade do transportador, ainda que em conseqüência de evento imprevisível, fica ele obrigado a concluir o transporte contratado em outro veículo da mesma categoria, ou, com a anuência do passageiro, por modalidade diferente, à sua custa, correndo também por sua conta as despesas de estada e alimentação do usuário, durante a espera de novo transporte."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Interrompendo-se a viagem por qualquer motivo alheio à vontade do transportador, ainda que em conseqüência de evento imprevisível, fica ele obrigado a concluir o transporte contratado em outro veículo da mesma categoria, ou, com a anuência do passageiro, por modalidade diferente, à sua custa, correndo também por sua conta as despesas de estada e alimentação do usuário, durante a espera de novo transporte.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "04c121a78178e05c16b3da57d9f9ca3820fadf057c7fb0f7e2a576421ba440f7",
+     "o_que_significa": "67f9cbca14ee49b18bf4144a39f8e05e2b4715b646b9c0bc941c88f8b888b9da",
+     "exemplo_pratico": "89c5bb408b9646081a65523722407bf991a9228865bbce0c742a3a367f3f8351",
+     "atencao": "d4b0a963fe3d84a8b3f4ea85b3c3f1a1f96b30ecaa458cec82f47661ea3a7308",
+     "palavras_dificeis": "9c48adb0f4ffa57e9ede8cf137660ad193d691678906fea7bab133ebaf56a652"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.741, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Interrompida a viagem por causa alheia ao transportador, ele deve concluir o percurso em veículo equivalente ou, com consentimento, por outro meio, pagando também estadia e alimentação durante a espera.’. O campo de atenção registra: ‘Modalidade diferente depende de anuência, e as despesas devem guardar relação com a interrupção.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 222,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 611,
+   "target_id": "CC2002:ART.742",
+   "explanation_id": "ENTENDA/CC2002:ART.742/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.742:CAPUT\tO transportador, uma vez executado o transporte, tem direito de retenção sobre a bagagem de passageiro e outros objetos pessoais deste, para garantir-se do pagamento do valor da passagem que não tiver sido feito no início ou durante o percurso.",
+   "source_snapshot_sha256": "3c251da2845d9046f0127e20235865e5a82c75bfd0e8095853a0363ab016099f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.742:CAPUT",
+     "text": "O transportador, uma vez executado o transporte, tem direito de retenção sobre a bagagem de passageiro e outros objetos pessoais deste, para garantir-se do pagamento do valor da passagem que não tiver sido feito no início ou durante o percurso."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O transportador, uma vez executado o transporte, tem direito de retenção sobre a bagagem de passageiro e outros objetos pessoais deste, para garantir-se do pagamento do valor da passagem que não tiver sido feito no início ou durante o percurso.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e8c6766c3437022794c59ffa24612870d72945ca287b0160fe858de7c2e2191e",
+     "o_que_significa": "b87278bbfebf3c6071f4563db2a95fcaa4b73c0b3b53fa5c61102b02ac8f0338",
+     "exemplo_pratico": "67f28b53967552a258b747bd38a6071d7fc3b2236448f22e004d806120467ca8",
+     "atencao": "4e14496e0562680f2d822f2c407ece5f07decea23a9115a3ba850632569740a2",
+     "palavras_dificeis": "940c9bcb1ca94772ff31e21897eaef0d623e3c2d62a1e9cc881c55855a537936"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.742, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Depois de realizar o transporte, o transportador pode reter bagagem e objetos pessoais para garantir passagem ainda não paga.’. O campo de atenção registra: ‘Não há autorização para apropriar-se dos bens, e a medida deve ser proporcional ao débito.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 223,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 612,
+   "target_id": "CC2002:ART.743",
+   "explanation_id": "ENTENDA/CC2002:ART.743/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.743:CAPUT\tA coisa, entregue ao transportador, deve estar caracterizada pela sua natureza, valor, peso e quantidade, e o mais que for necessário para que não se confunda com outras, devendo o destinatário ser indicado ao menos pelo nome e endereço.",
+   "source_snapshot_sha256": "721163a969cfe0a0ae0dd83ff8e3d675bccabe56d7beb472cfbab6d0e6df833b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.743:CAPUT",
+     "text": "A coisa, entregue ao transportador, deve estar caracterizada pela sua natureza, valor, peso e quantidade, e o mais que for necessário para que não se confunda com outras, devendo o destinatário ser indicado ao menos pelo nome e endereço."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A coisa, entregue ao transportador, deve estar caracterizada pela sua natureza, valor, peso e quantidade, e o mais que for necessário para que não se confunda com outras, devendo o destinatário ser indicado ao menos pelo nome e endereço.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d634bab2b5c4407ac77d173767693e03f4893a91d62be8293c13d05a0011bc4a",
+     "o_que_significa": "6169b71c87abf54c48ff7b33a9f54e4f41e4781c2221d6eceb0efeaaf67e5534",
+     "exemplo_pratico": "a22706b4e3886102ad35044f8005236e2ae1ca40035e547f5bd23ba14a8fdc3c",
+     "atencao": "583192c7634c978732296b633aedcd723c17530cf2322ed0d8157bad50635c94",
+     "palavras_dificeis": "b90db9647e74fd3c8e2256a11b9ad45f5e2c257fe07037afb0930961fe7d77a6"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.743, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A carga entregue deve ser identificada por natureza, valor, peso, quantidade e outros dados necessários, com nome e endereço do destinatário.’. O campo de atenção registra: ‘Informação incompleta ou falsa pode gerar responsabilidade e comprometer limites indenizatórios.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 224,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 613,
+   "target_id": "CC2002:ART.744",
+   "explanation_id": "ENTENDA/CC2002:ART.744/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.744:CAPUT\tAo receber a coisa, o transportador emitirá conhecimento com a menção dos dados que a identifiquem, obedecido o disposto em lei especial.\nCC2002:ART.744:PAR.UNICO\tO transportador poderá exigir que o remetente lhe entregue, devidamente assinada, a relação discriminada das coisas a serem transportadas, em duas vias, uma das quais, por ele devidamente autenticada, ficará fazendo parte integrante do conhecimento.",
+   "source_snapshot_sha256": "2265610f922c506be582c4f200da72164b942e7d742b22670b591dc927ee6890",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.744:CAPUT",
+     "text": "Ao receber a coisa, o transportador emitirá conhecimento com a menção dos dados que a identifiquem, obedecido o disposto em lei especial."
+    },
+    {
+     "label": "CC2002:ART.744:PAR.UNICO",
+     "text": "O transportador poderá exigir que o remetente lhe entregue, devidamente assinada, a relação discriminada das coisas a serem transportadas, em duas vias, uma das quais, por ele devidamente autenticada, ficará fazendo parte integrante do conhecimento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Ao receber a coisa, o transportador emitirá conhecimento com a menção dos dados que a identifiquem, obedecido o disposto em lei especial. | O transportador poderá exigir que o remetente lhe entregue, devidamente assinada, a relação discriminada das coisas a serem transportadas, em duas vias, uma das quais, por ele devidamente autenticada, ficará fazendo parte integrante do conhecimento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1e71bfd0872f1065a2790990058c887669b893e33e91e09cfe46bc5fd62c3893",
+     "o_que_significa": "6941a1294f33ed9e47a8905099fb5f9b1e23151661ad2868c420b6e8761d6814",
+     "exemplo_pratico": "9bc2ca1fd6d96c1199157b1422d46214995e5c93a37a5d61aaf2d5d2628a61f9",
+     "atencao": "ff4862d267d13a09e94277f0e53c31292ee3983f228f0bdf04062402396d69db",
+     "palavras_dificeis": "a3dd7fa9155b8f0966ee3ff643f56c4b82a9464d8f27147b66ddde2e781dae4a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.744, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Ao receber a carga, o transportador emite conhecimento com seus dados identificadores, observando lei especial. Pode exigir relação assinada em duas vias, integrando uma delas ao documento.’. O campo de atenção registra: ‘O documento não dispensa exigências fiscais, regulatórias ou setoriais externas.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 225,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 614,
+   "target_id": "CC2002:ART.745",
+   "explanation_id": "ENTENDA/CC2002:ART.745/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.745:CAPUT\tEm caso de informação inexata ou falsa descrição no documento a que se refere o artigo antecedente, será o transportador indenizado pelo prejuízo que sofrer, devendo a ação respectiva ser ajuizada no prazo de cento e vinte dias, a contar daquele ato, sob pena de decadência.",
+   "source_snapshot_sha256": "129d206ef6ef989bec951890732c5dcf07e71c0f7482ac3e5859bb75790914b4",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.745:CAPUT",
+     "text": "Em caso de informação inexata ou falsa descrição no documento a que se refere o artigo antecedente, será o transportador indenizado pelo prejuízo que sofrer, devendo a ação respectiva ser ajuizada no prazo de cento e vinte dias, a contar daquele ato, sob pena de decadência."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Em caso de informação inexata ou falsa descrição no documento a que se refere o artigo antecedente, será o transportador indenizado pelo prejuízo que sofrer, devendo a ação respectiva ser ajuizada no prazo de cento e vinte dias, a contar daquele ato, sob pena de decadência.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ab65899a40f38fb07ae1a2b8faf69f5aefc94d334ef50c5405e4de67d4f0d1ad",
+     "o_que_significa": "17666e15588239e25c7d8f130c532cd901fe2208d6565a39480bddb709271f29",
+     "exemplo_pratico": "0d30b47aa612e3ad82bca99883b5f03aee0ed45af15f6e3d2e7cf4dce58c591c",
+     "atencao": "114ab2e8c1aae9f826f031498ed7b06f2ed5a56d4213764a89d7d6c99d12cd06",
+     "palavras_dificeis": "2c84958569d1a090e8ed340eb954f9ac9dbc9c7ff64510a40278c8d99010ccaa"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.745, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Descrição falsa ou inexata permite ao transportador cobrar o prejuízo, mas a ação deve ser proposta em cento e vinte dias a partir do ato, sob decadência.’. O campo de atenção registra: ‘Devem ser provados falsidade ou inexatidão, dano e nexo; o prazo é decadencial.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 226,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 615,
+   "target_id": "CC2002:ART.746",
+   "explanation_id": "ENTENDA/CC2002:ART.746/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.746:CAPUT\tPoderá o transportador recusar a coisa cuja embalagem seja inadequada, bem como a que possa pôr em risco a saúde das pessoas, ou danificar o veículo e outros bens.",
+   "source_snapshot_sha256": "0ed707ee9aa87eea5af7a203393b952455d4015ebd0c9eb4e5b31adc8530ecdb",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.746:CAPUT",
+     "text": "Poderá o transportador recusar a coisa cuja embalagem seja inadequada, bem como a que possa pôr em risco a saúde das pessoas, ou danificar o veículo e outros bens."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Poderá o transportador recusar a coisa cuja embalagem seja inadequada, bem como a que possa pôr em risco a saúde das pessoas, ou danificar o veículo e outros bens.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9fbb6f9fce4382b3e8e1ca43f7715b89d67af0eaf3d20c296c16aa2c78fdf266",
+     "o_que_significa": "a171bdf0c2f9bbb0cf66868be3e70361a33142d0b76a05eddf7718144c4dc904",
+     "exemplo_pratico": "549822a515aeb7a9d78ab92edfabdb0fdccf539a561236053da8a5aeb4d67099",
+     "atencao": "f6796ce43bdf8288296dec17d7ec74cfcbff05acf630ac092dd1409fe7d9e959",
+     "palavras_dificeis": "bbae77469227c02a7047f21b72db9bfe6e8605b1f5ec987d66cfac2138e6a014"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.746, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O transportador pode recusar embalagem inadequada ou carga capaz de ameaçar pessoas, veículo ou outros bens.’. O campo de atenção registra: ‘A avaliação deve ser objetiva; embalagem reparável pode permitir adequação antes do transporte.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 227,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 616,
+   "target_id": "CC2002:ART.747",
+   "explanation_id": "ENTENDA/CC2002:ART.747/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.747:CAPUT\tO transportador deverá obrigatoriamente recusar a coisa cujo transporte ou comercialização não sejam permitidos, ou que venha desacompanhada dos documentos exigidos por lei ou regulamento.",
+   "source_snapshot_sha256": "677f5d806efec9855b35936fd04fdb9d6f5a63cc201c43624127294a3b3fadeb",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.747:CAPUT",
+     "text": "O transportador deverá obrigatoriamente recusar a coisa cujo transporte ou comercialização não sejam permitidos, ou que venha desacompanhada dos documentos exigidos por lei ou regulamento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O transportador deverá obrigatoriamente recusar a coisa cujo transporte ou comercialização não sejam permitidos, ou que venha desacompanhada dos documentos exigidos por lei ou regulamento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7d133f29811e88090c41867845a05c018e47738d0edda6fabf3ac54edeee5083",
+     "o_que_significa": "dc692e963b4f5f666db9d865ffc5f7b03a99b837cc89da6f4dff3f76b06a2244",
+     "exemplo_pratico": "9c6721ceb02fb0b74824895e584fef00ec0b3ba3a465b771c16f1696f2acab0e",
+     "atencao": "7567a600e100db2a61f0b805514e68608bb094394b738b85cbfe964c21ba03ad",
+     "palavras_dificeis": "b0d816b27bd030a79a4c854e90c7cc0498d021313257c5f3486f6149fea1d7e5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.747, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O transportador deve recusar carga proibida ou desacompanhada dos documentos exigidos.’. O campo de atenção registra: ‘A obrigação exige verificar proibição e documentação pertinente ao tipo de carga.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 228,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 617,
+   "target_id": "CC2002:ART.748",
+   "explanation_id": "ENTENDA/CC2002:ART.748/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.748:CAPUT\tAté a entrega da coisa, pode o remetente desistir do transporte e pedi-la de volta, ou ordenar seja entregue a outro destinatário, pagando, em ambos os casos, os acréscimos de despesa decorrentes da contra-ordem, mais as perdas e danos que houver.",
+   "source_snapshot_sha256": "149792abe50b98b3d06a033f884f682a2905b618c8a21364e33843107def6652",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.748:CAPUT",
+     "text": "Até a entrega da coisa, pode o remetente desistir do transporte e pedi-la de volta, ou ordenar seja entregue a outro destinatário, pagando, em ambos os casos, os acréscimos de despesa decorrentes da contra-ordem, mais as perdas e danos que houver."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Até a entrega da coisa, pode o remetente desistir do transporte e pedi-la de volta, ou ordenar seja entregue a outro destinatário, pagando, em ambos os casos, os acréscimos de despesa decorrentes da contra-ordem, mais as perdas e danos que houver.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "3d804255a180c3f7d9cab493418e2621a2ad9724ab7c929750a3cbb313f615a3",
+     "o_que_significa": "a6dd0a390a2eed522f7f211fffbff48d9dfa05035b1833af3f928c9a782d6fb6",
+     "exemplo_pratico": "094a7205845c7b8b44885904e1aeef68a2d2744c4aa3168656f1350b3198d910",
+     "atencao": "e8361dc7cf712707eb047c0521e846fc10f7810582ce51c6b347514239398393",
+     "palavras_dificeis": "e451b15555ff0cd94d245885f5a8d1ff1f1d2b07f0fc40d74bbf570e66051977"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.748, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Antes da entrega, o remetente pode cancelar o transporte, pedir a carga de volta ou mudar o destinatário, pagando despesas adicionais e danos decorrentes da contraordem.’. O campo de atenção registra: ‘A ordem deve ser possível e legítima, sem prejudicar direitos já constituídos do destinatário.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 229,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 618,
+   "target_id": "CC2002:ART.749",
+   "explanation_id": "ENTENDA/CC2002:ART.749/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.749:CAPUT\tO transportador conduzirá a coisa ao seu destino, tomando todas as cautelas necessárias para mantê-la em bom estado e entregá-la no prazo ajustado ou previsto.",
+   "source_snapshot_sha256": "3a20dc99376c68475f6b6b94a6fae56235896fe53385bbc9d4c9e1792c83bfc0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.749:CAPUT",
+     "text": "O transportador conduzirá a coisa ao seu destino, tomando todas as cautelas necessárias para mantê-la em bom estado e entregá-la no prazo ajustado ou previsto."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O transportador conduzirá a coisa ao seu destino, tomando todas as cautelas necessárias para mantê-la em bom estado e entregá-la no prazo ajustado ou previsto.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "96881c1719d61023a1c81ec3be338f8b07d29e3100fd9304f9324bfe25aedcee",
+     "o_que_significa": "7a693951d96cf36c14775642aefdf302fc5835e4ec5a9d4eddd25a0179ceeef1",
+     "exemplo_pratico": "800073a558cd2428c6878a03be95cb890fdfc434de4dbf4f7cc2c7f5f20b7396",
+     "atencao": "5e86feedb54279a236f5dab2f1679b3fc8415624be02e183ba9293945dfe9fe0",
+     "palavras_dificeis": "62dfe2c7e5ff6ffc1dc286fd0458cfce6874efa76a23886505146a25ad27da8d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.749, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O transportador deve levar a carga ao destino, conservá-la adequadamente e entregá-la no prazo contratado ou previsto.’. O campo de atenção registra: ‘O padrão de cautela depende da natureza declarada da carga e das condições conhecidas.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 230,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 619,
+   "target_id": "CC2002:ART.750",
+   "explanation_id": "ENTENDA/CC2002:ART.750/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.750:CAPUT\tA responsabilidade do transportador, limitada ao valor constante do conhecimento, começa no momento em que ele, ou seus prepostos, recebem a coisa; termina quando é entregue ao destinatário, ou depositada em juízo, se aquele não for encontrado.",
+   "source_snapshot_sha256": "79f1fe362c83e825bb31b91de0de6438812e8a54d32279325eff60eaf77223a8",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.750:CAPUT",
+     "text": "A responsabilidade do transportador, limitada ao valor constante do conhecimento, começa no momento em que ele, ou seus prepostos, recebem a coisa; termina quando é entregue ao destinatário, ou depositada em juízo, se aquele não for encontrado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A responsabilidade do transportador, limitada ao valor constante do conhecimento, começa no momento em que ele, ou seus prepostos, recebem a coisa; termina quando é entregue ao destinatário, ou depositada em juízo, se aquele não for encontrado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ca13b259da58f416a0d9db232f603a26cc20ad5d2c39c35af6f67d618d3886e7",
+     "o_que_significa": "fcb785bc1b629a5b638c93d4018bd78d2ef9975dc28f2f3217a00c893b0f4c02",
+     "exemplo_pratico": "6a47cc08a44edea49a161b669888513f78eb3669560635dedc24b7aa8e6626b0",
+     "atencao": "e449b07c09ff0558c91ba991dc0bb7d65ba7146ff6af5a8aec497fd67a39d7e8",
+     "palavras_dificeis": "dd959c6ceb61bbe5a70c7aea44e7a8f6c3ef2494b6a274150da7a1978b6eefd3"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.750, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A responsabilidade, limitada ao valor indicado no conhecimento, começa com o recebimento da carga e termina na entrega ou no depósito judicial se o destinatário não for localizado.’. O campo de atenção registra: ‘Limitação não protege fraude ou outras situações afastadas por normas aplicáveis; o depósito deve ser legítimo.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 231,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 620,
+   "target_id": "CC2002:ART.751",
+   "explanation_id": "ENTENDA/CC2002:ART.751/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.751:CAPUT\tA coisa, depositada ou guardada nos armazéns do transportador, em virtude de contrato de transporte, rege-se, no que couber, pelas disposições relativas a depósito.",
+   "source_snapshot_sha256": "b9e154db1592edaacc7f7cac4c32e0edae976e89c445b8d7f85e1c6708fa522a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.751:CAPUT",
+     "text": "A coisa, depositada ou guardada nos armazéns do transportador, em virtude de contrato de transporte, rege-se, no que couber, pelas disposições relativas a depósito."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A coisa, depositada ou guardada nos armazéns do transportador, em virtude de contrato de transporte, rege-se, no que couber, pelas disposições relativas a depósito.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5eb0782675d06e46a6ec47b4d54acd29236b933d28a08fb972e8a253c813a293",
+     "o_que_significa": "776fcd121a8e203d3fe6698451bc79cc05bfa74fa5a819f7a30608075312586a",
+     "exemplo_pratico": "43ba78ac1e17d09ca43ad363ae38ad24e3be2eb635ff5e98a43b2f44ff23d8ef",
+     "atencao": "4c105557a2e1f383a9ece0b97e698dc789a9e555cc34099fab679e3a295a05bd",
+     "palavras_dificeis": "c4644f0b8faa70a197c8aa38da4304c3be1e78a188dd0b638d7580da9bac2d26"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.751, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Carga guardada nos armazéns do transportador por causa do transporte segue, quando compatíveis, as regras do depósito.’. O campo de atenção registra: ‘A aplicação é compatível e subsidiária; não encerra necessariamente o contrato de transporte.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 232,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 621,
+   "target_id": "CC2002:ART.752",
+   "explanation_id": "ENTENDA/CC2002:ART.752/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.752:CAPUT\tDesembarcadas as mercadorias, o transportador não é obrigado a dar aviso ao destinatário, se assim não foi convencionado, dependendo também de ajuste a entrega a domicílio, e devem constar do conhecimento de embarque as cláusulas de aviso ou de entrega a domicílio.",
+   "source_snapshot_sha256": "b27b4740f9e8cd6f4039f7f1bfa7290755049773bfedacd32a1ccfce7578055e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.752:CAPUT",
+     "text": "Desembarcadas as mercadorias, o transportador não é obrigado a dar aviso ao destinatário, se assim não foi convencionado, dependendo também de ajuste a entrega a domicílio, e devem constar do conhecimento de embarque as cláusulas de aviso ou de entrega a domicílio."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Desembarcadas as mercadorias, o transportador não é obrigado a dar aviso ao destinatário, se assim não foi convencionado, dependendo também de ajuste a entrega a domicílio, e devem constar do conhecimento de embarque as cláusulas de aviso ou de entrega a domicílio.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f99ed4f4aedecf3872a954d3c4298edf188cd09d5f1340d0d340002da1c5d897",
+     "o_que_significa": "0502824620c498135c908ecb38e3e31f6e4dc86d7a261834aa7ce3ce77664dcd",
+     "exemplo_pratico": "10abc48da01530982c32f1f710d9eac24ada5f1129bc4c2c3c9ba97362642c0a",
+     "atencao": "3c7f50d291a06b027f1cd9f41a6dd5e0a265639db4b8bf29f9614b17a2c1b412",
+     "palavras_dificeis": "f6a318fc31994d37419eea6f0a0baa9b462d8fbc88de519abf387c60beb6adeb"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.752, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Após o desembarque, aviso ao destinatário e entrega em domicílio só são obrigatórios se ajustados e registrados no conhecimento.’. O campo de atenção registra: ‘Leis ou regulamentos especiais podem impor deveres adicionais independentemente do ajuste.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 233,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 622,
+   "target_id": "CC2002:ART.753",
+   "explanation_id": "ENTENDA/CC2002:ART.753/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.753:CAPUT\tSe o transporte não puder ser feito ou sofrer longa interrupção, o transportador solicitará, incontinenti, instruções ao remetente, e zelará pela coisa, por cujo perecimento ou deterioração responderá, salvo força maior.\nCC2002:ART.753:PAR.1\tPerdurando o impedimento, sem motivo imputável ao transportador e sem manifestação do remetente, poderá aquele depositar a coisa em juízo, ou vendê-la, obedecidos os preceitos legais e regulamentares, ou os usos locais, depositando o valor.\nCC2002:ART.753:PAR.2\tSe o impedimento for responsabilidade do transportador, este poderá depositar a coisa, por sua conta e risco, mas só poderá vendê-la se perecível.\nCC2002:ART.753:PAR.3\tEm ambos os casos, o transportador deve informar o remetente da efetivação do depósito ou da venda.\nCC2002:ART.753:PAR.4\tSe o transportador mantiver a coisa depositada em seus próprios armazéns, continuará a responder pela sua guarda e conservação, sendo-lhe devida, porém, uma remuneração pela custódia, a qual poderá ser contratualmente ajustada ou se conformará aos usos adotados em cada sistema de transporte.",
+   "source_snapshot_sha256": "89666297b8987f118d194d33d9ad78554df7246974567aac9c0a60b7d2ff52a9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.753:CAPUT",
+     "text": "Se o transporte não puder ser feito ou sofrer longa interrupção, o transportador solicitará, incontinenti, instruções ao remetente, e zelará pela coisa, por cujo perecimento ou deterioração responderá, salvo força maior."
+    },
+    {
+     "label": "CC2002:ART.753:PAR.1",
+     "text": "Perdurando o impedimento, sem motivo imputável ao transportador e sem manifestação do remetente, poderá aquele depositar a coisa em juízo, ou vendê-la, obedecidos os preceitos legais e regulamentares, ou os usos locais, depositando o valor."
+    },
+    {
+     "label": "CC2002:ART.753:PAR.2",
+     "text": "Se o impedimento for responsabilidade do transportador, este poderá depositar a coisa, por sua conta e risco, mas só poderá vendê-la se perecível."
+    },
+    {
+     "label": "CC2002:ART.753:PAR.3",
+     "text": "Em ambos os casos, o transportador deve informar o remetente da efetivação do depósito ou da venda."
+    },
+    {
+     "label": "CC2002:ART.753:PAR.4",
+     "text": "Se o transportador mantiver a coisa depositada em seus próprios armazéns, continuará a responder pela sua guarda e conservação, sendo-lhe devida, porém, uma remuneração pela custódia, a qual poderá ser contratualmente ajustada ou se conformará aos usos adotados em cada sistema de transporte."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 5 segmentos vigentes do dispositivo: Se o transporte não puder ser feito ou sofrer longa interrupção, o transportador solicitará, incontinenti, instruções ao remetente, e zelará pela coisa, por cujo perecimento ou deterioração responderá, salvo força maior. | Perdurando o impedimento, sem motivo imputável ao transportador e sem manifestação do remetente, poderá aquele depositar a coisa em juízo, ou vendê-la, obedecidos os preceitos legais e regulamentares, ou os usos locais, depositando o valor. | Se o impedimento for responsabilidade do transportador, este poderá depositar a coisa, por sua conta e risco, mas só poderá vendê-la se perecível. | Em ambos os casos, o transportador deve informar o remetente da efetivação do depósito ou da venda. | Se o transportador mantiver a coisa depositada em seus próprios armazéns, continuará a responder pela sua guarda e conservação, sendo-lhe devida, porém, uma remuneração pela custódia, a qual poderá ser contratualmente ajustada ou se conformará aos usos adotados em cada sistema de transporte.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4dbbb6b415de6c86e15bab07da62a2a7be5db72164e4675fb7df25035b38a202",
+     "o_que_significa": "7ce4617a6e8f18a8967a53ff7e8d52077ca87df8afdc19e7b5dc0ee83f516b38",
+     "exemplo_pratico": "dd90da51274eed1983bf94603a7b67a935fdac9f0ee9b2a98fe22a3f4314eee6",
+     "atencao": "28fef0e53a77eda1baeacb6c56485d46ca10c12a23330c97aed628faac2f3df0",
+     "palavras_dificeis": "5a0e5428de8cb30c95d909b945aba4b74a6ea63ae02e46550845595ec078f711"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.753, foram cotejados individualmente 5 segmento(s) vigente(s) (CAPUT, PAR.1, PAR.2, PAR.3, PAR.4) com os cinco campos ENTENDA. A síntese ativa informa: ‘Impossibilidade ou longa interrupção exige instruções imediatas ao remetente e cuidado com a carga. Persistindo o impedimento, cabem depósito ou venda em condições legais, com informação ao remetente; guarda própria gera dever e remuneração.’. O campo de atenção registra: ‘Venda é excepcional, especialmente se o impedimento for imputável ao transportador, quando só cabe para perecíveis.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 234,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 623,
+   "target_id": "CC2002:ART.754",
+   "explanation_id": "ENTENDA/CC2002:ART.754/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.754:CAPUT\tAs mercadorias devem ser entregues ao destinatário, ou a quem apresentar o conhecimento endossado, devendo aquele que as receber conferi-las e apresentar as reclamações que tiver, sob pena de decadência dos direitos.\nCC2002:ART.754:PAR.UNICO\tNo caso de perda parcial ou de avaria não perceptível à primeira vista, o destinatário conserva a sua ação contra o transportador, desde que denuncie o dano em dez dias a contar da entrega.",
+   "source_snapshot_sha256": "4c5bed7cd3d41d8fb676d77690801ea8418ec99a351257cc4c0cd7caccc78c93",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.754:CAPUT",
+     "text": "As mercadorias devem ser entregues ao destinatário, ou a quem apresentar o conhecimento endossado, devendo aquele que as receber conferi-las e apresentar as reclamações que tiver, sob pena de decadência dos direitos."
+    },
+    {
+     "label": "CC2002:ART.754:PAR.UNICO",
+     "text": "No caso de perda parcial ou de avaria não perceptível à primeira vista, o destinatário conserva a sua ação contra o transportador, desde que denuncie o dano em dez dias a contar da entrega."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: As mercadorias devem ser entregues ao destinatário, ou a quem apresentar o conhecimento endossado, devendo aquele que as receber conferi-las e apresentar as reclamações que tiver, sob pena de decadência dos direitos. | No caso de perda parcial ou de avaria não perceptível à primeira vista, o destinatário conserva a sua ação contra o transportador, desde que denuncie o dano em dez dias a contar da entrega.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "307a64860ae942af3cd656ee744fece358c780a6a7b22c149edb88f12f6f46f6",
+     "o_que_significa": "266d4c6406ad6d942880ed4b976eed895740d6970282890c9dcc5cd015997c28",
+     "exemplo_pratico": "f3dcb38da3ad39c98a215b69c998455c051138c358056deb22d127d65847b200",
+     "atencao": "4272de01884a49da90707eb6c8f9a9f5f1d1f0e7b36a6295ca05e74ad4b6a42b",
+     "palavras_dificeis": "2e218312ded095b63cb0b683fcc71f4a7b20b6414ced0cfc6160a0a8ae04963a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.754, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘O destinatário ou portador do conhecimento endossado deve conferir a carga e reclamar ao recebê-la. Dano parcial oculto pode ser denunciado em dez dias; sem isso, ocorre decadência.’. O campo de atenção registra: ‘O prazo especial trata de perda parcial ou avaria não perceptível, não de toda controvérsia contratual.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 235,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 624,
+   "target_id": "CC2002:ART.755",
+   "explanation_id": "ENTENDA/CC2002:ART.755/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.755:CAPUT\tHavendo dúvida acerca de quem seja o destinatário, o transportador deve depositar a mercadoria em juízo, se não lhe for possível obter instruções do remetente; se a demora puder ocasionar a deterioração da coisa, o transportador deverá vendê-la, depositando o saldo em juízo.",
+   "source_snapshot_sha256": "4a9854c32e1e9408a79aeeef00e280bb66a837681217d99c7a46170108654378",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.755:CAPUT",
+     "text": "Havendo dúvida acerca de quem seja o destinatário, o transportador deve depositar a mercadoria em juízo, se não lhe for possível obter instruções do remetente; se a demora puder ocasionar a deterioração da coisa, o transportador deverá vendê-la, depositando o saldo em juízo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Havendo dúvida acerca de quem seja o destinatário, o transportador deve depositar a mercadoria em juízo, se não lhe for possível obter instruções do remetente; se a demora puder ocasionar a deterioração da coisa, o transportador deverá vendê-la, depositando o saldo em juízo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2e9e6cfc0ae1b91476f88740e070e26ce93ec54ef17b6c7a21a507c8f2d9be53",
+     "o_que_significa": "78e410d001b557d01f3bd0a5913905b3688b14eba0408dd4c359ccb6513591d3",
+     "exemplo_pratico": "75f7f97e089a37000ff47350ef65286e3d0d8742fb746454dac0d65924ef9e0a",
+     "atencao": "bb304db610275a8d17ab9838a492ffcd9834b1100fc1669da27c397acaf61fb6",
+     "palavras_dificeis": "f70ab3cab1373758116c5a6b11e6762a6d4f5caa63a7c01cf9243ef6a6ef5ef9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.755, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Havendo dúvida sobre o destinatário e faltando instrução, o transportador deposita a carga judicialmente; se a demora ameaçar deterioração, deve vendê-la e depositar o saldo.’. O campo de atenção registra: ‘Venda exige risco de deterioração e prestação de contas do saldo, não autorização para apropriação.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 236,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 625,
+   "target_id": "CC2002:ART.756",
+   "explanation_id": "ENTENDA/CC2002:ART.756/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.756:CAPUT\tNo caso de transporte cumulativo, todos os transportadores respondem solidariamente pelo dano causado perante o remetente, ressalvada a apuração final da responsabilidade entre eles, de modo que o ressarcimento recaia, por inteiro, ou proporcionalmente, naquele ou naqueles em cujo percurso houver ocorrido o dano.",
+   "source_snapshot_sha256": "6fe4c108cbf32f54d63e5e421e5b4e665d30933875b6b1b924c02e352fde7bc8",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.756:CAPUT",
+     "text": "No caso de transporte cumulativo, todos os transportadores respondem solidariamente pelo dano causado perante o remetente, ressalvada a apuração final da responsabilidade entre eles, de modo que o ressarcimento recaia, por inteiro, ou proporcionalmente, naquele ou naqueles em cujo percurso houver ocorrido o dano."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: No caso de transporte cumulativo, todos os transportadores respondem solidariamente pelo dano causado perante o remetente, ressalvada a apuração final da responsabilidade entre eles, de modo que o ressarcimento recaia, por inteiro, ou proporcionalmente, naquele ou naqueles em cujo percurso houver ocorrido o dano.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9a07198bb5810506fc1207b43ff29272141587c42c1dd2741ba14ff05f69287d",
+     "o_que_significa": "8d30774cd42c1a5abc44cfb898bdb65fc789d71a1bd6ae62f06815638ef07c3f",
+     "exemplo_pratico": "faaaa162ab66b6fa80e88af65f277a477b5cf86a19b8d284abbab5968a82ccd8",
+     "atencao": "dd341f25d44c59ad1d5fa7b1b022cf594c21e968902525f81d60666697410f11",
+     "palavras_dificeis": "a920d34fe73f1521297e306ed43cb9b034bbd5409af08c8c0740e312e10d7016"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.756, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘No transporte cumulativo, todos respondem solidariamente perante o remetente; depois, o custo é atribuído integral ou proporcionalmente a quem causou o dano em seu trecho.’. O campo de atenção registra: ‘O regresso depende da identificação do trecho e da contribuição de cada transportador.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 237,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 626,
+   "target_id": "CC2002:ART.803",
+   "explanation_id": "ENTENDA/CC2002:ART.803/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.803:CAPUT\tPode uma pessoa, pelo contrato de constituição de renda, obrigar-se para com outra a uma prestação periódica, a título gratuito.",
+   "source_snapshot_sha256": "265340b0a311ba52afecf232210997af5c4ec1282f2a593f313b0f4bea03e8e1",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.803:CAPUT",
+     "text": "Pode uma pessoa, pelo contrato de constituição de renda, obrigar-se para com outra a uma prestação periódica, a título gratuito."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Pode uma pessoa, pelo contrato de constituição de renda, obrigar-se para com outra a uma prestação periódica, a título gratuito.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4b95ddcab806ac17642b865d6ecd82ab614d28a38cbd665c3fb4757b23bf832e",
+     "o_que_significa": "296befdab4243244d0f62153f76bb68396626d57d47808f34ed68594d12a791a",
+     "exemplo_pratico": "e6ef03c8a660e962d29b0c08d682bdc4b8ae08df90034c2610a7d18e0d7f9de8",
+     "atencao": "3e7d3ffaf2ccda1b6e4e859d4fb589af96db7de40062fdd23054f346e391267b",
+     "palavras_dificeis": "d4e600ee3ce890c168d126272a5c92f22f568fc50edad63a05102bd42007593a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.803, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Uma pessoa pode assumir gratuitamente o dever de pagar renda periódica a outra.’. O campo de atenção registra: ‘Gratuidade não elimina requisitos de validade nem autoriza confundir o contrato com doação comum: seu objeto é uma sequência de prestações periódicas.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 238,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 627,
+   "target_id": "CC2002:ART.804",
+   "explanation_id": "ENTENDA/CC2002:ART.804/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.804:CAPUT\tO contrato pode ser também a título oneroso, entregando-se bens móveis ou imóveis à pessoa que se obriga a satisfazer as prestações a favor do credor ou de terceiros.",
+   "source_snapshot_sha256": "19ff2f1abbbaa57652e7b35a96bca12aac58f8a8a90b9a6a669a19a23d565ca6",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.804:CAPUT",
+     "text": "O contrato pode ser também a título oneroso, entregando-se bens móveis ou imóveis à pessoa que se obriga a satisfazer as prestações a favor do credor ou de terceiros."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O contrato pode ser também a título oneroso, entregando-se bens móveis ou imóveis à pessoa que se obriga a satisfazer as prestações a favor do credor ou de terceiros.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "09f2417bad754a4274cc8d0e6005524beeaf1436f4e0b003907963c2d2d96022",
+     "o_que_significa": "b30ae367a4ceb78757c0c55734d89bb173dd1063e9373e61e25ac7de77e73836",
+     "exemplo_pratico": "530cf6c9b929bdf63c68ca8f5d1e281db15ab4da167f1beec6dfcf566cf08efb",
+     "atencao": "78cb0801e975f1d2627e37a2f9169782408294d49edf394e7e9bebf0224b2439",
+     "palavras_dificeis": "0633445a8b186ddecdb3213fe8372be1d96d784e6dcd63ef2d75634cdd6202b9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.804, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A renda também pode ser onerosa: bens são transferidos ao rendeiro em troca das prestações destinadas ao credor ou a terceiro.’. O campo de atenção registra: ‘A transferência dos bens e o pagamento da renda são partes do mesmo arranjo oneroso. Devem ser observadas as formalidades próprias do bem transferido.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 239,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 628,
+   "target_id": "CC2002:ART.805",
+   "explanation_id": "ENTENDA/CC2002:ART.805/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.805:CAPUT\tSendo o contrato a título oneroso, pode o credor, ao contratar, exigir que o rendeiro lhe preste garantia real, ou fidejussória.",
+   "source_snapshot_sha256": "c08ee0cc41edb180d7ee906a0dcffa915d83730a32cd087aba91d91ece64191e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.805:CAPUT",
+     "text": "Sendo o contrato a título oneroso, pode o credor, ao contratar, exigir que o rendeiro lhe preste garantia real, ou fidejussória."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Sendo o contrato a título oneroso, pode o credor, ao contratar, exigir que o rendeiro lhe preste garantia real, ou fidejussória.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7ddc8933ccf2f4caaf75da606e3bea9845648691dda12e26729227fc49320516",
+     "o_que_significa": "4481c9df945a281b80d60c52f899ecf1b9cb4f9f3ddd3f46a51bc178c8d6ab3a",
+     "exemplo_pratico": "a6d1186b387ed511eed766c6c1ca8aa78a516ae0729874fe64c967f758490ba0",
+     "atencao": "fa96065f9d3934ea91842f80db616102192aefeffddbcbed0ffb7bc3bd4651c5",
+     "palavras_dificeis": "d78e9364dbd199919fb7e11f0a5367ce5e09ef24895a8f5721791b59d6f3a6da"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.805, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Na constituição onerosa de renda, o credor pode exigir garantia real ou pessoal no momento da contratação.’. O campo de atenção registra: ‘A garantia não nasce automaticamente: deve ser exigida e constituída conforme suas regras específicas. Ela não amplia a renda além do contrato.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 240,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 629,
+   "target_id": "CC2002:ART.806",
+   "explanation_id": "ENTENDA/CC2002:ART.806/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.806:CAPUT\tO contrato de constituição de renda será feito a prazo certo, ou por vida, podendo ultrapassar a vida do devedor mas não a do credor, seja ele o contratante, seja terceiro.",
+   "source_snapshot_sha256": "3fd622eaad7ceea731b20899fb95e84c6e3c99bfc1fef968391d6a43bb55f90c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.806:CAPUT",
+     "text": "O contrato de constituição de renda será feito a prazo certo, ou por vida, podendo ultrapassar a vida do devedor mas não a do credor, seja ele o contratante, seja terceiro."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O contrato de constituição de renda será feito a prazo certo, ou por vida, podendo ultrapassar a vida do devedor mas não a do credor, seja ele o contratante, seja terceiro.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4eccb082415ddc10ee4c319a5e79fbd54236b035b271718dcc038cf23fcc4edd",
+     "o_que_significa": "a5aba36b2d15f5a2f502e24bca5764d865937887e0797939d34c5d8c8fa08ebb",
+     "exemplo_pratico": "d70e6c1ce1bf453cce1f2b183cdf8f5f4ead5a850858b14857f5c69b359bd7e3",
+     "atencao": "b84ac7b57a0af02b95b874ece288936ae1d870e12e754d03e13d91ad474fe033",
+     "palavras_dificeis": "188a62e329cbb255fdbda939f631fb58f136b08b49eda6ecbba2401f544eddb0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.806, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A renda pode durar por prazo determinado ou por toda a vida, inclusive superar a vida do devedor, mas não a do credor beneficiário.’. O campo de atenção registra: ‘É preciso identificar qual vida foi adotada como referência e quem é o credor, inclusive quando o beneficiário é terceiro.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 241,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 630,
+   "target_id": "CC2002:ART.808",
+   "explanation_id": "ENTENDA/CC2002:ART.808/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.808:CAPUT\tÉ nula a constituição de renda em favor de pessoa já falecida, ou que, nos trinta dias seguintes, vier a falecer de moléstia que já sofria, quando foi celebrado o contrato.",
+   "source_snapshot_sha256": "43f9c669ec685dfaa1f0f11b40a256c47652a24b7f3a7d45f0f79da30e73bccd",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.808:CAPUT",
+     "text": "É nula a constituição de renda em favor de pessoa já falecida, ou que, nos trinta dias seguintes, vier a falecer de moléstia que já sofria, quando foi celebrado o contrato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: É nula a constituição de renda em favor de pessoa já falecida, ou que, nos trinta dias seguintes, vier a falecer de moléstia que já sofria, quando foi celebrado o contrato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5fe804b8640a44a6fe4b045170cd8a7eac790beee575988086a528db9c85bd36",
+     "o_que_significa": "d05ee37673552f3f131eae9bccf6722a31a7bb9949265c7745fdd177652e0b59",
+     "exemplo_pratico": "10c719e0a05ef53e98be8eec71966a114c037cfaecc428930d90da5b49427d3e",
+     "atencao": "b521090c42be3dc94a045f0d47aa03111ae38823eda5131479bd62eaf6441889",
+     "palavras_dificeis": "97bad49a298f6666fa68ca92064b1437505d44aaafdee0e83a49b622f2336ec8"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.808, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘É inválida a renda destinada a pessoa já morta ou que morra, em até trinta dias do contrato, de doença que já possuía quando ele foi celebrado.’. O campo de atenção registra: ‘A nulidade na segunda hipótese exige morte dentro de trinta dias e nexo com a doença preexistente. Morte por causa diversa não se enquadra automaticamente.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 242,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 631,
+   "target_id": "CC2002:ART.809",
+   "explanation_id": "ENTENDA/CC2002:ART.809/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.809:CAPUT\tOs bens dados em compensação da renda caem, desde a tradição, no domínio da pessoa que por aquela se obrigou.",
+   "source_snapshot_sha256": "7b10c66c8f45d42934802ae8de4cf1909ec23b3de11dff01f88e5ce7b9ab36ee",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.809:CAPUT",
+     "text": "Os bens dados em compensação da renda caem, desde a tradição, no domínio da pessoa que por aquela se obrigou."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Os bens dados em compensação da renda caem, desde a tradição, no domínio da pessoa que por aquela se obrigou.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e003f153195f7edb048babec497f25e62fea619e8329f5df77235229eb06f968",
+     "o_que_significa": "918f4a749ccc40bff6e3cf22d50a8de14321b32e5b7e65ee4aa82087afe3a767",
+     "exemplo_pratico": "9f8846c26cb0117038593d2aa8fb13109f8c3f3d108099ffa12656e65d216146",
+     "atencao": "0f6d2c9740d512ffe3733b3dae9eb9615f6b4009bd304b979ecaaf31625d3adb",
+     "palavras_dificeis": "f25e8f0c1a20d3904eb84f49e239ca1aa0cc3189c4f478f625eba724b1472921"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.809, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Com a entrega, os bens transferidos em troca da renda passam a pertencer ao rendeiro.’. O campo de atenção registra: ‘Domínio e crédito de renda são posições distintas. Para imóveis, a transferência também depende das regras registrais aplicáveis.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 243,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 632,
+   "target_id": "CC2002:ART.810",
+   "explanation_id": "ENTENDA/CC2002:ART.810/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.810:CAPUT\tSe o rendeiro, ou censuário, deixar de cumprir a obrigação estipulada, poderá o credor da renda acioná-lo, tanto para que lhe pague as prestações atrasadas como para que lhe dê garantias das futuras, sob pena de rescisão do contrato.",
+   "source_snapshot_sha256": "11823dfbfe08aac9d01fbed10048bf312fb0f66818df1052a6c5b235de65094f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.810:CAPUT",
+     "text": "Se o rendeiro, ou censuário, deixar de cumprir a obrigação estipulada, poderá o credor da renda acioná-lo, tanto para que lhe pague as prestações atrasadas como para que lhe dê garantias das futuras, sob pena de rescisão do contrato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o rendeiro, ou censuário, deixar de cumprir a obrigação estipulada, poderá o credor da renda acioná-lo, tanto para que lhe pague as prestações atrasadas como para que lhe dê garantias das futuras, sob pena de rescisão do contrato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b1791ac893ab395d0c4b911651c11872279bb85b1cb682bf6d15b6ed80243951",
+     "o_que_significa": "9f868e740bad1fcf3343aaa29f9a5498c8ec42cac82f33bd01e463ad0175b033",
+     "exemplo_pratico": "4593615dc3e2b50eaea10ab806268b69c7e29a89628e5d1569e8dca09bcd78ec",
+     "atencao": "be21d9e018adf1084deb6cc991d3ba1cf9fa636d324a551d14c0dfda234d9963",
+     "palavras_dificeis": "4da1d8e52354a9c1da06ced2665a069ae268d14fb4827a8d47fb90757c4c8d97"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.810, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se o rendeiro não pagar, o credor pode cobrar parcelas vencidas e exigir garantia para as futuras, sob risco de rescisão do contrato.’. O campo de atenção registra: ‘A rescisão não apaga automaticamente parcelas vencidas ou prejuízos. Devem ser apurados inadimplemento, providências exigidas e efeitos sobre os bens transferidos.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 244,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 633,
+   "target_id": "CC2002:ART.811",
+   "explanation_id": "ENTENDA/CC2002:ART.811/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.811:CAPUT\tO credor adquire o direito à renda dia a dia, se a prestação não houver de ser paga adiantada, no começo de cada um dos períodos prefixos.",
+   "source_snapshot_sha256": "daf9c9c0c6c9f71e5649533d704ea471315f6cc174c05d9da58b50198d1272d9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.811:CAPUT",
+     "text": "O credor adquire o direito à renda dia a dia, se a prestação não houver de ser paga adiantada, no começo de cada um dos períodos prefixos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O credor adquire o direito à renda dia a dia, se a prestação não houver de ser paga adiantada, no começo de cada um dos períodos prefixos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "568444646d974ea96341ea7b2ec2268344be3176a57767be5a8fe9e17dddcee7",
+     "o_que_significa": "aac77627cf80fcb8301748d3ccc564deb9653a3420a498143dd3a1f964ab18a1",
+     "exemplo_pratico": "0298d3a07c8c51a5e4b16bf4c3e3e49d6394258f255fda3b920bf8ee91c64b70",
+     "atencao": "a7fa97d660c334d9e201be7a93c3e9b9252fc6ebac250580d247be08264d5e91",
+     "palavras_dificeis": "a0f51618d2d546a33394da0bd2a8c105390b788021155fb029e2c84cd9bac4ae"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.811, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quando a renda não é paga antecipadamente, o direito do credor se forma diariamente ao longo de cada período.’. O campo de atenção registra: ‘Aquisição diária não significa exigibilidade diária: a data de pagamento continua sendo a prevista. Pagamento antecipado recebe tratamento diferente.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 245,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 634,
+   "target_id": "CC2002:ART.812",
+   "explanation_id": "ENTENDA/CC2002:ART.812/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.812:CAPUT\tQuando a renda for constituída em benefício de duas ou mais pessoas, sem determinação da parte de cada uma, entende-se que os seus direitos são iguais; e, salvo estipulação diversa, não adquirirão os sobrevivos direito à parte dos que morrerem.",
+   "source_snapshot_sha256": "86c9c5f792387dbc323cc7e6d12ed8fb69ccc345cb2e60b03cf69876fd9f9e70",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.812:CAPUT",
+     "text": "Quando a renda for constituída em benefício de duas ou mais pessoas, sem determinação da parte de cada uma, entende-se que os seus direitos são iguais; e, salvo estipulação diversa, não adquirirão os sobrevivos direito à parte dos que morrerem."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Quando a renda for constituída em benefício de duas ou mais pessoas, sem determinação da parte de cada uma, entende-se que os seus direitos são iguais; e, salvo estipulação diversa, não adquirirão os sobrevivos direito à parte dos que morrerem.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6c471fdcb13b4ffaa1a87d8d58d29a3f965ab305ba4ce761b944edc0869ec172",
+     "o_que_significa": "32b4a45fed9a93e5546f367ff6efe57b0a58789d173ca6321d820f66f1f5772e",
+     "exemplo_pratico": "1182863ed7eb0f85fdf26c15be179dcbe6ee3caf57e7b19e9e0f1c8a0b086c9d",
+     "atencao": "428aa7a499f5365e1e732df0a70784500ba777bdb8dae472e62779075f5dd15a",
+     "palavras_dificeis": "fb153ba03f4c41f783eb7f8b65a3084e303f2c8dc9075c6f81e99faa6b329de1"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.812, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Renda criada para várias pessoas é dividida igualmente se não houver quotas definidas; em regra, a parte de quem morre não acresce às dos sobreviventes.’. O campo de atenção registra: ‘A estipulação contratual pode alterar ambas as presunções. Também é necessário verificar a duração da renda e efeitos sucessórios cabíveis.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 246,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 635,
+   "target_id": "CC2002:ART.813",
+   "explanation_id": "ENTENDA/CC2002:ART.813/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.813:CAPUT\tA renda constituída por título gratuito pode, por ato do instituidor, ficar isenta de todas as execuções pendentes e futuras.\nCC2002:ART.813:PAR.UNICO\tA isenção prevista neste artigo prevalece de pleno direito em favor dos montepios e pensões alimentícias.",
+   "source_snapshot_sha256": "bda20d4b7d35f154980de74fb8839a9def8db3078a6baa5f870cf41ff11f1c55",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.813:CAPUT",
+     "text": "A renda constituída por título gratuito pode, por ato do instituidor, ficar isenta de todas as execuções pendentes e futuras."
+    },
+    {
+     "label": "CC2002:ART.813:PAR.UNICO",
+     "text": "A isenção prevista neste artigo prevalece de pleno direito em favor dos montepios e pensões alimentícias."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A renda constituída por título gratuito pode, por ato do instituidor, ficar isenta de todas as execuções pendentes e futuras. | A isenção prevista neste artigo prevalece de pleno direito em favor dos montepios e pensões alimentícias.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5a8e7d56ae051f89e4680477302e0851e7edd2af41fe304480fdf2a9a4050de5",
+     "o_que_significa": "d4298d06dc438d385e92ab7e158e72de3dd8f08733d775868cb3860f4873cef7",
+     "exemplo_pratico": "dd8b6d5810a8a7412dc1377bbb5fbb72b03d911b261885ba4e258a7646243207",
+     "atencao": "2ed71684e4f0076171af916c25b37d3886f63364801ec7002e5dc38df9d11acf",
+     "palavras_dificeis": "8c191cdd0effdeb4eb017cf47314140055503a703684ec64b3e1bf778057d37e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.813, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘O instituidor pode proteger renda gratuita contra execuções atuais e futuras; montepios e pensões alimentícias recebem essa proteção por força da lei.’. O campo de atenção registra: ‘A proteção do artigo não deve ser estendida sem análise a renda onerosa nem usada para legitimar fraude. Regras processuais e especiais continuam aplicáveis.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 247,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 636,
+   "target_id": "CC2002:ART.814",
+   "explanation_id": "ENTENDA/CC2002:ART.814/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.814:CAPUT\tAs dívidas de jogo ou de aposta não obrigam a pagamento; mas não se pode recobrar a quantia, que voluntariamente se pagou, salvo se foi ganha por dolo, ou se o perdente é menor ou interdito.\nCC2002:ART.814:PAR.1\tEstende-se esta disposição a qualquer contrato que encubra ou envolva reconhecimento, novação ou fiança de dívida de jogo; mas a nulidade resultante não pode ser oposta ao terceiro de boa-fé.\nCC2002:ART.814:PAR.2\tO preceito contido neste artigo tem aplicação, ainda que se trate de jogo não proibido, só se excetuando os jogos e apostas legalmente permitidos.\nCC2002:ART.814:PAR.3\tExcetuam-se, igualmente, os prêmios oferecidos ou prometidos para o vencedor em competição de natureza esportiva, intelectual ou artística, desde que os interessados se submetam às prescrições legais e regulamentares.",
+   "source_snapshot_sha256": "2b0462568094ae5bc9412d9a70de289396278a057bbeef0e00589f95dc01b79e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.814:CAPUT",
+     "text": "As dívidas de jogo ou de aposta não obrigam a pagamento; mas não se pode recobrar a quantia, que voluntariamente se pagou, salvo se foi ganha por dolo, ou se o perdente é menor ou interdito."
+    },
+    {
+     "label": "CC2002:ART.814:PAR.1",
+     "text": "Estende-se esta disposição a qualquer contrato que encubra ou envolva reconhecimento, novação ou fiança de dívida de jogo; mas a nulidade resultante não pode ser oposta ao terceiro de boa-fé."
+    },
+    {
+     "label": "CC2002:ART.814:PAR.2",
+     "text": "O preceito contido neste artigo tem aplicação, ainda que se trate de jogo não proibido, só se excetuando os jogos e apostas legalmente permitidos."
+    },
+    {
+     "label": "CC2002:ART.814:PAR.3",
+     "text": "Excetuam-se, igualmente, os prêmios oferecidos ou prometidos para o vencedor em competição de natureza esportiva, intelectual ou artística, desde que os interessados se submetam às prescrições legais e regulamentares."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: As dívidas de jogo ou de aposta não obrigam a pagamento; mas não se pode recobrar a quantia, que voluntariamente se pagou, salvo se foi ganha por dolo, ou se o perdente é menor ou interdito. | Estende-se esta disposição a qualquer contrato que encubra ou envolva reconhecimento, novação ou fiança de dívida de jogo; mas a nulidade resultante não pode ser oposta ao terceiro de boa-fé. | O preceito contido neste artigo tem aplicação, ainda que se trate de jogo não proibido, só se excetuando os jogos e apostas legalmente permitidos. | Excetuam-se, igualmente, os prêmios oferecidos ou prometidos para o vencedor em competição de natureza esportiva, intelectual ou artística, desde que os interessados se submetam às prescrições legais e regulamentares.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "91d6a2c54fa6db13750aa5389e67886743a3dc9370866e0449678b717d673dc4",
+     "o_que_significa": "3f8f0afa63449e808d03291af3b8e25fc255a9eadb148925544e14bbf07bd0a4",
+     "exemplo_pratico": "bfa830023b62740eb9627454733c2177362385cb829a5b8d814225c8dc0a027f",
+     "atencao": "1cf1a45cdd551dd23976be92bf7bd39f81eb1bca0dcaa6ac0c5f3b405fb4a5c8",
+     "palavras_dificeis": "dc7f9f122087da780cd97f4b9a9b13a8f191efbdbcfa958a1f3152ac71870765"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.814, foram cotejados individualmente 4 segmento(s) vigente(s) (CAPUT, PAR.1, PAR.2, PAR.3) com os cinco campos ENTENDA. A síntese ativa informa: ‘Dívida comum de jogo ou aposta não pode ser cobrada, e o pagamento voluntário não é repetível, salvo dolo do ganhador ou incapacidade protegida do perdedor. Há exceções legais.’. O campo de atenção registra: ‘Jogos legalmente permitidos e competições esportivas, intelectuais ou artísticas regulares ficam fora da regra geral. Dolo, menoridade e interdição mudam o resultado.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 248,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 637,
+   "target_id": "CC2002:ART.815",
+   "explanation_id": "ENTENDA/CC2002:ART.815/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.815:CAPUT\tNão se pode exigir reembolso do que se emprestou para jogo ou aposta, no ato de apostar ou jogar.",
+   "source_snapshot_sha256": "22386172f7514db999e26622214cfbec45178fb130db997341f607c8425281dc",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.815:CAPUT",
+     "text": "Não se pode exigir reembolso do que se emprestou para jogo ou aposta, no ato de apostar ou jogar."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não se pode exigir reembolso do que se emprestou para jogo ou aposta, no ato de apostar ou jogar.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "fbcfe262b9d5f1d532c9cdc8e91a75b669ab7b6f0af1ac212a10be35f505cbaa",
+     "o_que_significa": "3fac1ec59a09ce7c04262e09ff76264906adcec5e5560292ac05a451afa0403c",
+     "exemplo_pratico": "2bf3fb65e858ed2ff7a6554fc59af1110b096b5c90d913a804c01047d3639c8a",
+     "atencao": "188d7b82354d13536cfc6d2a4f286f862f1b1c63d4f8ffd7916e759829a63a63",
+     "palavras_dificeis": "246d83c4025cfd4b3cd9804e90f57434618dd86701e9ceaae4c058758117ce0c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.815, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quem empresta dinheiro no próprio momento do jogo ou da aposta não pode exigir reembolso.’. O campo de atenção registra: ‘É necessário demonstrar a ligação temporal e finalística do empréstimo com o jogo. Crédito independente, concedido para outra finalidade, não entra automaticamente nesta hipótese.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 249,
+   "checkpoint": "B-CP05",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 638,
+   "target_id": "CC2002:ART.816",
+   "explanation_id": "ENTENDA/CC2002:ART.816/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-10",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.816:CAPUT\tAs disposições dos arts. 814 e 815 não se aplicam aos contratos sobre títulos de bolsa, mercadorias ou valores, em que se estipulem a liquidação exclusivamente pela diferença entre o preço ajustado e a cotação que eles tiverem no vencimento do ajuste.",
+   "source_snapshot_sha256": "ea259b88643b6cf3d9601bc8420285a4d8cb1072acd4d99da2ab9478e22b7b6b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.816:CAPUT",
+     "text": "As disposições dos arts. 814 e 815 não se aplicam aos contratos sobre títulos de bolsa, mercadorias ou valores, em que se estipulem a liquidação exclusivamente pela diferença entre o preço ajustado e a cotação que eles tiverem no vencimento do ajuste."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: As disposições dos arts. 814 e 815 não se aplicam aos contratos sobre títulos de bolsa, mercadorias ou valores, em que se estipulem a liquidação exclusivamente pela diferença entre o preço ajustado e a cotação que eles tiverem no vencimento do ajuste.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2f040dc57cefede8abd18159c362d2aa1fdc26961b13de1611125c14ea71d129",
+     "o_que_significa": "fbc9cd91dc9196d6382fafa0ca1688c720b48af823896d49fb3e117d43f090bd",
+     "exemplo_pratico": "54c6fec057e569d418fb9e0e810318affe9f8c2f416d0932974b5ed2cdbe911c",
+     "atencao": "7de859e0a3002097baf4a12c51d8b582db00017281fdcbff4c4ec3ccc3b00a8c",
+     "palavras_dificeis": "43facd2bf532b82223d98052dbedf924aa5857819c6bc13bd2cdb8afaa8ecf9e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.816, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘As restrições sobre jogo e empréstimo para apostar não alcançam certos contratos de mercado liquidados apenas pela diferença entre preço ajustado e cotação no vencimento.’. O campo de atenção registra: ‘A exceção depende da natureza do ativo e da forma de liquidação. Ela não valida negócios ilícitos nem dispensa regulação financeira ou mercantil aplicável.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 250,
+   "checkpoint": "B-CP05",
    "independent_review_module": "QA04_B_REVIEW_001_333",
    "reviewer": "qa04_audit_001_333"
   }
