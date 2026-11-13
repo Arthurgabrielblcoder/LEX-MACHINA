@@ -1,0 +1,1663 @@
+{
+ "schema_version": 1,
+ "mission": "QA-02-WAVE-04",
+ "as_of": "2026-11-12",
+ "completed_through_checkpoint": 18,
+ "status": "PARTIAL_REQUIRES_CONTINUATION",
+ "audited_total": 25,
+ "source_queue_positions_completed": [
+  201,
+  225
+ ],
+ "next_source_queue_position": 226,
+ "findings_total": 3,
+ "finding_counts": {
+  "ALTO": 2,
+  "CRÍTICO": 1
+ },
+ "protected_sha256": {
+  "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+  "lookup": "60f1de336f2f9ecbc5e671d0a6a9223cf20e47ab5826a5501b53f9a67551866e",
+  "payload": "9fb3f3a1b6f1c1926eda0818fc753f2d0348194cf25b0a333fc6fa18c48222cb"
+ },
+ "records": [
+  {
+   "queue_position": 201,
+   "target_id": "CC2002:ART.1273",
+   "explanation_id": "ENTENDA/CC2002:ART.1273/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1273:CAPUT\tSe a confusão, comissão ou adjunção se operou de má-fé, à outra parte caberá escolher entre adquirir a propriedade do todo, pagando o que não for seu, abatida a indenização que lhe for devida, ou renunciar ao que lhe pertencer, caso em que será indenizado.",
+   "source_snapshot_sha256": "b22c5bba3278b41d3a6dde4d4ed47397f4b4026ed7eabb713bc7c6bac44e1709",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1273:CAPUT",
+     "text": "Se a confusão, comissão ou adjunção se operou de má-fé, à outra parte caberá escolher entre adquirir a propriedade do todo, pagando o que não for seu, abatida a indenização que lhe for devida, ou renunciar ao que lhe pertencer, caso em que será indenizado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se a confusão, comissão ou adjunção se operou de má-fé, à outra parte caberá escolher entre adquirir a propriedade do todo, pagando o que não for seu, abatida a indenização que lhe for devida, ou renunciar ao que lhe pertencer, caso em que será indenizado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f7ef4b2f6c5aa6c848cf229830bea6b6d24fd9f79716b8926ea232800138471d",
+     "o_que_significa": "9a913a133eb0cc0550fffbe25e9bc3dc1a1e0c6d33b704516c593cf10231438a",
+     "exemplo_pratico": "ac2e17b6920585a5662f64a63f53bb0de6b0fc1bb69c53a88902db47f6e10cc5",
+     "atencao": "ee3e15118244bfca82da6bf03c9fbe3391773e4062c8366bc953db12148c1913",
+     "palavras_dificeis": "62fe52a9b5e0b6324938980afd601104b0b36c018676ca7b6bfcc476ecaf927f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Se a confusão, comissão ou adjunção se operou de má-fé, à outra parte caberá escolher entre adquirir a propriedade do todo, pagando o que não for seu, abatida a indenização que lhe for devida, ou renunciar ao que lhe per; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 202,
+   "target_id": "CC2002:ART.1275",
+   "explanation_id": "ENTENDA/CC2002:ART.1275/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1275:CAPUT\tAlém das causas consideradas neste Código, perde-se a propriedade:\nCC2002:ART.1275:INC.I\tpor alienação;\nCC2002:ART.1275:INC.II\tpela renúncia;\nCC2002:ART.1275:INC.III\tpor abandono;\nCC2002:ART.1275:INC.IV\tpor perecimento da coisa;\nCC2002:ART.1275:INC.V\tpor desapropriação.\nCC2002:ART.1275:PAR.UNICO\tNos casos dos incisos I e II, os efeitos da perda da propriedade imóvel serão subordinados ao registro do título transmissivo ou do ato renunciativo no Registro de Imóveis.",
+   "source_snapshot_sha256": "d6b58da684910d2da9c32837b58c590cc60e5fd45ab2b357fb68452f0bc8c1a9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1275:CAPUT",
+     "text": "Além das causas consideradas neste Código, perde-se a propriedade:"
+    },
+    {
+     "label": "CC2002:ART.1275:INC.I",
+     "text": "por alienação;"
+    },
+    {
+     "label": "CC2002:ART.1275:INC.II",
+     "text": "pela renúncia;"
+    },
+    {
+     "label": "CC2002:ART.1275:INC.III",
+     "text": "por abandono;"
+    },
+    {
+     "label": "CC2002:ART.1275:INC.IV",
+     "text": "por perecimento da coisa;"
+    },
+    {
+     "label": "CC2002:ART.1275:INC.V",
+     "text": "por desapropriação."
+    },
+    {
+     "label": "CC2002:ART.1275:PAR.UNICO",
+     "text": "Nos casos dos incisos I e II, os efeitos da perda da propriedade imóvel serão subordinados ao registro do título transmissivo ou do ato renunciativo no Registro de Imóveis."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 7 segmentos vigentes do dispositivo: Além das causas consideradas neste Código, perde-se a propriedade: | por alienação; | pela renúncia; | por abandono; | por perecimento da coisa; | por desapropriação. | Nos casos dos incisos I e II, os efeitos da perda da propriedade imóvel serão subordinados ao registro do título transmissivo ou do ato renunciativo no Registro de Imóveis.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6f55bfd132cc4a6d729f147264a4dbb6e98038971ee0ad7574ac20d9538cc10f",
+     "o_que_significa": "29baa1268cda154f65940d8ac9120d906411e614d2aa2d1862b74d5aac78863e",
+     "exemplo_pratico": "18e67e9234c0a04aa8fcfd0c7347278e0e94693a093bef7324a3c108a7b0ca58",
+     "atencao": "10faddd4fe38a7beb8986786ee1bcce0670c189869ab8e435ce31a72fb8ad00b",
+     "palavras_dificeis": "00a70a569758be08890dea6bbac86fa3d1363559c6612b0b14c955285f29f158"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 7 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Além das causas consideradas neste Código, perde-se a propriedade:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 203,
+   "target_id": "CC2002:ART.1276",
+   "explanation_id": "ENTENDA/CC2002:ART.1276/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1276:CAPUT\tO imóvel urbano que o proprietário abandonar, com a intenção de não mais o conservar em seu patrimônio, e que se não encontrar na posse de outrem, poderá ser arrecadado, como bem vago, e passar, três anos depois, à propriedade do Município ou à do Distrito Federal, se se achar nas respectivas circunscrições.\nCC2002:ART.1276:PAR.1\to O imóvel situado na zona rural, abandonado nas mesmas circunstâncias, poderá ser arrecadado, como bem vago, e passar, três anos depois, à propriedade da União, onde quer que ele se localize.\nCC2002:ART.1276:PAR.2\to Presumir-se-á de modo absoluto a intenção a que se refere este artigo, quando, cessados os atos de posse, deixar o proprietário de satisfazer os ônus fiscais.",
+   "source_snapshot_sha256": "ef25255d1fe89f6202c81732459198ef920d6828319d7775be85c7e15592623a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1276:CAPUT",
+     "text": "O imóvel urbano que o proprietário abandonar, com a intenção de não mais o conservar em seu patrimônio, e que se não encontrar na posse de outrem, poderá ser arrecadado, como bem vago, e passar, três anos depois, à propriedade do Município ou à do Distrito Federal, se se achar nas respectivas circunscrições."
+    },
+    {
+     "label": "CC2002:ART.1276:PAR.1",
+     "text": "o O imóvel situado na zona rural, abandonado nas mesmas circunstâncias, poderá ser arrecadado, como bem vago, e passar, três anos depois, à propriedade da União, onde quer que ele se localize."
+    },
+    {
+     "label": "CC2002:ART.1276:PAR.2",
+     "text": "o Presumir-se-á de modo absoluto a intenção a que se refere este artigo, quando, cessados os atos de posse, deixar o proprietário de satisfazer os ônus fiscais."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: O imóvel urbano que o proprietário abandonar, com a intenção de não mais o conservar em seu patrimônio, e que se não encontrar na posse de outrem, poderá ser arrecadado, como bem vago, e passar, três anos depois, à propriedade do Município ou à do Distrito Federal, se se achar nas respectivas circunscrições. | o O imóvel situado na zona rural, abandonado nas mesmas circunstâncias, poderá ser arrecadado, como bem vago, e passar, três anos depois, à propriedade da União, onde quer que ele se localize. | o Presumir-se-á de modo absoluto a intenção a que se refere este artigo, quando, cessados os atos de posse, deixar o proprietário de satisfazer os ônus fiscais.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6f44532f37934b1dd7ad51062e1ccafa43806b1888193503f319b4661cf06214",
+     "o_que_significa": "9f89c19dca339564f3d43c2c3d4ed43aa3eafbc5a414432e6d364fe547a85be4",
+     "exemplo_pratico": "c137422b557ae1a795f550631ca63a5d060de6303c549ad8742aa2dc73f0ef05",
+     "atencao": "1a30cadded32fe116aec3a65f0fdc4e9ec8c9290ab6c4ac10cd273b8bf4a3b56",
+     "palavras_dificeis": "5ec29d241d647af3ed94526b332ca036bd5a01f289550cb32e0aa05979b61d13"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O § 2º do art. 1.276 qualifica expressamente como absoluta a presunção de intenção de abandono quando cessam os atos de posse e o proprietário deixa de satisfazer os ônus fiscais.",
+   "finding": {
+    "target_id": "CC2002:ART.1276",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "atencao",
+    "problematic_excerpt": "A presunção é relativa",
+    "legal_basis": "O § 2º do art. 1.276 qualifica expressamente como absoluta a presunção de intenção de abandono quando cessam os atos de posse e o proprietário deixa de satisfazer os ônus fiscais.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "CONTRADICAO_SOBRE_NATUREZA_DA_PRESUNCAO",
+    "severity": "CRÍTICO",
+    "legal_or_pedagogical_consequence": "Inverte a regra legal e pode induzir o leitor a admitir prova contrária a uma presunção que o texto vigente declara absoluta.",
+    "correction_direction": "Substituir 'relativa' por 'absoluta' e separar a incidência literal do § 2º de eventuais questões constitucionais ou procedimentais, que exigem fonte própria.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": 18,
+    "auditor": "wave04_201_325"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 204,
+   "target_id": "CC2002:ART.1277",
+   "explanation_id": "ENTENDA/CC2002:ART.1277/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1277:CAPUT\tO proprietário ou o possuidor de um prédio tem o direito de fazer cessar as interferências prejudiciais à segurança, ao sossego e à saúde dos que o habitam, provocadas pela utilização de propriedade vizinha.\nCC2002:ART.1277:PAR.UNICO\tProíbem-se as interferências considerando-se a natureza da utilização, a localização do prédio, atendidas as normas que distribuem as edificações em zonas, e os limites ordinários de tolerância dos moradores da vizinhança.",
+   "source_snapshot_sha256": "39502152f02aec799742eb875e739d11375d35700f905bd03fb2dfccbb650390",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1277:CAPUT",
+     "text": "O proprietário ou o possuidor de um prédio tem o direito de fazer cessar as interferências prejudiciais à segurança, ao sossego e à saúde dos que o habitam, provocadas pela utilização de propriedade vizinha."
+    },
+    {
+     "label": "CC2002:ART.1277:PAR.UNICO",
+     "text": "Proíbem-se as interferências considerando-se a natureza da utilização, a localização do prédio, atendidas as normas que distribuem as edificações em zonas, e os limites ordinários de tolerância dos moradores da vizinhança."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O proprietário ou o possuidor de um prédio tem o direito de fazer cessar as interferências prejudiciais à segurança, ao sossego e à saúde dos que o habitam, provocadas pela utilização de propriedade vizinha. | Proíbem-se as interferências considerando-se a natureza da utilização, a localização do prédio, atendidas as normas que distribuem as edificações em zonas, e os limites ordinários de tolerância dos moradores da vizinhança.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e47ce3daf7a0f0cfa736c16b329af0f41980b8184ab0ae7d40b6619dd06c8d4b",
+     "o_que_significa": "fb61a2f359a7a088dbc59a8446d4bca2541a8aa58e9d208d86409b3cdfc33079",
+     "exemplo_pratico": "4c8e3b149ed8c9beef6b4c9ca4421b6f2d804ebb7ac40e71df6beb4662f6b934",
+     "atencao": "ffadd360f3255a83ec4f5a556cf7bd8671ca9114459e61f4bdcaf71eb5231302",
+     "palavras_dificeis": "f49cd4f771085c35007977dc827f6f79f81a5652d0091900db8e74360f070c34"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 2 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O proprietário ou o possuidor de um prédio tem o direito de fazer cessar as interferências prejudiciais à segurança, ao sossego e à saúde dos que o habitam, provocadas pela utilização de propriedade vizinha; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 205,
+   "target_id": "CC2002:ART.1301",
+   "explanation_id": "ENTENDA/CC2002:ART.1301/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1301:CAPUT\tÉ defeso abrir janelas, ou fazer eirado, terraço ou varanda, a menos de metro e meio do terreno vizinho.\nCC2002:ART.1301:PAR.1\to As janelas cuja visão não incida sobre a linha divisória, bem como as perpendiculares, não poderão ser abertas a menos de setenta e cinco centímetros.\nCC2002:ART.1301:PAR.2\to As disposições deste artigo não abrangem as aberturas para luz ou ventilação, não maiores de dez centímetros de largura sobre vinte de comprimento e construídas a mais de dois metros de altura de cada piso.",
+   "source_snapshot_sha256": "5e5757abef84c9b04f3ea187bed8e8bbd3559990b4a5b2474f5ef575897036a5",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1301:CAPUT",
+     "text": "É defeso abrir janelas, ou fazer eirado, terraço ou varanda, a menos de metro e meio do terreno vizinho."
+    },
+    {
+     "label": "CC2002:ART.1301:PAR.1",
+     "text": "o As janelas cuja visão não incida sobre a linha divisória, bem como as perpendiculares, não poderão ser abertas a menos de setenta e cinco centímetros."
+    },
+    {
+     "label": "CC2002:ART.1301:PAR.2",
+     "text": "o As disposições deste artigo não abrangem as aberturas para luz ou ventilação, não maiores de dez centímetros de largura sobre vinte de comprimento e construídas a mais de dois metros de altura de cada piso."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: É defeso abrir janelas, ou fazer eirado, terraço ou varanda, a menos de metro e meio do terreno vizinho. | o As janelas cuja visão não incida sobre a linha divisória, bem como as perpendiculares, não poderão ser abertas a menos de setenta e cinco centímetros. | o As disposições deste artigo não abrangem as aberturas para luz ou ventilação, não maiores de dez centímetros de largura sobre vinte de comprimento e construídas a mais de dois metros de altura de cada piso.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "805acb2d0f186bb352140aeefbc4140359efce250e2e70c0544937f4a8a289e7",
+     "o_que_significa": "9367490356816e5cbfad18310cc17d22ca36263a1d010cd3cb3bc683374b80d0",
+     "exemplo_pratico": "497cab82e04c4a991c259e8215a0e69f762a7fd46245d3b98e1ab73cff461f66",
+     "atencao": "8c9eeacf298e5536a2c5abf21df3646f64a20663ef103de3b80127d1dda595ec",
+     "palavras_dificeis": "4dc201195924ebaa2319be35de3d07c64a3a905c6a2c1a9fe67ef8955676e49f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 3 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que É defeso abrir janelas, ou fazer eirado, terraço ou varanda, a menos de metro e meio do terreno vizinho; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 206,
+   "target_id": "CC2002:ART.1302",
+   "explanation_id": "ENTENDA/CC2002:ART.1302/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1302:CAPUT\tO proprietário pode, no lapso de ano e dia após a conclusão da obra, exigir que se desfaça janela, sacada, terraço ou goteira sobre o seu prédio; escoado o prazo, não poderá, por sua vez, edificar sem atender ao disposto no artigo antecedente, nem impedir, ou dificultar, o escoamento das águas da goteira, com prejuízo para o prédio vizinho.\nCC2002:ART.1302:PAR.UNICO\tEm se tratando de vãos, ou aberturas para luz, seja qual for a quantidade, altura e disposição, o vizinho poderá, a todo tempo, levantar a sua edificação, ou contramuro, ainda que lhes vede a claridade.",
+   "source_snapshot_sha256": "8071a81397ba78732435310214da5e451788aed2939af864ffe40a9ffd7e5fef",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1302:CAPUT",
+     "text": "O proprietário pode, no lapso de ano e dia após a conclusão da obra, exigir que se desfaça janela, sacada, terraço ou goteira sobre o seu prédio; escoado o prazo, não poderá, por sua vez, edificar sem atender ao disposto no artigo antecedente, nem impedir, ou dificultar, o escoamento das águas da goteira, com prejuízo para o prédio vizinho."
+    },
+    {
+     "label": "CC2002:ART.1302:PAR.UNICO",
+     "text": "Em se tratando de vãos, ou aberturas para luz, seja qual for a quantidade, altura e disposição, o vizinho poderá, a todo tempo, levantar a sua edificação, ou contramuro, ainda que lhes vede a claridade."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O proprietário pode, no lapso de ano e dia após a conclusão da obra, exigir que se desfaça janela, sacada, terraço ou goteira sobre o seu prédio; escoado o prazo, não poderá, por sua vez, edificar sem atender ao disposto no artigo antecedente, nem impedir, ou dificultar, o escoamento das águas da goteira, com prejuízo para o prédio vizinho. | Em se tratando de vãos, ou aberturas para luz, seja qual for a quantidade, altura e disposição, o vizinho poderá, a todo tempo, levantar a sua edificação, ou contramuro, ainda que lhes vede a claridade.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e831abdf97b8b2f7ea5405b62c5f7ca9dfacb8f6096dd015b2c2bb1d049ea449",
+     "o_que_significa": "c697f1fd1c51ea0cf3f8ac2f3d51b619c678b42c643dcfe121591950960be4d2",
+     "exemplo_pratico": "ec354615436996eba7ca80c55e0fa197643a3ce97959dd2100e221b060bfc992",
+     "atencao": "effceeef4463b740a9ffee7e1e4e929cd46f76cc959d82c0153bf8509de522a3",
+     "palavras_dificeis": "5b067f0aa5dc6df616dbbcc3e526f7be65ed6be29425d380efb100305cc4f411"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 2 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O proprietário pode, no lapso de ano e dia após a conclusão da obra, exigir que se desfaça janela, sacada, terraço ou goteira sobre o seu prédio; escoado o prazo, não poderá, por sua vez, edificar sem atender ao disposto; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 207,
+   "target_id": "CC2002:ART.1311",
+   "explanation_id": "ENTENDA/CC2002:ART.1311/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1311:CAPUT\tNão é permitida a execução de qualquer obra ou serviço suscetível de provocar desmoronamento ou deslocação de terra, ou que comprometa a segurança do prédio vizinho, senão após haverem sido feitas as obras acautelatórias.\nCC2002:ART.1311:PAR.UNICO\tO proprietário do prédio vizinho tem direito a ressarcimento pelos prejuízos que sofrer, não obstante haverem sido realizadas as obras acautelatórias.",
+   "source_snapshot_sha256": "7b0da4fb8c81f9181121bafb004cbf676aa574d7bef0ed148bc509f1423ec4c3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1311:CAPUT",
+     "text": "Não é permitida a execução de qualquer obra ou serviço suscetível de provocar desmoronamento ou deslocação de terra, ou que comprometa a segurança do prédio vizinho, senão após haverem sido feitas as obras acautelatórias."
+    },
+    {
+     "label": "CC2002:ART.1311:PAR.UNICO",
+     "text": "O proprietário do prédio vizinho tem direito a ressarcimento pelos prejuízos que sofrer, não obstante haverem sido realizadas as obras acautelatórias."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Não é permitida a execução de qualquer obra ou serviço suscetível de provocar desmoronamento ou deslocação de terra, ou que comprometa a segurança do prédio vizinho, senão após haverem sido feitas as obras acautelatórias. | O proprietário do prédio vizinho tem direito a ressarcimento pelos prejuízos que sofrer, não obstante haverem sido realizadas as obras acautelatórias.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "dbdab9e84fccf457d4c24efd00cd6ac694db2570d33de36a176d9cc376c63e63",
+     "o_que_significa": "929780a4f947aadb3e5da50e596e5a19e44d721265fae1a65ed913d52e05b79b",
+     "exemplo_pratico": "ec36dd2a31118b15a54b6f79ae4e1272211815c5aa297fb854b730a33ff0776e",
+     "atencao": "8d30ba37ba3f2f04c6d232a198d94d66077540f648118b93844469fc371a477c",
+     "palavras_dificeis": "5bb43c47bf75585169d812447ff445d52cc7d1f6bc490ff97a5207ecae1b5a18"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 2 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Não é permitida a execução de qualquer obra ou serviço suscetível de provocar desmoronamento ou deslocação de terra, ou que comprometa a segurança do prédio vizinho, senão após haverem sido feitas as obras acautelatórias; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 208,
+   "target_id": "CC2002:ART.1313",
+   "explanation_id": "ENTENDA/CC2002:ART.1313/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1313:CAPUT\tO proprietário ou ocupante do imóvel é obrigado a tolerar que o vizinho entre no prédio, mediante prévio aviso, para:\nCC2002:ART.1313:INC.I\tdele temporariamente usar, quando indispensável à reparação, construção, reconstrução ou limpeza de sua casa ou do muro divisório;\nCC2002:ART.1313:INC.II\tapoderar-se de coisas suas, inclusive animais que aí se encontrem casualmente.\nCC2002:ART.1313:PAR.1\to O disposto neste artigo aplica-se aos casos de limpeza ou reparação de esgotos, goteiras, aparelhos higiênicos, poços e nascentes e ao aparo de cerca viva.\nCC2002:ART.1313:PAR.2\to Na hipótese do inciso II, uma vez entregues as coisas buscadas pelo vizinho, poderá ser impedida a sua entrada no imóvel.\nCC2002:ART.1313:PAR.3\to Se do exercício do direito assegurado neste artigo provier dano, terá o prejudicado direito a ressarcimento.",
+   "source_snapshot_sha256": "69c4e686bb2651948ca4fefb934bfcb88bb8b9fa1cc8e6a29f5eef7bb60754b5",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1313:CAPUT",
+     "text": "O proprietário ou ocupante do imóvel é obrigado a tolerar que o vizinho entre no prédio, mediante prévio aviso, para:"
+    },
+    {
+     "label": "CC2002:ART.1313:INC.I",
+     "text": "dele temporariamente usar, quando indispensável à reparação, construção, reconstrução ou limpeza de sua casa ou do muro divisório;"
+    },
+    {
+     "label": "CC2002:ART.1313:INC.II",
+     "text": "apoderar-se de coisas suas, inclusive animais que aí se encontrem casualmente."
+    },
+    {
+     "label": "CC2002:ART.1313:PAR.1",
+     "text": "o O disposto neste artigo aplica-se aos casos de limpeza ou reparação de esgotos, goteiras, aparelhos higiênicos, poços e nascentes e ao aparo de cerca viva."
+    },
+    {
+     "label": "CC2002:ART.1313:PAR.2",
+     "text": "o Na hipótese do inciso II, uma vez entregues as coisas buscadas pelo vizinho, poderá ser impedida a sua entrada no imóvel."
+    },
+    {
+     "label": "CC2002:ART.1313:PAR.3",
+     "text": "o Se do exercício do direito assegurado neste artigo provier dano, terá o prejudicado direito a ressarcimento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 6 segmentos vigentes do dispositivo: O proprietário ou ocupante do imóvel é obrigado a tolerar que o vizinho entre no prédio, mediante prévio aviso, para: | dele temporariamente usar, quando indispensável à reparação, construção, reconstrução ou limpeza de sua casa ou do muro divisório; | apoderar-se de coisas suas, inclusive animais que aí se encontrem casualmente. | o O disposto neste artigo aplica-se aos casos de limpeza ou reparação de esgotos, goteiras, aparelhos higiênicos, poços e nascentes e ao aparo de cerca viva. | o Na hipótese do inciso II, uma vez entregues as coisas buscadas pelo vizinho, poderá ser impedida a sua entrada no imóvel. | o Se do exercício do direito assegurado neste artigo provier dano, terá o prejudicado direito a ressarcimento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e112d4ae6197c9b8419651ec0a4cf3bc21094a867dc1f34d24a2bc0f896ddffc",
+     "o_que_significa": "ffefa1ec2343050c346ea3e316b1474e603be27e7b77dd101cb10c15a8990aab",
+     "exemplo_pratico": "9ff0b2f5cc00857e24014c064b34b347e335bf9248bd71c9503556d2f878e4fa",
+     "atencao": "f26f4095a54560a80debf5b2cb1ab78f350b505012324b8cfef8654790b30a9b",
+     "palavras_dificeis": "f0deafb2607ff6e8ae8b30fc6991d67bb87069e004b49dbc446a87957c0c8e7c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 6 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O proprietário ou ocupante do imóvel é obrigado a tolerar que o vizinho entre no prédio, mediante prévio aviso, para:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 209,
+   "target_id": "CC2002:ART.1314",
+   "explanation_id": "ENTENDA/CC2002:ART.1314/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1314:CAPUT\tCada condômino pode usar da coisa conforme sua destinação, sobre ela exercer todos os direitos compatíveis com a indivisão, reivindicá-la de terceiro, defender a sua posse e alhear a respectiva parte ideal, ou gravá-la.\nCC2002:ART.1314:PAR.UNICO\tNenhum dos condôminos pode alterar a destinação da coisa comum, nem dar posse, uso ou gozo dela a estranhos, sem o consenso dos outros.",
+   "source_snapshot_sha256": "d7c58aa126a36b343b75e8910fb5b249ade86617ffeca4eeccaa47ba39f5385b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1314:CAPUT",
+     "text": "Cada condômino pode usar da coisa conforme sua destinação, sobre ela exercer todos os direitos compatíveis com a indivisão, reivindicá-la de terceiro, defender a sua posse e alhear a respectiva parte ideal, ou gravá-la."
+    },
+    {
+     "label": "CC2002:ART.1314:PAR.UNICO",
+     "text": "Nenhum dos condôminos pode alterar a destinação da coisa comum, nem dar posse, uso ou gozo dela a estranhos, sem o consenso dos outros."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Cada condômino pode usar da coisa conforme sua destinação, sobre ela exercer todos os direitos compatíveis com a indivisão, reivindicá-la de terceiro, defender a sua posse e alhear a respectiva parte ideal, ou gravá-la. | Nenhum dos condôminos pode alterar a destinação da coisa comum, nem dar posse, uso ou gozo dela a estranhos, sem o consenso dos outros.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "193297856cb16ec133f7abccea777cd4e645e438094fab4d7a058f287eeda491",
+     "o_que_significa": "f1314b3e6dd1eb1bb5fb3a47140440ae4ac8132721a9903d94060001b14c5de6",
+     "exemplo_pratico": "50ae4e30d21fd688427fdcb68c93fb77ca7fda5987240b94fcef91d9af30556e",
+     "atencao": "632017df0ca71ca5bc2b7593fbf0f212745b3e7ccad1b920d98eca05f2e2ee87",
+     "palavras_dificeis": "3db52c0ce32bb6ca0189667e8aa59af5cccb15ffd0220167377a0d6c14108d3d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 2 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Cada condômino pode usar da coisa conforme sua destinação, sobre ela exercer todos os direitos compatíveis com a indivisão, reivindicá-la de terceiro, defender a sua posse e alhear a respectiva parte ideal, ou gravá-la; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 210,
+   "target_id": "CC2002:ART.1316",
+   "explanation_id": "ENTENDA/CC2002:ART.1316/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1316:CAPUT\tPode o condômino eximir-se do pagamento das despesas e dívidas, renunciando à parte ideal.\nCC2002:ART.1316:PAR.1\to Se os demais condôminos assumem as despesas e as dívidas, a renúncia lhes aproveita, adquirindo a parte ideal de quem renunciou, na proporção dos pagamentos que fizerem.\nCC2002:ART.1316:PAR.2\to Se não há condômino que faça os pagamentos, a coisa comum será dividida.",
+   "source_snapshot_sha256": "7a959133cfed3f7afd02d8cda869030c402e5c821f0160792e7e1a9b88695ba3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1316:CAPUT",
+     "text": "Pode o condômino eximir-se do pagamento das despesas e dívidas, renunciando à parte ideal."
+    },
+    {
+     "label": "CC2002:ART.1316:PAR.1",
+     "text": "o Se os demais condôminos assumem as despesas e as dívidas, a renúncia lhes aproveita, adquirindo a parte ideal de quem renunciou, na proporção dos pagamentos que fizerem."
+    },
+    {
+     "label": "CC2002:ART.1316:PAR.2",
+     "text": "o Se não há condômino que faça os pagamentos, a coisa comum será dividida."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Pode o condômino eximir-se do pagamento das despesas e dívidas, renunciando à parte ideal. | o Se os demais condôminos assumem as despesas e as dívidas, a renúncia lhes aproveita, adquirindo a parte ideal de quem renunciou, na proporção dos pagamentos que fizerem. | o Se não há condômino que faça os pagamentos, a coisa comum será dividida.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "17629aa36b6dc2a00d9f670485012e6b27ffa28d3d3e792832583248927498bb",
+     "o_que_significa": "1871384bb186553370f8309b9be357922c8508da83b29ff7302d210f7e4f536a",
+     "exemplo_pratico": "1a8787303cf272ad8a8d5967b3a26a4b784b0f890cf8df012602c2c5c9d5497d",
+     "atencao": "a04c655a531dcfb24c2d1d28569ba0f84ac43130ab8dd3fac6b69712cf34a26c",
+     "palavras_dificeis": "92c5df680daff7f46772fa514293426ecea4bd70f20332f5f2a5862c272415eb"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 3 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Pode o condômino eximir-se do pagamento das despesas e dívidas, renunciando à parte ideal; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 211,
+   "target_id": "CC2002:ART.1322",
+   "explanation_id": "ENTENDA/CC2002:ART.1322/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1322:CAPUT\tQuando a coisa for indivisível, e os consortes não quiserem adjudicá-la a um só, indenizando os outros, será vendida e repartido o apurado, preferindo-se, na venda, em condições iguais de oferta, o condômino ao estranho, e entre os condôminos aquele que tiver na coisa benfeitorias mais valiosas, e, não as havendo, o de quinhão maior.\nCC2002:ART.1322:PAR.UNICO\tSe nenhum dos condôminos tem benfeitorias na coisa comum e participam todos do condomínio em partes iguais, realizar-se-á licitação entre estranhos e, antes de adjudicada a coisa àquele que ofereceu maior lanço, proceder-se-á à licitação entre os condôminos, a fim de que a coisa seja adjudicada a quem afinal oferecer melhor lanço, preferindo, em condições iguais, o condômino ao estranho.",
+   "source_snapshot_sha256": "8f42ca931f1d7401c0356030515af06495e18393104e061a0ba35ac1de084115",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1322:CAPUT",
+     "text": "Quando a coisa for indivisível, e os consortes não quiserem adjudicá-la a um só, indenizando os outros, será vendida e repartido o apurado, preferindo-se, na venda, em condições iguais de oferta, o condômino ao estranho, e entre os condôminos aquele que tiver na coisa benfeitorias mais valiosas, e, não as havendo, o de quinhão maior."
+    },
+    {
+     "label": "CC2002:ART.1322:PAR.UNICO",
+     "text": "Se nenhum dos condôminos tem benfeitorias na coisa comum e participam todos do condomínio em partes iguais, realizar-se-á licitação entre estranhos e, antes de adjudicada a coisa àquele que ofereceu maior lanço, proceder-se-á à licitação entre os condôminos, a fim de que a coisa seja adjudicada a quem afinal oferecer melhor lanço, preferindo, em condições iguais, o condômino ao estranho."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Quando a coisa for indivisível, e os consortes não quiserem adjudicá-la a um só, indenizando os outros, será vendida e repartido o apurado, preferindo-se, na venda, em condições iguais de oferta, o condômino ao estranho, e entre os condôminos aquele que tiver na coisa benfeitorias mais valiosas, e, não as havendo, o de quinhão maior. | Se nenhum dos condôminos tem benfeitorias na coisa comum e participam todos do condomínio em partes iguais, realizar-se-á licitação entre estranhos e, antes de adjudicada a coisa àquele que ofereceu maior lanço, proceder-se-á à licitação entre os condôminos, a fim de que a coisa seja adjudicada a quem afinal oferecer melhor lanço, preferindo, em condições iguais, o condômino ao estranho.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9cf46bb71b76c8ae3aff1c33f4a17053fcf42d362821355b717a38ad86ac27ab",
+     "o_que_significa": "1460285387497ef8e0a62736c352255f7f35066c4035228116e79a0162e820d4",
+     "exemplo_pratico": "7d596e759bc22dcffce62feaeba5a5884546670ac1346c8894b58deb258ca8dd",
+     "atencao": "03d47ad44b74f9a3375932da4c90fc7c4e84b1f7f099cc413e14af011dcb1df9",
+     "palavras_dificeis": "0fa418f38e5e040adb301e3744801f26ce62b9f4344191066f8440130f96ed1c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 2 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Quando a coisa for indivisível, e os consortes não quiserem adjudicá-la a um só, indenizando os outros, será vendida e repartido o apurado, preferindo-se, na venda, em condições iguais de oferta, o condômino ao estranho,; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 212,
+   "target_id": "CC2002:ART.1331",
+   "explanation_id": "ENTENDA/CC2002:ART.1331/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1331:CAPUT\tPode haver, em edificações, partes que são propriedade exclusiva, e partes que são propriedade comum dos condôminos.\nCC2002:ART.1331:PAR.1\to As partes suscetíveis de utilização independente, tais como apartamentos, escritórios, salas, lojas e sobrelojas, com as respectivas frações ideais no solo e nas outras partes comuns, sujeitam-se a propriedade exclusiva, podendo ser alienadas e gravadas livremente por seus proprietários, exceto os abrigos para veículos, que não poderão ser alienados ou alugados a pessoas estranhas ao condomínio, salvo autorização expressa na convenção de condomínio. (Redação dada pela Lei nº 12.607, de 2012)\nCC2002:ART.1331:PAR.2\to O solo, a estrutura do prédio, o telhado, a rede geral de distribuição de água, esgoto, gás e eletricidade, a calefação e refrigeração centrais, e as demais partes comuns, inclusive o acesso ao logradouro público, são utilizados em comum pelos condôminos, não podendo ser alienados separadamente, ou divididos.\nCC2002:ART.1331:PAR.3\to A cada unidade imobiliária caberá, como parte inseparável, uma fração ideal no solo e nas outras partes comuns, que será identificada em forma decimal ou ordinária no instrumento de instituição do condomínio. (Redação dada pela Lei nº 10.931, de 2004)\nCC2002:ART.1331:PAR.4\to Nenhuma unidade imobiliária pode ser privada do acesso ao logradouro público.\nCC2002:ART.1331:PAR.5\to O terraço de cobertura é parte comum, salvo disposição contrária da escritura de constituição do condomínio.",
+   "source_snapshot_sha256": "151ace812481da2eb7876c7e43c5040dd3bed3066952dae7cde3e1ddd65cfede",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1331:CAPUT",
+     "text": "Pode haver, em edificações, partes que são propriedade exclusiva, e partes que são propriedade comum dos condôminos."
+    },
+    {
+     "label": "CC2002:ART.1331:PAR.1",
+     "text": "o As partes suscetíveis de utilização independente, tais como apartamentos, escritórios, salas, lojas e sobrelojas, com as respectivas frações ideais no solo e nas outras partes comuns, sujeitam-se a propriedade exclusiva, podendo ser alienadas e gravadas livremente por seus proprietários, exceto os abrigos para veículos, que não poderão ser alienados ou alugados a pessoas estranhas ao condomínio, salvo autorização expressa na convenção de condomínio. (Redação dada pela Lei nº 12.607, de 2012)"
+    },
+    {
+     "label": "CC2002:ART.1331:PAR.2",
+     "text": "o O solo, a estrutura do prédio, o telhado, a rede geral de distribuição de água, esgoto, gás e eletricidade, a calefação e refrigeração centrais, e as demais partes comuns, inclusive o acesso ao logradouro público, são utilizados em comum pelos condôminos, não podendo ser alienados separadamente, ou divididos."
+    },
+    {
+     "label": "CC2002:ART.1331:PAR.3",
+     "text": "o A cada unidade imobiliária caberá, como parte inseparável, uma fração ideal no solo e nas outras partes comuns, que será identificada em forma decimal ou ordinária no instrumento de instituição do condomínio. (Redação dada pela Lei nº 10.931, de 2004)"
+    },
+    {
+     "label": "CC2002:ART.1331:PAR.4",
+     "text": "o Nenhuma unidade imobiliária pode ser privada do acesso ao logradouro público."
+    },
+    {
+     "label": "CC2002:ART.1331:PAR.5",
+     "text": "o O terraço de cobertura é parte comum, salvo disposição contrária da escritura de constituição do condomínio."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 6 segmentos vigentes do dispositivo: Pode haver, em edificações, partes que são propriedade exclusiva, e partes que são propriedade comum dos condôminos. | o As partes suscetíveis de utilização independente, tais como apartamentos, escritórios, salas, lojas e sobrelojas, com as respectivas frações ideais no solo e nas outras partes comuns, sujeitam-se a propriedade exclusiva, podendo ser alienadas e gravadas livremente por seus proprietários, exceto os abrigos para veículos, que não poderão ser alienados ou alugados a pessoas estranhas ao condomínio, salvo autorização expressa na convenção de condomínio. (Redação dada pela Lei nº 12.607, de 2012) | o O solo, a estrutura do prédio, o telhado, a rede geral de distribuição de água, esgoto, gás e eletricidade, a calefação e refrigeração centrais, e as demais partes comuns, inclusive o acesso ao logradouro público, são utilizados em comum pelos condôminos, não podendo ser alienados separadamente, ou divididos. | o A cada unidade imobiliária caberá, como parte inseparável, uma fração ideal no solo e nas outras partes comuns, que será identificada em forma decimal ou ordinária no instrumento de instituição do condomínio. (Redação dada pela Lei nº 10.931, de 2004) | o Nenhuma unidade imobiliária pode ser privada do acesso ao logradouro público. | o O terraço de cobertura é parte comum, salvo disposição contrária da escritura de constituição do condomínio.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "01fe8be2d03fe7bdbe90b68d21623e46897955679a22dd1fc3f9b7dbf0272f6e",
+     "o_que_significa": "83555a24b9ecd002f56dc126963a4e652fc12a6ef8d0f1aff350bf1184dc5a45",
+     "exemplo_pratico": "7f3591b462d31f4bc3158d6caadbbcb872f53841971eb2e78bd47445f8d390f2",
+     "atencao": "93f5f9441b991bd4182ada27bf5e3c7dcd7a6e6c744af17e3ca19a54a0f3aa70",
+     "palavras_dificeis": "69ca4bcbd61609cefee7a6b8d0626cccf0b6dc42b56e0a159e3bad427e231bd8"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 6 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Pode haver, em edificações, partes que são propriedade exclusiva, e partes que são propriedade comum dos condôminos; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 213,
+   "target_id": "CC2002:ART.1333",
+   "explanation_id": "ENTENDA/CC2002:ART.1333/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1333:CAPUT\tA convenção que constitui o condomínio edilício deve ser subscrita pelos titulares de, no mínimo, dois terços das frações ideais e torna-se, desde logo, obrigatória para os titulares de direito sobre as unidades, ou para quantos sobre elas tenham posse ou detenção.\nCC2002:ART.1333:PAR.UNICO\tPara ser oponível contra terceiros, a convenção do condomínio deverá ser registrada no Cartório de Registro de Imóveis.",
+   "source_snapshot_sha256": "b41f940e8c8ed006f15ef18a5fd50131ffc3b8d6e8b814c92cd48b6ab1e89988",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1333:CAPUT",
+     "text": "A convenção que constitui o condomínio edilício deve ser subscrita pelos titulares de, no mínimo, dois terços das frações ideais e torna-se, desde logo, obrigatória para os titulares de direito sobre as unidades, ou para quantos sobre elas tenham posse ou detenção."
+    },
+    {
+     "label": "CC2002:ART.1333:PAR.UNICO",
+     "text": "Para ser oponível contra terceiros, a convenção do condomínio deverá ser registrada no Cartório de Registro de Imóveis."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A convenção que constitui o condomínio edilício deve ser subscrita pelos titulares de, no mínimo, dois terços das frações ideais e torna-se, desde logo, obrigatória para os titulares de direito sobre as unidades, ou para quantos sobre elas tenham posse ou detenção. | Para ser oponível contra terceiros, a convenção do condomínio deverá ser registrada no Cartório de Registro de Imóveis.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a87531ddda964fed1946164b3bad90e628e16bf05787cd7e3aa49c3e042b3db6",
+     "o_que_significa": "ab0187d9aad262f14c231e4dd7e1186313d685463f5102d0ddccb14dfe0371c6",
+     "exemplo_pratico": "d18c204605cfe2a760e35ddbed6568d3f56c22f843fa9ced6ae40771ae68eff0",
+     "atencao": "5788bbd3846b55f4aee44417d2426c0f0c00740ed86c2279a59469fb98ebddf4",
+     "palavras_dificeis": "8fe5fdc0296a1bd27e7bc1016e139fb309a2e88f9896712ddf740efb9e13065f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 2 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que A convenção que constitui o condomínio edilício deve ser subscrita pelos titulares de, no mínimo, dois terços das frações ideais e torna-se, desde logo, obrigatória para os titulares de direito sobre as unidades, ou para; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 214,
+   "target_id": "CC2002:ART.1334",
+   "explanation_id": "ENTENDA/CC2002:ART.1334/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1334:CAPUT\tAlém das cláusulas referidas no art. 1.332 e das que os interessados houverem por bem estipular, a convenção determinará:\nCC2002:ART.1334:INC.I\ta quota proporcional e o modo de pagamento das contribuições dos condôminos para atender às despesas ordinárias e extraordinárias do condomínio;\nCC2002:ART.1334:INC.II\tsua forma de administração;\nCC2002:ART.1334:INC.III\ta competência das assembléias, forma de sua convocação e quorum exigido para as deliberações;\nCC2002:ART.1334:INC.IV\tas sanções a que estão sujeitos os condôminos, ou possuidores;\nCC2002:ART.1334:INC.V\to regimento interno.\nCC2002:ART.1334:PAR.1\to A convenção poderá ser feita por escritura pública ou por instrumento particular.\nCC2002:ART.1334:PAR.2\to São equiparados aos proprietários, para os fins deste artigo, salvo disposição em contrário, os promitentes compradores e os cessionários de direitos relativos às unidades autônomas.",
+   "source_snapshot_sha256": "802ef1a03d0a7661bc55b7cc621bd33a573c0deaaf8cc769ee6f1968f53d2c03",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1334:CAPUT",
+     "text": "Além das cláusulas referidas no art. 1.332 e das que os interessados houverem por bem estipular, a convenção determinará:"
+    },
+    {
+     "label": "CC2002:ART.1334:INC.I",
+     "text": "a quota proporcional e o modo de pagamento das contribuições dos condôminos para atender às despesas ordinárias e extraordinárias do condomínio;"
+    },
+    {
+     "label": "CC2002:ART.1334:INC.II",
+     "text": "sua forma de administração;"
+    },
+    {
+     "label": "CC2002:ART.1334:INC.III",
+     "text": "a competência das assembléias, forma de sua convocação e quorum exigido para as deliberações;"
+    },
+    {
+     "label": "CC2002:ART.1334:INC.IV",
+     "text": "as sanções a que estão sujeitos os condôminos, ou possuidores;"
+    },
+    {
+     "label": "CC2002:ART.1334:INC.V",
+     "text": "o regimento interno."
+    },
+    {
+     "label": "CC2002:ART.1334:PAR.1",
+     "text": "o A convenção poderá ser feita por escritura pública ou por instrumento particular."
+    },
+    {
+     "label": "CC2002:ART.1334:PAR.2",
+     "text": "o São equiparados aos proprietários, para os fins deste artigo, salvo disposição em contrário, os promitentes compradores e os cessionários de direitos relativos às unidades autônomas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 8 segmentos vigentes do dispositivo: Além das cláusulas referidas no art. 1.332 e das que os interessados houverem por bem estipular, a convenção determinará: | a quota proporcional e o modo de pagamento das contribuições dos condôminos para atender às despesas ordinárias e extraordinárias do condomínio; | sua forma de administração; | a competência das assembléias, forma de sua convocação e quorum exigido para as deliberações; | as sanções a que estão sujeitos os condôminos, ou possuidores; | o regimento interno. | o A convenção poderá ser feita por escritura pública ou por instrumento particular. | o São equiparados aos proprietários, para os fins deste artigo, salvo disposição em contrário, os promitentes compradores e os cessionários de direitos relativos às unidades autônomas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "cc43ac122b5aa4c3f4a2dd51dc7502f76c0d2632097f2281bdb02f792dd9155b",
+     "o_que_significa": "c90bcf121b042bc290a8b049612fc49f0abe85f5de183f02249bd0a375889fa3",
+     "exemplo_pratico": "ef302c587696e3c8726602cc5f591d02c726c8988c1a1d619a01d3385415b72c",
+     "atencao": "6056736cc00ac603f25c53001cf8f40278a692cb095b67196017b882373ec921",
+     "palavras_dificeis": "547e66f7723f1d71b73d6c5e5f413b6482c39b8ee51311d00cccbb7f868526b2"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 8 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Além das cláusulas referidas no art. 1.332 e das que os interessados houverem por bem estipular, a convenção determinará:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 215,
+   "target_id": "CC2002:ART.1336",
+   "explanation_id": "ENTENDA/CC2002:ART.1336/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1336:CAPUT\tSão deveres do condômino:\nCC2002:ART.1336:INC.I\tcontribuir para as despesas do condomínio na proporção das suas frações ideais, salvo disposição em contrário na convenção; (Redação dada pela Lei nº 10.931, de 2004)\nCC2002:ART.1336:INC.II\tnão realizar obras que comprometam a segurança da edificação;\nCC2002:ART.1336:INC.III\tnão alterar a forma e a cor da fachada, das partes e esquadrias externas;\nCC2002:ART.1336:INC.IV\tdar às suas partes a mesma destinação que tem a edificação, e não as utilizar de maneira prejudicial ao sossego, salubridade e segurança dos possuidores, ou aos bons costumes.\nCC2002:ART.1336:PAR.1\tO condômino que não pagar a sua contribuição ficará sujeito à correção monetária e aos juros moratórios convencionados ou, não sendo previstos, aos juros estabelecidos no art. 406 deste Código, bem como à multa de até 2% (dois por cento) sobre o débito. (Redação dada pela Lei nº 14.905, de 2024) Produção de efeitos\nCC2002:ART.1336:PAR.2\to O condômino, que não cumprir qualquer dos deveres estabelecidos nos incisos II a IV, pagará a multa prevista no ato constitutivo ou na convenção, não podendo ela ser superior a cinco vezes o valor de suas contribuições mensais, independentemente das perdas e danos que se apurarem; não havendo disposição expressa, caberá à assembléia geral, por dois terços no mínimo dos condôminos restantes, deliberar sobre a cobrança da multa.",
+   "source_snapshot_sha256": "08e8447de57625a4afe187f3f045b84e16589d46f0eff328e77b4316ef716a27",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1336:CAPUT",
+     "text": "São deveres do condômino:"
+    },
+    {
+     "label": "CC2002:ART.1336:INC.I",
+     "text": "contribuir para as despesas do condomínio na proporção das suas frações ideais, salvo disposição em contrário na convenção; (Redação dada pela Lei nº 10.931, de 2004)"
+    },
+    {
+     "label": "CC2002:ART.1336:INC.II",
+     "text": "não realizar obras que comprometam a segurança da edificação;"
+    },
+    {
+     "label": "CC2002:ART.1336:INC.III",
+     "text": "não alterar a forma e a cor da fachada, das partes e esquadrias externas;"
+    },
+    {
+     "label": "CC2002:ART.1336:INC.IV",
+     "text": "dar às suas partes a mesma destinação que tem a edificação, e não as utilizar de maneira prejudicial ao sossego, salubridade e segurança dos possuidores, ou aos bons costumes."
+    },
+    {
+     "label": "CC2002:ART.1336:PAR.1",
+     "text": "O condômino que não pagar a sua contribuição ficará sujeito à correção monetária e aos juros moratórios convencionados ou, não sendo previstos, aos juros estabelecidos no art. 406 deste Código, bem como à multa de até 2% (dois por cento) sobre o débito. (Redação dada pela Lei nº 14.905, de 2024) Produção de efeitos"
+    },
+    {
+     "label": "CC2002:ART.1336:PAR.2",
+     "text": "o O condômino, que não cumprir qualquer dos deveres estabelecidos nos incisos II a IV, pagará a multa prevista no ato constitutivo ou na convenção, não podendo ela ser superior a cinco vezes o valor de suas contribuições mensais, independentemente das perdas e danos que se apurarem; não havendo disposição expressa, caberá à assembléia geral, por dois terços no mínimo dos condôminos restantes, deliberar sobre a cobrança da multa."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 7 segmentos vigentes do dispositivo: São deveres do condômino: | contribuir para as despesas do condomínio na proporção das suas frações ideais, salvo disposição em contrário na convenção; (Redação dada pela Lei nº 10.931, de 2004) | não realizar obras que comprometam a segurança da edificação; | não alterar a forma e a cor da fachada, das partes e esquadrias externas; | dar às suas partes a mesma destinação que tem a edificação, e não as utilizar de maneira prejudicial ao sossego, salubridade e segurança dos possuidores, ou aos bons costumes. | O condômino que não pagar a sua contribuição ficará sujeito à correção monetária e aos juros moratórios convencionados ou, não sendo previstos, aos juros estabelecidos no art. 406 deste Código, bem como à multa de até 2% (dois por cento) sobre o débito. (Redação dada pela Lei nº 14.905, de 2024) Produção de efeitos | o O condômino, que não cumprir qualquer dos deveres estabelecidos nos incisos II a IV, pagará a multa prevista no ato constitutivo ou na convenção, não podendo ela ser superior a cinco vezes o valor de suas contribuições mensais, independentemente das perdas e danos que se apurarem; não havendo disposição expressa, caberá à assembléia geral, por dois terços no mínimo dos condôminos restantes, deliberar sobre a cobrança da multa.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "553b82cc8f6b2b989392e15b28a5f5266cb089c5c8a8ee6a17467fa7226980a7",
+     "o_que_significa": "95d0c0f712c07f2bae68a2ab37125b1415f5f8e1068dd0a213c47147f603853f",
+     "exemplo_pratico": "99c8c10aee4d8c9041cafd3b5f89edebc71b6e28540cad8c07289828894fc4a7",
+     "atencao": "12c081fe444048e9b868a75c45b658e0ee9c642f18d7ea13708b13c40f4c9458",
+     "palavras_dificeis": "85fb39a3d30ec87b5667cc90ea9ec483fdfed32febf5172b5ab240bf0a48f6b6"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 7 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que São deveres do condômino:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 216,
+   "target_id": "CC2002:ART.1337",
+   "explanation_id": "ENTENDA/CC2002:ART.1337/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1337:CAPUT\tO condômino, ou possuidor, que não cumpre reiteradamente com os seus deveres perante o condomínio poderá, por deliberação de três quartos dos condôminos restantes, ser constrangido a pagar multa correspondente até ao quíntuplo do valor atribuído à contribuição para as despesas condominiais, conforme a gravidade das faltas e a reiteração, independentemente das perdas e danos que se apurem.\nCC2002:ART.1337:PAR.UNICO\tO condômino ou possuidor que, por seu reiterado comportamento anti-social, gerar incompatibilidade de convivência com os demais condôminos ou possuidores, poderá ser constrangido a pagar multa correspondente ao décuplo do valor atribuído à contribuição para as despesas condominiais, até ulterior deliberação da assembléia.",
+   "source_snapshot_sha256": "9eeef727cc4cff6cd4becd8a9cf90d42c67b96cee96b8007daefa70e8bb678ef",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1337:CAPUT",
+     "text": "O condômino, ou possuidor, que não cumpre reiteradamente com os seus deveres perante o condomínio poderá, por deliberação de três quartos dos condôminos restantes, ser constrangido a pagar multa correspondente até ao quíntuplo do valor atribuído à contribuição para as despesas condominiais, conforme a gravidade das faltas e a reiteração, independentemente das perdas e danos que se apurem."
+    },
+    {
+     "label": "CC2002:ART.1337:PAR.UNICO",
+     "text": "O condômino ou possuidor que, por seu reiterado comportamento anti-social, gerar incompatibilidade de convivência com os demais condôminos ou possuidores, poderá ser constrangido a pagar multa correspondente ao décuplo do valor atribuído à contribuição para as despesas condominiais, até ulterior deliberação da assembléia."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O condômino, ou possuidor, que não cumpre reiteradamente com os seus deveres perante o condomínio poderá, por deliberação de três quartos dos condôminos restantes, ser constrangido a pagar multa correspondente até ao quíntuplo do valor atribuído à contribuição para as despesas condominiais, conforme a gravidade das faltas e a reiteração, independentemente das perdas e danos que se apurem. | O condômino ou possuidor que, por seu reiterado comportamento anti-social, gerar incompatibilidade de convivência com os demais condôminos ou possuidores, poderá ser constrangido a pagar multa correspondente ao décuplo do valor atribuído à contribuição para as despesas condominiais, até ulterior deliberação da assembléia.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c764de2e461092d24f817d12b3b8ce81da9a10688e22e49282b856c8da3a978e",
+     "o_que_significa": "b8e0ddccef02fb176def5e50cd0b1e771905dac6ebe34b40da18564834e6478d",
+     "exemplo_pratico": "07d007b5c541537e8ebbc7f5df47f329b837da169c83afc2f0727850634d8dad",
+     "atencao": "86fc077ffcdd00145c4434f47393fb03914214009cafa65ce392f6542169a098",
+     "palavras_dificeis": "2e725e5e737ece55c679683e98776f338331ca531f6ea79573ea1afaab4c1bba"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 2 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O condômino, ou possuidor, que não cumpre reiteradamente com os seus deveres perante o condomínio poderá, por deliberação de três quartos dos condôminos restantes, ser constrangido a pagar multa correspondente até ao quí; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 217,
+   "target_id": "CC2002:ART.1341",
+   "explanation_id": "ENTENDA/CC2002:ART.1341/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1341:CAPUT\tA realização de obras no condomínio depende:\nCC2002:ART.1341:INC.I\tse voluptuárias, de voto de dois terços dos condôminos;\nCC2002:ART.1341:INC.II\tse úteis, de voto da maioria dos condôminos.\nCC2002:ART.1341:PAR.1\to As obras ou reparações necessárias podem ser realizadas, independentemente de autorização, pelo síndico, ou, em caso de omissão ou impedimento deste, por qualquer condômino.\nCC2002:ART.1341:PAR.2\to Se as obras ou reparos necessários forem urgentes e importarem em despesas excessivas, determinada sua realização, o síndico ou o condômino que tomou a iniciativa delas dará ciência à assembléia, que deverá ser convocada imediatamente.\nCC2002:ART.1341:PAR.3\to Não sendo urgentes, as obras ou reparos necessários, que importarem em despesas excessivas, somente poderão ser efetuadas após autorização da assembléia, especialmente convocada pelo síndico, ou, em caso de omissão ou impedimento deste, por qualquer dos condôminos.\nCC2002:ART.1341:PAR.4\to O condômino que realizar obras ou reparos necessários será reembolsado das despesas que efetuar, não tendo direito à restituição das que fizer com obras ou reparos de outra natureza, embora de interesse comum.",
+   "source_snapshot_sha256": "63964bff73f72b94ae2cec880ea8d5cbe49804863faea9bbff4b5cc03a33c01b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1341:CAPUT",
+     "text": "A realização de obras no condomínio depende:"
+    },
+    {
+     "label": "CC2002:ART.1341:INC.I",
+     "text": "se voluptuárias, de voto de dois terços dos condôminos;"
+    },
+    {
+     "label": "CC2002:ART.1341:INC.II",
+     "text": "se úteis, de voto da maioria dos condôminos."
+    },
+    {
+     "label": "CC2002:ART.1341:PAR.1",
+     "text": "o As obras ou reparações necessárias podem ser realizadas, independentemente de autorização, pelo síndico, ou, em caso de omissão ou impedimento deste, por qualquer condômino."
+    },
+    {
+     "label": "CC2002:ART.1341:PAR.2",
+     "text": "o Se as obras ou reparos necessários forem urgentes e importarem em despesas excessivas, determinada sua realização, o síndico ou o condômino que tomou a iniciativa delas dará ciência à assembléia, que deverá ser convocada imediatamente."
+    },
+    {
+     "label": "CC2002:ART.1341:PAR.3",
+     "text": "o Não sendo urgentes, as obras ou reparos necessários, que importarem em despesas excessivas, somente poderão ser efetuadas após autorização da assembléia, especialmente convocada pelo síndico, ou, em caso de omissão ou impedimento deste, por qualquer dos condôminos."
+    },
+    {
+     "label": "CC2002:ART.1341:PAR.4",
+     "text": "o O condômino que realizar obras ou reparos necessários será reembolsado das despesas que efetuar, não tendo direito à restituição das que fizer com obras ou reparos de outra natureza, embora de interesse comum."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 7 segmentos vigentes do dispositivo: A realização de obras no condomínio depende: | se voluptuárias, de voto de dois terços dos condôminos; | se úteis, de voto da maioria dos condôminos. | o As obras ou reparações necessárias podem ser realizadas, independentemente de autorização, pelo síndico, ou, em caso de omissão ou impedimento deste, por qualquer condômino. | o Se as obras ou reparos necessários forem urgentes e importarem em despesas excessivas, determinada sua realização, o síndico ou o condômino que tomou a iniciativa delas dará ciência à assembléia, que deverá ser convocada imediatamente. | o Não sendo urgentes, as obras ou reparos necessários, que importarem em despesas excessivas, somente poderão ser efetuadas após autorização da assembléia, especialmente convocada pelo síndico, ou, em caso de omissão ou impedimento deste, por qualquer dos condôminos. | o O condômino que realizar obras ou reparos necessários será reembolsado das despesas que efetuar, não tendo direito à restituição das que fizer com obras ou reparos de outra natureza, embora de interesse comum.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "26e88191416f25b22ca5f2d720614f8f62a8b4d6bd5154ae2b312c46c20a923d",
+     "o_que_significa": "a545aaa8df910ff8899a769ce15ca0872a1fa56f1f284b6bed0d3c7c26fb082e",
+     "exemplo_pratico": "85c7c11a149d212a5c9ebbc7b3638b8f3a0f9f6d7b9c6bf850c7edef276f9894",
+     "atencao": "ec6fb4ace53c9acdb60474e797ef07cc9b983482a6788793511af673b304f620",
+     "palavras_dificeis": "e21fd30cca704f10927c99a11d16265d1453843d56e3c02bf79b3b6fb5775ae4"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O § 1º do art. 1.341 autoriza qualquer condômino a realizar obra ou reparação necessária em caso de omissão ou impedimento do síndico, sem exigir urgência; urgência e despesa excessiva são tratadas separadamente no § 2º.",
+   "finding": {
+    "target_id": "CC2002:ART.1341",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "em urgência e omissão, por condômino",
+    "legal_basis": "O § 1º do art. 1.341 autoriza qualquer condômino a realizar obra ou reparação necessária em caso de omissão ou impedimento do síndico, sem exigir urgência; urgência e despesa excessiva são tratadas separadamente no § 2º.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "CONFUSAO_DE_REQUISITOS_ALTERNATIVOS",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "Pode fazer parecer que o condômino só atua se houver simultaneamente urgência e omissão, restringindo indevidamente a faculdade legal.",
+    "correction_direction": "Distinguir obra necessária, omissão/impedimento do síndico, urgência e despesa excessiva conforme os §§ 1º a 3º.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": 18,
+    "auditor": "wave04_201_325"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 218,
+   "target_id": "CC2002:ART.1348",
+   "explanation_id": "ENTENDA/CC2002:ART.1348/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1348:CAPUT\tCompete ao síndico:\nCC2002:ART.1348:INC.I\tconvocar a assembléia dos condôminos;\nCC2002:ART.1348:INC.II\trepresentar, ativa e passivamente, o condomínio, praticando, em juízo ou fora dele, os atos necessários à defesa dos interesses comuns;\nCC2002:ART.1348:INC.III\tdar imediato conhecimento à assembléia da existência de procedimento judicial ou administrativo, de interesse do condomínio;\nCC2002:ART.1348:INC.IV\tcumprir e fazer cumprir a convenção, o regimento interno e as determinações da assembléia;\nCC2002:ART.1348:INC.V\tdiligenciar a conservação e a guarda das partes comuns e zelar pela prestação dos serviços que interessem aos possuidores;\nCC2002:ART.1348:INC.VI\telaborar o orçamento da receita e da despesa relativa a cada ano;\nCC2002:ART.1348:INC.VII\tcobrar dos condôminos as suas contribuições, bem como impor e cobrar as multas devidas;\nCC2002:ART.1348:INC.VIII\tprestar contas à assembléia, anualmente e quando exigidas;\nCC2002:ART.1348:INC.IX\trealizar o seguro da edificação.\nCC2002:ART.1348:PAR.1\to Poderá a assembléia investir outra pessoa, em lugar do síndico, em poderes de representação.\nCC2002:ART.1348:PAR.2\to O síndico pode transferir a outrem, total ou parcialmente, os poderes de representação ou as funções administrativas, mediante aprovação da assembléia, salvo disposição em contrário da convenção.",
+   "source_snapshot_sha256": "e20c2315a456312c56a6e726c624fa42867bd4749c446b1d3f9ea15eb0a47a28",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1348:CAPUT",
+     "text": "Compete ao síndico:"
+    },
+    {
+     "label": "CC2002:ART.1348:INC.I",
+     "text": "convocar a assembléia dos condôminos;"
+    },
+    {
+     "label": "CC2002:ART.1348:INC.II",
+     "text": "representar, ativa e passivamente, o condomínio, praticando, em juízo ou fora dele, os atos necessários à defesa dos interesses comuns;"
+    },
+    {
+     "label": "CC2002:ART.1348:INC.III",
+     "text": "dar imediato conhecimento à assembléia da existência de procedimento judicial ou administrativo, de interesse do condomínio;"
+    },
+    {
+     "label": "CC2002:ART.1348:INC.IV",
+     "text": "cumprir e fazer cumprir a convenção, o regimento interno e as determinações da assembléia;"
+    },
+    {
+     "label": "CC2002:ART.1348:INC.V",
+     "text": "diligenciar a conservação e a guarda das partes comuns e zelar pela prestação dos serviços que interessem aos possuidores;"
+    },
+    {
+     "label": "CC2002:ART.1348:INC.VI",
+     "text": "elaborar o orçamento da receita e da despesa relativa a cada ano;"
+    },
+    {
+     "label": "CC2002:ART.1348:INC.VII",
+     "text": "cobrar dos condôminos as suas contribuições, bem como impor e cobrar as multas devidas;"
+    },
+    {
+     "label": "CC2002:ART.1348:INC.VIII",
+     "text": "prestar contas à assembléia, anualmente e quando exigidas;"
+    },
+    {
+     "label": "CC2002:ART.1348:INC.IX",
+     "text": "realizar o seguro da edificação."
+    },
+    {
+     "label": "CC2002:ART.1348:PAR.1",
+     "text": "o Poderá a assembléia investir outra pessoa, em lugar do síndico, em poderes de representação."
+    },
+    {
+     "label": "CC2002:ART.1348:PAR.2",
+     "text": "o O síndico pode transferir a outrem, total ou parcialmente, os poderes de representação ou as funções administrativas, mediante aprovação da assembléia, salvo disposição em contrário da convenção."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 12 segmentos vigentes do dispositivo: Compete ao síndico: | convocar a assembléia dos condôminos; | representar, ativa e passivamente, o condomínio, praticando, em juízo ou fora dele, os atos necessários à defesa dos interesses comuns; | dar imediato conhecimento à assembléia da existência de procedimento judicial ou administrativo, de interesse do condomínio; | cumprir e fazer cumprir a convenção, o regimento interno e as determinações da assembléia; | diligenciar a conservação e a guarda das partes comuns e zelar pela prestação dos serviços que interessem aos possuidores; | elaborar o orçamento da receita e da despesa relativa a cada ano; | cobrar dos condôminos as suas contribuições, bem como impor e cobrar as multas devidas; | prestar contas à assembléia, anualmente e quando exigidas; | realizar o seguro da edificação. | o Poderá a assembléia investir outra pessoa, em lugar do síndico, em poderes de representação. | o O síndico pode transferir a outrem, total ou parcialmente, os poderes de representação ou as funções administrativas, mediante aprovação da assembléia, salvo disposição em contrário da convenção.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ded17898b9efbb1bb63517913acf460a55e7dcedb89746f04b47ea9e6a53bd50",
+     "o_que_significa": "46e3a8b8a5203a298709662f70e34ae2d1e85a8965bbcad8b53d3fdcdeb58f0e",
+     "exemplo_pratico": "8300df145541076883c137968f03dbc754cc8efcab33cc099f4e7579e89801e0",
+     "atencao": "8e13fbb07746b417af6fdeccffd7695dc44e049483e93e0c1493f422dfc9ece0",
+     "palavras_dificeis": "cc80b2043dd64128a312ffd465721a7ea5a9523c10953fc503f3f61d891ce21e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 12 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Compete ao síndico:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 219,
+   "target_id": "CC2002:ART.1351",
+   "explanation_id": "ENTENDA/CC2002:ART.1351/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1351:CAPUT\tDepende da aprovação de 2/3 (dois terços) dos votos dos condôminos a alteração da convenção, bem como a mudança da destinação do edifício ou da unidade imobiliária. (Redação dada pela Lei nº 14.405, de 2022)",
+   "source_snapshot_sha256": "5368dead1998bd17f8da8278cc8275d818471f01ee5ee81c20cf8816a71ba7ba",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1351:CAPUT",
+     "text": "Depende da aprovação de 2/3 (dois terços) dos votos dos condôminos a alteração da convenção, bem como a mudança da destinação do edifício ou da unidade imobiliária. (Redação dada pela Lei nº 14.405, de 2022)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Depende da aprovação de 2/3 (dois terços) dos votos dos condôminos a alteração da convenção, bem como a mudança da destinação do edifício ou da unidade imobiliária. (Redação dada pela Lei nº 14.405, de 2022)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a2ff23cc3c4e71b81531827b272def1e2e6366580097ff45f0536b1bcb601a00",
+     "o_que_significa": "09c1ff70ccc01182d7939822e082a1100489872b63b931de4d12b051e154f67e",
+     "exemplo_pratico": "8b67ace4b575d750649ec9b047ca5bf6de313a9a975be85a1b242c65f9001902",
+     "atencao": "0b63a28ecd9da634c95053c928fb1e6479ce213cc718d9190164d879c88cb05c",
+     "palavras_dificeis": "8bdd69a15e2edba3c19a1c7072a022f1f7b5b3f6dd16833ecef8aaf2ed6d30d7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Depende da aprovação de 2/3 (dois terços) dos votos dos condôminos a alteração da convenção, bem como a mudança da destinação do edifício ou da unidade imobiliária. (Redação dada pela Lei nº 14.405, de 2022); não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 220,
+   "target_id": "CC2002:ART.1353",
+   "explanation_id": "ENTENDA/CC2002:ART.1353/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1353:CAPUT\tEm segunda convocação, a assembléia poderá deliberar por maioria dos votos dos presentes, salvo quando exigido quorum especial.\nCC2002:ART.1353:PAR.1\tQuando a deliberação exigir quórum especial previsto em lei ou em convenção e ele não for atingido, a assembleia poderá, por decisão da maioria dos presentes, autorizar o presidente a converter a reunião em sessão permanente, desde que cumulativamente: (Incluído pela Lei nº 14.309, de 2022)\nCC2002:ART.1353:PAR.1:INC.I\tsejam indicadas a data e a hora da sessão em seguimento, que não poderá ultrapassar 60 (sessenta) dias, e identificadas as deliberações pretendidas, em razão do quórum especial não atingido; (Incluído pela Lei nº 14.309, de 2022)\nCC2002:ART.1353:PAR.1:INC.II\tfiquem expressamente convocados os presentes e sejam obrigatoriamente convocadas as unidades ausentes, na forma prevista em convenção; (Incluído pela Lei nº 14.309, de 2022)\nCC2002:ART.1353:PAR.1:INC.III\tseja lavrada ata parcial, relativa ao segmento presencial da reunião da assembleia, da qual deverão constar as transcrições circunstanciadas de todos os argumentos até então apresentados relativos à ordem do dia, que deverá ser remetida aos condôminos ausentes; (Incluído pela Lei nº 14.309, de 2022)\nCC2002:ART.1353:PAR.1:INC.IV\tseja dada continuidade às deliberações no dia e na hora designados, e seja a ata correspondente lavrada em seguimento à que estava parcialmente redigida, com a consolidação de todas as deliberações. (Incluído pela Lei nº 14.309, de 2022)\nCC2002:ART.1353:PAR.2\tOs votos consignados na primeira sessão ficarão registrados, sem que haja necessidade de comparecimento dos condôminos para sua confirmação, os quais poderão, se estiverem presentes no encontro seguinte, requerer a alteração do seu voto até o desfecho da deliberação pretendida. (Incluído pela Lei nº 14.309, de 2022)\nCC2002:ART.1353:PAR.3\tA sessão permanente poderá ser prorrogada tantas vezes quantas necessárias, desde que a assembleia seja concluída no prazo total de 90 (noventa) dias, contado da data de sua abertura inicial. (Incluído pela Lei nº 14.309, de 2022)",
+   "source_snapshot_sha256": "4c7e59f5bc9210dfd0eccd0a3499ffc561927fcbffcac76f6cdb5f8fa4f3448a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1353:CAPUT",
+     "text": "Em segunda convocação, a assembléia poderá deliberar por maioria dos votos dos presentes, salvo quando exigido quorum especial."
+    },
+    {
+     "label": "CC2002:ART.1353:PAR.1",
+     "text": "Quando a deliberação exigir quórum especial previsto em lei ou em convenção e ele não for atingido, a assembleia poderá, por decisão da maioria dos presentes, autorizar o presidente a converter a reunião em sessão permanente, desde que cumulativamente: (Incluído pela Lei nº 14.309, de 2022)"
+    },
+    {
+     "label": "CC2002:ART.1353:PAR.1:INC.I",
+     "text": "sejam indicadas a data e a hora da sessão em seguimento, que não poderá ultrapassar 60 (sessenta) dias, e identificadas as deliberações pretendidas, em razão do quórum especial não atingido; (Incluído pela Lei nº 14.309, de 2022)"
+    },
+    {
+     "label": "CC2002:ART.1353:PAR.1:INC.II",
+     "text": "fiquem expressamente convocados os presentes e sejam obrigatoriamente convocadas as unidades ausentes, na forma prevista em convenção; (Incluído pela Lei nº 14.309, de 2022)"
+    },
+    {
+     "label": "CC2002:ART.1353:PAR.1:INC.III",
+     "text": "seja lavrada ata parcial, relativa ao segmento presencial da reunião da assembleia, da qual deverão constar as transcrições circunstanciadas de todos os argumentos até então apresentados relativos à ordem do dia, que deverá ser remetida aos condôminos ausentes; (Incluído pela Lei nº 14.309, de 2022)"
+    },
+    {
+     "label": "CC2002:ART.1353:PAR.1:INC.IV",
+     "text": "seja dada continuidade às deliberações no dia e na hora designados, e seja a ata correspondente lavrada em seguimento à que estava parcialmente redigida, com a consolidação de todas as deliberações. (Incluído pela Lei nº 14.309, de 2022)"
+    },
+    {
+     "label": "CC2002:ART.1353:PAR.2",
+     "text": "Os votos consignados na primeira sessão ficarão registrados, sem que haja necessidade de comparecimento dos condôminos para sua confirmação, os quais poderão, se estiverem presentes no encontro seguinte, requerer a alteração do seu voto até o desfecho da deliberação pretendida. (Incluído pela Lei nº 14.309, de 2022)"
+    },
+    {
+     "label": "CC2002:ART.1353:PAR.3",
+     "text": "A sessão permanente poderá ser prorrogada tantas vezes quantas necessárias, desde que a assembleia seja concluída no prazo total de 90 (noventa) dias, contado da data de sua abertura inicial. (Incluído pela Lei nº 14.309, de 2022)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 8 segmentos vigentes do dispositivo: Em segunda convocação, a assembléia poderá deliberar por maioria dos votos dos presentes, salvo quando exigido quorum especial. | Quando a deliberação exigir quórum especial previsto em lei ou em convenção e ele não for atingido, a assembleia poderá, por decisão da maioria dos presentes, autorizar o presidente a converter a reunião em sessão permanente, desde que cumulativamente: (Incluído pela Lei nº 14.309, de 2022) | sejam indicadas a data e a hora da sessão em seguimento, que não poderá ultrapassar 60 (sessenta) dias, e identificadas as deliberações pretendidas, em razão do quórum especial não atingido; (Incluído pela Lei nº 14.309, de 2022) | fiquem expressamente convocados os presentes e sejam obrigatoriamente convocadas as unidades ausentes, na forma prevista em convenção; (Incluído pela Lei nº 14.309, de 2022) | seja lavrada ata parcial, relativa ao segmento presencial da reunião da assembleia, da qual deverão constar as transcrições circunstanciadas de todos os argumentos até então apresentados relativos à ordem do dia, que deverá ser remetida aos condôminos ausentes; (Incluído pela Lei nº 14.309, de 2022) | seja dada continuidade às deliberações no dia e na hora designados, e seja a ata correspondente lavrada em seguimento à que estava parcialmente redigida, com a consolidação de todas as deliberações. (Incluído pela Lei nº 14.309, de 2022) | Os votos consignados na primeira sessão ficarão registrados, sem que haja necessidade de comparecimento dos condôminos para sua confirmação, os quais poderão, se estiverem presentes no encontro seguinte, requerer a alteração do seu voto até o desfecho da deliberação pretendida. (Incluído pela Lei nº 14.309, de 2022) | A sessão permanente poderá ser prorrogada tantas vezes quantas necessárias, desde que a assembleia seja concluída no prazo total de 90 (noventa) dias, contado da data de sua abertura inicial. (Incluído pela Lei nº 14.309, de 2022)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c260eda347b408a814beadcd4a3c3303abfc0f2b8475bedbbdd211be222a120f",
+     "o_que_significa": "c9ccae567d97bc08ceb2628d47acedd99fedca61f5da948a3a50eeaa2ed7074c",
+     "exemplo_pratico": "212d3a76d8492881bf3449ddf06ab3041c8edc96b6862be92be343bc877a18e6",
+     "atencao": "4919d62fe3aece806380d01fa0f4a6800e1a263497c722ab15bf3688c5bd4aa2",
+     "palavras_dificeis": "f728856f20b398cb8145c1380da221d418e694d1f30d0c39a9ab3d16225d3186"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 8 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Em segunda convocação, a assembléia poderá deliberar por maioria dos votos dos presentes, salvo quando exigido quorum especial; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 221,
+   "target_id": "CC2002:ART.1354-A",
+   "explanation_id": "ENTENDA/CC2002:ART.1354-A/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1354-A:CAPUT\tA convocação, a realização e a deliberação de quaisquer modalidades de assembleia poderão dar-se de forma eletrônica, desde que: (Incluído pela Lei nº 14.309, de 2022)\nCC2002:ART.1354-A:INC.I\ttal possibilidade não seja vedada na convenção de condomínio; (Incluído pela Lei nº 14.309, de 2022)\nCC2002:ART.1354-A:INC.II\tsejam preservados aos condôminos os direitos de voz, de debate e de voto. (Incluído pela Lei nº 14.309, de 2022)\nCC2002:ART.1354-A:PAR.1\tDo instrumento de convocação deverá constar que a assembleia será realizada por meio eletrônico, bem como as instruções sobre acesso, manifestação e forma de coleta de votos dos condôminos. (Incluído pela Lei nº 14.309, de 2022)\nCC2002:ART.1354-A:PAR.2\tA administração do condomínio não poderá ser responsabilizada por problemas decorrentes dos equipamentos de informática ou da conexão à internet dos condôminos ou de seus representantes nem por quaisquer outras situações que não estejam sob o seu controle. (Incluído pela Lei nº 14.309, de 2022)\nCC2002:ART.1354-A:PAR.3\tSomente após a somatória de todos os votos e a sua divulgação será lavrada a respectiva ata, também eletrônica, e encerrada a assembleia geral. (Incluído pela Lei nº 14.309, de 2022)\nCC2002:ART.1354-A:PAR.4\tA assembleia eletrônica deverá obedecer aos preceitos de instalação, de funcionamento e de encerramento previstos no edital de convocação e poderá ser realizada de forma híbrida, com a presença física e virtual de condôminos concomitantemente no mesmo ato. (Incluído pela Lei nº 14.309, de 2022)\nCC2002:ART.1354-A:PAR.5\tNormas complementares relativas às assembleias eletrônicas poderão ser previstas no regimento interno do condomínio e definidas mediante aprovação da maioria simples dos presentes em assembleia convocada para essa finalidade. (Incluído pela Lei nº 14.309, de 2022)\nCC2002:ART.1354-A:PAR.6\tOs documentos pertinentes à ordem do dia poderão ser disponibilizados de forma física ou eletrônica aos participantes. (Incluído pela Lei nº 14.309, de 2022)",
+   "source_snapshot_sha256": "58c34a1264295d2589a3e57b7f36b47f231008685951fd140aa76534cfb2c80b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1354-A:CAPUT",
+     "text": "A convocação, a realização e a deliberação de quaisquer modalidades de assembleia poderão dar-se de forma eletrônica, desde que: (Incluído pela Lei nº 14.309, de 2022)"
+    },
+    {
+     "label": "CC2002:ART.1354-A:INC.I",
+     "text": "tal possibilidade não seja vedada na convenção de condomínio; (Incluído pela Lei nº 14.309, de 2022)"
+    },
+    {
+     "label": "CC2002:ART.1354-A:INC.II",
+     "text": "sejam preservados aos condôminos os direitos de voz, de debate e de voto. (Incluído pela Lei nº 14.309, de 2022)"
+    },
+    {
+     "label": "CC2002:ART.1354-A:PAR.1",
+     "text": "Do instrumento de convocação deverá constar que a assembleia será realizada por meio eletrônico, bem como as instruções sobre acesso, manifestação e forma de coleta de votos dos condôminos. (Incluído pela Lei nº 14.309, de 2022)"
+    },
+    {
+     "label": "CC2002:ART.1354-A:PAR.2",
+     "text": "A administração do condomínio não poderá ser responsabilizada por problemas decorrentes dos equipamentos de informática ou da conexão à internet dos condôminos ou de seus representantes nem por quaisquer outras situações que não estejam sob o seu controle. (Incluído pela Lei nº 14.309, de 2022)"
+    },
+    {
+     "label": "CC2002:ART.1354-A:PAR.3",
+     "text": "Somente após a somatória de todos os votos e a sua divulgação será lavrada a respectiva ata, também eletrônica, e encerrada a assembleia geral. (Incluído pela Lei nº 14.309, de 2022)"
+    },
+    {
+     "label": "CC2002:ART.1354-A:PAR.4",
+     "text": "A assembleia eletrônica deverá obedecer aos preceitos de instalação, de funcionamento e de encerramento previstos no edital de convocação e poderá ser realizada de forma híbrida, com a presença física e virtual de condôminos concomitantemente no mesmo ato. (Incluído pela Lei nº 14.309, de 2022)"
+    },
+    {
+     "label": "CC2002:ART.1354-A:PAR.5",
+     "text": "Normas complementares relativas às assembleias eletrônicas poderão ser previstas no regimento interno do condomínio e definidas mediante aprovação da maioria simples dos presentes em assembleia convocada para essa finalidade. (Incluído pela Lei nº 14.309, de 2022)"
+    },
+    {
+     "label": "CC2002:ART.1354-A:PAR.6",
+     "text": "Os documentos pertinentes à ordem do dia poderão ser disponibilizados de forma física ou eletrônica aos participantes. (Incluído pela Lei nº 14.309, de 2022)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 9 segmentos vigentes do dispositivo: A convocação, a realização e a deliberação de quaisquer modalidades de assembleia poderão dar-se de forma eletrônica, desde que: (Incluído pela Lei nº 14.309, de 2022) | tal possibilidade não seja vedada na convenção de condomínio; (Incluído pela Lei nº 14.309, de 2022) | sejam preservados aos condôminos os direitos de voz, de debate e de voto. (Incluído pela Lei nº 14.309, de 2022) | Do instrumento de convocação deverá constar que a assembleia será realizada por meio eletrônico, bem como as instruções sobre acesso, manifestação e forma de coleta de votos dos condôminos. (Incluído pela Lei nº 14.309, de 2022) | A administração do condomínio não poderá ser responsabilizada por problemas decorrentes dos equipamentos de informática ou da conexão à internet dos condôminos ou de seus representantes nem por quaisquer outras situações que não estejam sob o seu controle. (Incluído pela Lei nº 14.309, de 2022) | Somente após a somatória de todos os votos e a sua divulgação será lavrada a respectiva ata, também eletrônica, e encerrada a assembleia geral. (Incluído pela Lei nº 14.309, de 2022) | A assembleia eletrônica deverá obedecer aos preceitos de instalação, de funcionamento e de encerramento previstos no edital de convocação e poderá ser realizada de forma híbrida, com a presença física e virtual de condôminos concomitantemente no mesmo ato. (Incluído pela Lei nº 14.309, de 2022) | Normas complementares relativas às assembleias eletrônicas poderão ser previstas no regimento interno do condomínio e definidas mediante aprovação da maioria simples dos presentes em assembleia convocada para essa finalidade. (Incluído pela Lei nº 14.309, de 2022) | Os documentos pertinentes à ordem do dia poderão ser disponibilizados de forma física ou eletrônica aos participantes. (Incluído pela Lei nº 14.309, de 2022)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "48fea21fddf6f248c1a2958d6b7a70d4bcbef071227e7ff085048c17833335e3",
+     "o_que_significa": "532aa16590c36ad4ca2b5ca810c3fbbb98370e4e8ca76a27089c7bd885866d59",
+     "exemplo_pratico": "563238c33818563fe1e2208b697f86ffa3f1263eac800b84cae3036ca574c887",
+     "atencao": "4ce11079f34cfbcef4361f154298400bda2aca32ca8a22a863ff177e0872753b",
+     "palavras_dificeis": "ada789779a32b4c5799e4da249871382dfc9c9ce542ca9af69521e0f50991929"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 9 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que A convocação, a realização e a deliberação de quaisquer modalidades de assembleia poderão dar-se de forma eletrônica, desde que: (Incluído pela Lei nº 14.309, de 2022); não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 222,
+   "target_id": "CC2002:ART.1357",
+   "explanation_id": "ENTENDA/CC2002:ART.1357/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1357:CAPUT\tSe a edificação for total ou consideravelmente destruída, ou ameace ruína, os condôminos deliberarão em assembléia sobre a reconstrução, ou venda, por votos que representem metade mais uma das frações ideais.\nCC2002:ART.1357:PAR.1\to Deliberada a reconstrução, poderá o condômino eximir-se do pagamento das despesas respectivas, alienando os seus direitos a outros condôminos, mediante avaliação judicial.\nCC2002:ART.1357:PAR.2\to Realizada a venda, em que se preferirá, em condições iguais de oferta, o condômino ao estranho, será repartido o apurado entre os condôminos, proporcionalmente ao valor das suas unidades imobiliárias.",
+   "source_snapshot_sha256": "118efc60e46a850542aa03c21a6324216ebcdc0b4d01b9d055d21a525a579e2d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1357:CAPUT",
+     "text": "Se a edificação for total ou consideravelmente destruída, ou ameace ruína, os condôminos deliberarão em assembléia sobre a reconstrução, ou venda, por votos que representem metade mais uma das frações ideais."
+    },
+    {
+     "label": "CC2002:ART.1357:PAR.1",
+     "text": "o Deliberada a reconstrução, poderá o condômino eximir-se do pagamento das despesas respectivas, alienando os seus direitos a outros condôminos, mediante avaliação judicial."
+    },
+    {
+     "label": "CC2002:ART.1357:PAR.2",
+     "text": "o Realizada a venda, em que se preferirá, em condições iguais de oferta, o condômino ao estranho, será repartido o apurado entre os condôminos, proporcionalmente ao valor das suas unidades imobiliárias."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Se a edificação for total ou consideravelmente destruída, ou ameace ruína, os condôminos deliberarão em assembléia sobre a reconstrução, ou venda, por votos que representem metade mais uma das frações ideais. | o Deliberada a reconstrução, poderá o condômino eximir-se do pagamento das despesas respectivas, alienando os seus direitos a outros condôminos, mediante avaliação judicial. | o Realizada a venda, em que se preferirá, em condições iguais de oferta, o condômino ao estranho, será repartido o apurado entre os condôminos, proporcionalmente ao valor das suas unidades imobiliárias.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "eac0964707fa5c15db6932a94865be3241f8e1dd6946b5d307adaf0b7b2c9cc0",
+     "o_que_significa": "08c84d6300933b2600cca843df6f1cbc39cf4e05e80fd6929893bc79a0071c96",
+     "exemplo_pratico": "a521d33c9106fdea1ca3cc5e8f392ac9ee0ce3f112e3aa4ca63467708fa55462",
+     "atencao": "5ebd81c81bef0afa992cd73d3fb590ef496305a0863af19c40e6d294c635e11a",
+     "palavras_dificeis": "3d7259189af81aa3f207876960ad1cca4312e2c059f7f2b5ce5cb5f62ac6f50f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 3 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Se a edificação for total ou consideravelmente destruída, ou ameace ruína, os condôminos deliberarão em assembléia sobre a reconstrução, ou venda, por votos que representem metade mais uma das frações ideais; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 223,
+   "target_id": "CC2002:ART.1358-A",
+   "explanation_id": "ENTENDA/CC2002:ART.1358-A/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1358-A:CAPUT\tPode haver, em terrenos, partes designadas de lotes que são propriedade exclusiva e partes que são propriedade comum dos condôminos. (Incluído pela Lei nº 13.465, de 2017)\nCC2002:ART.1358-A:PAR.1\tA fração ideal de cada condômino poderá ser proporcional à área do solo de cada unidade autônoma, ao respectivo potencial construtivo ou a outros critérios indicados no ato de instituição. (Incluído pela Lei nº 13.465, de 2017)\nCC2002:ART.1358-A:PAR.2\tAplica-se, no que couber, ao condomínio de lotes: (Redação dada pela Lei nº 14.382, de 2022)\nCC2002:ART.1358-A:PAR.2:INC.I\to disposto sobre condomínio edilício neste Capítulo, respeitada a legislação urbanística; e (Incluído pela Lei nº 14.382, de 2022)\nCC2002:ART.1358-A:PAR.2:INC.II\to regime jurídico das incorporações imobiliárias de que trata o Capítulo I do Título II da Lei nº 4.591, de 16 de dezembro de 1964, equiparando-se o empreendedor ao incorporador quanto aos aspectos civis e registrários. (Incluído pela Lei nº 14.382, de 2022)\nCC2002:ART.1358-A:PAR.3\tPara fins de incorporação imobiliária, a implantação de toda a infraestrutura ficará a cargo do empreendedor. (Incluído pela Lei nº 13.465, de 2017) Disposições Gerais",
+   "source_snapshot_sha256": "3e8f94e733307ae1f74dec5bc25fc492c1cc68d4b11780109e1da1571f58edd9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1358-A:CAPUT",
+     "text": "Pode haver, em terrenos, partes designadas de lotes que são propriedade exclusiva e partes que são propriedade comum dos condôminos. (Incluído pela Lei nº 13.465, de 2017)"
+    },
+    {
+     "label": "CC2002:ART.1358-A:PAR.1",
+     "text": "A fração ideal de cada condômino poderá ser proporcional à área do solo de cada unidade autônoma, ao respectivo potencial construtivo ou a outros critérios indicados no ato de instituição. (Incluído pela Lei nº 13.465, de 2017)"
+    },
+    {
+     "label": "CC2002:ART.1358-A:PAR.2",
+     "text": "Aplica-se, no que couber, ao condomínio de lotes: (Redação dada pela Lei nº 14.382, de 2022)"
+    },
+    {
+     "label": "CC2002:ART.1358-A:PAR.2:INC.I",
+     "text": "o disposto sobre condomínio edilício neste Capítulo, respeitada a legislação urbanística; e (Incluído pela Lei nº 14.382, de 2022)"
+    },
+    {
+     "label": "CC2002:ART.1358-A:PAR.2:INC.II",
+     "text": "o regime jurídico das incorporações imobiliárias de que trata o Capítulo I do Título II da Lei nº 4.591, de 16 de dezembro de 1964, equiparando-se o empreendedor ao incorporador quanto aos aspectos civis e registrários. (Incluído pela Lei nº 14.382, de 2022)"
+    },
+    {
+     "label": "CC2002:ART.1358-A:PAR.3",
+     "text": "Para fins de incorporação imobiliária, a implantação de toda a infraestrutura ficará a cargo do empreendedor. (Incluído pela Lei nº 13.465, de 2017) Disposições Gerais"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 6 segmentos vigentes do dispositivo: Pode haver, em terrenos, partes designadas de lotes que são propriedade exclusiva e partes que são propriedade comum dos condôminos. (Incluído pela Lei nº 13.465, de 2017) | A fração ideal de cada condômino poderá ser proporcional à área do solo de cada unidade autônoma, ao respectivo potencial construtivo ou a outros critérios indicados no ato de instituição. (Incluído pela Lei nº 13.465, de 2017) | Aplica-se, no que couber, ao condomínio de lotes: (Redação dada pela Lei nº 14.382, de 2022) | o disposto sobre condomínio edilício neste Capítulo, respeitada a legislação urbanística; e (Incluído pela Lei nº 14.382, de 2022) | o regime jurídico das incorporações imobiliárias de que trata o Capítulo I do Título II da Lei nº 4.591, de 16 de dezembro de 1964, equiparando-se o empreendedor ao incorporador quanto aos aspectos civis e registrários. (Incluído pela Lei nº 14.382, de 2022) | Para fins de incorporação imobiliária, a implantação de toda a infraestrutura ficará a cargo do empreendedor. (Incluído pela Lei nº 13.465, de 2017) Disposições Gerais",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7166ec05722583ec65b72a8dbc7533390cb47adf0606fc4543e3ac3d8082c02a",
+     "o_que_significa": "a8e63fee21d71bdd7be4028aea239be4d783e656a057b966de76c36398452151",
+     "exemplo_pratico": "dbdab747281a0a2675c1d37694bbae547a1db65895cd5d0440556ebafa2ee9b8",
+     "atencao": "004fa3647db8e9f05f9e810d8c791b05bfc492760311f7be2de2c3e23d660c2c",
+     "palavras_dificeis": "681d04cda9a5f6aa58ed59fc9f201634de3a81b0f1411ff9149cd83ef8060d39"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O art. 1.358-A, § 2º, II, também aplica ao condomínio de lotes o regime das incorporações imobiliárias da Lei 4.591/1964, equipara o empreendedor ao incorporador nos aspectos civis e registrários, e o § 3º atribui ao empreendedor toda a infraestrutura.",
+   "finding": {
+    "target_id": "CC2002:ART.1358-A",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "aplicando-se regras edilícias e legislação urbanística",
+    "legal_basis": "O art. 1.358-A, § 2º, II, também aplica ao condomínio de lotes o regime das incorporações imobiliárias da Lei 4.591/1964, equipara o empreendedor ao incorporador nos aspectos civis e registrários, e o § 3º atribui ao empreendedor toda a infraestrutura.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_REGIME_ESPECIAL_E_RESPONSAVEL",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "Oculta regime legal relevante e o sujeito responsável pela implantação integral da infraestrutura.",
+    "correction_direction": "Incluir a aplicação do regime de incorporações, a equiparação do empreendedor e sua responsabilidade pela infraestrutura.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": 18,
+    "auditor": "wave04_201_325"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 224,
+   "target_id": "CC2002:ART.1358-E",
+   "explanation_id": "ENTENDA/CC2002:ART.1358-E/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1358-E:CAPUT\tCada fração de tempo é indivisível. (Incluído pela Lei nº 13.777, de 2018) (Vigência)\nCC2002:ART.1358-E:PAR.1\tO período correspondente a cada fração de tempo será de, no mínimo, 7 (sete) dias, seguidos ou intercalados, e poderá ser: (Incluído pela Lei nº 13.777, de 2018) (Vigência)\nCC2002:ART.1358-E:PAR.1:INC.I\tfixo e determinado, no mesmo período de cada ano; (Incluído pela Lei nº 13.777, de 2018) (Vigência)\nCC2002:ART.1358-E:PAR.1:INC.II\tflutuante, caso em que a determinação do período será realizada de forma periódica, mediante procedimento objetivo que respeite, em relação a todos os multiproprietários, o princípio da isonomia, devendo ser previamente divulgado; ou (Incluído pela Lei nº 13.777, de 2018) (Vigência)\nCC2002:ART.1358-E:PAR.1:INC.III\tmisto, combinando os sistemas fixo e flutuante. (Incluído pela Lei nº 13.777, de 2018) (Vigência)\nCC2002:ART.1358-E:PAR.2\tTodos os multiproprietários terão direito a uma mesma quantidade mínima de dias seguidos durante o ano, podendo haver a aquisição de frações maiores que a mínima, com o correspondente direito ao uso por períodos também maiores. (Incluído pela Lei nº 13.777, de 2018) (Vigência) Da Instituição da Multipropriedade",
+   "source_snapshot_sha256": "b3c4165ba1d6b0644f5a28fc6ea28859126c2fcd33b8b20d0d4d4d8aa0385a08",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1358-E:CAPUT",
+     "text": "Cada fração de tempo é indivisível. (Incluído pela Lei nº 13.777, de 2018) (Vigência)"
+    },
+    {
+     "label": "CC2002:ART.1358-E:PAR.1",
+     "text": "O período correspondente a cada fração de tempo será de, no mínimo, 7 (sete) dias, seguidos ou intercalados, e poderá ser: (Incluído pela Lei nº 13.777, de 2018) (Vigência)"
+    },
+    {
+     "label": "CC2002:ART.1358-E:PAR.1:INC.I",
+     "text": "fixo e determinado, no mesmo período de cada ano; (Incluído pela Lei nº 13.777, de 2018) (Vigência)"
+    },
+    {
+     "label": "CC2002:ART.1358-E:PAR.1:INC.II",
+     "text": "flutuante, caso em que a determinação do período será realizada de forma periódica, mediante procedimento objetivo que respeite, em relação a todos os multiproprietários, o princípio da isonomia, devendo ser previamente divulgado; ou (Incluído pela Lei nº 13.777, de 2018) (Vigência)"
+    },
+    {
+     "label": "CC2002:ART.1358-E:PAR.1:INC.III",
+     "text": "misto, combinando os sistemas fixo e flutuante. (Incluído pela Lei nº 13.777, de 2018) (Vigência)"
+    },
+    {
+     "label": "CC2002:ART.1358-E:PAR.2",
+     "text": "Todos os multiproprietários terão direito a uma mesma quantidade mínima de dias seguidos durante o ano, podendo haver a aquisição de frações maiores que a mínima, com o correspondente direito ao uso por períodos também maiores. (Incluído pela Lei nº 13.777, de 2018) (Vigência) Da Instituição da Multipropriedade"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 6 segmentos vigentes do dispositivo: Cada fração de tempo é indivisível. (Incluído pela Lei nº 13.777, de 2018) (Vigência) | O período correspondente a cada fração de tempo será de, no mínimo, 7 (sete) dias, seguidos ou intercalados, e poderá ser: (Incluído pela Lei nº 13.777, de 2018) (Vigência) | fixo e determinado, no mesmo período de cada ano; (Incluído pela Lei nº 13.777, de 2018) (Vigência) | flutuante, caso em que a determinação do período será realizada de forma periódica, mediante procedimento objetivo que respeite, em relação a todos os multiproprietários, o princípio da isonomia, devendo ser previamente divulgado; ou (Incluído pela Lei nº 13.777, de 2018) (Vigência) | misto, combinando os sistemas fixo e flutuante. (Incluído pela Lei nº 13.777, de 2018) (Vigência) | Todos os multiproprietários terão direito a uma mesma quantidade mínima de dias seguidos durante o ano, podendo haver a aquisição de frações maiores que a mínima, com o correspondente direito ao uso por períodos também maiores. (Incluído pela Lei nº 13.777, de 2018) (Vigência) Da Instituição da Multipropriedade",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9d59b2398a13c199aecd441961e54c1b297b3371b050def53e1d1a6e043670ad",
+     "o_que_significa": "e2f9843064a733648a8254fc84791800b1946a6ab5ec95d2ab379eff0d837f7b",
+     "exemplo_pratico": "7e1f69a2759b14cd250c1da45842d9d6c3693f72939714c63f8bcd5e7e455d0f",
+     "atencao": "e1b1337c7d03ddf532d0ce4103a77b893657870b7bbd1f662f1193588dbad551",
+     "palavras_dificeis": "b4888e7c4231a8b10a387b3fb5fe6ebf08ac75969a9c63342f60481547f25c03"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 6 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Cada fração de tempo é indivisível. (Incluído pela Lei nº 13.777, de 2018) (Vigência); não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 225,
+   "target_id": "CC2002:ART.1358-G",
+   "explanation_id": "ENTENDA/CC2002:ART.1358-G/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1358-G:CAPUT\tAlém das cláusulas que os multiproprietários decidirem estipular, a convenção de condomínio em multipropriedade determinará: (Incluído pela Lei nº 13.777, de 2018) (Vigência)\nCC2002:ART.1358-G:INC.I\tos poderes e deveres dos multiproprietários, especialmente em matéria de instalações, equipamentos e mobiliário do imóvel, de manutenção ordinária e extraordinária, de conservação e limpeza e de pagamento da contribuição condominial; (Incluído pela Lei nº 13.777, de 2018) (Vigência)\nCC2002:ART.1358-G:INC.II\to número máximo de pessoas que podem ocupar simultaneamente o imóvel no período correspondente a cada fração de tempo; (Incluído pela Lei nº 13.777, de 2018) (Vigência)\nCC2002:ART.1358-G:INC.III\tas regras de acesso do administrador condominial ao imóvel para cumprimento do dever de manutenção, conservação e limpeza; (Incluído pela Lei nº 13.777, de 2018) (Vigência)\nCC2002:ART.1358-G:INC.IV\ta criação de fundo de reserva para reposição e manutenção dos equipamentos, instalações e mobiliário; (Incluído pela Lei nº 13.777, de 2018) (Vigência)\nCC2002:ART.1358-G:INC.V\to regime aplicável em caso de perda ou destruição parcial ou total do imóvel, inclusive para efeitos de participação no risco ou no valor do seguro, da indenização ou da parte restante; (Incluído pela Lei nº 13.777, de 2018) (Vigência)\nCC2002:ART.1358-G:INC.VI\tas multas aplicáveis ao multiproprietário nas hipóteses de descumprimento de deveres. (Incluído pela Lei nº 13.777, de 2018) (Vigência)",
+   "source_snapshot_sha256": "2f77f304d85c30ee0352fd89e30b74ce0512f44b6e1d404e61eac11bae24dd04",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1358-G:CAPUT",
+     "text": "Além das cláusulas que os multiproprietários decidirem estipular, a convenção de condomínio em multipropriedade determinará: (Incluído pela Lei nº 13.777, de 2018) (Vigência)"
+    },
+    {
+     "label": "CC2002:ART.1358-G:INC.I",
+     "text": "os poderes e deveres dos multiproprietários, especialmente em matéria de instalações, equipamentos e mobiliário do imóvel, de manutenção ordinária e extraordinária, de conservação e limpeza e de pagamento da contribuição condominial; (Incluído pela Lei nº 13.777, de 2018) (Vigência)"
+    },
+    {
+     "label": "CC2002:ART.1358-G:INC.II",
+     "text": "o número máximo de pessoas que podem ocupar simultaneamente o imóvel no período correspondente a cada fração de tempo; (Incluído pela Lei nº 13.777, de 2018) (Vigência)"
+    },
+    {
+     "label": "CC2002:ART.1358-G:INC.III",
+     "text": "as regras de acesso do administrador condominial ao imóvel para cumprimento do dever de manutenção, conservação e limpeza; (Incluído pela Lei nº 13.777, de 2018) (Vigência)"
+    },
+    {
+     "label": "CC2002:ART.1358-G:INC.IV",
+     "text": "a criação de fundo de reserva para reposição e manutenção dos equipamentos, instalações e mobiliário; (Incluído pela Lei nº 13.777, de 2018) (Vigência)"
+    },
+    {
+     "label": "CC2002:ART.1358-G:INC.V",
+     "text": "o regime aplicável em caso de perda ou destruição parcial ou total do imóvel, inclusive para efeitos de participação no risco ou no valor do seguro, da indenização ou da parte restante; (Incluído pela Lei nº 13.777, de 2018) (Vigência)"
+    },
+    {
+     "label": "CC2002:ART.1358-G:INC.VI",
+     "text": "as multas aplicáveis ao multiproprietário nas hipóteses de descumprimento de deveres. (Incluído pela Lei nº 13.777, de 2018) (Vigência)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 7 segmentos vigentes do dispositivo: Além das cláusulas que os multiproprietários decidirem estipular, a convenção de condomínio em multipropriedade determinará: (Incluído pela Lei nº 13.777, de 2018) (Vigência) | os poderes e deveres dos multiproprietários, especialmente em matéria de instalações, equipamentos e mobiliário do imóvel, de manutenção ordinária e extraordinária, de conservação e limpeza e de pagamento da contribuição condominial; (Incluído pela Lei nº 13.777, de 2018) (Vigência) | o número máximo de pessoas que podem ocupar simultaneamente o imóvel no período correspondente a cada fração de tempo; (Incluído pela Lei nº 13.777, de 2018) (Vigência) | as regras de acesso do administrador condominial ao imóvel para cumprimento do dever de manutenção, conservação e limpeza; (Incluído pela Lei nº 13.777, de 2018) (Vigência) | a criação de fundo de reserva para reposição e manutenção dos equipamentos, instalações e mobiliário; (Incluído pela Lei nº 13.777, de 2018) (Vigência) | o regime aplicável em caso de perda ou destruição parcial ou total do imóvel, inclusive para efeitos de participação no risco ou no valor do seguro, da indenização ou da parte restante; (Incluído pela Lei nº 13.777, de 2018) (Vigência) | as multas aplicáveis ao multiproprietário nas hipóteses de descumprimento de deveres. (Incluído pela Lei nº 13.777, de 2018) (Vigência)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d334c07869b3763f89199693fda900a6354508296edacbc1e56e978055937d98",
+     "o_que_significa": "ec2abf3728da53ee2af16122b6b4408582b6ef558921e66fdc995c2c761a5b4e",
+     "exemplo_pratico": "c7adfdb2aec5fc7052cef0090cbe45bb4fc8706bf1b9172aad2803bd36b32d59",
+     "atencao": "046ab9c59ef8ed39c1b8ad176fadced5d73bb8c3f048909f87196e45da0ffa59",
+     "palavras_dificeis": "b9bac982033691f9ce2e4b7aede704895e43978aca55271ff1c8d90c0b86dc2f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 7 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Além das cláusulas que os multiproprietários decidirem estipular, a convenção de condomínio em multipropriedade determinará: (Incluído pela Lei nº 13.777, de 2018) (Vigência); não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  }
+ ]
+}
