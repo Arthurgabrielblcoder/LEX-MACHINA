@@ -1,0 +1,675 @@
+{
+ "schema_version": 1,
+ "mission": "QA-05",
+ "checkpoint": "CP11-A",
+ "as_of": "2026-11-13",
+ "status": "INDEPENDENT_REVALIDATION_COMPLETE",
+ "source": "QA05_EDITORIAL_A_CRITICAL_HIGH_12.json",
+ "source_sha256": "ebf07418cfc80859ebd9fe9b41935286f7772ab09fdfaeb457f65ee086294816",
+ "cross_audit_source": "QA05_CROSS_AUDIT_1101_1105.json",
+ "cross_audit_sha256": "37564755c45809a7d86829285b9bf11d1a8592291a464f5f27726d4616c9419a",
+ "total": 12,
+ "decision_counts": {
+  "CONFIRMED_CORRECTED": 12
+ },
+ "reviewer": "qa05_editor_c_as_independent_reviewer",
+ "independence_declaration": {
+  "editor_identifier": "qa05_editor_critical_a",
+  "reviewer_identifier": "qa05_editor_c_as_independent_reviewer",
+  "same_person_or_agent": false,
+  "editorial_file_modified_by_reviewer": false
+ },
+ "new_neighbor_findings": [
+  {
+   "target_id": "CC2002:ART.1104",
+   "problematic_field": "o_que_significa; exemplo_pratico",
+   "problematic_excerpt": "tarefas abrangem publicidade, apuração patrimonial, realização do ativo; apresenta balanço anual",
+   "legal_basis": "O art. 1.104 limita-se a submeter obrigações e responsabilidade do liquidante aos preceitos próprios dos administradores; os deveres operacionais e a prestação semestral pertencem ao art. 1.103.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "DESLOCAMENTO_DE_CONTEUDO_DO_ARTIGO_VIZINHO_E_PERIODICIDADE_INCORRETA",
+   "severity": "ALTO",
+   "legal_or_pedagogical_consequence": "O leitor não recebe a regra de equiparação de responsabilidade e pode atribuir ao art. 1.104 deveres e periodicidade de outro dispositivo.",
+   "correction_direction": "Reconstruir significado e exemplo a partir da equiparação ao regime dos administradores, sem importar lista de deveres do art. 1.103.",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "origin": "QA05_CROSS_AUDIT_1101_1105"
+  }
+ ],
+ "records": [
+  {
+   "target_id": "CC2002:ART.964",
+   "severity": "ALTO",
+   "decision": "CONFIRMED_CORRECTED",
+   "rationale": "A proposta especifica o período locatício e a precedência do salário do trabalhador agrícola sobre o produto da colheita inclusive diante de crédito real, sem misturar os objetos dos nove incisos.",
+   "checks": {
+    "o_que_diz": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "o_que_significa": {
+     "status": "PASS",
+     "rationale": "Campo preservado e compatível com a correção."
+    },
+    "exemplo_pratico": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "atencao": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "palavras_dificeis": {
+     "status": "PASS",
+     "rationale": "Campo preservado e compatível com a correção."
+    },
+    "official_text_copy_guard": {
+     "status": "PASS",
+     "matching_11_word_ngrams": {
+      "o_que_diz": 0,
+      "exemplo_pratico": 0,
+      "atencao": 0
+     }
+    },
+    "no_content_displacement": {
+     "status": "PASS",
+     "rationale": "Conteúdo proposto corresponde ao próprio target; a auditoria cruzada separou o novo achado do art. 1.104."
+    },
+    "cross_audit_1101_1105": {
+     "status": "NOT_APPLICABLE",
+     "rationale": "Target fora do intervalo dirigido."
+    }
+   },
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "reviewer": "qa05_editor_c_as_independent_reviewer",
+   "independence_declaration": "O revisor não redigiu o módulo A e conferiu finding, dispositivo, subdivisões, baseline e cinco campos."
+  },
+  {
+   "target_id": "CC2002:ART.965",
+   "severity": "ALTO",
+   "decision": "CONFIRMED_CORRECTED",
+   "rationale": "Os quatro períodos foram diferenciados: semestre para doença e salários domésticos, trimestre para mantença e ano corrente mais anterior para impostos, preservando a ordem dos demais privilégios.",
+   "checks": {
+    "o_que_diz": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "o_que_significa": {
+     "status": "PASS",
+     "rationale": "Campo preservado e compatível com a correção."
+    },
+    "exemplo_pratico": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "atencao": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "palavras_dificeis": {
+     "status": "PASS",
+     "rationale": "Campo preservado e compatível com a correção."
+    },
+    "official_text_copy_guard": {
+     "status": "PASS",
+     "matching_11_word_ngrams": {
+      "o_que_diz": 0,
+      "exemplo_pratico": 0,
+      "atencao": 0
+     }
+    },
+    "no_content_displacement": {
+     "status": "PASS",
+     "rationale": "Conteúdo proposto corresponde ao próprio target; a auditoria cruzada separou o novo achado do art. 1.104."
+    },
+    "cross_audit_1101_1105": {
+     "status": "NOT_APPLICABLE",
+     "rationale": "Target fora do intervalo dirigido."
+    }
+   },
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "reviewer": "qa05_editor_c_as_independent_reviewer",
+   "independence_declaration": "O revisor não redigiu o módulo A e conferiu finding, dispositivo, subdivisões, baseline e cinco campos."
+  },
+  {
+   "target_id": "CC2002:ART.1102",
+   "severity": "CRÍTICO",
+   "decision": "CONFIRMED_CORRECTED",
+   "rationale": "A proposta trata somente da disciplina da liquidação, das ressalvas do ato constitutivo ou instrumento de dissolução e da averbação necessária ao liquidante não administrador. Não transporta deveres do art. 1.103 nem regras de escolha do art. 1.038.",
+   "checks": {
+    "o_que_diz": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "o_que_significa": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "exemplo_pratico": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "atencao": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "palavras_dificeis": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "official_text_copy_guard": {
+     "status": "PASS",
+     "matching_11_word_ngrams": {
+      "o_que_diz": 0,
+      "o_que_significa": 0,
+      "exemplo_pratico": 0,
+      "atencao": 0
+     }
+    },
+    "no_content_displacement": {
+     "status": "PASS",
+     "rationale": "Conteúdo proposto corresponde ao próprio target; a auditoria cruzada separou o novo achado do art. 1.104."
+    },
+    "cross_audit_1101_1105": {
+     "status": "PASS_WITH_SEPARATE_NEW_FINDING",
+     "rationale": "Arts. 1.101 e 1.105 permanecem distintos; achado novo do art. 1.104 foi documentado fora do escopo editorial."
+    }
+   },
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "reviewer": "qa05_editor_c_as_independent_reviewer",
+   "independence_declaration": "O revisor não redigiu o módulo A e conferiu finding, dispositivo, subdivisões, baseline e cinco campos."
+  },
+  {
+   "target_id": "CC2002:ART.1103",
+   "severity": "CRÍTICO",
+   "decision": "CONFIRMED_CORRECTED",
+   "rationale": "A versão revisada cobre os nove incisos e o parágrafo único: inclui publicidade, arrecadação, inventário e balanço em quinze dias, realização do ativo e pagamento do passivo, integralização e aportes com repartição proporcional entre solventes da parcela do insolvente, contas semestrais, providências concursais, contas finais, averbação do encerramento e uso da cláusula “em liquidação”. Não desloca regras de nomeação.",
+   "checks": {
+    "o_que_diz": {
+     "status": "PASS",
+     "rationale": "Campo revisado cobre o inciso V, inclusive a repartição proporcional da parcela do quotista insolvente entre os solventes."
+    },
+    "o_que_significa": {
+     "status": "PASS",
+     "rationale": "Campo revisado cobre o inciso V, inclusive a repartição proporcional da parcela do quotista insolvente entre os solventes."
+    },
+    "exemplo_pratico": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "atencao": {
+     "status": "PASS",
+     "rationale": "Campo revisado cobre o inciso V, inclusive a repartição proporcional da parcela do quotista insolvente entre os solventes."
+    },
+    "palavras_dificeis": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "official_text_copy_guard": {
+     "status": "PASS",
+     "matching_11_word_ngrams": {
+      "o_que_diz": 0,
+      "o_que_significa": 0,
+      "exemplo_pratico": 0,
+      "atencao": 0
+     }
+    },
+    "no_content_displacement": {
+     "status": "PASS",
+     "rationale": "Conteúdo proposto corresponde ao próprio target; a auditoria cruzada separou o novo achado do art. 1.104."
+    },
+    "cross_audit_1101_1105": {
+     "status": "PASS_WITH_SEPARATE_NEW_FINDING",
+     "rationale": "Arts. 1.101 e 1.105 permanecem distintos; achado novo do art. 1.104 foi documentado fora do escopo editorial."
+    }
+   },
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "reviewer": "qa05_editor_c_as_independent_reviewer",
+   "independence_declaration": "O revisor não redigiu o módulo A e conferiu finding, dispositivo, subdivisões, baseline e cinco campos.",
+   "proposed_content_sha256": "88b2b09b29850484f29b74938656d5d9138923c2824c486d5ee8cfff857c4aed"
+  },
+  {
+   "target_id": "CC2002:ART.1177",
+   "severity": "ALTO",
+   "decision": "CONFIRMED_CORRECTED",
+   "rationale": "A redação distingue corretamente efeitos dos assentos, responsabilidade pessoal perante o preponente por culpa e solidariedade perante terceiros por dolo.",
+   "checks": {
+    "o_que_diz": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "o_que_significa": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "exemplo_pratico": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "atencao": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "palavras_dificeis": {
+     "status": "PASS",
+     "rationale": "Campo preservado e compatível com a correção."
+    },
+    "official_text_copy_guard": {
+     "status": "PASS",
+     "matching_11_word_ngrams": {
+      "o_que_diz": 0,
+      "o_que_significa": 0,
+      "exemplo_pratico": 0,
+      "atencao": 0
+     }
+    },
+    "no_content_displacement": {
+     "status": "PASS",
+     "rationale": "Conteúdo proposto corresponde ao próprio target; a auditoria cruzada separou o novo achado do art. 1.104."
+    },
+    "cross_audit_1101_1105": {
+     "status": "NOT_APPLICABLE",
+     "rationale": "Target fora do intervalo dirigido."
+    }
+   },
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "reviewer": "qa05_editor_c_as_independent_reviewer",
+   "independence_declaration": "O revisor não redigiu o módulo A e conferiu finding, dispositivo, subdivisões, baseline e cinco campos."
+  },
+  {
+   "target_id": "CC2002:ART.1250",
+   "severity": "ALTO",
+   "decision": "CONFIRMED_CORRECTED",
+   "rationale": "A proposta elimina a regra artificial alheia, preserva a aluvião natural sem indenização e divide a faixa entre ribeirinhos conforme a testada na margem antiga.",
+   "checks": {
+    "o_que_diz": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "o_que_significa": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "exemplo_pratico": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "atencao": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "palavras_dificeis": {
+     "status": "PASS",
+     "rationale": "Campo preservado e compatível com a correção."
+    },
+    "official_text_copy_guard": {
+     "status": "PASS",
+     "matching_11_word_ngrams": {
+      "o_que_diz": 0,
+      "o_que_significa": 0,
+      "exemplo_pratico": 0,
+      "atencao": 0
+     }
+    },
+    "no_content_displacement": {
+     "status": "PASS",
+     "rationale": "Conteúdo proposto corresponde ao próprio target; a auditoria cruzada separou o novo achado do art. 1.104."
+    },
+    "cross_audit_1101_1105": {
+     "status": "NOT_APPLICABLE",
+     "rationale": "Target fora do intervalo dirigido."
+    }
+   },
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "reviewer": "qa05_editor_c_as_independent_reviewer",
+   "independence_declaration": "O revisor não redigiu o módulo A e conferiu finding, dispositivo, subdivisões, baseline e cinco campos."
+  },
+  {
+   "target_id": "CC2002:ART.1267",
+   "severity": "ALTO",
+   "decision": "CONFIRMED_CORRECTED",
+   "rationale": "As três formas de tradição presumida estão individualizadas: constituto possessório, cessão da restituição de coisa com terceiro e posse anterior do adquirente.",
+   "checks": {
+    "o_que_diz": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "o_que_significa": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "exemplo_pratico": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "atencao": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "palavras_dificeis": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "official_text_copy_guard": {
+     "status": "PASS",
+     "matching_11_word_ngrams": {
+      "o_que_diz": 0,
+      "o_que_significa": 0,
+      "exemplo_pratico": 0,
+      "atencao": 0
+     }
+    },
+    "no_content_displacement": {
+     "status": "PASS",
+     "rationale": "Conteúdo proposto corresponde ao próprio target; a auditoria cruzada separou o novo achado do art. 1.104."
+    },
+    "cross_audit_1101_1105": {
+     "status": "NOT_APPLICABLE",
+     "rationale": "Target fora do intervalo dirigido."
+    }
+   },
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "reviewer": "qa05_editor_c_as_independent_reviewer",
+   "independence_declaration": "O revisor não redigiu o módulo A e conferiu finding, dispositivo, subdivisões, baseline e cinco campos."
+  },
+  {
+   "target_id": "CC2002:ART.1285",
+   "severity": "ALTO",
+   "decision": "CONFIRMED_CORRECTED",
+   "rationale": "A proposta distingue encravamento comum da alienação parcial, atribui passagem à outra parcela e exonera o antigo vizinho de nova passagem.",
+   "checks": {
+    "o_que_diz": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "o_que_significa": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "exemplo_pratico": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "atencao": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "palavras_dificeis": {
+     "status": "PASS",
+     "rationale": "Campo preservado e compatível com a correção."
+    },
+    "official_text_copy_guard": {
+     "status": "PASS",
+     "matching_11_word_ngrams": {
+      "o_que_diz": 0,
+      "o_que_significa": 0,
+      "exemplo_pratico": 0,
+      "atencao": 0
+     }
+    },
+    "no_content_displacement": {
+     "status": "PASS",
+     "rationale": "Conteúdo proposto corresponde ao próprio target; a auditoria cruzada separou o novo achado do art. 1.104."
+    },
+    "cross_audit_1101_1105": {
+     "status": "NOT_APPLICABLE",
+     "rationale": "Target fora do intervalo dirigido."
+    }
+   },
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "reviewer": "qa05_editor_c_as_independent_reviewer",
+   "independence_declaration": "O revisor não redigiu o módulo A e conferiu finding, dispositivo, subdivisões, baseline e cinco campos."
+  },
+  {
+   "target_id": "CC2002:ART.1286",
+   "severity": "ALTO",
+   "decision": "CONFIRMED_CORRECTED",
+   "rationale": "Foram preservados indenização e pressupostos, com instalação menos gravosa e remoção posterior para outro ponto custeada pelo proprietário prejudicado que a requer.",
+   "checks": {
+    "o_que_diz": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "o_que_significa": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "exemplo_pratico": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "atencao": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "palavras_dificeis": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "official_text_copy_guard": {
+     "status": "PASS",
+     "matching_11_word_ngrams": {
+      "o_que_diz": 0,
+      "o_que_significa": 0,
+      "exemplo_pratico": 0,
+      "atencao": 0
+     }
+    },
+    "no_content_displacement": {
+     "status": "PASS",
+     "rationale": "Conteúdo proposto corresponde ao próprio target; a auditoria cruzada separou o novo achado do art. 1.104."
+    },
+    "cross_audit_1101_1105": {
+     "status": "NOT_APPLICABLE",
+     "rationale": "Target fora do intervalo dirigido."
+    }
+   },
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "reviewer": "qa05_editor_c_as_independent_reviewer",
+   "independence_declaration": "O revisor não redigiu o módulo A e conferiu finding, dispositivo, subdivisões, baseline e cinco campos."
+  },
+  {
+   "target_id": "CC2002:ART.1297",
+   "severity": "ALTO",
+   "decision": "CONFIRMED_CORRECTED",
+   "rationale": "A correção separa despesas proporcionais de demarcação, contribuição igual conforme costume, acordo para cortar plantas divisórias e custo exclusivo do tapume especial por quem criou a necessidade.",
+   "checks": {
+    "o_que_diz": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "o_que_significa": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "exemplo_pratico": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "atencao": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "palavras_dificeis": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "official_text_copy_guard": {
+     "status": "PASS",
+     "matching_11_word_ngrams": {
+      "o_que_diz": 0,
+      "o_que_significa": 0,
+      "exemplo_pratico": 0,
+      "atencao": 0
+     }
+    },
+    "no_content_displacement": {
+     "status": "PASS",
+     "rationale": "Conteúdo proposto corresponde ao próprio target; a auditoria cruzada separou o novo achado do art. 1.104."
+    },
+    "cross_audit_1101_1105": {
+     "status": "NOT_APPLICABLE",
+     "rationale": "Target fora do intervalo dirigido."
+    }
+   },
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "reviewer": "qa05_editor_c_as_independent_reviewer",
+   "independence_declaration": "O revisor não redigiu o módulo A e conferiu finding, dispositivo, subdivisões, baseline e cinco campos."
+  },
+  {
+   "target_id": "CC2002:ART.1305",
+   "severity": "ALTO",
+   "decision": "CONFIRMED_CORRECTED",
+   "rationale": "A proposta acrescenta caução prévia quando a parede exclusiva não suporta travejamento e o vizinho pretende assentar alicerce junto dela.",
+   "checks": {
+    "o_que_diz": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "o_que_significa": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "exemplo_pratico": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "atencao": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "palavras_dificeis": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "official_text_copy_guard": {
+     "status": "PASS",
+     "matching_11_word_ngrams": {
+      "o_que_diz": 0,
+      "o_que_significa": 0,
+      "exemplo_pratico": 0,
+      "atencao": 0
+     }
+    },
+    "no_content_displacement": {
+     "status": "PASS",
+     "rationale": "Conteúdo proposto corresponde ao próprio target; a auditoria cruzada separou o novo achado do art. 1.104."
+    },
+    "cross_audit_1101_1105": {
+     "status": "NOT_APPLICABLE",
+     "rationale": "Target fora do intervalo dirigido."
+    }
+   },
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "reviewer": "qa05_editor_c_as_independent_reviewer",
+   "independence_declaration": "O revisor não redigiu o módulo A e conferiu finding, dispositivo, subdivisões, baseline e cinco campos."
+  },
+  {
+   "target_id": "CC2002:ART.1339",
+   "severity": "ALTO",
+   "decision": "CONFIRMED_CORRECTED",
+   "rationale": "A redação separa transferência de acessório a condômino e os requisitos cumulativos de autorização constitutiva e ausência de oposição assemblear para terceiro.",
+   "checks": {
+    "o_que_diz": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "o_que_significa": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "exemplo_pratico": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "atencao": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "palavras_dificeis": {
+     "status": "PASS",
+     "rationale": "Campo alterado cotejado com todas as subdivisões e coerente com o target."
+    },
+    "official_text_copy_guard": {
+     "status": "PASS",
+     "matching_11_word_ngrams": {
+      "o_que_diz": 0,
+      "o_que_significa": 0,
+      "exemplo_pratico": 0,
+      "atencao": 0
+     }
+    },
+    "no_content_displacement": {
+     "status": "PASS",
+     "rationale": "Conteúdo proposto corresponde ao próprio target; a auditoria cruzada separou o novo achado do art. 1.104."
+    },
+    "cross_audit_1101_1105": {
+     "status": "NOT_APPLICABLE",
+     "rationale": "Target fora do intervalo dirigido."
+    }
+   },
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "reviewer": "qa05_editor_c_as_independent_reviewer",
+   "independence_declaration": "O revisor não redigiu o módulo A e conferiu finding, dispositivo, subdivisões, baseline e cinco campos."
+  }
+ ]
+}
