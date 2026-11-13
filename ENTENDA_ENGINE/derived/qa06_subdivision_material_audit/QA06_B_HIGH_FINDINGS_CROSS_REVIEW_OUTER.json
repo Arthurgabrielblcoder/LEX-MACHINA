@@ -1,0 +1,638 @@
+{
+ "schema_version": 1,
+ "mission": "QA-06-FRONT-B-CROSS-REVIEW",
+ "as_of": "2026-11-13",
+ "status": "OUTER_HIGH_FINDINGS_INDEPENDENT_CROSS_REVIEW_COMPLETE",
+ "inventory": {
+  "file": "QA06_SUBDIVISION_INVENTORY_V2_CORRECTED.json",
+  "sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82"
+ },
+ "baseline": {
+  "file": "derived/candidate_qa05_cc_001_2046/CC2002_QA05.entenda.jsonl",
+  "sha256": "2bf21e8333b584130a3159a240a96d5225958a53821971a184285ecc222a082f"
+ },
+ "source_modules": {
+  "QA06_B_FINDINGS_V2_0001_0672.json": {
+   "sha256": "892a7afb7f10254f8ed3c935c17a948c0cba0d11342571b9c3572373040f31d2",
+   "total": 19
+  },
+  "QA06_B_FINDINGS_V2_1345_2017.json": {
+   "sha256": "187e3ac2c140ff4eefa8abf6c1a8d34d7b0e14e6877746fc536f93f7d33c4f9e",
+   "total": 660
+  }
+ },
+ "source_high_total": 18,
+ "decision_counts": {
+  "CONFIRMED_FINDING": 12,
+  "DOWNGRADE_MEDIO": 3,
+  "REJECTED_FALSE_POSITIVE": 3
+ },
+ "final_severity_counts": {
+  "ALTO": 12,
+  "MÉDIO": 3,
+  "NONE": 3
+ },
+ "confirmed_or_downgraded_findings": 15,
+ "rejected_false_positives": 3,
+ "independence_declaration": {
+  "reviewer_did_not_author_source_modules": true,
+  "source_classification_not_used_as_automatic_proof": true,
+  "each_high_finding_rechecked_against_v2_and_qa05": true
+ },
+ "records": [
+  {
+   "target_id": "CC2002:ART.39",
+   "audit_position": 39,
+   "subdivision_id": "CC2002:ART.39:PAR.UNICO",
+   "source_module": "QA06_B_FINDINGS_V2_0001_0672.json",
+   "source_classification": "PARCIAL",
+   "source_severity": "ALTO",
+   "decision": "CONFIRMED_FINDING",
+   "final_severity": "ALTO",
+   "rationale": "A explicação menciona apenas a transferência a ente público, mas omite a regra territorial que define o destinatário: Município ou Distrito Federal conforme a circunscrição e União em território federal. A omissão pode indicar ente dominial errado.",
+   "confidence": "ALTA",
+   "legal_text": "Se, nos dez anos a que se refere este artigo, o ausente não regressar, e nenhum interessado promover a sucessão definitiva, os bens arrecadados passarão ao domínio do Município ou do Distrito Federal, se localizados nas respectivas circunscrições, incorporando-se ao domínio da União, quando situados em território federal.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Se o ausente, descendente ou ascendente regressar nos dez anos posteriores à sucessão definitiva, recebe os bens existentes no estado em que se acharem, os bens sub-rogados em seu lugar ou o preço que herdeiros e interessados receberam pelos bens alienados.",
+    "o_que_significa": "O retorno tardio não recompõe integralmente o acervo; terminado o período sem retorno nem promoção sucessória, os bens arrecadados passam ao ente público indicado no artigo.",
+    "exemplo_pratico": "Ausente volta e recebe o imóvel remanescente, sem exigir bem já alienado além do substituto ou preço previsto na regra.",
+    "atencao": "O texto não inclui todo herdeiro necessário: menciona especificamente o ausente, seus descendentes e seus ascendentes.",
+    "palavras_dificeis": [
+     {
+      "termo": "sub-rogação",
+      "explicacao": "substituição de um bem por outro que assume sua posição jurídica"
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": true
+  },
+  {
+   "target_id": "CC2002:ART.49-A",
+   "audit_position": 51,
+   "subdivision_id": "CC2002:ART.49-A:PAR.UNICO",
+   "source_module": "QA06_B_FINDINGS_V2_0001_0672.json",
+   "source_classification": "PARCIAL",
+   "source_severity": "ALTO",
+   "decision": "DOWNGRADE_MEDIO",
+   "final_severity": "MÉDIO",
+   "rationale": "A separação patrimonial e a alocação lícita de riscos estão explicadas. Faltam segregação de riscos e as finalidades legislativas de estímulo a empreendimentos, emprego, tributo, renda e inovação; são elementos expressos relevantes, mas a regra operacional central não foi invertida.",
+   "confidence": "ALTA",
+   "legal_text": "A autonomia patrimonial das pessoas jurídicas é um instrumento lícito de alocação e segregação de riscos, estabelecido pela lei com a finalidade de estimular empreendimentos, para a geração de empregos, tributo, renda e inovação em benefício de todos.",
+   "baseline_entenda_content": {
+    "o_que_diz": "A pessoa jurídica não se confunde com sócios, associados, instituidores ou administradores, e a autonomia patrimonial é instrumento lícito de alocação de riscos.",
+    "o_que_significa": "Bens e dívidas pertencem, em regra, à própria entidade, permitindo atividade organizada sem mistura automática com patrimônios pessoais.",
+    "exemplo_pratico": "Dívida contratual da sociedade não é cobrada do sócio apenas porque ele participa do capital.",
+    "atencao": "A separação não protege fraude ou abuso; hipóteses legais de responsabilização permanecem.",
+    "palavras_dificeis": [
+     {
+      "termo": "autonomia patrimonial",
+      "explicacao": "separação entre patrimônio da entidade e patrimônio de seus integrantes"
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": true
+  },
+  {
+   "target_id": "CC2002:ART.206",
+   "audit_position": 207,
+   "subdivision_id": "CC2002:ART.206:PAR.3:INC.IX",
+   "source_module": "QA06_B_FINDINGS_V2_0001_0672.json",
+   "source_classification": "PARCIAL",
+   "source_severity": "ALTO",
+   "decision": "CONFIRMED_FINDING",
+   "final_severity": "ALTO",
+   "rationale": "A explicação situa genericamente o seguro obrigatório no prazo de três anos, porém não identifica as duas pretensões protegidas: beneficiário contra segurador e terceiro prejudicado no seguro obrigatório de responsabilidade civil. A omissão pode impedir o leitor de reconhecer a incidência do prazo.",
+   "confidence": "ALTA",
+   "legal_text": "a pretensão do beneficiário contra o segurador, e a do terceiro prejudicado, no caso de seguro de responsabilidade civil obrigatório.",
+   "baseline_entenda_content": {
+    "o_que_diz": "O artigo fixa prazos especiais de um, dois, três, quatro e cinco anos para pretensões expressamente enumeradas.",
+    "o_que_significa": "Em um ano estão, entre outras, hospedagem e alimentos consumidos no estabelecimento, emolumentos de auxiliares e peritos e créditos ligados ao encerramento de sociedade; o antigo inciso de seguro do § 1º foi revogado. Em dois anos prescrevem prestações alimentares vencidas. Em três anos entram aluguéis, rendas, juros e dividendos periódicos, enriquecimento sem causa, reparação civil, lucros de má-fé, certas responsabilidades societárias, títulos de crédito e seguro obrigatório. Em quatro anos, pretensão relativa à tutela. Em cinco anos, dívida líquida documentada, honorários profissionais e despesas judiciais do vencedor.",
+    "exemplo_pratico": "Cobrança de dívida líquida constante de contrato particular sujeita-se, em regra, ao prazo de cinco anos.",
+    "atencao": "Cada prazo depende da qualificação exata da pretensão e do marco inicial próprio. O § 1º, II, está revogado desde a vigência da Lei 15.040/2024 e não deve ser usado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prazo especial",
+      "explicacao": "período prescricional definido para uma categoria específica de pretensão"
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": true
+  },
+  {
+   "target_id": "CC2002:ART.1389",
+   "audit_position": 1373,
+   "subdivision_id": "CC2002:ART.1389:INC.III",
+   "source_module": "QA06_B_FINDINGS_V2_1345_2017.json",
+   "source_classification": "AUSENTE",
+   "source_severity": "ALTO",
+   "decision": "CONFIRMED_FINDING",
+   "final_severity": "ALTO",
+   "rationale": "A expressão 'desuso prolongado' não preserva o requisito objetivo de dez anos contínuos. Prazo e continuidade são elementos constitutivos da causa de extinção da servidão.",
+   "confidence": "ALTA",
+   "legal_text": "pelo não uso, durante dez anos contínuos.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Outras causas legais extinguem a servidão e autorizam o proprietário onerado a pedir cancelamento mediante prova.",
+    "o_que_significa": "Confusão, supressão das obras ou desuso prolongado podem encerrar o direito conforme o caso previsto.",
+    "exemplo_pratico": "Mesma pessoa adquire os dois imóveis e comprova a reunião para cancelar a servidão.",
+    "atencao": "A extinção precisa ser demonstrada; mero uso reduzido ou interrupção breve não equivale a desuso legal.",
+    "palavras_dificeis": [
+     {
+      "termo": "Confusão",
+      "explicacao": "reunião dos imóveis dominante e serviente na mesma titularidade"
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": true
+  },
+  {
+   "target_id": "CC2002:ART.1404",
+   "audit_position": 1388,
+   "subdivision_id": "CC2002:ART.1404:PAR.1",
+   "source_module": "QA06_B_FINDINGS_V2_1345_2017.json",
+   "source_classification": "AUSENTE",
+   "source_severity": "ALTO",
+   "decision": "CONFIRMED_FINDING",
+   "final_severity": "ALTO",
+   "rationale": "A explicação fala em reparações caras e custo módico, mas não informa o limiar legal: despesas superiores a dois terços do rendimento líquido de um ano não são módicas. A fração e a base anual alteram a distribuição do encargo.",
+   "confidence": "ALTA",
+   "legal_text": "Não se consideram módicas as despesas superiores a dois terços do líquido rendimento em um ano.",
+   "baseline_entenda_content": {
+    "o_que_diz": "O proprietário paga reparações extraordinárias e caras; o usufrutuário remunera com juros o capital usado em obras necessárias ou produtivas.",
+    "o_que_significa": "A lei divide o custo estrutural e o benefício econômico obtido durante o usufruto.",
+    "exemplo_pratico": "Dono refaz telhado estrutural e usufrutuário paga juros sobre o valor investido enquanto aproveita o imóvel.",
+    "atencao": "Os parágrafos definem custo módico e permitem ao usufrutuário fazer obra indispensável omitida pelo dono.",
+    "palavras_dificeis": [
+     {
+      "termo": "Reparação extraordinária",
+      "explicacao": "obra estrutural ou incomum de custo relevante"
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": true
+  },
+  {
+   "target_id": "CC2002:ART.1487-A",
+   "audit_position": 1469,
+   "subdivision_id": "CC2002:ART.1487-A:PAR.3",
+   "source_module": "QA06_B_FINDINGS_V2_1345_2017.json",
+   "source_classification": "AUSENTE",
+   "source_severity": "ALTO",
+   "decision": "CONFIRMED_FINDING",
+   "final_severity": "ALTO",
+   "rationale": "Não foi explicado que, havendo vários credores da hipoteca estendida, somente o credor do crédito mais prioritário pode executar a garantia, salvo convenção diversa de todos. Sujeito legitimado, prioridade e exceção unânime são comandos autônomos.",
+   "confidence": "ALTA",
+   "legal_text": "Na hipótese de superveniente multiplicidade de credores garantidos pela mesma hipoteca estendida, apenas o credor titular do crédito mais prioritário, conforme estabelecido no § 2º deste artigo, poderá promover a execução judicial ou extrajudicial da garantia, exceto se convencionado de modo diverso por todos os credores.",
+   "baseline_entenda_content": {
+    "o_que_diz": "O proprietário pode estender hipoteca ao mesmo credor para novas obrigações, preservando registro original e respeitando prioridades que surgiram antes da extensão.",
+    "o_que_significa": "A ampliação aproveita a publicidade existente sem prejudicar direitos contraditórios já inscritos.",
+    "exemplo_pratico": "Hipoteca antiga é ampliada para novo empréstimo, mas penhora registrada no intervalo mantém prioridade sobre a extensão.",
+    "atencao": "Prazo, valor, anuência e averbação seguem os parágrafos incluídos pela Lei 14.711/2023.",
+    "palavras_dificeis": [
+     {
+      "termo": "Extensão hipotecária",
+      "explicacao": "ampliação do gravame para abranger novas obrigações"
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": true
+  },
+  {
+   "target_id": "CC2002:ART.1488",
+   "audit_position": 1470,
+   "subdivision_id": "CC2002:ART.1488:PAR.2",
+   "source_module": "QA06_B_FINDINGS_V2_1345_2017.json",
+   "source_classification": "AUSENTE",
+   "source_severity": "ALTO",
+   "decision": "CONFIRMED_FINDING",
+   "final_severity": "ALTO",
+   "rationale": "A baseline omite que as despesas judiciais e extrajudiciais do desmembramento correm, em regra, por conta do requerente, bem como a possibilidade de convenção em contrário. Trata-se de alocação expressa de custo e sua exceção.",
+   "confidence": "ALTA",
+   "legal_text": "Salvo convenção em contrário, todas as despesas judiciais ou extrajudiciais necessárias ao desmembramento do ônus correm por conta de quem o requerer.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Loteamento ou condomínio permite dividir judicialmente a hipoteca entre lotes ou unidades, proporcionalmente ao valor e ao crédito.",
+    "o_que_significa": "A divisão evita que cada unidade suporte todo o gravame e facilita circulação autônoma.",
+    "exemplo_pratico": "Terreno hipotecado vira condomínio e o juiz distribui a dívida entre apartamentos.",
+    "atencao": "Credor, devedor ou proprietários podem requerer; o credor só pode opor-se por prejuízo comprovado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Fracionamento da hipoteca",
+      "explicacao": "distribuição do gravame entre unidades resultantes do imóvel"
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": true
+  },
+  {
+   "target_id": "CC2002:ART.1488",
+   "audit_position": 1470,
+   "subdivision_id": "CC2002:ART.1488:PAR.3",
+   "source_module": "QA06_B_FINDINGS_V2_1345_2017.json",
+   "source_classification": "AUSENTE",
+   "source_severity": "ALTO",
+   "decision": "CONFIRMED_FINDING",
+   "final_severity": "ALTO",
+   "rationale": "A explicação do fracionamento não registra que o devedor originário permanece responsável nos termos do art. 1.430, salvo anuência do credor. Responsabilidade preservada e consentimento liberatório são essenciais.",
+   "confidence": "ALTA",
+   "legal_text": "O desmembramento do ônus não exonera o devedor originário da responsabilidade a que se refere o art. 1.430, salvo anuência do credor.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Loteamento ou condomínio permite dividir judicialmente a hipoteca entre lotes ou unidades, proporcionalmente ao valor e ao crédito.",
+    "o_que_significa": "A divisão evita que cada unidade suporte todo o gravame e facilita circulação autônoma.",
+    "exemplo_pratico": "Terreno hipotecado vira condomínio e o juiz distribui a dívida entre apartamentos.",
+    "atencao": "Credor, devedor ou proprietários podem requerer; o credor só pode opor-se por prejuízo comprovado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Fracionamento da hipoteca",
+      "explicacao": "distribuição do gravame entre unidades resultantes do imóvel"
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": true
+  },
+  {
+   "target_id": "CC2002:ART.1523",
+   "audit_position": 1509,
+   "subdivision_id": "CC2002:ART.1523:INC.II",
+   "source_module": "QA06_B_FINDINGS_V2_1345_2017.json",
+   "source_classification": "AUSENTE",
+   "source_severity": "ALTO",
+   "decision": "CONFIRMED_FINDING",
+   "final_severity": "ALTO",
+   "rationale": "A referência genérica à certeza da filiação não informa quem sofre a causa suspensiva nem o prazo de dez meses contado da viuvez ou dissolução: viúva e mulher cujo casamento foi nulo ou anulado. Sujeito, termo inicial e duração ficaram omitidos.",
+   "confidence": "ALTA",
+   "legal_text": "a viúva, ou a mulher cujo casamento se desfez por ser nulo ou ter sido anulado, até dez meses depois do começo da viuvez, ou da dissolução da sociedade conjugal;",
+   "baseline_entenda_content": {
+    "o_que_diz": "Certas situações patrimoniais ou familiares recomendam adiar o casamento; o juiz pode afastar algumas mediante prova de ausência de prejuízo ou de gravidez.",
+    "o_que_significa": "As causas suspensivas protegem herdeiros, ex-cônjuge, tutelado e certeza sobre filiação, sem tornar o casamento absolutamente impossível.",
+    "exemplo_pratico": "Divorciado prova que a partilha não prejudica o ex-cônjuge e pede afastamento da suspensão.",
+    "atencao": "Casamento realizado apesar da causa pode atrair regime patrimonial obrigatório, e cada dispensa exige prova específica.",
+    "palavras_dificeis": [
+     {
+      "termo": "Causa suspensiva",
+      "explicacao": "situação que recomenda adiar o casamento sem constituir impedimento absoluto"
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": true
+  },
+  {
+   "target_id": "CC2002:ART.1541",
+   "audit_position": 1527,
+   "subdivision_id": "CC2002:ART.1541:PAR.2",
+   "source_module": "QA06_B_FINDINGS_V2_1345_2017.json",
+   "source_classification": "AUSENTE",
+   "source_severity": "ALTO",
+   "decision": "DOWNGRADE_MEDIO",
+   "final_severity": "MÉDIO",
+   "rationale": "A investigação, a verificação da capacidade e a confirmação pela autoridade estão materialmente representadas. Resta omitido o recurso voluntário das partes; é falha real de garantia procedimental, mas não ausência integral da subdivisão.",
+   "confidence": "ALTA",
+   "legal_text": "Verificada a idoneidade dos cônjuges para o casamento, assim o decidirá a autoridade competente, com recurso voluntário às partes.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Testemunhas do casamento emergencial comparecem ao juiz em dez dias, relatam convocação, lucidez, perigo e consentimento; segue investigação, decisão e registro com efeitos desde a cerimônia.",
+    "o_que_significa": "A validação judicial substitui cautelas ausentes no momento crítico e verifica capacidade matrimonial.",
+    "exemplo_pratico": "Testemunhas prestam declarações e o juiz confirma o vínculo após diligências.",
+    "atencao": "Prazos, conteúdo dos depoimentos e ausência de impedimentos são essenciais à confirmação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Ratificação judicial",
+      "explicacao": "reconhecimento posterior da validade de ato emergencial"
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": true
+  },
+  {
+   "target_id": "CC2002:ART.1541",
+   "audit_position": 1527,
+   "subdivision_id": "CC2002:ART.1541:PAR.4",
+   "source_module": "QA06_B_FINDINGS_V2_1345_2017.json",
+   "source_classification": "AUSENTE",
+   "source_severity": "ALTO",
+   "decision": "REJECTED_FALSE_POSITIVE",
+   "final_severity": null,
+   "rationale": "A frase 'registro com efeitos desde a cerimônia' representa precisamente a retroação do assento ao estado dos cônjuges na data da celebração. A diferença vocabular não constitui omissão material.",
+   "confidence": "ALTA",
+   "legal_text": "O assento assim lavrado retrotrairá os efeitos do casamento, quanto ao estado dos cônjuges, à data da celebração.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Testemunhas do casamento emergencial comparecem ao juiz em dez dias, relatam convocação, lucidez, perigo e consentimento; segue investigação, decisão e registro com efeitos desde a cerimônia.",
+    "o_que_significa": "A validação judicial substitui cautelas ausentes no momento crítico e verifica capacidade matrimonial.",
+    "exemplo_pratico": "Testemunhas prestam declarações e o juiz confirma o vínculo após diligências.",
+    "atencao": "Prazos, conteúdo dos depoimentos e ausência de impedimentos são essenciais à confirmação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Ratificação judicial",
+      "explicacao": "reconhecimento posterior da validade de ato emergencial"
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": false
+  },
+  {
+   "target_id": "CC2002:ART.1541",
+   "audit_position": 1527,
+   "subdivision_id": "CC2002:ART.1541:PAR.5",
+   "source_module": "QA06_B_FINDINGS_V2_1345_2017.json",
+   "source_classification": "AUSENTE",
+   "source_severity": "ALTO",
+   "decision": "CONFIRMED_FINDING",
+   "final_severity": "ALTO",
+   "rationale": "A baseline descreve o rito ordinário de confirmação, mas não explica a dispensa dessas formalidades quando o enfermo convalesce e ratifica o casamento perante a autoridade competente e o oficial do registro. Condição e consequência excepcionais estão ausentes.",
+   "confidence": "ALTA",
+   "legal_text": "Serão dispensadas as formalidades deste e do artigo antecedente, se o enfermo convalescer e puder ratificar o casamento na presença da autoridade competente e do oficial do registro.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Testemunhas do casamento emergencial comparecem ao juiz em dez dias, relatam convocação, lucidez, perigo e consentimento; segue investigação, decisão e registro com efeitos desde a cerimônia.",
+    "o_que_significa": "A validação judicial substitui cautelas ausentes no momento crítico e verifica capacidade matrimonial.",
+    "exemplo_pratico": "Testemunhas prestam declarações e o juiz confirma o vínculo após diligências.",
+    "atencao": "Prazos, conteúdo dos depoimentos e ausência de impedimentos são essenciais à confirmação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Ratificação judicial",
+      "explicacao": "reconhecimento posterior da validade de ato emergencial"
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": true
+  },
+  {
+   "target_id": "CC2002:ART.1573",
+   "audit_position": 1559,
+   "subdivision_id": "CC2002:ART.1573:INC.IV",
+   "source_module": "QA06_B_FINDINGS_V2_1345_2017.json",
+   "source_classification": "AUSENTE",
+   "source_severity": "ALTO",
+   "decision": "DOWNGRADE_MEDIO",
+   "final_severity": "MÉDIO",
+   "rationale": "O abandono está mencionado e a explicação adverte corretamente que o rol pertence ao antigo regime e não condiciona o divórcio atual. Faltam, contudo, voluntariedade e duração de um ano contínuo; a omissão literal é real, mas seu impacto atual é contextual e não justifica severidade alta.",
+   "confidence": "ALTA",
+   "legal_text": "abandono voluntário do lar conjugal, durante um ano contínuo;",
+   "baseline_entenda_content": {
+    "o_que_diz": "O Código enumera fatos que podiam demonstrar impossibilidade de vida comum e permite ao juiz considerar outros.",
+    "o_que_significa": "Adultério, violência, abandono e condutas graves são elementos do antigo regime de separação, não requisitos do divórcio atual.",
+    "exemplo_pratico": "Tentativa de morte fundamenta medidas protetivas e pode ser relatada sem ser necessária para dissolver o vínculo.",
+    "atencao": "A enumeração não autoriza culpabilização automática nem restringe o divórcio direto.",
+    "palavras_dificeis": [
+     {
+      "termo": "Sevícia",
+      "explicacao": "maus-tratos físicos ou crueldade praticados contra o cônjuge"
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": true
+  },
+  {
+   "target_id": "CC2002:ART.1588",
+   "audit_position": 1574,
+   "subdivision_id": "CC2002:ART.1588:CAPUT",
+   "source_module": "QA06_B_FINDINGS_V2_1345_2017.json",
+   "source_classification": "AUSENTE",
+   "source_severity": "ALTO",
+   "decision": "REJECTED_FALSE_POSITIVE",
+   "final_severity": null,
+   "rationale": "Os cinco campos preservam os elementos essenciais: novas núpcias não retiram guarda ou convivência, retirada somente por ordem judicial e mediante prova de tratamento inadequado. A paráfrase é materialmente completa.",
+   "confidence": "ALTA",
+   "legal_text": "O pai ou a mãe que contrair novas núpcias não perde o direito de ter consigo os filhos, que só lhe poderão ser retirados por mandado judicial, provado que não são tratados convenientemente.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Novo casamento do pai ou da mãe não retira guarda ou convivência; afastamento dos filhos exige ordem judicial e prova de tratamento inadequado.",
+    "o_que_significa": "Recomposição familiar não presume incapacidade parental.",
+    "exemplo_pratico": "Mãe casa novamente e mantém convivência, pois não há prova de risco aos filhos.",
+    "atencao": "A retirada exige processo e fundamento protetivo, não preconceito contra nova família.",
+    "palavras_dificeis": [
+     {
+      "termo": "Recomposição familiar",
+      "explicacao": "formação de novo núcleo afetivo após relação anterior"
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": false
+  },
+  {
+   "target_id": "CC2002:ART.1735",
+   "audit_position": 1711,
+   "subdivision_id": "CC2002:ART.1735:INC.IV",
+   "source_module": "QA06_B_FINDINGS_V2_1345_2017.json",
+   "source_classification": "AUSENTE",
+   "source_severity": "ALTO",
+   "decision": "CONFIRMED_FINDING",
+   "final_severity": "ALTO",
+   "rationale": "A expressão genérica 'condenação relevante' não identifica furto, roubo, estelionato, falsidade e crimes contra família ou costumes, nem esclarece que o impedimento subsiste tenha ou não sido cumprida a pena. O alcance pessoal do impedimento fica indeterminado.",
+   "confidence": "ALTA",
+   "legal_text": "os condenados por crime de furto, roubo, estelionato, falsidade, contra a família ou os costumes, tenham ou não cumprido pena;",
+   "baseline_entenda_content": {
+    "o_que_diz": "São impedidos de exercer tutela, entre outros, quem não administra livremente seus bens, tem conflito com o menor, inimizada, condenação relevante ou conduta incompatível.",
+    "o_que_significa": "O rol afasta pessoas cuja incapacidade, conflito ou falta de idoneidade possa comprometer o tutelado.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1735, a solução deve observar incapacidade para tutela e as condições específicas descritas na regra.",
+    "atencao": "O impedimento pode provocar exoneração mesmo depois de iniciado o encargo.",
+    "palavras_dificeis": [
+     {
+      "termo": "Incapacidade para tutela",
+      "explicacao": "O rol afasta pessoas cuja incapacidade, conflito ou falta de idoneidade possa comprometer o tutelado."
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": true
+  },
+  {
+   "target_id": "CC2002:ART.1764",
+   "audit_position": 1740,
+   "subdivision_id": "CC2002:ART.1764:INC.I",
+   "source_module": "QA06_B_FINDINGS_V2_1345_2017.json",
+   "source_classification": "AUSENTE",
+   "source_severity": "ALTO",
+   "decision": "REJECTED_FALSE_POSITIVE",
+   "final_severity": null,
+   "rationale": "A expressão 'as funções do tutor terminam pelo fim do prazo' cobre diretamente a expiração do termo em que estava obrigado a servir. O exemplo genérico não elimina a cobertura clara existente em o_que_diz.",
+   "confidence": "ALTA",
+   "legal_text": "ao expirar o termo, em que era obrigado a servir;",
+   "baseline_entenda_content": {
+    "o_que_diz": "As funções do tutor terminam pelo fim do prazo, escusa aceita ou remoção.",
+    "o_que_significa": "O encerramento da função pessoal pode ocorrer mesmo que o menor ainda necessite de novo tutor.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1764, a solução deve observar fim da função tutelar e as condições específicas descritas na regra.",
+    "atencao": "Cessação do tutor e cessação da tutela são situações distintas.",
+    "palavras_dificeis": [
+     {
+      "termo": "Fim da função tutelar",
+      "explicacao": "O encerramento da função pessoal pode ocorrer mesmo que o menor ainda necessite de novo tutor."
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": false
+  },
+  {
+   "target_id": "CC2002:ART.1800",
+   "audit_position": 1770,
+   "subdivision_id": "CC2002:ART.1800:PAR.2",
+   "source_module": "QA06_B_FINDINGS_V2_1345_2017.json",
+   "source_classification": "AUSENTE",
+   "source_severity": "ALTO",
+   "decision": "CONFIRMED_FINDING",
+   "final_severity": "ALTO",
+   "rationale": "A baseline explica a finalidade da curadoria, mas omite a remissão normativa: poderes, deveres e responsabilidades do curador seguem, no que couber, as regras da curatela dos incapazes. O regime de responsabilidade não pode ser inferido apenas da ideia de preservação.",
+   "confidence": "ALTA",
+   "legal_text": "Os poderes, deveres e responsabilidades do curador, assim nomeado, regem-se pelas disposições concernentes à curatela dos incapazes, no que couber.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Bens destinados à prole eventual ficam com curador; se o herdeiro esperado não for concebido em dois anos, passam aos herdeiros legítimos, salvo disposição diferente.",
+    "o_que_significa": "A curadoria preserva o patrimônio durante a espera e a lei impõe prazo supletivo.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1800, a solução deve observar curadoria da prole eventual e as condições específicas descritas na regra.",
+    "atencao": "Concepção e nascimento produzem efeitos conforme as regras do nascituro.",
+    "palavras_dificeis": [
+     {
+      "termo": "Curadoria da prole eventual",
+      "explicacao": "A curadoria preserva o patrimônio durante a espera e a lei impõe prazo supletivo."
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": true
+  },
+  {
+   "target_id": "CC2002:ART.1817",
+   "audit_position": 1788,
+   "subdivision_id": "CC2002:ART.1817:PAR.UNICO",
+   "source_module": "QA06_B_FINDINGS_V2_1345_2017.json",
+   "source_classification": "AUSENTE",
+   "source_severity": "ALTO",
+   "decision": "CONFIRMED_FINDING",
+   "final_severity": "ALTO",
+   "rationale": "A subdivisão impõe ao excluído restituição de frutos e rendimentos e lhe assegura indenização pelas despesas de conservação. A baseline não explica a restituição e sua frase sobre 'indenização devida pelo excluído' aponta em direção oposta ao direito de reembolso previsto no parágrafo.",
+   "confidence": "ALTA",
+   "legal_text": "O excluído da sucessão é obrigado a restituir os frutos e rendimentos que dos bens da herança houver percebido, mas tem direito a ser indenizado das despesas com a conservação deles.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Negócios onerosos com terceiros de boa-fé e administração anterior à exclusão são preservados, sem afastar indenização devida pelo excluído.",
+    "o_que_significa": "A segurança de terceiros convive com reparação aos sucessores prejudicados.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1817, a solução deve observar herdeiro aparente e as condições específicas descritas na regra.",
+    "atencao": "Má-fé do adquirente pode alterar a proteção do negócio.",
+    "palavras_dificeis": [
+     {
+      "termo": "Herdeiro aparente",
+      "explicacao": "A segurança de terceiros convive com reparação aos sucessores prejudicados."
+     }
+    ]
+   },
+   "verification": {
+    "inventory_v2_text_checked": true,
+    "qa05_five_fields_checked": true,
+    "material_subject_conditions_exceptions_deadlines_consequences_checked": true,
+    "official_source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "cutoff": "2026-11-13"
+   },
+   "human_review_required": true
+  }
+ ]
+}
