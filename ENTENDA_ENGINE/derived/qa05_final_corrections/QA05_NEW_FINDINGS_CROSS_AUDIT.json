@@ -1,0 +1,23 @@
+{
+ "schema_version": 1,
+ "mission": "QA-05",
+ "as_of": "2026-11-13",
+ "status": "NEW_FINDINGS_OUTSIDE_ORIGINAL_CORRECTION_SCOPE",
+ "total": 1,
+ "findings": [
+  {
+   "target_id": "CC2002:ART.1104",
+   "problematic_field": "o_que_significa; exemplo_pratico",
+   "problematic_excerpt": "tarefas abrangem publicidade, apuração patrimonial, realização do ativo; apresenta balanço anual",
+   "legal_basis": "O art. 1.104 limita-se a submeter obrigações e responsabilidade do liquidante aos preceitos próprios dos administradores; os deveres operacionais e a prestação semestral pertencem ao art. 1.103.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "DESLOCAMENTO_DE_CONTEUDO_DO_ARTIGO_VIZINHO_E_PERIODICIDADE_INCORRETA",
+   "severity": "ALTO",
+   "legal_or_pedagogical_consequence": "O leitor não recebe a regra de equiparação de responsabilidade e pode atribuir ao art. 1.104 deveres e periodicidade de outro dispositivo.",
+   "correction_direction": "Reconstruir significado e exemplo a partir da equiparação ao regime dos administradores, sem importar lista de deveres do art. 1.103.",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "origin": "QA05_CROSS_AUDIT_1101_1105"
+  }
+ ]
+}
