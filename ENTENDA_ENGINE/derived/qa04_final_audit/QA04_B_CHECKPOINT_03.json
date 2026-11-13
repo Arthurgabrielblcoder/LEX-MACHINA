@@ -1,0 +1,2720 @@
+{
+ "schema_version": 1,
+ "mission": "QA-04-FRONT-B",
+ "checkpoint": "B-CP03",
+ "as_of": "2026-11-13",
+ "status": "COMPLETE",
+ "source_queue": "QA04_AUDIT_1000_QUEUE.json",
+ "source_queue_sha256": "cfbba3ab37b1f757e26b0855e692c3113d8cf61d3ef8bb722942223da9dc44cc",
+ "residual_positions": [
+  101,
+  150
+ ],
+ "original_queue_positions": [
+  489,
+  538
+ ],
+ "examined": 50,
+ "target_ids": [
+  "CC2002:ART.619",
+  "CC2002:ART.620",
+  "CC2002:ART.621",
+  "CC2002:ART.622",
+  "CC2002:ART.623",
+  "CC2002:ART.624",
+  "CC2002:ART.625",
+  "CC2002:ART.626",
+  "CC2002:ART.627",
+  "CC2002:ART.628",
+  "CC2002:ART.629",
+  "CC2002:ART.630",
+  "CC2002:ART.631",
+  "CC2002:ART.632",
+  "CC2002:ART.633",
+  "CC2002:ART.634",
+  "CC2002:ART.635",
+  "CC2002:ART.636",
+  "CC2002:ART.637",
+  "CC2002:ART.638",
+  "CC2002:ART.639",
+  "CC2002:ART.640",
+  "CC2002:ART.641",
+  "CC2002:ART.642",
+  "CC2002:ART.643",
+  "CC2002:ART.644",
+  "CC2002:ART.645",
+  "CC2002:ART.646",
+  "CC2002:ART.647",
+  "CC2002:ART.648",
+  "CC2002:ART.649",
+  "CC2002:ART.650",
+  "CC2002:ART.651",
+  "CC2002:ART.652",
+  "CC2002:ART.653",
+  "CC2002:ART.654",
+  "CC2002:ART.655",
+  "CC2002:ART.656",
+  "CC2002:ART.657",
+  "CC2002:ART.658",
+  "CC2002:ART.659",
+  "CC2002:ART.660",
+  "CC2002:ART.661",
+  "CC2002:ART.662",
+  "CC2002:ART.663",
+  "CC2002:ART.664",
+  "CC2002:ART.665",
+  "CC2002:ART.666",
+  "CC2002:ART.667",
+  "CC2002:ART.668"
+ ],
+ "findings": 0,
+ "finding_counts": {},
+ "protected_sha256": {
+  "qa03_corpus": "dad0a9414fd42b4e5c348ab7e87b90b99501ae4b77c950c5cbfd7dbaef58a496",
+  "qa03_lookup": "9cda2855e4534b7a7cefc833f2e2498a91cf81666395cf83a064d3d69705eeba",
+  "qa03_payload": "6a5ea56bffc14c06df9ac1f16c145b02e2115bacbfce1d87858ba342e77d6268",
+  "qa03_findings": "4fd7700b9c66c370405a8ce7d9004222a9af2202efa4cabf4c0a2ff581062ba1",
+  "qa03_remaining_queue": "8c798f79745f4d878b882e582bbfa71effbcb6c99c7763bf77cfc51e2b5151df",
+  "cc13_corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c"
+ },
+ "records": [
+  {
+   "queue_position": 489,
+   "target_id": "CC2002:ART.619",
+   "explanation_id": "ENTENDA/CC2002:ART.619/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.619:CAPUT\tSalvo estipulação em contrário, o empreiteiro que se incumbir de executar uma obra, segundo plano aceito por quem a encomendou, não terá direito a exigir acréscimo no preço, ainda que sejam introduzidas modificações no projeto, a não ser que estas resultem de instruções escritas do dono da obra.\nCC2002:ART.619:PAR.UNICO\tAinda que não tenha havido autorização escrita, o dono da obra é obrigado a pagar ao empreiteiro os aumentos e acréscimos, segundo o que for arbitrado, se, sempre presente à obra, por continuadas visitas, não podia ignorar o que se estava passando, e nunca protestou.",
+   "source_snapshot_sha256": "23d8fd5b843da26ee0d7990e71db09c100895a88b85eea05ba4c89f184aae756",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.619:CAPUT",
+     "text": "Salvo estipulação em contrário, o empreiteiro que se incumbir de executar uma obra, segundo plano aceito por quem a encomendou, não terá direito a exigir acréscimo no preço, ainda que sejam introduzidas modificações no projeto, a não ser que estas resultem de instruções escritas do dono da obra."
+    },
+    {
+     "label": "CC2002:ART.619:PAR.UNICO",
+     "text": "Ainda que não tenha havido autorização escrita, o dono da obra é obrigado a pagar ao empreiteiro os aumentos e acréscimos, segundo o que for arbitrado, se, sempre presente à obra, por continuadas visitas, não podia ignorar o que se estava passando, e nunca protestou."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Salvo estipulação em contrário, o empreiteiro que se incumbir de executar uma obra, segundo plano aceito por quem a encomendou, não terá direito a exigir acréscimo no preço, ainda que sejam introduzidas modificações no projeto, a não ser que estas resultem de instruções escritas do dono da obra. | Ainda que não tenha havido autorização escrita, o dono da obra é obrigado a pagar ao empreiteiro os aumentos e acréscimos, segundo o que for arbitrado, se, sempre presente à obra, por continuadas visitas, não podia ignorar o que se estava passando, e nunca protestou.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "271ffb80e6841307143ab091fd586cf48f8b361fc5e34b860ab746f6cc2d61dc",
+     "o_que_significa": "6c122938f31b48ced88bb5aade6a2f584ff9328e8ae5054649b7b979fc47b1d3",
+     "exemplo_pratico": "8dbd16ee09f598c4beda325beea275755f1d2e2a5450a5009e91907b6f7423cf",
+     "atencao": "bf604bcb88b3ca972b2acfe3830d84d5e14a537eacedee190d8cc0837bd0a0fa",
+     "palavras_dificeis": "a4b43244059e86ed125b052959041a7d37231bfa3a1056305bc40baf5a63cfd1"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.619, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Preço de obra executada segundo projeto aceito não aumenta por alterações, salvo instrução escrita do dono; mesmo sem escrito, este paga mudanças que acompanhou continuamente sem protestar.’. O campo de atenção registra: ‘A exceção depende de presença reiterada, impossibilidade de ignorar a mudança e ausência de protesto. Autorização escrita continua a prova preferível.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 101,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 490,
+   "target_id": "CC2002:ART.620",
+   "explanation_id": "ENTENDA/CC2002:ART.620/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.620:CAPUT\tSe ocorrer diminuição no preço do material ou da mão-de-obra superior a um décimo do preço global convencionado, poderá este ser revisto, a pedido do dono da obra, para que se lhe assegure a diferença apurada.",
+   "source_snapshot_sha256": "803d01c496ac92911bd2fbcb04ec54f79b5cc296045833f5d7d04845a49764d1",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.620:CAPUT",
+     "text": "Se ocorrer diminuição no preço do material ou da mão-de-obra superior a um décimo do preço global convencionado, poderá este ser revisto, a pedido do dono da obra, para que se lhe assegure a diferença apurada."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se ocorrer diminuição no preço do material ou da mão-de-obra superior a um décimo do preço global convencionado, poderá este ser revisto, a pedido do dono da obra, para que se lhe assegure a diferença apurada.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8bb8b1d03216c67f5f4ceb963e92910d24424010c9ac661be775d526385dbd9c",
+     "o_que_significa": "8142f5a6bdc8f595a1745a6eeb71de4c57528f57df31cfaace94b8a962ae22d9",
+     "exemplo_pratico": "5bf954ad81de30293212a3392dc31bb1df745e7d7c9171ce318a62a59a023236",
+     "atencao": "41a7bba794ccd210c462ee14ff9ed85f0409ec23080dc8cd27b6ad376141a09e",
+     "palavras_dificeis": "417c0a3a8d2db3a44a7db3ec03b9c5728e736b93ed6100a076ed9754ed8e4cf8"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.620, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Queda superior a dez por cento no custo de material ou mão de obra permite ao dono pedir revisão do preço global e obter a diferença apurada.’. O campo de atenção registra: ‘A revisão não é automática e exige redução superior ao limite legal, comparação verificável e pedido do interessado.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 102,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 491,
+   "target_id": "CC2002:ART.621",
+   "explanation_id": "ENTENDA/CC2002:ART.621/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.621:CAPUT\tSem anuência de seu autor, não pode o proprietário da obra introduzir modificações no projeto por ele aprovado, ainda que a execução seja confiada a terceiros, a não ser que, por motivos supervenientes ou razões de ordem técnica, fique comprovada a inconveniência ou a excessiva onerosidade de execução do projeto em sua forma originária.\nCC2002:ART.621:PAR.UNICO\tA proibição deste artigo não abrange alterações de pouca monta, ressalvada sempre a unidade estética da obra projetada.",
+   "source_snapshot_sha256": "32f7065be0910c845ea28f7fb137bb8d3faab1f7b0809c8477bddac8b181512e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.621:CAPUT",
+     "text": "Sem anuência de seu autor, não pode o proprietário da obra introduzir modificações no projeto por ele aprovado, ainda que a execução seja confiada a terceiros, a não ser que, por motivos supervenientes ou razões de ordem técnica, fique comprovada a inconveniência ou a excessiva onerosidade de execução do projeto em sua forma originária."
+    },
+    {
+     "label": "CC2002:ART.621:PAR.UNICO",
+     "text": "A proibição deste artigo não abrange alterações de pouca monta, ressalvada sempre a unidade estética da obra projetada."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Sem anuência de seu autor, não pode o proprietário da obra introduzir modificações no projeto por ele aprovado, ainda que a execução seja confiada a terceiros, a não ser que, por motivos supervenientes ou razões de ordem técnica, fique comprovada a inconveniência ou a excessiva onerosidade de execução do projeto em sua forma originária. | A proibição deste artigo não abrange alterações de pouca monta, ressalvada sempre a unidade estética da obra projetada.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d4dc43b6de9923184eb3f8b399714bba2f362c4f1a4b1a0953a63941f6eb2c3d",
+     "o_que_significa": "3ab0b2a8f1d18413c37f1fbfb9816e6a0aa010534a6c8a0038b24084d8e434a0",
+     "exemplo_pratico": "9c43a66f4b274bd7383300dfdd882fba5a752f22e64691a4428003e26f0e928c",
+     "atencao": "6118b844449501c9d40e008d75059d3b78ee974d96cc84646900e31f30e0e2ad",
+     "palavras_dificeis": "8836b388ff56a8caeb5a4942ef064f75205f3e1728b850c3d3c00d188e0d0519"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.621, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘O proprietário não pode alterar projeto aprovado sem consentimento do autor, salvo inconveniência ou custo excessivo superveniente comprovado; pequenas mudanças preservando a unidade estética ficam fora da proibição.’. O campo de atenção registra: ‘Ser dono da obra não elimina direitos do autor do projeto. Alteração de pouca monta ainda deve respeitar a unidade estética.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 103,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 492,
+   "target_id": "CC2002:ART.622",
+   "explanation_id": "ENTENDA/CC2002:ART.622/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.622:CAPUT\tSe a execução da obra for confiada a terceiros, a responsabilidade do autor do projeto respectivo, desde que não assuma a direção ou fiscalização daquela, ficará limitada aos danos resultantes de defeitos previstos no art. 618 e seu parágrafo único.",
+   "source_snapshot_sha256": "b85d50e41d4e02c8192ed3d5271b2fb99465b874b3d4076646ff824506b47872",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.622:CAPUT",
+     "text": "Se a execução da obra for confiada a terceiros, a responsabilidade do autor do projeto respectivo, desde que não assuma a direção ou fiscalização daquela, ficará limitada aos danos resultantes de defeitos previstos no art. 618 e seu parágrafo único."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se a execução da obra for confiada a terceiros, a responsabilidade do autor do projeto respectivo, desde que não assuma a direção ou fiscalização daquela, ficará limitada aos danos resultantes de defeitos previstos no art. 618 e seu parágrafo único.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "02aaaa25e20d96c1230d452731b9247520e6d982be7e8f79e7a3d536e1e70aa5",
+     "o_que_significa": "23fe183e1e52ebd6bcbb09a2a3251e93348e3121482ffd9985c90bfcb300c5f1",
+     "exemplo_pratico": "eb80901a4b281e9bf6e930927cedc4765948ba636d3b7a00c4e1d1fd542fada8",
+     "atencao": "8aea2282bd62921672e98219d5d962a4486421ba80ecca266d0aac34925c327c",
+     "palavras_dificeis": "fc766c71865179b39c126e71a57777138fdac337e8d811e7b71c5af20f149ccc"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.622, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se terceiro executa a obra e o autor do projeto não dirige nem fiscaliza, a responsabilidade deste limita-se aos danos por defeitos estruturais previstos na garantia legal.’. O campo de atenção registra: ‘É preciso separar defeito de projeto, erro de execução e dever contratual de fiscalização. A limitação depende de o projetista não ter assumido funções adicionais.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 104,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 493,
+   "target_id": "CC2002:ART.623",
+   "explanation_id": "ENTENDA/CC2002:ART.623/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.623:CAPUT\tMesmo após iniciada a construção, pode o dono da obra suspendê-la, desde que pague ao empreiteiro as despesas e lucros relativos aos serviços já feitos, mais indenização razoável, calculada em função do que ele teria ganho, se concluída a obra.",
+   "source_snapshot_sha256": "f7c8aefc693ede15f198a58d63d111bf04c4b9f957819497cc0f2dd08d42265f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.623:CAPUT",
+     "text": "Mesmo após iniciada a construção, pode o dono da obra suspendê-la, desde que pague ao empreiteiro as despesas e lucros relativos aos serviços já feitos, mais indenização razoável, calculada em função do que ele teria ganho, se concluída a obra."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Mesmo após iniciada a construção, pode o dono da obra suspendê-la, desde que pague ao empreiteiro as despesas e lucros relativos aos serviços já feitos, mais indenização razoável, calculada em função do que ele teria ganho, se concluída a obra.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e606cc54287856fcf68c8ee6a4d888ccd94198265e84191983801e01b9db9f77",
+     "o_que_significa": "ba9549838488a737af58e1210873146e849efdfbb40a5b8ab6fe2a2f652950a8",
+     "exemplo_pratico": "8ebb1ec984cff4ab7d89677ff39c60128bdbe0c1c3f97953be6004957cd1409e",
+     "atencao": "e6cf9b427d122d9a16f215c9a2ed0d8ff7d1710514d71a66e5c35a2506ce7ebc",
+     "palavras_dificeis": "67444abc5e76c929a2dadc670a1b96512da2a6a7bc8719ce48d2af6ff0e971fc"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.623, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O dono pode suspender obra já iniciada, mas deve pagar despesas e lucros do trabalho feito, além de indenização razoável pelo ganho frustrado da parte restante.’. O campo de atenção registra: ‘A indenização não corresponde necessariamente ao preço integral restante; deve considerar custos evitados e ganho efetivamente perdido.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 105,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 494,
+   "target_id": "CC2002:ART.624",
+   "explanation_id": "ENTENDA/CC2002:ART.624/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.624:CAPUT\tSuspensa a execução da empreitada sem justa causa, responde o empreiteiro por perdas e danos.",
+   "source_snapshot_sha256": "2250bffa9436fce00fcdbd95f6d82870e4c4be16793a1f4abab43fa2ad587ac2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.624:CAPUT",
+     "text": "Suspensa a execução da empreitada sem justa causa, responde o empreiteiro por perdas e danos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Suspensa a execução da empreitada sem justa causa, responde o empreiteiro por perdas e danos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8225d4982e8eefc4d33b0d43033929ae3c38f1e0f4a780e788b35d35ce65acf0",
+     "o_que_significa": "00096b90606113dc5c897966b164e389718be771df65d62df04933a87e8ba8ec",
+     "exemplo_pratico": "0fc39495c088ba31ca7a226ff3001966b5d53dbebce9f459db39c8bc6469623c",
+     "atencao": "4f20e8228329509ca1fe7207d637c3ac95f9a15e7b1e3f6c5bf68fb13eb11351",
+     "palavras_dificeis": "d822dba9a29e7de472c57dfef8936ab339fe5604ce3646407a2fc60b97fdde44"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.624, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Empreiteiro que interrompe a execução sem justa causa responde pelos prejuízos.’. O campo de atenção registra: ‘Suspensão autorizada pelo artigo seguinte não é ilícita. A indenização exige demonstração dos prejuízos e do nexo causal.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 106,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 495,
+   "target_id": "CC2002:ART.625",
+   "explanation_id": "ENTENDA/CC2002:ART.625/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.625:CAPUT\tPoderá o empreiteiro suspender a obra:\nCC2002:ART.625:INC.I\tpor culpa do dono, ou por motivo de força maior;\nCC2002:ART.625:INC.II\tquando, no decorrer dos serviços, se manifestarem dificuldades imprevisíveis de execução, resultantes de causas geológicas ou hídricas, ou outras semelhantes, de modo que torne a empreitada excessivamente onerosa, e o dono da obra se opuser ao reajuste do preço inerente ao projeto por ele elaborado, observados os preços;\nCC2002:ART.625:INC.III\tse as modificações exigidas pelo dono da obra, por seu vulto e natureza, forem desproporcionais ao projeto aprovado, ainda que o dono se disponha a arcar com o acréscimo de preço.",
+   "source_snapshot_sha256": "5490e8bef7604947fc7427d51ad6e5514376e0e502a472d823898cb7409986ed",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.625:CAPUT",
+     "text": "Poderá o empreiteiro suspender a obra:"
+    },
+    {
+     "label": "CC2002:ART.625:INC.I",
+     "text": "por culpa do dono, ou por motivo de força maior;"
+    },
+    {
+     "label": "CC2002:ART.625:INC.II",
+     "text": "quando, no decorrer dos serviços, se manifestarem dificuldades imprevisíveis de execução, resultantes de causas geológicas ou hídricas, ou outras semelhantes, de modo que torne a empreitada excessivamente onerosa, e o dono da obra se opuser ao reajuste do preço inerente ao projeto por ele elaborado, observados os preços;"
+    },
+    {
+     "label": "CC2002:ART.625:INC.III",
+     "text": "se as modificações exigidas pelo dono da obra, por seu vulto e natureza, forem desproporcionais ao projeto aprovado, ainda que o dono se disponha a arcar com o acréscimo de preço."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: Poderá o empreiteiro suspender a obra: | por culpa do dono, ou por motivo de força maior; | quando, no decorrer dos serviços, se manifestarem dificuldades imprevisíveis de execução, resultantes de causas geológicas ou hídricas, ou outras semelhantes, de modo que torne a empreitada excessivamente onerosa, e o dono da obra se opuser ao reajuste do preço inerente ao projeto por ele elaborado, observados os preços; | se as modificações exigidas pelo dono da obra, por seu vulto e natureza, forem desproporcionais ao projeto aprovado, ainda que o dono se disponha a arcar com o acréscimo de preço.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "befdbd1620a19c25c8c13c35e9821c386923ef617a2c6ac70ccb0feda7d68424",
+     "o_que_significa": "9e436fe9725ae8cb9c45a2704901228828f1c1b9353cdfe4a892c8bfcde26f9f",
+     "exemplo_pratico": "71dc27ddfdfc88415606d78a45279995fee5a21c353ca7f0fde9c1c62c35513c",
+     "atencao": "d4e7a0d12fbe9ab056d0d7def40638426d6c87f313acabc5ae75011483fe6dc6",
+     "palavras_dificeis": "cc51eee6e82026f05f76de24b8dc6ab80b7a2503ac799bf890b8bd1d9ff37725"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.625, foram cotejados individualmente 4 segmento(s) vigente(s) (CAPUT, INC.I, INC.II, INC.III) com os cinco campos ENTENDA. A síntese ativa informa: ‘O empreiteiro pode suspender por culpa do dono, força maior, dificuldade imprevisível que torne a obra excessivamente cara sem reajuste aceito, ou modificação desproporcional exigida pelo encomendante.’. O campo de atenção registra: ‘A dificuldade deve ser imprevisível e relevante. A mera redução de lucro ou discordância comum não basta.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 107,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 496,
+   "target_id": "CC2002:ART.626",
+   "explanation_id": "ENTENDA/CC2002:ART.626/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.626:CAPUT\tNão se extingue o contrato de empreitada pela morte de qualquer das partes, salvo se ajustado em consideração às qualidades pessoais do empreiteiro.",
+   "source_snapshot_sha256": "6f2611d3f743005c5e3e3b02ae0e7b3cd69733bc62159f7237891b1242c60048",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.626:CAPUT",
+     "text": "Não se extingue o contrato de empreitada pela morte de qualquer das partes, salvo se ajustado em consideração às qualidades pessoais do empreiteiro."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não se extingue o contrato de empreitada pela morte de qualquer das partes, salvo se ajustado em consideração às qualidades pessoais do empreiteiro.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5ea2da6121a1fc14f0b2e3be68e81df8443dcd63c2167eb65da693a902a25df5",
+     "o_que_significa": "647d0b0174126d74384a0210192243290e094f1a70240e258a3983b7bd25358c",
+     "exemplo_pratico": "64398f0bc6580c1896766d261373849321c54f97a37b48acea55a16cab35e8fb",
+     "atencao": "396272565cd02cc4b5a904faaefbea537d0e5e57f643be2ff89c35bcb880ec3f",
+     "palavras_dificeis": "f55d8ef5acf56b9806bc9be805cf79bf3297134c0dd82ef1e3da9b0a44a129da"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.626, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A morte de uma das partes não encerra a empreitada, salvo contratação baseada nas qualidades pessoais do empreiteiro.’. O campo de atenção registra: ‘A natureza personalíssima deve resultar do ajuste ou das circunstâncias, não ser presumida em toda empreitada.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 108,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 497,
+   "target_id": "CC2002:ART.627",
+   "explanation_id": "ENTENDA/CC2002:ART.627/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.627:CAPUT\tPelo contrato de depósito recebe o depositário um objeto móvel, para guardar, até que o depositante o reclame.",
+   "source_snapshot_sha256": "b919809741e0646af7f46b4509fb0eb768bd01371c7447ac27abcfac63293f1d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.627:CAPUT",
+     "text": "Pelo contrato de depósito recebe o depositário um objeto móvel, para guardar, até que o depositante o reclame."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Pelo contrato de depósito recebe o depositário um objeto móvel, para guardar, até que o depositante o reclame.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "30fbff8910b3a7b2bb4e4b7c338dd6474366eb8d1491ceacb3d4706ab249d602",
+     "o_que_significa": "9e22823e1aa4991c1b4ccf08fdbedf3c9b87f1df9b6e2ea93e39a5ec6011276d",
+     "exemplo_pratico": "1f24f7de71efc87b1cc9b360d12e8fffcb79f12329b0683d58ff33cea3ac4b29",
+     "atencao": "024fcdf2e5f092d3e42bfcfaa83b566ce0888a7c836e745112f58e427ef654b2",
+     "palavras_dificeis": "c23ebcb52e1b194604ddb250cc4f52440a50c33f156f6443975e011310e40f6c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.627, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘No depósito, alguém recebe bem móvel para guardá-lo e devolvê-lo quando o depositante pedir.’. O campo de atenção registra: ‘Depósito difere de comodato: o depositário não recebe a coisa para utilizá-la. Bens fungíveis com devolução equivalente seguem regra própria.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 109,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 498,
+   "target_id": "CC2002:ART.628",
+   "explanation_id": "ENTENDA/CC2002:ART.628/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.628:CAPUT\tO contrato de depósito é gratuito, exceto se houver convenção em contrário, se resultante de atividade negocial ou se o depositário o praticar por profissão.\nCC2002:ART.628:PAR.UNICO\tSe o depósito for oneroso e a retribuição do depositário não constar de lei, nem resultar de ajuste, será determinada pelos usos do lugar, e, na falta destes, por arbitramento.",
+   "source_snapshot_sha256": "9d20547b81c66f7890c2c1011bdd55b6e1e954dca9f182898e99f7f2d0fd4f31",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.628:CAPUT",
+     "text": "O contrato de depósito é gratuito, exceto se houver convenção em contrário, se resultante de atividade negocial ou se o depositário o praticar por profissão."
+    },
+    {
+     "label": "CC2002:ART.628:PAR.UNICO",
+     "text": "Se o depósito for oneroso e a retribuição do depositário não constar de lei, nem resultar de ajuste, será determinada pelos usos do lugar, e, na falta destes, por arbitramento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O contrato de depósito é gratuito, exceto se houver convenção em contrário, se resultante de atividade negocial ou se o depositário o praticar por profissão. | Se o depósito for oneroso e a retribuição do depositário não constar de lei, nem resultar de ajuste, será determinada pelos usos do lugar, e, na falta destes, por arbitramento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5550ed93618e7a388b640222b9dcfb4feb383f49d36e043c262a1509366a72a6",
+     "o_que_significa": "28791c14e240abe55714421a6cc6405c11d54de02d621ff44e183d7fdbb37119",
+     "exemplo_pratico": "825db082c7e7010bc072b39a6135213fb323a93ef0f6227c3e6b27b40f0930b8",
+     "atencao": "c01ebbd5742f1bedeb5a1b24a7a9928d015fd729fdf216bd18a3b7e144b67454",
+     "palavras_dificeis": "bde918186a606fbe6ffbfbf8aeb61c8e93b06c64e6adb944360c0c901c90a627"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.628, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘O depósito é normalmente gratuito, mas pode ser remunerado por acordo, atividade empresarial ou profissão; sem valor definido, usam-se costumes locais ou arbitramento.’. O campo de atenção registra: ‘A remuneração não transforma a custódia em locação. Devem ser verificados contrato, atividade e prática local.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 110,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 499,
+   "target_id": "CC2002:ART.629",
+   "explanation_id": "ENTENDA/CC2002:ART.629/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.629:CAPUT\tO depositário é obrigado a ter na guarda e conservação da coisa depositada o cuidado e diligência que costuma com o que lhe pertence, bem como a restituí-la, com todos os frutos e acrescidos, quando o exija o depositante.",
+   "source_snapshot_sha256": "c8bcffc2349734081bd996f9c1dfae787aee0ceb0e72d219465342b199c35ef4",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.629:CAPUT",
+     "text": "O depositário é obrigado a ter na guarda e conservação da coisa depositada o cuidado e diligência que costuma com o que lhe pertence, bem como a restituí-la, com todos os frutos e acrescidos, quando o exija o depositante."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O depositário é obrigado a ter na guarda e conservação da coisa depositada o cuidado e diligência que costuma com o que lhe pertence, bem como a restituí-la, com todos os frutos e acrescidos, quando o exija o depositante.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "999c230c843dfb2ff17efbeea3131d5bcfc8990ec7f3800fc1fea284bcb09b86",
+     "o_que_significa": "860a6c9fffb6d5ad9fd3148636071c58b71f6ee4e8a56fddcba7cadfd70c6550",
+     "exemplo_pratico": "08aa738f40dac57c30b576415b2f4b46ece2ea32e9e0755d5879c0a59b910b33",
+     "atencao": "c54b88a725c3d94267da81d5b864b9c9349ce687fd53a6988ddff706d8534eea",
+     "palavras_dificeis": "4fca9dda78625dac8936de3be429d502906c777afa391b78d9b9fd7ec418d6c9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.629, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O depositário deve guardar a coisa com o mesmo cuidado usado nos próprios bens e devolvê-la, com frutos e acréscimos, quando exigido.’. O campo de atenção registra: ‘O padrão de cuidado pessoal não autoriza negligência. Regras de força maior e despesas necessárias também devem ser consideradas.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 111,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 500,
+   "target_id": "CC2002:ART.630",
+   "explanation_id": "ENTENDA/CC2002:ART.630/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.630:CAPUT\tSe o depósito se entregou fechado, colado, selado, ou lacrado, nesse mesmo estado se manterá.",
+   "source_snapshot_sha256": "80d46a9ec8e15cbcadfd5a8f62fb6bbbc84c90f72e53745748dfaceddd706734",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.630:CAPUT",
+     "text": "Se o depósito se entregou fechado, colado, selado, ou lacrado, nesse mesmo estado se manterá."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o depósito se entregou fechado, colado, selado, ou lacrado, nesse mesmo estado se manterá.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0ff807133ba0fd885027378604e93e09e113462cbc984fea504514293144c019",
+     "o_que_significa": "c41cf0304538fdad4b2d26250c7a621a42367c94ca356377c7a3ee7b8483dfcf",
+     "exemplo_pratico": "be9f10410d56006bc8081f237d7ae0e95c1a1fc4cd7034fea12f63f8c874b0f0",
+     "atencao": "123bff0470c11d72a3d0213ba40e20a32063a5469e175f571895f97503277a10",
+     "palavras_dificeis": "9b74c0c1fad987164583233d621f864bb5ff6552b3c83b72d3d3adc37e8b8883"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.630, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Objeto recebido fechado, selado ou lacrado deve permanecer no mesmo estado.’. O campo de atenção registra: ‘Necessidade emergencial de preservação pode exigir análise específica, mas curiosidade ou conveniência não legitimam violação do lacre.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 112,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 501,
+   "target_id": "CC2002:ART.631",
+   "explanation_id": "ENTENDA/CC2002:ART.631/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.631:CAPUT\tSalvo disposição em contrário, a restituição da coisa deve dar-se no lugar em que tiver de ser guardada. As despesas de restituição correm por conta do depositante.",
+   "source_snapshot_sha256": "fd48629231cf3debe24c010136a3e5b8972e9440fd3ee19d9da05e483c001796",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.631:CAPUT",
+     "text": "Salvo disposição em contrário, a restituição da coisa deve dar-se no lugar em que tiver de ser guardada. As despesas de restituição correm por conta do depositante."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Salvo disposição em contrário, a restituição da coisa deve dar-se no lugar em que tiver de ser guardada. As despesas de restituição correm por conta do depositante.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "52b4df6eb0f9c2703be03f51239ab37d34bfed13cdf7b8124bc77b41e3659708",
+     "o_que_significa": "039b56756365b68378f5acd16da05db25a1918baee88c9636fbc61b0f697a5df",
+     "exemplo_pratico": "6a783f835ae8834fe29df42b8a35dedb52b20e49766862b0959c7e2ca236e8cf",
+     "atencao": "9b487d354a701664f65e806b1198c10bdf3ed6211aeacf317b0d358fd96f3d71",
+     "palavras_dificeis": "8893e553d0def92c7dda8761932ed0a3f7ae83667093599475236478330928c0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.631, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Salvo ajuste diferente, a coisa é devolvida onde deveria permanecer guardada, e o depositante paga as despesas da restituição.’. O campo de atenção registra: ‘Contrato ou circunstâncias podem fixar outro local. Despesas causadas por culpa do depositário não se confundem com custo normal de restituição.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 113,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 502,
+   "target_id": "CC2002:ART.632",
+   "explanation_id": "ENTENDA/CC2002:ART.632/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.632:CAPUT\tSe a coisa houver sido depositada no interesse de terceiro, e o depositário tiver sido cientificado deste fato pelo depositante, não poderá ele exonerar-se restituindo a coisa a este, sem consentimento daquele.",
+   "source_snapshot_sha256": "7ee53230616cbdfed4eefb22c571d4c79ca78a8c64f4b8c60d3d895949d25bde",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.632:CAPUT",
+     "text": "Se a coisa houver sido depositada no interesse de terceiro, e o depositário tiver sido cientificado deste fato pelo depositante, não poderá ele exonerar-se restituindo a coisa a este, sem consentimento daquele."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se a coisa houver sido depositada no interesse de terceiro, e o depositário tiver sido cientificado deste fato pelo depositante, não poderá ele exonerar-se restituindo a coisa a este, sem consentimento daquele.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5508a22949b4ce598a8459abcd208fe5a4099aed09d0eca100729cec459114e5",
+     "o_que_significa": "f631a92b72bbc052f1d7ec7ba166ad7f90b13107847f3a9835919fcec57b59bc",
+     "exemplo_pratico": "3b5cf59aaf2d9b7557ee5f1e768632c5d9df6ec40e59a9dcef7f99bffd9d1c65",
+     "atencao": "1474bf25070b1321660dbe09c7952cf9da8db34f3a70ed228e5b2a8c15dc116b",
+     "palavras_dificeis": "78db8ed516b14a3e2dbbdd31169fa739942e9865a0f20a8cd334f8ead3943977"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.632, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se a coisa foi depositada também no interesse de terceiro e o depositário foi informado, não pode devolvê-la ao depositante sem consentimento desse beneficiário.’. O campo de atenção registra: ‘O impedimento depende de interesse do terceiro e comunicação ao depositário. Não basta alegação desconhecida no momento da devolução.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 114,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 503,
+   "target_id": "CC2002:ART.633",
+   "explanation_id": "ENTENDA/CC2002:ART.633/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.633:CAPUT\tAinda que o contrato fixe prazo à restituição, o depositário entregará o depósito logo que se lhe exija, salvo se tiver o direito de retenção a que se refere o art. 644, se o objeto for judicialmente embargado, se sobre ele pender execução, notificada ao depositário, ou se houver motivo razoável de suspeitar que a coisa foi dolosamente obtida.",
+   "source_snapshot_sha256": "8e8be3a891374c2fa2f8cab8d577e95cc06616d76d40f778b835621da2672dda",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.633:CAPUT",
+     "text": "Ainda que o contrato fixe prazo à restituição, o depositário entregará o depósito logo que se lhe exija, salvo se tiver o direito de retenção a que se refere o art. 644, se o objeto for judicialmente embargado, se sobre ele pender execução, notificada ao depositário, ou se houver motivo razoável de suspeitar que a coisa foi dolosamente obtida."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Ainda que o contrato fixe prazo à restituição, o depositário entregará o depósito logo que se lhe exija, salvo se tiver o direito de retenção a que se refere o art. 644, se o objeto for judicialmente embargado, se sobre ele pender execução, notificada ao depositário, ou se houver motivo razoável de suspeitar que a coisa foi dolosamente obtida.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "db488525edb0e10bf832a76c5c5dbf6469cb63d7198ffae7fc0b7c05f1f36fc1",
+     "o_que_significa": "3c271adda20a0c606cbb70df5bd0c23f677d6d971d32ffd0be83db3139a23034",
+     "exemplo_pratico": "4f9852dbf4d9fc7db52c6adb6567837975d23b455c6b89332865752ace838a78",
+     "atencao": "361ed0a450b6be1487b6051613284a76cc5bf35ec4715caacfdd9ae85a0c9aa2",
+     "palavras_dificeis": "f642b365a96ed8ae2d1640a8cfe0cdcc3bebacab5054e280c877203fdeafb79c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.633, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Mesmo com prazo, a coisa deve ser devolvida quando pedida, salvo retenção legal, embargo, execução notificada ou suspeita razoável de obtenção dolosa.’. O campo de atenção registra: ‘A recusa exige enquadramento real em uma exceção. Suspeita de origem dolosa conduz ao procedimento do artigo seguinte, não à apropriação da coisa.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 115,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 504,
+   "target_id": "CC2002:ART.634",
+   "explanation_id": "ENTENDA/CC2002:ART.634/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.634:CAPUT\tNo caso do artigo antecedente, última parte, o depositário, expondo o fundamento da suspeita, requererá que se recolha o objeto ao Depósito Público.",
+   "source_snapshot_sha256": "cbc04d34e49fa60ad65df0b72a43c1802dc0927248b020549b0c1dd26fffdb96",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.634:CAPUT",
+     "text": "No caso do artigo antecedente, última parte, o depositário, expondo o fundamento da suspeita, requererá que se recolha o objeto ao Depósito Público."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: No caso do artigo antecedente, última parte, o depositário, expondo o fundamento da suspeita, requererá que se recolha o objeto ao Depósito Público.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "da93cf84b82ca13c997a0e0d820f047dc65b02e4498d1c5b23a7462c98704c6b",
+     "o_que_significa": "e86ffc429644f8944af232a5c79a883a1d056b224e08c1a214c1b627f8e0d9dd",
+     "exemplo_pratico": "fcfa1247cbdb0ddae125c1bf95eb1d971b7c9358e5c34a905d2b9901f121cbc8",
+     "atencao": "7a01e34c0ff1e6f0bf109d86de9f2efafa90d430c4ee748b0a0050b6271c7cd2",
+     "palavras_dificeis": "b147062ead10cc0bb26b95ea6f147f1a2c2245f31428432e0ef08c336df659ee"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.634, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Havendo suspeita fundada de obtenção dolosa, o depositário deve expor o motivo e pedir recolhimento ao depósito público.’. O campo de atenção registra: ‘A suspeita precisa ser razoável e fundamentada. O depositário não adquire direito sobre a coisa nem pode simplesmente entregá-la a terceiro.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 116,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 505,
+   "target_id": "CC2002:ART.635",
+   "explanation_id": "ENTENDA/CC2002:ART.635/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.635:CAPUT\tAo depositário será facultado, outrossim, requerer depósito judicial da coisa, quando, por motivo plausível, não a possa guardar, e o depositante não queira recebê-la.",
+   "source_snapshot_sha256": "df2d88133075e5cb7df9c22dfce6a43348a558e3ebac4294c00440d04d05318a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.635:CAPUT",
+     "text": "Ao depositário será facultado, outrossim, requerer depósito judicial da coisa, quando, por motivo plausível, não a possa guardar, e o depositante não queira recebê-la."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Ao depositário será facultado, outrossim, requerer depósito judicial da coisa, quando, por motivo plausível, não a possa guardar, e o depositante não queira recebê-la.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0c90580951be38048604bc13534280c7f5589968759738c5c23b327eca2deadf",
+     "o_que_significa": "5aecfdec856ac887ca6322352b811537fd95e596ffe433fbb64fc67cf6ae02ef",
+     "exemplo_pratico": "b9fcf95de10c95a3b7997a2f496b88f7a05742f8107a95c4837f2a1fe417c5fb",
+     "atencao": "afb2378b72e361f5fddb5128496be91be8fb08b22121ab2657ae0077bdccac6b",
+     "palavras_dificeis": "1a6c62531b34f0fb3bcdf7dddfd42ef91c47606bdb19cc34e0da9228a43893c5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.635, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Depositário impossibilitado de continuar a guarda por motivo plausível pode pedir depósito judicial quando o depositante não aceita a devolução.’. O campo de atenção registra: ‘Conveniência simples pode ser insuficiente. Devem existir motivo plausível, tentativa de devolução e recusa do depositante.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 117,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 506,
+   "target_id": "CC2002:ART.636",
+   "explanation_id": "ENTENDA/CC2002:ART.636/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.636:CAPUT\tO depositário, que por força maior houver perdido a coisa depositada e recebido outra em seu lugar, é obrigado a entregar a segunda ao depositante, e ceder-lhe as ações que no caso tiver contra o terceiro responsável pela restituição da primeira.",
+   "source_snapshot_sha256": "02768c4297a02f8fce318f1f4e3529909f096376d38c12233afe81b1799aad16",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.636:CAPUT",
+     "text": "O depositário, que por força maior houver perdido a coisa depositada e recebido outra em seu lugar, é obrigado a entregar a segunda ao depositante, e ceder-lhe as ações que no caso tiver contra o terceiro responsável pela restituição da primeira."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O depositário, que por força maior houver perdido a coisa depositada e recebido outra em seu lugar, é obrigado a entregar a segunda ao depositante, e ceder-lhe as ações que no caso tiver contra o terceiro responsável pela restituição da primeira.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a7bd86f534b20c1291fcf62599ec05820acd0c7489e5db9c17d6e96a0c164f73",
+     "o_que_significa": "b82b4905c46b126a3b7b480f153dee72732b2f9dd7c531a30bd9cb0baa7fd7b3",
+     "exemplo_pratico": "b9c3615358e83cb53b42f8af40cde5ee8f3ede0f957de0f542197f6ff62d7612",
+     "atencao": "e2ec9b9047c450d430ee942f0a40e942266c7dbc0519f5e986d23847d914327e",
+     "palavras_dificeis": "080be7ff98e4b6cc476af9d6bac07bcc0a368321caafa88e381c5b0135968f86"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.636, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se força maior destrói a coisa e o depositário recebe substituição, deve entregá-la ao depositante e transferir as ações contra o responsável.’. O campo de atenção registra: ‘A escusa depende de força maior provada. A regra não autoriza reter indenização nem elimina responsabilidade por culpa concorrente.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 118,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 507,
+   "target_id": "CC2002:ART.637",
+   "explanation_id": "ENTENDA/CC2002:ART.637/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.637:CAPUT\tO herdeiro do depositário, que de boa-fé vendeu a coisa depositada, é obrigado a assistir o depositante na reivindicação, e a restituir ao comprador o preço recebido.",
+   "source_snapshot_sha256": "375b7fcba8cc451a5445973f4eb09288a2e5d6e1eb9b41ba8c9a3a21feaaf450",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.637:CAPUT",
+     "text": "O herdeiro do depositário, que de boa-fé vendeu a coisa depositada, é obrigado a assistir o depositante na reivindicação, e a restituir ao comprador o preço recebido."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O herdeiro do depositário, que de boa-fé vendeu a coisa depositada, é obrigado a assistir o depositante na reivindicação, e a restituir ao comprador o preço recebido.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9c854804cc7a189f3aff84153b6606678297eb8862443cf22bca2f27e9331d86",
+     "o_que_significa": "ad0f3db72a66d54ee08d31dd0f4051e43c1b11df2915340aaf7b48c55b2042ca",
+     "exemplo_pratico": "ae0c2eeeb3fd4b4031fb3302fdda91dc06dcd7b4eddf61a73bb18d7f28be1736",
+     "atencao": "d6e03b0a1b6d363708b51e61035daaae10776dbd0c0868609bcab6641b218d6a",
+     "palavras_dificeis": "0a252323209e8895dc4e42c7d803b21f81cbb1d3b882bdd4c2b1cf829bdc83e6"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.637, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Herdeiro que, de boa-fé, vende coisa depositada deve ajudar o depositante a recuperá-la e devolver ao comprador o preço recebido.’. O campo de atenção registra: ‘Má-fé ou impossibilidade de recuperação pode gerar consequências diferentes. O artigo não transfere propriedade ao herdeiro.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 119,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 508,
+   "target_id": "CC2002:ART.638",
+   "explanation_id": "ENTENDA/CC2002:ART.638/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.638:CAPUT\tSalvo os casos previstos nos arts. 633 e 634, não poderá o depositário furtar-se à restituição do depósito, alegando não pertencer a coisa ao depositante, ou opondo compensação, exceto se noutro depósito se fundar.",
+   "source_snapshot_sha256": "bf0dd6044e1438ce5d60c2e7afb69d907a94022d5080d9297ec017c5137087c5",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.638:CAPUT",
+     "text": "Salvo os casos previstos nos arts. 633 e 634, não poderá o depositário furtar-se à restituição do depósito, alegando não pertencer a coisa ao depositante, ou opondo compensação, exceto se noutro depósito se fundar."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Salvo os casos previstos nos arts. 633 e 634, não poderá o depositário furtar-se à restituição do depósito, alegando não pertencer a coisa ao depositante, ou opondo compensação, exceto se noutro depósito se fundar.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "605edbb5fca30b60f720447d766517c9866e09859293aa853a0fab7401775d64",
+     "o_que_significa": "2ebbdfa77f8bc8717e762a9fdbdc938d5856c09051c727960014649cb5726b53",
+     "exemplo_pratico": "771b0afeeccaaf7b19bc74035962b07d357cc19a0cdd88de85ce92f3a1c0ce61",
+     "atencao": "2b1dec141d44bcf61802e832878c9ef7d8a8e88ba005b9e7d05d990262453d4e",
+     "palavras_dificeis": "06eb33a54587880de4b82c421cff048abdc7927b0bebddbf4034fc5040d364ea"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.638, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Fora das exceções legais, o depositário não pode negar devolução alegando que o depositante não é dono nem compensar dívida, salvo crédito fundado em outro depósito.’. O campo de atenção registra: ‘Embargo, suspeita de origem dolosa e retenção legal seguem regimes próprios. A exceção de compensação é restrita.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 120,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 509,
+   "target_id": "CC2002:ART.639",
+   "explanation_id": "ENTENDA/CC2002:ART.639/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.639:CAPUT\tSendo dois ou mais depositantes, e divisível a coisa, a cada um só entregará o depositário a respectiva parte, salvo se houver entre eles solidariedade.",
+   "source_snapshot_sha256": "8cbfe66af9a0d9f21b90b34c5aaebd95c6aef38b3c4b640fdefef3f9eb424b9c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.639:CAPUT",
+     "text": "Sendo dois ou mais depositantes, e divisível a coisa, a cada um só entregará o depositário a respectiva parte, salvo se houver entre eles solidariedade."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Sendo dois ou mais depositantes, e divisível a coisa, a cada um só entregará o depositário a respectiva parte, salvo se houver entre eles solidariedade.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "59dbba7c53f1f3d60ffab52772907ce8d7d5e86bd06233e5dd28ceb2e9188077",
+     "o_que_significa": "380100fb90f88ac7669d8e2e537e9ccdf66769064a7e4105dee2a8113618c00e",
+     "exemplo_pratico": "38bf461eca2248bea786a36fb3044933c57231563cf9008398645f1ce02d29aa",
+     "atencao": "7c79ba1629315f8ef46e5216fcff360cf083f51991735a6da594046154309f80",
+     "palavras_dificeis": "0ae29d0a39cc25df4fb9df4012d5fe6552506bb60efc37fc7b4cb57f6eb87b35"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.639, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Com vários depositantes e coisa divisível, cada um recebe somente sua parte, salvo solidariedade entre eles.’. O campo de atenção registra: ‘Indivisibilidade ou solidariedade altera a entrega. O depositário deve identificar quotas e legitimidade antes de restituir.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 121,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 510,
+   "target_id": "CC2002:ART.640",
+   "explanation_id": "ENTENDA/CC2002:ART.640/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.640:CAPUT\tSob pena de responder por perdas e danos, não poderá o depositário, sem licença expressa do depositante, servir-se da coisa depositada, nem a dar em depósito a outrem.\nCC2002:ART.640:PAR.UNICO\tSe o depositário, devidamente autorizado, confiar a coisa em depósito a terceiro, será responsável se agiu com culpa na escolha deste.",
+   "source_snapshot_sha256": "4440391f1e097a7ddf807a2de275b7cbfb01e262e45c7c90a0779c7a05c6c23a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.640:CAPUT",
+     "text": "Sob pena de responder por perdas e danos, não poderá o depositário, sem licença expressa do depositante, servir-se da coisa depositada, nem a dar em depósito a outrem."
+    },
+    {
+     "label": "CC2002:ART.640:PAR.UNICO",
+     "text": "Se o depositário, devidamente autorizado, confiar a coisa em depósito a terceiro, será responsável se agiu com culpa na escolha deste."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Sob pena de responder por perdas e danos, não poderá o depositário, sem licença expressa do depositante, servir-se da coisa depositada, nem a dar em depósito a outrem. | Se o depositário, devidamente autorizado, confiar a coisa em depósito a terceiro, será responsável se agiu com culpa na escolha deste.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8382f2a349b0f8671a3e0f91b891a97a3d70344dfc8ab448ca8f0fcbb563f89f",
+     "o_que_significa": "c866b5e4152622625d9cd86eb40a1256043bc1352f6a92c984c03e632cb11dd8",
+     "exemplo_pratico": "9295ed12054e8e17e27d4d0f2ad344d539aa8c77060b37745db7fae94656875a",
+     "atencao": "79e4296bd1a598f69a8b00de4572be7396d9fffae12847e2e14272663ae9b2ba",
+     "palavras_dificeis": "9bd092434ee22879a8fda7500cf799c443321d52f6ee93af3bba15164f3b1f5a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.640, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Sem autorização expressa, o depositário não pode usar a coisa nem confiá-la a outro; autorizado a subdepositar, responde por culpa na escolha do terceiro.’. O campo de atenção registra: ‘Uso ou subdepósito não autorizado pode gerar perdas e danos. Mesmo autorizado, negligência na seleção permanece relevante.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 122,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 511,
+   "target_id": "CC2002:ART.641",
+   "explanation_id": "ENTENDA/CC2002:ART.641/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.641:CAPUT\tSe o depositário se tornar incapaz, a pessoa que lhe assumir a administração dos bens diligenciará imediatamente restituir a coisa depositada e, não querendo ou não podendo o depositante recebê-la, recolhê-la-á ao Depósito Público ou promoverá nomeação de outro depositário.",
+   "source_snapshot_sha256": "bad76e6168e0749fd1206ba986b503c9ec63603075cdfb251df5ad7652149ffd",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.641:CAPUT",
+     "text": "Se o depositário se tornar incapaz, a pessoa que lhe assumir a administração dos bens diligenciará imediatamente restituir a coisa depositada e, não querendo ou não podendo o depositante recebê-la, recolhê-la-á ao Depósito Público ou promoverá nomeação de outro depositário."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o depositário se tornar incapaz, a pessoa que lhe assumir a administração dos bens diligenciará imediatamente restituir a coisa depositada e, não querendo ou não podendo o depositante recebê-la, recolhê-la-á ao Depósito Público ou promoverá nomeação de outro depositário.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a4d897e04a59c99257c909651e9f5ad4109a3e26d62e58459876a92aff28c9c3",
+     "o_que_significa": "f4e7d8d7ce40ac7d8c5fcd049ecfa048ff1568a5e2ce804c4860f73eb42a29c4",
+     "exemplo_pratico": "f3fc47e4d58a3f8a2eb8766f452afc1587f8947d3df8b0576a624c3d9a13f863",
+     "atencao": "d1b3fe963e182c5c6d2037e4ef6d23317370a7b8cf0cc9f04c293c0454d9a42c",
+     "palavras_dificeis": "8af0a583115a8027e2c1970f3f9fe66197a960ff7d8bb61920d10be8e511981c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.641, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se o depositário se torna incapaz, o administrador de seus bens deve devolver imediatamente a coisa ou encaminhá-la à custódia pública ou a novo depositário.’. O campo de atenção registra: ‘A coisa depositada não integra livremente o patrimônio do incapaz. A medida adequada depende da possibilidade de recebimento pelo depositante.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 123,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 512,
+   "target_id": "CC2002:ART.642",
+   "explanation_id": "ENTENDA/CC2002:ART.642/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.642:CAPUT\tO depositário não responde pelos casos de força maior; mas, para que lhe valha a escusa, terá de prová-los.",
+   "source_snapshot_sha256": "b6d3bd394e7d304b84f0f41351fc0a4b4f3cb9a71a3ee864826ae2f45220f62f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.642:CAPUT",
+     "text": "O depositário não responde pelos casos de força maior; mas, para que lhe valha a escusa, terá de prová-los."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O depositário não responde pelos casos de força maior; mas, para que lhe valha a escusa, terá de prová-los.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d21b1a593502710579f51869a9e689a2fab493481c3f18820685f716340cb41d",
+     "o_que_significa": "659abdaf8d76ed3d9b568a9bf81860675f9916a5bd35585874556c1ea222fb42",
+     "exemplo_pratico": "a424a8ec384389afbadf4f774ef4d93d8d8f89bb9c3c9d76cc7e3191916aaf41",
+     "atencao": "c7ce3a4aaf76dd2f4b0dcf855c87fb800037ad42e7fb3ad7fef70e733d0be5b0",
+     "palavras_dificeis": "e4fadabbbe3de7b646f7e0ff9fbc48d5f753668459ccf20e8e2798cf10e04cfc"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.642, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Força maior exclui a responsabilidade do depositário somente quando ele a prova.’. O campo de atenção registra: ‘A alegação genérica não basta. Culpa, mora ou falta de cautela podem impedir a escusa.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 124,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 513,
+   "target_id": "CC2002:ART.643",
+   "explanation_id": "ENTENDA/CC2002:ART.643/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.643:CAPUT\tO depositante é obrigado a pagar ao depositário as despesas feitas com a coisa, e os prejuízos que do depósito provierem.",
+   "source_snapshot_sha256": "b48cc22066c5d73b51e12f9620562f8d40f8d3645aa23607e5b7b347c545d0db",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.643:CAPUT",
+     "text": "O depositante é obrigado a pagar ao depositário as despesas feitas com a coisa, e os prejuízos que do depósito provierem."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O depositante é obrigado a pagar ao depositário as despesas feitas com a coisa, e os prejuízos que do depósito provierem.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6a0cd8da998f3bfdb0488ce7c3ecd6fc48da9c0883318c579c797b914dd61008",
+     "o_que_significa": "7084502e18eff1efa8e26e462032a67f57ec096423aa0d24b3d7873f10167b2b",
+     "exemplo_pratico": "0374822184555abe6c29f04b72db8a80517780a96293d7c4b3a92d4d1ac4f113",
+     "atencao": "72b11e8e8686915ca9b7ad4ef244203eb97c33b5d317224ce1a90d1899a3050d",
+     "palavras_dificeis": "cedfa7e46807f1811e4311091d0eb3eb35a5aa579317c80f055224d3d64494dd"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.643, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O depositante deve reembolsar despesas feitas com a coisa e prejuízos que a própria custódia causar ao depositário.’. O campo de atenção registra: ‘Despesas supérfluas ou prejuízos causados por culpa do depositário não entram automaticamente na regra.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 125,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 514,
+   "target_id": "CC2002:ART.644",
+   "explanation_id": "ENTENDA/CC2002:ART.644/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.644:CAPUT\tO depositário poderá reter o depósito até que se lhe pague a retribuição devida, o líquido valor das despesas, ou dos prejuízos a que se refere o artigo anterior, provando imediatamente esses prejuízos ou essas despesas.\nCC2002:ART.644:PAR.UNICO\tSe essas dívidas, despesas ou prejuízos não forem provados suficientemente, ou forem ilíquidos, o depositário poderá exigir caução idônea do depositante ou, na falta desta, a remoção da coisa para o Depósito Público, até que se liquidem.",
+   "source_snapshot_sha256": "daeaae8dacecb47cd76b50fd83fb198c51c9bb505b06c37c4e54231172e4668c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.644:CAPUT",
+     "text": "O depositário poderá reter o depósito até que se lhe pague a retribuição devida, o líquido valor das despesas, ou dos prejuízos a que se refere o artigo anterior, provando imediatamente esses prejuízos ou essas despesas."
+    },
+    {
+     "label": "CC2002:ART.644:PAR.UNICO",
+     "text": "Se essas dívidas, despesas ou prejuízos não forem provados suficientemente, ou forem ilíquidos, o depositário poderá exigir caução idônea do depositante ou, na falta desta, a remoção da coisa para o Depósito Público, até que se liquidem."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O depositário poderá reter o depósito até que se lhe pague a retribuição devida, o líquido valor das despesas, ou dos prejuízos a que se refere o artigo anterior, provando imediatamente esses prejuízos ou essas despesas. | Se essas dívidas, despesas ou prejuízos não forem provados suficientemente, ou forem ilíquidos, o depositário poderá exigir caução idônea do depositante ou, na falta desta, a remoção da coisa para o Depósito Público, até que se liquidem.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "634b99756cd15f1087dff3a8e2dfdb7b41dedad97f4922ae30de743dc944c70f",
+     "o_que_significa": "0a22385730d336642c2429487d91488aa514cd82ad37dc21d437d316adf03723",
+     "exemplo_pratico": "8912cb4f639f53f1e31937509f19c3a40ebfe9097427e7b7af8217805bdc30d4",
+     "atencao": "90030b75b93a4e65174d1ed6f596cf31a237e7530e6633f58e09073c6cf9a2aa",
+     "palavras_dificeis": "f9c2946c1fd5475a05452b0cb8fdb6307cd829732d8f79dcdc62cb73adb77167"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.644, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘O depositário pode reter a coisa até receber remuneração, despesas líquidas ou prejuízos comprovados; se o valor for incerto, pode exigir caução ou remoção para depósito público.’. O campo de atenção registra: ‘O direito alcança créditos vinculados ao depósito. Apropriação ou venda unilateral da coisa não é autorizada.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 126,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 515,
+   "target_id": "CC2002:ART.645",
+   "explanation_id": "ENTENDA/CC2002:ART.645/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.645:CAPUT\tO depósito de coisas fungíveis, em que o depositário se obrigue a restituir objetos do mesmo gênero, qualidade e quantidade, regular-se-á pelo disposto acerca do mútuo.",
+   "source_snapshot_sha256": "39ec83e34571a667b10bb5805d38d5b3c16e594d8fecd60e24ffb67f8916c49f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.645:CAPUT",
+     "text": "O depósito de coisas fungíveis, em que o depositário se obrigue a restituir objetos do mesmo gênero, qualidade e quantidade, regular-se-á pelo disposto acerca do mútuo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O depósito de coisas fungíveis, em que o depositário se obrigue a restituir objetos do mesmo gênero, qualidade e quantidade, regular-se-á pelo disposto acerca do mútuo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "774aad765c528ba97cbf095feaaf28a05a9c90104191be9d83f715c1000ccf8b",
+     "o_que_significa": "00de595ab426607b260484ad9cbdbfb0ab118f0f30e88adc7c521bea9f30c141",
+     "exemplo_pratico": "75e94df4fcec7ea9796b5a6b4ed2688ea3deae79076c9b532a26421778bf013c",
+     "atencao": "d7b56636d3f98888ad9ff640b2272582c91e8e8e80d6bbac6a04e6b672414c26",
+     "palavras_dificeis": "1b56a30e71facab4d99c5287ce568c3b92405ec4d0d74596fdc73fdec5d4771e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.645, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Depósito de coisas fungíveis com obrigação de devolver equivalente do mesmo gênero, qualidade e quantidade segue as regras do mútuo.’. O campo de atenção registra: ‘Se as unidades devem permanecer separadas e ser devolvidas exatamente, pode existir depósito comum, não irregular.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 127,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 516,
+   "target_id": "CC2002:ART.646",
+   "explanation_id": "ENTENDA/CC2002:ART.646/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.646:CAPUT\tO depósito voluntário provar-se-á por escrito.",
+   "source_snapshot_sha256": "f8f2c4a889d297dcc95d84a7b82fd828cb16382a7ea5a234b32ccb75fdac0f88",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.646:CAPUT",
+     "text": "O depósito voluntário provar-se-á por escrito."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O depósito voluntário provar-se-á por escrito.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "91e9e1e729a487128a6fe4abad6e80f99e3fbab66ba8cf65965f6df2a596df71",
+     "o_que_significa": "b858b4b1b64f9d44191a70a40ab42ea9f4ec0bfbf05ccc20ec6dbff4a245fb6c",
+     "exemplo_pratico": "0875103a5dae0c8bbbbaf02040d83f7f72a228cc0ad0c1b7138b520a38eabff9",
+     "atencao": "b7ac04d26a7a01151a46224c23525d71488b7ff1111bb59997ddae5fc2a4332a",
+     "palavras_dificeis": "1bbe5fe6e6a8f12cfee4b32f4078bfbc8cbd6f8a9c3b49a7aff3bc08f81f7fd7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.646, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O depósito voluntário deve ser provado por escrito.’. O campo de atenção registra: ‘A regra é probatória e não autoriza falsificar formalidade inexistente. Depósito necessário possui disciplina de prova diferente.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 128,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 517,
+   "target_id": "CC2002:ART.647",
+   "explanation_id": "ENTENDA/CC2002:ART.647/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.647:CAPUT\tÉ depósito necessário:\nCC2002:ART.647:INC.I\to que se faz em desempenho de obrigação legal;\nCC2002:ART.647:INC.II\to que se efetua por ocasião de alguma calamidade, como o incêndio, a inundação, o naufrágio ou o saque.",
+   "source_snapshot_sha256": "5d4ece7720a9437a61841cd0429ac10ea2f11423a94fcc1fd786bb66fc5dacfd",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.647:CAPUT",
+     "text": "É depósito necessário:"
+    },
+    {
+     "label": "CC2002:ART.647:INC.I",
+     "text": "o que se faz em desempenho de obrigação legal;"
+    },
+    {
+     "label": "CC2002:ART.647:INC.II",
+     "text": "o que se efetua por ocasião de alguma calamidade, como o incêndio, a inundação, o naufrágio ou o saque."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: É depósito necessário: | o que se faz em desempenho de obrigação legal; | o que se efetua por ocasião de alguma calamidade, como o incêndio, a inundação, o naufrágio ou o saque.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "404399916da32bed2307d366fc16d5348d94c0c0a0db4182df4e19ab86b55722",
+     "o_que_significa": "2a412d1eba56cb90470dc938303c417a0e5ddb756abc9198ca55d01f4c23fc0f",
+     "exemplo_pratico": "8d088197847ed643ce9df7e3d927f42d2da43e16f0edda1b1365d8e5bd306938",
+     "atencao": "ae9c26d91afd930bd606d7ed5686e8233e331917942141910e5cfa36c9e2cd48",
+     "palavras_dificeis": "c62982dcebd5903a93122ff49fba685d8e9c806325d9a1bbcb437b09096447d8"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.647, foram cotejados individualmente 3 segmento(s) vigente(s) (CAPUT, INC.I, INC.II) com os cinco campos ENTENDA. A síntese ativa informa: ‘É necessário o depósito imposto por lei ou realizado durante calamidade, como incêndio, inundação, naufrágio ou saque.’. O campo de atenção registra: ‘A lista de calamidades é exemplificativa, mas deve haver situação equivalente. O regime aplicável continua nos artigos seguintes.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 129,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 518,
+   "target_id": "CC2002:ART.648",
+   "explanation_id": "ENTENDA/CC2002:ART.648/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.648:CAPUT\tO depósito a que se refere o inciso I do artigo antecedente, reger-se-á pela disposição da respectiva lei, e, no silêncio ou deficiência dela, pelas concernentes ao depósito voluntário.\nCC2002:ART.648:PAR.UNICO\tAs disposições deste artigo aplicam-se aos depósitos previstos no inciso II do artigo antecedente, podendo estes certificarem-se por qualquer meio de prova.",
+   "source_snapshot_sha256": "23149f6350666fe3eac9809387553fc5da0594a6e868825088d3b78557fb5f27",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.648:CAPUT",
+     "text": "O depósito a que se refere o inciso I do artigo antecedente, reger-se-á pela disposição da respectiva lei, e, no silêncio ou deficiência dela, pelas concernentes ao depósito voluntário."
+    },
+    {
+     "label": "CC2002:ART.648:PAR.UNICO",
+     "text": "As disposições deste artigo aplicam-se aos depósitos previstos no inciso II do artigo antecedente, podendo estes certificarem-se por qualquer meio de prova."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O depósito a que se refere o inciso I do artigo antecedente, reger-se-á pela disposição da respectiva lei, e, no silêncio ou deficiência dela, pelas concernentes ao depósito voluntário. | As disposições deste artigo aplicam-se aos depósitos previstos no inciso II do artigo antecedente, podendo estes certificarem-se por qualquer meio de prova.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e78a0a8fc6af1e8b6aefd7ad8e4593499a35adc1f55bab9f07ec8fa37d2d3a7c",
+     "o_que_significa": "af847a86dcfeec6c358cb0747a39a4aca114b9304e9dbd6ba4ebd371d1d1070b",
+     "exemplo_pratico": "9ddd862073f2a3edc0b81886fd275da0c8485795bde18cf0d8010a17646f0125",
+     "atencao": "5b8f7469f8675d124346b61c21d41610421b2430f51b44916bc8f53be10a0641",
+     "palavras_dificeis": "49f8b143123eb64d158f4ac8c5e0a94ae2712ae286d8c8eae67b4c628275e71e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.648, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Depósito imposto por lei segue a norma específica e, nas lacunas, as regras do voluntário; o depósito de calamidade admite qualquer meio de prova.’. O campo de atenção registra: ‘Liberdade de prova não dispensa demonstração convincente da entrega e do objeto. Regras especiais podem estabelecer requisitos adicionais.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 130,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 519,
+   "target_id": "CC2002:ART.649",
+   "explanation_id": "ENTENDA/CC2002:ART.649/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.649:CAPUT\tAos depósitos previstos no artigo antecedente é equiparado o das bagagens dos viajantes ou hóspedes nas hospedarias onde estiverem.\nCC2002:ART.649:PAR.UNICO\tOs hospedeiros responderão como depositários, assim como pelos furtos e roubos que perpetrarem as pessoas empregadas ou admitidas nos seus estabelecimentos.",
+   "source_snapshot_sha256": "ea6819033bd5f7c8586da64c92c1a1d16d6b64f2b3d4d89f18d6a7e95e40a614",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.649:CAPUT",
+     "text": "Aos depósitos previstos no artigo antecedente é equiparado o das bagagens dos viajantes ou hóspedes nas hospedarias onde estiverem."
+    },
+    {
+     "label": "CC2002:ART.649:PAR.UNICO",
+     "text": "Os hospedeiros responderão como depositários, assim como pelos furtos e roubos que perpetrarem as pessoas empregadas ou admitidas nos seus estabelecimentos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Aos depósitos previstos no artigo antecedente é equiparado o das bagagens dos viajantes ou hóspedes nas hospedarias onde estiverem. | Os hospedeiros responderão como depositários, assim como pelos furtos e roubos que perpetrarem as pessoas empregadas ou admitidas nos seus estabelecimentos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0aa6456002bf69603240c04910a6493d1f95b47bfc9867c9854092764d189545",
+     "o_que_significa": "61dff829f168186644240dc9365baa290612ba9fedd75563cfd5e9774704ba59",
+     "exemplo_pratico": "e35c823f41debbd0d943f2e7658d02fa00b3634577f73130be488f389c73d8fc",
+     "atencao": "7d3658978197e6fcf28be5285701cf82207e3e83cf2b92af9b6ba443fe646b8c",
+     "palavras_dificeis": "1af6ed62c2c6309fd7a512cad0e91242d565c57180296f9c74ee3ff0a37f30ee"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.649, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Bagagem de viajante ou hóspede em hospedaria é equiparada a depósito necessário; o hospedeiro responde também por subtrações praticadas por empregados ou pessoas admitidas no estabelecimento.’. O campo de atenção registra: ‘A responsabilidade pode cessar na hipótese do artigo seguinte. Devem ser provados hospedagem, bem e prejuízo.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 131,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 520,
+   "target_id": "CC2002:ART.650",
+   "explanation_id": "ENTENDA/CC2002:ART.650/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.650:CAPUT\tCessa, nos casos do artigo antecedente, a responsabilidade dos hospedeiros, se provarem que os fatos prejudiciais aos viajantes ou hóspedes não podiam ter sido evitados.",
+   "source_snapshot_sha256": "932852401fae6080c25d4359bfd5a3ca4a7f870a66c3a6e8f4a204a195ab03bd",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.650:CAPUT",
+     "text": "Cessa, nos casos do artigo antecedente, a responsabilidade dos hospedeiros, se provarem que os fatos prejudiciais aos viajantes ou hóspedes não podiam ter sido evitados."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Cessa, nos casos do artigo antecedente, a responsabilidade dos hospedeiros, se provarem que os fatos prejudiciais aos viajantes ou hóspedes não podiam ter sido evitados.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6b4b8e3efc6420b9ca0334fdfca00b7c997170a6e9ac9803e93290330a18703e",
+     "o_que_significa": "682fc82c39843ea11ee2b3dfdc6bcd4d5aa75e857336f9204f82269f7b7d8288",
+     "exemplo_pratico": "3802d4d329d1756f1c5b8dd3b798cadc3f2b1a84f2163e96a87e00ede8bbbe73",
+     "atencao": "69b4a559e24d67bf5d097d3d3bb89776727eda4d5f09711352b2187beacccf2c",
+     "palavras_dificeis": "8ae14b257e111a6aa77e7bbb23cf4756b13db30743d7ca56e8b8bde60866f541"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.650, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A responsabilidade do hospedeiro cessa se ele provar que o dano aos pertences não poderia ter sido evitado.’. O campo de atenção registra: ‘A prova cabe ao hospedeiro. Falha de vigilância, acesso ou organização impede tratar o fato como inevitável.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 132,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 521,
+   "target_id": "CC2002:ART.651",
+   "explanation_id": "ENTENDA/CC2002:ART.651/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.651:CAPUT\tO depósito necessário não se presume gratuito. Na hipótese do art. 649, a remuneração pelo depósito está incluída no preço da hospedagem.",
+   "source_snapshot_sha256": "404a368fe36afb51c3c1042f9f17103376809474f18177822470ae29c7077656",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.651:CAPUT",
+     "text": "O depósito necessário não se presume gratuito. Na hipótese do art. 649, a remuneração pelo depósito está incluída no preço da hospedagem."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O depósito necessário não se presume gratuito. Na hipótese do art. 649, a remuneração pelo depósito está incluída no preço da hospedagem.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "83f7dddff8768c0a5acbb480bec6e813e6887a31b9b7dc33f7b224da23fcfb25",
+     "o_que_significa": "c2fe674f816a4bc370cb3d5bbe42dc50d2b3d6867ecff788b3bad6690e329489",
+     "exemplo_pratico": "b3c3f1b31b1cd25e67e29fd9a4cbcd7e4a9bf5674217bdc2ad6be0245ce904f1",
+     "atencao": "bc5f445a7a86f971ffdc783d4f7d82623a33898282adc67c7c48d650895f3ba4",
+     "palavras_dificeis": "aac38c6a971647fe6b2de5e4d70b5986b4c4859482f9d8fc81b454dc7fb835b1"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.651, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Depósito necessário não é presumido gratuito; na hospedagem, sua remuneração já integra o preço cobrado.’. O campo de atenção registra: ‘Serviços extraordinários podem depender de ajuste específico, mas não se presume gratuidade do depósito necessário.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 133,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 522,
+   "target_id": "CC2002:ART.652",
+   "explanation_id": "ENTENDA/CC2002:ART.652/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.652:CAPUT\tSeja o depósito voluntário ou necessário, o depositário que não o restituir quando exigido será compelido a fazê-lo mediante prisão não excedente a um ano, e ressarcir os prejuízos.",
+   "source_snapshot_sha256": "deedcfc03e56f445e16bd49caa0b91e1cc9dbe901eaaac14560e9e1cc5a4b037",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.652:CAPUT",
+     "text": "Seja o depósito voluntário ou necessário, o depositário que não o restituir quando exigido será compelido a fazê-lo mediante prisão não excedente a um ano, e ressarcir os prejuízos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Seja o depósito voluntário ou necessário, o depositário que não o restituir quando exigido será compelido a fazê-lo mediante prisão não excedente a um ano, e ressarcir os prejuízos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "860dd9c202d5ab3030c46ec11790f350f6c780ef8aa6a7e2ee85e65b9e3d3e35",
+     "o_que_significa": "7ea922cd0b3b1897cecd4b3ab1121115892226930af47da87ff4cdae6b87f0cc",
+     "exemplo_pratico": "d13587002c801736368c2da4160e5244fbf216b1bc7ed81ca252080d6c20b6b6",
+     "atencao": "8821db916472489f0083278292cfd5f933d9ac8e3c5fb33db44680c0bb0a2f2b",
+     "palavras_dificeis": "1344cd85fb0d432de9a85caef140ccff7ff7c8f836e4c64432fc350107ba93a8"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.652, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O texto do Código prevê restituição coercitiva, indenização e prisão limitada para o depositário que retém indevidamente a coisa.’. O campo de atenção registra: ‘A prisão não deve ser apresentada como automática apenas porque consta do texto legal. Sua aplicabilidade pertence à análise constitucional e jurisprudencial externa ao ENTENDA.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 134,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 523,
+   "target_id": "CC2002:ART.653",
+   "explanation_id": "ENTENDA/CC2002:ART.653/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.653:CAPUT\tOpera-se o mandato quando alguém recebe de outrem poderes para, em seu nome, praticar atos ou administrar interesses. A procuração é o instrumento do mandato.",
+   "source_snapshot_sha256": "fee7b6623709489d12a1b0762315913d82755ce7289649544c47169733d00930",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.653:CAPUT",
+     "text": "Opera-se o mandato quando alguém recebe de outrem poderes para, em seu nome, praticar atos ou administrar interesses. A procuração é o instrumento do mandato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Opera-se o mandato quando alguém recebe de outrem poderes para, em seu nome, praticar atos ou administrar interesses. A procuração é o instrumento do mandato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "eecdc217d4f793054864b0d1e68e79338f13bdd86d0d3850a2ca8e3978e102c0",
+     "o_que_significa": "1759c58a5ba78ddeef108470d2d7bdfe7170d0ee2e36d60068af8e02fcb6c2fe",
+     "exemplo_pratico": "ba7b7ce4f1517740c28c9c5f6f2a5d90560081f8bf427dfe6e25e9f6607d463f",
+     "atencao": "3232a761c089062e8db8761ea3ca03a1ba05bcfd0ccc99d498788e935a755007",
+     "palavras_dificeis": "f12c0c87a480ad136960af9dcb1d90e8876d4de86f1c11e33a71bde2d07ce270"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.653, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Mandato surge quando alguém recebe poderes para agir em nome de outra pessoa ou administrar seus interesses; a procuração documenta esses poderes.’. O campo de atenção registra: ‘Mandato e representação se relacionam, mas não são sinônimos em todas as hipóteses. A origem, forma e extensão dos poderes devem ser verificadas.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 135,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 524,
+   "target_id": "CC2002:ART.654",
+   "explanation_id": "ENTENDA/CC2002:ART.654/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.654:CAPUT\tTodas as pessoas capazes são aptas para dar procuração mediante instrumento particular, que valerá desde que tenha a assinatura do outorgante.\nCC2002:ART.654:PAR.1\to O instrumento particular deve conter a indicação do lugar onde foi passado, a qualificação do outorgante e do outorgado, a data e o objetivo da outorga com a designação e a extensão dos poderes conferidos.\nCC2002:ART.654:PAR.2\to O terceiro com quem o mandatário tratar poderá exigir que a procuração traga a firma reconhecida.",
+   "source_snapshot_sha256": "c66e474014b5f56500fc133b61b8a26c1a25588dfc9b4786a1cb138d43894c75",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.654:CAPUT",
+     "text": "Todas as pessoas capazes são aptas para dar procuração mediante instrumento particular, que valerá desde que tenha a assinatura do outorgante."
+    },
+    {
+     "label": "CC2002:ART.654:PAR.1",
+     "text": "o O instrumento particular deve conter a indicação do lugar onde foi passado, a qualificação do outorgante e do outorgado, a data e o objetivo da outorga com a designação e a extensão dos poderes conferidos."
+    },
+    {
+     "label": "CC2002:ART.654:PAR.2",
+     "text": "o O terceiro com quem o mandatário tratar poderá exigir que a procuração traga a firma reconhecida."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Todas as pessoas capazes são aptas para dar procuração mediante instrumento particular, que valerá desde que tenha a assinatura do outorgante. | o O instrumento particular deve conter a indicação do lugar onde foi passado, a qualificação do outorgante e do outorgado, a data e o objetivo da outorga com a designação e a extensão dos poderes conferidos. | o O terceiro com quem o mandatário tratar poderá exigir que a procuração traga a firma reconhecida.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "59241b3258ce3f8bffdb23da5a9db67f227331f2ecb86d58fa2efa733e17028e",
+     "o_que_significa": "2671c72d1396c95791150ea4f3886493d5c1e8d3a628c5388baffafbdff32cc2",
+     "exemplo_pratico": "4ef6746563aced7ce724394dd12d334598eaceb76a2f7dd0cab884dec79dfe65",
+     "atencao": "8f9ca687978405e6bc41c8efb02907d271a3fb674cfbf844392a3bf1343f5257",
+     "palavras_dificeis": "6e56c9b069d57602e0a7fcf59efc360aec3278a0d21a6a935c61ef838483f57b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.654, foram cotejados individualmente 3 segmento(s) vigente(s) (CAPUT, PAR.1, PAR.2) com os cinco campos ENTENDA. A síntese ativa informa: ‘Pessoa capaz pode outorgar procuração particular assinada, indicando local, partes, data, finalidade e extensão dos poderes; o terceiro pode pedir reconhecimento de firma.’. O campo de atenção registra: ‘Reconhecimento de firma não substitui poderes especiais nem a forma exigida para o negócio a praticar.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 136,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 525,
+   "target_id": "CC2002:ART.655",
+   "explanation_id": "ENTENDA/CC2002:ART.655/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.655:CAPUT\tAinda quando se outorgue mandato por instrumento público, pode substabelecer-se mediante instrumento particular.",
+   "source_snapshot_sha256": "345fb403d1ea0cfb8b07cda91be612f894cad841bccbcf62b1405c725cf01a3e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.655:CAPUT",
+     "text": "Ainda quando se outorgue mandato por instrumento público, pode substabelecer-se mediante instrumento particular."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Ainda quando se outorgue mandato por instrumento público, pode substabelecer-se mediante instrumento particular.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "12d584f1a5663004698572e2d8fc67876d402513867330607b2efe455fbcffc0",
+     "o_que_significa": "d585ea51041e0050457f08f53140497644d76d079dabb896a12b4983ea0e2ae4",
+     "exemplo_pratico": "94181ec2d2949b0e80cd9e4758d54d043951562107e19de6157891f266b4dfce",
+     "atencao": "aafd3753c6c008f05470cbf352553f4e69aa8e8df7b5f14dbd8a22247f6cb636",
+     "palavras_dificeis": "a1690fd6e91ee548b3133c98e93aab980ecd42532a45289c5a779983eaaf861d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.655, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Mesmo quando o mandato foi dado por instrumento público, o substabelecimento pode ser feito por instrumento particular.’. O campo de atenção registra: ‘A possibilidade formal não elimina proibição, reserva de poderes ou exigência especial aplicável ao ato final.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 137,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 526,
+   "target_id": "CC2002:ART.656",
+   "explanation_id": "ENTENDA/CC2002:ART.656/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.656:CAPUT\tO mandato pode ser expresso ou tácito, verbal ou escrito.",
+   "source_snapshot_sha256": "d87858179e6d2a7c00c0778f4659ac5fbbc9b3cebee690ba828aadba8659ae1f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.656:CAPUT",
+     "text": "O mandato pode ser expresso ou tácito, verbal ou escrito."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O mandato pode ser expresso ou tácito, verbal ou escrito.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c93d08289f98a074c1dd53267f9288c752b37e3c0854f9446b70d649924b89a8",
+     "o_que_significa": "f8b578d049b3f0c258832581b2d4337770a8cdcc8bb1be7a5e9e554c219ae1e9",
+     "exemplo_pratico": "bb62066fce0fc2af1532b6c0f1d0bce73d16a60e6e2a38c306fd7562bfd80c88",
+     "atencao": "799262f9831aa8f4ac365100b6ff76e6ce9b6c3084bd1e05271bc0befbd8b572",
+     "palavras_dificeis": "b386e0d115b03901050b45c0aa3499b6af575c64ab402ebc6c661e47ef18f1e8"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.656, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O mandato pode resultar de declaração expressa ou de comportamento, e ser verbal ou escrito.’. O campo de atenção registra: ‘O artigo seguinte limita a liberdade de forma. Prova do conteúdo e dos limites pode ser difícil em mandato verbal.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 138,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 527,
+   "target_id": "CC2002:ART.657",
+   "explanation_id": "ENTENDA/CC2002:ART.657/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.657:CAPUT\tA outorga do mandato está sujeita à forma exigida por lei para o ato a ser praticado. Não se admite mandato verbal quando o ato deva ser celebrado por escrito.",
+   "source_snapshot_sha256": "e7757eddf93d95e5a35547d41a02ba8c3a6396f2f729bdd5217bb7f034e8b1be",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.657:CAPUT",
+     "text": "A outorga do mandato está sujeita à forma exigida por lei para o ato a ser praticado. Não se admite mandato verbal quando o ato deva ser celebrado por escrito."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A outorga do mandato está sujeita à forma exigida por lei para o ato a ser praticado. Não se admite mandato verbal quando o ato deva ser celebrado por escrito.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "18d6eddcf5d1e64989f46dd74fae648ff2901475ceada69effd268393e9a749a",
+     "o_que_significa": "b1e0aa4cea6be3711bba14def8f5300c3b947b8e2926ec46c5519468a2cdc9cc",
+     "exemplo_pratico": "527dbbe3afe41bb878479b8c46819b5d4c7e187f27f915e9f65299f4b2e32b68",
+     "atencao": "0354a39b22eeeaa74d01b1341bf7618c93fc59531c9ee2a7054eac7ee4a72c32",
+     "palavras_dificeis": "f9de9813b2480c33ddee71e8d7e2b3fd21ebf71556d977f544a7f679bc50f828"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.657, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A forma do mandato deve acompanhar a exigida para o ato a realizar, e mandato verbal não serve quando o negócio precisa ser escrito.’. O campo de atenção registra: ‘A regra trata da outorga de poderes para o ato específico. Instrumento inadequado pode tornar ineficaz a atuação representativa.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 139,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 528,
+   "target_id": "CC2002:ART.658",
+   "explanation_id": "ENTENDA/CC2002:ART.658/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.658:CAPUT\tO mandato presume-se gratuito quando não houver sido estipulada retribuição, exceto se o seu objeto corresponder ao daqueles que o mandatário trata por ofício ou profissão lucrativa.\nCC2002:ART.658:PAR.UNICO\tSe o mandato for oneroso, caberá ao mandatário a retribuição prevista em lei ou no contrato. Sendo estes omissos, será ela determinada pelos usos do lugar, ou, na falta destes, por arbitramento.",
+   "source_snapshot_sha256": "e57b65d4d66ff2f7474935d5af6ec27e1946cae28d0266f8ea1081999d142e40",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.658:CAPUT",
+     "text": "O mandato presume-se gratuito quando não houver sido estipulada retribuição, exceto se o seu objeto corresponder ao daqueles que o mandatário trata por ofício ou profissão lucrativa."
+    },
+    {
+     "label": "CC2002:ART.658:PAR.UNICO",
+     "text": "Se o mandato for oneroso, caberá ao mandatário a retribuição prevista em lei ou no contrato. Sendo estes omissos, será ela determinada pelos usos do lugar, ou, na falta destes, por arbitramento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O mandato presume-se gratuito quando não houver sido estipulada retribuição, exceto se o seu objeto corresponder ao daqueles que o mandatário trata por ofício ou profissão lucrativa. | Se o mandato for oneroso, caberá ao mandatário a retribuição prevista em lei ou no contrato. Sendo estes omissos, será ela determinada pelos usos do lugar, ou, na falta destes, por arbitramento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0ab52401f58e697811bea469357197fbbb653a68b4cdc90482e20961693909e0",
+     "o_que_significa": "524f27c18f0453b65de8ee729f3cb8906b37f7b440636fc9c369a535755f0f93",
+     "exemplo_pratico": "22a9852cd152a73f0a7ac8ca4b0da254d62b83fd1d9d1ece4f9a618be3e8f89d",
+     "atencao": "97e434dd1134f7609a19c392fec35fd8e1b896edb1ffa31da796ccd7998aa33b",
+     "palavras_dificeis": "fc7f9f0f329b729ddabbdc90ef19c5fb2bfe4a72c601ae853e115b01da30f0cc"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.658, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘O mandato é presumido gratuito, salvo ajuste de pagamento ou atividade profissional lucrativa; no mandato oneroso, valor omisso segue lei, contrato, usos ou arbitramento.’. O campo de atenção registra: ‘A presunção pode ser afastada pelas circunstâncias. Remuneração não elimina deveres de diligência e prestação de contas.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 140,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 529,
+   "target_id": "CC2002:ART.659",
+   "explanation_id": "ENTENDA/CC2002:ART.659/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.659:CAPUT\tA aceitação do mandato pode ser tácita, e resulta do começo de execução.",
+   "source_snapshot_sha256": "642da89f260fc56822ae27f008671bc4b292986b7e0c84274979baa031da54d6",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.659:CAPUT",
+     "text": "A aceitação do mandato pode ser tácita, e resulta do começo de execução."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A aceitação do mandato pode ser tácita, e resulta do começo de execução.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6455ea73f78137a68ba05feccd3d1e249fcf2e5a1e6e24f741d2da7a8aa2a850",
+     "o_que_significa": "4eafd091e94e234481848fadb7aba84673eb8c69b83449f6a520b8e133f288ac",
+     "exemplo_pratico": "9f8cf148c87cc5d22def9038c83b4161b34ce6435ccb5accc646ae4cdbc42fe3",
+     "atencao": "6e480e073d3acd48e8cbb5c77e0b99a16aa47dae4fbec90adc0982a69c1ec11c",
+     "palavras_dificeis": "f49018521d340915e6e9ceb647a46afe0fec2e2fc5909254aa7546a93d750f32"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.659, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A aceitação do mandato pode ser demonstrada pelo início de sua execução.’. O campo de atenção registra: ‘Atos preparatórios ambíguos podem não bastar. A execução não amplia os poderes além do que foi outorgado.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 141,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 530,
+   "target_id": "CC2002:ART.660",
+   "explanation_id": "ENTENDA/CC2002:ART.660/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.660:CAPUT\tO mandato pode ser especial a um ou mais negócios determinadamente, ou geral a todos os do mandante.",
+   "source_snapshot_sha256": "fe5538ade5ffac7febfe5b9506452984a3843608580973fc5c665e820408230f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.660:CAPUT",
+     "text": "O mandato pode ser especial a um ou mais negócios determinadamente, ou geral a todos os do mandante."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O mandato pode ser especial a um ou mais negócios determinadamente, ou geral a todos os do mandante.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a38c2fb955480f19876368484b92906f1b23ac843d38444e1c2a291b813e0682",
+     "o_que_significa": "2efb2efe080255f461fc7249172ea06d897cc4b09b3898abd17a564c45c1a4c0",
+     "exemplo_pratico": "dbfa0617c75c63e8a3ea4df7413cfa6a73b9da413cbc77fc8a385256251bfb5e",
+     "atencao": "acce1353f81a7034221d1e923ea311adfe64896c6c41a7c25a57e2b44139e6fa",
+     "palavras_dificeis": "c8a0a52f052e8889f6544ac68352fbf59a467e3a257023591b2b7a0280a6d776"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.660, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O mandato pode limitar-se a um ou vários negócios determinados ou abranger genericamente os interesses do mandante.’. O campo de atenção registra: ‘Mandato geral não concede automaticamente poderes para atos de disposição, que exigem autorização especial.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 142,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 531,
+   "target_id": "CC2002:ART.661",
+   "explanation_id": "ENTENDA/CC2002:ART.661/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.661:CAPUT\tO mandato em termos gerais só confere poderes de administração.\nCC2002:ART.661:PAR.1\to Para alienar, hipotecar, transigir, ou praticar outros quaisquer atos que exorbitem da administração ordinária, depende a procuração de poderes especiais e expressos.\nCC2002:ART.661:PAR.2\to O poder de transigir não importa o de firmar compromisso.",
+   "source_snapshot_sha256": "9bda5d23ba9528b46c34bd53d4a7c4acd2d3c1ad0307a08b2a1c08c4cff47528",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.661:CAPUT",
+     "text": "O mandato em termos gerais só confere poderes de administração."
+    },
+    {
+     "label": "CC2002:ART.661:PAR.1",
+     "text": "o Para alienar, hipotecar, transigir, ou praticar outros quaisquer atos que exorbitem da administração ordinária, depende a procuração de poderes especiais e expressos."
+    },
+    {
+     "label": "CC2002:ART.661:PAR.2",
+     "text": "o O poder de transigir não importa o de firmar compromisso."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: O mandato em termos gerais só confere poderes de administração. | o Para alienar, hipotecar, transigir, ou praticar outros quaisquer atos que exorbitem da administração ordinária, depende a procuração de poderes especiais e expressos. | o O poder de transigir não importa o de firmar compromisso.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7d9ea0e6651645fdb385ed72b807b282251786299251b6afc11d36d003e25e46",
+     "o_que_significa": "986e4f684ee6ec9a9285073296294631e57bed2f667ab723382e57c54cd6546a",
+     "exemplo_pratico": "63bcb560a89c56d096a56847f3b8898a4687d2e6391342ed0538d51365c0c9f4",
+     "atencao": "0c3e2e925e0a400413fdcc1053b3be019009faca41f148b0b8dc33773cad1fb5",
+     "palavras_dificeis": "b3b9007148d216b8bbfa532e636f3e02e7c0ae92dd316aa7dfa1fe2b24d650fe"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.661, foram cotejados individualmente 3 segmento(s) vigente(s) (CAPUT, PAR.1, PAR.2) com os cinco campos ENTENDA. A síntese ativa informa: ‘Poderes gerais alcançam apenas administração; alienação, hipoteca, transação e atos extraordinários exigem autorização especial e expressa, e poder para transigir não inclui firmar compromisso.’. O campo de atenção registra: ‘Não se deve ampliar poderes por conveniência. Transação e compromisso são atos distintos e demandam autorizações próprias.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 143,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 532,
+   "target_id": "CC2002:ART.662",
+   "explanation_id": "ENTENDA/CC2002:ART.662/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.662:CAPUT\tOs atos praticados por quem não tenha mandato, ou o tenha sem poderes suficientes, são ineficazes em relação àquele em cujo nome foram praticados, salvo se este os ratificar.\nCC2002:ART.662:PAR.UNICO\tA ratificação há de ser expressa, ou resultar de ato inequívoco, e retroagirá à data do ato.",
+   "source_snapshot_sha256": "ae06d6cf6fd0589b558b1ccf557a22e9cc44ecf1a66fe053c848b7bcf78baca2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.662:CAPUT",
+     "text": "Os atos praticados por quem não tenha mandato, ou o tenha sem poderes suficientes, são ineficazes em relação àquele em cujo nome foram praticados, salvo se este os ratificar."
+    },
+    {
+     "label": "CC2002:ART.662:PAR.UNICO",
+     "text": "A ratificação há de ser expressa, ou resultar de ato inequívoco, e retroagirá à data do ato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Os atos praticados por quem não tenha mandato, ou o tenha sem poderes suficientes, são ineficazes em relação àquele em cujo nome foram praticados, salvo se este os ratificar. | A ratificação há de ser expressa, ou resultar de ato inequívoco, e retroagirá à data do ato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "968ccc6d15028657f66828756d972a48ea72a87a99ce1dd1ea02b780e0bf74c0",
+     "o_que_significa": "9cbd73f68e1a92f5316e74f848e945c4e4bc51ed3cf1de79e89e625122072a37",
+     "exemplo_pratico": "022efcd7626724978bdd2f76aeaa349e9a3d412d79d950c35b55e73f793f187b",
+     "atencao": "dafa6425e011e5eb529fec065b3d7e270a2f49a78aca2712d16c9cf2aa486740",
+     "palavras_dificeis": "38a07fca0a78acae960ee1ef90edb946d8ae04684a885d7744d70c0d619d6769"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.662, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Ato de quem não tem mandato ou excede os poderes é ineficaz para o representado, salvo ratificação expressa ou inequívoca, que retroage ao ato.’. O campo de atenção registra: ‘Silêncio isolado não é necessariamente ratificação. Devem ser avaliados conhecimento, conduta inequívoca e integralidade do ato confirmado.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 144,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 533,
+   "target_id": "CC2002:ART.663",
+   "explanation_id": "ENTENDA/CC2002:ART.663/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.663:CAPUT\tSempre que o mandatário estipular negócios expressamente em nome do mandante, será este o único responsável; ficará, porém, o mandatário pessoalmente obrigado, se agir no seu próprio nome, ainda que o negócio seja de conta do mandante.",
+   "source_snapshot_sha256": "27e9f39688206bb4eaff2bfd4ee8f24177ddde6a4ab1cad7481549003c2dc53b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.663:CAPUT",
+     "text": "Sempre que o mandatário estipular negócios expressamente em nome do mandante, será este o único responsável; ficará, porém, o mandatário pessoalmente obrigado, se agir no seu próprio nome, ainda que o negócio seja de conta do mandante."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Sempre que o mandatário estipular negócios expressamente em nome do mandante, será este o único responsável; ficará, porém, o mandatário pessoalmente obrigado, se agir no seu próprio nome, ainda que o negócio seja de conta do mandante.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "01316eaa6117b55a0bf729386d3bb95a1fdff46d9953d94f5a644f181a02d858",
+     "o_que_significa": "6fb9f84e136e4e62b95223a245711f699963f4c9a14983f00a79d58f799a5568",
+     "exemplo_pratico": "c47b1aebe8c740c5b63b342afbde37d48e430c240a8e73d201eabd829ae154ff",
+     "atencao": "09f79f9a239bb7ae3e05c6e0046ff58025a59f24fddbfb39ef90d5f40944e79d",
+     "palavras_dificeis": "8022bd799a87e65122c96d61b01c3d92656e0c3ae5a27ac7502dc1c887fef8ab"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.663, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se o mandatário contrata claramente em nome do mandante, este responde; se age em nome próprio, o mandatário fica pessoalmente obrigado, ainda que o negócio interesse ao mandante.’. O campo de atenção registra: ‘Agir por conta alheia não equivale a agir em nome alheio. O terceiro deve poder reconhecer a representação.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 145,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 534,
+   "target_id": "CC2002:ART.664",
+   "explanation_id": "ENTENDA/CC2002:ART.664/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.664:CAPUT\tO mandatário tem o direito de reter, do objeto da operação que lhe foi cometida, quanto baste para pagamento de tudo que lhe for devido em conseqüência do mandato.",
+   "source_snapshot_sha256": "0ff31234b893212775ef0b98843d301e9a9ae0e5163826f97ab962c02d6a3fc6",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.664:CAPUT",
+     "text": "O mandatário tem o direito de reter, do objeto da operação que lhe foi cometida, quanto baste para pagamento de tudo que lhe for devido em conseqüência do mandato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O mandatário tem o direito de reter, do objeto da operação que lhe foi cometida, quanto baste para pagamento de tudo que lhe for devido em conseqüência do mandato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e4cfb3b3dd9111f8907562db4593a18abc138c77f3b11df8a159e66bd5dd78b3",
+     "o_que_significa": "f7f1e094e9331cc9307d5a8ad67899a967b4378db4fc3714de2f20607e9fae8f",
+     "exemplo_pratico": "c4ed8ab05b0adbef27da41f99be8e2871ce5eb8c203c27eac03ecaa1d98a1936",
+     "atencao": "4b38f6cd5968b9a4145b17516543c74e9205ab55e1c47da80e079aef44ea6af7",
+     "palavras_dificeis": "08f435cc672529cfc00e96edad1383e03026f867f1443d223da6a17fc6e0d9e6"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.664, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O mandatário pode reter do objeto da operação o necessário para receber créditos decorrentes do mandato.’. O campo de atenção registra: ‘A retenção deve ser proporcional e vinculada ao mandato. Não autoriza apropriação de excedente nem dispensa prestação de contas.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 146,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 535,
+   "target_id": "CC2002:ART.665",
+   "explanation_id": "ENTENDA/CC2002:ART.665/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.665:CAPUT\tO mandatário que exceder os poderes do mandato, ou proceder contra eles, será considerado mero gestor de negócios, enquanto o mandante lhe não ratificar os atos.",
+   "source_snapshot_sha256": "75dce6c6d1dc3459707e40133b612f39464e23fa4a7d3627ae34758bdc51705a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.665:CAPUT",
+     "text": "O mandatário que exceder os poderes do mandato, ou proceder contra eles, será considerado mero gestor de negócios, enquanto o mandante lhe não ratificar os atos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O mandatário que exceder os poderes do mandato, ou proceder contra eles, será considerado mero gestor de negócios, enquanto o mandante lhe não ratificar os atos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "cc45c0fb2701e8075daf9e2b33c21cced80780a70968ddbc53f064fe6d7640aa",
+     "o_que_significa": "8a134aa1d27be36611b58e3fb58435171e11258abcfdbde306bfce068c0a94a3",
+     "exemplo_pratico": "b1c2462f223623528a329b40421403a1e3660bac025ef4b9f5d1430aa2ed09a2",
+     "atencao": "5f3361452faaba3a17c10908560500c0587003ac9c0e7eca3f4af0efa486d698",
+     "palavras_dificeis": "a89035bbfdcfb1627f01ccfd84c6b7ae4077426669b7ffe6bd541b9084e83930"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.665, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quem ultrapassa ou contraria os poderes atua como gestor de negócios até eventual ratificação do mandante.’. O campo de atenção registra: ‘Excesso de poderes difere de execução defeituosa dentro do mandato. Ratificação pode alterar retroativamente o enquadramento.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 147,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 536,
+   "target_id": "CC2002:ART.666",
+   "explanation_id": "ENTENDA/CC2002:ART.666/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.666:CAPUT\tO maior de dezesseis e menor de dezoito anos não emancipado pode ser mandatário, mas o mandante não tem ação contra ele senão de conformidade com as regras gerais, aplicáveis às obrigações contraídas por menores.",
+   "source_snapshot_sha256": "bc5801e33d8b6928a41cc9db01382b6fe40282e7bf475d9e1b998d6cd526f81f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.666:CAPUT",
+     "text": "O maior de dezesseis e menor de dezoito anos não emancipado pode ser mandatário, mas o mandante não tem ação contra ele senão de conformidade com as regras gerais, aplicáveis às obrigações contraídas por menores."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O maior de dezesseis e menor de dezoito anos não emancipado pode ser mandatário, mas o mandante não tem ação contra ele senão de conformidade com as regras gerais, aplicáveis às obrigações contraídas por menores.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "89c1dd48c42f9b83b76cc870641718c7917bb143706e20ff519a86cf7e9fd896",
+     "o_que_significa": "262245c5e3ad7e702ff62163afebe8600e431a69e29887185461ea865c88afc8",
+     "exemplo_pratico": "ac05e7f9d787f17ed4fb569110af687482b650b7f2224cf9ea725639b72507e1",
+     "atencao": "8336156ab507d4846e0f8f897e0b31a4b426463cb74648b6d7eda2fd750b0c98",
+     "palavras_dificeis": "a514b1e33ce032772759d02eabb13c7331a3569eabad994685441f1569f11f5e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.666, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Pessoa maior de dezesseis e menor de dezoito anos, não emancipada, pode ser mandatária, mas sua responsabilidade perante o mandante segue as limitações das obrigações de menores.’. O campo de atenção registra: ‘A capacidade do mandante e a validade do ato final continuam submetidas às regras próprias.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 148,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 537,
+   "target_id": "CC2002:ART.667",
+   "explanation_id": "ENTENDA/CC2002:ART.667/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.667:CAPUT\tO mandatário é obrigado a aplicar toda sua diligência habitual na execução do mandato, e a indenizar qualquer prejuízo causado por culpa sua ou daquele a quem substabelecer, sem autorização, poderes que devia exercer pessoalmente.\nCC2002:ART.667:PAR.1\to Se, não obstante proibição do mandante, o mandatário se fizer substituir na execução do mandato, responderá ao seu constituinte pelos prejuízos ocorridos sob a gerência do substituto, embora provenientes de caso fortuito, salvo provando que o caso teria sobrevindo, ainda que não tivesse havido substabelecimento.\nCC2002:ART.667:PAR.2\to Havendo poderes de substabelecer, só serão imputáveis ao mandatário os danos causados pelo substabelecido, se tiver agido com culpa na escolha deste ou nas instruções dadas a ele.\nCC2002:ART.667:PAR.3\to Se a proibição de substabelecer constar da procuração, os atos praticados pelo substabelecido não obrigam o mandante, salvo ratificação expressa, que retroagirá à data do ato.\nCC2002:ART.667:PAR.4\to Sendo omissa a procuração quanto ao substabelecimento, o procurador será responsável se o substabelecido proceder culposamente.",
+   "source_snapshot_sha256": "0b4834e43c582d7f64ff08698dac718b58e31d25938959b98c0caad3bd24c1e0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.667:CAPUT",
+     "text": "O mandatário é obrigado a aplicar toda sua diligência habitual na execução do mandato, e a indenizar qualquer prejuízo causado por culpa sua ou daquele a quem substabelecer, sem autorização, poderes que devia exercer pessoalmente."
+    },
+    {
+     "label": "CC2002:ART.667:PAR.1",
+     "text": "o Se, não obstante proibição do mandante, o mandatário se fizer substituir na execução do mandato, responderá ao seu constituinte pelos prejuízos ocorridos sob a gerência do substituto, embora provenientes de caso fortuito, salvo provando que o caso teria sobrevindo, ainda que não tivesse havido substabelecimento."
+    },
+    {
+     "label": "CC2002:ART.667:PAR.2",
+     "text": "o Havendo poderes de substabelecer, só serão imputáveis ao mandatário os danos causados pelo substabelecido, se tiver agido com culpa na escolha deste ou nas instruções dadas a ele."
+    },
+    {
+     "label": "CC2002:ART.667:PAR.3",
+     "text": "o Se a proibição de substabelecer constar da procuração, os atos praticados pelo substabelecido não obrigam o mandante, salvo ratificação expressa, que retroagirá à data do ato."
+    },
+    {
+     "label": "CC2002:ART.667:PAR.4",
+     "text": "o Sendo omissa a procuração quanto ao substabelecimento, o procurador será responsável se o substabelecido proceder culposamente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 5 segmentos vigentes do dispositivo: O mandatário é obrigado a aplicar toda sua diligência habitual na execução do mandato, e a indenizar qualquer prejuízo causado por culpa sua ou daquele a quem substabelecer, sem autorização, poderes que devia exercer pessoalmente. | o Se, não obstante proibição do mandante, o mandatário se fizer substituir na execução do mandato, responderá ao seu constituinte pelos prejuízos ocorridos sob a gerência do substituto, embora provenientes de caso fortuito, salvo provando que o caso teria sobrevindo, ainda que não tivesse havido substabelecimento. | o Havendo poderes de substabelecer, só serão imputáveis ao mandatário os danos causados pelo substabelecido, se tiver agido com culpa na escolha deste ou nas instruções dadas a ele. | o Se a proibição de substabelecer constar da procuração, os atos praticados pelo substabelecido não obrigam o mandante, salvo ratificação expressa, que retroagirá à data do ato. | o Sendo omissa a procuração quanto ao substabelecimento, o procurador será responsável se o substabelecido proceder culposamente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "78f7c529ddc571673a65c9e3c605b01c640e077ab434bcd28d27b18787c2aca6",
+     "o_que_significa": "c225792ab2553c6dc574f59501bd51b24b08bff7e2cfd2ec921e1665ad4e0e40",
+     "exemplo_pratico": "db12b5bf5866140df8af031392a4674f8a0ef0f4548f80a6acbe77c170889468",
+     "atencao": "44c0f2be872adbaceac8a6aca64208fe66de2e6c316d431cc80c189de87c70b2",
+     "palavras_dificeis": "7863ac35100bb24b4793ec1d57a61ae81cff018f6fb97df2ae54a6f138018763"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.667, foram cotejados individualmente 5 segmento(s) vigente(s) (CAPUT, PAR.1, PAR.2, PAR.3, PAR.4) com os cinco campos ENTENDA. A síntese ativa informa: ‘O mandatário deve agir com diligência e indenizar culpa própria ou substituição indevida; a responsabilidade pelo substabelecido varia conforme proibição, autorização, escolha e instruções.’. O campo de atenção registra: ‘Os quatro parágrafos têm hipóteses diferentes. É essencial verificar se havia proibição, permissão expressa ou silêncio e qual foi a causa do dano.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 149,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 538,
+   "target_id": "CC2002:ART.668",
+   "explanation_id": "ENTENDA/CC2002:ART.668/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.668:CAPUT\tO mandatário é obrigado a dar contas de sua gerência ao mandante, transferindo-lhe as vantagens provenientes do mandato, por qualquer título que seja.",
+   "source_snapshot_sha256": "aa67d2a21728bc93c9c2c064eb54cdfac85714b7e6d72f1a6f303713ce97e47b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.668:CAPUT",
+     "text": "O mandatário é obrigado a dar contas de sua gerência ao mandante, transferindo-lhe as vantagens provenientes do mandato, por qualquer título que seja."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O mandatário é obrigado a dar contas de sua gerência ao mandante, transferindo-lhe as vantagens provenientes do mandato, por qualquer título que seja.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "22acaa8b46d81a4a1b8421c800045f5ee42a2803e91cc272f71256451142b6f0",
+     "o_que_significa": "8b5b2fea082dbf63e16974a624e36cdc368cc87264281867d862192fa1c10e99",
+     "exemplo_pratico": "4b49becc5bf02b470b03cec297e7ee757ff05c4a9ec6d4a5496d15183ad4f98a",
+     "atencao": "9e5c7c66306bf3ce8bb15b683ce542975551f1262a54a3364cf13f0f6627aa9e",
+     "palavras_dificeis": "dc83d9ec9c892eaa591c5061068f76468e7af8712f35d4aee1ce465cd71caec8"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.668, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O mandatário deve prestar contas e transferir ao mandante todas as vantagens obtidas por causa do encargo.’. O campo de atenção registra: ‘Prestação de contas exige documentação e clareza. Vantagem obtida fora do mandato não se inclui apenas por coincidência temporal.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 150,
+   "checkpoint": "B-CP03",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  }
+ ]
+}
