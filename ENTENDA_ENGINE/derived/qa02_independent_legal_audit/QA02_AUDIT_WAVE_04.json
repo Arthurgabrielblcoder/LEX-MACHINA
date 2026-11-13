@@ -2,17 +2,17 @@
  "schema_version": 1,
  "mission": "QA-02-WAVE-04",
  "as_of": "2026-11-12",
- "completed_through_checkpoint": 28,
+ "completed_through_checkpoint": 29,
  "status": "PARTIAL_REQUIRES_CONTINUATION",
- "audited_total": 275,
+ "audited_total": 300,
  "source_queue_positions_completed": [
   201,
-  475
+  500
  ],
- "next_source_queue_position": 476,
- "findings_total": 36,
+ "next_source_queue_position": 501,
+ "findings_total": 37,
  "finding_counts": {
-  "ALTO": 24,
+  "ALTO": 25,
   "CRÍTICO": 2,
   "MÉDIO": 10
  },
@@ -16264,6 +16264,1322 @@
    },
    "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
    "comparison": "A síntese específica do dispositivo — O testamento cerrado exige escrito assinado, entrega e declaração perante tabelião e duas testemunhas, auto de aprovação lido e assinado. — foi confrontada com os 6 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 476,
+   "target_id": "CC2002:ART.1869",
+   "explanation_id": "ENTENDA/CC2002:ART.1869/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1869:CAPUT\tO tabelião deve começar o auto de aprovação imediatamente depois da última palavra do testador, declarando, sob sua fé, que o testador lhe entregou para ser aprovado na presença das testemunhas; passando a cerrar e coser o instrumento aprovado.\nCC2002:ART.1869:PAR.UNICO\tSe não houver espaço na última folha do testamento, para início da aprovação, o tabelião aporá nele o seu sinal público, mencionando a circunstância no auto.",
+   "source_snapshot_sha256": "f34efe810de334c3b28dee99fff15f03d830aa8880ec50f1039c70f1454032e3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1869:CAPUT",
+     "text": "O tabelião deve começar o auto de aprovação imediatamente depois da última palavra do testador, declarando, sob sua fé, que o testador lhe entregou para ser aprovado na presença das testemunhas; passando a cerrar e coser o instrumento aprovado."
+    },
+    {
+     "label": "CC2002:ART.1869:PAR.UNICO",
+     "text": "Se não houver espaço na última folha do testamento, para início da aprovação, o tabelião aporá nele o seu sinal público, mencionando a circunstância no auto."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O tabelião deve começar o auto de aprovação imediatamente depois da última palavra do testador, declarando, sob sua fé, que o testador lhe entregou para ser aprovado na presença das testemunhas; passando a cerrar e coser o instrumento aprovado. | Se não houver espaço na última folha do testamento, para início da aprovação, o tabelião aporá nele o seu sinal público, mencionando a circunstância no auto.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1093eadc823fc801e28ed755064b08ed453aade007b6ff918aaf3daa9a0a4efb",
+     "o_que_significa": "ea7cf958b3986c7256386c8f11d3fc84be3541b627558203d11522ba0649001e",
+     "exemplo_pratico": "627568a5f0c8a33076e252b51c41fcea6db548691029d757bb54692862f8bb83",
+     "atencao": "0ec3be45729cdd5d15c64517a97ce71ae0488c0219fde46764071f858e3bade1",
+     "palavras_dificeis": "f80015abc9c18b6800d6b0b4c5e69461dd529d8f0ccfe54ad027ce0ec2fe0431"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — O tabelião inicia a aprovação após o texto, certifica entrega e presença das testemunhas e fecha o instrumento; falta de espaço exige sinal e menção. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 477,
+   "target_id": "CC2002:ART.1873",
+   "explanation_id": "ENTENDA/CC2002:ART.1873/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1873:CAPUT\tPode fazer testamento cerrado o surdo-mudo, contanto que o escreva todo, e o assine de sua mão, e que, ao entregá-lo ao oficial público, ante as duas testemunhas, escreva, na face externa do papel ou do envoltório, que aquele é o seu testamento, cuja aprovação lhe pede.",
+   "source_snapshot_sha256": "dc8674bd76b66250512b57605b10ed2c6957767b381aa44f9dc9bab06d5ddf32",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1873:CAPUT",
+     "text": "Pode fazer testamento cerrado o surdo-mudo, contanto que o escreva todo, e o assine de sua mão, e que, ao entregá-lo ao oficial público, ante as duas testemunhas, escreva, na face externa do papel ou do envoltório, que aquele é o seu testamento, cuja aprovação lhe pede."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Pode fazer testamento cerrado o surdo-mudo, contanto que o escreva todo, e o assine de sua mão, e que, ao entregá-lo ao oficial público, ante as duas testemunhas, escreva, na face externa do papel ou do envoltório, que aquele é o seu testamento, cuja aprovação lhe pede.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "84267b73abfe118c5a64d55b61b681c706f5a193b9ef4d454a1def35d15cf2d8",
+     "o_que_significa": "fc28b2da13aeb6924660aea00a88ece60c63cdc4c3f04f6512153d5d6b889900",
+     "exemplo_pratico": "57420a68603a3337b7e42fa9d97351b661d150a492566b21e43eb991d3f1f71a",
+     "atencao": "f77d365253a1b5defc5b39bc9f50ba62dcfecd8cfbb5cadd0fb5fe7c7d496773",
+     "palavras_dificeis": "73a081fd8d8f8a35fc365be4139744369ae7b44e619f538a42f09e0350ab7f72"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Pessoa surda e muda pode testar de forma cerrada se escrever e assinar tudo pessoalmente e declarar por escrito no invólucro que pede aprovação. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 478,
+   "target_id": "CC2002:ART.1875",
+   "explanation_id": "ENTENDA/CC2002:ART.1875/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1875:CAPUT\tFalecido o testador, o testamento será apresentado ao juiz, que o abrirá e o fará registrar, ordenando seja cumprido, se não achar vício externo que o torne eivado de nulidade ou suspeito de falsidade.",
+   "source_snapshot_sha256": "408672d3aa0212e1951c0b12fa18fc50bb83c8c096a87ef8e289c3c23c212723",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1875:CAPUT",
+     "text": "Falecido o testador, o testamento será apresentado ao juiz, que o abrirá e o fará registrar, ordenando seja cumprido, se não achar vício externo que o torne eivado de nulidade ou suspeito de falsidade."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Falecido o testador, o testamento será apresentado ao juiz, que o abrirá e o fará registrar, ordenando seja cumprido, se não achar vício externo que o torne eivado de nulidade ou suspeito de falsidade.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5d12be83bd52453248c77fce8076071ebe39823d8dac32ead2d671cc7fb0848b",
+     "o_que_significa": "633dd337028fbea6ea780835c01ae49e81cad7f74600b14da0f5c1ff498907bd",
+     "exemplo_pratico": "d31364ef52982e8af6123d836deadf432194162af1c0d32f578e073f9b4d615b",
+     "atencao": "571421a73d12cf0d4b2ecda78a075861ed6d580698f9c9b19055986b347fbd95",
+     "palavras_dificeis": "8e1346c130fb9272f4e531e417725a1c29c1307be813b127120c89f360f1c1b7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Depois da morte, o testamento cerrado vai ao juiz para abertura, registro e cumprimento, salvo vício externo ou suspeita de falsidade. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 479,
+   "target_id": "CC2002:ART.1876",
+   "explanation_id": "ENTENDA/CC2002:ART.1876/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1876:CAPUT\tO testamento particular pode ser escrito de próprio punho ou mediante processo mecânico.\nCC2002:ART.1876:PAR.1\to Se escrito de próprio punho, são requisitos essenciais à sua validade seja lido e assinado por quem o escreveu, na presença de pelo menos três testemunhas, que o devem subscrever.\nCC2002:ART.1876:PAR.2\to Se elaborado por processo mecânico, não pode conter rasuras ou espaços em branco, devendo ser assinado pelo testador, depois de o ter lido na presença de pelo menos três testemunhas, que o subscreverão.",
+   "source_snapshot_sha256": "91d123c992ca40166ccffdce42fd152e50f3c3f7731229de011ba478c8dacb40",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1876:CAPUT",
+     "text": "O testamento particular pode ser escrito de próprio punho ou mediante processo mecânico."
+    },
+    {
+     "label": "CC2002:ART.1876:PAR.1",
+     "text": "o Se escrito de próprio punho, são requisitos essenciais à sua validade seja lido e assinado por quem o escreveu, na presença de pelo menos três testemunhas, que o devem subscrever."
+    },
+    {
+     "label": "CC2002:ART.1876:PAR.2",
+     "text": "o Se elaborado por processo mecânico, não pode conter rasuras ou espaços em branco, devendo ser assinado pelo testador, depois de o ter lido na presença de pelo menos três testemunhas, que o subscreverão."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: O testamento particular pode ser escrito de próprio punho ou mediante processo mecânico. | o Se escrito de próprio punho, são requisitos essenciais à sua validade seja lido e assinado por quem o escreveu, na presença de pelo menos três testemunhas, que o devem subscrever. | o Se elaborado por processo mecânico, não pode conter rasuras ou espaços em branco, devendo ser assinado pelo testador, depois de o ter lido na presença de pelo menos três testemunhas, que o subscreverão.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "52caae50e41bbb00439a24f6acf9cdf3d5173a407d8faa38fc7df134dafe5363",
+     "o_que_significa": "2e138ff00ea2611c5bd7fdc95a151fdae663d1f0882b528017ecd9f8924efc12",
+     "exemplo_pratico": "2e02ac3643cbf8de01e579bfe5e91f3fa131498d37db0264affd27bf10e9d4d7",
+     "atencao": "4a41bc55beb75a43272289f056de0a4472b08dc9f1abb574bec06a853843ebcc",
+     "palavras_dificeis": "4d40df52f362712b42961e46b23d2608d4ca4803c875eb677e18916ad2b01716"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Testamento particular pode ser manuscrito ou mecânico; cada forma exige leitura, assinatura e pelo menos três testemunhas, além de cuidados contra alterações. — foi confrontada com os 3 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 480,
+   "target_id": "CC2002:ART.1878",
+   "explanation_id": "ENTENDA/CC2002:ART.1878/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1878:CAPUT\tSe as testemunhas forem contestes sobre o fato da disposição, ou, ao menos, sobre a sua leitura perante elas, e se reconhecerem as próprias assinaturas, assim como a do testador, o testamento será confirmado.\nCC2002:ART.1878:PAR.UNICO\tSe faltarem testemunhas, por morte ou ausência, e se pelo menos uma delas o reconhecer, o testamento poderá ser confirmado, se, a critério do juiz, houver prova suficiente de sua veracidade.",
+   "source_snapshot_sha256": "87bc3a7c35974f9082004d43147ef3b7954aac2489be61f6ff5d0235013996c0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1878:CAPUT",
+     "text": "Se as testemunhas forem contestes sobre o fato da disposição, ou, ao menos, sobre a sua leitura perante elas, e se reconhecerem as próprias assinaturas, assim como a do testador, o testamento será confirmado."
+    },
+    {
+     "label": "CC2002:ART.1878:PAR.UNICO",
+     "text": "Se faltarem testemunhas, por morte ou ausência, e se pelo menos uma delas o reconhecer, o testamento poderá ser confirmado, se, a critério do juiz, houver prova suficiente de sua veracidade."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Se as testemunhas forem contestes sobre o fato da disposição, ou, ao menos, sobre a sua leitura perante elas, e se reconhecerem as próprias assinaturas, assim como a do testador, o testamento será confirmado. | Se faltarem testemunhas, por morte ou ausência, e se pelo menos uma delas o reconhecer, o testamento poderá ser confirmado, se, a critério do juiz, houver prova suficiente de sua veracidade.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "3ba5b4e1c3ffb30cc05738a7f01c9dca181cc371210626e9017ad99dcd212c1c",
+     "o_que_significa": "075ba14d9713637dcbb353ca862773c9e1c9acf737eeb7118dd45fdcb58ec333",
+     "exemplo_pratico": "e6424b6e80616d0c702a8fe580d15f69cce9e7472ee9185d2b15e6aaeb15b312",
+     "atencao": "e6b54ce31f9bcb00016093df3d4af06981763e1404324a7aa7b59acdfc412770",
+     "palavras_dificeis": "ede3a4fff2e3221b8af78002f88f96561cce80057d1919c5f27916f90f20f02c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — O testamento particular pode ser confirmado se testemunhas concordarem sobre a disposição ou leitura e reconhecerem assinaturas; falta de algumas admite prova reforçada. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 481,
+   "target_id": "CC2002:ART.1879",
+   "explanation_id": "ENTENDA/CC2002:ART.1879/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1879:CAPUT\tEm circunstâncias excepcionais declaradas na cédula, o testamento particular de próprio punho e assinado pelo testador, sem testemunhas, poderá ser confirmado, a critério do juiz.",
+   "source_snapshot_sha256": "d8f92cb5e921f42ee0f45ea08464f70c264b3efc27749d7094099a064d2bf1ab",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1879:CAPUT",
+     "text": "Em circunstâncias excepcionais declaradas na cédula, o testamento particular de próprio punho e assinado pelo testador, sem testemunhas, poderá ser confirmado, a critério do juiz."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Em circunstâncias excepcionais declaradas na cédula, o testamento particular de próprio punho e assinado pelo testador, sem testemunhas, poderá ser confirmado, a critério do juiz.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0d40c9b3c363e6c1749c05a93406689e165497a337dbfacf72af48c8cf00524f",
+     "o_que_significa": "7714edd3ff12c59bec25fd34b217bd00949b9c0bcbc9d19907881f098a50785c",
+     "exemplo_pratico": "2c78b4c52694978c8ce256c99f8055cd835a12bbb0bd0bd48c04c6faf424bfa3",
+     "atencao": "799cc390ef212dc7491b014dcea7b8b74f22985b1ea91d1431a22ec3bffa2086",
+     "palavras_dificeis": "723e36d6458b80cb40059ba639a02add988d71a68cc15b3ea07cecd01a40ea5b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Em situação excepcional declarada no documento, escrito e assinatura inteiramente pessoais podem ser confirmados mesmo sem testemunhas. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 482,
+   "target_id": "CC2002:ART.1881",
+   "explanation_id": "ENTENDA/CC2002:ART.1881/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1881:CAPUT\tToda pessoa capaz de testar poderá, mediante escrito particular seu, datado e assinado, fazer disposições especiais sobre o seu enterro, sobre esmolas de pouca monta a certas e determinadas pessoas, ou, indeterminadamente, aos pobres de certo lugar, assim como legar móveis, roupas ou jóias, de pouco valor, de seu uso pessoal.",
+   "source_snapshot_sha256": "95c955b095f2f36455fdf396393049522e666a28dd642d7cc8f2dc1dcb1f0390",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1881:CAPUT",
+     "text": "Toda pessoa capaz de testar poderá, mediante escrito particular seu, datado e assinado, fazer disposições especiais sobre o seu enterro, sobre esmolas de pouca monta a certas e determinadas pessoas, ou, indeterminadamente, aos pobres de certo lugar, assim como legar móveis, roupas ou jóias, de pouco valor, de seu uso pessoal."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Toda pessoa capaz de testar poderá, mediante escrito particular seu, datado e assinado, fazer disposições especiais sobre o seu enterro, sobre esmolas de pouca monta a certas e determinadas pessoas, ou, indeterminadamente, aos pobres de certo lugar, assim como legar móveis, roupas ou jóias, de pouco valor, de seu uso pessoal.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a8418578e7731cd5f2f660137a9e2c1077d002cdb0d2594b7436a0b30a33aee8",
+     "o_que_significa": "ae734b3aace08d6ff715c9881a4d28e177defd099140dd592133af8f6ae015a7",
+     "exemplo_pratico": "8553e0918687705ad4919c73e670609298c193eb14cac32c0df2ae407e31a26b",
+     "atencao": "f7a2720a8c1b017ac861f329c8a0edf1efb9fd7f85de4fdb824c2aa7ee11092f",
+     "palavras_dificeis": "c0b2b50645ca10edf0f2a23c709527811b336ff0fbd2c21b9423ac1f0dc47692"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Pessoa capaz de testar pode, em escrito particular datado e assinado, dispor sobre funeral, pequenas esmolas e objetos pessoais de baixo valor. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 483,
+   "target_id": "CC2002:ART.1884",
+   "explanation_id": "ENTENDA/CC2002:ART.1884/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1884:CAPUT\tOs atos previstos nos artigos antecedentes revogam-se por atos iguais, e consideram-se revogados, se, havendo testamento posterior, de qualquer natureza, este os não confirmar ou modificar.",
+   "source_snapshot_sha256": "b71f5e339825afb035e84a3da0cf73c988e467f0c8352ee37215f378ff99d8aa",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1884:CAPUT",
+     "text": "Os atos previstos nos artigos antecedentes revogam-se por atos iguais, e consideram-se revogados, se, havendo testamento posterior, de qualquer natureza, este os não confirmar ou modificar."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Os atos previstos nos artigos antecedentes revogam-se por atos iguais, e consideram-se revogados, se, havendo testamento posterior, de qualquer natureza, este os não confirmar ou modificar.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d95959cd98166e6169313dbf91550a3339897f4bdd2d42f78d1853b59ccfd611",
+     "o_que_significa": "db3a8a1ef762093b589e5711a55cd98415208c2002d0afd0338ca206c12de99f",
+     "exemplo_pratico": "f192ef5a12919f09dea5b6915047b86b48828a894480153e3ee181b2c11efce3",
+     "atencao": "17c7df308ab98843b743ebe39dff2bd207e39f89cfc672586bda67ca373c8201",
+     "palavras_dificeis": "45a2674fcd4066e0580a65ee993fb0a18b29d4acd115db5dcc7456aabb235b9e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Codicilo é revogado por outro equivalente e também por testamento posterior que não o confirme ou modifique. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 484,
+   "target_id": "CC2002:ART.1888",
+   "explanation_id": "ENTENDA/CC2002:ART.1888/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1888:CAPUT\tQuem estiver em viagem, a bordo de navio nacional, de guerra ou mercante, pode testar perante o comandante, em presença de duas testemunhas, por forma que corresponda ao testamento público ou ao cerrado.\nCC2002:ART.1888:PAR.UNICO\tO registro do testamento será feito no diário de bordo.",
+   "source_snapshot_sha256": "a0df52c78a095255669edd555fae625aa4a9572ee8238ab5e8247cb823712083",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1888:CAPUT",
+     "text": "Quem estiver em viagem, a bordo de navio nacional, de guerra ou mercante, pode testar perante o comandante, em presença de duas testemunhas, por forma que corresponda ao testamento público ou ao cerrado."
+    },
+    {
+     "label": "CC2002:ART.1888:PAR.UNICO",
+     "text": "O registro do testamento será feito no diário de bordo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Quem estiver em viagem, a bordo de navio nacional, de guerra ou mercante, pode testar perante o comandante, em presença de duas testemunhas, por forma que corresponda ao testamento público ou ao cerrado. | O registro do testamento será feito no diário de bordo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4084ffd89a7bd0652c9d27be05ad72bfe9aa57448e9672b2bfb6e4991306f242",
+     "o_que_significa": "ea88c4cb9100940290d0483cef1834a9619805229a26d6b87ad8b5108af46c37",
+     "exemplo_pratico": "caa8e07bc487ba3e0203e03c5643be89ae659044103aed16f7d77f17f9baa7d6",
+     "atencao": "5c50c491f371dd3ce93b56171c40c74f9c6865a8d3ad235dea9756816d367f01",
+     "palavras_dificeis": "e3f1a6967ba199b2ca13556b286c187a79340a2e8f759a1c4a2eb6a5e0166cd3"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Em navio nacional durante viagem, pessoa pode testar perante comandante e duas testemunhas, imitando forma pública ou cerrada, com registro no diário de bordo. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 485,
+   "target_id": "CC2002:ART.1889",
+   "explanation_id": "ENTENDA/CC2002:ART.1889/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1889:CAPUT\tQuem estiver em viagem, a bordo de aeronave militar ou comercial, pode testar perante pessoa designada pelo comandante, observado o disposto no artigo antecedente.",
+   "source_snapshot_sha256": "a032bd5ed61f832ddea3c38d29f8e7b96124d937a2a3610cf4585abb29cf4b1a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1889:CAPUT",
+     "text": "Quem estiver em viagem, a bordo de aeronave militar ou comercial, pode testar perante pessoa designada pelo comandante, observado o disposto no artigo antecedente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Quem estiver em viagem, a bordo de aeronave militar ou comercial, pode testar perante pessoa designada pelo comandante, observado o disposto no artigo antecedente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a9698693d3d34596380b4bcc1beeb9def3c9e0ae54ee28e767776735342ca016",
+     "o_que_significa": "2f4d81a70837c240eb6c4f731c297664216871d146dd9490d465bb47ca6d18d8",
+     "exemplo_pratico": "cdc8284ad1b5a48ba0b2efeed687f1b139fa09993b7630e88a1969df6be49a18",
+     "atencao": "96d617d2cbe80ca879239740a2eb02b1c6413462d77919c7779817be609fb60a",
+     "palavras_dificeis": "c2059bc9c1ae4185506c7a496f59e92a0c9e3ff1dd59d4e6d03f5e0956bcee82"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Em aeronave militar ou comercial durante viagem, testa-se perante pessoa indicada pelo comandante, seguindo as garantias do testamento marítimo. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 486,
+   "target_id": "CC2002:ART.1891",
+   "explanation_id": "ENTENDA/CC2002:ART.1891/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1891:CAPUT\tCaducará o testamento marítimo, ou aeronáutico, se o testador não morrer na viagem, nem nos noventa dias subseqüentes ao seu desembarque em terra, onde possa fazer, na forma ordinária, outro testamento.",
+   "source_snapshot_sha256": "7b894cd17528373ed6454c3118393540c03c8825a5c247c9ea4c83f13ce7c7fa",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1891:CAPUT",
+     "text": "Caducará o testamento marítimo, ou aeronáutico, se o testador não morrer na viagem, nem nos noventa dias subseqüentes ao seu desembarque em terra, onde possa fazer, na forma ordinária, outro testamento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Caducará o testamento marítimo, ou aeronáutico, se o testador não morrer na viagem, nem nos noventa dias subseqüentes ao seu desembarque em terra, onde possa fazer, na forma ordinária, outro testamento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a433b9598ddc14cadb67c6edd7d580071b081f36274c5597ed95b14ed9a82926",
+     "o_que_significa": "262ccb5d6f007a2d4219a2d4598f3f6f8fdb42fce1e53a00cb56560f176ecc13",
+     "exemplo_pratico": "6f8a0214b83b3488f648bceeabc0a544cc18a367a13890eeaaf7ebef068f9355",
+     "atencao": "5cac7eaf12e5ada54b58703b7309eaa13db234817579b1ac0f650ca0828c4004",
+     "palavras_dificeis": "f6d79348b6a1507e00926eb1254fab6a43d732dabcf3d9a438d9f24ea8a70cc5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — O testamento de bordo caduca se o testador sobreviver à viagem e aos noventa dias após desembarcar onde poderia testar normalmente. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 487,
+   "target_id": "CC2002:ART.1893",
+   "explanation_id": "ENTENDA/CC2002:ART.1893/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1893:CAPUT\tO testamento dos militares e demais pessoas a serviço das Forças Armadas em campanha, dentro do País ou fora dele, assim como em praça sitiada, ou que esteja de comunicações interrompidas, poderá fazer-se, não havendo tabelião ou seu substituto legal, ante duas, ou três testemunhas, se o testador não puder, ou não souber assinar, caso em que assinará por ele uma delas.\nCC2002:ART.1893:PAR.1\to Se o testador pertencer a corpo ou seção de corpo destacado, o testamento será escrito pelo respectivo comandante, ainda que de graduação ou posto inferior.\nCC2002:ART.1893:PAR.2\to Se o testador estiver em tratamento em hospital, o testamento será escrito pelo respectivo oficial de saúde, ou pelo diretor do estabelecimento.\nCC2002:ART.1893:PAR.3\to Se o testador for o oficial mais graduado, o testamento será escrito por aquele que o substituir.",
+   "source_snapshot_sha256": "eabdc82f5f1cd9e175233ceda14d20bea2f3ee63249a9b47941a79b0a26ee1c6",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1893:CAPUT",
+     "text": "O testamento dos militares e demais pessoas a serviço das Forças Armadas em campanha, dentro do País ou fora dele, assim como em praça sitiada, ou que esteja de comunicações interrompidas, poderá fazer-se, não havendo tabelião ou seu substituto legal, ante duas, ou três testemunhas, se o testador não puder, ou não souber assinar, caso em que assinará por ele uma delas."
+    },
+    {
+     "label": "CC2002:ART.1893:PAR.1",
+     "text": "o Se o testador pertencer a corpo ou seção de corpo destacado, o testamento será escrito pelo respectivo comandante, ainda que de graduação ou posto inferior."
+    },
+    {
+     "label": "CC2002:ART.1893:PAR.2",
+     "text": "o Se o testador estiver em tratamento em hospital, o testamento será escrito pelo respectivo oficial de saúde, ou pelo diretor do estabelecimento."
+    },
+    {
+     "label": "CC2002:ART.1893:PAR.3",
+     "text": "o Se o testador for o oficial mais graduado, o testamento será escrito por aquele que o substituir."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: O testamento dos militares e demais pessoas a serviço das Forças Armadas em campanha, dentro do País ou fora dele, assim como em praça sitiada, ou que esteja de comunicações interrompidas, poderá fazer-se, não havendo tabelião ou seu substituto legal, ante duas, ou três testemunhas, se o testador não puder, ou não souber assinar, caso em que assinará por ele uma delas. | o Se o testador pertencer a corpo ou seção de corpo destacado, o testamento será escrito pelo respectivo comandante, ainda que de graduação ou posto inferior. | o Se o testador estiver em tratamento em hospital, o testamento será escrito pelo respectivo oficial de saúde, ou pelo diretor do estabelecimento. | o Se o testador for o oficial mais graduado, o testamento será escrito por aquele que o substituir.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b8ac5f071aaffb45612de1d14702901b42e5a1f0062b5271d1332941ca1ba476",
+     "o_que_significa": "1fbb57c75974129a25123daa6c8dc84daf82dbdc393b28bae841376104761c6e",
+     "exemplo_pratico": "6708278e2a6536ee82c48f013e124d559641d64e873fc908efa9dd9899852636",
+     "atencao": "83c9b3e5d40104cc952001d1dcf6c66f5ad74b7754379b05414bfa0fcc88e4ff",
+     "palavras_dificeis": "b086c96a5c5bacaf71c32805f6c2a7fe40339955ac6d4d4524a655b03d00507a"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O art. 1.893 exige duas testemunhas quando o testador assina e três quando não puder ou não souber assinar, hipótese em que uma delas assinará por ele, além de especificar a autoridade redatora em cada situação.",
+   "finding": {
+    "target_id": "CC2002:ART.1893",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "perante testemunhas e autoridades indicadas",
+    "legal_basis": "O art. 1.893 exige duas testemunhas quando o testador assina e três quando não puder ou não souber assinar, hipótese em que uma delas assinará por ele, além de especificar a autoridade redatora em cada situação.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_SOLENIDADE_ESSENCIAL",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A explicação não fornece o número de testemunhas nem a assinatura substitutiva, requisitos determinantes da validade da forma militar.",
+    "correction_direction": "Distinguir expressamente as hipóteses de duas e três testemunhas e a assinatura por uma testemunha quando o testador não puder ou não souber assinar.",
+    "confidence": "ALTA",
+    "human_review_required": false,
+    "checkpoint": 29,
+    "auditor": "/root/wave04_451_577"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 488,
+   "target_id": "CC2002:ART.1894",
+   "explanation_id": "ENTENDA/CC2002:ART.1894/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1894:CAPUT\tSe o testador souber escrever, poderá fazer o testamento de seu punho, contanto que o date e assine por extenso, e o apresente aberto ou cerrado, na presença de duas testemunhas ao auditor, ou ao oficial de patente, que lhe faça as vezes neste mister.\nCC2002:ART.1894:PAR.UNICO\tO auditor, ou o oficial a quem o testamento se apresente notará, em qualquer parte dele, lugar, dia, mês e ano, em que lhe for apresentado, nota esta que será assinada por ele e pelas testemunhas.",
+   "source_snapshot_sha256": "3f35ae031eb75ea191b71979c7118cc9c087fc70118f147fb5fcd29533fd946c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1894:CAPUT",
+     "text": "Se o testador souber escrever, poderá fazer o testamento de seu punho, contanto que o date e assine por extenso, e o apresente aberto ou cerrado, na presença de duas testemunhas ao auditor, ou ao oficial de patente, que lhe faça as vezes neste mister."
+    },
+    {
+     "label": "CC2002:ART.1894:PAR.UNICO",
+     "text": "O auditor, ou o oficial a quem o testamento se apresente notará, em qualquer parte dele, lugar, dia, mês e ano, em que lhe for apresentado, nota esta que será assinada por ele e pelas testemunhas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Se o testador souber escrever, poderá fazer o testamento de seu punho, contanto que o date e assine por extenso, e o apresente aberto ou cerrado, na presença de duas testemunhas ao auditor, ou ao oficial de patente, que lhe faça as vezes neste mister. | O auditor, ou o oficial a quem o testamento se apresente notará, em qualquer parte dele, lugar, dia, mês e ano, em que lhe for apresentado, nota esta que será assinada por ele e pelas testemunhas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "36ba07b53c6893e105802bf7401e6bdd994da309e4246e9a09f69a729d5bb6ae",
+     "o_que_significa": "0dba4d9465fd797727d17550d5f8633ff22f19a098747b797bab023dcc617694",
+     "exemplo_pratico": "84a823990245ccbab61e66a3d33e730e947f74d776e8d5f3b574d39dab5a1466",
+     "atencao": "600a246e37739514854e010b388ba5cafaddd41625287f10b07b898820927c0c",
+     "palavras_dificeis": "8589357e8f0399e20bb6761454a0ab67739a19851eba75ec11a0fb1868b5b5a6"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Quem puder escrever faz testamento militar de próprio punho, datado e assinado, apresentando-o a autoridade militar perante duas testemunhas, com nota circunstanciada. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 489,
+   "target_id": "CC2002:ART.1895",
+   "explanation_id": "ENTENDA/CC2002:ART.1895/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1895:CAPUT\tCaduca o testamento militar, desde que, depois dele, o testador esteja, noventa dias seguidos, em lugar onde possa testar na forma ordinária, salvo se esse testamento apresentar as solenidades prescritas no parágrafo único do artigo antecedente.",
+   "source_snapshot_sha256": "aa3e18fdc3fbb393b57b43b2a757dc62235e7785234fa48c5cffd4217b257881",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1895:CAPUT",
+     "text": "Caduca o testamento militar, desde que, depois dele, o testador esteja, noventa dias seguidos, em lugar onde possa testar na forma ordinária, salvo se esse testamento apresentar as solenidades prescritas no parágrafo único do artigo antecedente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Caduca o testamento militar, desde que, depois dele, o testador esteja, noventa dias seguidos, em lugar onde possa testar na forma ordinária, salvo se esse testamento apresentar as solenidades prescritas no parágrafo único do artigo antecedente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1258fa67ad1322c113b6d406802cf5fb8f03f4f6fcd8141cf64338392a3d4afa",
+     "o_que_significa": "109121d9af1c57f15a1e24f3360b2762d5612bc3875bacc2f6a3882019a7bdb6",
+     "exemplo_pratico": "cba7426c451fb503bf7a79e0f3bb7a0f78876957ae3fbea46468f05dd8cf415d",
+     "atencao": "c3b3f8a87e37b6b91ea364de99e952aa4ce948b8813a31a3e23d2f12a2f20999",
+     "palavras_dificeis": "98ef5bb7fe1941f2a8d18a9da98449115583a1884e313c3bace926e3e8383092"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — O testamento militar caduca após noventa dias contínuos em local onde seja possível testar ordinariamente, salvo forma com solenidades reforçadas. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 490,
+   "target_id": "CC2002:ART.1896",
+   "explanation_id": "ENTENDA/CC2002:ART.1896/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1896:CAPUT\tAs pessoas designadas no art. 1.893, estando empenhadas em combate, ou feridas, podem testar oralmente, confiando a sua última vontade a duas testemunhas.\nCC2002:ART.1896:PAR.UNICO\tNão terá efeito o testamento se o testador não morrer na guerra ou convalescer do ferimento.",
+   "source_snapshot_sha256": "839c30bfeb579f5091cc0abea1325b85df553c255450454777f7c0e959a12905",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1896:CAPUT",
+     "text": "As pessoas designadas no art. 1.893, estando empenhadas em combate, ou feridas, podem testar oralmente, confiando a sua última vontade a duas testemunhas."
+    },
+    {
+     "label": "CC2002:ART.1896:PAR.UNICO",
+     "text": "Não terá efeito o testamento se o testador não morrer na guerra ou convalescer do ferimento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: As pessoas designadas no art. 1.893, estando empenhadas em combate, ou feridas, podem testar oralmente, confiando a sua última vontade a duas testemunhas. | Não terá efeito o testamento se o testador não morrer na guerra ou convalescer do ferimento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e147a2659e50e2a2a118e6e8ba2d58cb33c828bafe35e6512d07096250414c73",
+     "o_que_significa": "20a64edcc457651be717d1fd2fa3b9483e3b9399f158deb05dfb37a1b22659b7",
+     "exemplo_pratico": "23cfb2cdb69b07075305cb5e529e0439b811d505b8076c1d0cbd74d79ea3fa62",
+     "atencao": "066bc1cccbbec4360b4c9cd6f74215644d8fffaf64b6c0c9ce8ce9b29b091f0a",
+     "palavras_dificeis": "c3aae4a90b742bc29cef7aa240d5a07acbf4e78683c7226a83ea2d0cbb3c0372"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Em combate ou após ferimento, pessoas abrangidas podem declarar oralmente a última vontade a duas testemunhas; o ato perde efeito se sobreviverem à guerra ou se recuperarem. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 491,
+   "target_id": "CC2002:ART.1897",
+   "explanation_id": "ENTENDA/CC2002:ART.1897/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1897:CAPUT\tA nomeação de herdeiro, ou legatário, pode fazer-se pura e simplesmente, sob condição, para certo fim ou modo, ou por certo motivo.",
+   "source_snapshot_sha256": "2a4dcf5cd171a13cc0b8ed2dd0e67bdd537b02dae3666a7dd9c4bb0d3eec68c3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1897:CAPUT",
+     "text": "A nomeação de herdeiro, ou legatário, pode fazer-se pura e simplesmente, sob condição, para certo fim ou modo, ou por certo motivo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A nomeação de herdeiro, ou legatário, pode fazer-se pura e simplesmente, sob condição, para certo fim ou modo, ou por certo motivo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ec22b88e40c86e4e76f10d4ccf1e5269a7a7e6838a8eacd556afaef765136aa0",
+     "o_que_significa": "9b0621d93efaf29bb7c77101defe1d3637934ee8fc4977aa06062e46fb46510b",
+     "exemplo_pratico": "960ba20fa21b0c758fd853b89718f5fd430bd7811844e189aeccfdca023458ae",
+     "atencao": "3fb1a22d8fa268b28c69e8b942b1d92a5b7cb894191c52107963530119c4cb4c",
+     "palavras_dificeis": "1f64b89468a058a31b7fcf57345d7e8dca637ba8fe89297a14da6371cc7fe69d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Herdeiro ou legatário pode ser nomeado sem condição, sob condição, com encargo ou por motivo declarado. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 492,
+   "target_id": "CC2002:ART.1898",
+   "explanation_id": "ENTENDA/CC2002:ART.1898/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1898:CAPUT\tA designação do tempo em que deva começar ou cessar o direito do herdeiro, salvo nas disposições fideicomissárias, ter-se-á por não escrita.",
+   "source_snapshot_sha256": "f9dd57b6cb564bc01d894c8dd041f68ccf7c3486248d6a20326f5f6c82ebcf49",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1898:CAPUT",
+     "text": "A designação do tempo em que deva começar ou cessar o direito do herdeiro, salvo nas disposições fideicomissárias, ter-se-á por não escrita."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A designação do tempo em que deva começar ou cessar o direito do herdeiro, salvo nas disposições fideicomissárias, ter-se-á por não escrita.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "49edfcb32ca25ff46b35ae206c55f58deb9eeae0e9eb6e034eab6d9f0bc8605b",
+     "o_que_significa": "4ed9c3469e3551ceccb2504d19ab2a5a88faef688754d399cf60ab9426e1dfef",
+     "exemplo_pratico": "7a531a2c503a69ce292861b072a6c34ab256bba9c5c00e59386ec207f93d2b37",
+     "atencao": "074061e290162ae54b8d92094c5ac225c48c0c9961bd8a70644199b609a09418",
+     "palavras_dificeis": "558272f6890280c7bbb3b6d45a729ab126f6b95371edbc1e772618f96f0959f0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Termo que fixe início ou fim do direito do herdeiro é ignorado, salvo no fideicomisso. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 493,
+   "target_id": "CC2002:ART.1900",
+   "explanation_id": "ENTENDA/CC2002:ART.1900/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1900:CAPUT\tÉ nula a disposição:\nCC2002:ART.1900:INC.I\tque institua herdeiro ou legatário sob a condição captatória de que este disponha, também por testamento, em benefício do testador, ou de terceiro;\nCC2002:ART.1900:INC.II\tque se refira a pessoa incerta, cuja identidade não se possa averiguar;\nCC2002:ART.1900:INC.III\tque favoreça a pessoa incerta, cometendo a determinação de sua identidade a terceiro;\nCC2002:ART.1900:INC.IV\tque deixe a arbítrio do herdeiro, ou de outrem, fixar o valor do legado;\nCC2002:ART.1900:INC.V\tque favoreça as pessoas a que se referem os arts. 1.801 e 1.802.",
+   "source_snapshot_sha256": "7e590b508f7aa5641345c5ed460be598a1fe6709b737d57d708184ff8656be80",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1900:CAPUT",
+     "text": "É nula a disposição:"
+    },
+    {
+     "label": "CC2002:ART.1900:INC.I",
+     "text": "que institua herdeiro ou legatário sob a condição captatória de que este disponha, também por testamento, em benefício do testador, ou de terceiro;"
+    },
+    {
+     "label": "CC2002:ART.1900:INC.II",
+     "text": "que se refira a pessoa incerta, cuja identidade não se possa averiguar;"
+    },
+    {
+     "label": "CC2002:ART.1900:INC.III",
+     "text": "que favoreça a pessoa incerta, cometendo a determinação de sua identidade a terceiro;"
+    },
+    {
+     "label": "CC2002:ART.1900:INC.IV",
+     "text": "que deixe a arbítrio do herdeiro, ou de outrem, fixar o valor do legado;"
+    },
+    {
+     "label": "CC2002:ART.1900:INC.V",
+     "text": "que favoreça as pessoas a que se referem os arts. 1.801 e 1.802."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 6 segmentos vigentes do dispositivo: É nula a disposição: | que institua herdeiro ou legatário sob a condição captatória de que este disponha, também por testamento, em benefício do testador, ou de terceiro; | que se refira a pessoa incerta, cuja identidade não se possa averiguar; | que favoreça a pessoa incerta, cometendo a determinação de sua identidade a terceiro; | que deixe a arbítrio do herdeiro, ou de outrem, fixar o valor do legado; | que favoreça as pessoas a que se referem os arts. 1.801 e 1.802.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9b24a8ecceda5a3088ad4ec8cb999a1093597fe399dc6b7714ac315a77afae6f",
+     "o_que_significa": "94e44f3e7985aef5ef5af5e5d963c899295bf5fbcf23bacfd3d78f6e00a0e563",
+     "exemplo_pratico": "4402e94212f288c4fff994b82ef66f6e0ea9dc3d535bf08dc38fe261c773ba3f",
+     "atencao": "4b931cb0186e8804439d3659b5ff6893f36ef482e501a9cdc4b9122c888b3aa7",
+     "palavras_dificeis": "838659df60acb728a986f81792f581b18207da8ba65f499b4d5e5c7c5acdd33a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — São nulas disposições captatórias, destinadas a pessoa impossível de identificar, delegações indevidas de beneficiário ou valor e benefícios a pessoas legalmente impedidas. — foi confrontada com os 6 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 494,
+   "target_id": "CC2002:ART.1901",
+   "explanation_id": "ENTENDA/CC2002:ART.1901/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1901:CAPUT\tValerá a disposição:\nCC2002:ART.1901:INC.I\tem favor de pessoa incerta que deva ser determinada por terceiro, dentre duas ou mais pessoas mencionadas pelo testador, ou pertencentes a uma família, ou a um corpo coletivo, ou a um estabelecimento por ele designado;\nCC2002:ART.1901:INC.II\tem remuneração de serviços prestados ao testador, por ocasião da moléstia de que faleceu, ainda que fique ao arbítrio do herdeiro ou de outrem determinar o valor do legado.",
+   "source_snapshot_sha256": "17429c32c8c65f5b140333f213147016c5ef07367bb7b55b99634b0f3e68d0ad",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1901:CAPUT",
+     "text": "Valerá a disposição:"
+    },
+    {
+     "label": "CC2002:ART.1901:INC.I",
+     "text": "em favor de pessoa incerta que deva ser determinada por terceiro, dentre duas ou mais pessoas mencionadas pelo testador, ou pertencentes a uma família, ou a um corpo coletivo, ou a um estabelecimento por ele designado;"
+    },
+    {
+     "label": "CC2002:ART.1901:INC.II",
+     "text": "em remuneração de serviços prestados ao testador, por ocasião da moléstia de que faleceu, ainda que fique ao arbítrio do herdeiro ou de outrem determinar o valor do legado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Valerá a disposição: | em favor de pessoa incerta que deva ser determinada por terceiro, dentre duas ou mais pessoas mencionadas pelo testador, ou pertencentes a uma família, ou a um corpo coletivo, ou a um estabelecimento por ele designado; | em remuneração de serviços prestados ao testador, por ocasião da moléstia de que faleceu, ainda que fique ao arbítrio do herdeiro ou de outrem determinar o valor do legado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "660aa63c9040f92f1e9535a3c740684df322bacde77861cd9d6adddd0bd6aac6",
+     "o_que_significa": "843dbde8c86d418b7ce91d6971fdf9a5acbc5818ec7332f55900bd5511741321",
+     "exemplo_pratico": "93bc06df7cd0cab520746ad5319a1f29c97e9414963331fe5da4f35c54ad9944",
+     "atencao": "9ebdbc0dc038a00e3bfd087a4012d7c1397410eb3968e1eb39ab4e7c82a1d24b",
+     "palavras_dificeis": "1774c7e12e60bee0a1b0c56c4e714bbb2535bf0f07682aa7f2552fab2904eb88"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — É válida a escolha por terceiro entre pessoas ou grupos delimitados e a remuneração por serviços finais mesmo com valor definido por outra pessoa. — foi confrontada com os 3 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 495,
+   "target_id": "CC2002:ART.1902",
+   "explanation_id": "ENTENDA/CC2002:ART.1902/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1902:CAPUT\tA disposição geral em favor dos pobres, dos estabelecimentos particulares de caridade, ou dos de assistência pública, entender-se-á relativa aos pobres do lugar do domicílio do testador ao tempo de sua morte, ou dos estabelecimentos aí sitos, salvo se manifestamente constar que tinha em mente beneficiar os de outra localidade.\nCC2002:ART.1902:PAR.UNICO\tNos casos deste artigo, as instituições particulares preferirão sempre às públicas.",
+   "source_snapshot_sha256": "43d1998768f7c2bec808f282d2f4092d69538bb375835d92b3296a2caa4969cf",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1902:CAPUT",
+     "text": "A disposição geral em favor dos pobres, dos estabelecimentos particulares de caridade, ou dos de assistência pública, entender-se-á relativa aos pobres do lugar do domicílio do testador ao tempo de sua morte, ou dos estabelecimentos aí sitos, salvo se manifestamente constar que tinha em mente beneficiar os de outra localidade."
+    },
+    {
+     "label": "CC2002:ART.1902:PAR.UNICO",
+     "text": "Nos casos deste artigo, as instituições particulares preferirão sempre às públicas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A disposição geral em favor dos pobres, dos estabelecimentos particulares de caridade, ou dos de assistência pública, entender-se-á relativa aos pobres do lugar do domicílio do testador ao tempo de sua morte, ou dos estabelecimentos aí sitos, salvo se manifestamente constar que tinha em mente beneficiar os de outra localidade. | Nos casos deste artigo, as instituições particulares preferirão sempre às públicas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e7de27e844fdeaa66e7ef64f08d6d0a17b8c0c8fc7d0a1a8c42b6dcf00250ce0",
+     "o_que_significa": "a9e0341084fe6d4644abcae0ac5c9abd71b43df7652eca1d3c4eee19c305aa29",
+     "exemplo_pratico": "342035018500870b3d9690df6aa3039efcead7f1080d7639833445c77952c35a",
+     "atencao": "b6622ded6f11ff35ae1356aed7eb7c926282ada4ecfd4627fa81c1840b6c056c",
+     "palavras_dificeis": "48ba1e4b1185407d5bc1d6af6012f8a42ec6e75e05de8c8aaca44d9524b37cf9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Benefício geral a pobres ou instituições assistenciais refere-se, em regra, ao domicílio do testador, com preferência das entidades privadas locais. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 496,
+   "target_id": "CC2002:ART.1903",
+   "explanation_id": "ENTENDA/CC2002:ART.1903/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1903:CAPUT\tO erro na designação da pessoa do herdeiro, do legatário, ou da coisa legada anula a disposição, salvo se, pelo contexto do testamento, por outros documentos, ou por fatos inequívocos, se puder identificar a pessoa ou coisa a que o testador queria referir-se.",
+   "source_snapshot_sha256": "d92d8492b9f969c4ff8bd324882020609cc038404097f5195afce4d16a3f8e7a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1903:CAPUT",
+     "text": "O erro na designação da pessoa do herdeiro, do legatário, ou da coisa legada anula a disposição, salvo se, pelo contexto do testamento, por outros documentos, ou por fatos inequívocos, se puder identificar a pessoa ou coisa a que o testador queria referir-se."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O erro na designação da pessoa do herdeiro, do legatário, ou da coisa legada anula a disposição, salvo se, pelo contexto do testamento, por outros documentos, ou por fatos inequívocos, se puder identificar a pessoa ou coisa a que o testador queria referir-se.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "72695cb6141ae1f0c6dc2dfa67c7c7a42ecad4b550921632a216eac1795acd34",
+     "o_que_significa": "003f2afa608ab9de465ea5803cd7290b014f8fff29991079083bc9040d96bce6",
+     "exemplo_pratico": "3dbedf3338403da8135cbf2b9bb4e4212fca8166a772af986aec4054052ac4d5",
+     "atencao": "e62ded91f0560e07418c469ec552323e102f058576d12a208196d414f7e87b82",
+     "palavras_dificeis": "da7ed926d71c4bdae4f09de670e15298265366bfd084b0258e4454527aa73ebb"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Erro no nome do beneficiário ou da coisa invalida a disposição, salvo identificação segura pelo contexto, documentos ou fatos inequívocos. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 497,
+   "target_id": "CC2002:ART.1905",
+   "explanation_id": "ENTENDA/CC2002:ART.1905/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1905:CAPUT\tSe o testador nomear certos herdeiros individualmente e outros coletivamente, a herança será dividida em tantas quotas quantos forem os indivíduos e os grupos designados.",
+   "source_snapshot_sha256": "a1bbc2f1306df1ef89933ba3d883feb6157647bb8902d01b29df05936b057e7c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1905:CAPUT",
+     "text": "Se o testador nomear certos herdeiros individualmente e outros coletivamente, a herança será dividida em tantas quotas quantos forem os indivíduos e os grupos designados."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o testador nomear certos herdeiros individualmente e outros coletivamente, a herança será dividida em tantas quotas quantos forem os indivíduos e os grupos designados.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5661118397959ac6f22f78b47fdfa64b45430033198b9d500263e055ab0ba3ca",
+     "o_que_significa": "7aad9dd1b15a268c688f45985f70c7d5f4d800ff7179fbc87cacca6df67dc637",
+     "exemplo_pratico": "bfb7bc0f42ee9942242b1728d91c95a1b0d411f5a1be2877ec737ff2b58e3df8",
+     "atencao": "ccb949cb16e6450e6a335cbddf24a4ebc1724700074d669101ccbb64ce0cf7fd",
+     "palavras_dificeis": "0da21420457d1e8f86a3b30d1988759e14c824561f42115a7bb8ce8abcb13269"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Nomeações individuais e coletivas geram uma quota para cada pessoa indicada e uma para cada grupo designado. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 498,
+   "target_id": "CC2002:ART.1906",
+   "explanation_id": "ENTENDA/CC2002:ART.1906/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1906:CAPUT\tSe forem determinadas as quotas de cada herdeiro, e não absorverem toda a herança, o remanescente pertencerá aos herdeiros legítimos, segundo a ordem da vocação hereditária.",
+   "source_snapshot_sha256": "72ef013d189e2d4d60358c1428f68b1e0f79db8765aa4e57b95cf613286fe438",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1906:CAPUT",
+     "text": "Se forem determinadas as quotas de cada herdeiro, e não absorverem toda a herança, o remanescente pertencerá aos herdeiros legítimos, segundo a ordem da vocação hereditária."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se forem determinadas as quotas de cada herdeiro, e não absorverem toda a herança, o remanescente pertencerá aos herdeiros legítimos, segundo a ordem da vocação hereditária.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "036308e1724b1ff37f08f6ba6f27ba63ced5430bdbfdec3bfd8fa7e7985e5497",
+     "o_que_significa": "630b207388fc56de99f4b92d6c2479c81779501463fbef5cd32dc31586200e94",
+     "exemplo_pratico": "d1e2516cc6b3573203eef1db12212a5ce1581e8fe41bd50d89a1444d28f8b913",
+     "atencao": "43356b93a25de1c6b416688da2f32622abbca6a18e9bda9f40022d10de0aa03b",
+     "palavras_dificeis": "499c53b43bca5762d9aaa1f37a73cc547a956319127d4d3a884b43bd7e008d24"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Quotas testamentárias que não consumam toda a herança deixam o saldo aos herdeiros legítimos. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 499,
+   "target_id": "CC2002:ART.1907",
+   "explanation_id": "ENTENDA/CC2002:ART.1907/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1907:CAPUT\tSe forem determinados os quinhões de uns e não os de outros herdeiros, distribuir-se-á por igual a estes últimos o que restar, depois de completas as porções hereditárias dos primeiros.",
+   "source_snapshot_sha256": "ed4c64e18b4e17f18b3b0aec1c1e97bd55f58e529190cffe650d00caec787aa5",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1907:CAPUT",
+     "text": "Se forem determinados os quinhões de uns e não os de outros herdeiros, distribuir-se-á por igual a estes últimos o que restar, depois de completas as porções hereditárias dos primeiros."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se forem determinados os quinhões de uns e não os de outros herdeiros, distribuir-se-á por igual a estes últimos o que restar, depois de completas as porções hereditárias dos primeiros.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7679f16aa3faa2e3cb891b7bae6ddbe25621dd04b0ade11b0f9814f9d59c71b3",
+     "o_que_significa": "58167997c3e66a63412b99772ad83ac680598770d9e0eedb18c441114a865540",
+     "exemplo_pratico": "dbfddf7d862c5dcc25dc8558a15a12f4f13b27b98b056666061cb21995ac139a",
+     "atencao": "2b54028c10bde8d2d4bca91d96ab11a5f36493f33257eb60952eef70c06ed3d1",
+     "palavras_dificeis": "fd85d15d92dea06c395dedb9067a105670266d6b5afff12e2d13440ae337e651"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Quando algumas quotas são fixadas e outras não, os herdeiros sem percentual dividem igualmente o saldo depois das parcelas determinadas. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 500,
+   "target_id": "CC2002:ART.1909",
+   "explanation_id": "ENTENDA/CC2002:ART.1909/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1909:CAPUT\tSão anuláveis as disposições testamentárias inquinadas de erro, dolo ou coação.\nCC2002:ART.1909:PAR.UNICO\tExtingue-se em quatro anos o direito de anular a disposição, contados de quando o interessado tiver conhecimento do vício.",
+   "source_snapshot_sha256": "1188c254e6ba343876507123bee8328fdd6455460681facd6f7f84ecbaf32c93",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1909:CAPUT",
+     "text": "São anuláveis as disposições testamentárias inquinadas de erro, dolo ou coação."
+    },
+    {
+     "label": "CC2002:ART.1909:PAR.UNICO",
+     "text": "Extingue-se em quatro anos o direito de anular a disposição, contados de quando o interessado tiver conhecimento do vício."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: São anuláveis as disposições testamentárias inquinadas de erro, dolo ou coação. | Extingue-se em quatro anos o direito de anular a disposição, contados de quando o interessado tiver conhecimento do vício.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1327e858a5640b859bb08ab0ac1fc922ecf47f96246663652ca570900d3b18b3",
+     "o_que_significa": "e00ba1228cdd8e588f68e9d42c2bf507ccfd843028591855e6f8baf4328897ec",
+     "exemplo_pratico": "dae253862895de9d861d4ab7e8afd6da65efcb0a59156896086882e11a9741a5",
+     "atencao": "7d3c4516d09c4d568bd5114bea8b49d8722106ec7d4e8863f093f3a307503398",
+     "palavras_dificeis": "6462e23ec55e83d231720374c1490b80db2acea44e8f886770fd5e663c6cf70e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Disposição contaminada por erro, dolo ou coação é anulável em quatro anos desde a ciência do vício. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
    "finding": null,
    "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
    "reviewer": "delegated-independent-auditor"
