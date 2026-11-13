@@ -1,0 +1,651 @@
+{
+ "schema_version": 1,
+ "mission": "QA-05",
+ "as_of": "2026-11-13",
+ "module": "A_CRITICAL_HIGH_12",
+ "status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+ "total": 12,
+ "records": [
+  {
+   "target_id": "CC2002:ART.964",
+   "severity": "ALTO",
+   "source_finding": {
+    "target_id": "CC2002:ART.964",
+    "audit_wave": "QA04_FRONT_B",
+    "problematic_field": "o_que_diz; atencao",
+    "problematic_excerpt": "salário do trabalhador agrícola sobre a colheita",
+    "legal_basis": "O inciso VIII atribui ao trabalhador agrícola preferência sobre o produto da colheita, precipuamente a quaisquer outros créditos, inclusive reais; o inciso VI limita o privilégio dos aluguéis ao ano corrente e ao anterior.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_PRIORIDADE_E_LIMITE_TEMPORAL",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A síntese não informa a superpreferência legal nem o limite temporal dos aluguéis, podendo alterar a ordem concreta do concurso.",
+    "correction_direction": "Explicitar a primazia do trabalhador agrícola inclusive sobre créditos reais e o período do privilégio locatício.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": "B-CP08",
+    "residual_queue_position": 383,
+    "original_queue_position": 771,
+    "auditor": "qa04_audit_334_666"
+   },
+   "source_finding_sha256": "d6fdc948655a0a57748c31a2314563ca514f69e14955185887f3e7e786f02c65",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.964/BASE/1",
+   "baseline_content_sha256": "9a8fe651d5dcb8a6b6a07a44902d711fa1ddb47bbf1e5c2107b7d417afeef39f",
+   "proposed_content": {
+    "o_que_diz": "Há privilégio especial sobre bens determinados para créditos ligados à arrecadação judicial, salvamento, benfeitorias, construção, produção agrícola, locação, edição e abate. Nos aluguéis, a preferência sobre utensílios domésticos limita-se às prestações do ano em curso e do anterior. O salário do trabalhador rural prefere sobre o produto da colheita em que trabalhou, inclusive diante de créditos garantidos por direito real.",
+    "o_que_significa": "Cada crédito recebe preferência apenas sobre o bem ou produto ao qual sua contribuição está legalmente ligada.",
+    "exemplo_pratico": "O salário do trabalhador que participou da colheita é pago com o produto colhido antes até de um crédito com garantia real sobre esse produto.",
+    "atencao": "Os nove incisos têm objetos e limites próprios. O privilégio locatício cobre somente o ano corrente e o anterior, enquanto a prioridade do trabalhador agrícola supera também créditos reais.",
+    "palavras_dificeis": [
+     {
+      "termo": "Privilégio especial",
+      "explicacao": "preferência legal que recai sobre bem ou produto especificamente indicado"
+     }
+    ]
+   },
+   "changed_fields": [
+    "o_que_diz",
+    "exemplo_pratico",
+    "atencao"
+   ],
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "rationale": "Inclui a superpreferência do trabalhador agrícola, inclusive contra créditos reais, e delimita os aluguéis ao ano corrente e anterior.",
+   "status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+   "editor_identifier": "qa05_editor_critical_a",
+   "independent_approval_claimed": false
+  },
+  {
+   "target_id": "CC2002:ART.965",
+   "severity": "ALTO",
+   "source_finding": {
+    "target_id": "CC2002:ART.965",
+    "audit_wave": "QA04_FRONT_B",
+    "problematic_field": "o_que_diz; atencao",
+    "problematic_excerpt": "doença final; mantença recente da família; impostos dos períodos indicados",
+    "legal_basis": "Os incisos IV a VII fixam períodos distintos: doença no semestre anterior à morte, mantença no trimestre anterior, impostos do ano corrente e anterior e salários domésticos dos seis últimos meses de vida.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_PRAZOS_DE_PRIVILEGIO",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "Expressões vagas impedem saber quais créditos entram no privilégio geral e podem modificar a ordem de pagamento.",
+    "correction_direction": "Enunciar os períodos exatos de cada crédito privilegiado.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": "B-CP08",
+    "residual_queue_position": 384,
+    "original_queue_position": 772,
+    "auditor": "qa04_audit_334_666"
+   },
+   "source_finding_sha256": "23808e5a1897e2777e7f085388ea72fe094ee7de61e024e85d536d86e038867d",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.965/BASE/1",
+   "baseline_content_sha256": "e61e5168464b05f6184820fb42c45091bf3c105a32c047a6719f467c554236b6",
+   "proposed_content": {
+    "o_que_diz": "Sobre os bens do devedor, a lei ordena os privilégios gerais: funeral adequado; custas, arrecadação e liquidação; luto moderado da família; despesas da doença fatal ocorridas no semestre anterior à morte; sustento do falecido e de sua família no trimestre anterior; impostos do ano em curso e do precedente; salários domésticos relativos aos seis últimos meses de vida; e os demais créditos gerais.",
+    "o_que_significa": "A preferência alcança o patrimônio residual não afetado a direito real ou privilégio especial e respeita a sequência enumerada.",
+    "exemplo_pratico": "Na insolvência do falecido, a despesa da doença que causou a morte só integra essa preferência se situada no semestre anterior ao óbito.",
+    "atencao": "Os períodos não são intercambiáveis: seis meses para doença e salários domésticos, três meses para mantença e ano corrente mais anterior para impostos. Moderação e nexo com o falecimento também devem ser conferidos.",
+    "palavras_dificeis": [
+     {
+      "termo": "Privilégio geral",
+      "explicacao": "preferência legal sobre o patrimônio residual, sem vinculação a bem determinado"
+     }
+    ]
+   },
+   "changed_fields": [
+    "o_que_diz",
+    "exemplo_pratico",
+    "atencao"
+   ],
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "rationale": "Substitui referências vagas pelos quatro recortes temporais expressos dos incisos IV a VII.",
+   "status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+   "editor_identifier": "qa05_editor_critical_a",
+   "independent_approval_claimed": false
+  },
+  {
+   "target_id": "CC2002:ART.1102",
+   "severity": "CRÍTICO",
+   "source_finding": {
+    "target_id": "CC2002:ART.1102",
+    "audit_wave": "QA04_FRONT_B",
+    "problematic_field": "o_que_diz; o_que_significa; exemplo_pratico; atencao",
+    "problematic_excerpt": "administradores devem investir liquidante e restringir-se a negócios inadiáveis",
+    "legal_basis": "O art. 1.102 determina a liquidação conforme este capítulo, ressalvado o ato constitutivo ou instrumento de dissolução, e condiciona a investidura do liquidante não administrador à averbação da nomeação. A explicação reproduz matéria dos arts. 1.036 e 1.103.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "EXPLICACAO_DE_DISPOSITIVO_DIVERSO",
+    "severity": "CRÍTICO",
+    "legal_or_pedagogical_consequence": "A versão ativa omite a regra do próprio artigo e pode levar à investidura irregular de liquidante não administrador.",
+    "correction_direction": "Substituir a redação pela disciplina do procedimento de liquidação e da averbação da nomeação do liquidante externo.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": "B-CP10",
+    "residual_queue_position": 497,
+    "original_queue_position": 885,
+    "auditor": "qa04_audit_334_666"
+   },
+   "source_finding_sha256": "36c279f7c8e43e4b30c7ba9e748128ea1a11cb910f8863a120f17e52e0014bf0",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.1102/BASE/1",
+   "baseline_content_sha256": "935f3bc6fc5cc621dc3bc9fc76079697d28efb704a7ecf9345fbb349f7eae795",
+   "proposed_content": {
+    "o_que_diz": "Depois da dissolução e da nomeação do liquidante, a sociedade é liquidada pelas regras deste capítulo, sem prejuízo de disposições válidas do ato constitutivo ou do instrumento que formalizou a dissolução. Se o liquidante não era administrador, ele somente assume a função após o registro de sua nomeação.",
+    "o_que_significa": "O artigo define qual disciplina rege a liquidação e impõe publicidade registral para investir um liquidante externo à administração. Ele não trata dos deveres detalhados do liquidante nem da escolha ou destituição do cargo.",
+    "exemplo_pratico": "Os sócios nomeiam como liquidante um profissional que não administrava a sociedade. Antes de atuar nessa qualidade, a nomeação é averbada no registro competente.",
+    "atencao": "As ressalvas do ato constitutivo ou do instrumento de dissolução não dispensam a averbação exigida para o liquidante não administrador nem autorizam contrariar normas cogentes.",
+    "palavras_dificeis": [
+     {
+      "termo": "Averbação",
+      "explicacao": "anotação registral que dá publicidade a uma alteração ou fato relacionado ao registro principal"
+     }
+    ]
+   },
+   "changed_fields": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "rationale": "Retira conteúdo dos arts. 1.036 e 1.103 e restitui disciplina do capítulo, ressalvas documentais e averbação constitutiva da investidura do liquidante externo.",
+   "status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+   "editor_identifier": "qa05_editor_critical_a",
+   "independent_approval_claimed": false
+  },
+  {
+   "target_id": "CC2002:ART.1103",
+   "severity": "CRÍTICO",
+   "source_finding": {
+    "target_id": "CC2002:ART.1103",
+    "audit_wave": "QA04_FRONT_B",
+    "problematic_field": "o_que_diz; o_que_significa; exemplo_pratico; atencao",
+    "problematic_excerpt": "Se o contrato não indicar liquidante, os sócios o escolhem",
+    "legal_basis": "O art. 1.103 enumera nove deveres do liquidante, inclui inventário e balanço em quinze dias, prestação semestral de contas, realização do ativo e passivo e uso obrigatório da cláusula em liquidação. A explicação trata da escolha e destituição reguladas pelo art. 1.038.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "EXPLICACAO_INTEGRALMENTE_DESLOCADA",
+    "severity": "CRÍTICO",
+    "legal_or_pedagogical_consequence": "Nenhum dos deveres materiais, prazos ou formalidades do artigo é explicado, induzindo aplicação de norma diversa.",
+    "correction_direction": "Reescrever os cinco campos a partir dos nove incisos e do parágrafo único do art. 1.103.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": "B-CP10",
+    "residual_queue_position": 498,
+    "original_queue_position": 886,
+    "auditor": "qa04_audit_334_666"
+   },
+   "source_finding_sha256": "42a4e06a3bcb6546a87b858af98c325c77574ced70f7cb75d54d53852cb14c9a",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.1103/BASE/1",
+   "baseline_content_sha256": "0b4f24bb6360a8e8a916850f01045f48f2b275959244ea157209e5204eb414c7",
+   "proposed_content": {
+    "o_que_diz": "O liquidante deve registrar e publicar a dissolução; reunir bens, livros e documentos; e, em até quinze dias da investidura, elaborar inventário e balanço geral, assistido pelos administradores quando possível. Deve encerrar negócios, converter o ativo, pagar dívidas e repartir o saldo; cobrar dos quotistas a integralização e os aportes cabíveis quando o patrimônio não bastar, respeitando responsabilidade e participação nas perdas; convocar os quotistas a cada seis meses ou quando necessário para relatório, balanço e contas; adotar as providências concursais cabíveis conforme a lei especial; apresentar relatório e contas finais; e registrar o ato que encerra a liquidação. Em todos os atos deve usar o nome social acompanhado de “em liquidação”, assinar e declarar sua qualidade.",
+    "o_que_significa": "Os nove incisos organizam toda a prestação do liquidante: publicidade inicial, levantamento patrimonial, encerramento econômico, proteção dos credores, informação periódica aos sócios e formalização do término.",
+    "exemplo_pratico": "Investido no cargo, o liquidante levanta inventário e balanço em quinze dias, cobra créditos, paga o passivo, presta contas semestralmente e, ao final, apresenta as contas finais e registra o encerramento.",
+    "atencao": "O prazo de quinze dias e a prestação semestral são comandos distintos. A insuficiência do ativo só permite exigir valores dos quotistas dentro da responsabilidade de cada um e da proporção das perdas; medidas de insolvência seguem a legislação especial vigente.",
+    "palavras_dificeis": [
+     {
+      "termo": "Realização do ativo",
+      "explicacao": "conversão de bens e créditos sociais em recursos destinados ao pagamento do passivo"
+     }
+    ]
+   },
+   "changed_fields": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "rationale": "Reconstrói os cinco campos a partir dos nove incisos e do parágrafo único, incluindo prazos, aportes, contas, formalidades e legislação concursal atual.",
+   "status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+   "editor_identifier": "qa05_editor_critical_a",
+   "independent_approval_claimed": false
+  },
+  {
+   "target_id": "CC2002:ART.1177",
+   "severity": "ALTO",
+   "source_finding": {
+    "target_id": "CC2002:ART.1177",
+    "audit_wave": "QA04_FRONT_B",
+    "problematic_field": "o_que_diz; o_que_significa; atencao",
+    "problematic_excerpt": "Lançamentos feitos de boa-fé por preposto",
+    "legal_basis": "O parágrafo único responsabiliza pessoalmente o preposto perante o preponente por atos culposos e solidariamente com o preponente perante terceiros por atos dolosos.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_RESPONSABILIDADE_DO_PREPOSTO",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A versão omite integralmente sujeitos, modalidades de culpa e regimes distintos de responsabilidade interna e externa.",
+    "correction_direction": "Incluir responsabilidade pessoal por culpa perante o preponente e solidariedade por dolo perante terceiros.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": "B-CP11",
+    "residual_queue_position": 549,
+    "original_queue_position": 937,
+    "auditor": "qa04_audit_334_666"
+   },
+   "source_finding_sha256": "f55f3f60520d59b60c51674a407ea8b9c08e938c46699188b4a9c77a57f19da2",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.1177/BASE/1",
+   "baseline_content_sha256": "e49121c614d92d935f8deb477c2f5b789718d29aa81bb965235ab5d4b934203c",
+   "proposed_content": {
+    "o_que_diz": "Registros feitos nos livros ou fichas da empresa pelo preposto responsável pela escrituração valem como lançamentos do próprio preponente, exceto quando praticados de má-fé. No exercício da função, o preposto responde pessoalmente perante o preponente pelos atos culposos e, se agir com dolo, responde solidariamente com ele perante terceiros.",
+    "o_que_significa": "A empresa fica vinculada pela escrituração funcional do auxiliar, mas o preposto suporta responsabilidade interna por negligência e responsabilidade externa conjunta quando atua intencionalmente de modo ilícito.",
+    "exemplo_pratico": "Contador lança informação por negligência e deve reparar internamente o empresário; se frauda deliberadamente registro que prejudica terceiro, responde com o empresário perante o lesado.",
+    "atencao": "Culpa e dolo produzem regimes diferentes: a culpa gera responsabilidade pessoal perante o preponente; o dolo fundamenta solidariedade perante terceiros. Má-fé também afasta a equiparação do lançamento ao ato do preponente.",
+    "palavras_dificeis": [
+     {
+      "termo": "Assento",
+      "explicacao": "registro lançado em livro ou ficha contábil"
+     }
+    ]
+   },
+   "changed_fields": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao"
+   ],
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "rationale": "Acrescenta os regimes distintos de culpa interna e dolo com solidariedade externa.",
+   "status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+   "editor_identifier": "qa05_editor_critical_a",
+   "independent_approval_claimed": false
+  },
+  {
+   "target_id": "CC2002:ART.1250",
+   "severity": "ALTO",
+   "source_finding": {
+    "target_id": "CC2002:ART.1250",
+    "audit_wave": "QA04_FRONT_B",
+    "problematic_field": "o_que_diz; atencao",
+    "problematic_excerpt": "material artificial removido pode gerar indenização",
+    "legal_basis": "O parágrafo único manda dividir o terreno aluvial formado diante de imóveis de donos diferentes na proporção da testada de cada um sobre a margem antiga. O artigo não contém a afirmação sobre material artificial e indenização.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_CRITERIO_DE_DIVISAO_E_INSERCAO_ALHEIA",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "O critério legal de aquisição entre ribeirinhos desaparece e é substituído por consequência que não pertence ao dispositivo.",
+    "correction_direction": "Retirar a afirmação alheia e incluir a divisão proporcional à testada na margem antiga.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": "B-CP12",
+    "residual_queue_position": 599,
+    "original_queue_position": 987,
+    "auditor": "qa04_audit_334_666"
+   },
+   "source_finding_sha256": "413e07235a2f4c83f01baebf2bbe556131093c805781531d020819260d4ece99",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.1250/BASE/1",
+   "baseline_content_sha256": "83b1373916a1c4c9c664793dcd4c1b397f5c5538f90978a7dd8a8b1aac3db752",
+   "proposed_content": {
+    "o_que_diz": "Acréscimos graduais e imperceptíveis produzidos por depósitos naturais ou pelo recuo das águas incorporam-se gratuitamente aos imóveis ribeirinhos. Quando o terreno aluvial surge diante de propriedades de donos diferentes, ele é repartido segundo a largura com que cada imóvel confrontava a margem antiga.",
+    "o_que_significa": "A aluvião natural acompanha o terreno ribeirinho sem pagamento, e a divisão entre vizinhos observa a proporção de suas testadas anteriores.",
+    "exemplo_pratico": "Sedimentos ampliam lentamente a margem diante de dois terrenos; a nova faixa é dividida conforme a extensão de frente que cada um possuía na margem antiga.",
+    "atencao": "O acréscimo deve ser natural, sucessivo e imperceptível. Este artigo não estabelece indenização por retirada de material artificial; a regra decisiva entre vários ribeirinhos é a proporção das testadas antigas.",
+    "palavras_dificeis": [
+     {
+      "termo": "Aluvião",
+      "explicacao": "acréscimo lento de terra formado por ação natural das águas"
+     }
+    ]
+   },
+   "changed_fields": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao"
+   ],
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "rationale": "Remove consequência alheia e inclui o rateio do terreno aluvial conforme a testada antiga.",
+   "status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+   "editor_identifier": "qa05_editor_critical_a",
+   "independent_approval_claimed": false
+  },
+  {
+   "target_id": "CC2002:ART.1267",
+   "severity": "ALTO",
+   "source_finding": {
+    "target_id": "CC2002:ART.1267",
+    "audit_wave": "QA04_FRONT_B",
+    "problematic_field": "o_que_diz; atencao",
+    "problematic_excerpt": "Formas simbólicas de entrega e regimes especiais devem ser consideradas",
+    "legal_basis": "O parágrafo único considera tradição: constituto possessório, cessão do direito à restituição da coisa em poder de terceiro e situação em que o adquirente já detém a coisa.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DAS_HIPOTESES_DE_TRADICAO_FICTA",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A referência genérica não permite reconhecer nenhuma das três hipóteses legais de transferência sem entrega física nova.",
+    "correction_direction": "Enunciar as três modalidades de tradição presumida.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": "B-CP13",
+    "residual_queue_position": 610,
+    "original_queue_position": 998,
+    "auditor": "qa04_audit_334_666"
+   },
+   "source_finding_sha256": "8fda407cd679732c737a52439abcbdda9fc030ecf31f12418108c9a6746a6739",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.1267/BASE/1",
+   "baseline_content_sha256": "bc8004e053263378650f61197f5d4460ab5ca5fe23d0e35350c4073588262809",
+   "proposed_content": {
+    "o_que_diz": "A propriedade móvel resultante de negócio jurídico somente passa com a tradição. A lei considera atendida essa entrega quando o transmitente permanece com a coisa em nome do adquirente, quando transfere ao adquirente o direito de exigir a restituição de quem a detém ou quando o próprio adquirente já possuía a coisa ao celebrar o negócio.",
+    "o_que_significa": "Além da entrega física, três situações jurídicas podem cumprir a função de tradição: constituto possessório, cessão do direito de restituição e posse prévia do adquirente.",
+    "exemplo_pratico": "O vendedor transfere uma máquina, mas continua com ela como locatário do comprador; a mudança do título da posse funciona como tradição, sem nova entrega material.",
+    "atencao": "A existência de uma modalidade ficta de tradição não corrige eventual invalidade do negócio que serve de título à transferência.",
+    "palavras_dificeis": [
+     {
+      "termo": "Constituto possessório",
+      "explicacao": "situação em que quem transfere o bem continua a possuí-lo, mas passa a fazê-lo em nome do adquirente"
+     }
+    ]
+   },
+   "changed_fields": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "rationale": "Explicita as três hipóteses legais de tradição sem nova entrega física.",
+   "status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+   "editor_identifier": "qa05_editor_critical_a",
+   "independent_approval_claimed": false
+  },
+  {
+   "target_id": "CC2002:ART.1285",
+   "severity": "ALTO",
+   "source_finding": {
+    "target_id": "CC2002:ART.1285",
+    "audit_wave": "QA04_FRONT_B",
+    "problematic_field": "o_que_diz; atencao",
+    "problematic_excerpt": "imóvel sem acesso adequado pode obter passagem",
+    "legal_basis": "Os §§ 2º e 3º atribuem passagem entre partes decorrentes de alienação parcial e liberam o antigo vizinho de fornecer outra passagem, mesmo se antes havia acesso por seu imóvel.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DAS_REGRAS_DE_ALIENACAO_PARCIAL",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A explicação cobre apenas encravamento originário e omite quem deve tolerar a passagem após divisão do prédio.",
+    "correction_direction": "Incluir a passagem devida pela outra parte alienada e a exoneração do vizinho anterior.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": "B-CP13",
+    "residual_queue_position": 621,
+    "original_queue_position": 1009,
+    "auditor": "qa04_audit_334_666"
+   },
+   "source_finding_sha256": "5d0620dbd46764efca9423f02ac4a99f672a8a846ef10a3460fbbbc76e223cf7",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.1285/BASE/1",
+   "baseline_content_sha256": "9a08ac3baeddb862428f4ee26dbac47b3741026aefbbf0c3d02088df49cf08d0",
+   "proposed_content": {
+    "o_que_diz": "O proprietário de imóvel sem saída para via pública, nascente ou porto pode obter passagem pelo prédio mais naturalmente adequado, pagando indenização integral; o trajeto pode ser fixado judicialmente. Se o isolamento resultar da alienação de parte do próprio imóvel, a outra parte deve suportar a passagem, inclusive quando antes existia acesso por terreno de terceiro, que fica dispensado de fornecer nova passagem.",
+    "o_que_significa": "A passagem forçada evita o encravamento, mas a divisão voluntária do prédio direciona o encargo às partes originadas dessa divisão, em vez de mantê-lo sobre antigo vizinho.",
+    "exemplo_pratico": "Após vender metade da fazenda, uma das parcelas perde acesso à estrada. A passagem deve ser tolerada pela outra parcela, e não exigida novamente do vizinho que antes permitia o acesso.",
+    "atencao": "No encravamento comum há indenização e preferência pelo imóvel mais apto. Quando a falta de acesso decorre de alienação parcial, aplicam-se as regras específicas dos §§ 2º e 3º.",
+    "palavras_dificeis": [
+     {
+      "termo": "Passagem forçada",
+      "explicacao": "acesso imposto por lei em benefício de imóvel encravado"
+     }
+    ]
+   },
+   "changed_fields": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao"
+   ],
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "rationale": "Inclui a regra de passagem entre parcelas alienadas e a exoneração do antigo vizinho.",
+   "status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+   "editor_identifier": "qa05_editor_critical_a",
+   "independent_approval_claimed": false
+  },
+  {
+   "target_id": "CC2002:ART.1286",
+   "severity": "ALTO",
+   "source_finding": {
+    "target_id": "CC2002:ART.1286",
+    "audit_wave": "QA04_FRONT_B",
+    "problematic_field": "o_que_diz; atencao",
+    "problematic_excerpt": "deve tolerar cabos, tubulações e condutos subterrâneos",
+    "legal_basis": "O parágrafo único permite exigir instalação do modo menos gravoso e posterior remoção para outro ponto do imóvel, às custas do proprietário prejudicado.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_DIREITOS_DO_IMOVEL_ONERADO",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "O proprietário não é informado das medidas legais para reduzir ou realocar o gravame.",
+    "correction_direction": "Acrescentar os direitos à instalação menos gravosa e à remoção posterior, com a correta atribuição dos custos.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": "B-CP13",
+    "residual_queue_position": 622,
+    "original_queue_position": 1010,
+    "auditor": "qa04_audit_334_666"
+   },
+   "source_finding_sha256": "50661eba5a7d9d86a356f501cf94ef3d7c0cad71a26dc56ff31b8121f495e1ef",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.1286/BASE/1",
+   "baseline_content_sha256": "5bf9dc7ae65bb3a3e3de9fbb77a0d19de22702eb7f00b6aac38d5aee7ec152db",
+   "proposed_content": {
+    "o_que_diz": "Mediante indenização que também cubra a desvalorização restante, o dono deve permitir condutos subterrâneos de serviço público quando outra rota for inviável ou excessivamente onerosa. Ele pode exigir a instalação menos prejudicial e, posteriormente, pedir que seja deslocada para outro ponto do próprio imóvel, arcando ele mesmo com essa remoção.",
+    "o_que_significa": "A necessidade do serviço limita o domínio e exige compensação, mas o proprietário onerado conserva meios para reduzir o impacto; a realocação posterior que ele solicitar corre por sua conta.",
+    "exemplo_pratico": "Uma tubulação indispensável cruza o terreno. O proprietário exige o traçado menos danoso e, anos depois, paga para deslocá-la a outro ponto de sua área.",
+    "atencao": "A medida pressupõe impossibilidade ou custo excessivo de outra rota. Instalação menos gravosa e remoção posterior são direitos distintos, e a segunda é custeada pelo proprietário que a requer.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prédio onerado",
+      "explicacao": "imóvel que suporta a passagem do cabo, tubulação ou outro conduto"
+     }
+    ]
+   },
+   "changed_fields": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "rationale": "Registra instalação menos gravosa, realocação e atribuição do custo ao proprietário requerente.",
+   "status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+   "editor_identifier": "qa05_editor_critical_a",
+   "independent_approval_claimed": false
+  },
+  {
+   "target_id": "CC2002:ART.1297",
+   "severity": "ALTO",
+   "source_finding": {
+    "target_id": "CC2002:ART.1297",
+    "audit_wave": "QA04_FRONT_B",
+    "problematic_field": "o_que_diz; atencao",
+    "problematic_excerpt": "Cercas divisórias presumem-se comuns nas hipóteses legais",
+    "legal_basis": "Os parágrafos exigem contribuição igual segundo costumes locais, comum acordo para cortar plantas divisórias e imputam o custo do tapume especial a quem criou sua necessidade.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_REQUISITOS_E_ALOCACAO_DE_CUSTOS",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A síntese omite regras decisivas sobre consentimento, proporção de despesas e responsável pelo tapume especial.",
+    "correction_direction": "Explicitar os três regimes dos §§ 1º a 3º.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": "B-CP13",
+    "residual_queue_position": 632,
+    "original_queue_position": 1020,
+    "auditor": "qa04_audit_334_666"
+   },
+   "source_finding_sha256": "48bffd8ab805058f47e21c356e5045fd0163c3c3b704104b12059c76266d7723",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.1297/BASE/1",
+   "baseline_content_sha256": "d801ad89dcce69f2b53098d7c6b14af78e110c17fecc02bc708f72c332636b44",
+   "proposed_content": {
+    "o_que_diz": "O proprietário pode fechar seu imóvel e exigir do confinante demarcação e restauração de limites, com divisão proporcional dessas despesas. Elementos divisórios presumem-se comuns e, conforme os costumes locais, construção e conservação são custeadas igualmente. Plantas usadas como marco só podem ser cortadas por acordo. Já o tapume especial necessário por fato provocado por um dos vizinhos é pago apenas por quem gerou essa necessidade.",
+    "o_que_significa": "A lei combina cooperação nos limites comuns com responsabilidade individual quando um vizinho cria a necessidade de proteção especial.",
+    "exemplo_pratico": "Dois confinantes dividem igualmente a conservação da cerca comum; se apenas um passa a criar animais pequenos e exige tela especial, ele suporta sozinho esse custo.",
+    "atencao": "Despesas de demarcação são proporcionais, as de divisória comum são iguais segundo o costume local, e plantas divisórias exigem consentimento de ambos para corte ou retirada.",
+    "palavras_dificeis": [
+     {
+      "termo": "Tapume especial",
+      "explicacao": "barreira diferenciada exigida por uma necessidade específica, como conter animais pequenos"
+     }
+    ]
+   },
+   "changed_fields": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "rationale": "Distingue rateio proporcional, contribuição igual, acordo para plantas divisórias e custo individual do tapume especial.",
+   "status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+   "editor_identifier": "qa05_editor_critical_a",
+   "independent_approval_claimed": false
+  },
+  {
+   "target_id": "CC2002:ART.1305",
+   "severity": "ALTO",
+   "source_finding": {
+    "target_id": "CC2002:ART.1305",
+    "audit_wave": "QA04_FRONT_B",
+    "problematic_field": "o_que_diz; atencao",
+    "problematic_excerpt": "A faculdade não autoriza obra insegura",
+    "legal_basis": "Se a parede exclusiva não suporta o travejamento, o vizinho não pode fazer alicerce ao pé sem prestar caução pelo risco imposto à construção anterior.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_CAUCAO_OBRIGATORIA",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A advertência genérica de segurança não informa a proibição nem a garantia exigida ao construtor.",
+    "correction_direction": "Acrescentar a exigência de caução na hipótese do parágrafo único.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": "B-CP13",
+    "residual_queue_position": 638,
+    "original_queue_position": 1026,
+    "auditor": "qa04_audit_334_666"
+   },
+   "source_finding_sha256": "cd2dd3743d395f2daef3e0114c9338f37a4d82213c47fd3c8fed5af4f9ac1242",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.1305/BASE/1",
+   "baseline_content_sha256": "52715868d2718bb8835858bf341c7dd076f8021bce2d5ba083a29c59f9f9003c",
+   "proposed_content": {
+    "o_que_diz": "Quem edifica primeiro pode colocar até metade da espessura da parede divisória no terreno contíguo e cobrar metade do valor se o vizinho a utilizar, fixando largura e profundidade do alicerce. Se a parede pertence exclusivamente ao primeiro e não suporta travejamento, o outro não pode construir alicerce junto dela sem oferecer caução pelo risco causado à obra existente.",
+    "o_que_significa": "A utilização da parede pode gerar compartilhamento econômico, enquanto a obra próxima a parede exclusiva e incapaz de receber apoio exige garantia prévia contra danos.",
+    "exemplo_pratico": "Antes de lançar alicerce junto à parede exclusiva e estruturalmente inadequada do vizinho, o novo construtor presta garantia suficiente para cobrir o risco à construção anterior.",
+    "atencao": "O limite de meia espessura não elimina a exigência de caução na hipótese do parágrafo único; segurança genérica e garantia jurídica são requisitos distintos.",
+    "palavras_dificeis": [
+     {
+      "termo": "Caução",
+      "explicacao": "garantia prestada para assegurar reparação de possível prejuízo"
+     }
+    ]
+   },
+   "changed_fields": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "rationale": "Converte alerta genérico em exigência expressa de caução na hipótese legal.",
+   "status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+   "editor_identifier": "qa05_editor_critical_a",
+   "independent_approval_claimed": false
+  },
+  {
+   "target_id": "CC2002:ART.1339",
+   "severity": "ALTO",
+   "source_finding": {
+    "target_id": "CC2002:ART.1339",
+    "audit_wave": "QA04_FRONT_B",
+    "problematic_field": "o_que_diz; atencao",
+    "problematic_excerpt": "salvo acessórios admitidos pela lei",
+    "legal_basis": "Parte acessória pode ser alienada a outro condômino; a terceiro, somente se o ato constitutivo permitir e a assembleia geral não se opuser.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DAS_CONDICOES_DE_ALIENACAO_DE_ACESSORIO",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A ressalva vaga não identifica adquirentes, autorização constitutiva nem poder de oposição da assembleia.",
+    "correction_direction": "Explicitar separadamente a alienação a condômino e os dois requisitos cumulativos para terceiro.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": "B-CP14",
+    "residual_queue_position": 662,
+    "original_queue_position": 1050,
+    "auditor": "qa04_audit_334_666"
+   },
+   "source_finding_sha256": "a47aca8241323b876f01b480cb5108046fbe044a02b1683d913577b86b689edb",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.1339/BASE/1",
+   "baseline_content_sha256": "d43bd089f0fff6bb2351a3928b4ac4fd092da9f6a24cacd4dd4e2e25f7214ec2",
+   "proposed_content": {
+    "o_que_diz": "A participação nas áreas comuns e a fração ideal acompanham inseparavelmente a unidade, sem alienação ou gravação isolada. Uma parte acessória pode ser transferida separadamente a outro condômino; para vendê-la a terceiro, o ato constitutivo precisa autorizar essa faculdade e a assembleia não pode se opor.",
+    "o_que_significa": "Unidade e participação estrutural formam um conjunto, mas a lei admite destacar acessório nas condições específicas, mais rigorosas quando o adquirente não integra o condomínio.",
+    "exemplo_pratico": "O morador vende uma vaga acessória a outro condômino. Para transferi-la a pessoa de fora, verifica autorização no ato constitutivo e ausência de oposição da assembleia.",
+    "atencao": "Autorização do ato constitutivo e falta de oposição da assembleia são requisitos cumulativos para terceiro; a transferência a outro condômino não depende dessas duas condições.",
+    "palavras_dificeis": [
+     {
+      "termo": "Parte acessória",
+      "explicacao": "bem vinculado à unidade principal, como determinada vaga ou depósito, quando assim estruturado no título"
+     }
+    ]
+   },
+   "changed_fields": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "rationale": "Distingue adquirente condômino e os dois requisitos cumulativos para terceiro.",
+   "status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+   "editor_identifier": "qa05_editor_critical_a",
+   "independent_approval_claimed": false
+  }
+ ]
+}
