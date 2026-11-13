@@ -1,0 +1,33 @@
+{
+ "schema_version": 1,
+ "mission": "QA-05",
+ "checkpoint": "CP13",
+ "as_of": "2026-11-13",
+ "status": "PASS",
+ "directed_regression": {
+  "scope": "CC-02 through CC-13 plus QA-02 through QA-05",
+  "executed": 170,
+  "passed": 170,
+  "failed": 0,
+  "errors": 0
+ },
+ "global_suite": {
+  "executed": 465,
+  "passed": 463,
+  "skipped": 2,
+  "failed": 0,
+  "errors": 0,
+  "elapsed_seconds": 138.701
+ },
+ "determinism": {
+  "status": "PASS",
+  "comparison": "byte-identical inventory, editorial integration, revalidation, corpus and indexes",
+  "rebuilders": [
+   "qa05_prepare.py",
+   "qa05_editorial_integrate.py",
+   "qa05_revalidation_integrate.py",
+   "qa05_correction_build.py"
+  ]
+ },
+ "temporary_directory": ".tmp_qa05 within worktree"
+}

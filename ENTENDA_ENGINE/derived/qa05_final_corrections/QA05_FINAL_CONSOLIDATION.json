@@ -1,0 +1,115 @@
+{
+ "schema_version": 1,
+ "mission": "QA-05",
+ "as_of": "2026-11-13",
+ "status": "KNOWN_FINDINGS_RESOLVED",
+ "known_findings_resolved": true,
+ "full_corpus_audit_complete": true,
+ "full_corpus_legally_approved": false,
+ "original_findings": {
+  "total": 50,
+  "confirmed": 50,
+  "corrected": 50,
+  "independently_revalidated": 50,
+  "pending": 0,
+  "severity_counts": {
+   "ALTO": 31,
+   "CRÍTICO": 2,
+   "MÉDIO": 17
+  }
+ },
+ "critical": {
+  "CC2002:ART.1102": "CORRIGIDO_E_REVALIDADO",
+  "CC2002:ART.1103": "CORRIGIDO_E_REVALIDADO"
+ },
+ "independent_review": {
+  "first_pass_revisions_required": [
+   "CC2002:ART.1103",
+   "CC2002:ART.1358-L"
+  ],
+  "final_decisions": {
+   "CONFIRMED_CORRECTED": 50
+  },
+  "editors_distinct_from_reviewers": true
+ },
+ "cross_audit_1101_1105": {
+  "status": "COMPLETE",
+  "resolved_displacements": [
+   "CC2002:ART.1102",
+   "CC2002:ART.1103"
+  ],
+  "neighbors_without_new_finding": [
+   "CC2002:ART.1101",
+   "CC2002:ART.1105"
+  ],
+  "new_findings_outside_original_scope": 1,
+  "new_finding_targets": [
+   "CC2002:ART.1104"
+  ]
+ },
+ "candidate": {
+  "path": "ENTENDA_ENGINE/derived/candidate_qa05_cc_001_2046/CC2002_QA05.entenda.jsonl",
+  "versions": 2312,
+  "active": 2017,
+  "historical": 295,
+  "versioned_targets": 50,
+  "corpus_sha256": "2bf21e8333b584130a3159a240a96d5225958a53821971a184285ecc222a082f",
+  "lookup_sha256": "0bf8c5ce3da6fa8b7065f4c05f34bfa3350b29d77d026c6c628a9b6757dd700c",
+  "payload_sha256": "fdae31938907a93807cbadaa5667cd0131ededc484132db62173afbb663e13ce",
+  "build_manifest_sha256": "5dcb2e70baa69ea32d5ca0e80cc95d04a448012eedde3912e61f8738b07ffd44",
+  "candidate_only": true
+ },
+ "protected": {
+  "preserved": true,
+  "sha256": {
+   "qa04_corpus": "70a6232437f77e2a0d48e39f1a00dd5ec7e753b39a6d1663c9e34b0742e5e524",
+   "qa04_lookup": "b677aa36772dc6d32662a00e26587d517f916bd428e70f3526eb083c29d0b17f",
+   "qa04_payload": "756ce344c834730b3e0f2696ef5ce3823d484a7c8ce20254b779cb9a2febde59",
+   "qa04_queue": "cceac77f6357ca81dae1653a2812dfc8d607dc8e3833ffecd6ae9955f3759310",
+   "qa03_corpus": "dad0a9414fd42b4e5c348ab7e87b90b99501ae4b77c950c5cbfd7dbaef58a496",
+   "cc13_corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c"
+  },
+  "qa04_versions": 2262,
+  "qa04_active": 2017,
+  "qa04_historical": 245
+ },
+ "checkpoints": {
+  "total": 13,
+  "completed_before_final": 12,
+  "sha256": {
+   "CP01": "a8cf49e3ed06aad3669360d56eb94f5e65e163bba56e7afcfe221d84763153a6",
+   "CP02": "10a0f78086e0a1aed58e798b3016728be669679a5ebb725fc4aef6609703412d",
+   "CP03": "e0c442504c87db33c9742bc0d8e8c4a1b5842c6c0d445dda0d5dad33e6cf4db2",
+   "CP04": "2fa3334f246f8bbf8084713ad5320c5e66240898528ca97768e07551530d5155",
+   "CP05": "a5861586ad34796b42f916c58f31f0c7496453d0d89cb4a24da808d0ecf9fac5",
+   "CP06": "35ffd86304f553a457114b63796a7ddf3d775d20607193185e53281705a8b6d8",
+   "CP07": "c7973cf594fe6fb4cea75cbcd54e85769aba54d4f08d882b9790e24e6e36644d",
+   "CP08": "c660a2def1c8f73cfc71c73771063c3e608da1a868c2c6c02ad3ad80dec1780f",
+   "CP09": "cfb49ba3ce0dbe85fd802c9ec71daf7b4483f73a7b83bab6bb6166b0640b163a",
+   "CP10": "9b1bde22665cf95df27ea828ff60588f6e1d9f15b4c236f69c3772f164d7dd2d",
+   "CP11": "5ffbf502c1a6a7e221d850b4e89023416a0f7848fe703d2b525054ed4af9b03a",
+   "CP12": "499f957e4ea12b348d9baafff0eedbed5a5dad7892d248ac3b5c05bc50d1304f"
+  }
+ },
+ "evidence": {
+  "editorial_sha256": "608c830fcd695a2e28cafb1b8aaf586c7d8e9977cbca7ce7a220ebf467d63b10",
+  "revalidation_sha256": "38ed1722ad4bd0c2ba0af34330c65da7e24e9f2ca30713fb9a096de07a734d8c",
+  "resolution_sha256": "65ee2b43f3494c40791abdf3ba5d69b4a3ab923721fcdaa4043c0b8a3ff76a03",
+  "cross_audit_sha256": "e15f294c525428f5cea9d5ce1e757cef8800c9422c8f0e070c39b2fecec11296",
+  "new_finding_queue_sha256": "bb40c4ab9910ffa6d32616d9e723fd0bd3dd0c1b574d089e9364f5c4577c8ec6",
+  "test_evidence_sha256": "b6dfe59ca3fac4d5acd545471fe96044be036f0ab20dc08d031b4bd86921ccdf"
+ },
+ "deployment": {
+  "performed": false,
+  "production_indexes_modified": false,
+  "firmware_accessed": false,
+  "microsd_accessed": false,
+  "esp32_accessed": false
+ },
+ "residual_risks": [
+  "The new high finding for art. 1.104 remains pending because it was outside the original 50-target edit scope.",
+  "FULL_CORPUS_AUDIT_COMPLETE and KNOWN_FINDINGS_RESOLVED do not mean FULL_CORPUS_LEGALLY_APPROVED.",
+  "A future material audit of paragraph, item and subitem coverage remains separate."
+ ],
+ "recommended_next_step": "Correct and independently revalidate the documented art. 1.104 finding, then perform the separate subdivision-level material coverage audit."
+}
