@@ -1,0 +1,1301 @@
+{
+ "schema_version": 1,
+ "mission": "QA-03-FRONT-B",
+ "checkpoint": "B-CP07",
+ "as_of": "2026-11-13",
+ "status": "COMPLETE",
+ "source_queue": "QA03_AUDIT_388_QUEUE.json",
+ "source_queue_sha256": "b42fdebc0027548ce3458e188ff748c963bf7ff5c6c8d675ddaf2d4a82148e08",
+ "queue_positions": [
+  151,
+  175
+ ],
+ "examined": 25,
+ "target_ids": [
+  "CC2002:ART.273",
+  "CC2002:ART.274",
+  "CC2002:ART.275",
+  "CC2002:ART.276",
+  "CC2002:ART.277",
+  "CC2002:ART.278",
+  "CC2002:ART.279",
+  "CC2002:ART.280",
+  "CC2002:ART.281",
+  "CC2002:ART.282",
+  "CC2002:ART.283",
+  "CC2002:ART.284",
+  "CC2002:ART.285",
+  "CC2002:ART.287",
+  "CC2002:ART.288",
+  "CC2002:ART.289",
+  "CC2002:ART.290",
+  "CC2002:ART.291",
+  "CC2002:ART.292",
+  "CC2002:ART.293",
+  "CC2002:ART.294",
+  "CC2002:ART.295",
+  "CC2002:ART.296",
+  "CC2002:ART.297",
+  "CC2002:ART.298"
+ ],
+ "findings": 1,
+ "finding_counts": {
+  "MÉDIO": 1
+ },
+ "protected_sha256": {
+  "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+  "lookup": "60f1de336f2f9ecbc5e671d0a6a9223cf20e47ab5826a5501b53f9a67551866e",
+  "payload": "9fb3f3a1b6f1c1926eda0818fc753f2d0348194cf25b0a333fc6fa18c48222cb",
+  "qa02_corrections": "0d8cce6b3b9c335e7f71502b88c81488ae53732a7927708f2f83701504896e6b"
+ },
+ "records": [
+  {
+   "queue_position": 151,
+   "target_id": "CC2002:ART.273",
+   "explanation_id": "ENTENDA/CC2002:ART.273/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.273:CAPUT\tA um dos credores solidários não pode o devedor opor as exceções pessoais oponíveis aos outros.",
+   "source_snapshot_sha256": "be4a4912cbb3741877c4129013f7ef072d56c4e272d621fb3eb25075c62fac58",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.273:CAPUT",
+     "text": "A um dos credores solidários não pode o devedor opor as exceções pessoais oponíveis aos outros."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A um dos credores solidários não pode o devedor opor as exceções pessoais oponíveis aos outros.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "bcddba459baf7bb8e07c20d366a980be92d6e8f2b27894a2759380a40074e927",
+     "o_que_significa": "658e737741dabbc17ac2799fdc7933dcd3c6f17b389b040ac2fe96a1db90c727",
+     "exemplo_pratico": "95a586d793a48ad092ea7b35ef8fe5ae8b164032560d30a23830a5605bc6903a",
+     "atencao": "f6d8e9571def4471686c0a4cadfdacbce2c35434c37384b836f5ec8a4674d8f8",
+     "palavras_dificeis": "e8c9f2a8eb79f4fd1e7454daf92dd53ed9b32fd2434562365c72b85dd9341d3a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.273, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “O devedor não pode usar contra um credor solidário uma defesa pessoal que somente teria contra outro cocredor.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 152,
+   "target_id": "CC2002:ART.274",
+   "explanation_id": "ENTENDA/CC2002:ART.274/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.274:CAPUT\tO julgamento contrário a um dos credores solidários não atinge os demais, mas o julgamento favorável aproveita-lhes, sem prejuízo de exceção pessoal que o devedor tenha direito de invocar em relação a qualquer deles. (Redação dada pela Lei nº 13.105, de 2015) (Vigência)",
+   "source_snapshot_sha256": "acb478fe0a1d4030315b8c1745a8e522adf843c051e413845a37eeffcc0fc829",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.274:CAPUT",
+     "text": "O julgamento contrário a um dos credores solidários não atinge os demais, mas o julgamento favorável aproveita-lhes, sem prejuízo de exceção pessoal que o devedor tenha direito de invocar em relação a qualquer deles. (Redação dada pela Lei nº 13.105, de 2015) (Vigência)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O julgamento contrário a um dos credores solidários não atinge os demais, mas o julgamento favorável aproveita-lhes, sem prejuízo de exceção pessoal que o devedor tenha direito de invocar em relação a qualquer deles. (Redação dada pela Lei nº 13.105, de 2015) (Vigência)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "05f397ae6491f60f9f12bf75da2c461913597b5468dceef3eaa866846f1b6cf9",
+     "o_que_significa": "131992f9fcd05e92cd7ab1f29d9a1ffec1d142e9b0582e642a5a7763c81bb88a",
+     "exemplo_pratico": "04bf6f78b1daa2309de99225b58994a10ec80ae90d12c4eaefd35823132fa16a",
+     "atencao": "88c3aec89c0e50ce90b21394b5a78a6b2c644e515c5cd3dbb9fca4dd3f435bd4",
+     "palavras_dificeis": "93dbfa1313ac7ca341a8666ddebb7b85a660cf0c1423dd982072648488930765"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.274, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Decisão desfavorável a um credor solidário não prejudica os outros. Decisão favorável pode beneficiá-los, preservada a defesa pessoal que o devedor possua contra qualquer deles.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 153,
+   "target_id": "CC2002:ART.275",
+   "explanation_id": "ENTENDA/CC2002:ART.275/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.275:CAPUT\tO credor tem direito a exigir e receber de um ou de alguns dos devedores, parcial ou totalmente, a dívida comum; se o pagamento tiver sido parcial, todos os demais devedores continuam obrigados solidariamente pelo resto.\nCC2002:ART.275:PAR.UNICO\tNão importará renúncia da solidariedade a propositura de ação pelo credor contra um ou alguns dos devedores.",
+   "source_snapshot_sha256": "8157a5fb65a4a9795b98c72d4e893830c7c0c3d411cb90ead7bb96b11a4c5a80",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.275:CAPUT",
+     "text": "O credor tem direito a exigir e receber de um ou de alguns dos devedores, parcial ou totalmente, a dívida comum; se o pagamento tiver sido parcial, todos os demais devedores continuam obrigados solidariamente pelo resto."
+    },
+    {
+     "label": "CC2002:ART.275:PAR.UNICO",
+     "text": "Não importará renúncia da solidariedade a propositura de ação pelo credor contra um ou alguns dos devedores."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O credor tem direito a exigir e receber de um ou de alguns dos devedores, parcial ou totalmente, a dívida comum; se o pagamento tiver sido parcial, todos os demais devedores continuam obrigados solidariamente pelo resto. | Não importará renúncia da solidariedade a propositura de ação pelo credor contra um ou alguns dos devedores.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "46af7d6b585945af545caca53aeefa372ce9eb522c684e341ffbab5d8187c300",
+     "o_que_significa": "0df5470df574e4ca54946e53d1e3809b59ec2b7ba5fe87e3763c3e29dbced102",
+     "exemplo_pratico": "44a43567263bc2df46dde52f72762ceedd96fec7a783a907258b26e2e7a95544",
+     "atencao": "ab8843844e9c5d4859d02c1fc8a9c8ed1883f77c269d2b764f0989c839470a83",
+     "palavras_dificeis": "04c3a2bd82a0c410b220d941423eb8539f04f7006addd394b1664a7b3b86a8b0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.275, foram cotejados 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos. A baseline sintetiza a regra como: “O credor pode cobrar toda ou parte da dívida de um, de alguns ou de todos os devedores solidários. Pagamento parcial mantém todos vinculados pelo saldo.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 154,
+   "target_id": "CC2002:ART.276",
+   "explanation_id": "ENTENDA/CC2002:ART.276/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.276:CAPUT\tSe um dos devedores solidários falecer deixando herdeiros, nenhum destes será obrigado a pagar senão a quota que corresponder ao seu quinhão hereditário, salvo se a obrigação for indivisível; mas todos reunidos serão considerados como um devedor solidário em relação aos demais devedores.",
+   "source_snapshot_sha256": "f6e07b1c757e0bf548647aa0742733e6b50c7a224bf710e333f2c8c82b624d64",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.276:CAPUT",
+     "text": "Se um dos devedores solidários falecer deixando herdeiros, nenhum destes será obrigado a pagar senão a quota que corresponder ao seu quinhão hereditário, salvo se a obrigação for indivisível; mas todos reunidos serão considerados como um devedor solidário em relação aos demais devedores."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se um dos devedores solidários falecer deixando herdeiros, nenhum destes será obrigado a pagar senão a quota que corresponder ao seu quinhão hereditário, salvo se a obrigação for indivisível; mas todos reunidos serão considerados como um devedor solidário em relação aos demais devedores.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "dc7b52fd8d582d8a727e5b139956109440e68adacd6da68804ea42a6e4569bb9",
+     "o_que_significa": "11b6fb8fd6244e7e1e024638e4d9b0bbfe02bd91b88852a327d83a83f7bb30cb",
+     "exemplo_pratico": "a57bfb8114f289cadcab25a588df15afa50ceca38046926c826a1f663a135bf8",
+     "atencao": "5ddc8554a68161e63189f8b33103905f4442b28ed501b243d13e12e8b41a5abe",
+     "palavras_dificeis": "80adfc80fe8df786194aabb21eb543b7dbc54943d3e5ddd1330bcce18f87f68f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.276, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Morto um devedor solidário, cada herdeiro responde apenas na proporção do próprio quinhão, salvo indivisibilidade; reunidos, todos equivalem a um devedor solidário perante os demais codevedores.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 155,
+   "target_id": "CC2002:ART.277",
+   "explanation_id": "ENTENDA/CC2002:ART.277/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.277:CAPUT\tO pagamento parcial feito por um dos devedores e a remissão por ele obtida não aproveitam aos outros devedores, senão até à concorrência da quantia paga ou relevada.",
+   "source_snapshot_sha256": "d5264cb5f7e8d0c068c7a5d4468bfb99421d886b7e53a4dad4c79ef96879033e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.277:CAPUT",
+     "text": "O pagamento parcial feito por um dos devedores e a remissão por ele obtida não aproveitam aos outros devedores, senão até à concorrência da quantia paga ou relevada."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O pagamento parcial feito por um dos devedores e a remissão por ele obtida não aproveitam aos outros devedores, senão até à concorrência da quantia paga ou relevada.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1d45681542be38ceb6757d59f31fd5d6555871f9f1e4ed44d8e89a77a3832e9c",
+     "o_que_significa": "507a212226905ccc30fbadc7af0e72ef71e5e88d6b7900a414a184da22b8a51f",
+     "exemplo_pratico": "d3ee1b9d4cce7d4316a6f65369e1a006263432070fe7123a82fc669c6c2fb7a9",
+     "atencao": "d6ec7aa93c659e2c414c7972a76f33c4415a2c25b9e10e958dcb966a09762645",
+     "palavras_dificeis": "30d8ea1f50ffcd3eecf0e38497f64d8538d92427efe8494814f861d9802a23cf"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.277, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Pagamento parcial ou perdão obtido por um devedor reduz a dívida dos demais somente até o valor pago ou remitido.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 156,
+   "target_id": "CC2002:ART.278",
+   "explanation_id": "ENTENDA/CC2002:ART.278/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.278:CAPUT\tQualquer cláusula, condição ou obrigação adicional, estipulada entre um dos devedores solidários e o credor, não poderá agravar a posição dos outros sem consentimento destes.",
+   "source_snapshot_sha256": "70c9d5b50c86cf375f143a5ceedd2693f1bdbbfa513007c06bfa93b0cc449bea",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.278:CAPUT",
+     "text": "Qualquer cláusula, condição ou obrigação adicional, estipulada entre um dos devedores solidários e o credor, não poderá agravar a posição dos outros sem consentimento destes."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Qualquer cláusula, condição ou obrigação adicional, estipulada entre um dos devedores solidários e o credor, não poderá agravar a posição dos outros sem consentimento destes.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2be70adf7a20f6aef510e7e35bb69dbf89c9a440c5c0b3a7901a5c350cd6e55e",
+     "o_que_significa": "32b120a203391616145569372db6732a02c61de1926d566511511e65155fe147",
+     "exemplo_pratico": "d201e1dd32b16bc0fb9d514d9f4ba6777c3614b9bdebd04091b5386dd4648ed2",
+     "atencao": "101d1b0d520c295309173202264b2620aec9c0c74e590427b61c423c731e6e5d",
+     "palavras_dificeis": "fe2b5dab9f7e4b54f78f0f9ef96d3d8ac4948f9bf2233ee992289e3c570c4d51"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.278, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Acordo entre o credor e apenas um devedor solidário não pode piorar a situação dos outros sem o consentimento deles.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 157,
+   "target_id": "CC2002:ART.279",
+   "explanation_id": "ENTENDA/CC2002:ART.279/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.279:CAPUT\tImpossibilitando-se a prestação por culpa de um dos devedores solidários, subsiste para todos o encargo de pagar o equivalente; mas pelas perdas e danos só responde o culpado.",
+   "source_snapshot_sha256": "a4872e3289891c343400de78759fc2663fea23e108c1a14dfe9b8d695519745a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.279:CAPUT",
+     "text": "Impossibilitando-se a prestação por culpa de um dos devedores solidários, subsiste para todos o encargo de pagar o equivalente; mas pelas perdas e danos só responde o culpado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Impossibilitando-se a prestação por culpa de um dos devedores solidários, subsiste para todos o encargo de pagar o equivalente; mas pelas perdas e danos só responde o culpado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "88dc4846df346d6055625b8c2eb9726e9d20ec5714123c9b70094b864affcec9",
+     "o_que_significa": "4a6f8c9ec37ae19e93456bef15f9e651152dac73a0b2c69c1fff7dc72af67401",
+     "exemplo_pratico": "20b7ed2048a1172c35b5c8a6203a10c4b6adabd04fc6cae80b8f35525a14aec6",
+     "atencao": "d6d479f010902b22b72232352d33c86d5fe55045e6f2e04a22fcc0d613d9b25a",
+     "palavras_dificeis": "87bcd1489d679824cc396f99c43c418e64060efaf05248f7ea05836fed9c32c0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.279, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Se a prestação se torna impossível por culpa de um devedor solidário, todos respondem pelo equivalente, mas apenas o culpado paga as perdas e danos adicionais.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 158,
+   "target_id": "CC2002:ART.280",
+   "explanation_id": "ENTENDA/CC2002:ART.280/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.280:CAPUT\tTodos os devedores respondem pelos juros da mora, ainda que a ação tenha sido proposta somente contra um; mas o culpado responde aos outros pela obrigação acrescida.",
+   "source_snapshot_sha256": "e5cded55e16f2883c78ce29b77186f281e14de11b49061163a176345a74d8294",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.280:CAPUT",
+     "text": "Todos os devedores respondem pelos juros da mora, ainda que a ação tenha sido proposta somente contra um; mas o culpado responde aos outros pela obrigação acrescida."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Todos os devedores respondem pelos juros da mora, ainda que a ação tenha sido proposta somente contra um; mas o culpado responde aos outros pela obrigação acrescida.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "97fd3d91994af9f14d4ca00b4076347bbf1a0ed0b060614fd2189dfc728f3b76",
+     "o_que_significa": "a7629b283eb6495db9eb7ddaf4fc648a08d9c6d9e0b872cef95e22d489bf593e",
+     "exemplo_pratico": "75de9922ef712e381a980339a66a8c292323b5ccdd67242bd567529ef901961f",
+     "atencao": "bcad53f6b155f0249c0941daf939948524e6ff74efdbeccbc910338e9e9f3936",
+     "palavras_dificeis": "924de7e5461c319137fb8510fa066ddc165a218a69115980c269cebb64f652d5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.280, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Todos os devedores solidários respondem pelos juros de mora, mesmo que a ação tenha sido proposta contra apenas um; o culpado pelo acréscimo deve ressarcir os demais.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 159,
+   "target_id": "CC2002:ART.281",
+   "explanation_id": "ENTENDA/CC2002:ART.281/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.281:CAPUT\tO devedor demandado pode opor ao credor as exceções que lhe forem pessoais e as comuns a todos; não lhe aproveitando as exceções pessoais a outro co-devedor.",
+   "source_snapshot_sha256": "0c5abcbd351e959275c3132cfcc263fb4696a15c50ad618b615dab17c3858711",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.281:CAPUT",
+     "text": "O devedor demandado pode opor ao credor as exceções que lhe forem pessoais e as comuns a todos; não lhe aproveitando as exceções pessoais a outro co-devedor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O devedor demandado pode opor ao credor as exceções que lhe forem pessoais e as comuns a todos; não lhe aproveitando as exceções pessoais a outro co-devedor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b44b04fba1a1820a101d9c54aeffd129975937cff1041844324bdf9ad6a4009f",
+     "o_que_significa": "61f9102536ec94e6f0c6452fbe66641711d39e188416fd0b735fce28c6ddd4ee",
+     "exemplo_pratico": "9437fd95a7115ec54d6f6fb8fddea52530a9f1d2e02b5dcbbc65d3b505aa46ab",
+     "atencao": "4e3be4ee1f673977446b1ec19b93e317da932873d51afa8e2f63e8e71c1c48b0",
+     "palavras_dificeis": "0a1e45420abab8f3a19320c4a596700914ab6fcdf5a237bc7756a57e965ba207"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.281, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “O devedor solidário cobrado pode alegar defesas próprias e defesas comuns a todos, mas não pode aproveitar defesa exclusivamente pessoal de outro codevedor.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 160,
+   "target_id": "CC2002:ART.282",
+   "explanation_id": "ENTENDA/CC2002:ART.282/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.282:CAPUT\tO credor pode renunciar à solidariedade em favor de um, de alguns ou de todos os devedores.\nCC2002:ART.282:PAR.UNICO\tSe o credor exonerar da solidariedade um ou mais devedores, subsistirá a dos demais.",
+   "source_snapshot_sha256": "5bc0bafa8d0f95063ee02b323f117ccd9c2cfda0b2821694753da5d3ab493979",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.282:CAPUT",
+     "text": "O credor pode renunciar à solidariedade em favor de um, de alguns ou de todos os devedores."
+    },
+    {
+     "label": "CC2002:ART.282:PAR.UNICO",
+     "text": "Se o credor exonerar da solidariedade um ou mais devedores, subsistirá a dos demais."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O credor pode renunciar à solidariedade em favor de um, de alguns ou de todos os devedores. | Se o credor exonerar da solidariedade um ou mais devedores, subsistirá a dos demais.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "bc72dcd5001e401afe4d9d66b6edb3d23075120753e21776ff98f16fd0cb28ae",
+     "o_que_significa": "d94de6605178517b5ed7d6b52c325f2bce5a512f1f41d13c907d02f2aa061b58",
+     "exemplo_pratico": "340285a7b17c3b8f4af92c026db306c0c968dab0c12d31931f4560eb21ef70bb",
+     "atencao": "dedf779cd5513d266671cae090b7c39c1b08fb49a6d0c9fdd0ec665445f034ec",
+     "palavras_dificeis": "74689ab532d3b425863ad8246ef421869837892556390d34350836eeb253106e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.282, foram cotejados 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos. A baseline sintetiza a regra como: “O credor pode retirar de qualquer codevedor a responsabilidade pelo total, mantendo essa garantia pessoal quanto aos outros. A exoneração pode alcançar uma pessoa, várias ou o grupo inteiro.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 161,
+   "target_id": "CC2002:ART.283",
+   "explanation_id": "ENTENDA/CC2002:ART.283/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.283:CAPUT\tO devedor que satisfez a dívida por inteiro tem direito a exigir de cada um dos co-devedores a sua quota, dividindo-se igualmente por todos a do insolvente, se o houver, presumindo-se iguais, no débito, as partes de todos os co-devedores.",
+   "source_snapshot_sha256": "bed962e9ee9fc0847710391b576a50095b7c73c266cd5a8917735aeff63f18a4",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.283:CAPUT",
+     "text": "O devedor que satisfez a dívida por inteiro tem direito a exigir de cada um dos co-devedores a sua quota, dividindo-se igualmente por todos a do insolvente, se o houver, presumindo-se iguais, no débito, as partes de todos os co-devedores."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O devedor que satisfez a dívida por inteiro tem direito a exigir de cada um dos co-devedores a sua quota, dividindo-se igualmente por todos a do insolvente, se o houver, presumindo-se iguais, no débito, as partes de todos os co-devedores.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "dde79cc4ba183bad49d8cb56faadbdbe727e649f35bac1f36a1645fa3bf30c3b",
+     "o_que_significa": "410698efad3a0859d62acad8f4f598734c79ca5ee01c27d35085c5f1844cb872",
+     "exemplo_pratico": "ebe9481c6f54d350f76ed80bab75d392dd11b60f843dbe5ec0db6648f63ca96b",
+     "atencao": "f829ac8c6017ea938ace84af82b00201d147eba5d4be128025a2cdfb5415f240",
+     "palavras_dificeis": "b501cac349e02320c2a4d56020191a50005090f22fe99b42933f65cbad88a1ff"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.283, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Quem paga integralmente a dívida solidária pode cobrar de cada codevedor sua quota. A parte do insolvente é repartida igualmente entre os demais, presumindo-se iguais as participações.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 162,
+   "target_id": "CC2002:ART.284",
+   "explanation_id": "ENTENDA/CC2002:ART.284/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.284:CAPUT\tNo caso de rateio entre os co-devedores, contribuirão também os exonerados da solidariedade pelo credor, pela parte que na obrigação incumbia ao insolvente.",
+   "source_snapshot_sha256": "f8ba9e3124caffa56558e3395244ffd821483939d469c5240529210b0131412e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.284:CAPUT",
+     "text": "No caso de rateio entre os co-devedores, contribuirão também os exonerados da solidariedade pelo credor, pela parte que na obrigação incumbia ao insolvente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: No caso de rateio entre os co-devedores, contribuirão também os exonerados da solidariedade pelo credor, pela parte que na obrigação incumbia ao insolvente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f30040491b26a0355ab983c09d00cdb63c47ff93cd9df867fc2c7f8401716b5b",
+     "o_que_significa": "24409333208c220a16adb1cef2325add7aac65548de76289feda8efc415de05a",
+     "exemplo_pratico": "23eb9e77b9fd7c12f8d9a31ff4be1d75bbc81e469e8aa750a9a61311a1846683",
+     "atencao": "48c052140e633ea53f6998ea2b2e8b263e89cba655772ce2d55b632f63429e17",
+     "palavras_dificeis": "c2e891ba4e31718a30150e13a20c140c012e0d9d95fa4a934611eb9c6f1062e5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.284, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “No rateio da quota do codevedor insolvente, também participam aqueles que o credor havia liberado da solidariedade.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 163,
+   "target_id": "CC2002:ART.285",
+   "explanation_id": "ENTENDA/CC2002:ART.285/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.285:CAPUT\tSe a dívida solidária interessar exclusivamente a um dos devedores, responderá este por toda ela para com aquele que pagar.",
+   "source_snapshot_sha256": "7de1cf72359671dfe08d95b467c0cbce9bbe77acd4346a15bc41dbdcdb368e2a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.285:CAPUT",
+     "text": "Se a dívida solidária interessar exclusivamente a um dos devedores, responderá este por toda ela para com aquele que pagar."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se a dívida solidária interessar exclusivamente a um dos devedores, responderá este por toda ela para com aquele que pagar.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2a83e36072c11c86bd07b51eae687b559c1404086ee2869f34cb3c674a385ca9",
+     "o_que_significa": "b6024eeb173048f3896178d23aed824d6ba5c063cce0cf400e14b9b5a608a416",
+     "exemplo_pratico": "39179f817b2b1d44ef7f5a8da3e9987a38393a5fceeb57611e2c1ca7baae434c",
+     "atencao": "04089ea44282a678bccfddb5680938717b0f71951d138e7f91657ceb910c2207",
+     "palavras_dificeis": "805a32ae98bdb24c2be0c72b7329b58af91f73cf6d958857381feb610a40bb0a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.285, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Se a dívida solidária beneficia exclusivamente um devedor, ele deve reembolsar integralmente o codevedor que a pagar.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 164,
+   "target_id": "CC2002:ART.287",
+   "explanation_id": "ENTENDA/CC2002:ART.287/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.287:CAPUT\tSalvo disposição em contrário, na cessão de um crédito abrangem-se todos os seus acessórios.",
+   "source_snapshot_sha256": "af8d12fc1aa6921f44b3454e598370510bdd9cc2c6b5e363937cdfe4812214b5",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.287:CAPUT",
+     "text": "Salvo disposição em contrário, na cessão de um crédito abrangem-se todos os seus acessórios."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Salvo disposição em contrário, na cessão de um crédito abrangem-se todos os seus acessórios.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9ea8a1758fd1c60a9dcedce860e3845b79e94270ffc197b8c8cd2d87ffdbb42a",
+     "o_que_significa": "121910a673a2d4f8ef68e73ac09555131bd31f9349cdc079b91c833e272a72dd",
+     "exemplo_pratico": "e38601c6dd7018a60fdda74e6d65f512efa5a85818c2feff25e01da31c765d73",
+     "atencao": "52772d7ef88d381af562cb0424086aad9321bfee24958bcb7d37b17e6281a7eb",
+     "palavras_dificeis": "83ac07f5178bcd3463b5f159176d5ec430c930a63ead37d4fd3662bd79c3b0cc"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.287, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Salvo acordo diferente, a cessão de crédito transfere também os acessórios ligados a ele.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 165,
+   "target_id": "CC2002:ART.288",
+   "explanation_id": "ENTENDA/CC2002:ART.288/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.288:CAPUT\tÉ ineficaz, em relação a terceiros, a transmissão de um crédito, se não celebrar-se mediante instrumento público, ou instrumento particular revestido das solenidades do § 1 o do art. 654.",
+   "source_snapshot_sha256": "88aff73e08ae6fc2d8c72d841bf2c9839a417ffa1ec633d87f010061ff190eff",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.288:CAPUT",
+     "text": "É ineficaz, em relação a terceiros, a transmissão de um crédito, se não celebrar-se mediante instrumento público, ou instrumento particular revestido das solenidades do § 1 o do art. 654."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: É ineficaz, em relação a terceiros, a transmissão de um crédito, se não celebrar-se mediante instrumento público, ou instrumento particular revestido das solenidades do § 1 o do art. 654.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c7ebb33ed752cfef1bf436d082311e429f3679b571cc05a8afb9e875f62b202e",
+     "o_que_significa": "2439f5818a97b7e26f5432b24e3ba443df48faf340ccfe707921506c09a25e32",
+     "exemplo_pratico": "6fc7eda9a21d70e5a0b9a2dc5a02958dfe3cda37919cd90a29140dbbc9106044",
+     "atencao": "bf7c59efcab0ae08f172b1455dde71076262d042790e4a18b4eb450c0c6ff42d",
+     "palavras_dificeis": "470e12b215f67614b3e39b7a5c4b292eb0fbd617e247ecbab12bf8951a628385"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O art. 288 remete expressamente ao art. 654, § 1º. Para eficácia da cessão perante terceiros, o instrumento particular deve indicar o lugar em que foi passado, a qualificação do outorgante e do outorgado, a data e o objetivo da outorga, com designação e extensão dos poderes conferidos.",
+   "finding": {
+    "target_id": "CC2002:ART.288",
+    "audit_wave": "QA03_FRONT_B",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "instrumento particular com as solenidades legais referidas",
+    "legal_basis": "O art. 288 remete expressamente ao art. 654, § 1º. Para eficácia da cessão perante terceiros, o instrumento particular deve indicar o lugar em que foi passado, a qualificação do outorgante e do outorgado, a data e o objetivo da outorga, com designação e extensão dos poderes conferidos.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_REQUISITOS_FORMAIS_POR_REFERENCIA_CRUZADA",
+    "severity": "MÉDIO",
+    "legal_or_pedagogical_consequence": "A regra central de oponibilidade está correta, mas o leitor não recebe os requisitos concretos necessários para reconhecer o instrumento particular qualificado exigido pelo dispositivo.",
+    "correction_direction": "Explicitar no campo principal ou de significado as formalidades do art. 654, § 1º, preservando a distinção entre eficácia perante terceiros e validade entre as partes.",
+    "confidence": "ALTA",
+    "human_review_required": false,
+    "checkpoint": "B-CP07",
+    "auditor": "qa03_audit_001_194"
+   },
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 166,
+   "target_id": "CC2002:ART.289",
+   "explanation_id": "ENTENDA/CC2002:ART.289/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.289:CAPUT\tO cessionário de crédito hipotecário tem o direito de fazer averbar a cessão no registro do imóvel.",
+   "source_snapshot_sha256": "1a685e7ca439ee4f088e8db69a8322c16f201d980480a2a56a649eab367d083c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.289:CAPUT",
+     "text": "O cessionário de crédito hipotecário tem o direito de fazer averbar a cessão no registro do imóvel."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O cessionário de crédito hipotecário tem o direito de fazer averbar a cessão no registro do imóvel.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "430e9e3427e16cb32e15fd0027d27bffee5bc3f8b402beb8041b1b49424b62de",
+     "o_que_significa": "f75ff59476accd8ffdf14805f5f8675c52531af374bff237e39024c94cb4d691",
+     "exemplo_pratico": "850730e037c52576c30f1b08339859999b318cf2716fbba00db2385d33d30160",
+     "atencao": "8f2aef29ec36ab4452006bd09f6bcfc2bd2b7be14ed8076c656213dfa868c844",
+     "palavras_dificeis": "183f0129c8f8f3f0ea7efe2565cab7f508cf8e4e56efe8e8ecad58e87cf62fb2"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.289, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Quem recebe por cessão um crédito hipotecário pode averbar a transferência no registro do imóvel.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 167,
+   "target_id": "CC2002:ART.290",
+   "explanation_id": "ENTENDA/CC2002:ART.290/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.290:CAPUT\tA cessão do crédito não tem eficácia em relação ao devedor, senão quando a este notificada; mas por notificado se tem o devedor que, em escrito público ou particular, se declarou ciente da cessão feita.",
+   "source_snapshot_sha256": "e4471291faebd460abd4bbf78ef33b9e06ae6c8ef7f2f82176253ea38c4bac3e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.290:CAPUT",
+     "text": "A cessão do crédito não tem eficácia em relação ao devedor, senão quando a este notificada; mas por notificado se tem o devedor que, em escrito público ou particular, se declarou ciente da cessão feita."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A cessão do crédito não tem eficácia em relação ao devedor, senão quando a este notificada; mas por notificado se tem o devedor que, em escrito público ou particular, se declarou ciente da cessão feita.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "264977fcf1a769096474eae3a2e3919d0f8696c9b646486538df4724d25d5a22",
+     "o_que_significa": "9c6f0b36c683a8bae669bb3eb133e6f22dd3acad1ec038f350cc2de11d0c34be",
+     "exemplo_pratico": "f0014b9986b4d34693c858d0a160ff80fd854211b3bd75aaaa24e42af3a7313f",
+     "atencao": "0cfd4ac5dac68dad1324cc45073a090c859390e689c2161c9792febad80981cd",
+     "palavras_dificeis": "d80dd11ee185581c6a1584c4b347f86b50cb28b675f942633658961898a034b5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.290, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “A cessão só é eficaz contra o devedor depois de notificada, salvo se ele declarar por escrito que já sabe da transferência.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 168,
+   "target_id": "CC2002:ART.291",
+   "explanation_id": "ENTENDA/CC2002:ART.291/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.291:CAPUT\tOcorrendo várias cessões do mesmo crédito, prevalece a que se completar com a tradição do título do crédito cedido.",
+   "source_snapshot_sha256": "f7192a66a34286d06c6a4da94af06e22141565a13cc3af1ae76b93e3ab067b67",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.291:CAPUT",
+     "text": "Ocorrendo várias cessões do mesmo crédito, prevalece a que se completar com a tradição do título do crédito cedido."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Ocorrendo várias cessões do mesmo crédito, prevalece a que se completar com a tradição do título do crédito cedido.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "cd78920ae1c11c256020b29d2270db0fd6083685743483bf3b84f15e3f8ab3e0",
+     "o_que_significa": "b0bb2cacf60dae196e905b16f07a1190a8484b953f236952facd0f3e729c799d",
+     "exemplo_pratico": "97cdcf6e4e2472149ee269c8652ba0dcd295bf4f53d6ce09311ade7e747d63bc",
+     "atencao": "4a5065bf661856d1bc41c8f43d949dc80525c62065de9994289c4cfb778c9f18",
+     "palavras_dificeis": "31c52da3c93ad7048a82de8dd530e4197dc545473479f1c6ce463f905bf4d213"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.291, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Se o mesmo crédito é cedido várias vezes, prevalece a cessão completada pela entrega do título representativo do crédito.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 169,
+   "target_id": "CC2002:ART.292",
+   "explanation_id": "ENTENDA/CC2002:ART.292/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.292:CAPUT\tFica desobrigado o devedor que, antes de ter conhecimento da cessão, paga ao credor primitivo, ou que, no caso de mais de uma cessão notificada, paga ao cessionário que lhe apresenta, com o título de cessão, o da obrigação cedida; quando o crédito constar de escritura pública, prevalecerá a prioridade da notificação.",
+   "source_snapshot_sha256": "2e2fe2ed6ee837d0e608ecdfe8309cdab237fc5de18d6e985f95d65c39332f6a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.292:CAPUT",
+     "text": "Fica desobrigado o devedor que, antes de ter conhecimento da cessão, paga ao credor primitivo, ou que, no caso de mais de uma cessão notificada, paga ao cessionário que lhe apresenta, com o título de cessão, o da obrigação cedida; quando o crédito constar de escritura pública, prevalecerá a prioridade da notificação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Fica desobrigado o devedor que, antes de ter conhecimento da cessão, paga ao credor primitivo, ou que, no caso de mais de uma cessão notificada, paga ao cessionário que lhe apresenta, com o título de cessão, o da obrigação cedida; quando o crédito constar de escritura pública, prevalecerá a prioridade da notificação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "827358ec0c078ee60b7f2c19a267bcf71936d06263758a80e73128deb8b33b48",
+     "o_que_significa": "b04fd6c2e67c398f5602d484c4867e9208647754e02062f5779e41f149c66073",
+     "exemplo_pratico": "08a77f06edda249a43b818c0c32f6f1263fbd03c02037142bdadc4595bc06788",
+     "atencao": "a371d2c29ad78e4b8da01681cd60a710875324e561f0afbe6fa1e7dc8660a96f",
+     "palavras_dificeis": "2caf322df3077a56856358e756717b0859df267cb49b80566e81908bc002ce7b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.292, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Paga validamente quem, sem conhecer a cessão, paga ao credor antigo. Havendo várias cessões notificadas, libera-se pagando ao cessionário que apresenta os títulos pertinentes; em escritura pública, prevalece a notificação anterior.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 170,
+   "target_id": "CC2002:ART.293",
+   "explanation_id": "ENTENDA/CC2002:ART.293/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.293:CAPUT\tIndependentemente do conhecimento da cessão pelo devedor, pode o cessionário exercer os atos conservatórios do direito cedido.",
+   "source_snapshot_sha256": "a4898f69b8346f417244f2a5ea1e97ffc510687bb3bc8f8bc4411ffed271a98b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.293:CAPUT",
+     "text": "Independentemente do conhecimento da cessão pelo devedor, pode o cessionário exercer os atos conservatórios do direito cedido."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Independentemente do conhecimento da cessão pelo devedor, pode o cessionário exercer os atos conservatórios do direito cedido.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0548e5e8c60b5e37f51696aaa956427ab8d37d4f66049de494f0f6a574fde0a9",
+     "o_que_significa": "f4c54ba4bfafd64cd5b558701e76508fa141a030173e5dbde7e6474228999f16",
+     "exemplo_pratico": "3edab5fa22caa224706d39e0a1c0b0a2cb8950d3be7fe7762a5a353e5422f917",
+     "atencao": "8f5ee8042dddf1ba297deaa2833fe72b45f88619c8dbfe5e72ad80eb624ba6ec",
+     "palavras_dificeis": "a1f01c2ad093eff8ea39ac965f5c3e38aeb44e8afd1439af089f96be6b7dfbe1"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.293, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “O cessionário pode adotar medidas para conservar o crédito mesmo antes de o devedor conhecer a cessão.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 171,
+   "target_id": "CC2002:ART.294",
+   "explanation_id": "ENTENDA/CC2002:ART.294/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.294:CAPUT\tO devedor pode opor ao cessionário as exceções que lhe competirem, bem como as que, no momento em que veio a ter conhecimento da cessão, tinha contra o cedente.",
+   "source_snapshot_sha256": "661957f64fe33f6059302ecc785165b81e99e17c7e043ab6bcb355d5afad8226",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.294:CAPUT",
+     "text": "O devedor pode opor ao cessionário as exceções que lhe competirem, bem como as que, no momento em que veio a ter conhecimento da cessão, tinha contra o cedente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O devedor pode opor ao cessionário as exceções que lhe competirem, bem como as que, no momento em que veio a ter conhecimento da cessão, tinha contra o cedente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2914ff4e87b6fc17c9babf315740dfaffbc0b7880f01619d4efdb38b1caf7507",
+     "o_que_significa": "034715ab0774140b93c293acb603ca1016241a978ebc9869fc114dc4f806d233",
+     "exemplo_pratico": "c99fde41ee5d90b542bbd701af55b48bec0c3cf624f78af3821fb66d444029dc",
+     "atencao": "1746997d2b8ff30854889326c749bfd594a312cd611acd0366b562351de428d0",
+     "palavras_dificeis": "1e64fdf84a68018d43330992d7d0db6c6c4523dad9d92d7b84be04db2a811c2c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.294, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “O devedor pode opor ao cessionário suas defesas próprias e aquelas que tinha contra o cedente quando tomou conhecimento da cessão.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 172,
+   "target_id": "CC2002:ART.295",
+   "explanation_id": "ENTENDA/CC2002:ART.295/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.295:CAPUT\tNa cessão por título oneroso, o cedente, ainda que não se responsabilize, fica responsável ao cessionário pela existência do crédito ao tempo em que lhe cedeu; a mesma responsabilidade lhe cabe nas cessões por título gratuito, se tiver procedido de má-fé.",
+   "source_snapshot_sha256": "b4980c12bc3c3be6bd2f243c8d69080730181ede2d45caa94da2d8e4401d5759",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.295:CAPUT",
+     "text": "Na cessão por título oneroso, o cedente, ainda que não se responsabilize, fica responsável ao cessionário pela existência do crédito ao tempo em que lhe cedeu; a mesma responsabilidade lhe cabe nas cessões por título gratuito, se tiver procedido de má-fé."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Na cessão por título oneroso, o cedente, ainda que não se responsabilize, fica responsável ao cessionário pela existência do crédito ao tempo em que lhe cedeu; a mesma responsabilidade lhe cabe nas cessões por título gratuito, se tiver procedido de má-fé.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4e7ec82c8554a7f5ff04299b2a67b11715d1e0aa981a20fe632fdc972eac0605",
+     "o_que_significa": "27855de3b5fabc641342c503f2b52fc094f1fcc479ce34c878b2f249a13a4b07",
+     "exemplo_pratico": "0439888b5d3b3b3526afb3aa364b8b3ed78ecb9b5a7024bd10e93bd45d26185b",
+     "atencao": "8439c4fd722c32696671dfe087ffe6faa50c4612fa7a3cbbfc0a4b82c9a3b67f",
+     "palavras_dificeis": "4251c261bb6b8671b3342bc35663cb1ac8c82ad88141d82e68028025eeca2955"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.295, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Na cessão onerosa, o cedente responde pela existência do crédito no momento da transferência, mesmo sem cláusula de garantia. Na gratuita, responde se agiu de má-fé.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 173,
+   "target_id": "CC2002:ART.296",
+   "explanation_id": "ENTENDA/CC2002:ART.296/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.296:CAPUT\tSalvo estipulação em contrário, o cedente não responde pela solvência do devedor.",
+   "source_snapshot_sha256": "d1e0538b4048e780300c70a0de879c77e33ee95c5148e24f40d1270920f601b8",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.296:CAPUT",
+     "text": "Salvo estipulação em contrário, o cedente não responde pela solvência do devedor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Salvo estipulação em contrário, o cedente não responde pela solvência do devedor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "31de60ddaecf9d6936a8210dc986f92618777f6fd0a886d230b9ba0966d361c7",
+     "o_que_significa": "c058b542dfde214267fcc56e781987a29bb2e84b4b0c5b83bf91b5454514bdc6",
+     "exemplo_pratico": "dc0d31a076bad881baf6135c9c4e6e46b449ddc90820a01d7c67ae5c65248f12",
+     "atencao": "18adacedc60fa160e1b2eb8f7b7066810caddffa5cd31a6eec874b58a4063e74",
+     "palavras_dificeis": "f27d6097518c7d5ae61947bc95a4b1e617bd65a9e9fa92faad1732e55ce26ca0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.296, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Em regra, quem cede o crédito não garante que o devedor terá patrimônio para pagá-lo; essa responsabilidade depende de estipulação.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 174,
+   "target_id": "CC2002:ART.297",
+   "explanation_id": "ENTENDA/CC2002:ART.297/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.297:CAPUT\tO cedente, responsável ao cessionário pela solvência do devedor, não responde por mais do que daquele recebeu, com os respectivos juros; mas tem de ressarcir-lhe as despesas da cessão e as que o cessionário houver feito com a cobrança.",
+   "source_snapshot_sha256": "3f9ba323bcf122096f334391fa276b510f2313b361ed7f59c3c0c12ed12c5291",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.297:CAPUT",
+     "text": "O cedente, responsável ao cessionário pela solvência do devedor, não responde por mais do que daquele recebeu, com os respectivos juros; mas tem de ressarcir-lhe as despesas da cessão e as que o cessionário houver feito com a cobrança."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O cedente, responsável ao cessionário pela solvência do devedor, não responde por mais do que daquele recebeu, com os respectivos juros; mas tem de ressarcir-lhe as despesas da cessão e as que o cessionário houver feito com a cobrança.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "35d74967826157f48d1dc758677b80a83531c7d0af3f47f00a8e80bc6f03bf18",
+     "o_que_significa": "aa61bacd4b259a2bea285b433fd21ed345765d219a30bea5fdac0c3a9dde0eb2",
+     "exemplo_pratico": "8a3e2d0a4ee2090cc2207b6ea601f04d8d70bf94022f9a70d463215a071059bf",
+     "atencao": "525cccd1dfd3c5dfce34172f1f349f8ccc0f94e33c52967814a0323c6da0d2aa",
+     "palavras_dificeis": "ddaa5e51de5894420d07788d9a65656740ab50b8abf7dff215709db991971b87"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.297, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Quando o cedente assume responsabilidade pela solvência, seu dever limita-se ao que recebeu, com juros, mais despesas da cessão e da cobrança realizadas pelo cessionário.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 175,
+   "target_id": "CC2002:ART.298",
+   "explanation_id": "ENTENDA/CC2002:ART.298/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-07",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.298:CAPUT\tO crédito, uma vez penhorado, não pode mais ser transferido pelo credor que tiver conhecimento da penhora; mas o devedor que o pagar, não tendo notificação dela, fica exonerado, subsistindo somente contra o credor os direitos de terceiro.",
+   "source_snapshot_sha256": "d2f3f2349471c775cd6741f12d230bea2dadd478ab4e554b3fa73ef6df85758d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.298:CAPUT",
+     "text": "O crédito, uma vez penhorado, não pode mais ser transferido pelo credor que tiver conhecimento da penhora; mas o devedor que o pagar, não tendo notificação dela, fica exonerado, subsistindo somente contra o credor os direitos de terceiro."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O crédito, uma vez penhorado, não pode mais ser transferido pelo credor que tiver conhecimento da penhora; mas o devedor que o pagar, não tendo notificação dela, fica exonerado, subsistindo somente contra o credor os direitos de terceiro.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9d224090fe1540ba1d5fa1469ea1153eb3028437bea0100915218a72c28c4826",
+     "o_que_significa": "92f8bc3c1a62323e4e203d660d50269ac4818b611872643e073933257826a296",
+     "exemplo_pratico": "e22cb63bb27832ccc697e092c07634bd168a04bc338b447086139e1f3bf13d88",
+     "atencao": "72ca75a1348d083b9626932962d974f94ee5b8fcf14bb92d110c99e3861d90fb",
+     "palavras_dificeis": "463bb77677759dc57a4d13dc745b1e7a6983e3317d268abc1c9b6eef71c854d5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.298, foram cotejados 1 segmento(s) vigente(s) (CAPUT) com os cinco campos. A baseline sintetiza a regra como: “Depois de saber que o crédito foi penhorado, o credor não pode transferi-lo. Se o devedor paga sem ter sido notificado da penhora, fica liberado, e o terceiro prejudicado age contra o credor.”. A leitura conjunta dos demais campos conserva os sujeitos, requisitos, exceções, prazos e consequências identificáveis no dispositivo, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA03_FRONT_B_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  }
+ ]
+}
