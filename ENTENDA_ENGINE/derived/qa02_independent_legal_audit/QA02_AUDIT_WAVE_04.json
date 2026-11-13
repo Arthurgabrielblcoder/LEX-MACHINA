@@ -2,17 +2,17 @@
  "schema_version": 1,
  "mission": "QA-02-WAVE-04",
  "as_of": "2026-11-12",
- "completed_through_checkpoint": 30,
+ "completed_through_checkpoint": 31,
  "status": "PARTIAL_REQUIRES_CONTINUATION",
- "audited_total": 325,
+ "audited_total": 350,
  "source_queue_positions_completed": [
   201,
-  525
+  550
  ],
- "next_source_queue_position": 526,
- "findings_total": 38,
+ "next_source_queue_position": 551,
+ "findings_total": 43,
  "finding_counts": {
-  "ALTO": 25,
+  "ALTO": 30,
   "CRÍTICO": 2,
   "MÉDIO": 11
  },
@@ -18892,6 +18892,1402 @@
    },
    "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
    "comparison": "A síntese específica do dispositivo — O fiduciário possui propriedade resolúvel, deve inventariar os bens e pode ter de prestar garantia de restituição. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 526,
+   "target_id": "CC2002:ART.1958",
+   "explanation_id": "ENTENDA/CC2002:ART.1958/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1958:CAPUT\tCaduca o fideicomisso se o fideicomissário morrer antes do fiduciário, ou antes de realizar-se a condição resolutória do direito deste último; nesse caso, a propriedade consolida-se no fiduciário, nos termos do art. 1.955.",
+   "source_snapshot_sha256": "22b8895520277ad2756fd090d45f48ed3036e914d26349cadbfc39db0e34020a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1958:CAPUT",
+     "text": "Caduca o fideicomisso se o fideicomissário morrer antes do fiduciário, ou antes de realizar-se a condição resolutória do direito deste último; nesse caso, a propriedade consolida-se no fiduciário, nos termos do art. 1.955."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Caduca o fideicomisso se o fideicomissário morrer antes do fiduciário, ou antes de realizar-se a condição resolutória do direito deste último; nesse caso, a propriedade consolida-se no fiduciário, nos termos do art. 1.955.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4049b4796406ffa94ea844b2c7e20b60f44d38ff5771c0c3a53eea589c2cdc65",
+     "o_que_significa": "d83aa054ccaa144ff1c926b47f70556becbce2a4b4966f69a4c3bf4238fd4927",
+     "exemplo_pratico": "c55e6db84123e1fd73b587cb78841ab88e17d45892bb3b1e76072a4025a610ed",
+     "atencao": "7e46a6aeb919a07b94f0bcc6de582977eb86446310520b9936bae4be19c6c2e7",
+     "palavras_dificeis": "9b9f4ce6f5af4700a76ca9a9d49567cb7058b0a467ab479f1ae703fe918b4574"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Morte do fideicomissário antes do fiduciário ou do evento resolutório extingue o fideicomisso e consolida a propriedade intermediária. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 527,
+   "target_id": "CC2002:ART.1960",
+   "explanation_id": "ENTENDA/CC2002:ART.1960/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1960:CAPUT\tA nulidade da substituição ilegal não prejudica a instituição, que valerá sem o encargo resolutório.",
+   "source_snapshot_sha256": "764a8bc4891f4b82cbd9a36539b1004af990216d049d990101d3576b113d3773",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1960:CAPUT",
+     "text": "A nulidade da substituição ilegal não prejudica a instituição, que valerá sem o encargo resolutório."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A nulidade da substituição ilegal não prejudica a instituição, que valerá sem o encargo resolutório.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "83e18d5e94ae61420815d2c979d1f00c53bc6efc153eb61f420be632451719ac",
+     "o_que_significa": "4a6801d321619183b571b4990c272658f7e1c44445cd9642739897b7cc2c812e",
+     "exemplo_pratico": "3d85eb0d92d6a67966c7865664f679bee5cea31a2b9136a5f162ab211a44b585",
+     "atencao": "adf6a5bc5691c062e7240ffd905d19a5925b5ede7a76ed0f1e17d9a2366179ab",
+     "palavras_dificeis": "119f324d77cb48e8a9b18bea6f96f95e451bdf8926802557ff4f05aea8c38476"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — A substituição fideicomissária ilegal é afastada sem invalidar a instituição principal, que permanece livre do encargo resolutório. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 528,
+   "target_id": "CC2002:ART.1961",
+   "explanation_id": "ENTENDA/CC2002:ART.1961/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1961:CAPUT\tOs herdeiros necessários podem ser privados de sua legítima, ou deserdados, em todos os casos em que podem ser excluídos da sucessão.",
+   "source_snapshot_sha256": "34d1909327623927e997224906afa22b8c57e0267dba41dcf8f385cfcda9362b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1961:CAPUT",
+     "text": "Os herdeiros necessários podem ser privados de sua legítima, ou deserdados, em todos os casos em que podem ser excluídos da sucessão."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Os herdeiros necessários podem ser privados de sua legítima, ou deserdados, em todos os casos em que podem ser excluídos da sucessão.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0c90e4ecc5f1e3ed80867dc14c240ebeec578faad28c925efe3fe5719f32a402",
+     "o_que_significa": "09c5619b9b49a5ea7a7d2e06a476dadc360d8ca68164065ba4e25edbe2496be2",
+     "exemplo_pratico": "1b8e1f84c5fc07f5b05c986fb00e18acd7d5d9bd019ba0b1b6fac8c841fa7df3",
+     "atencao": "0b20542fa6c9a5cc25d360ef36c498494826d36774236be369b0c7985c64c270",
+     "palavras_dificeis": "3e8135060186f00dba62d19bd1f49c7e15c039842876daf26bd2cc2da68b0cff"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Herdeiros necessários podem ser deserdados nas mesmas hipóteses que autorizam exclusão por indignidade. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 529,
+   "target_id": "CC2002:ART.1962",
+   "explanation_id": "ENTENDA/CC2002:ART.1962/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1962:CAPUT\tAlém das causas mencionadas no art. 1.814, autorizam a deserdação dos descendentes por seus ascendentes:\nCC2002:ART.1962:INC.I\tofensa física;\nCC2002:ART.1962:INC.II\tinjúria grave;\nCC2002:ART.1962:INC.III\trelações ilícitas com a madrasta ou com o padrasto;\nCC2002:ART.1962:INC.IV\tdesamparo do ascendente em alienação mental ou grave enfermidade.",
+   "source_snapshot_sha256": "b87d09560f02813849733874403d804557cd115feab6498e9d20c937f1ab1e80",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1962:CAPUT",
+     "text": "Além das causas mencionadas no art. 1.814, autorizam a deserdação dos descendentes por seus ascendentes:"
+    },
+    {
+     "label": "CC2002:ART.1962:INC.I",
+     "text": "ofensa física;"
+    },
+    {
+     "label": "CC2002:ART.1962:INC.II",
+     "text": "injúria grave;"
+    },
+    {
+     "label": "CC2002:ART.1962:INC.III",
+     "text": "relações ilícitas com a madrasta ou com o padrasto;"
+    },
+    {
+     "label": "CC2002:ART.1962:INC.IV",
+     "text": "desamparo do ascendente em alienação mental ou grave enfermidade."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 5 segmentos vigentes do dispositivo: Além das causas mencionadas no art. 1.814, autorizam a deserdação dos descendentes por seus ascendentes: | ofensa física; | injúria grave; | relações ilícitas com a madrasta ou com o padrasto; | desamparo do ascendente em alienação mental ou grave enfermidade.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e00b1f359ed39cae39b3dd0c63399026720e6336efb501af8b2f510cabeedf6e",
+     "o_que_significa": "0073f551787ed85a0adcdd2f3dbffbaf12d9119aa17aa17c3375f7bb6f07510d",
+     "exemplo_pratico": "c34b5ec9831fafb7f3c3db25d302c0134050a574f05f49fc1963012feab14124",
+     "atencao": "6b6e85b2d988fda89a3ebbe241749f0533a70ead148f74213e4f6f8551d2914b",
+     "palavras_dificeis": "4429faf75751cbcbe67c51a7057dcd961e57670d7709f8369e1eacf979849452"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O inciso IV do art. 1.962 não prevê desamparo grave em sentido aberto: exige desamparo do ascendente em alienação mental ou grave enfermidade.",
+   "finding": {
+    "target_id": "CC2002:ART.1962",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "desamparo grave",
+    "legal_basis": "O inciso IV do art. 1.962 não prevê desamparo grave em sentido aberto: exige desamparo do ascendente em alienação mental ou grave enfermidade.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "AMPLIACAO_INDEVIDA_DE_CAUSA_DE_DESERDACAO",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A formulação aberta pode fazer parecer que qualquer abandono considerado grave autoriza deserdação, embora as causas sejam legalmente tipificadas e de interpretação estrita.",
+    "correction_direction": "Reproduzir as condições alternativas do inciso IV: alienação mental ou grave enfermidade do ascendente.",
+    "confidence": "ALTA",
+    "human_review_required": false,
+    "checkpoint": 31,
+    "auditor": "/root/wave04_451_577"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 530,
+   "target_id": "CC2002:ART.1963",
+   "explanation_id": "ENTENDA/CC2002:ART.1963/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1963:CAPUT\tAlém das causas enumeradas no art. 1.814, autorizam a deserdação dos ascendentes pelos descendentes:\nCC2002:ART.1963:INC.I\tofensa física;\nCC2002:ART.1963:INC.II\tinjúria grave;\nCC2002:ART.1963:INC.III\trelações ilícitas com a mulher ou companheira do filho ou a do neto, ou com o marido ou companheiro da filha ou o da neta;\nCC2002:ART.1963:INC.IV\tdesamparo do filho ou neto com deficiência mental ou grave enfermidade.",
+   "source_snapshot_sha256": "54850008c76a9f7597e71ead1474b728e5d5b0e25feb5156f34f224405a90bfc",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1963:CAPUT",
+     "text": "Além das causas enumeradas no art. 1.814, autorizam a deserdação dos ascendentes pelos descendentes:"
+    },
+    {
+     "label": "CC2002:ART.1963:INC.I",
+     "text": "ofensa física;"
+    },
+    {
+     "label": "CC2002:ART.1963:INC.II",
+     "text": "injúria grave;"
+    },
+    {
+     "label": "CC2002:ART.1963:INC.III",
+     "text": "relações ilícitas com a mulher ou companheira do filho ou a do neto, ou com o marido ou companheiro da filha ou o da neta;"
+    },
+    {
+     "label": "CC2002:ART.1963:INC.IV",
+     "text": "desamparo do filho ou neto com deficiência mental ou grave enfermidade."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 5 segmentos vigentes do dispositivo: Além das causas enumeradas no art. 1.814, autorizam a deserdação dos ascendentes pelos descendentes: | ofensa física; | injúria grave; | relações ilícitas com a mulher ou companheira do filho ou a do neto, ou com o marido ou companheiro da filha ou o da neta; | desamparo do filho ou neto com deficiência mental ou grave enfermidade.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2c351f7ed865ed613f54faaa71cf959c60108f97c1811f04e17d8b9eb22b7f13",
+     "o_que_significa": "074c750bf738645579d2e709ceb87f0964a6315e5b0e894139684ab7469c2ce9",
+     "exemplo_pratico": "e4766cfe791ac05c2d2b646861bea555696a9374738ac77e1886ed7862a2ac42",
+     "atencao": "bb0d4a96bcd00f2c485fbf4cf325ada55460fcaffa4194d9376c89bcc01f96b0",
+     "palavras_dificeis": "3136ce0d38bb38d688d3849509bb5d79f56c0dfaaf3074f46644f9baee18c161"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O inciso IV do art. 1.963 delimita a causa ao desamparo do filho ou neto com deficiência mental ou grave enfermidade.",
+   "finding": {
+    "target_id": "CC2002:ART.1963",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "desamparo em situação protegida",
+    "legal_basis": "O inciso IV do art. 1.963 delimita a causa ao desamparo do filho ou neto com deficiência mental ou grave enfermidade.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "IMPRECISAO_DE_CAUSA_DE_DESERDACAO",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A expressão 'situação protegida' não permite identificar os sujeitos e estados de saúde taxativamente descritos na causa legal.",
+    "correction_direction": "Indicar expressamente filho ou neto com deficiência mental ou grave enfermidade.",
+    "confidence": "ALTA",
+    "human_review_required": false,
+    "checkpoint": 31,
+    "auditor": "/root/wave04_451_577"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 531,
+   "target_id": "CC2002:ART.1965",
+   "explanation_id": "ENTENDA/CC2002:ART.1965/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1965:CAPUT\tAo herdeiro instituído, ou àquele a quem aproveite a deserdação, incumbe provar a veracidade da causa alegada pelo testador.\nCC2002:ART.1965:PAR.UNICO\tO direito de provar a causa da deserdação extingue-se no prazo de quatro anos, a contar da data da abertura do testamento.",
+   "source_snapshot_sha256": "38ac8f6a728bb7d1960d5872370c72940189b40cbff27f7a3ed0d6c93a235631",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1965:CAPUT",
+     "text": "Ao herdeiro instituído, ou àquele a quem aproveite a deserdação, incumbe provar a veracidade da causa alegada pelo testador."
+    },
+    {
+     "label": "CC2002:ART.1965:PAR.UNICO",
+     "text": "O direito de provar a causa da deserdação extingue-se no prazo de quatro anos, a contar da data da abertura do testamento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Ao herdeiro instituído, ou àquele a quem aproveite a deserdação, incumbe provar a veracidade da causa alegada pelo testador. | O direito de provar a causa da deserdação extingue-se no prazo de quatro anos, a contar da data da abertura do testamento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9174413d0d3805101dbfc9474cdf7e54f8e14716455688fdfc4f79215fe941d2",
+     "o_que_significa": "8f47e219f05e6175896e0f0211a83277fa19d1c9568251bc97bc04ea8832f976",
+     "exemplo_pratico": "3e85060bda84c68b1bc59e957b4f0dba10c3a04223c6aa031acbbe2ba86de9a0",
+     "atencao": "37daf8656d571356dba4b0589d9df7bbf363357de7de93e6d6234c9d04c57a08",
+     "palavras_dificeis": "b55aad1699e730c900a9bb2d255aba4cef67759ad4ef4db6715bff7cd9256a96"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Quem se beneficia da deserdação deve provar a causa, em até quatro anos contados da abertura do testamento. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 532,
+   "target_id": "CC2002:ART.1967",
+   "explanation_id": "ENTENDA/CC2002:ART.1967/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1967:CAPUT\tAs disposições que excederem a parte disponível reduzir-se-ão aos limites dela, de conformidade com o disposto nos parágrafos seguintes.\nCC2002:ART.1967:PAR.1\to Em se verificando excederem as disposições testamentárias a porção disponível, serão proporcionalmente reduzidas as quotas do herdeiro ou herdeiros instituídos, até onde baste, e, não bastando, também os legados, na proporção do seu valor.\nCC2002:ART.1967:PAR.2\to Se o testador, prevenindo o caso, dispuser que se inteirem, de preferência, certos herdeiros e legatários, a redução far-se-á nos outros quinhões ou legados, observando-se a seu respeito a ordem estabelecida no parágrafo antecedente.",
+   "source_snapshot_sha256": "72946cab7d0a9b125f69b03ef23114b1ff2e0baa2626ada96d87c833c6fa0b4d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1967:CAPUT",
+     "text": "As disposições que excederem a parte disponível reduzir-se-ão aos limites dela, de conformidade com o disposto nos parágrafos seguintes."
+    },
+    {
+     "label": "CC2002:ART.1967:PAR.1",
+     "text": "o Em se verificando excederem as disposições testamentárias a porção disponível, serão proporcionalmente reduzidas as quotas do herdeiro ou herdeiros instituídos, até onde baste, e, não bastando, também os legados, na proporção do seu valor."
+    },
+    {
+     "label": "CC2002:ART.1967:PAR.2",
+     "text": "o Se o testador, prevenindo o caso, dispuser que se inteirem, de preferência, certos herdeiros e legatários, a redução far-se-á nos outros quinhões ou legados, observando-se a seu respeito a ordem estabelecida no parágrafo antecedente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: As disposições que excederem a parte disponível reduzir-se-ão aos limites dela, de conformidade com o disposto nos parágrafos seguintes. | o Em se verificando excederem as disposições testamentárias a porção disponível, serão proporcionalmente reduzidas as quotas do herdeiro ou herdeiros instituídos, até onde baste, e, não bastando, também os legados, na proporção do seu valor. | o Se o testador, prevenindo o caso, dispuser que se inteirem, de preferência, certos herdeiros e legatários, a redução far-se-á nos outros quinhões ou legados, observando-se a seu respeito a ordem estabelecida no parágrafo antecedente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0375a085b61f5114dca8693715ba10c7aec80604910b55aaea12a162c38f36dd",
+     "o_que_significa": "5c06ec082461f3adac10fb28c195f9a4144e1db3568d6942a4c0dc9f9fbc3b1d",
+     "exemplo_pratico": "a4c5dcf960e2b5cfe98aeed05a86c26cd1d6090b2a4b0c6e6c3252d08ff4d931",
+     "atencao": "5682abe780bc8343ec49768b73553bde4296d5bf1afb5535a189dcec4866444c",
+     "palavras_dificeis": "e4987a8c38f1800bf6b0c4a6f0ddea297b033b0a747ffdaed1fba1a943e6ca43"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Disposições testamentárias acima da parte disponível são reduzidas proporcionalmente, primeiro nas instituições e depois nos legados, salvo preferência prevista. — foi confrontada com os 3 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 533,
+   "target_id": "CC2002:ART.1968",
+   "explanation_id": "ENTENDA/CC2002:ART.1968/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1968:CAPUT\tQuando consistir em prédio divisível o legado sujeito a redução, far-se-á esta dividindo-o proporcionalmente.\nCC2002:ART.1968:PAR.1\to Se não for possível a divisão, e o excesso do legado montar a mais de um quarto do valor do prédio, o legatário deixará inteiro na herança o imóvel legado, ficando com o direito de pedir aos herdeiros o valor que couber na parte disponível; se o excesso não for de mais de um quarto, aos herdeiros fará tornar em dinheiro o legatário, que ficará com o prédio.\nCC2002:ART.1968:PAR.2\to Se o legatário for ao mesmo tempo herdeiro necessário, poderá inteirar sua legítima no mesmo imóvel, de preferencia aos outros, sempre que ela e a parte subsistente do legado lhe absorverem o valor.",
+   "source_snapshot_sha256": "60e2fca32a493d6aa0606369c1a1941570165ebe810c47717b65df5f0a3872b8",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1968:CAPUT",
+     "text": "Quando consistir em prédio divisível o legado sujeito a redução, far-se-á esta dividindo-o proporcionalmente."
+    },
+    {
+     "label": "CC2002:ART.1968:PAR.1",
+     "text": "o Se não for possível a divisão, e o excesso do legado montar a mais de um quarto do valor do prédio, o legatário deixará inteiro na herança o imóvel legado, ficando com o direito de pedir aos herdeiros o valor que couber na parte disponível; se o excesso não for de mais de um quarto, aos herdeiros fará tornar em dinheiro o legatário, que ficará com o prédio."
+    },
+    {
+     "label": "CC2002:ART.1968:PAR.2",
+     "text": "o Se o legatário for ao mesmo tempo herdeiro necessário, poderá inteirar sua legítima no mesmo imóvel, de preferencia aos outros, sempre que ela e a parte subsistente do legado lhe absorverem o valor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Quando consistir em prédio divisível o legado sujeito a redução, far-se-á esta dividindo-o proporcionalmente. | o Se não for possível a divisão, e o excesso do legado montar a mais de um quarto do valor do prédio, o legatário deixará inteiro na herança o imóvel legado, ficando com o direito de pedir aos herdeiros o valor que couber na parte disponível; se o excesso não for de mais de um quarto, aos herdeiros fará tornar em dinheiro o legatário, que ficará com o prédio. | o Se o legatário for ao mesmo tempo herdeiro necessário, poderá inteirar sua legítima no mesmo imóvel, de preferencia aos outros, sempre que ela e a parte subsistente do legado lhe absorverem o valor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "070a7f58d2073b4f392b9da159374087761f4910b3938f41857260606f648f0d",
+     "o_que_significa": "b3c5e7b303f8d373fbcf8407cad287864aefc89b85d44b681bccd26157c95040",
+     "exemplo_pratico": "dd112f594fe5eb81dd08eac03627464810e3112ac6572125816d0b699782a5cf",
+     "atencao": "b18d2b763cad4bf34a67bff18a929c766a36a967a69cff699628f1dd89b9af0e",
+     "palavras_dificeis": "24e713237a8bb290faa8c65c6c71f88ae49aef52ab1142f92717169c86446a1e"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O § 1º do art. 1.968 fixa consequências opostas pelo limite de um quarto: se o excesso superar um quarto, o imóvel fica inteiro na herança e o legatário pede o valor disponível; se não superar, o legatário conserva o prédio e repõe o excesso em dinheiro. O § 2º ainda dá preferência ao legatário que seja herdeiro necessário nas condições ali previstas.",
+   "finding": {
+    "target_id": "CC2002:ART.1968",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "se indivisível, a solução varia conforme o excesso e pode envolver entrega do bem ou reposição em dinheiro",
+    "legal_basis": "O § 1º do art. 1.968 fixa consequências opostas pelo limite de um quarto: se o excesso superar um quarto, o imóvel fica inteiro na herança e o legatário pede o valor disponível; se não superar, o legatário conserva o prédio e repõe o excesso em dinheiro. O § 2º ainda dá preferência ao legatário que seja herdeiro necessário nas condições ali previstas.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_CONSEQUENCIAS_ALTERNATIVAS",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A síntese menciona o limite, mas não informa quem conserva o imóvel em cada lado do limiar, justamente a consequência central da norma.",
+    "correction_direction": "Explicar as duas soluções do § 1º e a preferência prevista no § 2º.",
+    "confidence": "ALTA",
+    "human_review_required": false,
+    "checkpoint": 31,
+    "auditor": "/root/wave04_451_577"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 534,
+   "target_id": "CC2002:ART.1971",
+   "explanation_id": "ENTENDA/CC2002:ART.1971/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1971:CAPUT\tA revogação produzirá seus efeitos, ainda quando o testamento, que a encerra, vier a caducar por exclusão, incapacidade ou renúncia do herdeiro nele nomeado; não valerá, se o testamento revogatório for anulado por omissão ou infração de solenidades essenciais ou por vícios intrínsecos.",
+   "source_snapshot_sha256": "5ab283f23ecf1acb908301878a97f0b6027b23c3dce33b5bcefc63852bae678b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1971:CAPUT",
+     "text": "A revogação produzirá seus efeitos, ainda quando o testamento, que a encerra, vier a caducar por exclusão, incapacidade ou renúncia do herdeiro nele nomeado; não valerá, se o testamento revogatório for anulado por omissão ou infração de solenidades essenciais ou por vícios intrínsecos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A revogação produzirá seus efeitos, ainda quando o testamento, que a encerra, vier a caducar por exclusão, incapacidade ou renúncia do herdeiro nele nomeado; não valerá, se o testamento revogatório for anulado por omissão ou infração de solenidades essenciais ou por vícios intrínsecos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9a62c2d7af6cf62e1c44c220eabf429e8d75c963d105a757982d4bd3439b748f",
+     "o_que_significa": "958bd4cd4bf87b196891e798acdfff5d2a06ad7b0d3290eed6c15e3b27d48ee0",
+     "exemplo_pratico": "63f43246cc8485ad80bdd727defa33ad4a6f25966a13dccc5b714100c05be831",
+     "atencao": "0672e3d8fa4be1a319f9cb3744a58bb66af610c3997e93c4b8efa5d6853480c7",
+     "palavras_dificeis": "19de76a71a9dca77e456e3d943496de04b5233c9d7023097a3a57636136af199"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — A revogação subsiste mesmo se o beneficiário posterior não suceder, mas cai se o testamento revogatório for anulado por vício formal ou intrínseco. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 535,
+   "target_id": "CC2002:ART.1973",
+   "explanation_id": "ENTENDA/CC2002:ART.1973/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1973:CAPUT\tSobrevindo descendente sucessível ao testador, que não o tinha ou não o conhecia quando testou, rompe-se o testamento em todas as suas disposições, se esse descendente sobreviver ao testador.",
+   "source_snapshot_sha256": "1dda848780ae719879bfc5e196080c3fb9aa3635c3a78a2c9dfee8477f97f653",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1973:CAPUT",
+     "text": "Sobrevindo descendente sucessível ao testador, que não o tinha ou não o conhecia quando testou, rompe-se o testamento em todas as suas disposições, se esse descendente sobreviver ao testador."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Sobrevindo descendente sucessível ao testador, que não o tinha ou não o conhecia quando testou, rompe-se o testamento em todas as suas disposições, se esse descendente sobreviver ao testador.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "18fd2dfad38dcbcaf4818a662be3d26b9f30050b3e22cf7b4ffe99e78599efdf",
+     "o_que_significa": "3e3072c6e9db6333c490a69196d433d12abee9eefd1da68e05dc5e587adc9774",
+     "exemplo_pratico": "5b63c3bb66271c2a9a4b6448fb61cc6ed6ff210caae21f6d652c37fb849450f2",
+     "atencao": "865a6b32f45cfb6091ad4118600ea899f244b8a98953a0594503429d995812e4",
+     "palavras_dificeis": "4b1eadd998c2460632bba2ff01db37d059ead4f6a8da07489fee01a3258e0682"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Descendente sucessível superveniente ou antes desconhecido rompe o testamento se sobreviver ao testador. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 536,
+   "target_id": "CC2002:ART.1974",
+   "explanation_id": "ENTENDA/CC2002:ART.1974/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1974:CAPUT\tRompe-se também o testamento feito na ignorância de existirem outros herdeiros necessários.",
+   "source_snapshot_sha256": "b91b6f93aaa7451e822469eabd4d81649f30e6770dccdad096147ef0bd5ca4a6",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1974:CAPUT",
+     "text": "Rompe-se também o testamento feito na ignorância de existirem outros herdeiros necessários."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Rompe-se também o testamento feito na ignorância de existirem outros herdeiros necessários.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d2ff5d190082acac8dabf8471c7447260db14ff2c3c2787bc7a86b23f82721d6",
+     "o_que_significa": "5e0e4aeddb8e8477a078c40797ad2c09bd53d81e316b26e60b857b1d3703d046",
+     "exemplo_pratico": "b2f25fa1e4e2e975949182cd08f4a180ecbe0a7ee081a5a29e9a76622a8c3a4f",
+     "atencao": "963ae787175aeb071256200fcb855764d16982a6e7c6a03ad32bafe04f051d9f",
+     "palavras_dificeis": "346c69e8073d3796e741dedc49604c6948ddbdc4ea83c2a78688714bb268ba1c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — O testamento também se rompe quando foi feito ignorando a existência de outros herdeiros necessários. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 537,
+   "target_id": "CC2002:ART.1977",
+   "explanation_id": "ENTENDA/CC2002:ART.1977/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1977:CAPUT\tO testador pode conceder ao testamenteiro a posse e a administração da herança, ou de parte dela, não havendo cônjuge ou herdeiros necessários.\nCC2002:ART.1977:PAR.UNICO\tQualquer herdeiro pode requerer partilha imediata, ou devolução da herança, habilitando o testamenteiro com os meios necessários para o cumprimento dos legados, ou dando caução de prestá-los.",
+   "source_snapshot_sha256": "f40864aa6906f217487a743d7d5b10e802394ca87e43b9f83b61480e7a44e139",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1977:CAPUT",
+     "text": "O testador pode conceder ao testamenteiro a posse e a administração da herança, ou de parte dela, não havendo cônjuge ou herdeiros necessários."
+    },
+    {
+     "label": "CC2002:ART.1977:PAR.UNICO",
+     "text": "Qualquer herdeiro pode requerer partilha imediata, ou devolução da herança, habilitando o testamenteiro com os meios necessários para o cumprimento dos legados, ou dando caução de prestá-los."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O testador pode conceder ao testamenteiro a posse e a administração da herança, ou de parte dela, não havendo cônjuge ou herdeiros necessários. | Qualquer herdeiro pode requerer partilha imediata, ou devolução da herança, habilitando o testamenteiro com os meios necessários para o cumprimento dos legados, ou dando caução de prestá-los.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "17b284c006264316190e16f60137f84ad15bb0d9e50b2d1ee60599deb0a8300e",
+     "o_que_significa": "f71a7f58ee25be67ff62ebccd58f6c754680852163f190f7938b6871764f416c",
+     "exemplo_pratico": "b8fcc0535bb291d5fc3ee3f49b7cfc6981f8921bd6b9ed601d5ba06beaf16737",
+     "atencao": "52002b9b4da6521fb6435b672fcc0eb4c8977b5ae4a835586ea20b5611afa909",
+     "palavras_dificeis": "d5fc22af80bde6981d8f832547c68605a6f790815815ca4aa009da217b8ca537"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Sem cônjuge ou herdeiros necessários, o testador pode dar ao testamenteiro posse e administração; herdeiro pode pedir partilha garantindo meios aos legados. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 538,
+   "target_id": "CC2002:ART.1983",
+   "explanation_id": "ENTENDA/CC2002:ART.1983/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1983:CAPUT\tNão concedendo o testador prazo maior, cumprirá o testamenteiro o testamento e prestará contas em cento e oitenta dias, contados da aceitação da testamentaria.\nCC2002:ART.1983:PAR.UNICO\tPode esse prazo ser prorrogado se houver motivo suficiente.",
+   "source_snapshot_sha256": "463a9763cef0012a890ac6699879fe1af570040c3372927f8041d835301a1e5a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1983:CAPUT",
+     "text": "Não concedendo o testador prazo maior, cumprirá o testamenteiro o testamento e prestará contas em cento e oitenta dias, contados da aceitação da testamentaria."
+    },
+    {
+     "label": "CC2002:ART.1983:PAR.UNICO",
+     "text": "Pode esse prazo ser prorrogado se houver motivo suficiente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Não concedendo o testador prazo maior, cumprirá o testamenteiro o testamento e prestará contas em cento e oitenta dias, contados da aceitação da testamentaria. | Pode esse prazo ser prorrogado se houver motivo suficiente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "3fc401e78f6d0cbb670e649cb4bc2a68d1ffb76132e28cb53d77390f5f946e80",
+     "o_que_significa": "17dda70ce69ed3a5fa2567a61887a9ce9f589f6db64eb96e762659687e3b25cc",
+     "exemplo_pratico": "3179430250c36a430ca498c7307f214c5fca121c794167599258767f0169a7e0",
+     "atencao": "b56ffc6d3a79b04db167b8a768fbfdd00de762dbfcd1904775669e9f83647b0f",
+     "palavras_dificeis": "b039c2b31ce4592bad922608bb633956706310f1573b2248b22f10c71fb794cc"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Sem prazo maior dado pelo testador, execução e contas devem ocorrer em 180 dias da aceitação, prorrogáveis por motivo suficiente. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 539,
+   "target_id": "CC2002:ART.1984",
+   "explanation_id": "ENTENDA/CC2002:ART.1984/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1984:CAPUT\tNa falta de testamenteiro nomeado pelo testador, a execução testamentária compete a um dos cônjuges, e, em falta destes, ao herdeiro nomeado pelo juiz.",
+   "source_snapshot_sha256": "657ba9e51daeb6de06babb85a5d5a5db57caf112749729e70d451ca65e3b23d0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1984:CAPUT",
+     "text": "Na falta de testamenteiro nomeado pelo testador, a execução testamentária compete a um dos cônjuges, e, em falta destes, ao herdeiro nomeado pelo juiz."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Na falta de testamenteiro nomeado pelo testador, a execução testamentária compete a um dos cônjuges, e, em falta destes, ao herdeiro nomeado pelo juiz.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e44767aaea4d315dc5e955baf330c6acfb0a0a5b339936e847ea4a2bd7457fa7",
+     "o_que_significa": "0f7844b24ac0bec2830fb327fb9b9f447a071bfc82db2199038b649d66e7ec5f",
+     "exemplo_pratico": "8c3681e807ce6dbb28585bf84cf26644ad3fe8365e8b9071a970e6d37918e58a",
+     "atencao": "9747a9939dabf4be82efa8538f0feb130f716a7c534bff5cdb4ea54c19439033",
+     "palavras_dificeis": "336a923a7cf0ea76c6e0121759d90bbd476cc15c3103af627afa36c8a2a2c774"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Sem testamenteiro nomeado, a execução cabe ao cônjuge e, na falta, a herdeiro escolhido judicialmente. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 540,
+   "target_id": "CC2002:ART.1986",
+   "explanation_id": "ENTENDA/CC2002:ART.1986/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1986:CAPUT\tHavendo simultaneamente mais de um testamenteiro, que tenha aceitado o cargo, poderá cada qual exercê-lo, em falta dos outros; mas todos ficam solidariamente obrigados a dar conta dos bens que lhes forem confiados, salvo se cada um tiver, pelo testamento, funções distintas, e a elas se limitar.",
+   "source_snapshot_sha256": "bd7581115ac0b2a0ed1a8110e0714ad194927d59ab8823dda203d5ce3294dda5",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1986:CAPUT",
+     "text": "Havendo simultaneamente mais de um testamenteiro, que tenha aceitado o cargo, poderá cada qual exercê-lo, em falta dos outros; mas todos ficam solidariamente obrigados a dar conta dos bens que lhes forem confiados, salvo se cada um tiver, pelo testamento, funções distintas, e a elas se limitar."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Havendo simultaneamente mais de um testamenteiro, que tenha aceitado o cargo, poderá cada qual exercê-lo, em falta dos outros; mas todos ficam solidariamente obrigados a dar conta dos bens que lhes forem confiados, salvo se cada um tiver, pelo testamento, funções distintas, e a elas se limitar.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2a7275a927246e18402aab870607bd7d35d59515a6e42c6de6ee5921961e66e1",
+     "o_que_significa": "7ef00ed6482cdc0b129ceeec8fa7866870f38e385ed3747905d4e8806808f49d",
+     "exemplo_pratico": "a2353ad8c16f3da7bd89e65392d600c4d9869faaa1ed5f840b139b6f2102c638",
+     "atencao": "cd0d3d46bff5f2196a50cb517ad3bd0ae440f0a0dd625824583f36d7f1b36089",
+     "palavras_dificeis": "7258eb515ab468ba0657d252065b34fd1eca7e31443471b2473275382ef44cdb"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Com vários testamenteiros, um pode atuar na falta dos outros, e todos prestam contas solidariamente, salvo funções testamentárias separadas. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 541,
+   "target_id": "CC2002:ART.1987",
+   "explanation_id": "ENTENDA/CC2002:ART.1987/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1987:CAPUT\tSalvo disposição testamentária em contrário, o testamenteiro, que não seja herdeiro ou legatário, terá direito a um prêmio, que, se o testador não o houver fixado, será de um a cinco por cento, arbitrado pelo juiz, sobre a herança líquida, conforme a importância dela e maior ou menor dificuldade na execução do testamento.\nCC2002:ART.1987:PAR.UNICO\tO prêmio arbitrado será pago à conta da parte disponível, quando houver herdeiro necessário.",
+   "source_snapshot_sha256": "b9e7c19dd207c20d20dbd74e3602be7a5d880bb81234260ccd3a5eacbb95c7ff",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1987:CAPUT",
+     "text": "Salvo disposição testamentária em contrário, o testamenteiro, que não seja herdeiro ou legatário, terá direito a um prêmio, que, se o testador não o houver fixado, será de um a cinco por cento, arbitrado pelo juiz, sobre a herança líquida, conforme a importância dela e maior ou menor dificuldade na execução do testamento."
+    },
+    {
+     "label": "CC2002:ART.1987:PAR.UNICO",
+     "text": "O prêmio arbitrado será pago à conta da parte disponível, quando houver herdeiro necessário."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Salvo disposição testamentária em contrário, o testamenteiro, que não seja herdeiro ou legatário, terá direito a um prêmio, que, se o testador não o houver fixado, será de um a cinco por cento, arbitrado pelo juiz, sobre a herança líquida, conforme a importância dela e maior ou menor dificuldade na execução do testamento. | O prêmio arbitrado será pago à conta da parte disponível, quando houver herdeiro necessário.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ff17b1a5fc22fcd6e2496d5e25ac316722fcd29cde9eb3ab9d02f38a15d36552",
+     "o_que_significa": "a012dac8b67c830e0f3717433318b1eedd55c05a13d545c2101c47358a71c8f7",
+     "exemplo_pratico": "1ac4ec5ccb669765ee873abc705108e0f27739c0d323b345a240b8c562c903dd",
+     "atencao": "25806fd534ccbf4ac3b137cdc1f973cd7db2970cdb8bf0fca30acc30614ab122",
+     "palavras_dificeis": "55f9f088497a205a0f481e533bbbef1fa933f4a3989c2fe50386eeb5c71ed94e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Testamenteiro que não seja herdeiro nem legatário recebe prêmio de 1% a 5% da herança líquida, se o testador não fixar, pago pela parte disponível. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 542,
+   "target_id": "CC2002:ART.1992",
+   "explanation_id": "ENTENDA/CC2002:ART.1992/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1992:CAPUT\tO herdeiro que sonegar bens da herança, não os descrevendo no inventário quando estejam em seu poder, ou, com o seu conhecimento, no de outrem, ou que os omitir na colação, a que os deva levar, ou que deixar de restituí-los, perderá o direito que sobre eles lhe cabia.",
+   "source_snapshot_sha256": "a442cfa0341dbb1647b6dcdec71a6cee4616f7153d23982150bab41f3c8c0148",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1992:CAPUT",
+     "text": "O herdeiro que sonegar bens da herança, não os descrevendo no inventário quando estejam em seu poder, ou, com o seu conhecimento, no de outrem, ou que os omitir na colação, a que os deva levar, ou que deixar de restituí-los, perderá o direito que sobre eles lhe cabia."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O herdeiro que sonegar bens da herança, não os descrevendo no inventário quando estejam em seu poder, ou, com o seu conhecimento, no de outrem, ou que os omitir na colação, a que os deva levar, ou que deixar de restituí-los, perderá o direito que sobre eles lhe cabia.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0d7f40e2f8b0e44c13cde7af646dcc96663d7350120863f6942c6eaec9f93ce3",
+     "o_que_significa": "579cd8caa53267e7968ab881d6749c541bdc97a2a041eb94ce8cd5011d3c6810",
+     "exemplo_pratico": "7f1a67aeddbc1ccd5ee1ed6b7c410ddc75e99f1f49fa75fcbb950d7744d2af55",
+     "atencao": "38d9ac081ff7c766932927f7e9737f5fc8c708ee8199b431d496d9aee1d65a7c",
+     "palavras_dificeis": "188c65d51c0c235d6a037504e3972eed16d0ace569179141c56610318ff70a8f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Herdeiro que oculta bem do inventário, da colação ou se recusa a restituí-lo perde o direito sobre o bem sonegado. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 543,
+   "target_id": "CC2002:ART.1994",
+   "explanation_id": "ENTENDA/CC2002:ART.1994/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1994:CAPUT\tA pena de sonegados só se pode requerer e impor em ação movida pelos herdeiros ou pelos credores da herança.\nCC2002:ART.1994:PAR.UNICO\tA sentença que se proferir na ação de sonegados, movida por qualquer dos herdeiros ou credores, aproveita aos demais interessados.",
+   "source_snapshot_sha256": "c92132ecbb1b34bcfe6a7b21e83a918cc473e36f993b0c24c646e13a33015a54",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1994:CAPUT",
+     "text": "A pena de sonegados só se pode requerer e impor em ação movida pelos herdeiros ou pelos credores da herança."
+    },
+    {
+     "label": "CC2002:ART.1994:PAR.UNICO",
+     "text": "A sentença que se proferir na ação de sonegados, movida por qualquer dos herdeiros ou credores, aproveita aos demais interessados."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A pena de sonegados só se pode requerer e impor em ação movida pelos herdeiros ou pelos credores da herança. | A sentença que se proferir na ação de sonegados, movida por qualquer dos herdeiros ou credores, aproveita aos demais interessados.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8a062a25606a895757e016c8c5e232e1b27ecfe6ab9feac1ef6d45ce54cab5d6",
+     "o_que_significa": "7ae3336a7836bcc76d3b1b8ba70a5614c923f5819d171cbc129ad1fc15be12a9",
+     "exemplo_pratico": "6361793639698216db3e031d83ba599f0a5eeea75b3b1b2e1539ca0c93546bc5",
+     "atencao": "4477c2b94611578407330f792a42b4a3c22b1291e940bde7a5768e5f5b9b17a0",
+     "palavras_dificeis": "091657e9e391c2696cb18266ba3b35a1246738842a9a470d21d596d57587a3a8"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — A pena de sonegados depende de ação proposta por herdeiro ou credor da herança, e a sentença beneficia os demais interessados. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 544,
+   "target_id": "CC2002:ART.1996",
+   "explanation_id": "ENTENDA/CC2002:ART.1996/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1996:CAPUT\tSó se pode argüir de sonegação o inventariante depois de encerrada a descrição dos bens, com a declaração, por ele feita, de não existirem outros por inventariar e partir, assim como argüir o herdeiro, depois de declarar-se no inventário que não os possui.",
+   "source_snapshot_sha256": "45ffa20269007d2d9396318f881a7fe59b1e6344fbacc970e9ff2aa0847e7415",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1996:CAPUT",
+     "text": "Só se pode argüir de sonegação o inventariante depois de encerrada a descrição dos bens, com a declaração, por ele feita, de não existirem outros por inventariar e partir, assim como argüir o herdeiro, depois de declarar-se no inventário que não os possui."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Só se pode argüir de sonegação o inventariante depois de encerrada a descrição dos bens, com a declaração, por ele feita, de não existirem outros por inventariar e partir, assim como argüir o herdeiro, depois de declarar-se no inventário que não os possui.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "75b15c5a638a56ecb80bb557a29fa6f098b14629b79348e0d2e59b5421e15a5c",
+     "o_que_significa": "72f7a081792f832578dbe1ab339849aa36b368625c77b72e3d57f26a7214f937",
+     "exemplo_pratico": "576e3e7582fbe7a0675f228ca9421fa3de8b5ca17867fe49221f10ebb71c2f50",
+     "atencao": "228f8fbf386ed344053a20a6caa7eaa98a5d5a5b99d89210d1a28f72effa5a2b",
+     "palavras_dificeis": "658557cb03f93481d1ffba5fbb17e0f6f3bb31201d39f71efaa1ee25debf99e0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — A sonegação só pode ser arguida após inventariante ou herdeiro declarar encerrada a relação de bens e negar possuir outros. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 545,
+   "target_id": "CC2002:ART.1997",
+   "explanation_id": "ENTENDA/CC2002:ART.1997/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1997:CAPUT\tA herança responde pelo pagamento das dívidas do falecido; mas, feita a partilha, só respondem os herdeiros, cada qual em proporção da parte que na herança lhe coube.\nCC2002:ART.1997:PAR.1\to Quando, antes da partilha, for requerido no inventário o pagamento de dívidas constantes de documentos, revestidos de formalidades legais, constituindo prova bastante da obrigação, e houver impugnação, que não se funde na alegação de pagamento, acompanhada de prova valiosa, o juiz mandará reservar, em poder do inventariante, bens suficientes para solução do débito, sobre os quais venha a recair oportunamente a execução.\nCC2002:ART.1997:PAR.2\to No caso previsto no parágrafo antecedente, o credor será obrigado a iniciar a ação de cobrança no prazo de trinta dias, sob pena de se tornar de nenhum efeito a providência indicada.",
+   "source_snapshot_sha256": "f13db04c97f35f9b40c5f0cc61dd40b0b3e17debc99c5fa0995d3c253b40abe7",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1997:CAPUT",
+     "text": "A herança responde pelo pagamento das dívidas do falecido; mas, feita a partilha, só respondem os herdeiros, cada qual em proporção da parte que na herança lhe coube."
+    },
+    {
+     "label": "CC2002:ART.1997:PAR.1",
+     "text": "o Quando, antes da partilha, for requerido no inventário o pagamento de dívidas constantes de documentos, revestidos de formalidades legais, constituindo prova bastante da obrigação, e houver impugnação, que não se funde na alegação de pagamento, acompanhada de prova valiosa, o juiz mandará reservar, em poder do inventariante, bens suficientes para solução do débito, sobre os quais venha a recair oportunamente a execução."
+    },
+    {
+     "label": "CC2002:ART.1997:PAR.2",
+     "text": "o No caso previsto no parágrafo antecedente, o credor será obrigado a iniciar a ação de cobrança no prazo de trinta dias, sob pena de se tornar de nenhum efeito a providência indicada."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: A herança responde pelo pagamento das dívidas do falecido; mas, feita a partilha, só respondem os herdeiros, cada qual em proporção da parte que na herança lhe coube. | o Quando, antes da partilha, for requerido no inventário o pagamento de dívidas constantes de documentos, revestidos de formalidades legais, constituindo prova bastante da obrigação, e houver impugnação, que não se funde na alegação de pagamento, acompanhada de prova valiosa, o juiz mandará reservar, em poder do inventariante, bens suficientes para solução do débito, sobre os quais venha a recair oportunamente a execução. | o No caso previsto no parágrafo antecedente, o credor será obrigado a iniciar a ação de cobrança no prazo de trinta dias, sob pena de se tornar de nenhum efeito a providência indicada.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6f73f7cb32c346af5d5505c19dd97ab78b85cee405ab18ee864f0f8295d41d70",
+     "o_que_significa": "0ff15fb847138d96da71b60063b82cb5938a87be3e3c6d33e1fa23e98687c347",
+     "exemplo_pratico": "fa2483620be6fc5703901d392fcc7756cb2470066bf6e4f3bb2c863ea6719d45",
+     "atencao": "1421a03b30cc134cd6dd65da9ec749307f73c43f3304a301729c1b9c39260891",
+     "palavras_dificeis": "244b8e781ff4fed58dd56e92927854a86630b7ad97327127bff6935e001be92d"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "Os §§ 1º e 2º do art. 1.997 condicionam a reserva a pedido anterior à partilha, dívida constante de documento com formalidades legais e prova bastante, além de impugnação que não se funde em pagamento acompanhado de prova valiosa; deferida a reserva, o credor deve ajuizar cobrança em trinta dias.",
+   "finding": {
+    "target_id": "CC2002:ART.1997",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "com reserva judicial possível e prazo de 30 dias para cobrança",
+    "legal_basis": "Os §§ 1º e 2º do art. 1.997 condicionam a reserva a pedido anterior à partilha, dívida constante de documento com formalidades legais e prova bastante, além de impugnação que não se funde em pagamento acompanhado de prova valiosa; deferida a reserva, o credor deve ajuizar cobrança em trinta dias.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_REQUISITOS_PROCESSUAIS",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A formulação sugere reserva ampla sem apresentar os requisitos cumulativos que autorizam a constrição de bens do inventário.",
+    "correction_direction": "Enumerar os requisitos do § 1º e vincular o prazo de trinta dias ao ajuizamento da ação após a reserva.",
+    "confidence": "ALTA",
+    "human_review_required": false,
+    "checkpoint": 31,
+    "auditor": "/root/wave04_451_577"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 546,
+   "target_id": "CC2002:ART.2000",
+   "explanation_id": "ENTENDA/CC2002:ART.2000/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2000:CAPUT\tOs legatários e credores da herança podem exigir que do patrimônio do falecido se discrimine o do herdeiro, e, em concurso com os credores deste, ser-lhes-ão preferidos no pagamento.",
+   "source_snapshot_sha256": "84222411bbe1442226d173154cabb09fa604056a2274452915bb1532ec2102f2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2000:CAPUT",
+     "text": "Os legatários e credores da herança podem exigir que do patrimônio do falecido se discrimine o do herdeiro, e, em concurso com os credores deste, ser-lhes-ão preferidos no pagamento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Os legatários e credores da herança podem exigir que do patrimônio do falecido se discrimine o do herdeiro, e, em concurso com os credores deste, ser-lhes-ão preferidos no pagamento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9d9f7df332e1929f29b3d4cddc2e2ac538de2d9c547796a2904ca3df9ca3ea99",
+     "o_que_significa": "e166040aacfcb8458dfc68c26bd87e82cc9b322fbb3c7b9ef8d8b2077363b193",
+     "exemplo_pratico": "e3cf26ac9c4bf0a0e0a0675f6e54d4037d58032e90370d8bb0f1a048afc6b5d9",
+     "atencao": "a9adafd80c500194718e093b9c5897c71b9fd293239599af9999e0b86f21a2fe",
+     "palavras_dificeis": "1635260212fec2a3e763dbb28e98dc65a91c6f808f2094759a029c710c5474be"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Legatários e credores hereditários podem separar o patrimônio do falecido do patrimônio do herdeiro e preferem aos credores pessoais deste. — foi confrontada com os 1 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 547,
+   "target_id": "CC2002:ART.2002",
+   "explanation_id": "ENTENDA/CC2002:ART.2002/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2002:CAPUT\tOs descendentes que concorrerem à sucessão do ascendente comum são obrigados, para igualar as legítimas, a conferir o valor das doações que dele em vida receberam, sob pena de sonegação.\nCC2002:ART.2002:PAR.UNICO\tPara cálculo da legítima, o valor dos bens conferidos será computado na parte indisponível, sem aumentar a disponível.",
+   "source_snapshot_sha256": "297e1d583cdc0295b212186eca0952bb1cef19022713bab82ea693c360515ab1",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2002:CAPUT",
+     "text": "Os descendentes que concorrerem à sucessão do ascendente comum são obrigados, para igualar as legítimas, a conferir o valor das doações que dele em vida receberam, sob pena de sonegação."
+    },
+    {
+     "label": "CC2002:ART.2002:PAR.UNICO",
+     "text": "Para cálculo da legítima, o valor dos bens conferidos será computado na parte indisponível, sem aumentar a disponível."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Os descendentes que concorrerem à sucessão do ascendente comum são obrigados, para igualar as legítimas, a conferir o valor das doações que dele em vida receberam, sob pena de sonegação. | Para cálculo da legítima, o valor dos bens conferidos será computado na parte indisponível, sem aumentar a disponível.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "328cea957561bfbc5e513d7f863cca64b63e7d15d52f479acdeabc7b53064060",
+     "o_que_significa": "c0145439d22ab7540d0a7e1d57b109325c68a8850e20ff7d6cd52832f3c3a3f1",
+     "exemplo_pratico": "396f56e2515c42a56cccd40a958e975cb11290d643549092507add344661b54f",
+     "atencao": "d0e377b16e20820dafbb7f3482c8e4f0904fdf0d8738074344b0776ae82d6576",
+     "palavras_dificeis": "87a113e2d8565bc2f901c7eb3a681b98c96492c727a998f81aae6922c1713b4e"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O parágrafo único do art. 2.002 determina que, para o cálculo da legítima, o valor dos bens conferidos seja computado na parte indisponível, sem aumentar a parte disponível.",
+   "finding": {
+    "target_id": "CC2002:ART.2002",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "Descendentes concorrentes devem colacionar doações recebidas do ascendente para igualar legítimas, sob pena de sonegação.",
+    "legal_basis": "O parágrafo único do art. 2.002 determina que, para o cálculo da legítima, o valor dos bens conferidos seja computado na parte indisponível, sem aumentar a parte disponível.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_EFEITO_NO_CALCULO_DA_LEGITIMA",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "Sem a regra do parágrafo único, o leitor pode somar a colação à base disponível e distorcer a parcela que o autor da herança podia livremente destinar.",
+    "correction_direction": "Acrescentar que o valor colacionado entra na parte indisponível e não amplia a disponível.",
+    "confidence": "ALTA",
+    "human_review_required": false,
+    "checkpoint": 31,
+    "auditor": "/root/wave04_451_577"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 548,
+   "target_id": "CC2002:ART.2003",
+   "explanation_id": "ENTENDA/CC2002:ART.2003/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2003:CAPUT\tA colação tem por fim igualar, na proporção estabelecida neste Código, as legítimas dos descendentes e do cônjuge sobrevivente, obrigando também os donatários que, ao tempo do falecimento do doador, já não possuírem os bens doados.\nCC2002:ART.2003:PAR.UNICO\tSe, computados os valores das doações feitas em adiantamento de legítima, não houver no acervo bens suficientes para igualar as legítimas dos descendentes e do cônjuge, os bens assim doados serão conferidos em espécie, ou, quando deles já não disponha o donatário, pelo seu valor ao tempo da liberalidade.",
+   "source_snapshot_sha256": "86406b51ddcdea68651aba7cee37f5aea4a4f44fdf3e5d15e28f3feb05775bb4",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2003:CAPUT",
+     "text": "A colação tem por fim igualar, na proporção estabelecida neste Código, as legítimas dos descendentes e do cônjuge sobrevivente, obrigando também os donatários que, ao tempo do falecimento do doador, já não possuírem os bens doados."
+    },
+    {
+     "label": "CC2002:ART.2003:PAR.UNICO",
+     "text": "Se, computados os valores das doações feitas em adiantamento de legítima, não houver no acervo bens suficientes para igualar as legítimas dos descendentes e do cônjuge, os bens assim doados serão conferidos em espécie, ou, quando deles já não disponha o donatário, pelo seu valor ao tempo da liberalidade."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A colação tem por fim igualar, na proporção estabelecida neste Código, as legítimas dos descendentes e do cônjuge sobrevivente, obrigando também os donatários que, ao tempo do falecimento do doador, já não possuírem os bens doados. | Se, computados os valores das doações feitas em adiantamento de legítima, não houver no acervo bens suficientes para igualar as legítimas dos descendentes e do cônjuge, os bens assim doados serão conferidos em espécie, ou, quando deles já não disponha o donatário, pelo seu valor ao tempo da liberalidade.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "68542409d39a9507bf81141d0aab242b36050a6e6ebbce14587ba977c6a45ff1",
+     "o_que_significa": "c54d0b7727c2df6b6146550cad42296c6199ede20518739f317b216df9c3a836",
+     "exemplo_pratico": "4cdc49fa322884824992cb908bd2973e0c4ebebd2cc8514d5481073492cfee85",
+     "atencao": "3b7dd682a4ec9da05def10d338ea29c811bc561aef5346e0efa6beb99169dd25",
+     "palavras_dificeis": "b7e4fdc17e7447089315a905be246258f074266439bb423c1b3fe9471486933c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — A colação iguala legítimas de descendentes e cônjuge, inclusive quando o donatário já não possui o bem; falta de acervo pode exigir espécie ou valor histórico. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 549,
+   "target_id": "CC2002:ART.2004",
+   "explanation_id": "ENTENDA/CC2002:ART.2004/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2004:CAPUT\tO valor de colação dos bens doados será aquele, certo ou estimativo, que lhes atribuir o ato de liberalidade.\nCC2002:ART.2004:PAR.1\to Se do ato de doação não constar valor certo, nem houver estimação feita naquela época, os bens serão conferidos na partilha pelo que então se calcular valessem ao tempo da liberalidade.\nCC2002:ART.2004:PAR.2\to Só o valor dos bens doados entrará em colação; não assim o das benfeitorias acrescidas, as quais pertencerão ao herdeiro donatário, correndo também à conta deste os rendimentos ou lucros, assim como os danos e perdas que eles sofrerem.",
+   "source_snapshot_sha256": "1f856cdf71a26c46e0ae7e9ba3c5f2374a67ad0e7aaaca4ba94278a61e8fe09b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2004:CAPUT",
+     "text": "O valor de colação dos bens doados será aquele, certo ou estimativo, que lhes atribuir o ato de liberalidade."
+    },
+    {
+     "label": "CC2002:ART.2004:PAR.1",
+     "text": "o Se do ato de doação não constar valor certo, nem houver estimação feita naquela época, os bens serão conferidos na partilha pelo que então se calcular valessem ao tempo da liberalidade."
+    },
+    {
+     "label": "CC2002:ART.2004:PAR.2",
+     "text": "o Só o valor dos bens doados entrará em colação; não assim o das benfeitorias acrescidas, as quais pertencerão ao herdeiro donatário, correndo também à conta deste os rendimentos ou lucros, assim como os danos e perdas que eles sofrerem."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: O valor de colação dos bens doados será aquele, certo ou estimativo, que lhes atribuir o ato de liberalidade. | o Se do ato de doação não constar valor certo, nem houver estimação feita naquela época, os bens serão conferidos na partilha pelo que então se calcular valessem ao tempo da liberalidade. | o Só o valor dos bens doados entrará em colação; não assim o das benfeitorias acrescidas, as quais pertencerão ao herdeiro donatário, correndo também à conta deste os rendimentos ou lucros, assim como os danos e perdas que eles sofrerem.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0de9bc2563bfdbe9f3635fd3fc685d996a75073a38c3e43e71e673fadec928ed",
+     "o_que_significa": "87aff5623678aa3866137466688d453424e2faaa340e70261db3b4e8e9212282",
+     "exemplo_pratico": "1b03a644fb288f48644a8d3e5bf7058ee2d240e17e0274c9c9865e3efbce1d14",
+     "atencao": "5f40fc0e0ddfbde2a2721b2d670567fa924df556a001ca71bc787cb83819d699",
+     "palavras_dificeis": "6f4c96f7526628609059391d8613a762ae404c27fe960e4cda8566f7b562396f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — O valor colacionado é o atribuído na doação; sem valor, estima-se o da época, excluindo benfeitorias, rendimentos e riscos posteriores. — foi confrontada com os 3 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 550,
+   "target_id": "CC2002:ART.2005",
+   "explanation_id": "ENTENDA/CC2002:ART.2005/BASE/1",
+   "book": "SUCESSOES",
+   "origin_mission": "CC13",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2005:CAPUT\tSão dispensadas da colação as doações que o doador determinar saiam da parte disponível, contanto que não a excedam, computado o seu valor ao tempo da doação.\nCC2002:ART.2005:PAR.UNICO\tPresume-se imputada na parte disponível a liberalidade feita a descendente que, ao tempo do ato, não seria chamado à sucessão na qualidade de herdeiro necessário.",
+   "source_snapshot_sha256": "9c1590b8efa49ab2b49d246ea70449bdd8aa2c50c05a3bc23da5fe7e0352fe7d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.2005:CAPUT",
+     "text": "São dispensadas da colação as doações que o doador determinar saiam da parte disponível, contanto que não a excedam, computado o seu valor ao tempo da doação."
+    },
+    {
+     "label": "CC2002:ART.2005:PAR.UNICO",
+     "text": "Presume-se imputada na parte disponível a liberalidade feita a descendente que, ao tempo do ato, não seria chamado à sucessão na qualidade de herdeiro necessário."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: São dispensadas da colação as doações que o doador determinar saiam da parte disponível, contanto que não a excedam, computado o seu valor ao tempo da doação. | Presume-se imputada na parte disponível a liberalidade feita a descendente que, ao tempo do ato, não seria chamado à sucessão na qualidade de herdeiro necessário.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1a8bcb878aa7fe91b258df120c6017e195ff16a48d704cd993b95f75e012f95a",
+     "o_que_significa": "a27519e6e0e63ae9787b6dcb22196488b8aba8ac06ef5427a25c4153358b83ab",
+     "exemplo_pratico": "c18b805c582021bcede060221eb15c6d1a8af34c46ed5f331f9ad9e102e4a0bd",
+     "atencao": "0f13d30cbceb761b149adea9f1b7dc5bca4b2aa47f95e3888f2b803518b3cfba",
+     "palavras_dificeis": "578514ae004b794d350574121881e46d365711e54b0320650a6db99cbf1846e5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "A síntese específica do dispositivo — Doação expressamente saída da parte disponível é dispensada da colação até o limite; há presunção para descendente que então não seria herdeiro necessário. — foi confrontada com os 2 segmentos vigentes do texto oficial; os campos de significado, exemplo, atenção e glossário não acrescentam condição incompatível nem omitem elemento material identificado no escopo examinado.",
    "finding": null,
    "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
    "reviewer": "delegated-independent-auditor"
