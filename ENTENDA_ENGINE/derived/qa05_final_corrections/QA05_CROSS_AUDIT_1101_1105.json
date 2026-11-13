@@ -1,0 +1,124 @@
+{
+ "schema_version": 1,
+ "mission": "QA-05",
+ "checkpoint": "CP03",
+ "as_of": "2026-11-13",
+ "status": "DIRECTED_CROSS_AUDIT_COMPLETE",
+ "scope": [
+  "CC2002:ART.1101",
+  "CC2002:ART.1105"
+ ],
+ "new_findings_total": 1,
+ "new_findings": [
+  {
+   "target_id": "CC2002:ART.1104",
+   "problematic_field": "o_que_significa; exemplo_pratico",
+   "problematic_excerpt": "tarefas abrangem publicidade, apuração patrimonial, realização do ativo; apresenta balanço anual",
+   "legal_basis": "O art. 1.104 limita-se a submeter obrigações e responsabilidade do liquidante aos preceitos próprios dos administradores; os deveres operacionais e a prestação semestral pertencem ao art. 1.103.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "DESLOCAMENTO_DE_CONTEUDO_DO_ARTIGO_VIZINHO_E_PERIODICIDADE_INCORRETA",
+   "severity": "ALTO",
+   "legal_or_pedagogical_consequence": "O leitor não recebe a regra de equiparação de responsabilidade e pode atribuir ao art. 1.104 deveres e periodicidade de outro dispositivo.",
+   "correction_direction": "Reconstruir significado e exemplo a partir da equiparação ao regime dos administradores, sem importar lista de deveres do art. 1.103.",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "origin": "QA05_CROSS_AUDIT_1101_1105"
+  }
+ ],
+ "records": [
+  {
+   "target_id": "CC2002:ART.1101",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.1101/BASE/2",
+   "source_snapshot_sha256": "cabbf59d2aa1798aef9119adae2fd0c633e724abb3631dfdb5d32095342506c8",
+   "content_sha256": "76b85e95f022f4fb19ab6ef8e04a7f1791ad3480fdd016ecdcdb847f836253b0",
+   "result": "SEM_NOVO_ACHADO_NO_ESCOPO_DIRIGIDO",
+   "comparison": "A explicação permanece distinta das propostas para 1.102 e 1.103 e conserva a regra própria do dispositivo. O limite de participações recíprocas, a suspensão do voto excedente e o prazo de cento e oitenta dias continuam identificados.",
+   "finding": null,
+   "editorial_action": "NONE",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "target_id": "CC2002:ART.1102",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.1102/BASE/1",
+   "source_snapshot_sha256": "9aaf64106169a0976a762c818905cee73b605b757ff5bc5a3f249a0adb022612",
+   "content_sha256": "935f3bc6fc5cc621dc3bc9fc76079697d28efb704a7ecf9345fbb349f7eae795",
+   "result": "CORRECAO_QA05_RESOLVE_DESLOCAMENTO",
+   "comparison": "A proposta QA-05 passa a tratar exclusivamente da disciplina aplicável à liquidação e da averbação necessária à investidura do liquidante que não era administrador, sem importar deveres do artigo seguinte.",
+   "finding": null,
+   "editorial_action": "PROPOSAL_IN_EDITORIAL_MODULE",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "target_id": "CC2002:ART.1103",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.1103/BASE/1",
+   "source_snapshot_sha256": "86c73f9f32dbc4c41760ce52b723ff70c460aed32ab85db8e34f8cb1e528d964",
+   "content_sha256": "0b4f24bb6360a8e8a916850f01045f48f2b275959244ea157209e5204eb414c7",
+   "result": "CORRECAO_QA05_RESOLVE_DESLOCAMENTO",
+   "comparison": "A proposta QA-05 percorre os nove deveres, os dois marcos temporais e a formalidade do parágrafo único, sem repetir a regra de escolha ou destituição do liquidante.",
+   "finding": null,
+   "editorial_action": "PROPOSAL_IN_EDITORIAL_MODULE",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "target_id": "CC2002:ART.1104",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.1104/BASE/2",
+   "source_snapshot_sha256": "009af2a57d034c800a7293dc99ed1973d8429ed3798d8ea345b3be1c3548a280",
+   "content_sha256": "2ec6ecb07c92455118571c6fe6d8d2d807ae3a7644df33d41a651cd0b85e54a0",
+   "result": "ACHADO_NOVO_FORA_DO_ESCOPO_DE_EDICAO",
+   "comparison": "O artigo 1.104 remete obrigações e responsabilidade do liquidante ao regime dos administradores. A explicação ativa desloca para o significado tarefas do art. 1.103 e usa exemplo de balanço anual, embora a prestação periódica do artigo vizinho seja semestral; o target não foi editado por estar fora da fila original.",
+   "finding": {
+    "target_id": "CC2002:ART.1104",
+    "problematic_field": "o_que_significa; exemplo_pratico",
+    "problematic_excerpt": "tarefas abrangem publicidade, apuração patrimonial, realização do ativo; apresenta balanço anual",
+    "legal_basis": "O art. 1.104 limita-se a submeter obrigações e responsabilidade do liquidante aos preceitos próprios dos administradores; os deveres operacionais e a prestação semestral pertencem ao art. 1.103.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "DESLOCAMENTO_DE_CONTEUDO_DO_ARTIGO_VIZINHO_E_PERIODICIDADE_INCORRETA",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "O leitor não recebe a regra de equiparação de responsabilidade e pode atribuir ao art. 1.104 deveres e periodicidade de outro dispositivo.",
+    "correction_direction": "Reconstruir significado e exemplo a partir da equiparação ao regime dos administradores, sem importar lista de deveres do art. 1.103.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "origin": "QA05_CROSS_AUDIT_1101_1105"
+   },
+   "editorial_action": "NONE",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "target_id": "CC2002:ART.1105",
+   "baseline_explanation_id": "ENTENDA/CC2002:ART.1105/BASE/1",
+   "source_snapshot_sha256": "80e2f26376b044c7c901a8a3d4a8804384e4c4c6951e63a56dcaa4134bd30d11",
+   "content_sha256": "c3e2c8cae3ed0eaa24d8f139d8574084cfa7909bcadd0a5fa92b43d318af349c",
+   "result": "SEM_NOVO_ACHADO_NO_ESCOPO_DIRIGIDO",
+   "comparison": "A explicação permanece distinta das propostas para 1.102 e 1.103 e conserva a regra própria do dispositivo. Poderes ordinários, atos sujeitos a autorização e exceção do empréstimo indispensável continuam diferenciados.",
+   "finding": null,
+   "editorial_action": "NONE",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "accessed_on": "2026-11-13"
+    }
+   ]
+  }
+ ],
+ "independence_note": "No neighboring article outside the original correction queue was edited."
+}
