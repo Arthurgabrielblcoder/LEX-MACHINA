@@ -1,0 +1,1502 @@
+{
+ "schema_version": 1,
+ "mission": "QA-02-WAVE-04",
+ "checkpoint": 22,
+ "as_of": "2026-11-12",
+ "source_queue": "QA02_PENDING_PRIORITY_WAVE_04.json",
+ "source_queue_sha256": "0933db90fea763f457c91b5ea30f1f39a688e6ba3e094f9479cb0bac541828b9",
+ "source_queue_positions": [
+  301,
+  325
+ ],
+ "examined": 25,
+ "target_ids": [
+  "CC2002:ART.1521",
+  "CC2002:ART.1523",
+  "CC2002:ART.1525",
+  "CC2002:ART.1526",
+  "CC2002:ART.1527",
+  "CC2002:ART.1534",
+  "CC2002:ART.1535",
+  "CC2002:ART.1536",
+  "CC2002:ART.1539",
+  "CC2002:ART.1540",
+  "CC2002:ART.1541",
+  "CC2002:ART.1542",
+  "CC2002:ART.1544",
+  "CC2002:ART.1545",
+  "CC2002:ART.1546",
+  "CC2002:ART.1547",
+  "CC2002:ART.1548",
+  "CC2002:ART.1549",
+  "CC2002:ART.1550",
+  "CC2002:ART.1551",
+  "CC2002:ART.1552",
+  "CC2002:ART.1553",
+  "CC2002:ART.1554",
+  "CC2002:ART.1555",
+  "CC2002:ART.1556"
+ ],
+ "findings": 0,
+ "finding_counts": {},
+ "protected_sha256": {
+  "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+  "lookup": "60f1de336f2f9ecbc5e671d0a6a9223cf20e47ab5826a5501b53f9a67551866e",
+  "payload": "9fb3f3a1b6f1c1926eda0818fc753f2d0348194cf25b0a333fc6fa18c48222cb"
+ },
+ "records": [
+  {
+   "queue_position": 301,
+   "target_id": "CC2002:ART.1521",
+   "explanation_id": "ENTENDA/CC2002:ART.1521/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1521:CAPUT\tNão podem casar:\nCC2002:ART.1521:INC.I\tos ascendentes com os descendentes, seja o parentesco natural ou civil;\nCC2002:ART.1521:INC.II\tos afins em linha reta;\nCC2002:ART.1521:INC.III\to adotante com quem foi cônjuge do adotado e o adotado com quem o foi do adotante;\nCC2002:ART.1521:INC.IV\tos irmãos, unilaterais ou bilaterais, e demais colaterais, até o terceiro grau inclusive;\nCC2002:ART.1521:INC.V\to adotado com o filho do adotante;\nCC2002:ART.1521:INC.VI\tas pessoas casadas;\nCC2002:ART.1521:INC.VII\to cônjuge sobrevivente com o condenado por homicídio ou tentativa de homicídio contra o seu consorte.",
+   "source_snapshot_sha256": "a86d14c56cf673f97cd1be3ba070652a0f8bdc3ea91fd8a1726b4c217c591ea1",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1521:CAPUT",
+     "text": "Não podem casar:"
+    },
+    {
+     "label": "CC2002:ART.1521:INC.I",
+     "text": "os ascendentes com os descendentes, seja o parentesco natural ou civil;"
+    },
+    {
+     "label": "CC2002:ART.1521:INC.II",
+     "text": "os afins em linha reta;"
+    },
+    {
+     "label": "CC2002:ART.1521:INC.III",
+     "text": "o adotante com quem foi cônjuge do adotado e o adotado com quem o foi do adotante;"
+    },
+    {
+     "label": "CC2002:ART.1521:INC.IV",
+     "text": "os irmãos, unilaterais ou bilaterais, e demais colaterais, até o terceiro grau inclusive;"
+    },
+    {
+     "label": "CC2002:ART.1521:INC.V",
+     "text": "o adotado com o filho do adotante;"
+    },
+    {
+     "label": "CC2002:ART.1521:INC.VI",
+     "text": "as pessoas casadas;"
+    },
+    {
+     "label": "CC2002:ART.1521:INC.VII",
+     "text": "o cônjuge sobrevivente com o condenado por homicídio ou tentativa de homicídio contra o seu consorte."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 8 segmentos vigentes do dispositivo: Não podem casar: | os ascendentes com os descendentes, seja o parentesco natural ou civil; | os afins em linha reta; | o adotante com quem foi cônjuge do adotado e o adotado com quem o foi do adotante; | os irmãos, unilaterais ou bilaterais, e demais colaterais, até o terceiro grau inclusive; | o adotado com o filho do adotante; | as pessoas casadas; | o cônjuge sobrevivente com o condenado por homicídio ou tentativa de homicídio contra o seu consorte.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8e6b3d11b56cb9a26f1ab0803e0e99f544f01a7dc83c39c936f0bc2413653275",
+     "o_que_significa": "cbbd28c8f8c88fdf5ddbf68c673f3a86421b28b9495908d075b30a70cb29b9b5",
+     "exemplo_pratico": "1b07f331d14006df1cb8b629c6f15eb7a3338970ecd97d9b08ec665601201b00",
+     "atencao": "312910e798d6ab497a8479fba8be6b2248a9752d37a9a8a95cdc403691f54ad0",
+     "palavras_dificeis": "8819e699a31f6c688a427e9f9b22a01c92eb01dc5975252ca1318c1e073d3952"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 8 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Não podem casar:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 302,
+   "target_id": "CC2002:ART.1523",
+   "explanation_id": "ENTENDA/CC2002:ART.1523/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1523:CAPUT\tNão devem casar:\nCC2002:ART.1523:INC.I\to viúvo ou a viúva que tiver filho do cônjuge falecido, enquanto não fizer inventário dos bens do casal e der partilha aos herdeiros;\nCC2002:ART.1523:INC.II\ta viúva, ou a mulher cujo casamento se desfez por ser nulo ou ter sido anulado, até dez meses depois do começo da viuvez, ou da dissolução da sociedade conjugal;\nCC2002:ART.1523:INC.III\to divorciado, enquanto não houver sido homologada ou decidida a partilha dos bens do casal;\nCC2002:ART.1523:INC.IV\to tutor ou o curador e os seus descendentes, ascendentes, irmãos, cunhados ou sobrinhos, com a pessoa tutelada ou curatelada, enquanto não cessar a tutela ou curatela, e não estiverem saldadas as respectivas contas.\nCC2002:ART.1523:PAR.UNICO\tÉ permitido aos nubentes solicitar ao juiz que não lhes sejam aplicadas as causas suspensivas previstas nos incisos I, III e IV deste artigo, provando-se a inexistência de prejuízo, respectivamente, para o herdeiro, para o ex-cônjuge e para a pessoa tutelada ou curatelada; no caso do inciso II, a nubente deverá provar nascimento de filho, ou inexistência de gravidez, na fluência do prazo.",
+   "source_snapshot_sha256": "49204b5c963b695109e54c64dafa3e3cf09582c2c9d4805741e5a3e38023743a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1523:CAPUT",
+     "text": "Não devem casar:"
+    },
+    {
+     "label": "CC2002:ART.1523:INC.I",
+     "text": "o viúvo ou a viúva que tiver filho do cônjuge falecido, enquanto não fizer inventário dos bens do casal e der partilha aos herdeiros;"
+    },
+    {
+     "label": "CC2002:ART.1523:INC.II",
+     "text": "a viúva, ou a mulher cujo casamento se desfez por ser nulo ou ter sido anulado, até dez meses depois do começo da viuvez, ou da dissolução da sociedade conjugal;"
+    },
+    {
+     "label": "CC2002:ART.1523:INC.III",
+     "text": "o divorciado, enquanto não houver sido homologada ou decidida a partilha dos bens do casal;"
+    },
+    {
+     "label": "CC2002:ART.1523:INC.IV",
+     "text": "o tutor ou o curador e os seus descendentes, ascendentes, irmãos, cunhados ou sobrinhos, com a pessoa tutelada ou curatelada, enquanto não cessar a tutela ou curatela, e não estiverem saldadas as respectivas contas."
+    },
+    {
+     "label": "CC2002:ART.1523:PAR.UNICO",
+     "text": "É permitido aos nubentes solicitar ao juiz que não lhes sejam aplicadas as causas suspensivas previstas nos incisos I, III e IV deste artigo, provando-se a inexistência de prejuízo, respectivamente, para o herdeiro, para o ex-cônjuge e para a pessoa tutelada ou curatelada; no caso do inciso II, a nubente deverá provar nascimento de filho, ou inexistência de gravidez, na fluência do prazo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 6 segmentos vigentes do dispositivo: Não devem casar: | o viúvo ou a viúva que tiver filho do cônjuge falecido, enquanto não fizer inventário dos bens do casal e der partilha aos herdeiros; | a viúva, ou a mulher cujo casamento se desfez por ser nulo ou ter sido anulado, até dez meses depois do começo da viuvez, ou da dissolução da sociedade conjugal; | o divorciado, enquanto não houver sido homologada ou decidida a partilha dos bens do casal; | o tutor ou o curador e os seus descendentes, ascendentes, irmãos, cunhados ou sobrinhos, com a pessoa tutelada ou curatelada, enquanto não cessar a tutela ou curatela, e não estiverem saldadas as respectivas contas. | É permitido aos nubentes solicitar ao juiz que não lhes sejam aplicadas as causas suspensivas previstas nos incisos I, III e IV deste artigo, provando-se a inexistência de prejuízo, respectivamente, para o herdeiro, para o ex-cônjuge e para a pessoa tutelada ou curatelada; no caso do inciso II, a nubente deverá provar nascimento de filho, ou inexistência de gravidez, na fluência do prazo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "29ce7e853cb25380ba1265d7b96a37ddacb09184ee016e02c740ac18bd841992",
+     "o_que_significa": "5bf451f085a8a7ecf1a2127d3d1e49d9f2efeb7b40faa5151093a46122484eb4",
+     "exemplo_pratico": "399abd1246ae2e9f7a933dc986199dd9174eb2b675fbe9c0de4caeff00a2bcfb",
+     "atencao": "a20a1931670564baeb8c10ed2f9784a1d7b1495db857b814532461c4db577d45",
+     "palavras_dificeis": "6bbec0d45d85c3052bbdbadb13adf2855c39c2466546b9c77d74151088012a61"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 6 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Não devem casar:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 303,
+   "target_id": "CC2002:ART.1525",
+   "explanation_id": "ENTENDA/CC2002:ART.1525/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1525:CAPUT\tO requerimento de habilitação para o casamento será firmado por ambos os nubentes, de próprio punho, ou, a seu pedido, por procurador, e deve ser instruído com os seguintes documentos:\nCC2002:ART.1525:INC.I\tcertidão de nascimento ou documento equivalente;\nCC2002:ART.1525:INC.II\tautorização por escrito das pessoas sob cuja dependência legal estiverem, ou ato judicial que a supra;\nCC2002:ART.1525:INC.III\tdeclaração de duas testemunhas maiores, parentes ou não, que atestem conhecê-los e afirmem não existir impedimento que os iniba de casar;\nCC2002:ART.1525:INC.IV\tdeclaração do estado civil, do domicílio e da residência atual dos contraentes e de seus pais, se forem conhecidos;\nCC2002:ART.1525:INC.V\tcertidão de óbito do cônjuge falecido, de sentença declaratória de nulidade ou de anulação de casamento, transitada em julgado, ou do registro da sentença de divórcio.",
+   "source_snapshot_sha256": "df85dcdf2b35e7db07e88b2299a0539e803c3b60deba58a4be8be8a1a1d7514b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1525:CAPUT",
+     "text": "O requerimento de habilitação para o casamento será firmado por ambos os nubentes, de próprio punho, ou, a seu pedido, por procurador, e deve ser instruído com os seguintes documentos:"
+    },
+    {
+     "label": "CC2002:ART.1525:INC.I",
+     "text": "certidão de nascimento ou documento equivalente;"
+    },
+    {
+     "label": "CC2002:ART.1525:INC.II",
+     "text": "autorização por escrito das pessoas sob cuja dependência legal estiverem, ou ato judicial que a supra;"
+    },
+    {
+     "label": "CC2002:ART.1525:INC.III",
+     "text": "declaração de duas testemunhas maiores, parentes ou não, que atestem conhecê-los e afirmem não existir impedimento que os iniba de casar;"
+    },
+    {
+     "label": "CC2002:ART.1525:INC.IV",
+     "text": "declaração do estado civil, do domicílio e da residência atual dos contraentes e de seus pais, se forem conhecidos;"
+    },
+    {
+     "label": "CC2002:ART.1525:INC.V",
+     "text": "certidão de óbito do cônjuge falecido, de sentença declaratória de nulidade ou de anulação de casamento, transitada em julgado, ou do registro da sentença de divórcio."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 6 segmentos vigentes do dispositivo: O requerimento de habilitação para o casamento será firmado por ambos os nubentes, de próprio punho, ou, a seu pedido, por procurador, e deve ser instruído com os seguintes documentos: | certidão de nascimento ou documento equivalente; | autorização por escrito das pessoas sob cuja dependência legal estiverem, ou ato judicial que a supra; | declaração de duas testemunhas maiores, parentes ou não, que atestem conhecê-los e afirmem não existir impedimento que os iniba de casar; | declaração do estado civil, do domicílio e da residência atual dos contraentes e de seus pais, se forem conhecidos; | certidão de óbito do cônjuge falecido, de sentença declaratória de nulidade ou de anulação de casamento, transitada em julgado, ou do registro da sentença de divórcio.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "fd8e8233e82c4281eade1d69a4297fcf14e16f6ed7be932bcaee2406d679a2d0",
+     "o_que_significa": "5e817af563ee86215903e25cc34cd785526d730f5831a68c920bb18812c2ef7c",
+     "exemplo_pratico": "9f70f6ca2a63e7a6a7660fc4b0cc02b532a97c17a236cbf431b797cbe3abda8f",
+     "atencao": "213e2408e8621d86bfc99c8bfb1d629913f75ea62b2efc4aea6119412a7dcae7",
+     "palavras_dificeis": "0ff28d3d08dc80276470a1e22ebe03ed539428898bc07abe37d5abc7f3e9997b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 6 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O requerimento de habilitação para o casamento será firmado por ambos os nubentes, de próprio punho, ou, a seu pedido, por procurador, e deve ser instruído com os seguintes documentos:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 304,
+   "target_id": "CC2002:ART.1526",
+   "explanation_id": "ENTENDA/CC2002:ART.1526/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1526:CAPUT\tA habilitação será feita pessoalmente perante o oficial do Registro Civil, com a audiência do Ministério Público. (Redação dada pela Lei nº 12.133, de 2009) Vigência\nCC2002:ART.1526:PAR.UNICO\tCaso haja impugnação do oficial, do Ministério Público ou de terceiro, a habilitação será submetida ao juiz. (Incluído pela Lei nº 12.133, de 2009) Vigência",
+   "source_snapshot_sha256": "68ce7a9e10f1045ccd068e14a1bef820de581530f6f3e94c5b694a7c8ce9a17c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1526:CAPUT",
+     "text": "A habilitação será feita pessoalmente perante o oficial do Registro Civil, com a audiência do Ministério Público. (Redação dada pela Lei nº 12.133, de 2009) Vigência"
+    },
+    {
+     "label": "CC2002:ART.1526:PAR.UNICO",
+     "text": "Caso haja impugnação do oficial, do Ministério Público ou de terceiro, a habilitação será submetida ao juiz. (Incluído pela Lei nº 12.133, de 2009) Vigência"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A habilitação será feita pessoalmente perante o oficial do Registro Civil, com a audiência do Ministério Público. (Redação dada pela Lei nº 12.133, de 2009) Vigência | Caso haja impugnação do oficial, do Ministério Público ou de terceiro, a habilitação será submetida ao juiz. (Incluído pela Lei nº 12.133, de 2009) Vigência",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ee3b2c3860894cd9bb2f129d6065e3abe80b39409b29fe28190b4b5d355f7b5f",
+     "o_que_significa": "68a7831a469c7a849babb0e09b7cd5f80a379533679a5d317f8e07dd8f262293",
+     "exemplo_pratico": "f876d0b005438df8e8f952d16e170a9cc70bf5fd3a9d73849118b143b5461674",
+     "atencao": "940d276e7f27c2fb5955ab13d075c9349e15cd80a7097cc74438dca8aae1a49d",
+     "palavras_dificeis": "0568c6445f1bb2a9e15627f1706e66874622d0bf70ce37f99780c58970a8474d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 2 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que A habilitação será feita pessoalmente perante o oficial do Registro Civil, com a audiência do Ministério Público. (Redação dada pela Lei nº 12.133, de 2009) Vigência; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 305,
+   "target_id": "CC2002:ART.1527",
+   "explanation_id": "ENTENDA/CC2002:ART.1527/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1527:CAPUT\tEstando em ordem a documentação, o oficial extrairá o edital, que se afixará durante quinze dias nas circunscrições do Registro Civil de ambos os nubentes, e, obrigatoriamente, se publicará na imprensa local, se houver.\nCC2002:ART.1527:PAR.UNICO\tA autoridade competente, havendo urgência, poderá dispensar a publicação.",
+   "source_snapshot_sha256": "6874774f2c1541ac8c4ddfb6516837a4784a29ca8eaae71945c992783c32d40e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1527:CAPUT",
+     "text": "Estando em ordem a documentação, o oficial extrairá o edital, que se afixará durante quinze dias nas circunscrições do Registro Civil de ambos os nubentes, e, obrigatoriamente, se publicará na imprensa local, se houver."
+    },
+    {
+     "label": "CC2002:ART.1527:PAR.UNICO",
+     "text": "A autoridade competente, havendo urgência, poderá dispensar a publicação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Estando em ordem a documentação, o oficial extrairá o edital, que se afixará durante quinze dias nas circunscrições do Registro Civil de ambos os nubentes, e, obrigatoriamente, se publicará na imprensa local, se houver. | A autoridade competente, havendo urgência, poderá dispensar a publicação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "bba0fd622c0c5b1c6ef95c6597d80530d0a36af65b4fb3bb7fa5a69d6c3a57e3",
+     "o_que_significa": "93bf713f1739d3e7bff80691ffcd4a96065afbd4b63b7842daef8000303e1d38",
+     "exemplo_pratico": "b234d74e0b4d45c7885d6d2367f9a90729a73628be8e37993a78b100077ff730",
+     "atencao": "48dafd10a64230bdd33d59c4a60128aff43e38781ee1b9279f330b98f733ddb4",
+     "palavras_dificeis": "2a964066a4b7ebae1e5c7f1aef59f76066f34a14e530a0bf083caef17ae1445b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 2 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Estando em ordem a documentação, o oficial extrairá o edital, que se afixará durante quinze dias nas circunscrições do Registro Civil de ambos os nubentes, e, obrigatoriamente, se publicará na imprensa local, se houver; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 306,
+   "target_id": "CC2002:ART.1534",
+   "explanation_id": "ENTENDA/CC2002:ART.1534/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1534:CAPUT\tA solenidade realizar-se-á na sede do cartório, com toda publicidade, a portas abertas, presentes pelo menos duas testemunhas, parentes ou não dos contraentes, ou, querendo as partes e consentindo a autoridade celebrante, noutro edifício público ou particular.\nCC2002:ART.1534:PAR.1\to Quando o casamento for em edifício particular, ficará este de portas abertas durante o ato.\nCC2002:ART.1534:PAR.2\to Serão quatro as testemunhas na hipótese do parágrafo anterior e se algum dos contraentes não souber ou não puder escrever.",
+   "source_snapshot_sha256": "d4d2a95e0eb8e676b225335ffe2a38655d1b200d1c8228c9c463d38add31ca8f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1534:CAPUT",
+     "text": "A solenidade realizar-se-á na sede do cartório, com toda publicidade, a portas abertas, presentes pelo menos duas testemunhas, parentes ou não dos contraentes, ou, querendo as partes e consentindo a autoridade celebrante, noutro edifício público ou particular."
+    },
+    {
+     "label": "CC2002:ART.1534:PAR.1",
+     "text": "o Quando o casamento for em edifício particular, ficará este de portas abertas durante o ato."
+    },
+    {
+     "label": "CC2002:ART.1534:PAR.2",
+     "text": "o Serão quatro as testemunhas na hipótese do parágrafo anterior e se algum dos contraentes não souber ou não puder escrever."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: A solenidade realizar-se-á na sede do cartório, com toda publicidade, a portas abertas, presentes pelo menos duas testemunhas, parentes ou não dos contraentes, ou, querendo as partes e consentindo a autoridade celebrante, noutro edifício público ou particular. | o Quando o casamento for em edifício particular, ficará este de portas abertas durante o ato. | o Serão quatro as testemunhas na hipótese do parágrafo anterior e se algum dos contraentes não souber ou não puder escrever.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "fa87f729d68274cb08a1411ff93988b902d74b03a404a7cf2e957b8a412e6fef",
+     "o_que_significa": "c97ec44664668a44b969c58f95bea0832eb86c376a09e34412d3ce429a2e24ef",
+     "exemplo_pratico": "b7d6d1822d3683a3d91e5138abb30b6fd5a4631d35cb7611b98481b253bd8a32",
+     "atencao": "231a7634df824cc3c01d4f4ca0c27c6c624eb76dfa0d24d00b3f51aacb99cf78",
+     "palavras_dificeis": "41438a3308cdc04c6ed373ca9d04bc0ed7a5cb65568a381cb616e509031169fc"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 3 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que A solenidade realizar-se-á na sede do cartório, com toda publicidade, a portas abertas, presentes pelo menos duas testemunhas, parentes ou não dos contraentes, ou, querendo as partes e consentindo a autoridade celebrante; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 307,
+   "target_id": "CC2002:ART.1535",
+   "explanation_id": "ENTENDA/CC2002:ART.1535/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1535:CAPUT\tPresentes os contraentes, em pessoa ou por procurador especial, juntamente com as testemunhas e o oficial do registro, o presidente do ato, ouvida aos nubentes a afirmação de que pretendem casar por livre e espontânea vontade, declarará efetuado o casamento, nestes termos:\"De acordo com a vontade que ambos acabais de afirmar perante mim, de vos receberdes por marido e mulher, eu, em nome da lei, vos declaro casados.\"",
+   "source_snapshot_sha256": "b9df2f33e8f86034210b171ec7711bc1a0bb96b3db3f54b6d826f9664895b3d1",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1535:CAPUT",
+     "text": "Presentes os contraentes, em pessoa ou por procurador especial, juntamente com as testemunhas e o oficial do registro, o presidente do ato, ouvida aos nubentes a afirmação de que pretendem casar por livre e espontânea vontade, declarará efetuado o casamento, nestes termos:\"De acordo com a vontade que ambos acabais de afirmar perante mim, de vos receberdes por marido e mulher, eu, em nome da lei, vos declaro casados.\""
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Presentes os contraentes, em pessoa ou por procurador especial, juntamente com as testemunhas e o oficial do registro, o presidente do ato, ouvida aos nubentes a afirmação de que pretendem casar por livre e espontânea vontade, declarará efetuado o casamento, nestes termos:\"De acordo com a vontade que ambos acabais de afirmar perante mim, de vos receberdes por marido e mulher, eu, em nome da lei, vos declaro casados.\"",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "be0fd83a3332d96a4e95cfba4d27d3ef45337a0f87223b8414dbe95757f9781e",
+     "o_que_significa": "fdb081278939fa9e0f6c2663d379b257aac518dd45b813a615e1a1fdf701320a",
+     "exemplo_pratico": "bc8babeb05e0a69545aeed16ee4c77f951ebfb2847c0138ade7e1b47de6c27b6",
+     "atencao": "656a03f456ee27dca48068611ef56f6ed91f791138c23ee83cffbc5d0bd686d2",
+     "palavras_dificeis": "c924c88dcea54c4fc359344364ea88fafb3ad89400c99878000ea1aa7a4050a9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Presentes os contraentes, em pessoa ou por procurador especial, juntamente com as testemunhas e o oficial do registro, o presidente do ato, ouvida aos nubentes a afirmação de que pretendem casar por livre e espontânea vo; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 308,
+   "target_id": "CC2002:ART.1536",
+   "explanation_id": "ENTENDA/CC2002:ART.1536/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1536:CAPUT\tDo casamento, logo depois de celebrado, lavrar-se-á o assento no livro de registro. No assento, assinado pelo presidente do ato, pelos cônjuges, as testemunhas, e o oficial do registro, serão exarados:\nCC2002:ART.1536:INC.I\tos prenomes, sobrenomes, datas de nascimento, profissão, domicílio e residência atual dos cônjuges;\nCC2002:ART.1536:INC.II\tos prenomes, sobrenomes, datas de nascimento ou de morte, domicílio e residência atual dos pais;\nCC2002:ART.1536:INC.III\to prenome e sobrenome do cônjuge precedente e a data da dissolução do casamento anterior;\nCC2002:ART.1536:INC.IV\ta data da publicação dos proclamas e da celebração do casamento;\nCC2002:ART.1536:INC.V\ta relação dos documentos apresentados ao oficial do registro;\nCC2002:ART.1536:INC.VI\to prenome, sobrenome, profissão, domicílio e residência atual das testemunhas;\nCC2002:ART.1536:INC.VII\to regime do casamento, com a declaração da data e do cartório em cujas notas foi lavrada a escritura antenupcial, quando o regime não for o da comunhão parcial, ou o obrigatoriamente estabelecido.",
+   "source_snapshot_sha256": "6a51b56e3a07cdf511a72206691266fd4c91702ad091d3f1c45307d0656884e0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1536:CAPUT",
+     "text": "Do casamento, logo depois de celebrado, lavrar-se-á o assento no livro de registro. No assento, assinado pelo presidente do ato, pelos cônjuges, as testemunhas, e o oficial do registro, serão exarados:"
+    },
+    {
+     "label": "CC2002:ART.1536:INC.I",
+     "text": "os prenomes, sobrenomes, datas de nascimento, profissão, domicílio e residência atual dos cônjuges;"
+    },
+    {
+     "label": "CC2002:ART.1536:INC.II",
+     "text": "os prenomes, sobrenomes, datas de nascimento ou de morte, domicílio e residência atual dos pais;"
+    },
+    {
+     "label": "CC2002:ART.1536:INC.III",
+     "text": "o prenome e sobrenome do cônjuge precedente e a data da dissolução do casamento anterior;"
+    },
+    {
+     "label": "CC2002:ART.1536:INC.IV",
+     "text": "a data da publicação dos proclamas e da celebração do casamento;"
+    },
+    {
+     "label": "CC2002:ART.1536:INC.V",
+     "text": "a relação dos documentos apresentados ao oficial do registro;"
+    },
+    {
+     "label": "CC2002:ART.1536:INC.VI",
+     "text": "o prenome, sobrenome, profissão, domicílio e residência atual das testemunhas;"
+    },
+    {
+     "label": "CC2002:ART.1536:INC.VII",
+     "text": "o regime do casamento, com a declaração da data e do cartório em cujas notas foi lavrada a escritura antenupcial, quando o regime não for o da comunhão parcial, ou o obrigatoriamente estabelecido."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 8 segmentos vigentes do dispositivo: Do casamento, logo depois de celebrado, lavrar-se-á o assento no livro de registro. No assento, assinado pelo presidente do ato, pelos cônjuges, as testemunhas, e o oficial do registro, serão exarados: | os prenomes, sobrenomes, datas de nascimento, profissão, domicílio e residência atual dos cônjuges; | os prenomes, sobrenomes, datas de nascimento ou de morte, domicílio e residência atual dos pais; | o prenome e sobrenome do cônjuge precedente e a data da dissolução do casamento anterior; | a data da publicação dos proclamas e da celebração do casamento; | a relação dos documentos apresentados ao oficial do registro; | o prenome, sobrenome, profissão, domicílio e residência atual das testemunhas; | o regime do casamento, com a declaração da data e do cartório em cujas notas foi lavrada a escritura antenupcial, quando o regime não for o da comunhão parcial, ou o obrigatoriamente estabelecido.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ddea59eea6e951e95341b412b3a5201f4208bdc11f9ea89806d330dcf5af366a",
+     "o_que_significa": "e43fe6a4cb206ebfe0530db1154ceeaa52cd35594cc8cf3e4b111134cd934dc5",
+     "exemplo_pratico": "2b3dd87e99561b60f1370a5ac01ec74578a8c38849ec69b93e135906715dab47",
+     "atencao": "046e73289f81d993b3ac907c7140df94fd51dbd65f1b6e138cfb8ced2922ec2c",
+     "palavras_dificeis": "f21367879e28c0a42820f7946872aa26d9ab5abf6706f891631abaf8bf5210c7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 8 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Do casamento, logo depois de celebrado, lavrar-se-á o assento no livro de registro. No assento, assinado pelo presidente do ato, pelos cônjuges, as testemunhas, e o oficial do registro, serão exarados:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 309,
+   "target_id": "CC2002:ART.1539",
+   "explanation_id": "ENTENDA/CC2002:ART.1539/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1539:CAPUT\tNo caso de moléstia grave de um dos nubentes, o presidente do ato irá celebrá-lo onde se encontrar o impedido, sendo urgente, ainda que à noite, perante duas testemunhas que saibam ler e escrever.\nCC2002:ART.1539:PAR.1\to A falta ou impedimento da autoridade competente para presidir o casamento suprir-se-á por qualquer dos seus substitutos legais, e a do oficial do Registro Civil por outro ad hoc, nomeado pelo presidente do ato.\nCC2002:ART.1539:PAR.2\to O termo avulso, lavrado pelo oficial ad hoc, será registrado no respectivo registro dentro em cinco dias, perante duas testemunhas, ficando arquivado.",
+   "source_snapshot_sha256": "b027c57fd4c23e9be9e3b3e46221b43c91b38d87d17b1323a5d4024c36f54ca8",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1539:CAPUT",
+     "text": "No caso de moléstia grave de um dos nubentes, o presidente do ato irá celebrá-lo onde se encontrar o impedido, sendo urgente, ainda que à noite, perante duas testemunhas que saibam ler e escrever."
+    },
+    {
+     "label": "CC2002:ART.1539:PAR.1",
+     "text": "o A falta ou impedimento da autoridade competente para presidir o casamento suprir-se-á por qualquer dos seus substitutos legais, e a do oficial do Registro Civil por outro ad hoc, nomeado pelo presidente do ato."
+    },
+    {
+     "label": "CC2002:ART.1539:PAR.2",
+     "text": "o O termo avulso, lavrado pelo oficial ad hoc, será registrado no respectivo registro dentro em cinco dias, perante duas testemunhas, ficando arquivado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: No caso de moléstia grave de um dos nubentes, o presidente do ato irá celebrá-lo onde se encontrar o impedido, sendo urgente, ainda que à noite, perante duas testemunhas que saibam ler e escrever. | o A falta ou impedimento da autoridade competente para presidir o casamento suprir-se-á por qualquer dos seus substitutos legais, e a do oficial do Registro Civil por outro ad hoc, nomeado pelo presidente do ato. | o O termo avulso, lavrado pelo oficial ad hoc, será registrado no respectivo registro dentro em cinco dias, perante duas testemunhas, ficando arquivado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d22696075e82f47efe0143b45f5860a0c6718e52f29770c87ee7c67c99141793",
+     "o_que_significa": "9f26ed17f141fa80b0c17b7ed6499b1c11ed70c9b4b1538a4a941f6f894f293b",
+     "exemplo_pratico": "39a85a900a4784f12267489578c87f56cabee793e13b7e75396158bbeee413cf",
+     "atencao": "b0164c688e0d7e502437a161cebfcdf0af580c0063c2778fe5be919dd2c0796f",
+     "palavras_dificeis": "31d59f70e0c9ec3b5b95c98ef422cd445314260ece7596e4dcb7ccea4cc052a3"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 3 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que No caso de moléstia grave de um dos nubentes, o presidente do ato irá celebrá-lo onde se encontrar o impedido, sendo urgente, ainda que à noite, perante duas testemunhas que saibam ler e escrever; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 310,
+   "target_id": "CC2002:ART.1540",
+   "explanation_id": "ENTENDA/CC2002:ART.1540/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1540:CAPUT\tQuando algum dos contraentes estiver em iminente risco de vida, não obtendo a presença da autoridade à qual incumba presidir o ato, nem a de seu substituto, poderá o casamento ser celebrado na presença de seis testemunhas, que com os nubentes não tenham parentesco em linha reta, ou, na colateral, até segundo grau.",
+   "source_snapshot_sha256": "ef401929f9d2fbe0c865b5f230c837c2a3f91b0a0e3cc167e9af83419363efdd",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1540:CAPUT",
+     "text": "Quando algum dos contraentes estiver em iminente risco de vida, não obtendo a presença da autoridade à qual incumba presidir o ato, nem a de seu substituto, poderá o casamento ser celebrado na presença de seis testemunhas, que com os nubentes não tenham parentesco em linha reta, ou, na colateral, até segundo grau."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Quando algum dos contraentes estiver em iminente risco de vida, não obtendo a presença da autoridade à qual incumba presidir o ato, nem a de seu substituto, poderá o casamento ser celebrado na presença de seis testemunhas, que com os nubentes não tenham parentesco em linha reta, ou, na colateral, até segundo grau.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4c60203f7d3f99f88ee6eeb246e0cbebc00bcff983a5ccec97a1cd825bec7d93",
+     "o_que_significa": "5205147d70c73b21424d9981ec100ae93f25dbf464ee1ee1c471c769a124556f",
+     "exemplo_pratico": "ab54b8ad538a4323356d3859ccf895bea180b6ee03faf5dca0e7931ad3669564",
+     "atencao": "f6cda2be80eab2c92f1d02b6e221e26faf23bc2de8c5ebbd56870df1c321f8f4",
+     "palavras_dificeis": "52a082eedac22c26faa4a4c2f69385c4d10bdf33db09a276a483ea26a88dccc9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Quando algum dos contraentes estiver em iminente risco de vida, não obtendo a presença da autoridade à qual incumba presidir o ato, nem a de seu substituto, poderá o casamento ser celebrado na presença de seis testemunha; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 311,
+   "target_id": "CC2002:ART.1541",
+   "explanation_id": "ENTENDA/CC2002:ART.1541/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1541:CAPUT\tRealizado o casamento, devem as testemunhas comparecer perante a autoridade judicial mais próxima, dentro em dez dias, pedindo que lhes tome por termo a declaração de:\nCC2002:ART.1541:INC.I\tque foram convocadas por parte do enfermo;\nCC2002:ART.1541:INC.II\tque este parecia em perigo de vida, mas em seu juízo;\nCC2002:ART.1541:INC.III\tque, em sua presença, declararam os contraentes, livre e espontaneamente, receber-se por marido e mulher.\nCC2002:ART.1541:PAR.1\to Autuado o pedido e tomadas as declarações, o juiz procederá às diligências necessárias para verificar se os contraentes podiam ter-se habilitado, na forma ordinária, ouvidos os interessados que o requererem, dentro em quinze dias.\nCC2002:ART.1541:PAR.2\to Verificada a idoneidade dos cônjuges para o casamento, assim o decidirá a autoridade competente, com recurso voluntário às partes.\nCC2002:ART.1541:PAR.3\to Se da decisão não se tiver recorrido, ou se ela passar em julgado, apesar dos recursos interpostos, o juiz mandará registrá-la no livro do Registro dos Casamentos.\nCC2002:ART.1541:PAR.4\to O assento assim lavrado retrotrairá os efeitos do casamento, quanto ao estado dos cônjuges, à data da celebração.\nCC2002:ART.1541:PAR.5\to Serão dispensadas as formalidades deste e do artigo antecedente, se o enfermo convalescer e puder ratificar o casamento na presença da autoridade competente e do oficial do registro.",
+   "source_snapshot_sha256": "f5d96a0b398f3b59fdfc4407d9d0ec1de78ba9c0106e5cf4de63b8ce6ddd4650",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1541:CAPUT",
+     "text": "Realizado o casamento, devem as testemunhas comparecer perante a autoridade judicial mais próxima, dentro em dez dias, pedindo que lhes tome por termo a declaração de:"
+    },
+    {
+     "label": "CC2002:ART.1541:INC.I",
+     "text": "que foram convocadas por parte do enfermo;"
+    },
+    {
+     "label": "CC2002:ART.1541:INC.II",
+     "text": "que este parecia em perigo de vida, mas em seu juízo;"
+    },
+    {
+     "label": "CC2002:ART.1541:INC.III",
+     "text": "que, em sua presença, declararam os contraentes, livre e espontaneamente, receber-se por marido e mulher."
+    },
+    {
+     "label": "CC2002:ART.1541:PAR.1",
+     "text": "o Autuado o pedido e tomadas as declarações, o juiz procederá às diligências necessárias para verificar se os contraentes podiam ter-se habilitado, na forma ordinária, ouvidos os interessados que o requererem, dentro em quinze dias."
+    },
+    {
+     "label": "CC2002:ART.1541:PAR.2",
+     "text": "o Verificada a idoneidade dos cônjuges para o casamento, assim o decidirá a autoridade competente, com recurso voluntário às partes."
+    },
+    {
+     "label": "CC2002:ART.1541:PAR.3",
+     "text": "o Se da decisão não se tiver recorrido, ou se ela passar em julgado, apesar dos recursos interpostos, o juiz mandará registrá-la no livro do Registro dos Casamentos."
+    },
+    {
+     "label": "CC2002:ART.1541:PAR.4",
+     "text": "o O assento assim lavrado retrotrairá os efeitos do casamento, quanto ao estado dos cônjuges, à data da celebração."
+    },
+    {
+     "label": "CC2002:ART.1541:PAR.5",
+     "text": "o Serão dispensadas as formalidades deste e do artigo antecedente, se o enfermo convalescer e puder ratificar o casamento na presença da autoridade competente e do oficial do registro."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 9 segmentos vigentes do dispositivo: Realizado o casamento, devem as testemunhas comparecer perante a autoridade judicial mais próxima, dentro em dez dias, pedindo que lhes tome por termo a declaração de: | que foram convocadas por parte do enfermo; | que este parecia em perigo de vida, mas em seu juízo; | que, em sua presença, declararam os contraentes, livre e espontaneamente, receber-se por marido e mulher. | o Autuado o pedido e tomadas as declarações, o juiz procederá às diligências necessárias para verificar se os contraentes podiam ter-se habilitado, na forma ordinária, ouvidos os interessados que o requererem, dentro em quinze dias. | o Verificada a idoneidade dos cônjuges para o casamento, assim o decidirá a autoridade competente, com recurso voluntário às partes. | o Se da decisão não se tiver recorrido, ou se ela passar em julgado, apesar dos recursos interpostos, o juiz mandará registrá-la no livro do Registro dos Casamentos. | o O assento assim lavrado retrotrairá os efeitos do casamento, quanto ao estado dos cônjuges, à data da celebração. | o Serão dispensadas as formalidades deste e do artigo antecedente, se o enfermo convalescer e puder ratificar o casamento na presença da autoridade competente e do oficial do registro.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "534f17376279ecb6b3313fc16abcb62c5a91b0f2e34c994f007ab7eda8dc722f",
+     "o_que_significa": "d615f568ab8cb655c32bd8c57cb34938be65c5673615d698382617274f248a28",
+     "exemplo_pratico": "5b214081e08896ef15f6c63cc8c516a73a1d56a1dbabea427f3cd1d623c98fb9",
+     "atencao": "d495a48c0df4bb922caac2a728778ce1c2e11606a05e98c5682356a69474ce34",
+     "palavras_dificeis": "f6fbae84926416d4d63ffb987716cab5b70bfbd069275cde6e6fcfde16c52fac"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 9 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Realizado o casamento, devem as testemunhas comparecer perante a autoridade judicial mais próxima, dentro em dez dias, pedindo que lhes tome por termo a declaração de:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 312,
+   "target_id": "CC2002:ART.1542",
+   "explanation_id": "ENTENDA/CC2002:ART.1542/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1542:CAPUT\tO casamento pode celebrar-se mediante procuração, por instrumento público, com poderes especiais.\nCC2002:ART.1542:PAR.1\to A revogação do mandato não necessita chegar ao conhecimento do mandatário; mas, celebrado o casamento sem que o mandatário ou o outro contraente tivessem ciência da revogação, responderá o mandante por perdas e danos.\nCC2002:ART.1542:PAR.2\to O nubente que não estiver em iminente risco de vida poderá fazer-se representar no casamento nuncupativo.\nCC2002:ART.1542:PAR.3\to A eficácia do mandato não ultrapassará noventa dias.\nCC2002:ART.1542:PAR.4\to Só por instrumento público se poderá revogar o mandato.",
+   "source_snapshot_sha256": "04a4392aa216f8ed6da6302cc81f50ba356237e4b33fce38310e75552786122c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1542:CAPUT",
+     "text": "O casamento pode celebrar-se mediante procuração, por instrumento público, com poderes especiais."
+    },
+    {
+     "label": "CC2002:ART.1542:PAR.1",
+     "text": "o A revogação do mandato não necessita chegar ao conhecimento do mandatário; mas, celebrado o casamento sem que o mandatário ou o outro contraente tivessem ciência da revogação, responderá o mandante por perdas e danos."
+    },
+    {
+     "label": "CC2002:ART.1542:PAR.2",
+     "text": "o O nubente que não estiver em iminente risco de vida poderá fazer-se representar no casamento nuncupativo."
+    },
+    {
+     "label": "CC2002:ART.1542:PAR.3",
+     "text": "o A eficácia do mandato não ultrapassará noventa dias."
+    },
+    {
+     "label": "CC2002:ART.1542:PAR.4",
+     "text": "o Só por instrumento público se poderá revogar o mandato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 5 segmentos vigentes do dispositivo: O casamento pode celebrar-se mediante procuração, por instrumento público, com poderes especiais. | o A revogação do mandato não necessita chegar ao conhecimento do mandatário; mas, celebrado o casamento sem que o mandatário ou o outro contraente tivessem ciência da revogação, responderá o mandante por perdas e danos. | o O nubente que não estiver em iminente risco de vida poderá fazer-se representar no casamento nuncupativo. | o A eficácia do mandato não ultrapassará noventa dias. | o Só por instrumento público se poderá revogar o mandato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "099bffcab021f6efcab242c39694050574f919af64f5a60ad345e0a6e70860a4",
+     "o_que_significa": "3aa22fa888314ea8c2f93e910e4847be2fece07b30e62dc28777ab8b61cc2c11",
+     "exemplo_pratico": "c7bc0415814b14d32df26238dd835a471ab7e72bc00e02253b95882ce2a4ea9c",
+     "atencao": "a39cae5e9ea862564489b80066f1317b4e148b1d07267c1b6ff989a4da425932",
+     "palavras_dificeis": "26d35c2f8fbf4b5a3b930f9710f8e9470e2158bf9279f714546f208c25d8134c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 5 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O casamento pode celebrar-se mediante procuração, por instrumento público, com poderes especiais; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 313,
+   "target_id": "CC2002:ART.1544",
+   "explanation_id": "ENTENDA/CC2002:ART.1544/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1544:CAPUT\tO casamento de brasileiro, celebrado no estrangeiro, perante as respectivas autoridades ou os cônsules brasileiros, deverá ser registrado em cento e oitenta dias, a contar da volta de um ou de ambos os cônjuges ao Brasil, no cartório do respectivo domicílio, ou, em sua falta, no 1 o Ofício da Capital do Estado em que passarem a residir.",
+   "source_snapshot_sha256": "0584784fe15ca03480769ddfb2acb3d6a292a1bdf4d49ced1b3d252703cc413c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1544:CAPUT",
+     "text": "O casamento de brasileiro, celebrado no estrangeiro, perante as respectivas autoridades ou os cônsules brasileiros, deverá ser registrado em cento e oitenta dias, a contar da volta de um ou de ambos os cônjuges ao Brasil, no cartório do respectivo domicílio, ou, em sua falta, no 1 o Ofício da Capital do Estado em que passarem a residir."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O casamento de brasileiro, celebrado no estrangeiro, perante as respectivas autoridades ou os cônsules brasileiros, deverá ser registrado em cento e oitenta dias, a contar da volta de um ou de ambos os cônjuges ao Brasil, no cartório do respectivo domicílio, ou, em sua falta, no 1 o Ofício da Capital do Estado em que passarem a residir.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e1fe735001539552bd62d97827a5b043d04935b58de966b40d0b6bf424aedb93",
+     "o_que_significa": "2c2dd515ba9942072c230d2188cb88ac62e59d53842387d9b60c46acfa691214",
+     "exemplo_pratico": "25929abe6dc6c3db5c9fe539d2ee780cd4533367973aa9bd3647f233f7495908",
+     "atencao": "893f7d494588382c77c5fd26bebfd61c67394f6d0488fc18dbdb526622ca968c",
+     "palavras_dificeis": "e6a8fb221ba29c47bf8608698c5c5d0d5080f3aa0f2ca179599aa98320b9d560"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O casamento de brasileiro, celebrado no estrangeiro, perante as respectivas autoridades ou os cônsules brasileiros, deverá ser registrado em cento e oitenta dias, a contar da volta de um ou de ambos os cônjuges ao Brasil; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 314,
+   "target_id": "CC2002:ART.1545",
+   "explanation_id": "ENTENDA/CC2002:ART.1545/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1545:CAPUT\tO casamento de pessoas que, na posse do estado de casadas, não possam manifestar vontade, ou tenham falecido, não se pode contestar em prejuízo da prole comum, salvo mediante certidão do Registro Civil que prove que já era casada alguma delas, quando contraiu o casamento impugnado.",
+   "source_snapshot_sha256": "989c9048515f650633520c70901207d54d6a2998200320898ac155ff7bd556cf",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1545:CAPUT",
+     "text": "O casamento de pessoas que, na posse do estado de casadas, não possam manifestar vontade, ou tenham falecido, não se pode contestar em prejuízo da prole comum, salvo mediante certidão do Registro Civil que prove que já era casada alguma delas, quando contraiu o casamento impugnado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O casamento de pessoas que, na posse do estado de casadas, não possam manifestar vontade, ou tenham falecido, não se pode contestar em prejuízo da prole comum, salvo mediante certidão do Registro Civil que prove que já era casada alguma delas, quando contraiu o casamento impugnado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a360dc8464a28dd40b5dc377a56e63e28b5e8f232c4973b8e0da86d6b2fb5b63",
+     "o_que_significa": "be2a6c332fe1a2dc083c580efea0c849300e7fb5f2266a6f8c2f7e894776d579",
+     "exemplo_pratico": "2cb1754f89674d457015679779663506f7a645f94dcba9ddae855bf52d703250",
+     "atencao": "caeace4e3c5878df5d01f1e2957df8e6369adb282d17db8bd3b79b646df7901e",
+     "palavras_dificeis": "cd13cf54308187e0d8e3114b7e7f919da776ceb175d081ca6ddf3156f18cf7f9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O casamento de pessoas que, na posse do estado de casadas, não possam manifestar vontade, ou tenham falecido, não se pode contestar em prejuízo da prole comum, salvo mediante certidão do Registro Civil que prove que já e; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 315,
+   "target_id": "CC2002:ART.1546",
+   "explanation_id": "ENTENDA/CC2002:ART.1546/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1546:CAPUT\tQuando a prova da celebração legal do casamento resultar de processo judicial, o registro da sentença no livro do Registro Civil produzirá, tanto no que toca aos cônjuges como no que respeita aos filhos, todos os efeitos civis desde a data do casamento.",
+   "source_snapshot_sha256": "8d5ba5fba5f92af0dde4675e113fb9ad614cbbd4e361b96898f43f87fd74d5e4",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1546:CAPUT",
+     "text": "Quando a prova da celebração legal do casamento resultar de processo judicial, o registro da sentença no livro do Registro Civil produzirá, tanto no que toca aos cônjuges como no que respeita aos filhos, todos os efeitos civis desde a data do casamento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Quando a prova da celebração legal do casamento resultar de processo judicial, o registro da sentença no livro do Registro Civil produzirá, tanto no que toca aos cônjuges como no que respeita aos filhos, todos os efeitos civis desde a data do casamento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0ea59458c4ccd9fee08a926e6c2e67cbe6dd04bdd11083fa211c0953aefa59f2",
+     "o_que_significa": "2a017cc9a6d551e9a24862e3a2656f619c84a8053645ddbc75107bae2125529d",
+     "exemplo_pratico": "8293f746de659013b59e258320cb04f7ddfd38ab4dbfa2064691e6bfcfc4a8ed",
+     "atencao": "a8599286a9a9f34d5f31b6fa641f7c0bd4978cc67d7d847df99056a0beff1c13",
+     "palavras_dificeis": "b5ed402de54ebb51e70e20c976a3e8ac99eaf0c8925d97b0830531eb0dfcd7d5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Quando a prova da celebração legal do casamento resultar de processo judicial, o registro da sentença no livro do Registro Civil produzirá, tanto no que toca aos cônjuges como no que respeita aos filhos, todos os efeitos; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 316,
+   "target_id": "CC2002:ART.1547",
+   "explanation_id": "ENTENDA/CC2002:ART.1547/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1547:CAPUT\tNa dúvida entre as provas favoráveis e contrárias, julgar-se-á pelo casamento, se os cônjuges, cujo casamento se impugna, viverem ou tiverem vivido na posse do estado de casados.",
+   "source_snapshot_sha256": "b1761cf9cb050f7d187ddfba6b3e49e3c6c1b07a2f91e44506b13a54848918ed",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1547:CAPUT",
+     "text": "Na dúvida entre as provas favoráveis e contrárias, julgar-se-á pelo casamento, se os cônjuges, cujo casamento se impugna, viverem ou tiverem vivido na posse do estado de casados."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Na dúvida entre as provas favoráveis e contrárias, julgar-se-á pelo casamento, se os cônjuges, cujo casamento se impugna, viverem ou tiverem vivido na posse do estado de casados.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9df48c57052a9738f3619138e87d9c2dee81687cb171fcd2dcc54eb33254de59",
+     "o_que_significa": "9f620c10d2cf540a630b9e168504d3f58996f42d925ea924849da82746f9755c",
+     "exemplo_pratico": "b65255ef9e154a08578058d1cd487a7a7767721ec152a8ad521b685666f4e1a4",
+     "atencao": "7be94936ec0c828668d92efe70196498223a75f2d59ebd7221eb55cb2b931a96",
+     "palavras_dificeis": "b3d2d579401e0712bb0ab1e84e08d59a8b336a89be8586991080e00882839f5d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Na dúvida entre as provas favoráveis e contrárias, julgar-se-á pelo casamento, se os cônjuges, cujo casamento se impugna, viverem ou tiverem vivido na posse do estado de casados; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 317,
+   "target_id": "CC2002:ART.1548",
+   "explanation_id": "ENTENDA/CC2002:ART.1548/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1548:CAPUT\tÉ nulo o casamento contraído:\nCC2002:ART.1548:INC.I\t(Revogado) ; (Redação dada pela Lei nº 13.146, de 2015) (Vigência)\nCC2002:ART.1548:INC.II\tpor infringência de impedimento.",
+   "source_snapshot_sha256": "75e00e13c9f0c239f6322207fe957795648bed9af0517e981ea31ed8e4b88e67",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1548:CAPUT",
+     "text": "É nulo o casamento contraído:"
+    },
+    {
+     "label": "CC2002:ART.1548:INC.I",
+     "text": "(Revogado) ; (Redação dada pela Lei nº 13.146, de 2015) (Vigência)"
+    },
+    {
+     "label": "CC2002:ART.1548:INC.II",
+     "text": "por infringência de impedimento."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: É nulo o casamento contraído: | (Revogado) ; (Redação dada pela Lei nº 13.146, de 2015) (Vigência) | por infringência de impedimento.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "fafaa3e0038ebc40cbc5c616287b833fd9d66bdabcde1c0cecc0076923382e57",
+     "o_que_significa": "cc2d8240c4d082cd6e7709dd5aee40b543f2dd23055c7bd0471f9445de7fd97f",
+     "exemplo_pratico": "5f6261ca82996b53ff4c4b89915d62c108b0b4a219e215935e88830bfdc87aa7",
+     "atencao": "89f797221433f7ce80d45df6fd1dee280a616b9aa746314ee6458a258631c3e8",
+     "palavras_dificeis": "ad28888107f18236994d6435b232f3744d5936566bcaa5eac797614d42270edf"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 3 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que É nulo o casamento contraído:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 318,
+   "target_id": "CC2002:ART.1549",
+   "explanation_id": "ENTENDA/CC2002:ART.1549/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1549:CAPUT\tA decretação de nulidade de casamento, pelos motivos previstos no artigo antecedente, pode ser promovida mediante ação direta, por qualquer interessado, ou pelo Ministério Público.",
+   "source_snapshot_sha256": "e8d87f98f9bcc4e03997cba0ee18f596520c15c8268abd0d6d6c98d1d0cdc172",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1549:CAPUT",
+     "text": "A decretação de nulidade de casamento, pelos motivos previstos no artigo antecedente, pode ser promovida mediante ação direta, por qualquer interessado, ou pelo Ministério Público."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A decretação de nulidade de casamento, pelos motivos previstos no artigo antecedente, pode ser promovida mediante ação direta, por qualquer interessado, ou pelo Ministério Público.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8072f0f0663c6ed85bd573957ab155f06be4757164541dc37eee5807dc2ee5c6",
+     "o_que_significa": "d0d5b923f2b4696a5c8d2055539c72947a8ee5dd4e4d8e97e74b42a7b277e14f",
+     "exemplo_pratico": "4b5ab1e07e55dc3507eb699e8857c662e4b5fc13a3c0ca65f5a7fc2e02fd2bb5",
+     "atencao": "a0f3b552f5d1acb2b96176b463216789f363450df17395955ff9b2a9583a8aaa",
+     "palavras_dificeis": "c9a608724c35ff10ea22dee05e55bfd43c63f695e04c839fce79ed873b45e7b0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que A decretação de nulidade de casamento, pelos motivos previstos no artigo antecedente, pode ser promovida mediante ação direta, por qualquer interessado, ou pelo Ministério Público; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 319,
+   "target_id": "CC2002:ART.1550",
+   "explanation_id": "ENTENDA/CC2002:ART.1550/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1550:CAPUT\tÉ anulável o casamento:\nCC2002:ART.1550:INC.I\tde quem não completou a idade mínima para casar;\nCC2002:ART.1550:INC.II\tdo menor em idade núbil, quando não autorizado por seu representante legal;\nCC2002:ART.1550:INC.III\tpor vício da vontade, nos termos dos arts. 1.556 a 1.558;\nCC2002:ART.1550:INC.IV\tdo incapaz de consentir ou manifestar, de modo inequívoco, o consentimento;\nCC2002:ART.1550:INC.V\trealizado pelo mandatário, sem que ele ou o outro contraente soubesse da revogação do mandato, e não sobrevindo coabitação entre os cônjuges;\nCC2002:ART.1550:INC.VI\tpor incompetência da autoridade celebrante.\nCC2002:ART.1550:PAR.1\to . Equipara-se à revogação a invalidade do mandato judicialmente decretada. (Redação dada pela Lei nº 13.146, de 2015) (Vigência)\nCC2002:ART.1550:PAR.2\to A pessoa com deficiência mental ou intelectual em idade núbia poderá contrair matrimônio, expressando sua vontade diretamente ou por meio de seu responsável ou curador. (Incluído pela Lei nº 13.146, de 2015) (Vigência)",
+   "source_snapshot_sha256": "a478bede4f99205d22316851439b0d19931109ddaaabff476444ba38ea918401",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1550:CAPUT",
+     "text": "É anulável o casamento:"
+    },
+    {
+     "label": "CC2002:ART.1550:INC.I",
+     "text": "de quem não completou a idade mínima para casar;"
+    },
+    {
+     "label": "CC2002:ART.1550:INC.II",
+     "text": "do menor em idade núbil, quando não autorizado por seu representante legal;"
+    },
+    {
+     "label": "CC2002:ART.1550:INC.III",
+     "text": "por vício da vontade, nos termos dos arts. 1.556 a 1.558;"
+    },
+    {
+     "label": "CC2002:ART.1550:INC.IV",
+     "text": "do incapaz de consentir ou manifestar, de modo inequívoco, o consentimento;"
+    },
+    {
+     "label": "CC2002:ART.1550:INC.V",
+     "text": "realizado pelo mandatário, sem que ele ou o outro contraente soubesse da revogação do mandato, e não sobrevindo coabitação entre os cônjuges;"
+    },
+    {
+     "label": "CC2002:ART.1550:INC.VI",
+     "text": "por incompetência da autoridade celebrante."
+    },
+    {
+     "label": "CC2002:ART.1550:PAR.1",
+     "text": "o . Equipara-se à revogação a invalidade do mandato judicialmente decretada. (Redação dada pela Lei nº 13.146, de 2015) (Vigência)"
+    },
+    {
+     "label": "CC2002:ART.1550:PAR.2",
+     "text": "o A pessoa com deficiência mental ou intelectual em idade núbia poderá contrair matrimônio, expressando sua vontade diretamente ou por meio de seu responsável ou curador. (Incluído pela Lei nº 13.146, de 2015) (Vigência)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 9 segmentos vigentes do dispositivo: É anulável o casamento: | de quem não completou a idade mínima para casar; | do menor em idade núbil, quando não autorizado por seu representante legal; | por vício da vontade, nos termos dos arts. 1.556 a 1.558; | do incapaz de consentir ou manifestar, de modo inequívoco, o consentimento; | realizado pelo mandatário, sem que ele ou o outro contraente soubesse da revogação do mandato, e não sobrevindo coabitação entre os cônjuges; | por incompetência da autoridade celebrante. | o . Equipara-se à revogação a invalidade do mandato judicialmente decretada. (Redação dada pela Lei nº 13.146, de 2015) (Vigência) | o A pessoa com deficiência mental ou intelectual em idade núbia poderá contrair matrimônio, expressando sua vontade diretamente ou por meio de seu responsável ou curador. (Incluído pela Lei nº 13.146, de 2015) (Vigência)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6ec1955bc73b76caae3e9b3a41b74c0cb5238001abc28749a8537a26babade60",
+     "o_que_significa": "6e7e7a8d426370bee07396347ab9161bb05ca1f2278434823255dcceb24ba4cd",
+     "exemplo_pratico": "fea796bf31f2989b540f5d144a05802ba3e92c4c7f2f939a990b176e7fc256b5",
+     "atencao": "6809482b2828ee51ad484c06cd62627a18dc6393213071461f0a6a59a2c2c818",
+     "palavras_dificeis": "ec7a707029ec6bf9fb248533e512a99df39216d78184e9fa53ce0dcdd33c33b8"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 9 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que É anulável o casamento:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 320,
+   "target_id": "CC2002:ART.1551",
+   "explanation_id": "ENTENDA/CC2002:ART.1551/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1551:CAPUT\tNão se anulará, por motivo de idade, o casamento de que resultou gravidez.",
+   "source_snapshot_sha256": "d63c2bb77a755d4b971cf446efcad4ad2463a7d239cecdabf0d66e2493190678",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1551:CAPUT",
+     "text": "Não se anulará, por motivo de idade, o casamento de que resultou gravidez."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não se anulará, por motivo de idade, o casamento de que resultou gravidez.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a1203a9fec9818d05ae7ce07bacdb1f5e65cdd97b7f63daa991860d432b626f0",
+     "o_que_significa": "b41aebf3c1f216399596fff16d5c231a6df9eaa334d577b9d711c02fd31af6b1",
+     "exemplo_pratico": "da14d8e63066723192fe1405b9ec3dc3f368b2708b841b52e9b49ad79c011a65",
+     "atencao": "3572f6b352ad39717d9d08e44c360700f26c043a402739a93f953651a8fcd3d3",
+     "palavras_dificeis": "3bed3b17661457e4dc94f286d725dbc52483490d56e7069e833d9bbe012e3423"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Não se anulará, por motivo de idade, o casamento de que resultou gravidez; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 321,
+   "target_id": "CC2002:ART.1552",
+   "explanation_id": "ENTENDA/CC2002:ART.1552/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1552:CAPUT\tA anulação do casamento dos menores de dezesseis anos será requerida:\nCC2002:ART.1552:INC.I\tpelo próprio cônjuge menor;\nCC2002:ART.1552:INC.II\tpor seus representantes legais;\nCC2002:ART.1552:INC.III\tpor seus ascendentes.",
+   "source_snapshot_sha256": "6095de0bd359dc55d00448d27efbcf334e2375dec08e475c288ef2477a32615b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1552:CAPUT",
+     "text": "A anulação do casamento dos menores de dezesseis anos será requerida:"
+    },
+    {
+     "label": "CC2002:ART.1552:INC.I",
+     "text": "pelo próprio cônjuge menor;"
+    },
+    {
+     "label": "CC2002:ART.1552:INC.II",
+     "text": "por seus representantes legais;"
+    },
+    {
+     "label": "CC2002:ART.1552:INC.III",
+     "text": "por seus ascendentes."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: A anulação do casamento dos menores de dezesseis anos será requerida: | pelo próprio cônjuge menor; | por seus representantes legais; | por seus ascendentes.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1c280bcfdda4873cece018b29d89709e9264202857df644a9727efd74491c802",
+     "o_que_significa": "34907c01032977a901008a852706a7fd9c46a9054b7e257dd914d02aa4fe4cee",
+     "exemplo_pratico": "dbd2d03be452f9cb265b7b09159e8063826428c1ffe542b4fe101194a9f33081",
+     "atencao": "1efcafdc53626904ae43663cd616cade6b88bc95b226ef3d294544af1568abfb",
+     "palavras_dificeis": "c928aed0b5765faad719c27aaa3620f6a01cb7f18839025f974f4420f1db36c8"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 4 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que A anulação do casamento dos menores de dezesseis anos será requerida:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 322,
+   "target_id": "CC2002:ART.1553",
+   "explanation_id": "ENTENDA/CC2002:ART.1553/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1553:CAPUT\tO menor que não atingiu a idade núbil poderá, depois de completá-la, confirmar seu casamento, com a autorização de seus representantes legais, se necessária, ou com suprimento judicial.",
+   "source_snapshot_sha256": "10447126156dafb294f467279903d722abcca5fd0a8742adb092d8f7097c4966",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1553:CAPUT",
+     "text": "O menor que não atingiu a idade núbil poderá, depois de completá-la, confirmar seu casamento, com a autorização de seus representantes legais, se necessária, ou com suprimento judicial."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O menor que não atingiu a idade núbil poderá, depois de completá-la, confirmar seu casamento, com a autorização de seus representantes legais, se necessária, ou com suprimento judicial.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e27f7edbb728a0f088bcd85ba24089a53b0f8b1ddd0a5dfec84aa2838b23fd4a",
+     "o_que_significa": "88df63bfa21705747f21aeb150b5587bd5456fcd35dc5e3da6169f490a7378aa",
+     "exemplo_pratico": "7bbe8292deb9758002919edd27f0e57e4ec865b39187225e82fbf20f670fdc1e",
+     "atencao": "39815b2f3fa11c858c49fc27601bfbeeb21ba09746f3e14dc00eb55750381c2a",
+     "palavras_dificeis": "51aa88a2e485bbd0e71dbfe249da6179013d219c2c8ce271f111b89d3dfb9ca9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O menor que não atingiu a idade núbil poderá, depois de completá-la, confirmar seu casamento, com a autorização de seus representantes legais, se necessária, ou com suprimento judicial; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 323,
+   "target_id": "CC2002:ART.1554",
+   "explanation_id": "ENTENDA/CC2002:ART.1554/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1554:CAPUT\tSubsiste o casamento celebrado por aquele que, sem possuir a competência exigida na lei, exercer publicamente as funções de juiz de casamentos e, nessa qualidade, tiver registrado o ato no Registro Civil.",
+   "source_snapshot_sha256": "8f252bc7feb0aa7664cfb25e8dc2491747893bafaf32347c69ef377d7e90a7ad",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1554:CAPUT",
+     "text": "Subsiste o casamento celebrado por aquele que, sem possuir a competência exigida na lei, exercer publicamente as funções de juiz de casamentos e, nessa qualidade, tiver registrado o ato no Registro Civil."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Subsiste o casamento celebrado por aquele que, sem possuir a competência exigida na lei, exercer publicamente as funções de juiz de casamentos e, nessa qualidade, tiver registrado o ato no Registro Civil.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8bec040fca17147c3641b3d828f62dee767a42508eb5f97856b06f8f660a2a18",
+     "o_que_significa": "7b2337f885a21bc06f0482228a050ec4fbb20ff9d8f2c124731f06667e4e4af4",
+     "exemplo_pratico": "4738f271588a57d869fa3d815bd44665dc5072b42163f9f384ce6e8ad668f862",
+     "atencao": "6d23ea0edbb0485ffe64cfc30eb19fda44aa9480eb25502a3f044ddf533d42c3",
+     "palavras_dificeis": "64e661f5ce801fbe734a8869b8e354d6770a6e1475f28147771bc984ae090194"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Subsiste o casamento celebrado por aquele que, sem possuir a competência exigida na lei, exercer publicamente as funções de juiz de casamentos e, nessa qualidade, tiver registrado o ato no Registro Civil; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 324,
+   "target_id": "CC2002:ART.1555",
+   "explanation_id": "ENTENDA/CC2002:ART.1555/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1555:CAPUT\tO casamento do menor em idade núbil, quando não autorizado por seu representante legal, só poderá ser anulado se a ação for proposta em cento e oitenta dias, por iniciativa do incapaz, ao deixar de sê-lo, de seus representantes legais ou de seus herdeiros necessários.\nCC2002:ART.1555:PAR.1\to O prazo estabelecido neste artigo será contado do dia em que cessou a incapacidade, no primeiro caso; a partir do casamento, no segundo; e, no terceiro, da morte do incapaz.\nCC2002:ART.1555:PAR.2\to Não se anulará o casamento quando à sua celebração houverem assistido os representantes legais do incapaz, ou tiverem, por qualquer modo, manifestado sua aprovação.",
+   "source_snapshot_sha256": "8f12d14570b9e2439484a85671c6b81663dce55dcfefe6e23cb61d02dd9e81c7",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1555:CAPUT",
+     "text": "O casamento do menor em idade núbil, quando não autorizado por seu representante legal, só poderá ser anulado se a ação for proposta em cento e oitenta dias, por iniciativa do incapaz, ao deixar de sê-lo, de seus representantes legais ou de seus herdeiros necessários."
+    },
+    {
+     "label": "CC2002:ART.1555:PAR.1",
+     "text": "o O prazo estabelecido neste artigo será contado do dia em que cessou a incapacidade, no primeiro caso; a partir do casamento, no segundo; e, no terceiro, da morte do incapaz."
+    },
+    {
+     "label": "CC2002:ART.1555:PAR.2",
+     "text": "o Não se anulará o casamento quando à sua celebração houverem assistido os representantes legais do incapaz, ou tiverem, por qualquer modo, manifestado sua aprovação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: O casamento do menor em idade núbil, quando não autorizado por seu representante legal, só poderá ser anulado se a ação for proposta em cento e oitenta dias, por iniciativa do incapaz, ao deixar de sê-lo, de seus representantes legais ou de seus herdeiros necessários. | o O prazo estabelecido neste artigo será contado do dia em que cessou a incapacidade, no primeiro caso; a partir do casamento, no segundo; e, no terceiro, da morte do incapaz. | o Não se anulará o casamento quando à sua celebração houverem assistido os representantes legais do incapaz, ou tiverem, por qualquer modo, manifestado sua aprovação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "06e702d29a320008312f815d0389695701cc575572bffc279f229de70f95d1df",
+     "o_que_significa": "658899860fece66ea6e0f4e76651fd58a142ea92dc300400a86cd699c0ceb2ff",
+     "exemplo_pratico": "6c59d1ca1c3142a23d615cac814f0bc5157e307a4ac3f5117b994f60d97d7394",
+     "atencao": "2376dbb351ce9484586e2a5c166cc756ccff5384efad458ea307ec1a1ddf19bc",
+     "palavras_dificeis": "f5a9984166e52602e42c35d2dc28042e8d43e281be4178a34d2df8594e063374"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 3 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O casamento do menor em idade núbil, quando não autorizado por seu representante legal, só poderá ser anulado se a ação for proposta em cento e oitenta dias, por iniciativa do incapaz, ao deixar de sê-lo, de seus represe; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 325,
+   "target_id": "CC2002:ART.1556",
+   "explanation_id": "ENTENDA/CC2002:ART.1556/BASE/1",
+   "book": "FAMILIA",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1556:CAPUT\tO casamento pode ser anulado por vício da vontade, se houve por parte de um dos nubentes, ao consentir, erro essencial quanto à pessoa do outro.",
+   "source_snapshot_sha256": "fca18240a79cec654b69b090e2a9bf5aab6cb8da1e6684abc557b0aec55fbb6a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1556:CAPUT",
+     "text": "O casamento pode ser anulado por vício da vontade, se houve por parte de um dos nubentes, ao consentir, erro essencial quanto à pessoa do outro."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O casamento pode ser anulado por vício da vontade, se houve por parte de um dos nubentes, ao consentir, erro essencial quanto à pessoa do outro.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "75f76e990424f8676bbd3d77f04a06e55fdd0a5d5b89fb95d752cf77c4253d05",
+     "o_que_significa": "9797b6bc640a0592ca866c783c31c80da640762f61ecbfe6ba2474a156e65f12",
+     "exemplo_pratico": "921ea2684d5b4ab1afc30aeb30105e19563f08b8f0c618820ef888d767c3d726",
+     "atencao": "e24bc71cdcf5e2012fb2b52cfda9756ad397604902cb7b78b92c9900a7eeec9a",
+     "palavras_dificeis": "719e7e616ad141cc2f0b38931cef9bb8f4a9e104ae62251ac3d9cec6c6f30aed"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O casamento pode ser anulado por vício da vontade, se houve por parte de um dos nubentes, ao consentir, erro essencial quanto à pessoa do outro; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  }
+ ]
+}
