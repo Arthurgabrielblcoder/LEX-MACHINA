@@ -3,17 +3,17 @@
  "mission": "QA-04-FRONT-B",
  "as_of": "2026-11-13",
  "status": "PARTIAL_REQUIRES_CONTINUATION",
- "completed_through_checkpoint": "B-CP01",
- "audited_total": 50,
+ "completed_through_checkpoint": "B-CP02",
+ "audited_total": 100,
  "residual_positions_completed": [
   1,
-  50
+  100
  ],
  "original_queue_positions_completed": [
   389,
-  438
+  488
  ],
- "next_residual_position": 51,
+ "next_residual_position": 101,
  "findings_total": 0,
  "finding_counts": {},
  "protected_sha256": {
@@ -2644,6 +2644,2668 @@
    "finding": null,
    "residual_position": 50,
    "checkpoint": "B-CP01",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 439,
+   "target_id": "CC2002:ART.568",
+   "explanation_id": "ENTENDA/CC2002:ART.568/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.568:CAPUT\tO locador resguardará o locatário dos embaraços e turbações de terceiros, que tenham ou pretendam ter direitos sobre a coisa alugada, e responderá pelos seus vícios, ou defeitos, anteriores à locação.",
+   "source_snapshot_sha256": "fe0902bda7556429065cd87c247acd94b71382343f6dc299e038c6dbf3e6b901",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.568:CAPUT",
+     "text": "O locador resguardará o locatário dos embaraços e turbações de terceiros, que tenham ou pretendam ter direitos sobre a coisa alugada, e responderá pelos seus vícios, ou defeitos, anteriores à locação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O locador resguardará o locatário dos embaraços e turbações de terceiros, que tenham ou pretendam ter direitos sobre a coisa alugada, e responderá pelos seus vícios, ou defeitos, anteriores à locação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8d412b269a09a34c9bcc224bbf185660cdb5ca8f92a251cf64e84aa5a6275671",
+     "o_que_significa": "6e6367e90ffda55a26483793e66ca4034c037dee66fa9ff703568c5864e5e430",
+     "exemplo_pratico": "dced60e0037fd566b26725495376aed0b565a14ddcba045c7589a34992cba790",
+     "atencao": "931aa4c83f240f2cf89301df73cc99d6e30af6ac0dbbe606b2000d7fc41297f9",
+     "palavras_dificeis": "ac47d6bbfb5d510339d8d537edcc16b0f4fbc471f6da5124f510e5e3e6e1aab0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.568, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O locador deve proteger o locatário contra perturbações de terceiros fundadas em direito e responde por defeitos que já existiam quando a locação começou.’. O campo de atenção registra: ‘Incômodo meramente factual sem pretensão de direito recebe tratamento distinto. Defeitos posteriores podem depender de causa e das demais obrigações contratuais.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 51,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 440,
+   "target_id": "CC2002:ART.569",
+   "explanation_id": "ENTENDA/CC2002:ART.569/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.569:CAPUT\tO locatário é obrigado:\nCC2002:ART.569:INC.I\ta servir-se da coisa alugada para os usos convencionados ou presumidos, conforme a natureza dela e as circunstâncias, bem como tratá-la com o mesmo cuidado como se sua fosse;\nCC2002:ART.569:INC.II\ta pagar pontualmente o aluguel nos prazos ajustados, e, em falta de ajuste, segundo o costume do lugar;\nCC2002:ART.569:INC.III\ta levar ao conhecimento do locador as turbações de terceiros, que se pretendam fundadas em direito;\nCC2002:ART.569:INC.IV\ta restituir a coisa, finda a locação, no estado em que a recebeu, salvas as deteriorações naturais ao uso regular.",
+   "source_snapshot_sha256": "7e4f1651f4ba3eec8226721891201944f753f455741b672135db931a008adbd6",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.569:CAPUT",
+     "text": "O locatário é obrigado:"
+    },
+    {
+     "label": "CC2002:ART.569:INC.I",
+     "text": "a servir-se da coisa alugada para os usos convencionados ou presumidos, conforme a natureza dela e as circunstâncias, bem como tratá-la com o mesmo cuidado como se sua fosse;"
+    },
+    {
+     "label": "CC2002:ART.569:INC.II",
+     "text": "a pagar pontualmente o aluguel nos prazos ajustados, e, em falta de ajuste, segundo o costume do lugar;"
+    },
+    {
+     "label": "CC2002:ART.569:INC.III",
+     "text": "a levar ao conhecimento do locador as turbações de terceiros, que se pretendam fundadas em direito;"
+    },
+    {
+     "label": "CC2002:ART.569:INC.IV",
+     "text": "a restituir a coisa, finda a locação, no estado em que a recebeu, salvas as deteriorações naturais ao uso regular."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 5 segmentos vigentes do dispositivo: O locatário é obrigado: | a servir-se da coisa alugada para os usos convencionados ou presumidos, conforme a natureza dela e as circunstâncias, bem como tratá-la com o mesmo cuidado como se sua fosse; | a pagar pontualmente o aluguel nos prazos ajustados, e, em falta de ajuste, segundo o costume do lugar; | a levar ao conhecimento do locador as turbações de terceiros, que se pretendam fundadas em direito; | a restituir a coisa, finda a locação, no estado em que a recebeu, salvas as deteriorações naturais ao uso regular.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9d637c38081012239335d0843b776eeb5ea9821f4b605ee0bdfa31d15d08e7e0",
+     "o_que_significa": "cb7e5bd4c8e408a54087300f11453953e666981469dedb104e87d50f34c7b946",
+     "exemplo_pratico": "c2e688d4729943c8fb8a9ef6a9f1b67825df7376f521554448d82e8f3de0ca8b",
+     "atencao": "788c8a7d90a76c47abac6e872b87130a76e0d6e608269f167e9b5f0a38441bf3",
+     "palavras_dificeis": "77db81d03b1d466b035f731e85dcaee58eb72ea918cf5af492ea5af6fa7d30f4"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.569, foram cotejados individualmente 5 segmento(s) vigente(s) (CAPUT, INC.I, INC.II, INC.III, INC.IV) com os cinco campos ENTENDA. A síntese ativa informa: ‘O locatário deve usar e cuidar da coisa conforme contrato e natureza, pagar pontualmente, comunicar pretensões de terceiros e devolvê-la no fim, ressalvado o desgaste normal.’. O campo de atenção registra: ‘Desgaste natural não gera indenização. Dano por abuso, desvio de uso ou falta de comunicação pode produzir responsabilidade própria.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 52,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 441,
+   "target_id": "CC2002:ART.570",
+   "explanation_id": "ENTENDA/CC2002:ART.570/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.570:CAPUT\tSe o locatário empregar a coisa em uso diverso do ajustado, ou do a que se destina, ou se ela se danificar por abuso do locatário, poderá o locador, além de rescindir o contrato, exigir perdas e danos.",
+   "source_snapshot_sha256": "459f4e8b130e60ef45a97d9b62e9582ec6ee6d2f837846d06ce1bee964cf3b6d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.570:CAPUT",
+     "text": "Se o locatário empregar a coisa em uso diverso do ajustado, ou do a que se destina, ou se ela se danificar por abuso do locatário, poderá o locador, além de rescindir o contrato, exigir perdas e danos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o locatário empregar a coisa em uso diverso do ajustado, ou do a que se destina, ou se ela se danificar por abuso do locatário, poderá o locador, além de rescindir o contrato, exigir perdas e danos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "880362e5dd8fd81954e04f64f7f58d2a3888e574983218e19ad9acf6769260c8",
+     "o_que_significa": "eb342f8ea2ba56897af178921e526f04f47c2ef2230c11cf1bcabc596e37d0a3",
+     "exemplo_pratico": "ae7b2f255be2dabbeb7e71db4e7cc9fd7737ac41984dcdaf048d607a187c3142",
+     "atencao": "f64f63be7ccdd015256bf980788a2f308114723007e07dcd032ff44c9634c6c8",
+     "palavras_dificeis": "d26bcc857ecbe687019853602c5f7a8ebdc79d026dd0036ea3f68c48bc1dcaf3"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.570, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Uso diferente do ajustado ou dano por abuso permite ao locador resolver a locação e cobrar perdas e danos.’. O campo de atenção registra: ‘A reparação exige dano e nexo causal. Pequena irregularidade sem gravidade não deve ser automaticamente equiparada a abuso destrutivo.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 53,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 442,
+   "target_id": "CC2002:ART.571",
+   "explanation_id": "ENTENDA/CC2002:ART.571/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.571:CAPUT\tHavendo prazo estipulado à duração do contrato, antes do vencimento não poderá o locador reaver a coisa alugada, senão ressarcindo ao locatário as perdas e danos resultantes, nem o locatário devolvê-la ao locador, senão pagando, proporcionalmente, a multa prevista no contrato.\nCC2002:ART.571:PAR.UNICO\tO locatário gozará do direito de retenção, enquanto não for ressarcido.",
+   "source_snapshot_sha256": "a006911789945107330dfb162ca665123b42ee3ac2f26fb2f1b3b049836bf335",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.571:CAPUT",
+     "text": "Havendo prazo estipulado à duração do contrato, antes do vencimento não poderá o locador reaver a coisa alugada, senão ressarcindo ao locatário as perdas e danos resultantes, nem o locatário devolvê-la ao locador, senão pagando, proporcionalmente, a multa prevista no contrato."
+    },
+    {
+     "label": "CC2002:ART.571:PAR.UNICO",
+     "text": "O locatário gozará do direito de retenção, enquanto não for ressarcido."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Havendo prazo estipulado à duração do contrato, antes do vencimento não poderá o locador reaver a coisa alugada, senão ressarcindo ao locatário as perdas e danos resultantes, nem o locatário devolvê-la ao locador, senão pagando, proporcionalmente, a multa prevista no contrato. | O locatário gozará do direito de retenção, enquanto não for ressarcido.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b8f82bb7de93aa345b984871162337c3e5c094d20dea2db6612bd6de86eaf566",
+     "o_que_significa": "0208562ce783eaa231bee0ef70c54822f81f77683bb0229f59407505b7794d4e",
+     "exemplo_pratico": "0d16b15ef100f3956cf71577391a633d9c3fb70b3b5a4d7412b4f7276a5fb5b1",
+     "atencao": "3ac53ca373d7797f9c502c313ad755f24e937a754e81dae62151903a27e16a1c",
+     "palavras_dificeis": "13cb66886c7ccb5696ca3111505b534cdbbc3ed63c213d7d71ca25fe4181d916"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.571, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Durante prazo certo, o locador só retoma antecipadamente indenizando os prejuízos; o locatário só devolve antes pagando multa proporcional. Este pode reter o bem até receber a indenização.’. O campo de atenção registra: ‘A multa devida pelo locatário deve ser proporcional. Retenção não transforma o locatário em proprietário nem autoriza uso além do necessário.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 54,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 443,
+   "target_id": "CC2002:ART.572",
+   "explanation_id": "ENTENDA/CC2002:ART.572/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.572:CAPUT\tSe a obrigação de pagar o aluguel pelo tempo que faltar constituir indenização excessiva, será facultado ao juiz fixá-la em bases razoáveis.",
+   "source_snapshot_sha256": "971991ac0b991daa081cdf5b4dcc7bd175018f8c0421d6126babfeab34a96883",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.572:CAPUT",
+     "text": "Se a obrigação de pagar o aluguel pelo tempo que faltar constituir indenização excessiva, será facultado ao juiz fixá-la em bases razoáveis."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se a obrigação de pagar o aluguel pelo tempo que faltar constituir indenização excessiva, será facultado ao juiz fixá-la em bases razoáveis.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "aa9c0918e00347d8815a0d4df7c14a6321053f41b989b13c7fe7259308c09e8f",
+     "o_que_significa": "eec0e73c38fe2fa9f510da9b81efd088646f716af7d34dde45873cba25d35f5b",
+     "exemplo_pratico": "d545956ef5128b5a45ed8d1413a9bd0cc93a85681798e706f054343f30c098bb",
+     "atencao": "9cd35f4c67f05ed9982009af5efd12f1f17e114b5038dd22869dce2800cdcd6d",
+     "palavras_dificeis": "6b5f669b2fc575c2cbded99b871f7bd2bc146d8c2188df2374e8e492c8c0f5c8"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.572, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quando a cobrança dos aluguéis restantes como indenização se torna excessiva, o juiz pode reduzi-la a valor razoável.’. O campo de atenção registra: ‘A redução não é automática nem elimina toda responsabilidade. É preciso demonstrar excesso em relação ao prejuízo e ao contrato.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 55,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 444,
+   "target_id": "CC2002:ART.573",
+   "explanation_id": "ENTENDA/CC2002:ART.573/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.573:CAPUT\tA locação por tempo determinado cessa de pleno direito findo o prazo estipulado, independentemente de notificação ou aviso.",
+   "source_snapshot_sha256": "bcb2f1423b5983ac961d5721963254833856a8d5c30a71910c556d7401289d22",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.573:CAPUT",
+     "text": "A locação por tempo determinado cessa de pleno direito findo o prazo estipulado, independentemente de notificação ou aviso."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A locação por tempo determinado cessa de pleno direito findo o prazo estipulado, independentemente de notificação ou aviso.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5a9670fd62573e7d33e765ec9fdbf7141d7d2148fd85ea6bb4ce618aed3ffedd",
+     "o_que_significa": "bb4b98737e6585506d4948fb2af7262a403c0dc514d0ad083d5051b3d91bf3d5",
+     "exemplo_pratico": "d82018f5d2211103ac15156199ef2e05d5cb6968b0a474989422fc8ecf5243fb",
+     "atencao": "fcb01b406460ff1a07768b4924520839faad5bbc2e0aea435b82daa13ab06226",
+     "palavras_dificeis": "7cf402e88ad94ed59cb2cf732db1768624e4dbe68814f807aa900ac8856b9cbe"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.573, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A locação com prazo determinado termina automaticamente quando chega a data final, sem necessidade de aviso ou notificação.’. O campo de atenção registra: ‘A permanência do locatário sem oposição pode gerar prorrogação por prazo indeterminado conforme o artigo seguinte.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 56,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 445,
+   "target_id": "CC2002:ART.574",
+   "explanation_id": "ENTENDA/CC2002:ART.574/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.574:CAPUT\tSe, findo o prazo, o locatário continuar na posse da coisa alugada, sem oposição do locador, presumir-se-á prorrogada a locação pelo mesmo aluguel, mas sem prazo determinado.",
+   "source_snapshot_sha256": "2a7cd7273ae64868329506d222c6081dd9f16fcec07f3ecbef986baf83f8ab8e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.574:CAPUT",
+     "text": "Se, findo o prazo, o locatário continuar na posse da coisa alugada, sem oposição do locador, presumir-se-á prorrogada a locação pelo mesmo aluguel, mas sem prazo determinado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se, findo o prazo, o locatário continuar na posse da coisa alugada, sem oposição do locador, presumir-se-á prorrogada a locação pelo mesmo aluguel, mas sem prazo determinado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0528ed8991d5bafccee099c75eb62232865f05af95980247a8eee3f2194ffa78",
+     "o_que_significa": "ba7e542b011194168f7d21473fede6cba96b66d7de365265ded2cd6b165addad",
+     "exemplo_pratico": "c18cb8e3f01c7fb94c095749947357759cdd37294f8b57d7e786238ceed50527",
+     "atencao": "e3963a7dc94d4de889e0ff09f1ab730e9133f2dee8b21a14bcf2290d0c149220",
+     "palavras_dificeis": "c70058ee2f0822ca686f5fc381e65f0c1f922d8d2c7aaa7630a531603d6ec0c1"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.574, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Após o término, se o locatário permanece com a coisa e o locador não se opõe, presume-se renovação por prazo indeterminado e pelo mesmo aluguel.’. O campo de atenção registra: ‘A presunção depende de posse continuada e ausência de oposição. Não se renova necessariamente o prazo original.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 57,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 446,
+   "target_id": "CC2002:ART.575",
+   "explanation_id": "ENTENDA/CC2002:ART.575/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.575:CAPUT\tSe, notificado o locatário, não restituir a coisa, pagará, enquanto a tiver em seu poder, o aluguel que o locador arbitrar, e responderá pelo dano que ela venha a sofrer, embora proveniente de caso fortuito.\nCC2002:ART.575:PAR.UNICO\tSe o aluguel arbitrado for manifestamente excessivo, poderá o juiz reduzi-lo, mas tendo sempre em conta o seu caráter de penalidade.",
+   "source_snapshot_sha256": "a5c980f83a1b0b3e0b07238081ccb2da391b688dbbdda34cc0564e1304a08833",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.575:CAPUT",
+     "text": "Se, notificado o locatário, não restituir a coisa, pagará, enquanto a tiver em seu poder, o aluguel que o locador arbitrar, e responderá pelo dano que ela venha a sofrer, embora proveniente de caso fortuito."
+    },
+    {
+     "label": "CC2002:ART.575:PAR.UNICO",
+     "text": "Se o aluguel arbitrado for manifestamente excessivo, poderá o juiz reduzi-lo, mas tendo sempre em conta o seu caráter de penalidade."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Se, notificado o locatário, não restituir a coisa, pagará, enquanto a tiver em seu poder, o aluguel que o locador arbitrar, e responderá pelo dano que ela venha a sofrer, embora proveniente de caso fortuito. | Se o aluguel arbitrado for manifestamente excessivo, poderá o juiz reduzi-lo, mas tendo sempre em conta o seu caráter de penalidade.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "81418b287e15329027e273ae8676ee089f78fdcff04fd4f956e731a70da49bfc",
+     "o_que_significa": "04d6091ba5b6e55c8be86638a0d0a2da46ca5051741388da65e3d93784c5c93c",
+     "exemplo_pratico": "f563352f8679a3bb4a9ee01c6a1c3258a24fb5b515304ca6d694f52f58654d84",
+     "atencao": "c159b9b748ec163108803f907f501d05a54e86cafe3655488943ccf95584f8cf",
+     "palavras_dificeis": "f4a6d56e741fbcd17b1d7fe53192a926cc5a008f1d7aa38d7df40bb0058a0b83"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.575, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Locatário notificado que não devolve a coisa paga aluguel fixado pelo locador e responde até por dano fortuito. Valor manifestamente excessivo pode ser reduzido judicialmente, preservado seu caráter punitivo.’. O campo de atenção registra: ‘O locador não pode impor valor abusivo sem controle. A responsabilidade agravada começa com a retenção após notificação válida.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 58,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 447,
+   "target_id": "CC2002:ART.576",
+   "explanation_id": "ENTENDA/CC2002:ART.576/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.576:CAPUT\tSe a coisa for alienada durante a locação, o adquirente não ficará obrigado a respeitar o contrato, se nele não for consignada a cláusula da sua vigência no caso de alienação, e não constar de registro.\nCC2002:ART.576:PAR.1\to O registro a que se refere este artigo será o de Títulos e Documentos do domicílio do locador, quando a coisa for móvel; e será o Registro de Imóveis da respectiva circunscrição, quando imóvel.\nCC2002:ART.576:PAR.2\to Em se tratando de imóvel, e ainda no caso em que o locador não esteja obrigado a respeitar o contrato, não poderá ele despedir o locatário, senão observado o prazo de noventa dias após a notificação.",
+   "source_snapshot_sha256": "16910c62d87920afefbc2889c901d07aac55c8c8b8bf8dadb1b21e38ecd08a0a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.576:CAPUT",
+     "text": "Se a coisa for alienada durante a locação, o adquirente não ficará obrigado a respeitar o contrato, se nele não for consignada a cláusula da sua vigência no caso de alienação, e não constar de registro."
+    },
+    {
+     "label": "CC2002:ART.576:PAR.1",
+     "text": "o O registro a que se refere este artigo será o de Títulos e Documentos do domicílio do locador, quando a coisa for móvel; e será o Registro de Imóveis da respectiva circunscrição, quando imóvel."
+    },
+    {
+     "label": "CC2002:ART.576:PAR.2",
+     "text": "o Em se tratando de imóvel, e ainda no caso em que o locador não esteja obrigado a respeitar o contrato, não poderá ele despedir o locatário, senão observado o prazo de noventa dias após a notificação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Se a coisa for alienada durante a locação, o adquirente não ficará obrigado a respeitar o contrato, se nele não for consignada a cláusula da sua vigência no caso de alienação, e não constar de registro. | o O registro a que se refere este artigo será o de Títulos e Documentos do domicílio do locador, quando a coisa for móvel; e será o Registro de Imóveis da respectiva circunscrição, quando imóvel. | o Em se tratando de imóvel, e ainda no caso em que o locador não esteja obrigado a respeitar o contrato, não poderá ele despedir o locatário, senão observado o prazo de noventa dias após a notificação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "22e910887c9bf6e24ada5ec688aed7ea5f3e8c011388526666989996089f045d",
+     "o_que_significa": "535d99574bb74a2664db3a76421ded3b03f68ea96f00f380ef10c3462aa135aa",
+     "exemplo_pratico": "c81c7ccfd385ef7d618cc3b26e6ab8406214d27233036c9c1411298a21e6f536",
+     "atencao": "fef1984b1ea750eb8920b3c8a8a4ac964bdcaaaa8504e7b79edf856f9ecfeda0",
+     "palavras_dificeis": "209979a35a27637dd55cf858ead810b7e402daf829af83d95607835ec68fe490"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.576, foram cotejados individualmente 3 segmento(s) vigente(s) (CAPUT, PAR.1, PAR.2) com os cinco campos ENTENDA. A síntese ativa informa: ‘O comprador da coisa locada só deve respeitar a locação se houver cláusula de vigência na alienação e registro adequado. Em imóvel, a saída exige notificação com noventa dias.’. O campo de atenção registra: ‘Móveis registram-se em Títulos e Documentos do domicílio do locador; imóveis, no registro imobiliário competente. Leis especiais podem trazer disciplina adicional.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 59,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 448,
+   "target_id": "CC2002:ART.577",
+   "explanation_id": "ENTENDA/CC2002:ART.577/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.577:CAPUT\tMorrendo o locador ou o locatário, transfere-se aos seus herdeiros a locação por tempo determinado.",
+   "source_snapshot_sha256": "ef2740a8ae7fb75cf069578de06bfd035117ebbc18a896111c4dd5f70524d865",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.577:CAPUT",
+     "text": "Morrendo o locador ou o locatário, transfere-se aos seus herdeiros a locação por tempo determinado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Morrendo o locador ou o locatário, transfere-se aos seus herdeiros a locação por tempo determinado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "21e87a2d31497a5fd742541235bf6df4d4cc461800e6abd8800286b7abd82a78",
+     "o_que_significa": "154ba72b8759f9f2baf7eb18092f6b71becab71d713bf970c54b825506957097",
+     "exemplo_pratico": "36c9792e6c03cc781b05f3040733bd5b27835d11dcdb645897c3965091b124d6",
+     "atencao": "4472ff9f141d85f28cb6c4c21dc99e1ea3e1679024a83cb413e9850d12cacf6b",
+     "palavras_dificeis": "de012d8c4211378f0aab9db2b6e12eec34aacf2eefabf090399d13ca64f6c4ef"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.577, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A morte do locador ou do locatário não encerra locação por prazo determinado; a posição contratual passa aos herdeiros.’. O campo de atenção registra: ‘A regra mencionada é para prazo determinado. A natureza do bem, do uso e eventual legislação especial também deve ser considerada.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 60,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 449,
+   "target_id": "CC2002:ART.578",
+   "explanation_id": "ENTENDA/CC2002:ART.578/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.578:CAPUT\tSalvo disposição em contrário, o locatário goza do direito de retenção, no caso de benfeitorias necessárias, ou no de benfeitorias úteis, se estas houverem sido feitas com expresso consentimento do locador.",
+   "source_snapshot_sha256": "471c9158fcc2a3743b996d68d4ecea999bd71abde8188c65e34e35b72c1ab60f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.578:CAPUT",
+     "text": "Salvo disposição em contrário, o locatário goza do direito de retenção, no caso de benfeitorias necessárias, ou no de benfeitorias úteis, se estas houverem sido feitas com expresso consentimento do locador."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Salvo disposição em contrário, o locatário goza do direito de retenção, no caso de benfeitorias necessárias, ou no de benfeitorias úteis, se estas houverem sido feitas com expresso consentimento do locador.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8837070f1d478cdac2c96dce3e52b0931fe2bcdeed2a490b1d37499b28888615",
+     "o_que_significa": "f7e86c47a4bbd1ae3694a4d9026f755bac49cc427d06a55c6ce207381b353964",
+     "exemplo_pratico": "4facc429f69336fd50f3fbbdd1f7f3a33f93a1c53db1e911aba3805de72adb5c",
+     "atencao": "84bbe3940a98550ef062aeed5f50b075674a73cf11fdf5d93508aa36c3621e05",
+     "palavras_dificeis": "3baab53537a28c8d30df568a7b3a74fa253d9ac66ba0ae671d5466143e6708e7"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.578, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Salvo pacto diverso, o locatário pode reter a coisa por benfeitorias necessárias e por úteis realizadas com consentimento expresso do locador.’. O campo de atenção registra: ‘Benfeitoria apenas estética não está incluída. O contrato pode dispor de forma diversa, e cada obra deve ser corretamente classificada.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 61,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 450,
+   "target_id": "CC2002:ART.579",
+   "explanation_id": "ENTENDA/CC2002:ART.579/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.579:CAPUT\tO comodato é o empréstimo gratuito de coisas não fungíveis. Perfaz-se com a tradição do objeto.",
+   "source_snapshot_sha256": "a7d6ad32ba635aedff6eb1db1551b405d9f9635ac7769bf1825df6d547525183",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.579:CAPUT",
+     "text": "O comodato é o empréstimo gratuito de coisas não fungíveis. Perfaz-se com a tradição do objeto."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O comodato é o empréstimo gratuito de coisas não fungíveis. Perfaz-se com a tradição do objeto.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9c4d3f4238d3b6051812f64ea7609c2afdab469b4f3cfc8a40302fead7b19b26",
+     "o_que_significa": "12c13ac5f046d3048ef68363fd45494e34adb5afdb7633aa58ace72aab3931e7",
+     "exemplo_pratico": "fe9de8c21e20997d3ee2b041bbd5ccee61569d0b5412b0f89464c124e8bd0370",
+     "atencao": "0a1a29e31474c1fde835dd9399a5c8baea5f9639e434c6912f0ca5291012aedd",
+     "palavras_dificeis": "ba0fe51775b30d347961d0babe281a9b306ca8f9ab65f4fd83c82b5d8579600a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.579, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Comodato é empréstimo gratuito de bem não fungível e se constitui quando o objeto é efetivamente entregue.’. O campo de atenção registra: ‘Promessa sem entrega ainda não perfaz o comodato. Se houver pagamento ou restituição por equivalente, pode tratar-se de outro contrato.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 62,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 451,
+   "target_id": "CC2002:ART.580",
+   "explanation_id": "ENTENDA/CC2002:ART.580/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.580:CAPUT\tOs tutores, curadores e em geral todos os administradores de bens alheios não poderão dar em comodato, sem autorização especial, os bens confiados à sua guarda.",
+   "source_snapshot_sha256": "92e5bb64ed76bcf2fbd22c29ae7fe8a6d2e2fbf9c970be8ca44edf5f2441d106",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.580:CAPUT",
+     "text": "Os tutores, curadores e em geral todos os administradores de bens alheios não poderão dar em comodato, sem autorização especial, os bens confiados à sua guarda."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Os tutores, curadores e em geral todos os administradores de bens alheios não poderão dar em comodato, sem autorização especial, os bens confiados à sua guarda.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "77a06c928084b4671ed34cd1a11439af1728638adfc05c9a2b60951425210dfb",
+     "o_que_significa": "408d9d71da824106457592f291ddc544dbada236f35664f11eea94374e1f60fb",
+     "exemplo_pratico": "5682f8e7a1396dd0f5521bf44c32b121e3814d2963b41e8a921543727bf3cd9d",
+     "atencao": "57695f29b6a38d9a5e602479a7c1b585fe1af158deae441ea59d792612c97e1e",
+     "palavras_dificeis": "4c1a9659b9a7e8f2d687eb71dcd91e91905bd2b52c596e950684d3e7884e2e3a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.580, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Tutor, curador ou administrador de patrimônio alheio só pode emprestar gratuitamente esses bens com autorização especial.’. O campo de atenção registra: ‘A autorização deve abranger o ato concreto. O administrador não pode tratar bem alheio como se fosse de livre disposição pessoal.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 63,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 452,
+   "target_id": "CC2002:ART.581",
+   "explanation_id": "ENTENDA/CC2002:ART.581/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.581:CAPUT\tSe o comodato não tiver prazo convencional, presumir-se-lhe-á o necessário para o uso concedido; não podendo o comodante, salvo necessidade imprevista e urgente, reconhecida pelo juiz, suspender o uso e gozo da coisa emprestada, antes de findo o prazo convencional, ou o que se determine pelo uso outorgado.",
+   "source_snapshot_sha256": "893555f364063900c7f0d0cdec6f9ac3a2005f3e4ffdd2d61945c77fbc112b8c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.581:CAPUT",
+     "text": "Se o comodato não tiver prazo convencional, presumir-se-lhe-á o necessário para o uso concedido; não podendo o comodante, salvo necessidade imprevista e urgente, reconhecida pelo juiz, suspender o uso e gozo da coisa emprestada, antes de findo o prazo convencional, ou o que se determine pelo uso outorgado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o comodato não tiver prazo convencional, presumir-se-lhe-á o necessário para o uso concedido; não podendo o comodante, salvo necessidade imprevista e urgente, reconhecida pelo juiz, suspender o uso e gozo da coisa emprestada, antes de findo o prazo convencional, ou o que se determine pelo uso outorgado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9a532342524cd6b298f3fb5af794fbd1f640dfcde8ab427304442d1b1ea16591",
+     "o_que_significa": "3c141b4d97a02ca39f3ae5ba29ecd369d79063c3b3a4386108dd1cd3c453689d",
+     "exemplo_pratico": "b4a15d9035eb0bc104ceb69b0866984f014a99e282e2f0d6fe8c386287f3f47f",
+     "atencao": "1ff9d424b76400afed2f6a6d85c358d3e28868743c91c01038e6c9269c03188a",
+     "palavras_dificeis": "bb852d72bc8fc229fa246cffe72529129ff004a61c51e28bffdb7235877172c5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.581, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Sem prazo expresso, o comodato dura o período necessário ao uso concedido. O comodante só interrompe antes por necessidade urgente e imprevista reconhecida judicialmente.’. O campo de atenção registra: ‘A necessidade do comodante precisa ser nova, urgente e reconhecida pelo juiz. Encerrado o prazo ou o uso, nasce o dever de devolver.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 64,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 453,
+   "target_id": "CC2002:ART.582",
+   "explanation_id": "ENTENDA/CC2002:ART.582/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.582:CAPUT\tO comodatário é obrigado a conservar, como se sua própria fora, a coisa emprestada, não podendo usá-la senão de acordo com o contrato ou a natureza dela, sob pena de responder por perdas e danos. O comodatário constituído em mora, além de por ela responder, pagará, até restituí-la, o aluguel da coisa que for arbitrado pelo comodante.",
+   "source_snapshot_sha256": "f83d9ca1a0c4cea3e8790ec22395d6ae11e5fc82b609c3ac4a4f73c6290e2e82",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.582:CAPUT",
+     "text": "O comodatário é obrigado a conservar, como se sua própria fora, a coisa emprestada, não podendo usá-la senão de acordo com o contrato ou a natureza dela, sob pena de responder por perdas e danos. O comodatário constituído em mora, além de por ela responder, pagará, até restituí-la, o aluguel da coisa que for arbitrado pelo comodante."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O comodatário é obrigado a conservar, como se sua própria fora, a coisa emprestada, não podendo usá-la senão de acordo com o contrato ou a natureza dela, sob pena de responder por perdas e danos. O comodatário constituído em mora, além de por ela responder, pagará, até restituí-la, o aluguel da coisa que for arbitrado pelo comodante.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a9f24d4ee78cd8de3cd45bfd70bb60410b845691620fae2ff607044bd8fe8491",
+     "o_que_significa": "748fcf9ada458a762a3817db0264e9031d4e72fae46a5481ae20f2a58c0aa864",
+     "exemplo_pratico": "94429498f994bd06db443e9427348aa487630a931b99b0fa1844fc507142ba3e",
+     "atencao": "41b4d950371cc485b6e006aa1d7a3bd906e566e4784302f66f09e6c5515b7618",
+     "palavras_dificeis": "fff204cc65db03385f96c857a5767d9ae4d3dbb166785b0a4cf56ffba65637ae"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.582, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O comodatário deve conservar e usar a coisa conforme contrato ou natureza. Se atrasar a devolução, responde pela mora e paga aluguel arbitrado pelo comodante até restituí-la.’. O campo de atenção registra: ‘O aluguel decorrente da mora é sanção pela retenção, não transforma retroativamente o comodato em locação.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 65,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 454,
+   "target_id": "CC2002:ART.583",
+   "explanation_id": "ENTENDA/CC2002:ART.583/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.583:CAPUT\tSe, correndo risco o objeto do comodato juntamente com outros do comodatário, antepuser este a salvação dos seus abandonando o do comodante, responderá pelo dano ocorrido, ainda que se possa atribuir a caso fortuito, ou força maior.",
+   "source_snapshot_sha256": "e10c02b18ac0764a7c698e7f0bc5b87abeee8e71652a6b9e719e28009b66ea86",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.583:CAPUT",
+     "text": "Se, correndo risco o objeto do comodato juntamente com outros do comodatário, antepuser este a salvação dos seus abandonando o do comodante, responderá pelo dano ocorrido, ainda que se possa atribuir a caso fortuito, ou força maior."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se, correndo risco o objeto do comodato juntamente com outros do comodatário, antepuser este a salvação dos seus abandonando o do comodante, responderá pelo dano ocorrido, ainda que se possa atribuir a caso fortuito, ou força maior.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5511e7cbf089db718efed983d1219e7202d2be0b74bcc583b76ebdde4a23ea17",
+     "o_que_significa": "d3ed8446ca9d658d8c087619d83cef7ea11f4b3822e1439d370333349f1c7dcd",
+     "exemplo_pratico": "20da1c44e4512d58507b6eca35f1f53c49937df86f507c44a38444e72ae8aafa",
+     "atencao": "f084cfa92507d388913ef3bfb843645f8b317f177d1c2af541b3c23c5cb44aa7",
+     "palavras_dificeis": "50626ecdb88257bfb8cb4caa92952ae1025e3ce17ac9ca78e90d2bbf3ea8f8d0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.583, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se bens do comodatário e a coisa emprestada correm o mesmo risco, ele responde pelo dano quando salva os próprios e abandona o bem do comodante, mesmo em evento fortuito.’. O campo de atenção registra: ‘É necessário perigo simultâneo e possibilidade relevante de escolha. Caso fortuito não exonera quando o dano decorre dessa preferência indevida.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 66,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 455,
+   "target_id": "CC2002:ART.584",
+   "explanation_id": "ENTENDA/CC2002:ART.584/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.584:CAPUT\tO comodatário não poderá jamais recobrar do comodante as despesas feitas com o uso e gozo da coisa emprestada.",
+   "source_snapshot_sha256": "ff9fd71f77a60080e6f7e7f3a37be49d0909161d1f1bf0927338994af7c86a0e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.584:CAPUT",
+     "text": "O comodatário não poderá jamais recobrar do comodante as despesas feitas com o uso e gozo da coisa emprestada."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O comodatário não poderá jamais recobrar do comodante as despesas feitas com o uso e gozo da coisa emprestada.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d380e37458b55d4c9f31c8343769bc05b9b4b251f36a53807ee80987d3a18ba9",
+     "o_que_significa": "d767be19019a327cd50a7f5470287b20400278a17f8a97b693782a7ab4d23187",
+     "exemplo_pratico": "e333ff7d219fca165d2948bf7e1d45f7db7bd072f4c0631c1c4dfd28ac9b9055",
+     "atencao": "78a10cfd20983cdad9698c66327270bdbe07d2c63ebc7d73e0bd929a33020c37",
+     "palavras_dificeis": "962d736a23dce276364b72b39190bee81947a13e39674f620a2d3b2d5ac27423"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.584, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Despesas ligadas ao uso e à fruição da coisa emprestada não podem ser cobradas do comodante.’. O campo de atenção registra: ‘A regra alcança gastos de uso. Despesa extraordinária e indispensável para conservar a coisa pode exigir análise distinta conforme o caso.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 67,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 456,
+   "target_id": "CC2002:ART.586",
+   "explanation_id": "ENTENDA/CC2002:ART.586/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.586:CAPUT\tO mútuo é o empréstimo de coisas fungíveis. O mutuário é obrigado a restituir ao mutuante o que dele recebeu em coisa do mesmo gênero, qualidade e quantidade.",
+   "source_snapshot_sha256": "4c274ab3f3cb7355b6123aa562dda72a3fdef95843de1e52316604269523cb73",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.586:CAPUT",
+     "text": "O mútuo é o empréstimo de coisas fungíveis. O mutuário é obrigado a restituir ao mutuante o que dele recebeu em coisa do mesmo gênero, qualidade e quantidade."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O mútuo é o empréstimo de coisas fungíveis. O mutuário é obrigado a restituir ao mutuante o que dele recebeu em coisa do mesmo gênero, qualidade e quantidade.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f87445000c1dd12453e2ccd2c2c4a2bc7ade7d0ba89bc18d58651b4297c19dda",
+     "o_que_significa": "2107c97bbd9f4f97d1fd2400848238fc229f4cdf7b5f9d2677f5c88c4b19f1e0",
+     "exemplo_pratico": "d34f40b9660004f486671ebe16fb299c5e98a31e5d60228552dfb67906ab9124",
+     "atencao": "ba12956fa971e8d6554a66dd05e3b28b1e73dabca9309e3df39e9b25d05bffa6",
+     "palavras_dificeis": "03b309fc7ab43aca8d8385365087e19af8979bcbfa3ac6e7008137c326676afc"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.586, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Mútuo é empréstimo de bem fungível; o mutuário devolve outro da mesma espécie, qualidade e quantidade, e não a unidade originalmente recebida.’. O campo de atenção registra: ‘Dinheiro é exemplo de bem fungível. Se deve ser devolvida a própria coisa individualizada, o regime adequado é o comodato.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 68,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 457,
+   "target_id": "CC2002:ART.587",
+   "explanation_id": "ENTENDA/CC2002:ART.587/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.587:CAPUT\tEste empréstimo transfere o domínio da coisa emprestada ao mutuário, por cuja conta correm todos os riscos dela desde a tradição.",
+   "source_snapshot_sha256": "45d4c9ccb77710664f19651955806662281216f149cf16098104fb0cecfc48d0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.587:CAPUT",
+     "text": "Este empréstimo transfere o domínio da coisa emprestada ao mutuário, por cuja conta correm todos os riscos dela desde a tradição."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Este empréstimo transfere o domínio da coisa emprestada ao mutuário, por cuja conta correm todos os riscos dela desde a tradição.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5f9a4bd71cd32f01a5286977088efe471323520cf0302a99190778b1b385c4f1",
+     "o_que_significa": "ef017a3b9ef81f8998e6dca181e6884516cffe976bce4c967aaa9b1f579aeae2",
+     "exemplo_pratico": "a080cc816f9ca23bbbc3fab0c70a5b5c9785d5d69263a1e81becd13779d1da60",
+     "atencao": "631d5c12957332aaaa7abc4edf7dee46a284d1c2dd5030648feebe66ae6481a0",
+     "palavras_dificeis": "6b60a9f856503e06aa738382ae47f91c6bbe0b04db1b9c9f8161d04188394832"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.587, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A entrega no mútuo transfere a propriedade ao mutuário, que passa a suportar os riscos da coisa.’. O campo de atenção registra: ‘A transferência ocorre com a tradição. O risco não se confunde com juros ou prazo, que dependem de outras regras e do contrato.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 69,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 458,
+   "target_id": "CC2002:ART.588",
+   "explanation_id": "ENTENDA/CC2002:ART.588/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.588:CAPUT\tO mútuo feito a pessoa menor, sem prévia autorização daquele sob cuja guarda estiver, não pode ser reavido nem do mutuário, nem de seus fiadores.",
+   "source_snapshot_sha256": "80dd2ec416251bbd0124abdb37da8f41a1f4710ed1e23db09bd6cf080fb96932",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.588:CAPUT",
+     "text": "O mútuo feito a pessoa menor, sem prévia autorização daquele sob cuja guarda estiver, não pode ser reavido nem do mutuário, nem de seus fiadores."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O mútuo feito a pessoa menor, sem prévia autorização daquele sob cuja guarda estiver, não pode ser reavido nem do mutuário, nem de seus fiadores.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "395a89fdfef3d03a582162e9b064f4a40554cc7996157a7d88892feb6ecfaab7",
+     "o_que_significa": "cf9b3f4c9e6cb40f2a68889978a53d9ae7d555069d148e51ab6cccccb2176f4e",
+     "exemplo_pratico": "69a238d6d1902bd851263364cefbfe21190da1ee7bb657a73c94ae0c6fa73e82",
+     "atencao": "816f7c85b541bc89442de9b52ca39571ef75bc1b5d822b3a4a2bd83f09f555ac",
+     "palavras_dificeis": "7db6945c6f281a000d42134d402ced7d3c6df4bb37fcaee461a7f47be376c82b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.588, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Empréstimo feito a menor sem autorização prévia de seu responsável não pode, em regra, ser cobrado do menor nem de seus fiadores.’. O campo de atenção registra: ‘A proteção admite as exceções do artigo seguinte. Também é necessário verificar capacidade e autorização no momento da contratação.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 70,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 459,
+   "target_id": "CC2002:ART.589",
+   "explanation_id": "ENTENDA/CC2002:ART.589/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.589:CAPUT\tCessa a disposição do artigo antecedente:\nCC2002:ART.589:INC.I\tse a pessoa, de cuja autorização necessitava o mutuário para contrair o empréstimo, o ratificar posteriormente;\nCC2002:ART.589:INC.II\tse o menor, estando ausente essa pessoa, se viu obrigado a contrair o empréstimo para os seus alimentos habituais;\nCC2002:ART.589:INC.III\tse o menor tiver bens ganhos com o seu trabalho. Mas, em tal caso, a execução do credor não lhes poderá ultrapassar as forças;\nCC2002:ART.589:INC.IV\tse o empréstimo reverteu em benefício do menor;\nCC2002:ART.589:INC.V\tse o menor obteve o empréstimo maliciosamente.",
+   "source_snapshot_sha256": "e5866913bbb6cbfb257d4ac899f9c115f46940b46562431df4c3646b90f1518b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.589:CAPUT",
+     "text": "Cessa a disposição do artigo antecedente:"
+    },
+    {
+     "label": "CC2002:ART.589:INC.I",
+     "text": "se a pessoa, de cuja autorização necessitava o mutuário para contrair o empréstimo, o ratificar posteriormente;"
+    },
+    {
+     "label": "CC2002:ART.589:INC.II",
+     "text": "se o menor, estando ausente essa pessoa, se viu obrigado a contrair o empréstimo para os seus alimentos habituais;"
+    },
+    {
+     "label": "CC2002:ART.589:INC.III",
+     "text": "se o menor tiver bens ganhos com o seu trabalho. Mas, em tal caso, a execução do credor não lhes poderá ultrapassar as forças;"
+    },
+    {
+     "label": "CC2002:ART.589:INC.IV",
+     "text": "se o empréstimo reverteu em benefício do menor;"
+    },
+    {
+     "label": "CC2002:ART.589:INC.V",
+     "text": "se o menor obteve o empréstimo maliciosamente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 6 segmentos vigentes do dispositivo: Cessa a disposição do artigo antecedente: | se a pessoa, de cuja autorização necessitava o mutuário para contrair o empréstimo, o ratificar posteriormente; | se o menor, estando ausente essa pessoa, se viu obrigado a contrair o empréstimo para os seus alimentos habituais; | se o menor tiver bens ganhos com o seu trabalho. Mas, em tal caso, a execução do credor não lhes poderá ultrapassar as forças; | se o empréstimo reverteu em benefício do menor; | se o menor obteve o empréstimo maliciosamente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a879d5a4edd95ef6335d1e9c53ea52be15b34b238a72c3cb35a22fb5c3cbf771",
+     "o_que_significa": "2f2c7e5ea27cb02f68e29ed6c6bbe42f383a2dcc0a2e8b7954da410a30df7a95",
+     "exemplo_pratico": "ac9d17a561554f74f2be84dce42dd07e5950e75af447bbe330b6b56800644ff6",
+     "atencao": "431a2810e1ca5958b6939cc464bad0fa5435cd7cf16434b5dc5fa6e5befa6920",
+     "palavras_dificeis": "219e9fe4271022fde9c147efcc4e70ecec36ad51794e8e432755351a3a1ce6c8"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.589, foram cotejados individualmente 6 segmento(s) vigente(s) (CAPUT, INC.I, INC.II, INC.III, INC.IV, INC.V) com os cinco campos ENTENDA. A síntese ativa informa: ‘O mútuo ao menor pode ser cobrado quando houver ratificação, necessidade de alimentos na ausência do responsável, bens do trabalho, benefício do menor ou obtenção maliciosa do empréstimo.’. O campo de atenção registra: ‘Cada exceção exige prova. Na hipótese dos ganhos próprios, a execução não pode superar a capacidade desses bens.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 71,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 460,
+   "target_id": "CC2002:ART.590",
+   "explanation_id": "ENTENDA/CC2002:ART.590/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.590:CAPUT\tO mutuante pode exigir garantia da restituição, se antes do vencimento o mutuário sofrer notória mudança em sua situação econômica.",
+   "source_snapshot_sha256": "0021959ebf967869bb21dcc1ed2a363b2d2f87ad76eef16d05c061bd1e1853d9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.590:CAPUT",
+     "text": "O mutuante pode exigir garantia da restituição, se antes do vencimento o mutuário sofrer notória mudança em sua situação econômica."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O mutuante pode exigir garantia da restituição, se antes do vencimento o mutuário sofrer notória mudança em sua situação econômica.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4e60753bd081bc9a7a1bf64ea87d79690724def85fd2ad3e1cc114cdbb103527",
+     "o_que_significa": "c6deb3b74a478793ed63a57c6017172a23eb2247ad6fcd498906eaa902ed81cf",
+     "exemplo_pratico": "2ed33fe447bdd2777836359a2025aff8d70819e8070ba07f85a2ef5bfb6831aa",
+     "atencao": "414e6fad5eb744706e2c1dd72bf9637858cd2fba684687980a086f8e27c959d0",
+     "palavras_dificeis": "326bf24cd69969b2efd873673b034f98532ea6b4cae401352e1c865f8fdb7197"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.590, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Antes do vencimento, o mutuante pode exigir garantia se houver mudança econômica notória do mutuário que ameace a restituição.’. O campo de atenção registra: ‘A mudança deve ser perceptível e relevante. A medida é exigir garantia, não presumir por si só inadimplemento definitivo.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 72,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 461,
+   "target_id": "CC2002:ART.591",
+   "explanation_id": "ENTENDA/CC2002:ART.591/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.591:CAPUT\tDestinando-se o mútuo a fins econômicos, presumem-se devidos juros. (Redação dada pela Lei nº 14.905, de 2024) Produção de efeitos\nCC2002:ART.591:PAR.UNICO\tSe a taxa de juros não for pactuada, aplica-se a taxa legal prevista no art. 406 deste Código. (Incluído pela Lei nº 14.905, de 2024) Produção de efeitos",
+   "source_snapshot_sha256": "54f6aa968133afab714fdd8a6160aba16d677497565ecf1679d617b158436bb5",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.591:CAPUT",
+     "text": "Destinando-se o mútuo a fins econômicos, presumem-se devidos juros. (Redação dada pela Lei nº 14.905, de 2024) Produção de efeitos"
+    },
+    {
+     "label": "CC2002:ART.591:PAR.UNICO",
+     "text": "Se a taxa de juros não for pactuada, aplica-se a taxa legal prevista no art. 406 deste Código. (Incluído pela Lei nº 14.905, de 2024) Produção de efeitos"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Destinando-se o mútuo a fins econômicos, presumem-se devidos juros. (Redação dada pela Lei nº 14.905, de 2024) Produção de efeitos | Se a taxa de juros não for pactuada, aplica-se a taxa legal prevista no art. 406 deste Código. (Incluído pela Lei nº 14.905, de 2024) Produção de efeitos",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b02dbf966c2cca5ff98ae66fe2ef5eae7fff58306524b245085d12f1a0d436be",
+     "o_que_significa": "7a86f6e2a51930bae4163b7b791f910223d8535a2245171b1b7be7633cbf6c48",
+     "exemplo_pratico": "5ac854dbbc22fccc49c4128924ffb28792184b7eaa3e2571170d39b2b95e8c78",
+     "atencao": "66fd73ce9bb787b8d61ce038c0fabeb7a0bdcfe5025bcf7b936c18526ab29383",
+     "palavras_dificeis": "d95a35f800a8fffedb8ead7630198a1d2c25d6b4e200b31b6a33a4feb4b47f5b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.591, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘No mútuo voltado a finalidade econômica, presume-se a cobrança de juros. Se as partes não fixarem a taxa, aplica-se a taxa legal definida pelo art. 406.’. O campo de atenção registra: ‘A presunção depende de finalidade econômica. Taxa contratada e regras especiais devem ser examinadas antes do critério legal subsidiário.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 73,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 462,
+   "target_id": "CC2002:ART.592",
+   "explanation_id": "ENTENDA/CC2002:ART.592/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.592:CAPUT\tNão se tendo convencionado expressamente, o prazo do mútuo será:\nCC2002:ART.592:INC.I\taté a próxima colheita, se o mútuo for de produtos agrícolas, assim para o consumo, como para semeadura;\nCC2002:ART.592:INC.II\tde trinta dias, pelo menos, se for de dinheiro;\nCC2002:ART.592:INC.III\tdo espaço de tempo que declarar o mutuante, se for de qualquer outra coisa fungível.",
+   "source_snapshot_sha256": "5d693881a77c130cc2c21faccd881afc1e214172aca0d15c4966de6a27d7335f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.592:CAPUT",
+     "text": "Não se tendo convencionado expressamente, o prazo do mútuo será:"
+    },
+    {
+     "label": "CC2002:ART.592:INC.I",
+     "text": "até a próxima colheita, se o mútuo for de produtos agrícolas, assim para o consumo, como para semeadura;"
+    },
+    {
+     "label": "CC2002:ART.592:INC.II",
+     "text": "de trinta dias, pelo menos, se for de dinheiro;"
+    },
+    {
+     "label": "CC2002:ART.592:INC.III",
+     "text": "do espaço de tempo que declarar o mutuante, se for de qualquer outra coisa fungível."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: Não se tendo convencionado expressamente, o prazo do mútuo será: | até a próxima colheita, se o mútuo for de produtos agrícolas, assim para o consumo, como para semeadura; | de trinta dias, pelo menos, se for de dinheiro; | do espaço de tempo que declarar o mutuante, se for de qualquer outra coisa fungível.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9be3c03b41f071f0b80313bb8adc497c45b1e21e5f0584b9479991aa4c73b354",
+     "o_que_significa": "2997cdd0afef37047a7c47b7b797b0cdcfbd5214a3cda3e9c6362c2df5da10be",
+     "exemplo_pratico": "ccbaabf6425ff624df73ac14cb066a128675ef9c59fda398f4b3cf706964c1e2",
+     "atencao": "6a504fbdb98d78e6399e7c7172c3570ab2e2253e78c1263f1163dd4df5f02013",
+     "palavras_dificeis": "985f5a5366925117afd639277962820e26919d8bb062eecb15de1bcb52431229"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.592, foram cotejados individualmente 4 segmento(s) vigente(s) (CAPUT, INC.I, INC.II, INC.III) com os cinco campos ENTENDA. A síntese ativa informa: ‘Sem prazo expresso, o mútuo vence na próxima colheita para produtos agrícolas, em pelo menos trinta dias para dinheiro e no período declarado pelo mutuante para outros fungíveis.’. O campo de atenção registra: ‘As regras cedem a prazo expressamente convencionado. Para outros bens fungíveis, a declaração do mutuante deve respeitar boa-fé e permitir cumprimento.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 74,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 463,
+   "target_id": "CC2002:ART.593",
+   "explanation_id": "ENTENDA/CC2002:ART.593/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.593:CAPUT\tA prestação de serviço, que não estiver sujeita às leis trabalhistas ou a lei especial, reger-se-á pelas disposições deste Capítulo.",
+   "source_snapshot_sha256": "520d81c371a8084d295e512582762234eb86d86c8c06627bca12f71955d4ac66",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.593:CAPUT",
+     "text": "A prestação de serviço, que não estiver sujeita às leis trabalhistas ou a lei especial, reger-se-á pelas disposições deste Capítulo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A prestação de serviço, que não estiver sujeita às leis trabalhistas ou a lei especial, reger-se-á pelas disposições deste Capítulo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b9ebc98de1a4c3921272502c89a321d48f109c311cab340288bb438ce19837cb",
+     "o_que_significa": "30211ae8a0959a0b0f74b0e0c5541dd02e132807da45b34395ad2a681ad46e91",
+     "exemplo_pratico": "a228eb5aafae788c6e35cfb782c629171d454645618ef0c182e28a279a9e7634",
+     "atencao": "715f1e607c0dbf0d4fbc0a90af9fa101b3f42c4058887cca5def4019b11812d4",
+     "palavras_dificeis": "0296f7c4fcef18578b5688bc624f8dfcea7c4af4264d4d1b41a257e737ae38fe"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.593, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘As normas civis deste capítulo regem prestação de serviço apenas quando a relação não estiver submetida à legislação trabalhista ou a lei especial.’. O campo de atenção registra: ‘O nome dado ao contrato não afasta regime trabalhista quando seus requisitos existem. A qualificação depende da realidade da relação.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 75,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 464,
+   "target_id": "CC2002:ART.594",
+   "explanation_id": "ENTENDA/CC2002:ART.594/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.594:CAPUT\tToda a espécie de serviço ou trabalho lícito, material ou imaterial, pode ser contratada mediante retribuição.",
+   "source_snapshot_sha256": "6c02b47af266488335328f3fd2c5c102996ca6c61324900c28a8054fd51358ef",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.594:CAPUT",
+     "text": "Toda a espécie de serviço ou trabalho lícito, material ou imaterial, pode ser contratada mediante retribuição."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Toda a espécie de serviço ou trabalho lícito, material ou imaterial, pode ser contratada mediante retribuição.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "43bcef973bfd9a3db426bac5cdd232f5a3d7d9b4c607a2f11d584a1afb6df6fc",
+     "o_que_significa": "9e6e67f540285017965415ac6ff762f279a889204d46ec813b10aea046d3e57a",
+     "exemplo_pratico": "ff64187354c3edceeb9729d4c680c756303bb9fddca99c6f89d738f1c36d4b60",
+     "atencao": "b64818bae7cf7836a1f8aed8a12793a715b8d6a789e26c1704b94a9ece969059",
+     "palavras_dificeis": "9410ac958145386f9742c6da9987b37fb3dfb493cfcb8afcefc246debec3e843"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.594, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Qualquer trabalho lícito, material ou intelectual, pode ser objeto de prestação de serviço remunerada.’. O campo de atenção registra: ‘Atividade ilícita não se torna válida por contrato. Habilitação legal e regimes especiais continuam exigíveis quando aplicáveis.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 76,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 465,
+   "target_id": "CC2002:ART.595",
+   "explanation_id": "ENTENDA/CC2002:ART.595/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.595:CAPUT\tNo contrato de prestação de serviço, quando qualquer das partes não souber ler, nem escrever, o instrumento poderá ser assinado a rogo e subscrito por duas testemunhas.",
+   "source_snapshot_sha256": "b022ae3eb23048451c2f314f3c47b8ebfe3242adc5eaa7a51354b013bda2e739",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.595:CAPUT",
+     "text": "No contrato de prestação de serviço, quando qualquer das partes não souber ler, nem escrever, o instrumento poderá ser assinado a rogo e subscrito por duas testemunhas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: No contrato de prestação de serviço, quando qualquer das partes não souber ler, nem escrever, o instrumento poderá ser assinado a rogo e subscrito por duas testemunhas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "3b30701d1500224e4bc345736d71876065259d720bc09f97be2d3d7d013b218f",
+     "o_que_significa": "77050bbd9ab79e8188a5f3a90d2755f76f019671a76d55d302822695b7c64ef6",
+     "exemplo_pratico": "31fe5e37a898a33c27e5a34ebddbe85416164e8cb40ad94999552aed7a432c45",
+     "atencao": "3f334558f69c23f080fab47fb1e65ffe43024aa01ebca1f1d7b044a1fe352a60",
+     "palavras_dificeis": "bcd46789b72d56880c5f7c622804466b0720b8bd109a4bd2f4b006f8772a5d06"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.595, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se uma parte não sabe ler nem escrever, o contrato de serviço pode ser assinado por outra pessoa a seu pedido e também por duas testemunhas.’. O campo de atenção registra: ‘A assinatura deve corresponder à vontade real da parte. A forma especial não legitima fraude, coação ou conteúdo não compreendido.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 77,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 466,
+   "target_id": "CC2002:ART.596",
+   "explanation_id": "ENTENDA/CC2002:ART.596/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.596:CAPUT\tNão se tendo estipulado, nem chegado a acordo as partes, fixar-se-á por arbitramento a retribuição, segundo o costume do lugar, o tempo de serviço e sua qualidade.",
+   "source_snapshot_sha256": "2e01983f09644ba0c76e9bbbe7471d7cd6710926391697084d8df0538b9c30b1",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.596:CAPUT",
+     "text": "Não se tendo estipulado, nem chegado a acordo as partes, fixar-se-á por arbitramento a retribuição, segundo o costume do lugar, o tempo de serviço e sua qualidade."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não se tendo estipulado, nem chegado a acordo as partes, fixar-se-á por arbitramento a retribuição, segundo o costume do lugar, o tempo de serviço e sua qualidade.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d679be928bd2ece2b93b081167278d603f00e3879ab63cdd5fed53a8efd18c17",
+     "o_que_significa": "cc8931845c192fbcd033801b65a1e9114f95efdf0deecf596f05432c6feb4aea",
+     "exemplo_pratico": "6616d26cd1d5ca66dc6950baf9bc0ca546e3d08a11cd3fcfbfde59fb680d791c",
+     "atencao": "5630f7edfa0e136a32b3a8cf9459a302dbb72e46d7fd1136b11ae3d381f5b2c4",
+     "palavras_dificeis": "a577d33ee348257f8e663b9bda8796934ad32fc2af4f81b6b3e0dc67fc3bebbc"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.596, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quando não existe valor estipulado nem acordo posterior, a remuneração é arbitrada considerando costume local, duração e qualidade do serviço.’. O campo de atenção registra: ‘Arbitramento depende de prova dos critérios e não autoriza valor desconectado do serviço efetivamente prestado.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 78,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 467,
+   "target_id": "CC2002:ART.597",
+   "explanation_id": "ENTENDA/CC2002:ART.597/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.597:CAPUT\tA retribuição pagar-se-á depois de prestado o serviço, se, por convenção, ou costume, não houver de ser adiantada, ou paga em prestações.",
+   "source_snapshot_sha256": "4ffe51493963f7bc8870e22f44abb286355cf4d09a79f0f1f619b9d189286aad",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.597:CAPUT",
+     "text": "A retribuição pagar-se-á depois de prestado o serviço, se, por convenção, ou costume, não houver de ser adiantada, ou paga em prestações."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A retribuição pagar-se-á depois de prestado o serviço, se, por convenção, ou costume, não houver de ser adiantada, ou paga em prestações.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8bb4030ea07519c7143b251e1106d13800fb1dd2165a38645e2c2918031859cd",
+     "o_que_significa": "b084619d105e5e724c01987100a082d547233873540bb3563242d3b3ebbdf4fb",
+     "exemplo_pratico": "5bb67fa066371163575a897c165416d93cc0bb85a10d5d88d6aa5fba290abe66",
+     "atencao": "8cc3d7b87912d529fe3fe2c7eeda314599b173ee6bda454812a6895c9324b91b",
+     "palavras_dificeis": "35299076dce065d9d743182c4ecad68882a70ceab80a08224562196731e1dccc"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.597, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A remuneração é paga depois do serviço, salvo se contrato ou costume determinar adiantamento ou parcelas.’. O campo de atenção registra: ‘O artigo trata do momento do pagamento, não dispensa prova da prestação nem afasta condições expressamente ajustadas.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 79,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 468,
+   "target_id": "CC2002:ART.598",
+   "explanation_id": "ENTENDA/CC2002:ART.598/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.598:CAPUT\tA prestação de serviço não se poderá convencionar por mais de quatro anos, embora o contrato tenha por causa o pagamento de dívida de quem o presta, ou se destine à execução de certa e determinada obra. Neste caso, decorridos quatro anos, dar-se-á por findo o contrato, ainda que não concluída a obra.",
+   "source_snapshot_sha256": "11850e6dfa3db8b45ab71bd69f753cc0fc13c3f530a8b8bfb1ec8019e4f3bf3a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.598:CAPUT",
+     "text": "A prestação de serviço não se poderá convencionar por mais de quatro anos, embora o contrato tenha por causa o pagamento de dívida de quem o presta, ou se destine à execução de certa e determinada obra. Neste caso, decorridos quatro anos, dar-se-á por findo o contrato, ainda que não concluída a obra."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A prestação de serviço não se poderá convencionar por mais de quatro anos, embora o contrato tenha por causa o pagamento de dívida de quem o presta, ou se destine à execução de certa e determinada obra. Neste caso, decorridos quatro anos, dar-se-á por findo o contrato, ainda que não concluída a obra.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9034a53ff6444809eabfca927b678ead04448172534a7c1684c59700aecd860d",
+     "o_que_significa": "4ad29fc728e34498ef8492c6be7c34114f2cd7d06aeed267fb8d54f957da40e7",
+     "exemplo_pratico": "ee50e0d8db62ca9845f36c2fa1582110108251ed303e632348aedebb5bbec330",
+     "atencao": "27ec6a96a0e093881bc7ca06dc715b6eb829e067d86812e33d99d901bd90a6e5",
+     "palavras_dificeis": "2ff94d8bb3f97338acee8503812674ff994e42aa648803f9ce36518687ea155b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.598, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Contrato de serviço não pode durar mais de quatro anos, mesmo ligado a dívida ou obra determinada; alcançado esse limite, termina ainda que a obra continue incompleta.’. O campo de atenção registra: ‘Nada impede novo vínculo juridicamente válido após o término, mas não se pode usar a renovação para fraudar o limite e regimes protetivos.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 80,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 469,
+   "target_id": "CC2002:ART.599",
+   "explanation_id": "ENTENDA/CC2002:ART.599/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.599:CAPUT\tNão havendo prazo estipulado, nem se podendo inferir da natureza do contrato, ou do costume do lugar, qualquer das partes, a seu arbítrio, mediante prévio aviso, pode resolver o contrato.\nCC2002:ART.599:PAR.UNICO\tDar-se-á o aviso:\nCC2002:ART.599:PAR.UNICO:INC.I\tcom antecedência de oito dias, se o salário se houver fixado por tempo de um mês, ou mais;\nCC2002:ART.599:PAR.UNICO:INC.II\tcom antecipação de quatro dias, se o salário se tiver ajustado por semana, ou quinzena;\nCC2002:ART.599:PAR.UNICO:INC.III\tde véspera, quando se tenha contratado por menos de sete dias.",
+   "source_snapshot_sha256": "3120a0228a6464ad6d2b7f6e262a02d33c6ddf3f5995c87dfbf4eddc1b5520b3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.599:CAPUT",
+     "text": "Não havendo prazo estipulado, nem se podendo inferir da natureza do contrato, ou do costume do lugar, qualquer das partes, a seu arbítrio, mediante prévio aviso, pode resolver o contrato."
+    },
+    {
+     "label": "CC2002:ART.599:PAR.UNICO",
+     "text": "Dar-se-á o aviso:"
+    },
+    {
+     "label": "CC2002:ART.599:PAR.UNICO:INC.I",
+     "text": "com antecedência de oito dias, se o salário se houver fixado por tempo de um mês, ou mais;"
+    },
+    {
+     "label": "CC2002:ART.599:PAR.UNICO:INC.II",
+     "text": "com antecipação de quatro dias, se o salário se tiver ajustado por semana, ou quinzena;"
+    },
+    {
+     "label": "CC2002:ART.599:PAR.UNICO:INC.III",
+     "text": "de véspera, quando se tenha contratado por menos de sete dias."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 5 segmentos vigentes do dispositivo: Não havendo prazo estipulado, nem se podendo inferir da natureza do contrato, ou do costume do lugar, qualquer das partes, a seu arbítrio, mediante prévio aviso, pode resolver o contrato. | Dar-se-á o aviso: | com antecedência de oito dias, se o salário se houver fixado por tempo de um mês, ou mais; | com antecipação de quatro dias, se o salário se tiver ajustado por semana, ou quinzena; | de véspera, quando se tenha contratado por menos de sete dias.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "daab4b3f69cc2ce7b22ac46f7875a9d826ed8bfcccee15318cdeef323453fbf5",
+     "o_que_significa": "8b3b41c9700d3dde9b7ff4fd19a5746b0b23a6499f2bc4e745594665f230e5d2",
+     "exemplo_pratico": "2d311e1a081a653bd9dff63a6f47e148a4879fb2020607f53a059e7becc8657a",
+     "atencao": "feb46f0f8f5551396ed92d180a82ca3bfd66da56d7f20a2aa30d682267b4d7f8",
+     "palavras_dificeis": "30b5a6a2b2f923e211ccf39c4e36e4bf5789eb6daf87e61920101fecfbf26bd5"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.599, foram cotejados individualmente 5 segmento(s) vigente(s) (CAPUT, PAR.UNICO, INC.I, INC.II, INC.III) com os cinco campos ENTENDA. A síntese ativa informa: ‘Sem prazo definido ou inferível, qualquer parte pode encerrar o contrato mediante aviso: oito dias para pagamento mensal ou maior, quatro para semanal ou quinzenal e véspera para período inferior a sete dias.’. O campo de atenção registra: ‘Os prazos dependem da periodicidade remuneratória. Prazo contratual, natureza do serviço ou costume podem afastar a hipótese de duração indeterminada.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 81,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 470,
+   "target_id": "CC2002:ART.600",
+   "explanation_id": "ENTENDA/CC2002:ART.600/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.600:CAPUT\tNão se conta no prazo do contrato o tempo em que o prestador de serviço, por culpa sua, deixou de servir.",
+   "source_snapshot_sha256": "df378e763e9fca9cb8d8e2c0b202f48e6ce707dc0f9b5745896f60399edf9bc3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.600:CAPUT",
+     "text": "Não se conta no prazo do contrato o tempo em que o prestador de serviço, por culpa sua, deixou de servir."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não se conta no prazo do contrato o tempo em que o prestador de serviço, por culpa sua, deixou de servir.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5e39d5570e50eadb6c5b8c7ad0e3558a40487378495e2cfd6328962acfc7b073",
+     "o_que_significa": "ab0a1d594543795cb0d4d8e051a760eaf836d1d10c54724b1b5cf8672c5a8b46",
+     "exemplo_pratico": "4ca25583198f5ca1f7f83f604c4070542d470d65dea41f194e1679b92b7cb3d5",
+     "atencao": "a562e5bfc995362348befe56da8b04f66b88660d7bb46667846c54de81bf539f",
+     "palavras_dificeis": "626835a348e76c076fbcb40b1693f49c9d8607174d536941d5c2a10be97c6d83"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.600, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Período em que o prestador deixa de trabalhar por culpa própria não integra a contagem do prazo contratual.’. O campo de atenção registra: ‘A exclusão exige culpa do prestador. Interrupção causada pelo contratante ou força maior demanda análise diferente.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 82,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 471,
+   "target_id": "CC2002:ART.601",
+   "explanation_id": "ENTENDA/CC2002:ART.601/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.601:CAPUT\tNão sendo o prestador de serviço contratado para certo e determinado trabalho, entender-se-á que se obrigou a todo e qualquer serviço compatível com as suas forças e condições.",
+   "source_snapshot_sha256": "d2cb7361648d72d56d8ca055e59ed9b50db3c2a1def73723fddec089e605dfe3",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.601:CAPUT",
+     "text": "Não sendo o prestador de serviço contratado para certo e determinado trabalho, entender-se-á que se obrigou a todo e qualquer serviço compatível com as suas forças e condições."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Não sendo o prestador de serviço contratado para certo e determinado trabalho, entender-se-á que se obrigou a todo e qualquer serviço compatível com as suas forças e condições.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ccb6ac91e8dfb048f46f77695449baecec090cd7c850b9b4ae140ee3c4715816",
+     "o_que_significa": "52c8dad2d6c1ce8ab79774a06646b8fa72a2f813766308fcb16af330bf4c3b7d",
+     "exemplo_pratico": "81df557b1d17ddd7039f4932422cf5e2bb8e89098af6416d577553d46b2c03eb",
+     "atencao": "1897c557526cf070b0f7165cb01955f41ce02d925fcbcb8fbb26a7342a0e60a6",
+     "palavras_dificeis": "e3d3ac97e03ed49bab619054437cabeb41f709870f6ee3761765c16815d58533"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.601, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Sem contratação para tarefa específica, o prestador assume serviços compatíveis com suas forças e condições pessoais.’. O campo de atenção registra: ‘O contratante não pode exigir trabalho ilícito, perigoso ou incompatível. As condições concretas delimitam o conteúdo da obrigação.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 83,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 472,
+   "target_id": "CC2002:ART.602",
+   "explanation_id": "ENTENDA/CC2002:ART.602/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.602:CAPUT\tO prestador de serviço contratado por tempo certo, ou por obra determinada, não se pode ausentar, ou despedir, sem justa causa, antes de preenchido o tempo, ou concluída a obra.\nCC2002:ART.602:PAR.UNICO\tSe se despedir sem justa causa, terá direito à retribuição vencida, mas responderá por perdas e danos. O mesmo dar-se-á, se despedido por justa causa.",
+   "source_snapshot_sha256": "e1e7d02b446947d8ab930727741c6567a8056eed15a5793e0a44e9da80b728c8",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.602:CAPUT",
+     "text": "O prestador de serviço contratado por tempo certo, ou por obra determinada, não se pode ausentar, ou despedir, sem justa causa, antes de preenchido o tempo, ou concluída a obra."
+    },
+    {
+     "label": "CC2002:ART.602:PAR.UNICO",
+     "text": "Se se despedir sem justa causa, terá direito à retribuição vencida, mas responderá por perdas e danos. O mesmo dar-se-á, se despedido por justa causa."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O prestador de serviço contratado por tempo certo, ou por obra determinada, não se pode ausentar, ou despedir, sem justa causa, antes de preenchido o tempo, ou concluída a obra. | Se se despedir sem justa causa, terá direito à retribuição vencida, mas responderá por perdas e danos. O mesmo dar-se-á, se despedido por justa causa.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "76d6241f0987efd8616aa6643ed5accfa2f9893565ea5ad187c63cb3e93a21be",
+     "o_que_significa": "f6f078751f44f80d9be00355068622b2b50931cf5cf63df78d1cb4dc7f032b20",
+     "exemplo_pratico": "56595fba271847a37106cb250e137bef2443ae55c2b6364114caea2a076c3a85",
+     "atencao": "fd1966076ff0460204b626cf024030018ad4c2b671e8aecf49a0f84f9b08eddc",
+     "palavras_dificeis": "693b4b3242e6ba72120b19e80480e103c16b44ddb35291a09657792f0fc222ae"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.602, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Prestador contratado por prazo certo ou obra determinada não pode abandonar o serviço sem justa causa. Se o fizer, recebe o vencido, mas indeniza danos; igual consequência ocorre na dispensa por justa causa.’. O campo de atenção registra: ‘Perdas e danos não são automáticas em valor fixo: exigem nexo e prova. Justa causa deve ser demonstrada.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 84,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 473,
+   "target_id": "CC2002:ART.603",
+   "explanation_id": "ENTENDA/CC2002:ART.603/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.603:CAPUT\tSe o prestador de serviço for despedido sem justa causa, a outra parte será obrigada a pagar-lhe por inteiro a retribuição vencida, e por metade a que lhe tocaria de então ao termo legal do contrato.",
+   "source_snapshot_sha256": "59151b728197d7d35be9a50e60e4448193ce16feddf505fa03a6b325f83f52c9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.603:CAPUT",
+     "text": "Se o prestador de serviço for despedido sem justa causa, a outra parte será obrigada a pagar-lhe por inteiro a retribuição vencida, e por metade a que lhe tocaria de então ao termo legal do contrato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o prestador de serviço for despedido sem justa causa, a outra parte será obrigada a pagar-lhe por inteiro a retribuição vencida, e por metade a que lhe tocaria de então ao termo legal do contrato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6e227f7748e2e129e871263a6f80d6b0fae9ca68d37ab1e7403cffbb62a1b7a2",
+     "o_que_significa": "8399161f72d3de217372290d91617bf92ec4c8031b574c790ff79e1daff39a01",
+     "exemplo_pratico": "14fcdb9c9b61313d13f5aeefa403c4016a0453214e1defd060034c7918e32446",
+     "atencao": "fd79902d389a93b0dc0fcf176b73bc8e82a805866af4c16ea1d368f8b3ccbc8f",
+     "palavras_dificeis": "559ba69085259ccf645c739a35da038e010743b72bcd94922b42a3f82850ea3e"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.603, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Se o prestador é dispensado sem justa causa, recebe integralmente a remuneração vencida e metade do que ganharia até o fim do prazo contratual.’. O campo de atenção registra: ‘A regra pressupõe contrato sujeito a este capítulo e dispensa sem justa causa. Não deve ser transportada automaticamente para relação de emprego.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 85,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 474,
+   "target_id": "CC2002:ART.604",
+   "explanation_id": "ENTENDA/CC2002:ART.604/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.604:CAPUT\tFindo o contrato, o prestador de serviço tem direito a exigir da outra parte a declaração de que o contrato está findo. Igual direito lhe cabe, se for despedido sem justa causa, ou se tiver havido motivo justo para deixar o serviço.",
+   "source_snapshot_sha256": "1d96fcfdeec1018c3d3c0bac4e01f0a1bff3ea8efced82895a66ab7eaceb7510",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.604:CAPUT",
+     "text": "Findo o contrato, o prestador de serviço tem direito a exigir da outra parte a declaração de que o contrato está findo. Igual direito lhe cabe, se for despedido sem justa causa, ou se tiver havido motivo justo para deixar o serviço."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Findo o contrato, o prestador de serviço tem direito a exigir da outra parte a declaração de que o contrato está findo. Igual direito lhe cabe, se for despedido sem justa causa, ou se tiver havido motivo justo para deixar o serviço.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1d40b5fd1fa78a695f9588b53231c3570871e1d4330c9377adbe9ffce0307b79",
+     "o_que_significa": "d55248bb9a48a84bece6d7ff5d32778762ecf76cbf7caeed669250d350955dd2",
+     "exemplo_pratico": "f03b956430ea3812f2ff674390f8819c8495e2b175ac1465502f15c390a8c1fe",
+     "atencao": "f9a72dce156cfde937fea980e9dbf3618b952762858e37e037d1d72e6a65fd20",
+     "palavras_dificeis": "44b11c8e775d4c477185a69877e94aa71cafe9f3e1104a30a829dedd2803e573"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.604, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Encerrado o vínculo, o prestador pode exigir declaração formal de término; o mesmo vale quando foi dispensado injustamente ou saiu por motivo justo.’. O campo de atenção registra: ‘A declaração não substitui quitação de valores nem impede discussão sobre danos. Seu conteúdo deve corresponder ao motivo real do encerramento.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 86,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 475,
+   "target_id": "CC2002:ART.605",
+   "explanation_id": "ENTENDA/CC2002:ART.605/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.605:CAPUT\tNem aquele a quem os serviços são prestados, poderá transferir a outrem o direito aos serviços ajustados, nem o prestador de serviços, sem aprazimento da outra parte, dar substituto que os preste.",
+   "source_snapshot_sha256": "294cba253d3e23b0cfcc651294119629524b7995908164c2f4bfccf2be94d6e4",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.605:CAPUT",
+     "text": "Nem aquele a quem os serviços são prestados, poderá transferir a outrem o direito aos serviços ajustados, nem o prestador de serviços, sem aprazimento da outra parte, dar substituto que os preste."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Nem aquele a quem os serviços são prestados, poderá transferir a outrem o direito aos serviços ajustados, nem o prestador de serviços, sem aprazimento da outra parte, dar substituto que os preste.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "7adddddddf4d8a95f43b59d3e82c271b4f21f0da754ceec627597b3ef4390cd4",
+     "o_que_significa": "ea750838fb85e5a15f7fe8cbbacd2acbf4474ff5df6abc4954793c3be6ff93ac",
+     "exemplo_pratico": "f0a07ae41dd1b6fce8dab9da15118847abf8645093921807826019e695296d0c",
+     "atencao": "a5d23f9af8fbaf02494bcd84a3f8aba85212c3da18c636fb71a9cc9f90fc92a3",
+     "palavras_dificeis": "09b130ed74b5b21a4592d09b6007d6f0cba47a17b2dcc5c647acfa2deeb02397"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.605, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O contratante não pode transferir a terceiro o direito ao serviço, nem o prestador indicar substituto, sem concordância da outra parte.’. O campo de atenção registra: ‘A anuência pode permitir alteração. O artigo não impede organização interna autorizada quando o contrato não é personalíssimo e a outra parte concorda.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 87,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 476,
+   "target_id": "CC2002:ART.606",
+   "explanation_id": "ENTENDA/CC2002:ART.606/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.606:CAPUT\tSe o serviço for prestado por quem não possua título de habilitação, ou não satisfaça requisitos outros estabelecidos em lei, não poderá quem os prestou cobrar a retribuição normalmente correspondente ao trabalho executado. Mas se deste resultar benefício para a outra parte, o juiz atribuirá a quem o prestou uma compensação razoável, desde que tenha agido com boa-fé.\nCC2002:ART.606:PAR.UNICO\tNão se aplica a segunda parte deste artigo, quando a proibição da prestação de serviço resultar de lei de ordem pública.",
+   "source_snapshot_sha256": "3e1d8c1e713dd4016f068ac49c1ece4a2355cf07524ea0335984bcbd25e1a50f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.606:CAPUT",
+     "text": "Se o serviço for prestado por quem não possua título de habilitação, ou não satisfaça requisitos outros estabelecidos em lei, não poderá quem os prestou cobrar a retribuição normalmente correspondente ao trabalho executado. Mas se deste resultar benefício para a outra parte, o juiz atribuirá a quem o prestou uma compensação razoável, desde que tenha agido com boa-fé."
+    },
+    {
+     "label": "CC2002:ART.606:PAR.UNICO",
+     "text": "Não se aplica a segunda parte deste artigo, quando a proibição da prestação de serviço resultar de lei de ordem pública."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Se o serviço for prestado por quem não possua título de habilitação, ou não satisfaça requisitos outros estabelecidos em lei, não poderá quem os prestou cobrar a retribuição normalmente correspondente ao trabalho executado. Mas se deste resultar benefício para a outra parte, o juiz atribuirá a quem o prestou uma compensação razoável, desde que tenha agido com boa-fé. | Não se aplica a segunda parte deste artigo, quando a proibição da prestação de serviço resultar de lei de ordem pública.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b4004dfa3a8df476d004d8b12daf62dd023d7007a9e98c63cc1776611c72026e",
+     "o_que_significa": "41faab1ff0b0f8f8e77b83abd31c53a444fe9e1c6a0d2e5a7f14c3fef31833a5",
+     "exemplo_pratico": "02efa7b78cbb0cfb9d58f1913cc9f8f3ac661f71ada68fdc98799dcbf2a49efa",
+     "atencao": "9911c8eebf4d1b98827acb5b86dda48371b0c59744e4bf2eb35c5bbd1b4a43ac",
+     "palavras_dificeis": "26a0d14c569d3117bfba6fe42dad91232f8b0edf071dd985d73ec7da32bbde4b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.606, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Prestador sem habilitação ou requisito legal não cobra remuneração normal. Se agiu de boa-fé e gerou benefício, pode receber compensação razoável, salvo proibição de ordem pública.’. O campo de atenção registra: ‘Boa-fé e benefício devem ser provados. Se a atividade é proibida por norma de ordem pública, nem a compensação excepcional é cabível.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 88,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 477,
+   "target_id": "CC2002:ART.607",
+   "explanation_id": "ENTENDA/CC2002:ART.607/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.607:CAPUT\tO contrato de prestação de serviço acaba com a morte de qualquer das partes. Termina, ainda, pelo escoamento do prazo, pela conclusão da obra, pela rescisão do contrato mediante aviso prévio, por inadimplemento de qualquer das partes ou pela impossibilidade da continuação do contrato, motivada por força maior.",
+   "source_snapshot_sha256": "a719ca236ae5535d35ce862215b30c47480eb711727359dc0471ef3d8d371075",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.607:CAPUT",
+     "text": "O contrato de prestação de serviço acaba com a morte de qualquer das partes. Termina, ainda, pelo escoamento do prazo, pela conclusão da obra, pela rescisão do contrato mediante aviso prévio, por inadimplemento de qualquer das partes ou pela impossibilidade da continuação do contrato, motivada por força maior."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O contrato de prestação de serviço acaba com a morte de qualquer das partes. Termina, ainda, pelo escoamento do prazo, pela conclusão da obra, pela rescisão do contrato mediante aviso prévio, por inadimplemento de qualquer das partes ou pela impossibilidade da continuação do contrato, motivada por força maior.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "114e3feb0d44feef7e26eb0a0d225e92081d4eab7d6b7103cb904452916ddfbe",
+     "o_que_significa": "8086ba43460402c3294b063932b6317661d5e65fc9bb3be49ff4d9299bd33cee",
+     "exemplo_pratico": "153e2acdced851569dd033c49636eb0b9f52373c1d0726e23063b9d44e967e77",
+     "atencao": "ed3dbdac72b4ba4e77772e5c021072656bb7c7900ef3306584e273b07358c767",
+     "palavras_dificeis": "241456ec06d637963584880a54679769fe04e9a546f522220f336ca6a73bafa9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.607, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O contrato termina pela morte de qualquer parte, fim do prazo, conclusão da obra, aviso prévio, inadimplemento ou impossibilidade de continuidade por força maior.’. O campo de atenção registra: ‘Cada causa produz efeitos próprios sobre remuneração e indenização. Força maior exige impossibilidade real, não simples aumento de dificuldade.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 89,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 478,
+   "target_id": "CC2002:ART.608",
+   "explanation_id": "ENTENDA/CC2002:ART.608/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.608:CAPUT\tAquele que aliciar pessoas obrigadas em contrato escrito a prestar serviço a outrem pagará a este a importância que ao prestador de serviço, pelo ajuste desfeito, houvesse de caber durante dois anos.",
+   "source_snapshot_sha256": "490dbdca49bae60bc90a229bb50e430d1c40617926d73ff0c5b486f135b1709f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.608:CAPUT",
+     "text": "Aquele que aliciar pessoas obrigadas em contrato escrito a prestar serviço a outrem pagará a este a importância que ao prestador de serviço, pelo ajuste desfeito, houvesse de caber durante dois anos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Aquele que aliciar pessoas obrigadas em contrato escrito a prestar serviço a outrem pagará a este a importância que ao prestador de serviço, pelo ajuste desfeito, houvesse de caber durante dois anos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "fdd857072a747292830629e1b1fe06e244a7dcd3dfe94671352c742f2a219893",
+     "o_que_significa": "668c8ceb683f401815ed6163643e99b4d2f892f5efefc0d3143b461046726fe5",
+     "exemplo_pratico": "c05727ab852c3ccde060b2db4a5c344e11655e28feab28714018480604421c6e",
+     "atencao": "1bcbfa93926edb6f70c4e0618c1d417f6072541433e5cdbe59f08f8f2d4b641f",
+     "palavras_dificeis": "defbb77cd463f48f0b23a0cc10134b141d3eb530552c8c65fc645b578c9a11a1"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.608, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quem induz pessoa vinculada por contrato escrito a abandonar serviço deve indenizar o contratante pelo equivalente a dois anos da remuneração ajustada.’. O campo de atenção registra: ‘É preciso demonstrar aliciamento, contrato escrito e nexo com a ruptura. Contratação após término regular não se enquadra automaticamente.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 90,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 479,
+   "target_id": "CC2002:ART.609",
+   "explanation_id": "ENTENDA/CC2002:ART.609/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.609:CAPUT\tA alienação do prédio agrícola, onde a prestação dos serviços se opera, não importa a rescisão do contrato, salvo ao prestador opção entre continuá-lo com o adquirente da propriedade ou com o primitivo contratante.",
+   "source_snapshot_sha256": "8af87e5089d52eb56f73285d0cf916c36daafc38a875699b0bf53e69c97ec88e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.609:CAPUT",
+     "text": "A alienação do prédio agrícola, onde a prestação dos serviços se opera, não importa a rescisão do contrato, salvo ao prestador opção entre continuá-lo com o adquirente da propriedade ou com o primitivo contratante."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A alienação do prédio agrícola, onde a prestação dos serviços se opera, não importa a rescisão do contrato, salvo ao prestador opção entre continuá-lo com o adquirente da propriedade ou com o primitivo contratante.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f93da9ab994cbe05e746c0763e6fe4f5ed13db159031fa2c3b0f7cc8f0fedf96",
+     "o_que_significa": "5b5a368c7412a48797e8bb3c5eb21bc231f2fe9e54780cb9e3ebe818702cb39a",
+     "exemplo_pratico": "2dd96d8f106c2a05eab0b28f77bd03081d592b5b1ec3a871bf2ef4809ab3c00f",
+     "atencao": "d3600bde8c7dc01ab403cbdbd20bc1200e118cc3aaa4ac7ad120e7d9a956c128",
+     "palavras_dificeis": "9e5fc9878dea5247ce6eb7850a82a56571f66a2a34238018a8c95461eee2e025"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.609, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘A venda do imóvel rural onde ocorre o serviço não encerra o contrato; o prestador escolhe continuar com o comprador ou com o contratante original.’. O campo de atenção registra: ‘A norma não transfere compulsoriamente o prestador. O regime é civil e não substitui regras trabalhistas quando houver relação de emprego.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 91,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 480,
+   "target_id": "CC2002:ART.610",
+   "explanation_id": "ENTENDA/CC2002:ART.610/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.610:CAPUT\tO empreiteiro de uma obra pode contribuir para ela só com seu trabalho ou com ele e os materiais.\nCC2002:ART.610:PAR.1\to A obrigação de fornecer os materiais não se presume; resulta da lei ou da vontade das partes.\nCC2002:ART.610:PAR.2\to O contrato para elaboração de um projeto não implica a obrigação de executá-lo, ou de fiscalizar-lhe a execução.",
+   "source_snapshot_sha256": "1cb9047a01c472dd342a6fc677e4dfb89a780b7bbb8fd1a12d92fd0a533c914a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.610:CAPUT",
+     "text": "O empreiteiro de uma obra pode contribuir para ela só com seu trabalho ou com ele e os materiais."
+    },
+    {
+     "label": "CC2002:ART.610:PAR.1",
+     "text": "o A obrigação de fornecer os materiais não se presume; resulta da lei ou da vontade das partes."
+    },
+    {
+     "label": "CC2002:ART.610:PAR.2",
+     "text": "o O contrato para elaboração de um projeto não implica a obrigação de executá-lo, ou de fiscalizar-lhe a execução."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: O empreiteiro de uma obra pode contribuir para ela só com seu trabalho ou com ele e os materiais. | o A obrigação de fornecer os materiais não se presume; resulta da lei ou da vontade das partes. | o O contrato para elaboração de um projeto não implica a obrigação de executá-lo, ou de fiscalizar-lhe a execução.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f89c0715906a194896fbc14476877d93b8c2dc899a87c6c9d17b0dca91bb7f4f",
+     "o_que_significa": "6fc3076276fb862114021b0de3642facc8d8a498c62d99c2e9b9f35b9fc964eb",
+     "exemplo_pratico": "e7dad7234f1776ee8b0cc98caa9ee2e05b98f5bb61784bfb355b9162bced1abb",
+     "atencao": "f187259a227059c9fbba22e6d946335335fd0f43b61ec832b7adf13d9f09c834",
+     "palavras_dificeis": "cbf91bb6d3cb6f69ae4655a6998f7016169488878c7ec06e0012cc93dc9fb51a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.610, foram cotejados individualmente 3 segmento(s) vigente(s) (CAPUT, PAR.1, PAR.2) com os cinco campos ENTENDA. A síntese ativa informa: ‘Na empreitada, o empreiteiro pode fornecer apenas trabalho ou também materiais. O fornecimento de materiais exige lei ou acordo; projeto não inclui automaticamente execução nem fiscalização.’. O campo de atenção registra: ‘Materiais não se presumem incluídos. É essencial identificar o escopo, pois prestação de serviços e empreitada possuem riscos e resultados distintos.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 92,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 481,
+   "target_id": "CC2002:ART.611",
+   "explanation_id": "ENTENDA/CC2002:ART.611/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.611:CAPUT\tQuando o empreiteiro fornece os materiais, correm por sua conta os riscos até o momento da entrega da obra, a contento de quem a encomendou, se este não estiver em mora de receber. Mas se estiver, por sua conta correrão os riscos.",
+   "source_snapshot_sha256": "fe3bfd6cb9548193cfe2f1658cb2a0d0c69093946ed6e222f56c3c9ac1c6ff8b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.611:CAPUT",
+     "text": "Quando o empreiteiro fornece os materiais, correm por sua conta os riscos até o momento da entrega da obra, a contento de quem a encomendou, se este não estiver em mora de receber. Mas se estiver, por sua conta correrão os riscos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Quando o empreiteiro fornece os materiais, correm por sua conta os riscos até o momento da entrega da obra, a contento de quem a encomendou, se este não estiver em mora de receber. Mas se estiver, por sua conta correrão os riscos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f8cb6a821a0fe20c9d1c49ef0f25b3ac62bb544979d40337330a3a0d780382a1",
+     "o_que_significa": "ae08b34e25ddd4d8feba67884bf323c9462617077e8dcae89c2084b081d1dd6d",
+     "exemplo_pratico": "922c0f2b425e5190539cf28c0aef7278e540f5cb32f63277cc0fea1f8b18ebe5",
+     "atencao": "2990066af2e63b280d50d54b0eb664505456cb2ca952c7616d676028ef925660",
+     "palavras_dificeis": "bf5c282eaf29265451986e9a038a92d462baaf6b92a4259065a2ea31eb45402c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.611, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Na empreitada que inclui materiais, o empreiteiro suporta o risco até entregar a obra aceita pelo dono; a mora deste em recebê-la transfere-lhe o risco.’. O campo de atenção registra: ‘Devem ser apurados entrega, conformidade e mora. Culpa do empreiteiro não fica protegida pela simples mora do dono.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 93,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 482,
+   "target_id": "CC2002:ART.612",
+   "explanation_id": "ENTENDA/CC2002:ART.612/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.612:CAPUT\tSe o empreiteiro só forneceu mão-de-obra, todos os riscos em que não tiver culpa correrão por conta do dono.",
+   "source_snapshot_sha256": "22ccc5404c233695f07bf9ae98d05992c05541c41666c312df8dcc7060f25eaf",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.612:CAPUT",
+     "text": "Se o empreiteiro só forneceu mão-de-obra, todos os riscos em que não tiver culpa correrão por conta do dono."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o empreiteiro só forneceu mão-de-obra, todos os riscos em que não tiver culpa correrão por conta do dono.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ac3f7ed4887aaa8d06449a15d45ab683b152b07d658233de7b188dfc4c967b59",
+     "o_que_significa": "eb258d1b5c0ec3fa74cf10e8059324eb2c0e50ce9467f76697b18d1bce6768af",
+     "exemplo_pratico": "d03d28f51663d50b0e906150a6da799d9cfc9a196b917f094617b01977b852ab",
+     "atencao": "d8d95f03c61f2877daee9b7d04d1e159b75c5290a9ab7b839f762a7639150638",
+     "palavras_dificeis": "1923d76952ad69c81678103fbd2d9b764da034571d0d7b6170f24d92fe2e4042"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.612, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Quando o empreiteiro fornece somente trabalho, os riscos sem culpa dele pertencem ao dono da obra.’. O campo de atenção registra: ‘A ausência de culpa precisa ser demonstrada. Imperícia, negligência ou mora do empreiteiro podem alterar a solução.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 94,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 483,
+   "target_id": "CC2002:ART.613",
+   "explanation_id": "ENTENDA/CC2002:ART.613/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.613:CAPUT\tSendo a empreitada unicamente de lavor (art. 610), se a coisa perecer antes de entregue, sem mora do dono nem culpa do empreiteiro, este perderá a retribuição, se não provar que a perda resultou de defeito dos materiais e que em tempo reclamara contra a sua quantidade ou qualidade.",
+   "source_snapshot_sha256": "8599c407eff565b18713ad98a3faa7093fb230fc4ced6ffce9b157942c24d0aa",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.613:CAPUT",
+     "text": "Sendo a empreitada unicamente de lavor (art. 610), se a coisa perecer antes de entregue, sem mora do dono nem culpa do empreiteiro, este perderá a retribuição, se não provar que a perda resultou de defeito dos materiais e que em tempo reclamara contra a sua quantidade ou qualidade."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Sendo a empreitada unicamente de lavor (art. 610), se a coisa perecer antes de entregue, sem mora do dono nem culpa do empreiteiro, este perderá a retribuição, se não provar que a perda resultou de defeito dos materiais e que em tempo reclamara contra a sua quantidade ou qualidade.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "00fe1ed131c1dd78fd7383d1a866075e359108c7e953793872ea4cdce6a41833",
+     "o_que_significa": "45b485a85d3fe74187aacde36960fafe2bc4095ee53a7498b01098df36e37c28",
+     "exemplo_pratico": "0aee70920a94c1f680fd2b36e75415aa91b6e2c3eecdc618bd858cd1afe17cd0",
+     "atencao": "ce70542731569046dd489bff59272c344076c3a468d25355feb45178bcd90b5f",
+     "palavras_dificeis": "a5d80937f398017f30999935dbb73e2b560c80ae4f4c183165ef9b2853a82f9b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.613, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Na empreitada apenas de trabalho, a perda fortuita antes da entrega normalmente retira do empreiteiro a remuneração; ele a conserva se provar defeito dos materiais e reclamação oportuna.’. O campo de atenção registra: ‘A exceção exige prova conjunta da causa material e da reclamação tempestiva. Mora do dono ou culpa do empreiteiro mudam o enquadramento.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 95,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 484,
+   "target_id": "CC2002:ART.614",
+   "explanation_id": "ENTENDA/CC2002:ART.614/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.614:CAPUT\tSe a obra constar de partes distintas, ou for de natureza das que se determinam por medida, o empreiteiro terá direito a que também se verifique por medida, ou segundo as partes em que se dividir, podendo exigir o pagamento na proporção da obra executada.\nCC2002:ART.614:PAR.1\to Tudo o que se pagou presume-se verificado.\nCC2002:ART.614:PAR.2\to O que se mediu presume-se verificado se, em trinta dias, a contar da medição, não forem denunciados os vícios ou defeitos pelo dono da obra ou por quem estiver incumbido da sua fiscalização.",
+   "source_snapshot_sha256": "a04de108a511b969fe42d238a34411431370b800e9b28510a3ed205e37734bf9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.614:CAPUT",
+     "text": "Se a obra constar de partes distintas, ou for de natureza das que se determinam por medida, o empreiteiro terá direito a que também se verifique por medida, ou segundo as partes em que se dividir, podendo exigir o pagamento na proporção da obra executada."
+    },
+    {
+     "label": "CC2002:ART.614:PAR.1",
+     "text": "o Tudo o que se pagou presume-se verificado."
+    },
+    {
+     "label": "CC2002:ART.614:PAR.2",
+     "text": "o O que se mediu presume-se verificado se, em trinta dias, a contar da medição, não forem denunciados os vícios ou defeitos pelo dono da obra ou por quem estiver incumbido da sua fiscalização."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Se a obra constar de partes distintas, ou for de natureza das que se determinam por medida, o empreiteiro terá direito a que também se verifique por medida, ou segundo as partes em que se dividir, podendo exigir o pagamento na proporção da obra executada. | o Tudo o que se pagou presume-se verificado. | o O que se mediu presume-se verificado se, em trinta dias, a contar da medição, não forem denunciados os vícios ou defeitos pelo dono da obra ou por quem estiver incumbido da sua fiscalização.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "fa2f4a20c957b77bb324a5e82a596c16fdb5c5f675120e65f65b347bf0a576cd",
+     "o_que_significa": "91a4a1b2659fd2ce5dda309d17f1da78d97647d3b883d83a1f1b2ebb5f115869",
+     "exemplo_pratico": "3e403dd3c62768ebf80ea2bac8130b6dd0bdddbafae7bf137a9fe0b2683e4b6c",
+     "atencao": "4405394ea6b0ca747e7db96cf5ce4fba3eea2633e094c534e4e233d3ad35b0d3",
+     "palavras_dificeis": "ea8c7824808cf070d99c581605117ecccf848ac49a72d0934c6ffd5b27ca9052"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.614, foram cotejados individualmente 3 segmento(s) vigente(s) (CAPUT, PAR.1, PAR.2) com os cinco campos ENTENDA. A síntese ativa informa: ‘Obra dividida em etapas ou calculada por medida pode ser verificada e paga proporcionalmente. Pagamento ou medição gera presunção de aceitação, esta última após trinta dias sem denúncia de defeito.’. O campo de atenção registra: ‘As presunções admitem discussão conforme as provas. O silêncio de trinta dias refere-se à medição e não elimina automaticamente responsabilidade legal por vícios ocultos.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 96,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 485,
+   "target_id": "CC2002:ART.615",
+   "explanation_id": "ENTENDA/CC2002:ART.615/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.615:CAPUT\tConcluída a obra de acordo com o ajuste, ou o costume do lugar, o dono é obrigado a recebê-la. Poderá, porém, rejeitá-la, se o empreiteiro se afastou das instruções recebidas e dos planos dados, ou das regras técnicas em trabalhos de tal natureza.",
+   "source_snapshot_sha256": "1cf3c0e5f037b4c9788514d70fde4d47f7815115144d2556d2921a81efa3fd5d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.615:CAPUT",
+     "text": "Concluída a obra de acordo com o ajuste, ou o costume do lugar, o dono é obrigado a recebê-la. Poderá, porém, rejeitá-la, se o empreiteiro se afastou das instruções recebidas e dos planos dados, ou das regras técnicas em trabalhos de tal natureza."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Concluída a obra de acordo com o ajuste, ou o costume do lugar, o dono é obrigado a recebê-la. Poderá, porém, rejeitá-la, se o empreiteiro se afastou das instruções recebidas e dos planos dados, ou das regras técnicas em trabalhos de tal natureza.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4d477c2b28fd6de9756a2dc89f4ad66cb1c2a3fe679d46cadd93cfec9e07c50e",
+     "o_que_significa": "361ba81a8096d014d6d6821b98373a09929f77ec0e652426ae648759adce4d62",
+     "exemplo_pratico": "569333f4fdcbd15fa6e422ab3620bed19e2348a3d6732312402fa217deaa0a81",
+     "atencao": "a6a4ab453904b56acb9a7f3e30227b7cc38d9bea8211fcd15422dae0ea85f5f4",
+     "palavras_dificeis": "4a03ec9be435f74bf604f5d428fc8699bc6e09d0013e22d2491784d23105296a"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.615, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Obra concluída conforme contrato ou costume local deve ser recebida; o dono pode rejeitá-la se houver desvio das instruções, do projeto ou das regras técnicas.’. O campo de atenção registra: ‘Nem toda imperfeição autoriza rejeição total. Gravidade, possibilidade de correção e alternativa de abatimento devem ser avaliadas.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 97,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 486,
+   "target_id": "CC2002:ART.616",
+   "explanation_id": "ENTENDA/CC2002:ART.616/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.616:CAPUT\tNo caso da segunda parte do artigo antecedente, pode quem encomendou a obra, em vez de enjeitá-la, recebê-la com abatimento no preço.",
+   "source_snapshot_sha256": "15f3b94c0ba6f851a29c94c4b158aaa8e63b0ad452f3b29af48c44e7ec55e0de",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.616:CAPUT",
+     "text": "No caso da segunda parte do artigo antecedente, pode quem encomendou a obra, em vez de enjeitá-la, recebê-la com abatimento no preço."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: No caso da segunda parte do artigo antecedente, pode quem encomendou a obra, em vez de enjeitá-la, recebê-la com abatimento no preço.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2bb4f3819a7cc6d3c719a5412e607b1c05a238fcb5577f04f1704cb3955da051",
+     "o_que_significa": "770d1f5e3e8761c42203e2eb4dfdfe735087c23f7d5680c51e48578e9dc77a74",
+     "exemplo_pratico": "07fd2209d2a4730d858fa7f131de0aa03e1461079a3c97e02b076cd6849f3e9b",
+     "atencao": "c12c7aa47d813bbd5efb1519ac4feb3769cd1159847e087ea14c67f19c9705f3",
+     "palavras_dificeis": "95cf8d611e9f015bc31a80cdb49508912d965db394bf0f010ec3142a08376fe6"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.616, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘Diante de obra desconforme, quem a encomendou pode aceitá-la com redução do preço, em vez de rejeitá-la.’. O campo de atenção registra: ‘Recebimento com abatimento não deve gerar dupla reparação pelo mesmo defeito. Danos autônomos exigem demonstração própria.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 98,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 487,
+   "target_id": "CC2002:ART.617",
+   "explanation_id": "ENTENDA/CC2002:ART.617/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.617:CAPUT\tO empreiteiro é obrigado a pagar os materiais que recebeu, se por imperícia ou negligência os inutilizar.",
+   "source_snapshot_sha256": "416b43d578f2a754dd323122614afa65c9b07b1e0c070401f537d9ef93e232f2",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.617:CAPUT",
+     "text": "O empreiteiro é obrigado a pagar os materiais que recebeu, se por imperícia ou negligência os inutilizar."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O empreiteiro é obrigado a pagar os materiais que recebeu, se por imperícia ou negligência os inutilizar.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "06daec26f4885b96e1dc2decb5190a398758795cdbc3d4912da49fdb91533722",
+     "o_que_significa": "abfb6b7a01df8f42f6cd16846b874f75c333f8e3f5e5c4afa7d72627f82a15f2",
+     "exemplo_pratico": "a57506055dedb4d17c4de07ae1f9f1db81cfc3be9c6b4c43efc664d9d196a03d",
+     "atencao": "32f6af379eb735c3e5f05f741238d2768f4feba4dce5cc904d713849ef82aebe",
+     "palavras_dificeis": "c25b171530492fe67de294d069235194350266655219d5a067c5044effc1f7c4"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.617, foram cotejados individualmente 1 segmento(s) vigente(s) (CAPUT) com os cinco campos ENTENDA. A síntese ativa informa: ‘O empreiteiro deve pagar pelos materiais recebidos que inutilizar por imperícia ou negligência.’. O campo de atenção registra: ‘Perda fortuita sem culpa segue outra distribuição de riscos. É necessário provar dano, culpa e relação causal.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 99,
+   "checkpoint": "B-CP02",
+   "independent_review_module": "QA04_B_REVIEW_001_333",
+   "reviewer": "qa04_audit_001_333"
+  },
+  {
+   "queue_position": 488,
+   "target_id": "CC2002:ART.618",
+   "explanation_id": "ENTENDA/CC2002:ART.618/BASE/1",
+   "book": "OBRIGACOES_E_CONTRATOS",
+   "origin_mission": "CC-09",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-13",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-13"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.618:CAPUT\tNos contratos de empreitada de edifícios ou outras construções consideráveis, o empreiteiro de materiais e execução responderá, durante o prazo irredutível de cinco anos, pela solidez e segurança do trabalho, assim em razão dos materiais, como do solo.\nCC2002:ART.618:PAR.UNICO\tDecairá do direito assegurado neste artigo o dono da obra que não propuser a ação contra o empreiteiro, nos cento e oitenta dias seguintes ao aparecimento do vício ou defeito.",
+   "source_snapshot_sha256": "815072741a6af8160565ca69d40bc807076f81038540ac6fd41003d0c7f957ca",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.618:CAPUT",
+     "text": "Nos contratos de empreitada de edifícios ou outras construções consideráveis, o empreiteiro de materiais e execução responderá, durante o prazo irredutível de cinco anos, pela solidez e segurança do trabalho, assim em razão dos materiais, como do solo."
+    },
+    {
+     "label": "CC2002:ART.618:PAR.UNICO",
+     "text": "Decairá do direito assegurado neste artigo o dono da obra que não propuser a ação contra o empreiteiro, nos cento e oitenta dias seguintes ao aparecimento do vício ou defeito."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Nos contratos de empreitada de edifícios ou outras construções consideráveis, o empreiteiro de materiais e execução responderá, durante o prazo irredutível de cinco anos, pela solidez e segurança do trabalho, assim em razão dos materiais, como do solo. | Decairá do direito assegurado neste artigo o dono da obra que não propuser a ação contra o empreiteiro, nos cento e oitenta dias seguintes ao aparecimento do vício ou defeito.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "33ffc1ce8beff7667944a4c4449f5d58c468865208b34418da226802ea8438e2",
+     "o_que_significa": "02bcb40f439b822b88d2c14114d89c0e9438541875243d72f6511b2d67ef4b22",
+     "exemplo_pratico": "0bdefc84aa7b47a4f57e18a6d60e6b63ff22dbd41a995b63c7ae64e9243c9ded",
+     "atencao": "e62ce0a8d4101730c613394cb44a5e37675368f24ea5181052fcf9dac1baa1cc",
+     "palavras_dificeis": "702fa9183d3ae02288cc97e98d1c5d7b629dc9e0487a42cfcb6847ca63a3b448"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Em CC2002:ART.618, foram cotejados individualmente 2 segmento(s) vigente(s) (CAPUT, PAR.UNICO) com os cinco campos ENTENDA. A síntese ativa informa: ‘Em construções relevantes, quem fornece materiais e execução responde por cinco anos pela solidez e segurança decorrentes do solo ou dos insumos; o dono deve agir em cento e oitenta dias após descobrir o defeito.’. O campo de atenção registra: ‘Os cinco anos e os cento e oitenta dias têm funções distintas. A norma exige obra considerável e problema ligado à solidez ou segurança.’. A leitura conjunta conserva os sujeitos, requisitos, alternativas, exceções, prazos e consequências identificáveis no texto legal, sem contradição ou omissão material encontrada no escopo examinado.",
+   "finding": null,
+   "residual_position": 100,
+   "checkpoint": "B-CP02",
    "independent_review_module": "QA04_B_REVIEW_001_333",
    "reviewer": "qa04_audit_001_333"
   }
