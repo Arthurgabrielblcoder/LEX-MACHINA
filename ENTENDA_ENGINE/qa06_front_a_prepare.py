@@ -24,7 +24,10 @@ def main():
         raise RuntimeError("unexpected QA-05 pending finding")
     baseline = active[TARGET]
     proposed = {
-        "o_que_diz": baseline["content"]["o_que_diz"],
+        "o_que_diz": (
+            "As obrigações e a responsabilidade do liquidante seguem os preceitos próprios das "
+            "obrigações e da responsabilidade dos administradores da sociedade em liquidação."
+        ),
         "o_que_significa": (
             "Quanto às obrigações do cargo e à responsabilidade por sua atuação, "
             "o liquidante fica sujeito às mesmas regras jurídicas próprias dos administradores "
@@ -45,7 +48,7 @@ def main():
         }],
     }
     changed = [field for field in prep.FIELDS if proposed[field] != baseline["content"][field]]
-    if changed != ["o_que_significa", "exemplo_pratico", "atencao", "palavras_dificeis"]:
+    if changed != list(prep.FIELDS):
         raise RuntimeError(f"unexpected changed fields: {changed}")
     record = {
         "target_id": TARGET,
@@ -73,6 +76,14 @@ def main():
             "art_1105": "representação, poderes e limites do liquidante",
         },
         "editorial_status": "PROPOSED_PENDING_INDEPENDENT_REVALIDATION",
+        "proposal_revision": 2,
+        "revision_basis": {
+            "prior_proposal": "QA06_A_EDITORIAL_PROPOSAL_1104.json",
+            "prior_proposal_sha256": "d179a852122324b1f2345ae998f1f0d350abbd1c22eaca690e0f8f17f7a48a32",
+            "independent_objection": "QA06_A_INDEPENDENT_REVALIDATION_1104.json",
+            "independent_objection_sha256": "9450878c9afd0959688868fee47ef19e01211fdff987c20362fa2e205bacc2ca",
+            "resolved_objection_code": "UNSTATED_LIMITER_NO_QUE_COUBER",
+        },
         "human_approval_claimed": False,
     }
     document = {
@@ -80,7 +91,7 @@ def main():
         "status": "EDITORIAL_PROPOSAL_PENDING_INDEPENDENT_REVALIDATION",
         "total": 1, "records": [record],
     }
-    proposal = OUT / "QA06_A_EDITORIAL_PROPOSAL_1104.json"
+    proposal = OUT / "QA06_A_EDITORIAL_PROPOSAL_1104_V2.json"
     prep.write_json(proposal, document)
     checkpoint = {
         "schema_version": 1, "mission": "QA-06-FRONT-A", "checkpoint": "A-CP01",
@@ -90,7 +101,9 @@ def main():
         "finding_sha256": prep.sha256(FINDING), "proposal_sha256": prep.sha256(proposal),
         "human_approval_claimed": False,
     }
-    prep.write_json(OUT / "QA06_A_CP01.json", checkpoint)
+    checkpoint["status"] = "COMPLETE_REVISION_2_PENDING_FINAL_INDEPENDENT_REVALIDATION"
+    checkpoint["prior_objection_resolved"] = "UNSTATED_LIMITER_NO_QUE_COUBER"
+    prep.write_json(OUT / "QA06_A_CP01_REVISION_2.json", checkpoint)
     print(json.dumps({"target_id": TARGET, "changed_fields": changed,
                       "proposal_sha256": prep.sha256(proposal)}, ensure_ascii=False))
 
