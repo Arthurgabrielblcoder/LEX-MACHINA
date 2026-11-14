@@ -1,0 +1,124 @@
+{
+ "schema_version": 1,
+ "mission": "QA-07",
+ "role": "INDEPENDENT_LEGAL_REREVIEWER",
+ "as_of": "2026-11-14",
+ "status": "REVISION_2_INDEPENDENTLY_REVALIDATED",
+ "proposal_file": "QA07_EDITOR_HIGH_B_REVISION_2.json",
+ "proposal_sha256": "f1fbffdcd934ffc1013dad8b4d630166a67b302c5f97395eac27dbdc62f4211e",
+ "preserved_negative_review_file": "QA07_REVIEW_HIGH_B.json",
+ "preserved_negative_review_sha256": "50f1db1b820d4fffb3eb84d4377e7ecdc11a14702303afdd36fba24f15408774",
+ "source_date_cut": "2026-11-14",
+ "sources": [
+  {
+   "authority": "Câmara dos Deputados",
+   "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "scope": "Código Civil vigente, arts. 1.358-J e 1.358-S"
+  },
+  {
+   "authority": "Presidência da República",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13777.htm",
+   "scope": "Lei nº 13.777/2018, origem e vigência do regime de multipropriedade"
+  }
+ ],
+ "target_total": 2,
+ "finding_total": 5,
+ "decision_counts": {
+  "ACEITA": 2,
+  "REJEITADA": 0
+ },
+ "finding_decision_counts": {
+  "ACEITA": 5,
+  "REJEITADA": 0
+ },
+ "records": [
+  {
+   "target_id": "CC2002:ART.1358-J",
+   "proposal_target_sha256": "f05fac983395c02c11b3854e6261bbd4dd6db941df3c299ef620d5d03b44dd1a",
+   "finding_ids": [
+    "QA06-FINAL-0346",
+    "QA06-FINAL-0347",
+    "QA06-FINAL-0349"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1358-J:INC.VIII",
+    "CC2002:ART.1358-J:PAR.1:INC.II",
+    "CC2002:ART.1358-J:PAR.2:INC.II"
+   ],
+   "decision": "ACEITA",
+   "legal_analysis": "A revisão resolve a objeção preservada sem ampliar o comando legal. A multa diária do inciso VIII foi corretamente vinculada ao instrumento pertinente à desocupação, enquanto a multa por descumprimento e, em caso de reiteração, a multa progressiva e a perda temporária do uso foram separadas como sanções cuja previsão deve constar da convenção. A proposta também distingue o custeio coletivo do reparo por uso normal e desgaste natural da responsabilidade exclusiva por uso anormal, sem prejuízo de multa.",
+   "objection_resolution": {
+    "code": "DAILY_FINE_SOURCE_OVERGENERALIZED",
+    "resolved": true,
+    "assessment": "A proposta V2 deixou de afirmar que toda multa depende necessariamente da convenção e passou a reproduzir a distinção normativa entre instrumento pertinente e convenção."
+   },
+   "five_fields_reviewed": true,
+   "affected_subdivisions_covered": true,
+   "new_legal_error_detected": false,
+   "special_legislation_check": "A Lei nº 13.777/2018 introduziu o regime examinado; não foi identificada regra especial que altere os três comandos literais auditados.",
+   "binding_precedent_check": "Nenhum precedente vinculante foi necessário para modificar o sentido literal dos comandos auditados.",
+   "finding_reviews": [
+    {
+     "finding_id": "QA06-FINAL-0346",
+     "subdivision_id": "CC2002:ART.1358-J:INC.VIII",
+     "decision": "ACEITA",
+     "resolution": "A desocupação pontual, a multa diária e sua vinculação ao instrumento pertinente estão expressamente explicadas."
+    },
+    {
+     "finding_id": "QA06-FINAL-0347",
+     "subdivision_id": "CC2002:ART.1358-J:PAR.1:INC.II",
+     "decision": "ACEITA",
+     "resolution": "A multa progressiva e a perda temporária foram condicionadas à reiteração e à previsão na convenção."
+    },
+    {
+     "finding_id": "QA06-FINAL-0349",
+     "subdivision_id": "CC2002:ART.1358-J:PAR.2:INC.II",
+     "decision": "ACEITA",
+     "resolution": "A responsabilidade exclusiva pelo reparo decorrente de uso anormal foi distinguida do rateio do desgaste normal."
+    }
+   ]
+  },
+  {
+   "target_id": "CC2002:ART.1358-S",
+   "proposal_target_sha256": "f0dc8361c259eb138117b271fdffaef7b45d2e866bba965dff5b372d0c2c14bf",
+   "finding_ids": [
+    "QA06-FINAL-0371",
+    "QA06-FINAL-0372"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1358-S:PAR.UNICO:INC.I",
+    "CC2002:ART.1358-S:PAR.UNICO:INC.III"
+   ],
+   "decision": "ACEITA",
+   "legal_analysis": "A revisão resolve a objeção preservada ao explicar cumulativamente o âmbito especial do parágrafo único: empreendimento em que os titulares possam ou devam locar suas frações exclusivamente por administração única e em que as receitas sejam repartidas independentemente da ocupação efetiva de cada unidade. A proposta condiciona as medidas à convenção, explica a proibição de uso até a quitação e representa o dever automático da administradora de aplicar integralmente os valores líquidos do inadimplente nas duas espécies de dívida condominial, com repasse imediato do saldo.",
+   "objection_resolution": {
+    "code": "SPECIAL_RENTAL_SYSTEM_GATE_INCOMPLETE",
+    "resolved": true,
+    "assessment": "A proposta V2 abandonou a expressão vaga sistema único de locação e explicitou os dois requisitos cumulativos que delimitam o regime especial."
+   },
+   "five_fields_reviewed": true,
+   "affected_subdivisions_covered": true,
+   "new_legal_error_detected": false,
+   "special_legislation_check": "A Lei nº 13.777/2018 introduziu o regime examinado; não foi identificada regra especial que altere os comandos do parágrafo único auditados.",
+   "binding_precedent_check": "Nenhum precedente vinculante foi necessário para modificar o sentido literal dos comandos auditados.",
+   "finding_reviews": [
+    {
+     "finding_id": "QA06-FINAL-0371",
+     "subdivision_id": "CC2002:ART.1358-S:PAR.UNICO:INC.I",
+     "decision": "ACEITA",
+     "resolution": "A proibição de uso até a quitação foi explicada dentro do âmbito especial e como matéria dependente da convenção."
+    },
+    {
+     "finding_id": "QA06-FINAL-0372",
+     "subdivision_id": "CC2002:ART.1358-S:PAR.UNICO:INC.III",
+     "decision": "ACEITA",
+     "resolution": "A aplicação integral dos valores líquidos, a abrangência das duas dívidas condominiais e o repasse imediato do saldo estão cobertos."
+    }
+   ]
+  }
+ ],
+ "all_prior_objections_resolved": true,
+ "corpus_modified": false,
+ "proposal_modified": false,
+ "human_approval_claimed": false
+}
