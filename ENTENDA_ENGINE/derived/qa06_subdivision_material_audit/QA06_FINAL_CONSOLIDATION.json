@@ -1,0 +1,452 @@
+{
+ "schema_version": 1,
+ "mission": "QA-06",
+ "as_of": "2026-11-13",
+ "status": "AUDIT_COMPLETE_WITH_DEFINITIVE_CORRECTION_QUEUE",
+ "authorized_inventory": {
+  "targets": 2017,
+  "subdivisions": 3790,
+  "auditable": 3752,
+  "excluded": 38,
+  "sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82"
+ },
+ "front_a": {
+  "corrected_and_independently_revalidated": 1,
+  "target_id": "CC2002:ART.1104",
+  "records": 2313,
+  "active": 2017,
+  "historical": 296,
+  "corpus_sha256": "4f7481e5ec697eddc26e5e412ff9f5394c983fcfbd5cff6b678bdb7d9811aaf5",
+  "lookup_sha256": "95fb9a2c076ce0b124b26ae96cb9ff15ac5ed9b5ee2dad6eab8c718299e57e08",
+  "payload_sha256": "091f05cdd991771d3366996528a89385735e7c813e14745e54c5db4714a2e26d"
+ },
+ "front_b": {
+  "classification_counts": {
+   "AUSENTE": 123,
+   "COBERTA": 2714,
+   "INCORRETA": 1,
+   "INDETERMINADA": 53,
+   "NAO_APLICAVEL": 38,
+   "PARCIAL": 861
+  },
+  "coverage_by_book": {
+   "LIVRO I — DO DIREITO DAS OBRIGAÇÕES": {
+    "targets": 687,
+    "subdivisions": 994,
+    "findings": 75,
+    "classifications": {
+     "AUSENTE": 1,
+     "COBERTA": 915,
+     "INDETERMINADA": 5,
+     "NAO_APLICAVEL": 4,
+     "PARCIAL": 69
+    }
+   },
+   "LIVRO II — DOS BENS": {
+    "targets": 25,
+    "subdivisions": 40,
+    "findings": 0,
+    "classifications": {
+     "COBERTA": 40
+    }
+   },
+   "LIVRO II — Do Direito de Empresa": {
+    "targets": 231,
+    "subdivisions": 500,
+    "findings": 128,
+    "classifications": {
+     "AUSENTE": 4,
+     "COBERTA": 367,
+     "INCORRETA": 1,
+     "INDETERMINADA": 8,
+     "NAO_APLICAVEL": 5,
+     "PARCIAL": 115
+    }
+   },
+   "LIVRO III — DOS FATOS JURÍDICOS": {
+    "targets": 127,
+    "subdivisions": 251,
+    "findings": 12,
+    "classifications": {
+     "AUSENTE": 2,
+     "COBERTA": 236,
+     "NAO_APLICAVEL": 3,
+     "PARCIAL": 10
+    }
+   },
+   "LIVRO III — Do Direito das Coisas": {
+    "targets": 346,
+    "subdivisions": 798,
+    "findings": 326,
+    "classifications": {
+     "AUSENTE": 39,
+     "COBERTA": 468,
+     "INDETERMINADA": 20,
+     "NAO_APLICAVEL": 4,
+     "PARCIAL": 267
+    }
+   },
+   "LIVRO IV — Do Direito de Família": {
+    "targets": 257,
+    "subdivisions": 596,
+    "findings": 301,
+    "classifications": {
+     "AUSENTE": 50,
+     "COBERTA": 286,
+     "INDETERMINADA": 12,
+     "NAO_APLICAVEL": 9,
+     "PARCIAL": 239
+    }
+   },
+   "LIVRO V — Do Direito das Sucessões": {
+    "targets": 264,
+    "subdivisions": 413,
+    "findings": 189,
+    "classifications": {
+     "AUSENTE": 27,
+     "COBERTA": 219,
+     "INDETERMINADA": 8,
+     "NAO_APLICAVEL": 5,
+     "PARCIAL": 154
+    }
+   },
+   "PARTE GERAL / LIVRO I": {
+    "targets": 80,
+    "subdivisions": 198,
+    "findings": 7,
+    "classifications": {
+     "COBERTA": 183,
+     "NAO_APLICAVEL": 8,
+     "PARCIAL": 7
+    }
+   }
+  },
+  "initial_findings": 1038,
+  "review_decision_counts": {
+   "CONFIRMADO": 344,
+   "INDETERMINADO": 1,
+   "NAO_CONFIRMADO": 563,
+   "RECLASSIFICADO": 130
+  },
+  "final_disposition_counts": {
+   "INDETERMINADO": 10,
+   "JA_CORRIGIDO": 1,
+   "NAO_CONFIRMADO": 566,
+   "PENDENTE_CORRECAO": 461
+  },
+  "pending_severity_counts": {
+   "ALTO": 41,
+   "MÉDIO": 420
+  },
+  "definitive_correction_queue": {
+   "file": "QA06_B_DEFINITIVE_CORRECTION_QUEUE.json",
+   "sha256": "d981890d1fecca4fe0e76eeefb1d6d5d398a336be065ebf7c4998ec2641668f9"
+  },
+  "indeterminate_review_queue": {
+   "file": "QA06_B_INDETERMINATE_REVIEW_QUEUE.json",
+   "sha256": "c29f0ae0c252be9a92bc16df90d1208f30d2bdd2c8a8a8deb23f8876035932ad"
+  },
+  "rejected_findings_evidence": {
+   "file": "QA06_B_REJECTED_FINDINGS_EVIDENCE.json",
+   "sha256": "c9f282da6d5a3b84364e34f3245779b1d064e3b17a3b31d0b845c6d2f745e546"
+  }
+ },
+ "checkpoints": [
+  {
+   "checkpoint": "B-CP01",
+   "file": "QA06_B_CHECKPOINT_01.json",
+   "sha256": "8dbda33eec71981bf9b47f233eb4feec62e4402ce970092c7087968a68dfea80",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP02",
+   "file": "QA06_B_CHECKPOINT_02.json",
+   "sha256": "f7e8a2401a6621fd4a65030c9d0250345cc0f3ad598ce4d8efed0813ca1149d7",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP03",
+   "file": "QA06_B_CHECKPOINT_03.json",
+   "sha256": "78fdba4eabed76c89afd06f9ba723c7fa22b68f24860900e21db9fbeef042a51",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP04",
+   "file": "QA06_B_CHECKPOINT_04.json",
+   "sha256": "3595a673a3eeac30291d7ab2b1abdfa27745f1a386c123aa7a464c846bee14f4",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP05",
+   "file": "QA06_B_CHECKPOINT_05.json",
+   "sha256": "b7d9871e19329af52f42f2936a7ae6f3893dff9d83c0fe05908e03a1944a7d7f",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP06",
+   "file": "QA06_B_CHECKPOINT_06.json",
+   "sha256": "e7e319880e67a7d95b2d683567f8a67a9ef4e39070243f7759018b4ff38c3bdc",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP07",
+   "file": "QA06_B_CHECKPOINT_07.json",
+   "sha256": "35e424567f0029a6b1f7f903ea868cb6bc5fd6e3186c6a5cd58758cba2dfe531",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP08",
+   "file": "QA06_B_CHECKPOINT_08.json",
+   "sha256": "1dd4b130f69c988118e80a5676291e7c3c5b61acc07b7d2dcad06274ebc96da1",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP09",
+   "file": "QA06_B_CHECKPOINT_09.json",
+   "sha256": "deda3aabab33ec25a45d1d34f2ce99d27c2c9e1268ad856e9fa988aad28be963",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP10",
+   "file": "QA06_B_CHECKPOINT_10.json",
+   "sha256": "10f4503716edde1659203692be2fae90663358b14c056a630c6c652b866425bc",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP11",
+   "file": "QA06_B_CHECKPOINT_11.json",
+   "sha256": "e3c9beacf54a4cd8d00f6d7aee50edd13d76e95857e0e2acc2c0bf6d3ffea4af",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP12",
+   "file": "QA06_B_CHECKPOINT_12.json",
+   "sha256": "86e676abc184550459462099855c9641cbc8f1eb26f1cf595e09eda9dbbc29f2",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP13",
+   "file": "QA06_B_CHECKPOINT_13.json",
+   "sha256": "4e9afc72dc9af254c65e9f743827dc2fcb4766fa7cbc14833263c05590a245bb",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP14",
+   "file": "QA06_B_CHECKPOINT_14.json",
+   "sha256": "9ee7aca0044c26810610bb779ef8c6588b25d84c101cc56c1533afab8e5ae43d",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP15",
+   "file": "QA06_B_CHECKPOINT_15.json",
+   "sha256": "7c19f188b5af5ffba710a62d860c6d2c7434960244f7cd9d45ce15a7144d77a1",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP16",
+   "file": "QA06_B_CHECKPOINT_16.json",
+   "sha256": "36af1a236f5acc0782ba65f442bd7ce59afe03d4f8eca94b9f04449a237187df",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP17",
+   "file": "QA06_B_CHECKPOINT_17.json",
+   "sha256": "82f3dfcac281d711deca47f2b3547dc69754080aaf543b6900ec0f304602e398",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP18",
+   "file": "QA06_B_CHECKPOINT_18.json",
+   "sha256": "a90d5d57d5854206d218774a337d657d5a96d4e9708977489fac555e3d834005",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP19",
+   "file": "QA06_B_CHECKPOINT_19.json",
+   "sha256": "0a9d437f165f8b39d9cd867d034610a388dfea870367b60d77f6aa671547c21d",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP20",
+   "file": "QA06_B_CHECKPOINT_20.json",
+   "sha256": "5582275e5364e19cdee2ce842d8fce3ccc553002aee10356d3250a1a85dd1c7f",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP21",
+   "file": "QA06_B_CHECKPOINT_21.json",
+   "sha256": "6e532797d0dceeee499de9713cf5fc05b790a2a53911577c001a0ced040b882f",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP22",
+   "file": "QA06_B_CHECKPOINT_22.json",
+   "sha256": "362f033e1417373a7f5fae58ec8fe1eaf979e1785e4b3e7c34dab2d4f785f94c",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP23",
+   "file": "QA06_B_CHECKPOINT_23.json",
+   "sha256": "ad0369de5e0466e11a4cbb4e1259b06906065f43c6b10a76f16d21f3f0854f39",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP24",
+   "file": "QA06_B_CHECKPOINT_24.json",
+   "sha256": "1a069d7b504410c94c9e8a78ec06d7bb2b39ccfead4410a98961ac5ea31a2ef1",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP25",
+   "file": "QA06_B_CHECKPOINT_25.json",
+   "sha256": "397e9fa686a4acea9eb068aa3245c219fd654576c480cf9cf67580d95608aebf",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP26",
+   "file": "QA06_B_CHECKPOINT_26.json",
+   "sha256": "76c41c95d8570ece649148803a74a55f60fcf7a8201f9a651a1b002e86659a16",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP27",
+   "file": "QA06_B_CHECKPOINT_27.json",
+   "sha256": "e35de85fdf97435f7133ef566d7fe57461711cc17e1aff96252b4226b66f4790",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP28",
+   "file": "QA06_B_CHECKPOINT_28.json",
+   "sha256": "3eee5f7a71dd19fcbe46b83040326dbfadb3a38a438f9aadc6f198f6c7b3e83a",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP29",
+   "file": "QA06_B_CHECKPOINT_29.json",
+   "sha256": "7f913d6eb5d62e4c269cc8a45ee708e0e16aa49ec75172bf47c7529d1f3c226f",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP30",
+   "file": "QA06_B_CHECKPOINT_30.json",
+   "sha256": "b3403fb023695b04da4afc5aa95d3fc86424c1c793c2f3dcb9b53bee0c3eda96",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP31",
+   "file": "QA06_B_CHECKPOINT_31.json",
+   "sha256": "0aa9af3197370abd4b10d5b784934824aac80d99d1d781ac6dc50d33a93c0045",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP32",
+   "file": "QA06_B_CHECKPOINT_32.json",
+   "sha256": "5ea0ce137994f57ce57c68b4c9a558ee755cb57a6472067d8f4d8543945aa892",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP33",
+   "file": "QA06_B_CHECKPOINT_33.json",
+   "sha256": "39a8b9f3633882e8e127c0401ce5dcc2fd3a0112020057701836f7f11b952595",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP34",
+   "file": "QA06_B_CHECKPOINT_34.json",
+   "sha256": "7e99797a81d57e763ed4051b9b05508651966f6a0272091ebc66d9ce31014b12",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP35",
+   "file": "QA06_B_CHECKPOINT_35.json",
+   "sha256": "820d98280ab78d374843ba10a9fb12c31011a30e8cbf57bbbc9ea30103ce019a",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP36",
+   "file": "QA06_B_CHECKPOINT_36.json",
+   "sha256": "4f5cdcfab05c969f1efde6cc8c16addd41b78d166df3b94054e7c984bffee169",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP37",
+   "file": "QA06_B_CHECKPOINT_37.json",
+   "sha256": "09f6d9c5d88346593340351969c36fc2e54564afd16ce90e7cc13f973016a92a",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP38",
+   "file": "QA06_B_CHECKPOINT_38.json",
+   "sha256": "3c886756d2f7d81bb4ac58a2c4cc08f5f0e2d5f44ad076c1fd4dd03a7f0c2664",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP39",
+   "file": "QA06_B_CHECKPOINT_39.json",
+   "sha256": "bd7ac7ca6417ff5cfeb87ad8d640615eb5afdf906ba38bfb31f1c1a6f7df58d3",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP40",
+   "file": "QA06_B_CHECKPOINT_40.json",
+   "sha256": "247358f4fb0e690565e1bf62d35f479712fdbc9fbc08e59c6dc10581e97b3d96",
+   "targets": 50
+  },
+  {
+   "checkpoint": "B-CP41",
+   "file": "QA06_B_CHECKPOINT_41.json",
+   "sha256": "db86002a18d27cd95f2cf5c41319d6dc947081bdda4042951be0769851047534",
+   "targets": 17
+  }
+ ],
+ "protected_baseline_sha256": {
+  "qa05_corpus": "2bf21e8333b584130a3159a240a96d5225958a53821971a184285ecc222a082f",
+  "qa05_lookup": "0bf8c5ce3da6fa8b7065f4c05f34bfa3350b29d77d026c6c628a9b6757dd700c",
+  "qa05_payload": "fdae31938907a93807cbadaa5667cd0131ededc484132db62173afbb663e13ce",
+  "qa05_finding": "bb40c4ab9910ffa6d32616d9e723fd0bd3dd0c1b574d089e9364f5c4577c8ec6",
+  "qa04_corpus": "70a6232437f77e2a0d48e39f1a00dd5ec7e753b39a6d1663c9e34b0742e5e524",
+  "qa03_corpus": "dad0a9414fd42b4e5c348ab7e87b90b99501ae4b77c950c5cbfd7dbaef58a496",
+  "cc13_corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c"
+ },
+ "tests": {
+  "schema_version": 1,
+  "mission": "QA-06",
+  "as_of": "2026-11-13",
+  "status": "PASS",
+  "directed": {
+   "ran": 33,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 0,
+   "status": "PASS"
+  },
+  "global": {
+   "ran": 498,
+   "failures": 0,
+   "errors": 0,
+   "skipped": 2,
+   "status": "PASS"
+  },
+  "determinism": {
+   "inventory": true,
+   "front_a_candidate": true,
+   "material_integration": true,
+   "finding_finalization": true
+  },
+  "protected_baseline_unchanged": true,
+  "production_index_modified": false,
+  "deployed": false
+ },
+ "states": {
+  "subdivision_audit_complete": true,
+  "subdivision_findings_resolved": false,
+  "full_corpus_legally_approved": false,
+  "human_approved": false,
+  "candidate_only": true,
+  "production_index_modified": false,
+  "deployed": false,
+  "firmware_accessed": false,
+  "microsd_accessed": false,
+  "esp32_accessed": false
+ }
+}
