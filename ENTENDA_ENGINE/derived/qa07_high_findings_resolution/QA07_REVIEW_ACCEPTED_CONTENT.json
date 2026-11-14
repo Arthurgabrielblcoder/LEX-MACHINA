@@ -1,0 +1,111 @@
+{
+ "schema_version": 1,
+ "mission": "QA-07",
+ "role": "INDEPENDENT_FINAL_INTEGRATION_REVIEW",
+ "as_of": "2026-11-14",
+ "status": "ACCEPTED_CONTENT_REVIEW_COMPLETE",
+ "draft_file": "QA07_ACCEPTED_CONTENT_DRAFT.json",
+ "draft_sha256": "8951f9adf344ca24cf36acf7819823ad5d9ec472840d87f535d0e740bb6189db",
+ "scope": {
+  "integrated_targets_legally_reviewed": 2,
+  "integrated_findings_reviewed": 4,
+  "direct_selection_targets_provenance_checked": 29,
+  "target_total": 31,
+  "resolved_finding_total": 49
+ },
+ "decision_counts": {
+  "ACEITA": 2,
+  "REJEITADA": 0
+ },
+ "sources": [
+  {
+   "authority": "Câmara dos Deputados",
+   "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "scope": "Código Civil atualizado, arts. 1.301 e 1.358-P",
+   "checked_on": "2026-11-14"
+  },
+  {
+   "authority": "Presidência da República",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13777.htm",
+   "scope": "Lei nº 13.777/2018, origem legislativa da multipropriedade",
+   "checked_on": "2026-11-14"
+  }
+ ],
+ "records": [
+  {
+   "target_id": "CC2002:ART.1301",
+   "finding_ids": [
+    "QA06-FINAL-0279",
+    "QA06-FINAL-0278"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1301:PAR.2",
+    "CC2002:ART.1301:PAR.1"
+   ],
+   "decision": "ACEITA",
+   "legal_analysis": "O conteúdo integrado representa conjuntamente o caput e os §§ 1º e 2º: distingue o afastamento de 1,5 m para janelas, eirados, terraços e varandas com vista direta; o afastamento de 75 cm para janelas cuja visão não incide sobre a linha divisória ou que sejam perpendiculares; e a exceção cumulativa das aberturas exclusivamente destinadas a luz ou ventilação, limitadas a 10 cm por 20 cm e construídas acima de 2 m em cada piso. As duas lacunas anteriormente aceitas foram preservadas sem converter o texto em transcrição literal.",
+   "five_fields_reviewed": true,
+   "affected_subdivisions_covered": true,
+   "both_accepted_proposals_preserved": true,
+   "new_legal_error_detected": false,
+   "objections": [],
+   "finding_reviews": [
+    {
+     "finding_id": "QA06-FINAL-0278",
+     "subdivision_id": "CC2002:ART.1301:PAR.1",
+     "resolved": true,
+     "reason": "A regra autônoma de 75 cm para visão não incidente sobre a divisa e para janelas perpendiculares está expressa e pedagogicamente distinguida do caput."
+    },
+    {
+     "finding_id": "QA06-FINAL-0279",
+     "subdivision_id": "CC2002:ART.1301:PAR.2",
+     "resolved": true,
+     "reason": "A exceção de luz ou ventilação contém as três condições cumulativas de largura, comprimento e altura."
+    }
+   ]
+  },
+  {
+   "target_id": "CC2002:ART.1358-P",
+   "finding_ids": [
+    "QA06-FINAL-0360",
+    "QA06-FINAL-0362"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1358-P:INC.III",
+    "CC2002:ART.1358-P:INC.VI"
+   ],
+   "decision": "ACEITA",
+   "legal_analysis": "O conteúdo integrado preserva os dois comandos materiais: o rateio proporcional à fração de tempo atua como regra supletiva quando o instrumento de instituição ou a convenção não dispõe diversamente; e, se houver sistema de administração de intercâmbio de período ou local de fruição, a convenção deve indicá-lo e a responsabilidade e as obrigações da companhia ficam limitadas à documentação de contratação. A explicação não presume a existência do intercâmbio e não amplia a responsabilidade contratual.",
+   "special_legislation_check": "O inciso VI remete ao § 2º do art. 23 da Lei nº 11.771/2008; a síntese limita-se ao comando do Código Civil e não cria requisito ou responsabilidade além da remissão.",
+   "five_fields_reviewed": true,
+   "affected_subdivisions_covered": true,
+   "both_accepted_proposals_preserved": true,
+   "new_legal_error_detected": false,
+   "objections": [],
+   "finding_reviews": [
+    {
+     "finding_id": "QA06-FINAL-0360",
+     "subdivision_id": "CC2002:ART.1358-P:INC.III",
+     "resolved": true,
+     "reason": "O critério proporcional e seu caráter supletivo estão explicitados com as duas fontes convencionais aptas a dispor diversamente."
+    },
+    {
+     "finding_id": "QA06-FINAL-0362",
+     "subdivision_id": "CC2002:ART.1358-P:INC.VI",
+     "resolved": true,
+     "reason": "A indicação condicional do sistema, seus dois objetos possíveis e o limite documental da companhia foram preservados."
+    }
+   ]
+  }
+ ],
+ "direct_selection_provenance_check": {
+  "records_checked": 29,
+  "byte_equivalent_to_accepted_proposals": 29,
+  "mismatches": 0,
+  "method": "Comparação estrutural exata de proposed_content com o módulo editorial aceito indicado em origins; substituições V2 dos arts. 1.358-J e 1.358-S verificadas contra QA07_EDITOR_HIGH_B_REVISION_2.json."
+ },
+ "all_integrated_targets_accepted": true,
+ "draft_modified": false,
+ "corpus_modified": false,
+ "human_approval_claimed": false
+}

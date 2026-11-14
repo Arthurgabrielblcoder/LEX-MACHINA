@@ -1,0 +1,1350 @@
+{
+ "schema_version": 1,
+ "mission": "QA-07",
+ "as_of": "2026-11-13",
+ "status": "ACCEPTED_CONTENT_CONSOLIDATED_PENDING_OVERLAP_REVIEW",
+ "target_total": 31,
+ "resolved_finding_total": 49,
+ "high_findings": 41,
+ "indeterminate_confirmed_for_correction": 8,
+ "indeterminate_materially_sufficient": 2,
+ "overlapping_targets_integrated": [
+  "CC2002:ART.1301",
+  "CC2002:ART.1358-P"
+ ],
+ "source_sha256": {
+  "QA07_EDITOR_HIGH_A.json": "d6dbf83b87948f03f8f6909cb54b02ee9fef26baa8021b9ea05bba690141479a",
+  "QA07_EDITOR_HIGH_B.json": "f831b49744570d1ed79bd11c18c9c614abe4e4d33ac01a244c43a6c60a6c342e",
+  "QA07_EDITOR_HIGH_B_REVISION_2.json": "f1fbffdcd934ffc1013dad8b4d630166a67b302c5f97395eac27dbdc62f4211e",
+  "QA07_INDETERMINATE_DECISIONS.json": "1af16bece49b103723ad81b98be93049923619d2cd140c0890e6d0837acf588b",
+  "QA07_REVIEW_HIGH_A.json": "a7aaa5a3fb821eb0e042964f77011351b95a69808b3eff6ff07c6ca86f87f548",
+  "QA07_REVIEW_HIGH_B.json": "50f1db1b820d4fffb3eb84d4377e7ecdc11a14702303afdd36fba24f15408774",
+  "QA07_REVIEW_HIGH_B_REVISION_2.json": "c75f48a19a74082fd6e04cd9a3509ac998995fce2cc41dbd092f34943e07009c",
+  "QA07_REVIEW_INDETERMINATE.json": "539f956bc7efc68c92c555d7f0f2610029aee239cd485f073859249bb0c90e82"
+ },
+ "records": [
+  {
+   "target_id": "CC2002:ART.39",
+   "finding_ids": [
+    "QA06-FINAL-0001"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.39:PAR.UNICO"
+   ],
+   "previous_content": {
+    "o_que_diz": "Se o ausente, descendente ou ascendente regressar nos dez anos posteriores à sucessão definitiva, recebe os bens existentes no estado em que se acharem, os bens sub-rogados em seu lugar ou o preço que herdeiros e interessados receberam pelos bens alienados.",
+    "o_que_significa": "O retorno tardio não recompõe integralmente o acervo; terminado o período sem retorno nem promoção sucessória, os bens arrecadados passam ao ente público indicado no artigo.",
+    "exemplo_pratico": "Ausente volta e recebe o imóvel remanescente, sem exigir bem já alienado além do substituto ou preço previsto na regra.",
+    "atencao": "O texto não inclui todo herdeiro necessário: menciona especificamente o ausente, seus descendentes e seus ascendentes.",
+    "palavras_dificeis": [
+     {
+      "termo": "sub-rogação",
+      "explicacao": "substituição de um bem por outro que assume sua posição jurídica"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Quem retorna dentro dos dez anos posteriores à sucessão definitiva recebe os bens ainda existentes, os que os substituíram ou o preço obtido com alienações. Se ninguém regressar nem promover a sucessão definitiva nesse período, os bens arrecadados passam ao Município ou ao Distrito Federal da respectiva localização; se estiverem em território federal, passam à União.",
+    "o_que_significa": "O retorno tardio não recompõe todo o patrimônio como antes. Encerrado o prazo sem retorno nem iniciativa sucessória, a localização dos bens define qual ente público os recebe.",
+    "exemplo_pratico": "Se o imóvel arrecadado estiver em um município e ninguém regressar ou promover a sucessão definitiva durante os dez anos, ele passa ao domínio municipal; em território federal, o destinatário seria a União.",
+    "atencao": "O direito de retorno previsto no caput alcança especificamente o ausente, seus descendentes e seus ascendentes. A destinação pública do parágrafo único não é genérica: depende da circunscrição onde o bem está situado.",
+    "palavras_dificeis": [
+     {
+      "termo": "sub-rogação",
+      "explicacao": "substituição de um bem por outro que assume sua posição jurídica"
+     },
+     {
+      "termo": "circunscrição",
+      "explicacao": "área territorial de atuação do Município ou do Distrito Federal"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_A"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.44",
+   "finding_ids": [
+    "QA06-FINAL-0003"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.44:PAR.1"
+   ],
+   "previous_content": {
+    "o_que_diz": "São pessoas jurídicas privadas associações, sociedades, fundações, organizações religiosas, partidos políticos e empreendimentos de economia solidária.",
+    "o_que_significa": "Organizações religiosas têm liberdade de criação e funcionamento; partidos seguem lei específica. As regras de associações aplicam-se subsidiariamente aos empreendimentos solidários e às sociedades referidas pelo § 2º.",
+    "exemplo_pratico": "Um grupo cultural sem finalidade econômica registra associação; uma cooperativa popular pode precisar verificar se se enquadra no regime especial de economia solidária.",
+    "atencao": "O inciso VII e o § 2º mudaram em 2024. Classificar a entidade corretamente é essencial, pois cada espécie possui constituição e regime próprios.",
+    "palavras_dificeis": [
+     {
+      "termo": "subsidiariamente",
+      "explicacao": "de forma complementar, para preencher lacuna sem substituir a disciplina principal"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "São pessoas jurídicas privadas as associações, sociedades, fundações, organizações religiosas, partidos políticos e empreendimentos de economia solidária. Organizações religiosas têm liberdade de criação, organização interna e funcionamento, e o poder público não pode negar o reconhecimento nem o registro dos atos necessários à sua constituição e atividade.",
+    "o_que_significa": "Cada espécie de entidade possui regime próprio. No caso das organizações religiosas, a autonomia institucional também protege contra recusa estatal indevida de reconhecimento ou registro.",
+    "exemplo_pratico": "Uma organização religiosa apresenta seus atos constitutivos regulares ao registro competente; o órgão público não pode recusá-los simplesmente por discordar de sua organização interna ou de sua orientação religiosa.",
+    "atencao": "A liberdade não elimina exigências legais gerais aplicáveis ao registro. A proibição é de negar reconhecimento ou registro por motivo incompatível com a autonomia assegurada pelo Código.",
+    "palavras_dificeis": [
+     {
+      "termo": "atos constitutivos",
+      "explicacao": "documentos que criam a entidade e definem sua organização básica"
+     },
+     {
+      "termo": "subsidiariamente",
+      "explicacao": "de forma complementar, quando a disciplina principal não resolve o ponto"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_A"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.206",
+   "finding_ids": [
+    "QA06-FINAL-0008",
+    "QA06-FINAL-0009",
+    "QA06-FINAL-0010",
+    "QA06-FINAL-0011",
+    "QA06-FINAL-0013",
+    "QA06-FINAL-0014",
+    "QA06-FINAL-0015",
+    "QA06-FINAL-0016",
+    "QA06-FINAL-0017"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.206:PAR.1:INC.IV",
+    "CC2002:ART.206:PAR.1:INC.V",
+    "CC2002:ART.206:PAR.3:INC.IX",
+    "CC2002:ART.206:PAR.3:INC.VI",
+    "CC2002:ART.206:PAR.3:INC.VII:AL.a",
+    "CC2002:ART.206:PAR.3:INC.VII:AL.b",
+    "CC2002:ART.206:PAR.3:INC.VII:AL.c",
+    "CC2002:ART.206:PAR.3:INC.VIII",
+    "CC2002:ART.206:PAR.5:INC.II"
+   ],
+   "previous_content": {
+    "o_que_diz": "O artigo fixa prazos especiais de um, dois, três, quatro e cinco anos para pretensões expressamente enumeradas.",
+    "o_que_significa": "Em um ano estão, entre outras, hospedagem e alimentos consumidos no estabelecimento, emolumentos de auxiliares e peritos e créditos ligados ao encerramento de sociedade; o antigo inciso de seguro do § 1º foi revogado. Em dois anos prescrevem prestações alimentares vencidas. Em três anos entram aluguéis, rendas, juros e dividendos periódicos, enriquecimento sem causa, reparação civil, lucros de má-fé, certas responsabilidades societárias, títulos de crédito e seguro obrigatório. Em quatro anos, pretensão relativa à tutela. Em cinco anos, dívida líquida documentada, honorários profissionais e despesas judiciais do vencedor.",
+    "exemplo_pratico": "Cobrança de dívida líquida constante de contrato particular sujeita-se, em regra, ao prazo de cinco anos.",
+    "atencao": "Cada prazo depende da qualificação exata da pretensão e do marco inicial próprio. O § 1º, II, está revogado desde a vigência da Lei 15.040/2024 e não deve ser usado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prazo especial",
+      "explicacao": "período prescricional definido para uma categoria específica de pretensão"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O artigo estabelece prazos prescricionais especiais de um, dois, três, quatro e cinco anos e dá marcos iniciais próprios a várias pretensões. Em um ano entram, entre outras, a cobrança contra peritos pela avaliação de bens aportados ao capital de sociedade anônima, desde a publicação da ata que aprovou o laudo, e a pretensão de credores não pagos contra sócios, acionistas e liquidantes, desde a publicação da ata de encerramento da liquidação. Em três anos estão a restituição de lucros ou dividendos recebidos de má-fé, contada da deliberação da distribuição; responsabilidades de fundadores, administradores, fiscais e liquidantes, com os marcos societários indicados no inciso; pagamento de título de crédito desde o vencimento, salvo lei especial; e pretensões do beneficiário contra o segurador e do terceiro prejudicado no seguro obrigatório de responsabilidade civil. Em cinco anos prescrevem os honorários de profissionais liberais, procuradores judiciais, curadores e professores, desde a conclusão do serviço ou a cessação do contrato ou mandato.",
+    "o_que_significa": "Não basta saber a duração do prazo: é preciso identificar exatamente a pretensão e o evento que inicia a contagem. Nas responsabilidades societárias trienais, o marco muda conforme o responsável: publicação dos atos constitutivos para fundadores; apresentação do balanço ou reunião que deva conhecer a violação para administradores e fiscais; e primeira assembleia semestral posterior à violação para liquidantes.",
+    "exemplo_pratico": "A pretensão para cobrar um título de crédito, quando não houver prazo diferente em lei especial, conta três anos do vencimento. Já os honorários de um procurador seguem prazo de cinco anos contado da conclusão do serviço ou do fim do contrato ou mandato, conforme o caso.",
+    "atencao": "Qualificação da pretensão, termo inicial e eventual lei especial devem ser verificados juntos. O antigo inciso de seguro do § 1º foi revogado pela Lei 15.040/2024; isso não elimina a regra trienal do § 3º, IX, para o beneficiário e o terceiro prejudicado em seguro obrigatório de responsabilidade civil.",
+    "palavras_dificeis": [
+     {
+      "termo": "prescrição",
+      "explicacao": "perda da possibilidade de exigir judicialmente uma pretensão após o prazo legal"
+     },
+     {
+      "termo": "termo inicial",
+      "explicacao": "fato ou data a partir do qual o prazo começa a correr"
+     },
+     {
+      "termo": "liquidante",
+      "explicacao": "responsável por conduzir a liquidação e o encerramento da sociedade"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_A"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.964",
+   "finding_ids": [
+    "QA06-FINAL-0092"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.964:INC.IV"
+   ],
+   "previous_content": {
+    "o_que_diz": "Há privilégio especial sobre bens determinados para créditos ligados à arrecadação judicial, salvamento, benfeitorias, construção, produção agrícola, locação, edição e abate. Nos aluguéis, a preferência sobre utensílios domésticos limita-se às prestações do ano em curso e do anterior. O salário do trabalhador rural prefere sobre o produto da colheita em que trabalhou, inclusive diante de créditos garantidos por direito real.",
+    "o_que_significa": "Cada crédito recebe preferência apenas sobre o bem ou produto ao qual sua contribuição está legalmente ligada.",
+    "exemplo_pratico": "O salário do trabalhador que participou da colheita é pago com o produto colhido antes até de um crédito com garantia real sobre esse produto.",
+    "atencao": "Os nove incisos têm objetos e limites próprios. O privilégio locatício cobre somente o ano corrente e o anterior, enquanto a prioridade do trabalhador agrícola supera também créditos reais.",
+    "palavras_dificeis": [
+     {
+      "termo": "Privilégio especial",
+      "explicacao": "preferência legal que recai sobre bem ou produto especificamente indicado"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Há privilégio especial sobre bens determinados para créditos ligados à arrecadação judicial, salvamento, benfeitorias, construção, produção agrícola, locação, edição e abate. Na construção, quem forneceu materiais, dinheiro ou serviços para edificar, reconstruir ou melhorar prédio, fábrica, oficina ou outra construção tem preferência sobre o próprio bem beneficiado. Nos aluguéis, a preferência sobre utensílios domésticos limita-se ao ano em curso e ao anterior; o salário rural prefere sobre a colheita em que houve trabalho, inclusive diante de créditos reais.",
+    "o_que_significa": "A preferência acompanha o bem ou produto diretamente beneficiado pelo crédito. No caso de obra, ela protege quem contribuiu com material, recursos ou trabalho e recai sobre a construção correspondente.",
+    "exemplo_pratico": "Fornecedor de materiais usados para ampliar uma oficina pode ter preferência sobre essa oficina pelo crédito da obra, nos limites legais.",
+    "atencao": "Cada inciso liga um tipo de crédito a um objeto próprio. O privilégio da obra não recai indistintamente sobre todo o patrimônio do devedor.",
+    "palavras_dificeis": [
+     {
+      "termo": "Privilégio especial",
+      "explicacao": "preferência legal de pagamento vinculada a bem ou produto determinado"
+     },
+     {
+      "termo": "Prédio rústico",
+      "explicacao": "imóvel de natureza rural"
+     }
+    ]
+   },
+   "origins": [
+    "INDETERMINATE_CONFIRMED"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.968",
+   "finding_ids": [
+    "QA06-FINAL-0095"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.968:INC.II"
+   ],
+   "previous_content": {
+    "o_que_diz": "A inscrição informa identificação e regime de bens, firma autenticada, capital, objeto e sede. Alterações são averbadas; transformação e procedimentos simplificados do microempreendedor seguem as regras dos parágrafos.",
+    "o_que_significa": "O registro reúne dados essenciais do empresário e permite atualização, transformação societária e simplificação legal para o MEI.",
+    "exemplo_pratico": "Empresário informa firma, capital e atividade e depois averba mudança de endereço.",
+    "atencao": "Dispensas do MEI dependem da disciplina do CGSIM; simplificação não elimina exigências que a legislação especial mantenha.",
+    "palavras_dificeis": [
+     {
+      "termo": "Firma",
+      "explicacao": "nome empresarial sob o qual o empresário exerce a atividade"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O pedido de inscrição identifica o empresário, seu estado civil e regime de bens, a firma, o capital, o objeto e a sede. A firma vem com assinatura autógrafa, que pode ser substituída por assinatura autenticada mediante certificação digital ou meio equivalente, observada a ressalva legal das micro e pequenas empresas. Alterações são averbadas, e os parágrafos tratam de transformação e simplificação para o MEI.",
+    "o_que_significa": "O registro reúne os dados essenciais do empresário e aceita forma eletrônica capaz de comprovar a autenticidade da assinatura, sem afastar regimes simplificados previstos em lei especial.",
+    "exemplo_pratico": "O empresário apresenta a firma e comprova a autenticidade da assinatura por certificado digital aceito pelo registro, em vez de assinar manualmente o requerimento.",
+    "atencao": "Firma é o nome empresarial; assinatura é a manifestação autenticada do requerente. As dispensas aplicáveis ao MEI e a outros beneficiários da LC nº 123 dependem da legislação especial e da disciplina do CGSIM.",
+    "palavras_dificeis": [
+     {
+      "termo": "Assinatura autógrafa",
+      "explicacao": "assinatura feita de próprio punho"
+     },
+     {
+      "termo": "Certificação digital",
+      "explicacao": "meio eletrônico que comprova autoria e integridade da assinatura"
+     }
+    ]
+   },
+   "origins": [
+    "INDETERMINATE_CONFIRMED"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1069",
+   "finding_ids": [
+    "QA06-FINAL-0143",
+    "QA06-FINAL-0144"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1069:INC.I",
+    "CC2002:ART.1069:INC.III"
+   ],
+   "previous_content": {
+    "o_que_diz": "Os conselheiros fiscais examinam livros, caixa e contas, registram resultados, opinam sobre demonstrações e operações e denunciam irregularidades. Convocam assembleia se os diretores atrasarem a convocação por mais de trinta dias ou, diante de motivo grave e urgente, imediatamente; seus deveres continuam durante a liquidação.",
+    "o_que_significa": "A fiscalização é contínua, documentada e inclui reação a erros, fraudes e urgências.",
+    "exemplo_pratico": "Conselheiro detecta desvio, registra conclusão e convoca reunião extraordinária se a administração se omite.",
+    "atencao": "As atribuições podem ser individuais ou colegiadas conforme o inciso; prazos e relatórios devem ser observados.",
+    "palavras_dificeis": [
+     {
+      "termo": "Parecer fiscal",
+      "explicacao": "manifestação técnica do conselho sobre contas e atos societários"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O conselho fiscal examina, ao menos trimestralmente, livros, documentos, caixa e carteira da sociedade, e administradores ou liquidantes devem fornecer as informações solicitadas. Registra conclusões, denuncia irregularidades, opina sobre demonstrações e operações e apresenta à assembleia anual parecer lançado no mesmo livro, baseado no balanço patrimonial e no balanço de resultado econômico. Também pode convocar assembleia nas hipóteses legais, e suas funções continuam durante a liquidação.",
+    "o_que_significa": "A fiscalização é periódica, documentada e informada. O conselho não atua apenas diante de suspeita: deve examinar dados regularmente e prestar contas aos sócios na assembleia anual com base nos dois balanços exigidos.",
+    "exemplo_pratico": "A cada trimestre, o conselho consulta livros e caixa e pede documentos aos administradores. Ao final do exercício, registra e apresenta à assembleia anual parecer apoiado nos balanços patrimonial e de resultado econômico.",
+    "atencao": "A periodicidade trimestral é mínima. Administradores e liquidantes têm dever de informação, e o parecer anual deve ser registrado no mesmo livro usado para as conclusões do conselho.",
+    "palavras_dificeis": [
+     {
+      "termo": "parecer fiscal",
+      "explicacao": "manifestação fundamentada do conselho fiscal sobre negócios, operações e demonstrações da sociedade"
+     },
+     {
+      "termo": "balanço patrimonial",
+      "explicacao": "demonstração da posição de bens, direitos e obrigações da sociedade"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_A"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1078",
+   "finding_ids": [
+    "QA06-FINAL-0158"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1078:PAR.2"
+   ],
+   "previous_content": {
+    "o_que_diz": "A assembleia anual ocorre nos quatro meses após o exercício para contas, balanços, administradores e pauta; documentos ficam disponíveis 30 dias antes, e aprovação sem erro exonera gestores, salvo fraude.",
+    "o_que_significa": "Os sócios recebem informação prévia e exercem controle anual sobre administração.",
+    "exemplo_pratico": "Empresa encerra exercício em dezembro e reúne sócios até abril com balanços acessíveis desde março.",
+    "atencao": "Erro, dolo ou simulação impedem exoneração; anulação da aprovação tem prazo legal de dois anos.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prestação de contas",
+      "explicacao": "apresentação documentada da gestão e de seus resultados"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "A assembleia anual ocorre nos quatro meses seguintes ao fim do exercício para examinar contas e balanços, escolher administradores quando cabível e tratar da pauta. Os documentos ficam disponíveis aos sócios não administradores trinta dias antes; na assembleia, são lidos, discutidos e votados, sem participação dos administradores nem, se houver, dos membros do conselho fiscal nessa votação. A aprovação sem reserva pode exonerá-los, salvo erro, dolo ou simulação.",
+    "o_que_significa": "Os sócios recebem informação prévia e controlam anualmente a gestão, enquanto administradores e conselheiros fiscais ficam impedidos de votar a apreciação dos documentos ligados à própria atuação.",
+    "exemplo_pratico": "Na votação das contas anuais, o sócio que também administra a empresa não participa da votação dos documentos da gestão; os demais sócios deliberam após sua leitura e discussão.",
+    "atencao": "A vedação de voto alcança membros da administração e do conselho fiscal na votação prevista no § 2º. Erro, dolo ou simulação impedem a exoneração, e a anulação da aprovação tem prazo legal de dois anos.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prestação de contas",
+      "explicacao": "apresentação documentada da gestão e de seus resultados"
+     },
+     {
+      "termo": "Exoneração de responsabilidade",
+      "explicacao": "liberação da responsabilidade pelos atos abrangidos pela aprovação válida"
+     }
+    ]
+   },
+   "origins": [
+    "INDETERMINATE_CONFIRMED"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1134",
+   "finding_ids": [
+    "QA06-FINAL-0181"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1134:PAR.1:INC.III"
+   ],
+   "previous_content": {
+    "o_que_diz": "Sociedade estrangeira só funciona no Brasil com autorização, inclusive por filial, embora possa ser acionista de companhia brasileira; o pedido exige documentos, tradução e prova de representação.",
+    "o_que_significa": "Atividade direta no país depende de controle e documentação abrangentes.",
+    "exemplo_pratico": "Empresa estrangeira pede autorização e apresenta estatuto, administradores, balanço e representante no Brasil.",
+    "atencao": "Ser acionista não equivale a operar diretamente; leis especiais podem impor restrições adicionais.",
+    "palavras_dificeis": [
+     {
+      "termo": "Sociedade estrangeira",
+      "explicacao": "pessoa jurídica constituída sob lei de outro país"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Sociedade estrangeira só funciona no Brasil com autorização do Poder Executivo, inclusive por filial, embora possa ser acionista de companhia brasileira nos limites legais. O pedido reúne prova de constituição, contrato ou estatuto, relação de todos os membros dos órgãos de administração com nome, nacionalidade, profissão, domicílio e participação no capital — salvo quanto a ações ao portador —, além do ato de funcionamento, representante no Brasil e último balanço. Os documentos exigem autenticação, legalização e tradução conforme a lei.",
+    "o_que_significa": "A atividade direta no país depende de autorização e de documentação que permita identificar a sociedade, seus administradores, sua estrutura de capital e quem a representa no Brasil.",
+    "exemplo_pratico": "Ao pedir autorização, a sociedade estrangeira apresenta a lista dos integrantes de seus órgãos de administração, seus dados pessoais e, quando aplicável, quanto cada um participa do capital.",
+    "atencao": "Ser acionista não equivale a operar diretamente no Brasil. A exceção relativa a ações ao portador afasta apenas a informação sobre o valor da participação, não a relação e identificação dos administradores.",
+    "palavras_dificeis": [
+     {
+      "termo": "Ações ao portador",
+      "explicacao": "ações historicamente identificadas pela posse do título, mencionadas na redação do Código"
+     },
+     {
+      "termo": "Legalização consular",
+      "explicacao": "formalidade de validação do documento estrangeiro, sem prejuízo dos regimes internacionais aplicáveis"
+     }
+    ]
+   },
+   "origins": [
+    "INDETERMINATE_CONFIRMED"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1187",
+   "finding_ids": [
+    "QA06-FINAL-0213"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1187:INC.II"
+   ],
+   "previous_content": {
+    "o_que_diz": "No balanço, bens destinados à exploração são avaliados pelo custo, com conta de depreciação; estoques, pelo custo ou preço corrente quando inferior; títulos, pela cotação ou custo de aquisição e créditos, pelo valor provável de realização. Gastos pré-operacionais e certas despesas podem integrar o ativo diferido, sujeitos à amortização anual.",
+    "o_que_significa": "O balanço deve usar parâmetros verificáveis e reconhecer depreciação e riscos de recebimento.",
+    "exemplo_pratico": "Máquina usada entra pelo custo menos depreciação; crédito duvidoso recebe valor provável de realização.",
+    "atencao": "Leis e normas contábeis especiais complementam os critérios e podem exigir tratamento mais específico.",
+    "palavras_dificeis": [
+     {
+      "termo": "Depreciação",
+      "explicacao": "redução do valor de bem pelo uso, tempo ou obsolescência"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O balanço deve avaliar bens e direitos por critérios prudentes: bens de exploração pelo custo com depreciação; estoques e itens destinados à alienação pelo custo ou pelo preço corrente quando este for menor; títulos e créditos segundo os critérios legais; e certas despesas por amortização. Se bens forem avaliados pelo preço corrente acima do custo, essa diferença não pode servir para distribuir lucros nem para calcular percentuais de fundos de reserva.",
+    "o_que_significa": "Uma valorização ainda não realizada não pode ser tratada como lucro distribuível nem aumentar artificialmente reservas calculadas por percentual. O balanço deve evitar transformar expectativa de ganho em resultado disponível.",
+    "exemplo_pratico": "Mercadoria adquirida por cem passa a valer cento e trinta e é registrada pelo preço corrente. A diferença de trinta não pode ser usada para distribuir dividendos nem para calcular a parcela destinada ao fundo de reserva.",
+    "atencao": "Leis e normas contábeis especiais podem complementar os critérios, mas não afastam a vedação do inciso quanto à diferença entre preço corrente e custo para esses fins.",
+    "palavras_dificeis": [
+     {
+      "termo": "depreciação",
+      "explicacao": "redução contábil do valor de um bem pelo uso, tempo ou obsolescência"
+     },
+     {
+      "termo": "fundo de reserva",
+      "explicacao": "parcela patrimonial separada para finalidade ou proteção definida em lei ou no regime societário"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_A"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1228",
+   "finding_ids": [
+    "QA06-FINAL-0240",
+    "QA06-FINAL-0243"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1228:PAR.1",
+    "CC2002:ART.1228:PAR.5"
+   ],
+   "previous_content": {
+    "o_que_diz": "Proprietário pode usar, fruir, dispor e reivindicar a coisa, mas deve cumprir funções econômicas, sociais e ambientais; abuso é vedado e desapropriação judicial coletiva pode exigir indenização.",
+    "o_que_significa": "O domínio é amplo, não absoluto, e pode ceder diante de interesses protegidos e posse social relevante.",
+    "exemplo_pratico": "Dono impede ocupação injusta, mas não usa imóvel apenas para causar dano ambiental ao vizinho.",
+    "atencao": "Os parágrafos reúnem limites complexos; desapropriação judicial exige extensa posse de boa-fé, obras relevantes e pagamento definido.",
+    "palavras_dificeis": [
+     {
+      "termo": "Função social",
+      "explicacao": "dever de exercer propriedade de modo compatível com interesses sociais protegidos"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O proprietário pode usar, fruir, dispor e reivindicar a coisa, mas deve exercer o domínio conforme suas finalidades econômicas e sociais. Nos termos da legislação especial, deve preservar flora, fauna, belezas naturais, equilíbrio ecológico e patrimônio histórico e artístico, além de evitar poluição do ar e das águas. O abuso é vedado. Em situação de extensa posse coletiva de boa-fé com obras ou serviços de interesse social e econômico relevante, o proprietário pode perder o imóvel mediante justa indenização fixada pelo juiz; pago o preço, a sentença vale como título para registrar o imóvel em nome dos possuidores.",
+    "o_que_significa": "A propriedade é ampla, mas não absoluta. Ela se submete a deveres sociais e ambientais e, na hipótese excepcional de posse coletiva qualificada, a transferência só se completa com a indenização e o pagamento que permite o registro em favor dos possuidores.",
+    "exemplo_pratico": "Uma extensa área é ocupada de boa-fé por muitas pessoas que realizam obras socialmente relevantes. Reconhecidos os requisitos legais, o juiz fixa indenização justa ao proprietário; somente depois de pago o preço a sentença serve para registrar o imóvel em nome dos possuidores.",
+    "atencao": "A hipótese dos §§ 4º e 5º exige conjuntamente posse ininterrupta e de boa-fé por mais de cinco anos, número considerável de pessoas e obras ou serviços de relevante interesse social e econômico. Ela não autoriza transferência sem justa indenização e pagamento.",
+    "palavras_dificeis": [
+     {
+      "termo": "função social",
+      "explicacao": "dever de exercer a propriedade de modo compatível com interesses econômicos, sociais e ambientais protegidos"
+     },
+     {
+      "termo": "título para registro",
+      "explicacao": "documento juridicamente apto a permitir a inscrição da propriedade no registro de imóveis"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_A"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1301",
+   "finding_ids": [
+    "QA06-FINAL-0279",
+    "QA06-FINAL-0278"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1301:PAR.2",
+    "CC2002:ART.1301:PAR.1"
+   ],
+   "previous_content": {
+    "o_que_diz": "Janelas, terraços, varandas e eirados devem observar distância mínima do terreno vizinho, com regras próprias para visão oblíqua e pequenas aberturas de luz.",
+    "o_que_significa": "A restrição protege privacidade e segurança sem proibir aberturas tecnicamente limitadas.",
+    "exemplo_pratico": "Janela frontal é instalada a pelo menos metro e meio da divisa.",
+    "atencao": "A distância varia conforme a abertura e há disciplina específica para zona rural e luz ou ventilação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Visão oblíqua",
+      "explicacao": "vista lateral ou indireta para o imóvel vizinho"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Janelas, eirados, terraços e varandas com vista direta para o terreno vizinho devem ficar a pelo menos um metro e meio da divisa. Para janela com visão oblíqua ou perpendicular à linha divisória, o mínimo é de setenta e cinco centímetros. Essas restrições não alcançam pequenas aberturas exclusivamente para luz ou ventilação quando tiverem, no máximo, dez centímetros de largura por vinte de comprimento e estiverem a mais de dois metros de altura em cada piso.",
+    "o_que_significa": "A lei protege a privacidade do vizinho com afastamentos diferentes conforme a direção da vista. Também admite abertura reduzida e elevada apenas para iluminação ou ventilação, desde que todas as dimensões legais sejam respeitadas.",
+    "exemplo_pratico": "Uma janela perpendicular à divisa pode observar o mínimo de setenta e cinco centímetros; uma janela com vista direta exige um metro e meio. Já uma abertura de dez por vinte centímetros instalada acima de dois metros do piso pode servir apenas à ventilação sem seguir esses afastamentos.",
+    "atencao": "Não confunda os três regimes: um metro e meio para vista direta; setenta e cinco centímetros para visão oblíqua ou perpendicular; e a exceção das pequenas aberturas, cujos limites de largura, comprimento e altura são cumulativos.",
+    "palavras_dificeis": [
+     {
+      "termo": "Visão oblíqua",
+      "explicacao": "vista lateral ou indireta em relação à linha divisória"
+     },
+     {
+      "termo": "Eirado",
+      "explicacao": "terraço ou área descoberta elevada de uma edificação"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_A",
+    "INDETERMINATE_CONFIRMED"
+   ],
+   "integration_kind": "INTEGRATED_OVERLAPPING_ACCEPTED_PROPOSALS"
+  },
+  {
+   "target_id": "CC2002:ART.1331",
+   "finding_ids": [
+    "QA06-FINAL-0298"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1331:PAR.4"
+   ],
+   "previous_content": {
+    "o_que_diz": "Condomínio edilício combina unidades exclusivas com partes comuns inseparáveis, cada unidade ligada a fração ideal do solo e áreas coletivas.",
+    "o_que_significa": "O titular dispõe da unidade, mas compartilha estruturas essenciais e participação proporcional no conjunto.",
+    "exemplo_pratico": "Apartamento é exclusivo; terreno, fundações e corredores pertencem a todos.",
+    "atencao": "Abrigos de veículos e partes comuns obedecem ao título, à convenção e às restrições legais de alienação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Fração ideal",
+      "explicacao": "participação indivisa no terreno e nas partes comuns"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "No condomínio edilício, existem unidades de propriedade exclusiva e partes comuns inseparáveis. Cada unidade se vincula a uma fração ideal do solo e das áreas comuns, e nenhuma unidade pode ficar sem acesso ao logradouro público.",
+    "o_que_significa": "O titular dispõe de sua unidade, mas compartilha estruturas essenciais do edifício. A organização do condomínio não pode criar unidade imobiliária isolada da via pública.",
+    "exemplo_pratico": "Apartamento é exclusivo e corredores são comuns; a divisão ou alteração do prédio não pode deixar uma das unidades sem caminho juridicamente assegurado até a rua.",
+    "atencao": "Abrigos de veículos e partes comuns seguem o título, a convenção e as restrições legais. O acesso ao logradouro público deve ser preservado para todas as unidades.",
+    "palavras_dificeis": [
+     {
+      "termo": "fração ideal",
+      "explicacao": "participação indivisa de cada unidade no terreno e nas partes comuns"
+     },
+     {
+      "termo": "logradouro público",
+      "explicacao": "via ou espaço público de circulação, como rua ou avenida"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_A"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1334",
+   "finding_ids": [
+    "QA06-FINAL-0304"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1334:PAR.2"
+   ],
+   "previous_content": {
+    "o_que_diz": "A convenção disciplina contribuições, administração, assembleias, sanções e regimento, podendo adotar escritura pública ou instrumento particular.",
+    "o_que_significa": "É o estatuto interno do condomínio e deve organizar poder, custeio e convivência dentro da lei.",
+    "exemplo_pratico": "Convenção fixa rateio, competências do síndico e procedimento de multas.",
+    "atencao": "Cláusula convencional não pode afastar norma legal obrigatória nem direitos fundamentais.",
+    "palavras_dificeis": [
+     {
+      "termo": "Convenção condominial",
+      "explicacao": "ato coletivo que estabelece regras estruturais do condomínio"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "A convenção disciplina contribuições, administração, assembleias, sanções e regimento interno e pode ser feita por escritura pública ou instrumento particular. Para essas matérias, promitentes compradores e cessionários de direitos sobre unidades autônomas são equiparados aos proprietários, salvo disposição em contrário.",
+    "o_que_significa": "A convenção é o estatuto interno do condomínio e alcança, em regra, não só quem já consta como proprietário, mas também quem prometeu comprar ou recebeu direitos sobre a unidade.",
+    "exemplo_pratico": "Quem adquiriu por promessa de compra uma unidade pode ser tratado como proprietário para as regras de contribuição e administração previstas no artigo, salvo disciplina contrária aplicável.",
+    "atencao": "A equiparação vale para os fins deste artigo e contém ressalva expressa a disposição em contrário; ela não transforma automaticamente o promitente comprador em proprietário para todo efeito jurídico.",
+    "palavras_dificeis": [
+     {
+      "termo": "Promitente comprador",
+      "explicacao": "pessoa que celebrou promessa de aquisição da unidade"
+     },
+     {
+      "termo": "Cessionário de direitos",
+      "explicacao": "pessoa que recebeu de outra os direitos relativos à unidade"
+     }
+    ]
+   },
+   "origins": [
+    "INDETERMINATE_CONFIRMED"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1336",
+   "finding_ids": [
+    "QA06-FINAL-0307"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1336:PAR.1"
+   ],
+   "previous_content": {
+    "o_que_diz": "Condômino deve pagar despesas, preservar segurança e fachada e respeitar a destinação; descumprimentos podem gerar juros e multas nos limites legais.",
+    "o_que_significa": "A vida coletiva impõe deveres patrimoniais e de conduta, com sanções proporcionais e procedimento adequado.",
+    "exemplo_pratico": "Proprietário que altera fachada recompõe o padrão e pode sofrer penalidade prevista.",
+    "atencao": "Multas variam conforme a infração e não dispensam convocação, defesa e regras da convenção quando exigíveis.",
+    "palavras_dificeis": [
+     {
+      "termo": "Contribuição condominial",
+      "explicacao": "quota de custeio das despesas comuns"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O condômino deve contribuir para as despesas, preservar segurança e fachada e respeitar a destinação do edifício. Quem não paga a contribuição fica sujeito à correção monetária, aos juros moratórios convencionados ou, se não houver previsão, aos juros do art. 406, além de multa de até dois por cento sobre o débito. Outras violações podem gerar as multas previstas nos limites legais.",
+    "o_que_significa": "O atraso atualiza o valor devido e pode acrescentar juros e multa, mas cada encargo deve seguir sua base legal ou convencional. As sanções de conduta também dependem das regras e do procedimento aplicáveis.",
+    "exemplo_pratico": "O condômino atrasa a quota mensal: o débito é corrigido, recebe os juros definidos na convenção — ou os do art. 406 se ela nada disser — e pode sofrer multa de até dois por cento sobre o valor devido.",
+    "atencao": "Correção monetária, juros e multa são encargos distintos. A multa moratória do § 1º não pode ultrapassar dois por cento do débito.",
+    "palavras_dificeis": [
+     {
+      "termo": "juros moratórios",
+      "explicacao": "juros devidos pelo atraso no pagamento"
+     },
+     {
+      "termo": "correção monetária",
+      "explicacao": "atualização do valor para recompor a perda do poder de compra da moeda"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_A"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1341",
+   "finding_ids": [
+    "QA06-FINAL-0312",
+    "QA06-FINAL-0313"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1341:PAR.3",
+    "CC2002:ART.1341:PAR.4"
+   ],
+   "previous_content": {
+    "o_que_diz": "Obras necessárias podem ser realizadas pelo síndico e, se ele estiver omisso ou impedido, por qualquer condômino, sem exigência de urgência. Se urgentes e de despesa excessiva, exigem convocação imediata da assembleia; obras úteis exigem maioria e voluptuárias, dois terços.",
+    "o_que_significa": "Quórum e iniciativa variam conforme finalidade e urgência da obra.",
+    "exemplo_pratico": "Vazamento urgente é contido por morador; instalação de lazer depende do quórum correspondente.",
+    "atencao": "Classificação da obra e urgência devem ser demonstradas; gasto excessivo exige convocação imediata da assembleia.",
+    "palavras_dificeis": [
+     {
+      "termo": "Obra voluptuária",
+      "explicacao": "melhoria de recreio ou luxo sem aumentar uso habitual"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Obras voluptuárias exigem voto de dois terços dos condôminos e obras úteis, maioria. Reparos necessários cabem ao síndico e, se ele se omitir ou estiver impedido, podem ser feitos por qualquer condômino. Se forem urgentes e de custo excessivo, a assembleia deve ser imediatamente convocada; se não forem urgentes e tiverem despesa excessiva, só podem começar após autorização de assembleia especialmente convocada. O condômino é reembolsado pelo que gastar em obra ou reparo necessário, mas não pelas obras de outra natureza, ainda que de interesse comum.",
+    "o_que_significa": "Urgência, necessidade e custo definem quem pode agir e quando a assembleia precisa autorizar. Gasto alto sem urgência exige autorização prévia; o reembolso individual é reservado às intervenções necessárias.",
+    "exemplo_pratico": "Morador contém vazamento urgente e pode cobrar a despesa necessária. Já uma reparação cara, mas sem urgência, deve aguardar autorização da assembleia; uma melhoria apenas útil feita por iniciativa própria não gera automaticamente reembolso.",
+    "atencao": "Não confunda convocação posterior à obra urgente de custo excessivo com autorização prévia para obra necessária não urgente de custo excessivo. Também não há restituição pelo simples fato de uma obra não necessária interessar ao condomínio.",
+    "palavras_dificeis": [
+     {
+      "termo": "obra necessária",
+      "explicacao": "intervenção destinada a conservar o bem ou evitar sua deterioração"
+     },
+     {
+      "termo": "obra voluptuária",
+      "explicacao": "melhoria de recreio ou luxo que não aumenta o uso habitual do bem"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_A"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1353",
+   "finding_ids": [
+    "QA06-FINAL-0323",
+    "QA06-FINAL-0326"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1353:PAR.1:INC.I",
+    "CC2002:ART.1353:PAR.3"
+   ],
+   "previous_content": {
+    "o_que_diz": "Em segunda convocação decide-se por maioria dos presentes, salvo quórum especial; reunião sem quórum especial pode tornar-se sessão permanente sob requisitos, prazo total e continuidade documental.",
+    "o_que_significa": "A sessão permanente permite completar quórum sem nova assembleia, preservando informação e identidade da deliberação.",
+    "exemplo_pratico": "Assembleia suspende e retoma votação dentro do prazo legal para alcançar quórum especial.",
+    "atencao": "Devem ser cumpridos cumulativamente autorização, convocação dos ausentes, ata parcial, prazo máximo e continuidade da pauta.",
+    "palavras_dificeis": [
+     {
+      "termo": "Sessão permanente",
+      "explicacao": "assembleia suspensa e retomada para concluir a mesma deliberação"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Em segunda convocação, a assembleia decide pela maioria dos presentes, salvo quórum especial. Se esse quórum não for alcançado, a maioria presente pode autorizar sessão permanente: devem ser definidos data, hora e deliberações da continuação, marcada para até 60 dias; presentes e ausentes devem ser convocados; a ata parcial deve registrar os argumentos e ser enviada aos ausentes; e a ata final deve consolidar as deliberações. A sessão pode ser prorrogada, mas a assembleia inteira deve terminar em até 90 dias da abertura inicial.",
+    "o_que_significa": "A reunião pode ser suspensa e retomada para completar um quórum especial, sem começar outra assembleia, desde que preserve convocação, informação, pauta, votos e documentação dentro dos dois limites de tempo.",
+    "exemplo_pratico": "Sem quórum especial em 10 de março, a assembleia fixa a continuação para 20 de abril, identifica a pauta, convoca as unidades ausentes e envia a ata parcial. Outras retomadas são possíveis, mas a conclusão não pode ultrapassar 90 dias contados de 10 de março.",
+    "atencao": "Os requisitos são cumulativos. Os votos da primeira sessão permanecem registrados; quem comparecer à continuação pode alterá-los até o encerramento da deliberação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Sessão permanente",
+      "explicacao": "continuação da mesma assembleia, suspensa e retomada para concluir deliberação que exige quórum especial"
+     },
+     {
+      "termo": "Quórum especial",
+      "explicacao": "quantidade qualificada de votos exigida por lei ou convenção"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_B"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1354-A",
+   "finding_ids": [
+    "QA06-FINAL-0328"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1354-A:PAR.2"
+   ],
+   "previous_content": {
+    "o_que_diz": "Assembleias podem ser eletrônicas se a convenção não proibir e se voz, debate e voto forem preservados; edital deve explicar acesso, coleta de votos e eventual forma híbrida.",
+    "o_que_significa": "A tecnologia é válida quando garante participação equivalente e segurança procedimental.",
+    "exemplo_pratico": "Condomínio realiza reunião híbrida com plataforma informada no edital e registro dos votos.",
+    "atencao": "Problema técnico relevante deve ser tratado sem privar condômino; regras complementares podem constar do regimento.",
+    "palavras_dificeis": [
+     {
+      "termo": "Assembleia eletrônica",
+      "explicacao": "reunião condominial realizada por meios digitais"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Assembleias condominiais podem ser eletrônicas ou híbridas se a convenção não proibir e se preservarem voz, debate e voto. A convocação deve explicar acesso, manifestação e coleta de votos. A administração não responde por falhas nos equipamentos ou na internet dos condôminos ou representantes, nem por outras situações fora de seu controle.",
+    "o_que_significa": "A reunião digital é válida com participação e procedimento adequados, mas cada participante assume os problemas de sua própria estrutura tecnológica que a administração não controla.",
+    "exemplo_pratico": "O condomínio fornece corretamente a plataforma e as instruções, mas a conexão particular de um condômino cai. Essa falha externa, por si só, não torna a administração responsável.",
+    "atencao": "A exclusão de responsabilidade alcança apenas situações fora do controle da administração. A ata só é lavrada após a soma e divulgação dos votos, e o edital deve disciplinar instalação, funcionamento e encerramento.",
+    "palavras_dificeis": [
+     {
+      "termo": "Assembleia híbrida",
+      "explicacao": "assembleia com participação física e virtual simultânea"
+     },
+     {
+      "termo": "Fora do controle",
+      "explicacao": "circunstância que a administração não tem poder efetivo de prevenir ou corrigir"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_B"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1358-G",
+   "finding_ids": [
+    "QA06-FINAL-0336"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1358-G:INC.V"
+   ],
+   "previous_content": {
+    "o_que_diz": "A convenção deve disciplinar poderes, deveres, número máximo de ocupantes, acesso, manutenção, limpeza, sanções, fundo de reserva e outras regras essenciais.",
+    "o_que_significa": "A gestão detalhada evita conflitos entre usuários sucessivos do mesmo imóvel.",
+    "exemplo_pratico": "Convenção define inventário, horários de troca e responsabilidade por danos.",
+    "atencao": "Sanções e restrições devem ser proporcionais, claras e compatíveis com a lei.",
+    "palavras_dificeis": [
+     {
+      "termo": "Inventário",
+      "explicacao": "relação dos bens e equipamentos que integram o imóvel"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "A convenção da multipropriedade deve disciplinar poderes e deveres, ocupação, acesso, manutenção, limpeza, fundo de reserva e multas. Também deve definir o regime aplicável se o imóvel sofrer perda ou destruição parcial ou total, inclusive como os multiproprietários participam do risco, do seguro, da indenização e da parte que restar.",
+    "o_que_significa": "A convenção organiza tanto o uso cotidiano quanto a divisão das consequências patrimoniais de um sinistro grave envolvendo o imóvel.",
+    "exemplo_pratico": "Se um incêndio destruir parte do imóvel, a convenção deve indicar como o valor do seguro, a indenização e a parte remanescente serão tratados entre os multiproprietários.",
+    "atencao": "Não basta prever manutenção e danos de uso. A convenção deve tratar expressamente da perda ou destruição, parcial ou total, e dos respectivos riscos e valores.",
+    "palavras_dificeis": [
+     {
+      "termo": "Parte remanescente",
+      "explicacao": "porção do imóvel que permanece após perda ou destruição parcial"
+     },
+     {
+      "termo": "Participação no risco",
+      "explicacao": "critério de distribuição das consequências econômicas do evento entre os titulares"
+     }
+    ]
+   },
+   "origins": [
+    "INDETERMINATE_CONFIRMED"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1358-J",
+   "finding_ids": [
+    "QA06-FINAL-0346",
+    "QA06-FINAL-0347",
+    "QA06-FINAL-0349"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1358-J:INC.VIII",
+    "CC2002:ART.1358-J:PAR.1:INC.II",
+    "CC2002:ART.1358-J:PAR.2:INC.II"
+   ],
+   "previous_content": {
+    "o_que_diz": "O multiproprietário paga contribuições mesmo sem usar, conserva e devolve o imóvel, comunica danos e responde por prejuízos próprios ou de seus acompanhantes, sujeito a multas graduais.",
+    "o_que_significa": "Cada usuário deve preservar o bem para o período seguinte e sustentar os custos comuns.",
+    "exemplo_pratico": "Após danificar equipamento em sua semana, titular comunica e indeniza o reparo.",
+    "atencao": "Renúncia ao uso não elimina custeio; sanções devem seguir convenção e procedimento.",
+    "palavras_dificeis": [
+     {
+      "termo": "Responsabilidade por acompanhantes",
+      "explicacao": "dever do titular pelos danos causados por quem autoriza a usar"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O multiproprietário deve pagar contribuições mesmo sem usar, conservar e usar o imóvel conforme sua finalidade, comunicar danos, permitir reparos urgentes e responder pelos danos causados por si ou por quem autorizar. Deve desocupar até o dia e a hora fixados no instrumento de instituição ou na convenção, sob a multa diária estipulada no instrumento pertinente. Separadamente, a convenção deve prever multa por descumprimento e, se houver reiteração, multa progressiva e perda temporária do uso da fração. Reparos por uso normal e desgaste natural são custeados por todos; os causados por uso anormal cabem apenas ao responsável, sem prejuízo de multa.",
+    "o_que_significa": "Cada titular precisa entregar o imóvel no horário e no estado necessários ao período seguinte. A multa diária pela demora segue o instrumento que disciplina a desocupação; as demais sanções por descumprimento seguem a convenção. O custo coletivo cobre desgaste normal, enquanto dano por uso anormal recai sobre o responsável.",
+    "exemplo_pratico": "Um titular permanece após o horário fixado e entrega o imóvel danificado por uso anormal. Pode sofrer a multa diária prevista no instrumento pertinente e arcar sozinho com o reparo. Se reiterar descumprimentos, poderá sofrer a multa progressiva e a perda temporária de uso previstas na convenção.",
+    "atencao": "A multa diária do atraso deve estar convencionada no instrumento pertinente, que pode ser o instrumento de instituição ou a convenção. Já a multa por descumprimento, a multa progressiva e a perda temporária do uso dependem de previsão na convenção; estas duas últimas exigem descumprimento reiterado. Desgaste natural não pode ser imputado somente a um titular.",
+    "palavras_dificeis": [
+     {
+      "termo": "Instrumento pertinente",
+      "explicacao": "instrumento de instituição ou convenção que disciplina a obrigação e a multa diária no caso concreto"
+     },
+     {
+      "termo": "Multa progressiva",
+      "explicacao": "sanção cujo valor aumenta diante da repetição do descumprimento"
+     },
+     {
+      "termo": "Uso anormal",
+      "explicacao": "utilização incompatível com a finalidade ou os cuidados ordinários do imóvel"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_B_REVISION_2"
+   ],
+   "integration_kind": "REVISED_AFTER_REJECTION_AND_ACCEPTED"
+  },
+  {
+   "target_id": "CC2002:ART.1358-P",
+   "finding_ids": [
+    "QA06-FINAL-0360",
+    "QA06-FINAL-0362"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1358-P:INC.III",
+    "CC2002:ART.1358-P:INC.VI"
+   ],
+   "previous_content": {
+    "o_que_diz": "A convenção edilícia com multipropriedade deve identificar unidades, períodos, uso comum, custeio, multas, administração, manutenção e regras de ocupação, entre outras matérias legais.",
+    "o_que_significa": "A convivência entre condomínio espacial e temporal exige disciplina adicional minuciosa.",
+    "exemplo_pratico": "Convenção separa custos gerais dos custos exclusivos das unidades temporais.",
+    "atencao": "O rol legal deve ser integralmente considerado e compatibilizado com a convenção geral.",
+    "palavras_dificeis": [
+     {
+      "termo": "Custeio proporcional",
+      "explicacao": "distribuição de despesas conforme benefício ou fração aplicável"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "A convenção do condomínio edilício com multipropriedade deve identificar unidades e períodos e disciplinar despesas, administração, sanções, quóruns e o rateio entre titulares da mesma unidade. Sem critério diferente no instrumento de instituição ou na convenção de multipropriedade, o rateio é proporcional à fração de tempo de cada titular. Se houver sistema de intercâmbio de período ou local de uso, a convenção deve indicá-lo; a responsabilidade e as obrigações da companhia de intercâmbio ficam limitadas à documentação de sua contratação.",
+    "o_que_significa": "A convenção precisa organizar tanto os custos de cada período quanto eventual troca de tempo ou local de uso. Na falta de regra válida diferente, quem possui período maior arca com parcela proporcionalmente maior; e a companhia de intercâmbio responde apenas pelo que assumiu contratualmente.",
+    "exemplo_pratico": "Dois titulares têm uma e três semanas na mesma unidade. Sem outro critério válido, o segundo participa do rateio em proporção três vezes maior. Se o empreendimento permitir trocar semanas por estadias em outro local, a convenção identifica o sistema e o contrato delimita as obrigações da companhia.",
+    "atencao": "A proporcionalidade à fração de tempo é regra supletiva. A existência de intercâmbio não é presumida: se oferecido, deve constar da convenção, e a companhia não assume obrigações além das previstas na contratação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Regra supletiva",
+      "explicacao": "regra aplicada quando os instrumentos permitidos não estabelecem solução diferente"
+     },
+     {
+      "termo": "Sistema de intercâmbio",
+      "explicacao": "mecanismo contratual de troca do período ou do local de fruição da multipropriedade"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_B",
+    "INDETERMINATE_CONFIRMED"
+   ],
+   "integration_kind": "INTEGRATED_OVERLAPPING_ACCEPTED_PROPOSALS"
+  },
+  {
+   "target_id": "CC2002:ART.1358-S",
+   "finding_ids": [
+    "QA06-FINAL-0371",
+    "QA06-FINAL-0372"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1358-S:PAR.UNICO:INC.I",
+    "CC2002:ART.1358-S:PAR.UNICO:INC.III"
+   ],
+   "previous_content": {
+    "o_que_diz": "Inadimplência de custeio pode levar à adjudicação da fração temporal ao condomínio pelo processo civil; em sistemas de locação, receitas podem ser direcionadas à dívida sob regras específicas.",
+    "o_que_significa": "A própria fração e seus rendimentos funcionam como meios de satisfação do débito.",
+    "exemplo_pratico": "Condomínio adjudica judicialmente semana do titular inadimplente.",
+    "atencao": "A medida exige procedimento legal, cálculo correto e respeito às garantias do devedor.",
+    "palavras_dificeis": [
+     {
+      "termo": "Adjudicação",
+      "explicacao": "transferência judicial do bem ao credor para satisfação da dívida"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O inadimplemento de despesas ordinárias ou extraordinárias pode levar, pelo procedimento civil, à adjudicação da fração de tempo ao condomínio edilício. Há medidas adicionais somente quando o imóvel integra empreendimento em que os titulares podem ou devem locar suas frações exclusivamente por uma administração única e repartem as receitas das locações independentemente da ocupação efetiva de cada unidade. Nesse regime específico, a convenção pode proibir o uso até a quitação, incluir a fração no conjunto administrado e obrigar a administradora a aplicar integralmente os valores líquidos do inadimplente nas dívidas dos condomínios edilício e de multipropriedade, repassando imediatamente eventual saldo.",
+    "o_que_significa": "A fração pode satisfazer judicialmente a dívida. As medidas sobre uso e receitas não valem para qualquer locação centralizada: exigem, ao mesmo tempo, exclusividade da administração das locações e partilha das receitas sem depender de qual unidade foi efetivamente ocupada, além de previsão na convenção.",
+    "exemplo_pratico": "Em empreendimento no qual todas as frações são locadas exclusivamente por uma única administradora e a receita comum é repartida mesmo quando certa unidade não foi ocupada, a convenção pode colocar a fração do inadimplente no conjunto administrado. A administradora usa os valores líquidos dele para quitar os débitos condominiais e repassa imediatamente o saldo.",
+    "atencao": "Proibição de uso, inclusão da fração no conjunto administrado e aplicação das receitas não são automáticas nem alcançam toda multipropriedade com locação. Dependem cumulativamente do sistema exclusivo de administração única, da partilha de receitas independentemente da ocupação efetiva e de disciplina na convenção.",
+    "palavras_dificeis": [
+     {
+      "termo": "Adjudicação",
+      "explicacao": "transferência da fração ao credor, pelo procedimento legal, para satisfação da dívida"
+     },
+     {
+      "termo": "Administração única",
+      "explicacao": "gestão exclusiva das locações das frações por uma só administradora"
+     },
+     {
+      "termo": "Valores líquidos",
+      "explicacao": "receitas restantes após as deduções legítimas do sistema de locação"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_B_REVISION_2"
+   ],
+   "integration_kind": "REVISED_AFTER_REJECTION_AND_ACCEPTED"
+  },
+  {
+   "target_id": "CC2002:ART.1361",
+   "finding_ids": [
+    "QA06-FINAL-0377"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1361:PAR.3"
+   ],
+   "previous_content": {
+    "o_que_diz": "Propriedade fiduciária é domínio resolúvel de móvel infungível transferido pelo devedor ao credor como garantia, constituído por registro do contrato.",
+    "o_que_significa": "O credor recebe titularidade limitada à garantia, enquanto o devedor mantém posse direta nos termos legais.",
+    "exemplo_pratico": "Veículo garante empréstimo mediante contrato fiduciário registrado.",
+    "atencao": "Bens e operações sujeitos a leis especiais podem seguir regime próprio.",
+    "palavras_dificeis": [
+     {
+      "termo": "Propriedade fiduciária",
+      "explicacao": "titularidade temporária transferida para garantir dívida"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Propriedade fiduciária é a propriedade resolúvel de coisa móvel infungível transferida pelo devedor ao credor para garantir dívida. Constitui-se com o registro do contrato no órgão competente e desdobra a posse, ficando o devedor como possuidor direto. Se o devedor adquirir posteriormente a propriedade do bem, essa aquisição superveniente torna eficaz a transferência fiduciária desde o arquivamento.",
+    "o_que_significa": "O credor recebe titularidade limitada à garantia por meio do registro. Mesmo que a propriedade do devedor seja adquirida depois, a lei aproveita o arquivamento já realizado para dar eficácia à transferência.",
+    "exemplo_pratico": "O devedor arquiva contrato fiduciário e depois adquire a propriedade do bem descrito. Com essa aquisição posterior, a garantia transferida ao credor torna-se eficaz desde o arquivamento.",
+    "atencao": "A regra trata da propriedade superveniente e não elimina os requisitos do contrato, da identificação do bem e do registro competente. Leis especiais podem reger determinadas operações.",
+    "palavras_dificeis": [
+     {
+      "termo": "Propriedade superveniente",
+      "explicacao": "propriedade adquirida pelo devedor depois do ato ou contrato"
+     },
+     {
+      "termo": "Propriedade resolúvel",
+      "explicacao": "titularidade que se extingue quando ocorre a condição prevista, como a quitação"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_B"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1389",
+   "finding_ids": [
+    "QA06-FINAL-0407"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1389:INC.III"
+   ],
+   "previous_content": {
+    "o_que_diz": "Outras causas legais extinguem a servidão e autorizam o proprietário onerado a pedir cancelamento mediante prova.",
+    "o_que_significa": "Confusão, supressão das obras ou desuso prolongado podem encerrar o direito conforme o caso previsto.",
+    "exemplo_pratico": "Mesma pessoa adquire os dois imóveis e comprova a reunião para cancelar a servidão.",
+    "atencao": "A extinção precisa ser demonstrada; mero uso reduzido ou interrupção breve não equivale a desuso legal.",
+    "palavras_dificeis": [
+     {
+      "termo": "Confusão",
+      "explicacao": "reunião dos imóveis dominante e serviente na mesma titularidade"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "A servidão também se extingue, permitindo ao dono do imóvel serviente pedir seu cancelamento mediante prova, quando os imóveis dominante e serviente passam ao mesmo proprietário, quando as obras correspondentes são suprimidas por contrato ou outro título expresso, ou quando a servidão não é usada por dez anos contínuos.",
+    "o_que_significa": "Esses fatos eliminam a utilidade ou a base jurídica da servidão, mas o cancelamento exige demonstração da causa de extinção.",
+    "exemplo_pratico": "Uma passagem gravada como servidão deixa de ser utilizada por dez anos sem interrupção. Com a prova desse período, o dono do imóvel onerado pode requerer o cancelamento.",
+    "atencao": "Mero uso pouco frequente ou interrupção breve não satisfaz a hipótese de não uso por dez anos contínuos.",
+    "palavras_dificeis": [
+     {
+      "termo": "Imóvel serviente",
+      "explicacao": "imóvel onerado pela servidão"
+     },
+     {
+      "termo": "Não uso contínuo",
+      "explicacao": "ausência ininterrupta de exercício da servidão durante todo o prazo legal"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_B"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1404",
+   "finding_ids": [
+    "QA06-FINAL-0418"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1404:PAR.1"
+   ],
+   "previous_content": {
+    "o_que_diz": "O proprietário paga reparações extraordinárias e caras; o usufrutuário remunera com juros o capital usado em obras necessárias ou produtivas.",
+    "o_que_significa": "A lei divide o custo estrutural e o benefício econômico obtido durante o usufruto.",
+    "exemplo_pratico": "Dono refaz telhado estrutural e usufrutuário paga juros sobre o valor investido enquanto aproveita o imóvel.",
+    "atencao": "Os parágrafos definem custo módico e permitem ao usufrutuário fazer obra indispensável omitida pelo dono.",
+    "palavras_dificeis": [
+     {
+      "termo": "Reparação extraordinária",
+      "explicacao": "obra estrutural ou incomum de custo relevante"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O proprietário suporta as reparações extraordinárias e as que não sejam de custo módico; o usufrutuário paga juros sobre o capital gasto nas obras necessárias à conservação ou que aumentem o rendimento. Não são módicas as despesas superiores a dois terços do rendimento líquido de um ano. Se o dono não fizer reparo indispensável a seu cargo, o usufrutuário pode realizá-lo e cobrar o valor gasto.",
+    "o_que_significa": "A lei divide reparos de maior peso com base no custo e no benefício econômico. Uma despesa que ultrapasse dois terços do rendimento líquido anual não pode ser tratada como pequena para transferi-la ao usufrutuário.",
+    "exemplo_pratico": "Se o imóvel rende R$ 30 mil líquidos no ano, despesa superior a R$ 20 mil não é módica. Sendo reparo extraordinário a cargo do dono e indispensável, o usufrutuário pode fazê-lo diante da omissão e exigir reembolso.",
+    "atencao": "O limite de dois terços qualifica a despesa como não módica; ainda é preciso considerar a natureza da reparação e as demais regras do artigo.",
+    "palavras_dificeis": [
+     {
+      "termo": "Rendimento líquido",
+      "explicacao": "rendimento depois das despesas necessárias para sua obtenção"
+     },
+     {
+      "termo": "Custo módico",
+      "explicacao": "custo que não ultrapassa o limite legal de dois terços do rendimento líquido anual"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_B"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1487-A",
+   "finding_ids": [
+    "QA06-FINAL-0511"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1487-A:PAR.3"
+   ],
+   "previous_content": {
+    "o_que_diz": "O proprietário pode estender hipoteca ao mesmo credor para novas obrigações, preservando registro original e respeitando prioridades que surgiram antes da extensão.",
+    "o_que_significa": "A ampliação aproveita a publicidade existente sem prejudicar direitos contraditórios já inscritos.",
+    "exemplo_pratico": "Hipoteca antiga é ampliada para novo empréstimo, mas penhora registrada no intervalo mantém prioridade sobre a extensão.",
+    "atencao": "Prazo, valor, anuência e averbação seguem os parágrafos incluídos pela Lei 14.711/2023.",
+    "palavras_dificeis": [
+     {
+      "termo": "Extensão hipotecária",
+      "explicacao": "ampliação do gravame para abranger novas obrigações"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O proprietário pode estender hipoteca para novas obrigações com o mesmo credor, mantendo registro e publicidade originais, dentro do prazo e valor máximos e sem prejudicar direitos contraditórios já inscritos. A extensão deve ser averbada e respeita a preferência da obrigação inicial e, entre extensões, da obrigação mais antiga. Se depois houver vários credores garantidos pela mesma hipoteca estendida, somente o titular do crédito mais prioritário pode executar judicial ou extrajudicialmente a garantia, salvo convenção diferente de todos os credores.",
+    "o_que_significa": "A hipoteca pode garantir novas dívidas sem perder sua organização registral, mas a prioridade define quem conduz a execução quando existem vários credores.",
+    "exemplo_pratico": "Após cessão de créditos garantidos pela hipoteca estendida, três credores passam a compartilhar a garantia. Sem acordo unânime em sentido diferente, apenas o credor do crédito prioritário promove a execução.",
+    "atencao": "A extensão não ultrapassa o prazo nem o valor máximo da garantia original e não desloca direitos contraditórios que entraram antes na matrícula.",
+    "palavras_dificeis": [
+     {
+      "termo": "Averbação",
+      "explicacao": "anotação posterior feita na matrícula do imóvel"
+     },
+     {
+      "termo": "Crédito prioritário",
+      "explicacao": "crédito que ocupa a posição preferencial segundo as regras legais e registrais"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_B"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1488",
+   "finding_ids": [
+    "QA06-FINAL-0514",
+    "QA06-FINAL-0515"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1488:PAR.2",
+    "CC2002:ART.1488:PAR.3"
+   ],
+   "previous_content": {
+    "o_que_diz": "Loteamento ou condomínio permite dividir judicialmente a hipoteca entre lotes ou unidades, proporcionalmente ao valor e ao crédito.",
+    "o_que_significa": "A divisão evita que cada unidade suporte todo o gravame e facilita circulação autônoma.",
+    "exemplo_pratico": "Terreno hipotecado vira condomínio e o juiz distribui a dívida entre apartamentos.",
+    "atencao": "Credor, devedor ou proprietários podem requerer; o credor só pode opor-se por prejuízo comprovado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Fracionamento da hipoteca",
+      "explicacao": "distribuição do gravame entre unidades resultantes do imóvel"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Se imóvel hipotecado for loteado ou convertido em condomínio edilício, credor, devedor ou proprietários podem pedir ao juiz a divisão da hipoteca entre lotes ou unidades, proporcionalmente a seus valores e ao crédito. O credor só se opõe provando redução da garantia. Salvo acordo diferente, quem requer o desmembramento paga as despesas judiciais e extrajudiciais. A divisão do ônus não exonera o devedor originário da responsabilidade pelo restante da dívida prevista no art. 1.430, a menos que o credor concorde.",
+    "o_que_significa": "A hipoteca pode ser repartida para acompanhar as novas unidades, mas isso não transfere automaticamente os custos do procedimento nem libera o devedor original.",
+    "exemplo_pratico": "O proprietário pede a divisão da hipoteca entre apartamentos e, sem convenção diferente, paga as despesas do procedimento. Mesmo após a divisão, o devedor original continua responsável pelo saldo não coberto, salvo anuência do credor.",
+    "atencao": "Desmembrar o gravame não significa perdoar dívida ou substituir devedor. A exoneração depende da anuência do credor.",
+    "palavras_dificeis": [
+     {
+      "termo": "Desmembramento do ônus",
+      "explicacao": "divisão da hipoteca entre os lotes ou unidades resultantes"
+     },
+     {
+      "termo": "Anuência",
+      "explicacao": "concordância expressa da pessoa cujo direito é afetado"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_B"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1523",
+   "finding_ids": [
+    "QA06-FINAL-0566"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1523:INC.II"
+   ],
+   "previous_content": {
+    "o_que_diz": "Certas situações patrimoniais ou familiares recomendam adiar o casamento; o juiz pode afastar algumas mediante prova de ausência de prejuízo ou de gravidez.",
+    "o_que_significa": "As causas suspensivas protegem herdeiros, ex-cônjuge, tutelado e certeza sobre filiação, sem tornar o casamento absolutamente impossível.",
+    "exemplo_pratico": "Divorciado prova que a partilha não prejudica o ex-cônjuge e pede afastamento da suspensão.",
+    "atencao": "Casamento realizado apesar da causa pode atrair regime patrimonial obrigatório, e cada dispensa exige prova específica.",
+    "palavras_dificeis": [
+     {
+      "termo": "Causa suspensiva",
+      "explicacao": "situação que recomenda adiar o casamento sem constituir impedimento absoluto"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "A lei recomenda adiar o casamento em quatro situações destinadas a proteger partilha, herdeiros, tutelados e segurança sobre filiação. Entre elas, a viúva ou a mulher cujo casamento foi declarado nulo ou anulado não deve casar até dez meses após o início da viuvez ou a dissolução da sociedade conjugal. O juiz pode afastar as causas dos incisos I, III e IV com prova de ausência do prejuízo indicado; na hipótese do inciso II, a nubente deve provar nascimento de filho ou inexistência de gravidez durante o prazo.",
+    "o_que_significa": "São causas suspensivas: não tornam a pessoa incapaz de casar, mas recomendam espera e podem produzir consequência patrimonial se desrespeitadas. O prazo de dez meses busca esclarecer eventual filiação concebida na relação anterior.",
+    "exemplo_pratico": "Mulher viúva há quatro meses pretende casar e comprova judicialmente que não está grávida. Essa prova pode permitir o afastamento da causa suspensiva do inciso II.",
+    "atencao": "O Código usa formulação ligada ao casamento da mulher. A dispensa do inciso II exige a prova específica prevista no parágrafo único, diferente da prova de ausência de prejuízo exigida nas demais hipóteses.",
+    "palavras_dificeis": [
+     {
+      "termo": "Causa suspensiva",
+      "explicacao": "situação que recomenda adiar o casamento, sem constituir impedimento matrimonial absoluto"
+     },
+     {
+      "termo": "Nubente",
+      "explicacao": "pessoa que pretende se casar"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_B"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1541",
+   "finding_ids": [
+    "QA06-FINAL-0602"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1541:PAR.5"
+   ],
+   "previous_content": {
+    "o_que_diz": "Testemunhas do casamento emergencial comparecem ao juiz em dez dias, relatam convocação, lucidez, perigo e consentimento; segue investigação, decisão e registro com efeitos desde a cerimônia.",
+    "o_que_significa": "A validação judicial substitui cautelas ausentes no momento crítico e verifica capacidade matrimonial.",
+    "exemplo_pratico": "Testemunhas prestam declarações e o juiz confirma o vínculo após diligências.",
+    "atencao": "Prazos, conteúdo dos depoimentos e ausência de impedimentos são essenciais à confirmação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Ratificação judicial",
+      "explicacao": "reconhecimento posterior da validade de ato emergencial"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "No casamento celebrado em perigo de vida sem a autoridade, as testemunhas devem procurar o juiz em dez dias e declarar convocação, lucidez, perigo e consentimento; seguem diligências, decisão e registro, cujos efeitos sobre o estado dos cônjuges retroagem à celebração. Essas formalidades e as do artigo anterior são dispensadas se o enfermo convalescer e puder ratificar o casamento na presença da autoridade competente e do oficial do registro.",
+    "o_que_significa": "A lei oferece duas formas de confirmação: procedimento judicial apoiado nas testemunhas ou, havendo recuperação, ratificação pessoal e formal do casamento pelo próprio enfermo.",
+    "exemplo_pratico": "Após casamento emergencial, o enfermo se recupera antes da confirmação judicial. Ele comparece perante a autoridade competente e o oficial do registro e ratifica o casamento, dispensando as formalidades emergenciais indicadas.",
+    "atencao": "Convalescer não basta sozinho: é necessário que o enfermo possa ratificar o casamento perante as duas autoridades mencionadas pela lei.",
+    "palavras_dificeis": [
+     {
+      "termo": "Convalescer",
+      "explicacao": "recuperar-se da enfermidade ou do perigo de vida"
+     },
+     {
+      "termo": "Ratificar",
+      "explicacao": "confirmar formalmente um ato anteriormente praticado"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_B"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1735",
+   "finding_ids": [
+    "QA06-FINAL-0791"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1735:INC.IV"
+   ],
+   "previous_content": {
+    "o_que_diz": "São impedidos de exercer tutela, entre outros, quem não administra livremente seus bens, tem conflito com o menor, inimizada, condenação relevante ou conduta incompatível.",
+    "o_que_significa": "O rol afasta pessoas cuja incapacidade, conflito ou falta de idoneidade possa comprometer o tutelado.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1735, a solução deve observar incapacidade para tutela e as condições específicas descritas na regra.",
+    "atencao": "O impedimento pode provocar exoneração mesmo depois de iniciado o encargo.",
+    "palavras_dificeis": [
+     {
+      "termo": "Incapacidade para tutela",
+      "explicacao": "O rol afasta pessoas cuja incapacidade, conflito ou falta de idoneidade possa comprometer o tutelado."
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Não podem exercer tutela — e devem ser exonerados se já a exercem — quem não administra livremente seus bens, tem conflito relevante com o menor, é inimigo dele ou de seus pais, foi excluído por estes, apresenta conduta ou probidade incompatível, abusou de tutela anterior ou exerce função pública incompatível. Também são impedidos os condenados por furto, roubo, estelionato, falsidade, crime contra a família ou pelos crimes designados no Código Civil como 'contra os costumes', tenham ou não cumprido a pena.",
+    "o_que_significa": "A tutela exige capacidade, ausência de conflito e idoneidade. Nas condenações expressamente listadas, terminar de cumprir a pena não remove, por si só, o impedimento civil para ser tutor.",
+    "exemplo_pratico": "Pessoa condenada por estelionato não pode assumir tutela mesmo depois de cumprir integralmente a pena, pois o artigo mantém o impedimento nessa situação.",
+    "atencao": "A expressão 'crimes contra os costumes' é a terminologia literal e histórica do Código Civil; a correspondência com tipos penais atuais deve ser examinada juridicamente no caso concreto.",
+    "palavras_dificeis": [
+     {
+      "termo": "Exoneração",
+      "explicacao": "retirada da pessoa do encargo que já exercia"
+     },
+     {
+      "termo": "Probidade",
+      "explicacao": "honestidade e correção necessárias ao exercício da tutela"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_B"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1800",
+   "finding_ids": [
+    "QA06-FINAL-0872"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1800:PAR.2"
+   ],
+   "previous_content": {
+    "o_que_diz": "Bens destinados à prole eventual ficam com curador; se o herdeiro esperado não for concebido em dois anos, passam aos herdeiros legítimos, salvo disposição diferente.",
+    "o_que_significa": "A curadoria preserva o patrimônio durante a espera e a lei impõe prazo supletivo.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1800, a solução deve observar curadoria da prole eventual e as condições específicas descritas na regra.",
+    "atencao": "Concepção e nascimento produzem efeitos conforme as regras do nascituro.",
+    "palavras_dificeis": [
+     {
+      "termo": "Curadoria da prole eventual",
+      "explicacao": "A curadoria preserva o patrimônio durante a espera e a lei impõe prazo supletivo."
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Quando o testamento beneficia filho ainda não concebido de pessoa indicada, os bens, depois da liquidação ou partilha, ficam com curador nomeado pelo juiz. Salvo disposição diferente, a curatela cabe primeiro à pessoa cujo filho era esperado. Os poderes, deveres e responsabilidades desse curador seguem, no que forem compatíveis, as regras da curatela dos incapazes. Se o herdeiro nascer com vida, recebe a sucessão e os frutos desde a morte do testador; se não for concebido em dois anos, os bens passam aos herdeiros legítimos, salvo disposição testamentária em contrário.",
+    "o_que_significa": "O curador apenas conserva e administra os bens durante a espera, submetido a deveres e responsabilidades equivalentes aos da curatela de incapaz quando compatíveis; não se torna proprietário do patrimônio.",
+    "exemplo_pratico": "O juiz entrega ao curador os bens reservados ao futuro filho de determinada pessoa. O curador deve administrá-los e responder por sua gestão segundo as regras compatíveis da curatela dos incapazes.",
+    "atencao": "A aplicação das regras de curatela é adaptada pela expressão 'no que couber'. O nascimento com vida ou o fim do prazo legal altera a destinação dos bens.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prole eventual",
+      "explicacao": "filho que a pessoa indicada poderá conceber no futuro"
+     },
+     {
+      "termo": "No que couber",
+      "explicacao": "somente na medida em que a regra seja compatível com a situação"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_B"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  },
+  {
+   "target_id": "CC2002:ART.1817",
+   "finding_ids": [
+    "QA06-FINAL-0896"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1817:PAR.UNICO"
+   ],
+   "previous_content": {
+    "o_que_diz": "Negócios onerosos com terceiros de boa-fé e administração anterior à exclusão são preservados, sem afastar indenização devida pelo excluído.",
+    "o_que_significa": "A segurança de terceiros convive com reparação aos sucessores prejudicados.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1817, a solução deve observar herdeiro aparente e as condições específicas descritas na regra.",
+    "atencao": "Má-fé do adquirente pode alterar a proteção do negócio.",
+    "palavras_dificeis": [
+     {
+      "termo": "Herdeiro aparente",
+      "explicacao": "A segurança de terceiros convive com reparação aos sucessores prejudicados."
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Alienações onerosas a terceiros de boa-fé e atos de administração legal praticados antes da sentença de exclusão permanecem válidos, sem impedir perdas e danos aos herdeiros prejudicados. O excluído deve restituir os frutos e rendimentos que recebeu dos bens hereditários, mas tem direito à indenização pelas despesas feitas para conservá-los.",
+    "o_que_significa": "A lei protege terceiros de boa-fé e, ao mesmo tempo, recompõe o patrimônio sucessório: o excluído devolve os ganhos obtidos, mas não suporta gratuitamente os gastos necessários de conservação.",
+    "exemplo_pratico": "Antes da exclusão, o herdeiro recebe aluguéis do imóvel da herança e paga reparo indispensável. Depois da sentença, restitui os aluguéis, mas pode exigir indenização pela despesa de conservação.",
+    "atencao": "A proteção do negócio exige terceiro de boa-fé e alienação onerosa. A restituição dos rendimentos não elimina o direito de reembolso das despesas conservatórias.",
+    "palavras_dificeis": [
+     {
+      "termo": "Frutos e rendimentos",
+      "explicacao": "utilidades econômicas produzidas pelo bem, como aluguéis"
+     },
+     {
+      "termo": "Despesa de conservação",
+      "explicacao": "gasto necessário para preservar o bem e evitar sua deterioração"
+     }
+    ]
+   },
+   "origins": [
+    "HIGH_B"
+   ],
+   "integration_kind": "DIRECT_ACCEPTED_PROPOSAL"
+  }
+ ],
+ "corpus_modified": false,
+ "human_approval_claimed": false
+}
