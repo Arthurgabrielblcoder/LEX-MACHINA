@@ -1,0 +1,1773 @@
+{
+ "schema_version": 1,
+ "mission": "QA-06-FINDINGS-QA",
+ "as_of": "2026-11-13",
+ "status": "NON_HIGH_SAMPLE_1345_2017_INDEPENDENT_REVIEW_COMPLETE",
+ "sample_plan": {
+  "file": "QA06_B_NON_HIGH_STRATIFIED_SAMPLE.json",
+  "sha256": "8b51393bc70595a9284f89083844b7ebbf261176346b91921ef36490083b9c42"
+ },
+ "source_module": {
+  "file": "QA06_B_FINDINGS_V2_1345_2017.json",
+  "sha256": "187e3ac2c140ff4eefa8abf6c1a8d34d7b0e14e6877746fc536f93f7d33c4f9e"
+ },
+ "inventory": {
+  "file": "QA06_SUBDIVISION_INVENTORY_V2_CORRECTED.json",
+  "sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82"
+ },
+ "baseline": {
+  "file": "derived/candidate_qa05_cc_001_2046/CC2002_QA05.entenda.jsonl",
+  "sha256": "2bf21e8333b584130a3159a240a96d5225958a53821971a184285ecc222a082f"
+ },
+ "sample_total": 54,
+ "decision_counts": {
+  "CONFIRMADO": 8,
+  "NAO_CONFIRMADO": 41,
+  "RECLASSIFICADO": 5
+ },
+ "final_classification_counts": {
+  "AUSENTE": 4,
+  "COBERTA": 40,
+  "NAO_APLICAVEL": 1,
+  "PARCIAL": 9
+ },
+ "final_severity_counts": {
+  "MÉDIO": 13,
+  "NONE": 41
+ },
+ "independence_declaration": {
+  "reviewer_did_not_author_1345_2017_module": true,
+  "source_status_not_used_as_automatic_proof": true,
+  "each_sample_checked_against_full_v2_text_and_all_five_qa05_fields": true
+ },
+ "records": [
+  {
+   "sample_position": 67,
+   "target_id": "CC2002:ART.1368-D",
+   "audit_position": 1350,
+   "subdivision_id": "CC2002:ART.1368-D:PAR.2",
+   "sample_reasons": [
+    "HASH_DETERMINISTIC_FILL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "e67643f10cc21f391d115ebdcc7a2a90ba633f64ceae68df771fd016882f51ab",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "CONFIRMADO",
+   "final_classification": "PARCIAL",
+   "final_severity": "MÉDIO",
+   "rationale": "A explicação fala em limitação de responsabilidade e risco das classes, mas não registra o critério obrigatório de julgamento da responsabilidade: riscos inerentes aos mercados do fundo e natureza de obrigação de meio dos serviços.",
+   "confidence": "ALTA",
+   "legal_text": "A avaliação de responsabilidade dos prestadores de serviço deverá levar sempre em consideração os riscos inerentes às aplicações nos mercados de atuação do fundo de investimento e a natureza de obrigação de meio de seus serviços.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Regulamento do fundo pode limitar responsabilidade de cotistas e prestadores, criar classes com direitos distintos e patrimônio segregado, observada regulação da CVM.",
+    "o_que_significa": "A estrutura e o risco podem variar entre classes, com separação patrimonial reconhecida.",
+    "exemplo_pratico": "Fundo cria classe limitada ao valor das cotas e carteira segregada.",
+    "atencao": "A limitação depende de previsão regulamentar e não protege dolo, má-fé ou infração própria.",
+    "palavras_dificeis": [
+     {
+      "termo": "Patrimônio segregado",
+      "explicacao": "conjunto de ativos separado dos demais para obrigações específicas"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 68,
+   "target_id": "CC2002:ART.1410",
+   "audit_position": 1394,
+   "subdivision_id": "CC2002:ART.1410:INC.VI",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "dae2a95bd1c3ac53d0989b5e8007e79bf14f9affc26ccb5f934d70d8ca16eb49",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "A consolidação aparece expressamente em o_que_significa e o glossário a define como reunião do usufruto e da propriedade na mesma pessoa; o inciso está materialmente representado.",
+   "confidence": "ALTA",
+   "legal_text": "pela consolidação;",
+   "baseline_entenda_content": {
+    "o_que_diz": "O art. 1.410 contém condições materiais específicas, inclusive limite de trinta anos para usufruto em favor de pessoa jurídica, culpa por alienação/deterioração/ruína e desvio de valores de títulos, além do não uso ou não fruição.",
+    "o_que_significa": "Morte, prazo, destruição, consolidação, renúncia ou abuso podem encerrar o direito conforme a enumeração.",
+    "exemplo_pratico": "Usufrutuário falece e o proprietário requer o cancelamento na matrícula.",
+    "atencao": "Cada causa possui requisitos próprios; inadimplemento nem sempre extingue automaticamente sem decisão.",
+    "palavras_dificeis": [
+     {
+      "termo": "Consolidação",
+      "explicacao": "reunião do usufruto e da propriedade na mesma pessoa"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 69,
+   "target_id": "CC2002:ART.1438",
+   "audit_position": 1422,
+   "subdivision_id": "CC2002:ART.1438:PAR.UNICO",
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "7508c22ac59d6ba4b0be34ccecdf1497cb2fc4e9c5dabc3885df9ee4b16ffe3b",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "RECLASSIFICADO",
+   "final_classification": "AUSENTE",
+   "final_severity": "MÉDIO",
+   "rationale": "Os campos explicam constituição e registro do penhor rural, mas nada dizem sobre a faculdade de o devedor emitir cédula rural pignoratícia ao credor, mediante promessa de pagamento em dinheiro e conforme lei especial.",
+   "confidence": "ALTA",
+   "legal_text": "Prometendo pagar em dinheiro a dívida, que garante com penhor rural, o devedor poderá emitir, em favor do credor, cédula rural pignoratícia, na forma determinada em lei especial.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Penhor rural exige instrumento público ou particular registrado no cartório imobiliário do local dos bens.",
+    "o_que_significa": "A modalidade dispensa entrega ao credor e depende de especialização e registro territorial.",
+    "exemplo_pratico": "Produtor registra penhor de safra no cartório da comarca da plantação.",
+    "atencao": "Descrição dos bens e demais requisitos especiais continuam indispensáveis.",
+    "palavras_dificeis": [
+     {
+      "termo": "Penhor rural",
+      "explicacao": "garantia sobre bens ligados à atividade agrícola ou pecuária"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 70,
+   "target_id": "CC2002:ART.1442",
+   "audit_position": 1426,
+   "subdivision_id": "CC2002:ART.1442:INC.IV",
+   "sample_reasons": [
+    "HASH_DETERMINISTIC_FILL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "db77ae502bc47ec886fd78d816edba068134ebd461b1a38847b69121f1824ed5",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "CONFIRMADO",
+   "final_classification": "PARCIAL",
+   "final_severity": "MÉDIO",
+   "rationale": "O_que_diz menciona lenha e carvão, porém não preserva as qualificações legais 'lenha cortada' e 'carvão vegetal', que delimitam os bens alcançados pelo penhor agrícola.",
+   "confidence": "ALTA",
+   "legal_text": "lenha cortada e carvão vegetal;",
+   "baseline_entenda_content": {
+    "o_que_diz": "O penhor agrícola pode alcançar máquinas, instrumentos, colheitas, frutos, lenha, carvão e animais de serviço enumerados.",
+    "o_que_significa": "A lei delimita bens vinculados à exploração rural que podem garantir o crédito.",
+    "exemplo_pratico": "Produtor oferece colheita futura e equipamentos agrícolas descritos no contrato.",
+    "atencao": "O objeto deve existir ou ser determinável e respeitar regras especiais de registro.",
+    "palavras_dificeis": [
+     {
+      "termo": "Colheita pendente",
+      "explicacao": "produção agrícola ainda em formação ou não separada do solo"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 71,
+   "target_id": "CC2002:ART.1449",
+   "audit_position": 1433,
+   "subdivision_id": "CC2002:ART.1449:CAPUT",
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "394cddf2b7780303ed508c1ea51463f4ca5e8d14bdd4e237bbbd71c735bb7bbe",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "A paráfrase cobre anuência escrita, proibição de alterar, deslocar ou vender e, na venda autorizada, reposição por bens equivalentes sub-rogados; os dois comandos do caput estão completos.",
+   "confidence": "ALTA",
+   "legal_text": "O devedor não pode, sem o consentimento por escrito do credor, alterar as coisas empenhadas ou mudar-lhes a situação, nem delas dispor. O devedor que, anuindo o credor, alienar as coisas empenhadas, deverá repor outros bens da mesma natureza, que ficarão sub-rogados no penhor.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Sem anuência escrita, o devedor não altera, desloca ou vende bens empenhados; venda autorizada exige reposição por equivalentes sub-rogados.",
+    "o_que_significa": "A preservação física e econômica da garantia limita a gestão do estoque ou equipamento.",
+    "exemplo_pratico": "Indústria vende máquina com autorização e coloca outra equivalente sob o penhor.",
+    "atencao": "A reposição deve ter mesma natureza e ser identificada; autorização não extingue por si a garantia.",
+    "palavras_dificeis": [
+     {
+      "termo": "Reposição",
+      "explicacao": "substituição do bem gravado por outro equivalente"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 72,
+   "target_id": "CC2002:ART.1459",
+   "audit_position": 1443,
+   "subdivision_id": "CC2002:ART.1459:CAPUT",
+   "sample_reasons": [
+    "HASH_DETERMINISTIC_FILL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "a711e6bf73ede1400e94c1197b9b178bc946af527243def50ea45002a94e8462",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "O caput introdutório atribui direitos ao credor do título empenhado, e o_que_diz enumera conservar, cobrar, protestar e defender a garantia; a relação com os incisos está clara.",
+   "confidence": "ALTA",
+   "legal_text": "Ao credor, em penhor de título de crédito, compete o direito de:",
+   "baseline_entenda_content": {
+    "o_que_diz": "O credor de título empenhado pode conservar, cobrar, protestar e praticar atos previstos para realizar e defender a garantia.",
+    "o_que_significa": "Ele recebe poderes instrumentais sem se tornar proprietário irrestrito do crédito.",
+    "exemplo_pratico": "Banco protesta título não pago e cobra o emitente no vencimento.",
+    "atencao": "Os incisos delimitam poderes e deveres, inclusive comunicação ao devedor do título.",
+    "palavras_dificeis": [
+     {
+      "termo": "Protesto",
+      "explicacao": "ato formal que comprova falta de pagamento de título"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 73,
+   "target_id": "CC2002:ART.1473",
+   "audit_position": 1456,
+   "subdivision_id": "CC2002:ART.1473:INC.VI",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "af4b9e09ab424ba8086eb1d8c694492ea4a9a7a0a40b9c7abc8b1a38807dcb18",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "RECLASSIFICADO",
+   "final_classification": "AUSENTE",
+   "final_severity": "MÉDIO",
+   "rationale": "A explicação afirma genericamente que o artigo possui onze objetos, mas não identifica navios entre os bens hipotecáveis. Uma lista não é coberta pela mera referência à existência de itens.",
+   "confidence": "ALTA",
+   "legal_text": "os navios;",
+   "baseline_entenda_content": {
+    "o_que_diz": "O art. 1.473 enumera onze objetos, incluindo direito de uso especial para moradia, direito real de uso, propriedade superficiária e, desde 2023, direitos oriundos da imissão provisória na posse concedida a entes públicos ou delegadas; o § 2º limita certas garantias à duração do direito.",
+    "o_que_significa": "Somente bens e direitos admitidos pela lei podem receber essa garantia sem transferência de posse.",
+    "exemplo_pratico": "Proprietário hipoteca imóvel e suas acessões para garantir financiamento.",
+    "atencao": "A lista contém itens sujeitos a registro e legislação especial; cada objeto exige competência registral própria.",
+    "palavras_dificeis": [
+     {
+      "termo": "Objeto hipotecável",
+      "explicacao": "bem ou direito que a lei permite gravar por hipoteca"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 74,
+   "target_id": "CC2002:ART.1473",
+   "audit_position": 1456,
+   "subdivision_id": "CC2002:ART.1473:INC.VII",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "d8c942f94980ae9967f9fc2947dc0173cf969fcf5861c41d94f8ecd6c01ddcda",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "RECLASSIFICADO",
+   "final_classification": "AUSENTE",
+   "final_severity": "MÉDIO",
+   "rationale": "A explicação afirma genericamente que o artigo possui onze objetos, mas não identifica aeronaves entre os bens hipotecáveis. O elemento autônomo do inciso não foi representado.",
+   "confidence": "ALTA",
+   "legal_text": "as aeronaves.",
+   "baseline_entenda_content": {
+    "o_que_diz": "O art. 1.473 enumera onze objetos, incluindo direito de uso especial para moradia, direito real de uso, propriedade superficiária e, desde 2023, direitos oriundos da imissão provisória na posse concedida a entes públicos ou delegadas; o § 2º limita certas garantias à duração do direito.",
+    "o_que_significa": "Somente bens e direitos admitidos pela lei podem receber essa garantia sem transferência de posse.",
+    "exemplo_pratico": "Proprietário hipoteca imóvel e suas acessões para garantir financiamento.",
+    "atencao": "A lista contém itens sujeitos a registro e legislação especial; cada objeto exige competência registral própria.",
+    "palavras_dificeis": [
+     {
+      "termo": "Objeto hipotecável",
+      "explicacao": "bem ou direito que a lei permite gravar por hipoteca"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 75,
+   "target_id": "CC2002:ART.1492",
+   "audit_position": 1474,
+   "subdivision_id": "CC2002:ART.1492:PAR.UNICO",
+   "sample_reasons": [
+    "HASH_DETERMINISTIC_FILL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "fc5148819b179c0b180497a9860e098e306ea2789b1f88643f5e20f5fa0c15df",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "CONFIRMADO",
+   "final_classification": "PARCIAL",
+   "final_severity": "MÉDIO",
+   "rationale": "A competência territorial e a necessidade do registro são explicadas, mas não se informa que os interessados, mediante exibição do título, têm legitimidade para requerer o registro da hipoteca.",
+   "confidence": "ALTA",
+   "legal_text": "Compete aos interessados, exibido o título, requerer o registro da hipoteca.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Hipotecas são registradas no cartório da localização de cada imóvel alcançado pelo título.",
+    "o_que_significa": "A competência territorial garante publicidade na matrícula consultada por terceiros.",
+    "exemplo_pratico": "Título grava imóveis em duas comarcas e é registrado em ambas.",
+    "atencao": "Registro em apenas um cartório não constitui o gravame sobre imóvel situado em outra circunscrição.",
+    "palavras_dificeis": [
+     {
+      "termo": "Competência territorial",
+      "explicacao": "atribuição do cartório definida pela localização do imóvel"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 76,
+   "target_id": "CC2002:ART.1499",
+   "audit_position": 1480,
+   "subdivision_id": "CC2002:ART.1499:INC.V",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "9a2d78d652a61b3b8cc3e08ab19cfb582d18410ebbb72851d8276b70388e9f8b",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Remição é expressamente listada como causa de término da hipoteca e definida no glossário; não há indeterminação material.",
+   "confidence": "ALTA",
+   "legal_text": "pela remição;",
+   "baseline_entenda_content": {
+    "o_que_diz": "A hipoteca termina com a obrigação principal, perecimento do bem, resolução da propriedade, renúncia, remição, arrematação ou adjudicação.",
+    "o_que_significa": "A lista reúne fatos que retiram a dívida, o objeto, o direito do garantidor ou a própria garantia.",
+    "exemplo_pratico": "Quitada a dívida, desaparece a causa da hipoteca e cabe seu cancelamento registral.",
+    "atencao": "Algumas causas ainda exigem averbação e a arrematação observa a proteção do credor notificado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Remição",
+      "explicacao": "liberação do bem mediante pagamento da dívida garantida"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 77,
+   "target_id": "CC2002:ART.1499",
+   "audit_position": 1480,
+   "subdivision_id": "CC2002:ART.1499:CAPUT",
+   "sample_reasons": [
+    "HASH_DETERMINISTIC_FILL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "901cc64c823291b0263ea1c90f442ddcefb8001b26c3ac8a03d3a3019b0c0cea",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "A frase 'a hipoteca termina' é equivalente a 'a hipoteca extingue-se' e vem acompanhada das causas legais; o caput está coberto.",
+   "confidence": "ALTA",
+   "legal_text": "A hipoteca extingue-se:",
+   "baseline_entenda_content": {
+    "o_que_diz": "A hipoteca termina com a obrigação principal, perecimento do bem, resolução da propriedade, renúncia, remição, arrematação ou adjudicação.",
+    "o_que_significa": "A lista reúne fatos que retiram a dívida, o objeto, o direito do garantidor ou a própria garantia.",
+    "exemplo_pratico": "Quitada a dívida, desaparece a causa da hipoteca e cabe seu cancelamento registral.",
+    "atencao": "Algumas causas ainda exigem averbação e a arrematação observa a proteção do credor notificado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Remição",
+      "explicacao": "liberação do bem mediante pagamento da dívida garantida"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 78,
+   "target_id": "CC2002:ART.1521",
+   "audit_position": 1507,
+   "subdivision_id": "CC2002:ART.1521:CAPUT",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "c582cacf5353092f6535e41d082b971bdec04ea5bddbe1abf9ecd8468df347ca",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "A explicação define os impedimentos como situações que atingem a validade e fornece exemplo de pessoa que não pode casar; o comando proibitivo introdutório está preservado.",
+   "confidence": "ALTA",
+   "legal_text": "Não podem casar:",
+   "baseline_entenda_content": {
+    "o_que_diz": "Impedimentos matrimoniais alcançam parentesco em linhas e graus definidos, adoção, vínculo conjugal ainda existente e homicídio ou tentativa contra o consorte.",
+    "o_que_significa": "Essas situações atingem a própria validade do casamento por razões familiares, monogâmicas e protetivas.",
+    "exemplo_pratico": "Pessoa ainda casada não pode celebrar novo casamento antes da dissolução do vínculo.",
+    "atencao": "Impedimento não se confunde com causa suspensiva e exige conferir parentesco e situação jurídica concretos.",
+    "palavras_dificeis": [
+     {
+      "termo": "Impedimento matrimonial",
+      "explicacao": "circunstância que proíbe validamente a celebração do casamento"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 79,
+   "target_id": "CC2002:ART.1521",
+   "audit_position": 1507,
+   "subdivision_id": "CC2002:ART.1521:INC.IV",
+   "sample_reasons": [
+    "STRATIFIED_AUSENTE_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "d6d74329b2a3af7ad26b1940d8deabf3e37bda9f462d7d1f2b577e904905fd92",
+   "source_classification": "AUSENTE",
+   "source_severity": "MÉDIO",
+   "decision": "CONFIRMADO",
+   "final_classification": "AUSENTE",
+   "final_severity": "MÉDIO",
+   "rationale": "A referência genérica a parentesco em linhas e graus não informa irmãos unilaterais ou bilaterais nem os demais colaterais até o terceiro grau, categorias autônomas do impedimento.",
+   "confidence": "ALTA",
+   "legal_text": "os irmãos, unilaterais ou bilaterais, e demais colaterais, até o terceiro grau inclusive;",
+   "baseline_entenda_content": {
+    "o_que_diz": "Impedimentos matrimoniais alcançam parentesco em linhas e graus definidos, adoção, vínculo conjugal ainda existente e homicídio ou tentativa contra o consorte.",
+    "o_que_significa": "Essas situações atingem a própria validade do casamento por razões familiares, monogâmicas e protetivas.",
+    "exemplo_pratico": "Pessoa ainda casada não pode celebrar novo casamento antes da dissolução do vínculo.",
+    "atencao": "Impedimento não se confunde com causa suspensiva e exige conferir parentesco e situação jurídica concretos.",
+    "palavras_dificeis": [
+     {
+      "termo": "Impedimento matrimonial",
+      "explicacao": "circunstância que proíbe validamente a celebração do casamento"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 80,
+   "target_id": "CC2002:ART.1521",
+   "audit_position": 1507,
+   "subdivision_id": "CC2002:ART.1521:INC.VI",
+   "sample_reasons": [
+    "STRATIFIED_AUSENTE_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "3dea101e55f8afa5aaa09ea062694eb8506a1bc778b65f500ef6cfbad68ee8e9",
+   "source_classification": "AUSENTE",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Vínculo conjugal ainda existente é expressamente indicado como impedimento, e o exemplo afirma que pessoa ainda casada não pode celebrar novo casamento.",
+   "confidence": "ALTA",
+   "legal_text": "as pessoas casadas;",
+   "baseline_entenda_content": {
+    "o_que_diz": "Impedimentos matrimoniais alcançam parentesco em linhas e graus definidos, adoção, vínculo conjugal ainda existente e homicídio ou tentativa contra o consorte.",
+    "o_que_significa": "Essas situações atingem a própria validade do casamento por razões familiares, monogâmicas e protetivas.",
+    "exemplo_pratico": "Pessoa ainda casada não pode celebrar novo casamento antes da dissolução do vínculo.",
+    "atencao": "Impedimento não se confunde com causa suspensiva e exige conferir parentesco e situação jurídica concretos.",
+    "palavras_dificeis": [
+     {
+      "termo": "Impedimento matrimonial",
+      "explicacao": "circunstância que proíbe validamente a celebração do casamento"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 81,
+   "target_id": "CC2002:ART.1523",
+   "audit_position": 1509,
+   "subdivision_id": "CC2002:ART.1523:CAPUT",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "5309179f2d3fb56fb74f6c7efaf60abcfca6b771f2418d0ba3726653e5b77494",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "A explicação caracteriza causas suspensivas como situações que recomendam adiar o casamento, sem impedimento absoluto, representando adequadamente o comando 'não devem casar'.",
+   "confidence": "ALTA",
+   "legal_text": "Não devem casar:",
+   "baseline_entenda_content": {
+    "o_que_diz": "Certas situações patrimoniais ou familiares recomendam adiar o casamento; o juiz pode afastar algumas mediante prova de ausência de prejuízo ou de gravidez.",
+    "o_que_significa": "As causas suspensivas protegem herdeiros, ex-cônjuge, tutelado e certeza sobre filiação, sem tornar o casamento absolutamente impossível.",
+    "exemplo_pratico": "Divorciado prova que a partilha não prejudica o ex-cônjuge e pede afastamento da suspensão.",
+    "atencao": "Casamento realizado apesar da causa pode atrair regime patrimonial obrigatório, e cada dispensa exige prova específica.",
+    "palavras_dificeis": [
+     {
+      "termo": "Causa suspensiva",
+      "explicacao": "situação que recomenda adiar o casamento sem constituir impedimento absoluto"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 82,
+   "target_id": "CC2002:ART.1541",
+   "audit_position": 1527,
+   "subdivision_id": "CC2002:ART.1541:INC.III",
+   "sample_reasons": [
+    "STRATIFIED_AUSENTE_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "c1e3d3effe39dd795c5c30aa026be9b700de7d8974d562fb044b5c64fae7c5b2",
+   "source_classification": "AUSENTE",
+   "source_severity": "MÉDIO",
+   "decision": "RECLASSIFICADO",
+   "final_classification": "PARCIAL",
+   "final_severity": "MÉDIO",
+   "rationale": "O resumo informa que as testemunhas relatam o consentimento, mas não explicita integralmente a declaração livre e espontânea, feita perante elas, de receberem-se os contraentes como marido e mulher.",
+   "confidence": "ALTA",
+   "legal_text": "que, em sua presença, declararam os contraentes, livre e espontaneamente, receber-se por marido e mulher.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Testemunhas do casamento emergencial comparecem ao juiz em dez dias, relatam convocação, lucidez, perigo e consentimento; segue investigação, decisão e registro com efeitos desde a cerimônia.",
+    "o_que_significa": "A validação judicial substitui cautelas ausentes no momento crítico e verifica capacidade matrimonial.",
+    "exemplo_pratico": "Testemunhas prestam declarações e o juiz confirma o vínculo após diligências.",
+    "atencao": "Prazos, conteúdo dos depoimentos e ausência de impedimentos são essenciais à confirmação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Ratificação judicial",
+      "explicacao": "reconhecimento posterior da validade de ato emergencial"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 83,
+   "target_id": "CC2002:ART.1541",
+   "audit_position": 1527,
+   "subdivision_id": "CC2002:ART.1541:PAR.3",
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "eb26a247139be4f932cee4ecce5c685d9d11e73bc55a1dd69e91422f5834c039",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "CONFIRMADO",
+   "final_classification": "PARCIAL",
+   "final_severity": "MÉDIO",
+   "rationale": "Há menção à decisão e ao registro com efeitos desde a cerimônia, mas faltam as condições processuais para a ordem de registro: ausência de recurso ou trânsito em julgado apesar dos recursos.",
+   "confidence": "ALTA",
+   "legal_text": "Se da decisão não se tiver recorrido, ou se ela passar em julgado, apesar dos recursos interpostos, o juiz mandará registrá-la no livro do Registro dos Casamentos.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Testemunhas do casamento emergencial comparecem ao juiz em dez dias, relatam convocação, lucidez, perigo e consentimento; segue investigação, decisão e registro com efeitos desde a cerimônia.",
+    "o_que_significa": "A validação judicial substitui cautelas ausentes no momento crítico e verifica capacidade matrimonial.",
+    "exemplo_pratico": "Testemunhas prestam declarações e o juiz confirma o vínculo após diligências.",
+    "atencao": "Prazos, conteúdo dos depoimentos e ausência de impedimentos são essenciais à confirmação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Ratificação judicial",
+      "explicacao": "reconhecimento posterior da validade de ato emergencial"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 84,
+   "target_id": "CC2002:ART.1541",
+   "audit_position": 1527,
+   "subdivision_id": "CC2002:ART.1541:PAR.1",
+   "sample_reasons": [
+    "HASH_DETERMINISTIC_FILL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "afdc5bd92df9493c9cee3a308f87a0b327d815b64fc4d4763380f599a7995b9f",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "CONFIRMADO",
+   "final_classification": "PARCIAL",
+   "final_severity": "MÉDIO",
+   "rationale": "Investigação e diligências estão resumidas, porém não aparecem a verificação de habilitação pela forma ordinária, a oitiva dos interessados requerentes e o prazo de quinze dias.",
+   "confidence": "ALTA",
+   "legal_text": "Autuado o pedido e tomadas as declarações, o juiz procederá às diligências necessárias para verificar se os contraentes podiam ter-se habilitado, na forma ordinária, ouvidos os interessados que o requererem, dentro em quinze dias.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Testemunhas do casamento emergencial comparecem ao juiz em dez dias, relatam convocação, lucidez, perigo e consentimento; segue investigação, decisão e registro com efeitos desde a cerimônia.",
+    "o_que_significa": "A validação judicial substitui cautelas ausentes no momento crítico e verifica capacidade matrimonial.",
+    "exemplo_pratico": "Testemunhas prestam declarações e o juiz confirma o vínculo após diligências.",
+    "atencao": "Prazos, conteúdo dos depoimentos e ausência de impedimentos são essenciais à confirmação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Ratificação judicial",
+      "explicacao": "reconhecimento posterior da validade de ato emergencial"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 85,
+   "target_id": "CC2002:ART.1548",
+   "audit_position": 1534,
+   "subdivision_id": "CC2002:ART.1548:INC.II",
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "b5a1c9cc9820916a453851dbfd703cb72e3843885bfa52abcee984ed10b6090a",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "O_que_diz afirma diretamente que é nulo o casamento que viola impedimento matrimonial; o inciso está coberto sem necessidade de repetir sua fórmula.",
+   "confidence": "ALTA",
+   "legal_text": "por infringência de impedimento.",
+   "baseline_entenda_content": {
+    "o_que_diz": "É nulo o casamento que viola impedimento matrimonial; a antiga hipótese ligada à enfermidade mental foi revogada.",
+    "o_que_significa": "Nulidade decorre de obstáculo legal grave existente na celebração, não da deficiência da pessoa.",
+    "exemplo_pratico": "Casamento de pessoa já casada é impugnado por infringir impedimento.",
+    "atencao": "Não se pode reintroduzir a hipótese revogada nem tratar deficiência como incapacidade matrimonial automática.",
+    "palavras_dificeis": [
+     {
+      "termo": "Nulidade",
+      "explicacao": "invalidade grave que atinge o casamento por violação de impedimento"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 86,
+   "target_id": "CC2002:ART.1550",
+   "audit_position": 1536,
+   "subdivision_id": "CC2002:ART.1550:INC.II",
+   "sample_reasons": [
+    "STRATIFIED_AUSENTE_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "3ffe0c31d0733b7d0f119cddaf8750ec989e608465c6b15a3f1ca94b510fdea8",
+   "source_classification": "AUSENTE",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "O resumo reúne idade núbil e falta de autorização entre as causas de anulabilidade, preservando a situação do menor não autorizado pelo representante legal.",
+   "confidence": "ALTA",
+   "legal_text": "do menor em idade núbil, quando não autorizado por seu representante legal;",
+   "baseline_entenda_content": {
+    "o_que_diz": "Casamento é anulável por idade, falta de autorização, vício de vontade, incapacidade de consentir, mandato revogado desconhecido ou autoridade incompetente; deficiência não impede consentimento por si.",
+    "o_que_significa": "As hipóteses protegem formação válida da vontade e regularidade do ato, com efeitos até decisão anulatória.",
+    "exemplo_pratico": "Nubente coagido pede anulação dentro do prazo correspondente.",
+    "atencao": "Anulabilidade difere de nulidade, possui legitimados e prazos próprios e não presume incapacidade da pessoa com deficiência.",
+    "palavras_dificeis": [
+     {
+      "termo": "Anulabilidade",
+      "explicacao": "invalidade dependente de iniciativa e prazo previstos em lei"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 87,
+   "target_id": "CC2002:ART.1552",
+   "audit_position": 1538,
+   "subdivision_id": "CC2002:ART.1552:INC.III",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "6a9acbee9e3e6fd2d23a69c3071b22f083d87ad6c9c22d9c04a1c4a683efb1d1",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Ascendentes são expressamente incluídos entre os legitimados para requerer a anulação do casamento do menor de dezesseis anos.",
+   "confidence": "ALTA",
+   "legal_text": "por seus ascendentes.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Anulação de casamento de menor de dezesseis anos pode ser requerida pelo próprio cônjuge, representantes ou ascendentes.",
+    "o_que_significa": "A lei delimita quem pode atacar o vínculo por idade inferior à mínima.",
+    "exemplo_pratico": "Ascendente propõe ação em favor de pessoa casada antes dos dezesseis anos.",
+    "atencao": "A hipótese deve ser compatibilizada com a proibição atual e os prazos legais da ação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Legitimado",
+      "explicacao": "pessoa autorizada pela lei a propor determinada ação"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 88,
+   "target_id": "CC2002:ART.1571",
+   "audit_position": 1557,
+   "subdivision_id": "CC2002:ART.1571:INC.IV",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "50a864ab66662af0e756ef77e7f92f17ac99417ea02da078e2fb02c91b7482a4",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "O divórcio aparece expressamente como causa de término da sociedade conjugal e de dissolução do casamento válido.",
+   "confidence": "ALTA",
+   "legal_text": "pelo divórcio.",
+   "baseline_entenda_content": {
+    "o_que_diz": "A sociedade conjugal termina por morte, invalidade, separação ou divórcio; o casamento válido dissolve-se por morte ou divórcio, e o nome pode ser preservado.",
+    "o_que_significa": "A norma distingue fim dos deveres conjugais e dissolução definitiva do vínculo que permite novo casamento.",
+    "exemplo_pratico": "Divórcio encerra vínculo e não exige que o ex-cônjuge abandone automaticamente o sobrenome adotado.",
+    "atencao": "O divórcio direto não depende hoje de prévia separação nem de prazo, conforme a Constituição.",
+    "palavras_dificeis": [
+     {
+      "termo": "Vínculo conjugal",
+      "explicacao": "estado civil matrimonial cuja dissolução permite novo casamento"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 89,
+   "target_id": "CC2002:ART.1573",
+   "audit_position": 1559,
+   "subdivision_id": "CC2002:ART.1573:INC.I",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "5f066089235b30e96ecdbeee22d81f015f6b5184b278492280d4c86fa420486e",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Adultério é nominalmente indicado como elemento do antigo regime de separação, com contextualização correta de sua inaplicabilidade como requisito do divórcio atual.",
+   "confidence": "ALTA",
+   "legal_text": "adultério;",
+   "baseline_entenda_content": {
+    "o_que_diz": "O Código enumera fatos que podiam demonstrar impossibilidade de vida comum e permite ao juiz considerar outros.",
+    "o_que_significa": "Adultério, violência, abandono e condutas graves são elementos do antigo regime de separação, não requisitos do divórcio atual.",
+    "exemplo_pratico": "Tentativa de morte fundamenta medidas protetivas e pode ser relatada sem ser necessária para dissolver o vínculo.",
+    "atencao": "A enumeração não autoriza culpabilização automática nem restringe o divórcio direto.",
+    "palavras_dificeis": [
+     {
+      "termo": "Sevícia",
+      "explicacao": "maus-tratos físicos ou crueldade praticados contra o cônjuge"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 90,
+   "target_id": "CC2002:ART.1578",
+   "audit_position": 1564,
+   "subdivision_id": "CC2002:ART.1578:PAR.1",
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "f610c60e079ee23d8273dd4ea0f48ee50e650f0928e59243b4e9bbed76db6194",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "CONFIRMADO",
+   "final_classification": "PARCIAL",
+   "final_severity": "MÉDIO",
+   "rationale": "A explicação discute perda e manutenção do sobrenome, mas não informa o direito do cônjuge inocente de renunciar, a qualquer momento, ao uso do sobrenome do outro.",
+   "confidence": "ALTA",
+   "legal_text": "O cônjuge inocente na ação de separação judicial poderá renunciar, a qualquer momento, ao direito de usar o sobrenome do outro.",
+   "baseline_entenda_content": {
+    "o_que_diz": "O texto condiciona perda do sobrenome à culpa na separação, pedido do inocente e ausência de prejuízo de identificação, distinção dos filhos ou dano grave.",
+    "o_que_significa": "Mesmo no regime literal, proteção da identidade limita a retirada do nome; atualmente prevalece autonomia pessoal após o divórcio.",
+    "exemplo_pratico": "Pessoa mantém sobrenome para preservar identificação profissional e vínculo nominal com filhos.",
+    "atencao": "Culpa conjugal não deve ser transportada como requisito do divórcio e o nome integra direitos da personalidade.",
+    "palavras_dificeis": [
+     {
+      "termo": "Nome de casado",
+      "explicacao": "sobrenome incorporado em razão do casamento"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 91,
+   "target_id": "CC2002:ART.1580",
+   "audit_position": 1566,
+   "subdivision_id": "CC2002:ART.1580:PAR.2",
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "6e9a4ce3f40e57db7ab97a029fb98425b87d023b66d1cd11cd09f39efc89aa05",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "CONFIRMADO",
+   "final_classification": "PARCIAL",
+   "final_severity": "MÉDIO",
+   "rationale": "A baseline contextualiza corretamente a superação constitucional dos prazos, mas não preserva a literalidade histórica de que um ou ambos os cônjuges podiam requerer divórcio após mais de dois anos de separação de fato.",
+   "confidence": "ALTA",
+   "legal_text": "O divórcio poderá ser requerido, por um ou por ambos os cônjuges, no caso de comprovada separação de fato por mais de dois anos.",
+   "baseline_entenda_content": {
+    "o_que_diz": "O texto antigo prevê conversão da separação em divórcio e divórcio por separação de fato após prazos determinados.",
+    "o_que_significa": "A Constituição passou a admitir divórcio direto, sem causa, prazo ou separação prévia.",
+    "exemplo_pratico": "Cônjuge requer divórcio imediatamente, ainda que não exista sentença de separação.",
+    "atencao": "Os prazos literais não podem ser apresentados como condição atual para dissolver o casamento.",
+    "palavras_dificeis": [
+     {
+      "termo": "Divórcio direto",
+      "explicacao": "dissolução do casamento sem etapa prévia de separação"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 92,
+   "target_id": "CC2002:ART.1581",
+   "audit_position": 1567,
+   "subdivision_id": "CC2002:ART.1581:CAPUT",
+   "sample_reasons": [
+    "HASH_DETERMINISTIC_FILL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "0453e62fdb147a4627f9fabc435de35911185561df717a972a59b5668662448d",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "A explicação afirma de modo direto que o divórcio pode ser decretado antes da partilha, equivalendo integralmente ao caput.",
+   "confidence": "ALTA",
+   "legal_text": "O divórcio pode ser concedido sem que haja prévia partilha de bens.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Divórcio pode ser decretado antes da partilha do patrimônio.",
+    "o_que_significa": "Divergência sobre bens não bloqueia a dissolução do vínculo matrimonial.",
+    "exemplo_pratico": "Juiz decreta divórcio e mantém discussão patrimonial para fase posterior.",
+    "atencao": "A ausência de partilha exige cautela registral e não elimina direitos sobre bens comuns.",
+    "palavras_dificeis": [
+     {
+      "termo": "Partilha posterior",
+      "explicacao": "divisão patrimonial realizada depois da dissolução do casamento"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 93,
+   "target_id": "CC2002:ART.1635",
+   "audit_position": 1611,
+   "subdivision_id": "CC2002:ART.1635:INC.III",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "afeae661e9b3b4fff8b0f9b5cda27cc5b9f4c92739654ad00b74f6c08f83cd13",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Maioridade é expressamente listada como causa de término do poder familiar.",
+   "confidence": "ALTA",
+   "legal_text": "pela maioridade;",
+   "baseline_entenda_content": {
+    "o_que_diz": "O poder familiar termina por morte, emancipação, maioridade, adoção ou decisão judicial nos casos legais.",
+    "o_que_significa": "A enumeração identifica fatos e decisões que encerram a autoridade parental.",
+    "exemplo_pratico": "Ao atingir dezoito anos, o filho deixa de estar sujeito ao poder familiar.",
+    "atencao": "A adoção transfere vínculos parentais conforme o regime legal; decisão de perda exige processo e fundamento específico.",
+    "palavras_dificeis": [
+     {
+      "termo": "Extinção",
+      "explicacao": "encerramento definitivo de uma relação ou poder jurídico"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 94,
+   "target_id": "CC2002:ART.1635",
+   "audit_position": 1611,
+   "subdivision_id": "CC2002:ART.1635:INC.IV",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "e98a9b8015f3b6ecd546b960c6a41f8d6b3484b4a8a1d28e113cc2375157f3a8",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Adoção é expressamente listada como causa de término do poder familiar, com atenção adicional à transferência dos vínculos parentais.",
+   "confidence": "ALTA",
+   "legal_text": "pela adoção;",
+   "baseline_entenda_content": {
+    "o_que_diz": "O poder familiar termina por morte, emancipação, maioridade, adoção ou decisão judicial nos casos legais.",
+    "o_que_significa": "A enumeração identifica fatos e decisões que encerram a autoridade parental.",
+    "exemplo_pratico": "Ao atingir dezoito anos, o filho deixa de estar sujeito ao poder familiar.",
+    "atencao": "A adoção transfere vínculos parentais conforme o regime legal; decisão de perda exige processo e fundamento específico.",
+    "palavras_dificeis": [
+     {
+      "termo": "Extinção",
+      "explicacao": "encerramento definitivo de uma relação ou poder jurídico"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 95,
+   "target_id": "CC2002:ART.1638",
+   "audit_position": 1614,
+   "subdivision_id": "CC2002:ART.1638:INC.IV",
+   "sample_reasons": [
+    "STRATIFIED_AUSENTE_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "1685b47164e9bfa48e60a3edd2c0e5b3521e66f50c174dfef96c862c45110123",
+   "source_classification": "AUSENTE",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "A expressão 'faltas graves reiteradas' representa a reiteração das faltas do artigo anterior; a causa de perda judicial está materialmente presente.",
+   "confidence": "ALTA",
+   "legal_text": "incidir, reiteradamente, nas faltas previstas no artigo antecedente.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Perda judicial do poder familiar pode decorrer de castigo excessivo, abandono, faltas graves reiteradas, entrega irregular para adoção e crimes graves especificados contra outro titular ou descendente.",
+    "o_que_significa": "A sanção extrema exige processo, prova e enquadramento legal, sempre orientados pela proteção do filho.",
+    "exemplo_pratico": "Genitor pratica violência grave abrangida pela lei e o juiz decreta a perda após o devido processo.",
+    "atencao": "Perda não é automática por acusação e não afasta eventual responsabilidade civil ou penal; deve prevalecer proteção integral.",
+    "palavras_dificeis": [
+     {
+      "termo": "Perda do poder familiar",
+      "explicacao": "retirada judicial definitiva das atribuições parentais"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 96,
+   "target_id": "CC2002:ART.1691",
+   "audit_position": 1667,
+   "subdivision_id": "CC2002:ART.1691:PAR.UNICO:INC.I",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "98dd73a0e7e3e120c9f44dddacf8963a46ceb87e3cb9137ae507a7c5b2937571",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "O campo atenção identifica os filhos como legitimados para arguir nulidade dos atos patrimoniais praticados sem autorização judicial.",
+   "confidence": "ALTA",
+   "legal_text": "os filhos;",
+   "baseline_entenda_content": {
+    "o_que_diz": "Pais só podem alienar ou onerar imóveis do filho e assumir obrigações além da gestão ordinária com necessidade ou interesse evidente e autorização judicial prévia.",
+    "o_que_significa": "O patrimônio do menor recebe proteção reforçada contra disposição parental.",
+    "exemplo_pratico": "Venda de imóvel do filho é autorizada porque financia tratamento indispensável e vantajoso.",
+    "atencao": "Ato sem autorização pode ser declarado nulo por filhos, herdeiros ou representante legal.",
+    "palavras_dificeis": [
+     {
+      "termo": "Simples administração",
+      "explicacao": "atos rotineiros de conservação e gestão que não comprometem o patrimônio"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 97,
+   "target_id": "CC2002:ART.1691",
+   "audit_position": 1667,
+   "subdivision_id": "CC2002:ART.1691:PAR.UNICO:INC.II",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "12a31950d81459673b41d2e2e34ffe43f75f2bb9ae88c2f9edb4a25e61064451",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "O campo atenção identifica os herdeiros como legitimados para arguir nulidade, cobrindo o inciso.",
+   "confidence": "ALTA",
+   "legal_text": "os herdeiros;",
+   "baseline_entenda_content": {
+    "o_que_diz": "Pais só podem alienar ou onerar imóveis do filho e assumir obrigações além da gestão ordinária com necessidade ou interesse evidente e autorização judicial prévia.",
+    "o_que_significa": "O patrimônio do menor recebe proteção reforçada contra disposição parental.",
+    "exemplo_pratico": "Venda de imóvel do filho é autorizada porque financia tratamento indispensável e vantajoso.",
+    "atencao": "Ato sem autorização pode ser declarado nulo por filhos, herdeiros ou representante legal.",
+    "palavras_dificeis": [
+     {
+      "termo": "Simples administração",
+      "explicacao": "atos rotineiros de conservação e gestão que não comprometem o patrimônio"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 98,
+   "target_id": "CC2002:ART.1729",
+   "audit_position": 1705,
+   "subdivision_id": "CC2002:ART.1729:CAPUT",
+   "sample_reasons": [
+    "HASH_DETERMINISTIC_FILL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "ccbc8a92bf2719a2b2485ffdee1f727774a41f55aa2e274f75a55c80d70d0b77",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "A competência conjunta dos pais para nomear tutor é afirmada literalmente, além da forma por testamento ou documento autêntico.",
+   "confidence": "ALTA",
+   "legal_text": "O direito de nomear tutor compete aos pais, em conjunto.",
+   "baseline_entenda_content": {
+    "o_que_diz": "A nomeação de tutor cabe conjuntamente aos pais e deve constar de testamento ou documento autêntico.",
+    "o_que_significa": "A escolha parental é preferencial quando ambos conservam poder familiar e a formalizam validamente.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1729, a solução deve observar tutela testamentária e as condições específicas descritas na regra.",
+    "atencao": "A indicação não dispensa controle de validade e aptidão do nomeado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Tutela testamentária",
+      "explicacao": "A escolha parental é preferencial quando ambos conservam poder familiar e a formalizam validamente."
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 99,
+   "target_id": "CC2002:ART.1748",
+   "audit_position": 1724,
+   "subdivision_id": "CC2002:ART.1748:INC.III",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "8a8b7d7218bc5532a0fe5939104ff4a72f861917abd8b6c7d87b30e8a297ef97",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "'Fazer acordo' é paráfrase juridicamente adequada de transigir e está inserida entre os atos dependentes de autorização judicial.",
+   "confidence": "ALTA",
+   "legal_text": "transigir;",
+   "baseline_entenda_content": {
+    "o_que_diz": "Com autorização judicial, o tutor pode pagar dívidas do menor, aceitar heranças, legados ou doações mesmo com encargos, fazer acordo, vender móveis cuja conservação não convenha e imóveis nos casos admitidos, além de agir em juízo em defesa do tutelado. Sem autorização prévia, o ato só produz eficácia se o juiz o aprovar depois.",
+    "o_que_significa": "O controle prévio reduz risco em decisões capazes de comprometer significativamente o patrimônio do menor.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1748, a solução deve observar autorização judicial e as condições específicas descritas na regra.",
+    "atencao": "A autorização abrange também a aceitação de liberalidades com encargos. Se faltar autorização prévia, boa intenção não basta: a eficácia do ato fica condicionada à aprovação judicial posterior.",
+    "palavras_dificeis": [
+     {
+      "termo": "Autorização judicial",
+      "explicacao": "O controle prévio reduz risco em decisões capazes de comprometer significativamente o patrimônio do menor."
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 100,
+   "target_id": "CC2002:ART.1754",
+   "audit_position": 1730,
+   "subdivision_id": "CC2002:ART.1754:CAPUT",
+   "sample_reasons": [
+    "STRATIFIED_AUSENTE_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "f53595e14f000850e4a043800bc575680aa2a685bd245595726dd7ba28b966b2",
+   "source_classification": "AUSENTE",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "O_que_diz e atenção preservam banco oficial, ordem judicial e limitação do saque às quatro finalidades legais; o caput introdutório está completo.",
+   "confidence": "ALTA",
+   "legal_text": "Os valores que existirem em estabelecimento bancário oficial, na forma do artigo antecedente, não se poderão retirar, senão mediante ordem do juiz, e somente:",
+   "baseline_entenda_content": {
+    "o_que_diz": "Dinheiro do tutelado depositado em banco oficial só pode ser retirado por ordem judicial e para uma destas finalidades: sustento, educação ou administração; compra dos imóveis e títulos legalmente admitidos; cumprimento da destinação fixada por doador ou testador; ou entrega ao tutelado emancipado ou maior e, se ele morrer, aos herdeiros.",
+    "o_que_significa": "A movimentação bancária é vinculada ao interesse do tutelado e submetida a controle prévio.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1754, a solução deve observar levantamento judicial e as condições específicas descritas na regra.",
+    "atencao": "A ordem judicial é indispensável e não cria autorização genérica. O saque deve enquadrar-se em uma das quatro finalidades enumeradas pelo artigo.",
+    "palavras_dificeis": [
+     {
+      "termo": "Levantamento judicial",
+      "explicacao": "A movimentação bancária é vinculada ao interesse do tutelado e submetida a controle prévio."
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 101,
+   "target_id": "CC2002:ART.1764",
+   "audit_position": 1740,
+   "subdivision_id": "CC2002:ART.1764:INC.III",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "864ba1c8303a8557ae6c0984a543fc3c81b0dac8126f0eb35e52400192b1d019",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Remoção é expressamente listada como uma das causas de término das funções do tutor.",
+   "confidence": "ALTA",
+   "legal_text": "ao ser removido.",
+   "baseline_entenda_content": {
+    "o_que_diz": "As funções do tutor terminam pelo fim do prazo, escusa aceita ou remoção.",
+    "o_que_significa": "O encerramento da função pessoal pode ocorrer mesmo que o menor ainda necessite de novo tutor.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1764, a solução deve observar fim da função tutelar e as condições específicas descritas na regra.",
+    "atencao": "Cessação do tutor e cessação da tutela são situações distintas.",
+    "palavras_dificeis": [
+     {
+      "termo": "Fim da função tutelar",
+      "explicacao": "O encerramento da função pessoal pode ocorrer mesmo que o menor ainda necessite de novo tutor."
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 102,
+   "target_id": "CC2002:ART.1767",
+   "audit_position": 1743,
+   "subdivision_id": "CC2002:ART.1767:INC.V",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "e65c843bf92417fc5e4faa3c77c93f68d579f9a78317f50fdb6804c20f0ccfc5",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Pródigos são nominalmente incluídos entre as pessoas alcançadas pela curatela, com a correta ressalva de proporcionalidade.",
+   "confidence": "ALTA",
+   "legal_text": "os pródigos.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Curatela alcança quem não consegue exprimir vontade, dependentes habituais de álcool ou drogas e pródigos, nos limites necessários.",
+    "o_que_significa": "Após o Estatuto da Pessoa com Deficiência, a curatela é excepcional, proporcional e principalmente patrimonial, sem presumir incapacidade total.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1767, a solução deve observar curatela e as condições específicas descritas na regra.",
+    "atencao": "Diagnóstico ou deficiência, isoladamente, não autoriza restrição ampla da capacidade.",
+    "palavras_dificeis": [
+     {
+      "termo": "Curatela",
+      "explicacao": "Após o Estatuto da Pessoa com Deficiência, a curatela é excepcional, proporcional e principalmente patrimonial, sem presumir incapacidade total."
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 103,
+   "target_id": "CC2002:ART.1779",
+   "audit_position": 1749,
+   "subdivision_id": "CC2002:ART.1779:CAPUT",
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "a01087d77ff3d9a7b60a863657b4113fec7b0d84234dbb9dc0ded0aee70bc83d",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "A nomeação de curador ao nascituro, morte do pai durante a gravidez e ausência de poder familiar da gestante estão todos expressos no resumo.",
+   "confidence": "ALTA",
+   "legal_text": "Dar-se-á curador ao nascituro, se o pai falecer estando grávida a mulher, e não tendo o poder familiar.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Nomeia-se curador ao nascituro se o pai morrer durante a gravidez e a gestante não exercer poder familiar; se ela estiver curatelada, seu curador acumula a função.",
+    "o_que_significa": "A medida protege interesses patrimoniais do concebido antes do nascimento.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1779, a solução deve observar curador do nascituro e as condições específicas descritas na regra.",
+    "atencao": "A curadoria do nascituro é específica e não antecipa personalidade plena.",
+    "palavras_dificeis": [
+     {
+      "termo": "Curador do nascituro",
+      "explicacao": "A medida protege interesses patrimoniais do concebido antes do nascimento."
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 104,
+   "target_id": "CC2002:ART.1784",
+   "audit_position": 1754,
+   "subdivision_id": "CC2002:ART.1784:CAPUT",
+   "sample_reasons": [
+    "HASH_DETERMINISTIC_FILL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "526cf1fee196ff908d1425f783bac775c763f069e1c6d556161d451c03297f47",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "A transmissão imediata da herança na morte aos herdeiros legítimos e testamentários reproduz integralmente o princípio da saisine do caput.",
+   "confidence": "ALTA",
+   "legal_text": "Aberta a sucessão, a herança transmite-se, desde logo, aos herdeiros legítimos e testamentários.",
+   "baseline_entenda_content": {
+    "o_que_diz": "A herança passa imediatamente aos herdeiros legítimos e testamentários quando ocorre a morte.",
+    "o_que_significa": "O princípio da transmissão imediata evita patrimônio sem titular, embora inventário e partilha individualizem os quinhões.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1784, a solução deve observar saisine e as condições específicas descritas na regra.",
+    "atencao": "Posse material dos bens não é requisito para adquirir a herança.",
+    "palavras_dificeis": [
+     {
+      "termo": "Saisine",
+      "explicacao": "O princípio da transmissão imediata evita patrimônio sem titular, embora inventário e partilha individualizem os quinhões."
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 105,
+   "target_id": "CC2002:ART.1790",
+   "audit_position": 1760,
+   "subdivision_id": "CC2002:ART.1790:INC.II",
+   "sample_reasons": [
+    "STRATIFIED_AUSENTE_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "9b91fb7d4eca15f64eba000d06a59e5e28bef67be88f410b81e0857bc72f649a",
+   "source_classification": "AUSENTE",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "NAO_APLICAVEL",
+   "final_severity": null,
+   "rationale": "A omissão do quinhão literal é deliberada e juridicamente correta: os campos registram a inconstitucionalidade vinculante do regime diferenciado e orientam a aplicação atual do art. 1.829. Não cabe exigir explicação operativa de regra afastada.",
+   "confidence": "ALTA",
+   "legal_text": "se concorrer com descendentes só do autor da herança, tocar-lhe-á a metade do que couber a cada um daqueles;",
+   "baseline_entenda_content": {
+    "o_que_diz": "O texto atribui ao companheiro regime sucessório próprio limitado a certos bens, mas essa diferenciação foi declarada inconstitucional em julgamento vinculante.",
+    "o_que_significa": "Na aplicação atual, a união estável segue a ordem do art. 1.829, como o casamento; a decisão alcança inventários sem partilha transitada e partilhas extrajudiciais ainda sem escritura.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1790, a solução deve observar inconstitucionalidade sucessória e as condições específicas descritas na regra.",
+    "atencao": "Não se deve apresentar os incisos do artigo como regime atual geral nem dizer que houve revogação legislativa expressa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Inconstitucionalidade sucessória",
+      "explicacao": "Na aplicação atual, a união estável segue a ordem do art. 1.829, como o casamento; a decisão alcança inventários sem partilha transitada e partilhas extrajudiciais ainda sem escritura."
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 106,
+   "target_id": "CC2002:ART.1797",
+   "audit_position": 1767,
+   "subdivision_id": "CC2002:ART.1797:INC.III",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "c67a9753c48d17bead5351db3820285e63e2d52804574b0ad4dccbe3266d3c2a",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Testamenteiro aparece expressamente na ordem sucessiva de administração provisória da herança.",
+   "confidence": "ALTA",
+   "legal_text": "ao testamenteiro;",
+   "baseline_entenda_content": {
+    "o_que_diz": "Até o inventariante assumir, a administração da herança segue esta ordem: cônjuge ou companheiro que convivia com o falecido; herdeiro que já possua e administre os bens, preferindo o mais velho se houver vários; testamenteiro; e, por fim, pessoa de confiança do juiz. Essa última só é chamada se os anteriores faltarem, recusarem ou precisarem ser afastados por motivo grave levado ao juiz.",
+    "o_que_significa": "A ordem garante gestão provisória até a nomeação formal do inventariante.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1797, a solução deve observar administração provisória e as condições específicas descritas na regra.",
+    "atencao": "A ordem é sucessiva. Entre herdeiros já na posse e administração, prefere o mais velho; pessoa de confiança não é escolha livre inicial do juiz, pois depende da falta, escusa ou afastamento grave dos anteriores.",
+    "palavras_dificeis": [
+     {
+      "termo": "Administração provisória",
+      "explicacao": "A ordem garante gestão provisória até a nomeação formal do inventariante."
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 107,
+   "target_id": "CC2002:ART.1829",
+   "audit_position": 1800,
+   "subdivision_id": "CC2002:ART.1829:INC.IV",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "796c89df6eb21354b836a03e705e9fe23581e502156d87f65eea5ab98a743bee",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Colaterais aparecem nominalmente como a quarta classe da ordem da sucessão legítima.",
+   "confidence": "ALTA",
+   "legal_text": "aos colaterais.",
+   "baseline_entenda_content": {
+    "o_que_diz": "A sucessão legítima chama, nesta ordem, descendentes, ascendentes, cônjuge sobrevivente e colaterais. A concorrência do cônjuge com descendentes observa as exceções legais dos regimes de comunhão universal, separação obrigatória e comunhão parcial sem bens particulares. Por interpretação constitucional vinculante, o mesmo regime sucessório também se aplica ao companheiro, sem confundir herança com meação.",
+    "o_que_significa": "A classe anterior normalmente afasta a seguinte, e o regime de bens pode alterar a concorrência do sobrevivente com descendentes.",
+    "exemplo_pratico": "Falecido deixa filhos e cônjuge; antes de dividir, verificam-se bens particulares e regime matrimonial.",
+    "atencao": "Por interpretação constitucional vinculante, a regra também alcança o companheiro; meação não se confunde com herança.",
+    "palavras_dificeis": [
+     {
+      "termo": "Vocação hereditária",
+      "explicacao": "ordem legal de pessoas chamadas a herdar"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 108,
+   "target_id": "CC2002:ART.1862",
+   "audit_position": 1833,
+   "subdivision_id": "CC2002:ART.1862:INC.I",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "b5e700fe0a79572091f40fb4f52078fd16e58890a3ac62e357f7b186cedac9d6",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Testamento público é expressamente enumerado entre as formas ordinárias.",
+   "confidence": "ALTA",
+   "legal_text": "o público;",
+   "baseline_entenda_content": {
+    "o_que_diz": "As formas ordinárias são testamento público, cerrado e particular.",
+    "o_que_significa": "O testador deve escolher uma modalidade legal e cumprir suas formalidades.",
+    "exemplo_pratico": "Pessoa opta pelo testamento público perante tabelião e testemunhas.",
+    "atencao": "Documento informal fora das modalidades pode valer apenas como codicilo em limites estreitos.",
+    "palavras_dificeis": [
+     {
+      "termo": "Forma ordinária",
+      "explicacao": "modalidade comum de testamento prevista em lei"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 109,
+   "target_id": "CC2002:ART.1862",
+   "audit_position": 1833,
+   "subdivision_id": "CC2002:ART.1862:INC.II",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "0610f16db82499730439fd0382314ec1bf7743abd0b3e2b4b0bb5618b8a0fef0",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Testamento cerrado é expressamente enumerado entre as formas ordinárias.",
+   "confidence": "ALTA",
+   "legal_text": "o cerrado;",
+   "baseline_entenda_content": {
+    "o_que_diz": "As formas ordinárias são testamento público, cerrado e particular.",
+    "o_que_significa": "O testador deve escolher uma modalidade legal e cumprir suas formalidades.",
+    "exemplo_pratico": "Pessoa opta pelo testamento público perante tabelião e testemunhas.",
+    "atencao": "Documento informal fora das modalidades pode valer apenas como codicilo em limites estreitos.",
+    "palavras_dificeis": [
+     {
+      "termo": "Forma ordinária",
+      "explicacao": "modalidade comum de testamento prevista em lei"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 110,
+   "target_id": "CC2002:ART.1862",
+   "audit_position": 1833,
+   "subdivision_id": "CC2002:ART.1862:INC.III",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "2626c5fd5c90c903a2d25861ec31bca480b327b1fd5a6e9a7bc5219f7516a681",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Testamento particular é expressamente enumerado entre as formas ordinárias.",
+   "confidence": "ALTA",
+   "legal_text": "o particular.",
+   "baseline_entenda_content": {
+    "o_que_diz": "As formas ordinárias são testamento público, cerrado e particular.",
+    "o_que_significa": "O testador deve escolher uma modalidade legal e cumprir suas formalidades.",
+    "exemplo_pratico": "Pessoa opta pelo testamento público perante tabelião e testemunhas.",
+    "atencao": "Documento informal fora das modalidades pode valer apenas como codicilo em limites estreitos.",
+    "palavras_dificeis": [
+     {
+      "termo": "Forma ordinária",
+      "explicacao": "modalidade comum de testamento prevista em lei"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 111,
+   "target_id": "CC2002:ART.1866",
+   "audit_position": 1837,
+   "subdivision_id": "CC2002:ART.1866:CAPUT",
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "8813754bee0366cb71b7d30d328a65da6ea1564b1121d9bf4f3b51bcddcb88bf",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "A explicação reproduz as duas alternativas: pessoa surda que sabe ler lê o testamento; se não sabe, escolhe leitor perante as testemunhas.",
+   "confidence": "ALTA",
+   "legal_text": "O indivíduo inteiramente surdo, sabendo ler, lerá o seu testamento, e, se não o souber, designará quem o leia em seu lugar, presentes as testemunhas.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Pessoa surda que saiba ler deve ler o testamento; se não souber, escolhe leitor na presença das testemunhas.",
+    "o_que_significa": "A adaptação assegura compreensão do conteúdo sem afastar a solenidade pública.",
+    "exemplo_pratico": "Testador surdo designa pessoa de confiança para ler o instrumento diante das testemunhas.",
+    "atencao": "Devem ser registradas a condição e a forma usada para assegurar ciência.",
+    "palavras_dificeis": [
+     {
+      "termo": "Acessibilidade testamentária",
+      "explicacao": "adaptação formal que permite manifestação válida da vontade"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 112,
+   "target_id": "CC2002:ART.1886",
+   "audit_position": 1857,
+   "subdivision_id": "CC2002:ART.1886:INC.I",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "96c888542d879cb17a8b0aabf78cb9794a8ea583ba335fe23ab023efffcc4c41",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Testamento marítimo é expressamente enumerado entre os testamentos especiais.",
+   "confidence": "ALTA",
+   "legal_text": "o marítimo;",
+   "baseline_entenda_content": {
+    "o_que_diz": "Os testamentos especiais admitidos são marítimo, aeronáutico e militar.",
+    "o_que_significa": "Essas formas respondem a situações extraordinárias de viagem ou serviço militar.",
+    "exemplo_pratico": "Passageiro em navio nacional utiliza testamento marítimo nas condições legais.",
+    "atencao": "Cada modalidade possui pressupostos e caducidade próprios.",
+    "palavras_dificeis": [
+     {
+      "termo": "Testamento especial",
+      "explicacao": "forma excepcional de testar prevista para situação específica"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 113,
+   "target_id": "CC2002:ART.1886",
+   "audit_position": 1857,
+   "subdivision_id": "CC2002:ART.1886:INC.II",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "5c53b24c09f455a89b84cf83a34560ff28575663265296a331019aa7de989c8d",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Testamento aeronáutico é expressamente enumerado entre os testamentos especiais.",
+   "confidence": "ALTA",
+   "legal_text": "o aeronáutico;",
+   "baseline_entenda_content": {
+    "o_que_diz": "Os testamentos especiais admitidos são marítimo, aeronáutico e militar.",
+    "o_que_significa": "Essas formas respondem a situações extraordinárias de viagem ou serviço militar.",
+    "exemplo_pratico": "Passageiro em navio nacional utiliza testamento marítimo nas condições legais.",
+    "atencao": "Cada modalidade possui pressupostos e caducidade próprios.",
+    "palavras_dificeis": [
+     {
+      "termo": "Testamento especial",
+      "explicacao": "forma excepcional de testar prevista para situação específica"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 114,
+   "target_id": "CC2002:ART.1886",
+   "audit_position": 1857,
+   "subdivision_id": "CC2002:ART.1886:INC.III",
+   "sample_reasons": [
+    "ALL_INDETERMINADA_INDIVIDUAL_REVIEW"
+   ],
+   "source_finding_sha256": "97201399921b96b7d0cde949400c681fac585abe6c5a25d9a88f58a0921ee3cd",
+   "source_classification": "INDETERMINADA",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Testamento militar é expressamente enumerado entre os testamentos especiais.",
+   "confidence": "ALTA",
+   "legal_text": "o militar.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Os testamentos especiais admitidos são marítimo, aeronáutico e militar.",
+    "o_que_significa": "Essas formas respondem a situações extraordinárias de viagem ou serviço militar.",
+    "exemplo_pratico": "Passageiro em navio nacional utiliza testamento marítimo nas condições legais.",
+    "atencao": "Cada modalidade possui pressupostos e caducidade próprios.",
+    "palavras_dificeis": [
+     {
+      "termo": "Testamento especial",
+      "explicacao": "forma excepcional de testar prevista para situação específica"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 115,
+   "target_id": "CC2002:ART.1893",
+   "audit_position": 1864,
+   "subdivision_id": "CC2002:ART.1893:PAR.1",
+   "sample_reasons": [
+    "STRATIFIED_AUSENTE_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "b3f095ef7f0ede406ccdab202d4e840fade1af14d28bc8510063cc05aaa744e7",
+   "source_classification": "AUSENTE",
+   "source_severity": "MÉDIO",
+   "decision": "RECLASSIFICADO",
+   "final_classification": "PARCIAL",
+   "final_severity": "MÉDIO",
+   "rationale": "O exemplo e a referência à autoridade redatora cobrem o comandante no destacamento, mas não explicitam que ele pode ter graduação ou posto inferior; portanto não há ausência total, e sim cobertura parcial.",
+   "confidence": "ALTA",
+   "legal_text": "Se o testador pertencer a corpo ou seção de corpo destacado, o testamento será escrito pelo respectivo comandante, ainda que de graduação ou posto inferior.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Militares e pessoas a serviço das Forças Armadas em campanha ou isolamento podem testar sem tabelião perante testemunhas e autoridades indicadas. O art. 1.893 exige duas testemunhas quando o testador assina e três quando não puder ou não souber assinar, hipótese em que uma delas assinará por ele, além de especificar a autoridade redatora em cada situação.",
+    "o_que_significa": "A forma militar adapta redação e testemunho às condições de guerra, destacamento ou hospital.",
+    "exemplo_pratico": "Militar em unidade isolada dita vontade ao comandante diante das testemunhas exigidas.",
+    "atencao": "Número de testemunhas, assinatura substitutiva e autoridade competente variam conforme a situação descrita.",
+    "palavras_dificeis": [
+     {
+      "termo": "Praça sitiada",
+      "explicacao": "local militar cercado e com comunicação restringida"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 116,
+   "target_id": "CC2002:ART.1901",
+   "audit_position": 1872,
+   "subdivision_id": "CC2002:ART.1901:CAPUT",
+   "sample_reasons": [
+    "STRATIFIED_AUSENTE_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "80eb66415a135adf17875cb7dbbd9b58aefae53a2a0b27da7543be3411425220",
+   "source_classification": "AUSENTE",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "A expressão 'é válida' cobre o caput 'valerá a disposição', e os campos explicam as duas hipóteses legais de determinação por terceiro.",
+   "confidence": "ALTA",
+   "legal_text": "Valerá a disposição:",
+   "baseline_entenda_content": {
+    "o_que_diz": "É válida a escolha por terceiro entre pessoas ou grupos delimitados e a remuneração por serviços finais mesmo com valor definido por outra pessoa.",
+    "o_que_significa": "A lei admite delegação limitada quando o testador fixa universo objetivo ou causa remuneratória.",
+    "exemplo_pratico": "Testador deixa benefício a um entre três sobrinhos, a ser escolhido por pessoa indicada.",
+    "atencao": "O terceiro não recebe liberdade irrestrita para inventar beneficiário fora dos limites dados.",
+    "palavras_dificeis": [
+     {
+      "termo": "Determinação por terceiro",
+      "explicacao": "escolha complementar feita dentro de parâmetros testamentários"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 117,
+   "target_id": "CC2002:ART.1902",
+   "audit_position": 1873,
+   "subdivision_id": "CC2002:ART.1902:PAR.UNICO",
+   "sample_reasons": [
+    "STRATIFIED_AUSENTE_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "a76d69127c7fdb6c33b8c1ebaca96fbcca2e225a6709c290efacd81fe81aa34e",
+   "source_classification": "AUSENTE",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "A preferência das entidades privadas locais sobre as públicas é expressamente afirmada em o_que_diz.",
+   "confidence": "ALTA",
+   "legal_text": "Nos casos deste artigo, as instituições particulares preferirão sempre às públicas.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Benefício geral a pobres ou instituições assistenciais refere-se, em regra, ao domicílio do testador, com preferência das entidades privadas locais.",
+    "o_que_significa": "A lei supre a falta de localização específica da disposição beneficente.",
+    "exemplo_pratico": "Testador deixa quantia aos pobres sem indicar cidade; considera-se seu domicílio ao falecer.",
+    "atencao": "Manifestação clara em favor de outra localidade prevalece sobre a regra supletiva.",
+    "palavras_dificeis": [
+     {
+      "termo": "Disposição beneficente",
+      "explicacao": "liberalidade destinada a finalidade de assistência"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 118,
+   "target_id": "CC2002:ART.1939",
+   "audit_position": 1910,
+   "subdivision_id": "CC2002:ART.1939:INC.II",
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "62b4e75e71e5e0d101edc52f0dee89f9c844c20760d0fcd88a6338adb0873308",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Alienação como causa de caducidade está no resumo, e o exemplo explica precisamente que a venda de metade do bem faz caducar apenas a parte alienada.",
+   "confidence": "ALTA",
+   "legal_text": "se o testador, por qualquer título, alienar no todo ou em parte a coisa legada; nesse caso, caducará até onde ela deixou de pertencer ao testador;",
+   "baseline_entenda_content": {
+    "o_que_diz": "O legado perde eficácia nas hipóteses legais de transformação, alienação, perda da coisa, exclusão ou morte prévia do legatário.",
+    "o_que_significa": "A disposição deixa de produzir resultado quando seu objeto ou beneficiário já não pode subsistir como previsto.",
+    "exemplo_pratico": "O testador vende metade do bem legado; a caducidade alcança somente a parte alienada.",
+    "atencao": "Perecimento ou evicção só produzem o efeito indicado quando não houver culpa de quem devia cumprir o legado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Caducidade",
+      "explicacao": "perda de eficácia por fato posterior previsto em lei"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 119,
+   "target_id": "CC2002:ART.1942",
+   "audit_position": 1913,
+   "subdivision_id": "CC2002:ART.1942:CAPUT",
+   "sample_reasons": [
+    "HASH_DETERMINISTIC_FILL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "0ae42d10a4a02775c965e0c0915df450b534f92eba4a9224e643bbaf14f1c6fb",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Co-legatários, nomeação conjunta, coisa única e certa e indivisibilidade com risco de desvalorização estão todos representados.",
+   "confidence": "ALTA",
+   "legal_text": "O direito de acrescer competirá aos co-legatários, quando nomeados conjuntamente a respeito de uma só coisa, determinada e certa, ou quando o objeto do legado não puder ser dividido sem risco de desvalorização.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Co-legatários têm acréscimo quando recebem juntos coisa única e certa ou objeto cuja divisão causaria desvalorização.",
+    "o_que_significa": "A unidade econômica do legado justifica concentrar a quota vaga nos demais beneficiários conjuntos.",
+    "exemplo_pratico": "Dois legatários recebem coleção indivisível; faltando um, o outro absorve a parcela.",
+    "atencao": "Nomeação separada e objeto divisível podem conduzir a solução diversa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Co-legatário",
+      "explicacao": "pessoa que compartilha o mesmo legado com outra"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  },
+  {
+   "sample_position": 120,
+   "target_id": "CC2002:ART.2031",
+   "audit_position": 2002,
+   "subdivision_id": "CC2002:ART.2031:CAPUT",
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_1345_2017"
+   ],
+   "source_finding_sha256": "3e1203cd95066d58f2001690a37c23361aa8757fbc7997807325088d162ce1f0",
+   "source_classification": "PARCIAL",
+   "source_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "final_classification": "COBERTA",
+   "final_severity": null,
+   "rationale": "Entidades e empresários anteriores, prazo até 11 de janeiro de 2007 e dever de adaptação estão expressos; 'entidades' resume adequadamente associações, sociedades e fundações no contexto.",
+   "confidence": "ALTA",
+   "legal_text": "As associações, sociedades e fundações, constituídas na forma das leis anteriores, bem como os empresários, deverão se adaptar às disposições deste Código até 11 de janeiro de 2007.",
+   "baseline_entenda_content": {
+    "o_que_diz": "Entidades e empresários anteriores tiveram prazo até 11 de janeiro de 2007 para adaptação, excetuados organizações religiosas e partidos.",
+    "o_que_significa": "Foi regra de transição institucional com prazo já encerrado.",
+    "exemplo_pratico": "Sociedade antiga alterou contrato até a data histórica indicada.",
+    "atencao": "Não se apresenta 2007 como prazo ainda aberto; situações atuais seguem o regime vigente.",
+    "palavras_dificeis": [
+     {
+      "termo": "Adaptação societária",
+      "explicacao": "adequação de estrutura antiga à lei nova"
+     }
+    ]
+   },
+   "five_fields_checked": true,
+   "inventory_v2_checked": true
+  }
+ ]
+}

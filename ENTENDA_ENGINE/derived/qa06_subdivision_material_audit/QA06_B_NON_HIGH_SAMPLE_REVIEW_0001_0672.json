@@ -1,0 +1,585 @@
+{
+ "schema_version": 1,
+ "mission": "QA-06-FINDINGS-QA",
+ "as_of": "2026-11-13",
+ "status": "INDEPENDENT_CROSS_REVIEW_COMPLETE",
+ "module": "0001_0672",
+ "sample_plan": "QA06_B_NON_HIGH_STRATIFIED_SAMPLE.json",
+ "sample_plan_sha256": "8b51393bc70595a9284f89083844b7ebbf261176346b91921ef36490083b9c42",
+ "source_module": "QA06_B_FINDINGS_V2_0001_0672.json",
+ "source_module_sha256": "892a7afb7f10254f8ed3c935c17a948c0cba0d11342571b9c3572373040f31d2",
+ "inventory_file": "QA06_SUBDIVISION_INVENTORY_V2_CORRECTED.json",
+ "inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+ "baseline_corpus": "CC2002_QA05.entenda.jsonl",
+ "baseline_corpus_sha256": "2bf21e8333b584130a3159a240a96d5225958a53821971a184285ecc222a082f",
+ "total": 16,
+ "decision_counts": {
+  "CONFIRMADO": 6,
+  "NAO_CONFIRMADO": 1,
+  "RECLASSIFICADO": 9
+ },
+ "final_classification_counts": {
+  "AUSENTE": 4,
+  "COBERTA": 1,
+  "PARCIAL": 11
+ },
+ "final_severity_counts": {
+  "ALTO": 9,
+  "MÉDIO": 6,
+  "NAO_APLICAVEL": 1
+ },
+ "review_declaration": {
+  "reviewer_did_not_audit_source_range": true,
+  "started_from_full_v2_text_and_five_qa05_fields": true,
+  "original_finding_not_used_as_automatic_proof": true,
+  "module_modified": false,
+  "corpus_modified": false,
+  "human_approval_claimed": false
+ },
+ "records": [
+  {
+   "sample_position": 1,
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_0001_0672"
+   ],
+   "finding_id": "QA06-B-0041-0024",
+   "source_finding_sha256": "99ccd51d0fb4cabddf3b99dd5aa084eecab88298705c05f9c9c9e2893b29e757",
+   "target_id": "CC2002:ART.41",
+   "subdivision_id": "CC2002:ART.41:INC.II",
+   "legal_text_v2": "os Estados, o Distrito Federal e os Territórios;",
+   "qa05_explanation_id": "ENTENDA/CC2002:ART.41/BASE/3",
+   "qa05_content": {
+    "o_que_diz": "O artigo enumera pessoas jurídicas de direito público interno e admite outras criadas por lei. Além da enumeração, o parágrafo único do art. 41 determina que, salvo disposição contrária, pessoas jurídicas de direito público estruturadas sob direito privado se regem, no que couber ao funcionamento, pelas normas do Código Civil.",
+    "o_que_significa": "União, entes federativos, municípios, autarquias e entidades públicas legalmente qualificadas integram essa categoria.",
+    "exemplo_pratico": "Uma autarquia celebra contrato em nome próprio sob regime público.",
+    "atencao": "Entidade estatal com estrutura privada pode exigir classificação mais cuidadosa.",
+    "palavras_dificeis": [
+     {
+      "termo": "autarquia",
+      "explicacao": "entidade pública criada por lei para desempenhar função administrativa própria"
+     }
+    ]
+   },
+   "original_classification": "PARCIAL",
+   "original_severity": "MÉDIO",
+   "decision": "CONFIRMADO",
+   "justification": "“Entes federativos” cobre Estados e Distrito Federal, mas não Territórios: estes integram a União e não são entes federativos autônomos. Como o inciso os enumera expressamente e a explicação não o faz, a cobertura é apenas parcial.",
+   "final_classification": "PARCIAL",
+   "final_severity": "MÉDIO",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "source_checked_on": "2026-11-13"
+  },
+  {
+   "sample_position": 2,
+   "sample_reasons": [
+    "HASH_DETERMINISTIC_FILL_MODULE_0001_0672"
+   ],
+   "finding_id": "QA06-B-0044-0025",
+   "source_finding_sha256": "040a99fe8705bc5db82fc12c721852900f706795d819c3084e495cec86aeddc0",
+   "target_id": "CC2002:ART.44",
+   "subdivision_id": "CC2002:ART.44:PAR.1",
+   "legal_text_v2": "São livres a criação, a organização, a estruturação interna e o funcionamento das organizações religiosas, sendo vedado ao poder público negar-lhes reconhecimento ou registro dos atos constitutivos e necessários ao seu funcionamento.",
+   "qa05_explanation_id": "ENTENDA/CC2002:ART.44/BASE/2",
+   "qa05_content": {
+    "o_que_diz": "São pessoas jurídicas privadas associações, sociedades, fundações, organizações religiosas, partidos políticos e empreendimentos de economia solidária.",
+    "o_que_significa": "Organizações religiosas têm liberdade de criação e funcionamento; partidos seguem lei específica. As regras de associações aplicam-se subsidiariamente aos empreendimentos solidários e às sociedades referidas pelo § 2º.",
+    "exemplo_pratico": "Um grupo cultural sem finalidade econômica registra associação; uma cooperativa popular pode precisar verificar se se enquadra no regime especial de economia solidária.",
+    "atencao": "O inciso VII e o § 2º mudaram em 2024. Classificar a entidade corretamente é essencial, pois cada espécie possui constituição e regime próprios.",
+    "palavras_dificeis": [
+     {
+      "termo": "subsidiariamente",
+      "explicacao": "de forma complementar, para preencher lacuna sem substituir a disciplina principal"
+     }
+    ]
+   },
+   "original_classification": "PARCIAL",
+   "original_severity": "MÉDIO",
+   "decision": "RECLASSIFICADO",
+   "justification": "A liberdade de criação e funcionamento foi explicada, porém falta a proibição autônoma dirigida ao poder público de negar reconhecimento ou registro. A classificação PARCIAL permanece, mas a omissão incide diretamente sobre garantia jurídica e proibição estatal, justificando severidade ALTO.",
+   "final_classification": "PARCIAL",
+   "final_severity": "ALTO",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "source_checked_on": "2026-11-13"
+  },
+  {
+   "sample_position": 3,
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_0001_0672"
+   ],
+   "finding_id": "QA06-B-0056-0035",
+   "source_finding_sha256": "c8b45075a9e0586a11ead0d6b3169be43ec47deea268780f9c28ad81ffc99319",
+   "target_id": "CC2002:ART.54",
+   "subdivision_id": "CC2002:ART.54:INC.III",
+   "legal_text_v2": "os direitos e deveres dos associados;",
+   "qa05_explanation_id": "ENTENDA/CC2002:ART.54/BASE/2",
+   "qa05_content": {
+    "o_que_diz": "O estatuto da associação deve conter elementos obrigatórios sobre finalidade, membros, recursos, órgãos, alteração, dissolução, contas e gestão.",
+    "o_que_significa": "A falta de requisito essencial pode tornar o estatuto inválido e comprometer registro ou governança.",
+    "exemplo_pratico": "Estatuto define admissão e exclusão, fontes de receita e forma de aprovar contas.",
+    "atencao": "Modelos genéricos devem ser adaptados à atividade e à legislação especial aplicável.",
+    "palavras_dificeis": [
+     {
+      "termo": "estatuto",
+      "explicacao": "conjunto de regras internas que organiza a associação"
+     }
+    ]
+   },
+   "original_classification": "PARCIAL",
+   "original_severity": "MÉDIO",
+   "decision": "CONFIRMADO",
+   "justification": "A referência genérica a “membros” não informa que o estatuto deve declarar direitos e deveres dos associados. Há enquadramento geral do conteúdo estatutário, mas o requisito específico do inciso III permanece implícito.",
+   "final_classification": "PARCIAL",
+   "final_severity": "MÉDIO",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "source_checked_on": "2026-11-13"
+  },
+  {
+   "sample_position": 4,
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_0001_0672"
+   ],
+   "finding_id": "QA06-B-0056-0034",
+   "source_finding_sha256": "39d692c0b43f2b694e6f94e999d0a97116f07a49d5825cdb660d4b9e46d6dbce",
+   "target_id": "CC2002:ART.54",
+   "subdivision_id": "CC2002:ART.54:INC.I",
+   "legal_text_v2": "a denominação, os fins e a sede da associação;",
+   "qa05_explanation_id": "ENTENDA/CC2002:ART.54/BASE/2",
+   "qa05_content": {
+    "o_que_diz": "O estatuto da associação deve conter elementos obrigatórios sobre finalidade, membros, recursos, órgãos, alteração, dissolução, contas e gestão.",
+    "o_que_significa": "A falta de requisito essencial pode tornar o estatuto inválido e comprometer registro ou governança.",
+    "exemplo_pratico": "Estatuto define admissão e exclusão, fontes de receita e forma de aprovar contas.",
+    "atencao": "Modelos genéricos devem ser adaptados à atividade e à legislação especial aplicável.",
+    "palavras_dificeis": [
+     {
+      "termo": "estatuto",
+      "explicacao": "conjunto de regras internas que organiza a associação"
+     }
+    ]
+   },
+   "original_classification": "PARCIAL",
+   "original_severity": "MÉDIO",
+   "decision": "CONFIRMADO",
+   "justification": "A finalidade aparece na síntese, mas denominação e sede — dois dos três dados cumulativos do inciso I — não aparecem nos cinco campos. A cobertura parcial e a severidade média estão adequadas.",
+   "final_classification": "PARCIAL",
+   "final_severity": "MÉDIO",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "source_checked_on": "2026-11-13"
+  },
+  {
+   "sample_position": 5,
+   "sample_reasons": [
+    "HASH_DETERMINISTIC_FILL_MODULE_0001_0672"
+   ],
+   "finding_id": "QA06-B-0056-0036",
+   "source_finding_sha256": "3f0dd60dc755c3d5c5698d661745a9299f897ed420b0ddb05df04e289e26b1a4",
+   "target_id": "CC2002:ART.54",
+   "subdivision_id": "CC2002:ART.54:INC.V",
+   "legal_text_v2": "o modo de constituição e de funcionamento dos órgãos deliberativos;",
+   "qa05_explanation_id": "ENTENDA/CC2002:ART.54/BASE/2",
+   "qa05_content": {
+    "o_que_diz": "O estatuto da associação deve conter elementos obrigatórios sobre finalidade, membros, recursos, órgãos, alteração, dissolução, contas e gestão.",
+    "o_que_significa": "A falta de requisito essencial pode tornar o estatuto inválido e comprometer registro ou governança.",
+    "exemplo_pratico": "Estatuto define admissão e exclusão, fontes de receita e forma de aprovar contas.",
+    "atencao": "Modelos genéricos devem ser adaptados à atividade e à legislação especial aplicável.",
+    "palavras_dificeis": [
+     {
+      "termo": "estatuto",
+      "explicacao": "conjunto de regras internas que organiza a associação"
+     }
+    ]
+   },
+   "original_classification": "PARCIAL",
+   "original_severity": "MÉDIO",
+   "decision": "CONFIRMADO",
+   "justification": "A palavra “órgãos” apenas indica o tema; não explica que o estatuto deve disciplinar a constituição e o funcionamento dos órgãos deliberativos. Existe cobertura de contexto, mas não dos dois comandos materiais.",
+   "final_classification": "PARCIAL",
+   "final_severity": "MÉDIO",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "source_checked_on": "2026-11-13"
+  },
+  {
+   "sample_position": 6,
+   "sample_reasons": [
+    "STRATIFIED_AUSENTE_MODULE_0001_0672"
+   ],
+   "finding_id": "QA06-B-0207-0115",
+   "source_finding_sha256": "4833c21abbb5e31bd1e00a319725708f3f594ce4afd6ba73d40a5a57484f0c2f",
+   "target_id": "CC2002:ART.206",
+   "subdivision_id": "CC2002:ART.206:PAR.3:INC.VII:AL.b",
+   "legal_text_v2": "para os administradores, ou fiscais, da apresentação, aos sócios, do balanço referente ao exercício em que a violação tenha sido praticada, ou da reunião ou assembléia geral que dela deva tomar conhecimento;",
+   "qa05_explanation_id": "ENTENDA/CC2002:ART.206/BASE/1",
+   "qa05_content": {
+    "o_que_diz": "O artigo fixa prazos especiais de um, dois, três, quatro e cinco anos para pretensões expressamente enumeradas.",
+    "o_que_significa": "Em um ano estão, entre outras, hospedagem e alimentos consumidos no estabelecimento, emolumentos de auxiliares e peritos e créditos ligados ao encerramento de sociedade; o antigo inciso de seguro do § 1º foi revogado. Em dois anos prescrevem prestações alimentares vencidas. Em três anos entram aluguéis, rendas, juros e dividendos periódicos, enriquecimento sem causa, reparação civil, lucros de má-fé, certas responsabilidades societárias, títulos de crédito e seguro obrigatório. Em quatro anos, pretensão relativa à tutela. Em cinco anos, dívida líquida documentada, honorários profissionais e despesas judiciais do vencedor.",
+    "exemplo_pratico": "Cobrança de dívida líquida constante de contrato particular sujeita-se, em regra, ao prazo de cinco anos.",
+    "atencao": "Cada prazo depende da qualificação exata da pretensão e do marco inicial próprio. O § 1º, II, está revogado desde a vigência da Lei 15.040/2024 e não deve ser usado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prazo especial",
+      "explicacao": "período prescricional definido para uma categoria específica de pretensão"
+     }
+    ]
+   },
+   "original_classification": "AUSENTE",
+   "original_severity": "MÉDIO",
+   "decision": "RECLASSIFICADO",
+   "justification": "A explicação apenas agrega “certas responsabilidades societárias” no prazo de três anos. Não identifica administradores ou fiscais nem os marcos alternativos de apresentação do balanço ou reunião/assembleia. A ausência está confirmada; por omitir termo inicial prescricional específico, a severidade final é ALTO.",
+   "final_classification": "AUSENTE",
+   "final_severity": "ALTO",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "source_checked_on": "2026-11-13"
+  },
+  {
+   "sample_position": 7,
+   "sample_reasons": [
+    "STRATIFIED_AUSENTE_MODULE_0001_0672"
+   ],
+   "finding_id": "QA06-B-0207-0116",
+   "source_finding_sha256": "73f77971253ae7ad8ab2a67b5a01c508efa44c268cb11012009814314054000e",
+   "target_id": "CC2002:ART.206",
+   "subdivision_id": "CC2002:ART.206:PAR.3:INC.VII:AL.c",
+   "legal_text_v2": "para os liquidantes, da primeira assembléia semestral posterior à violação;",
+   "qa05_explanation_id": "ENTENDA/CC2002:ART.206/BASE/1",
+   "qa05_content": {
+    "o_que_diz": "O artigo fixa prazos especiais de um, dois, três, quatro e cinco anos para pretensões expressamente enumeradas.",
+    "o_que_significa": "Em um ano estão, entre outras, hospedagem e alimentos consumidos no estabelecimento, emolumentos de auxiliares e peritos e créditos ligados ao encerramento de sociedade; o antigo inciso de seguro do § 1º foi revogado. Em dois anos prescrevem prestações alimentares vencidas. Em três anos entram aluguéis, rendas, juros e dividendos periódicos, enriquecimento sem causa, reparação civil, lucros de má-fé, certas responsabilidades societárias, títulos de crédito e seguro obrigatório. Em quatro anos, pretensão relativa à tutela. Em cinco anos, dívida líquida documentada, honorários profissionais e despesas judiciais do vencedor.",
+    "exemplo_pratico": "Cobrança de dívida líquida constante de contrato particular sujeita-se, em regra, ao prazo de cinco anos.",
+    "atencao": "Cada prazo depende da qualificação exata da pretensão e do marco inicial próprio. O § 1º, II, está revogado desde a vigência da Lei 15.040/2024 e não deve ser usado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prazo especial",
+      "explicacao": "período prescricional definido para uma categoria específica de pretensão"
+     }
+    ]
+   },
+   "original_classification": "AUSENTE",
+   "original_severity": "MÉDIO",
+   "decision": "RECLASSIFICADO",
+   "justification": "Não há menção a liquidantes nem à primeira assembleia semestral posterior à violação. O marco inicial prescricional autônomo está ausente e pode alterar o cálculo do prazo, razão pela qual a severidade deve ser ALTO.",
+   "final_classification": "AUSENTE",
+   "final_severity": "ALTO",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "source_checked_on": "2026-11-13"
+  },
+  {
+   "sample_position": 8,
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_0001_0672"
+   ],
+   "finding_id": "QA06-B-0207-0112",
+   "source_finding_sha256": "553e341c613c8dd1316dfda723bb02c2673af199b479e9608fde6d7a66bd8dad",
+   "target_id": "CC2002:ART.206",
+   "subdivision_id": "CC2002:ART.206:PAR.3:INC.VI",
+   "legal_text_v2": "a pretensão de restituição dos lucros ou dividendos recebidos de má-fé, correndo o prazo da data em que foi deliberada a distribuição;",
+   "qa05_explanation_id": "ENTENDA/CC2002:ART.206/BASE/1",
+   "qa05_content": {
+    "o_que_diz": "O artigo fixa prazos especiais de um, dois, três, quatro e cinco anos para pretensões expressamente enumeradas.",
+    "o_que_significa": "Em um ano estão, entre outras, hospedagem e alimentos consumidos no estabelecimento, emolumentos de auxiliares e peritos e créditos ligados ao encerramento de sociedade; o antigo inciso de seguro do § 1º foi revogado. Em dois anos prescrevem prestações alimentares vencidas. Em três anos entram aluguéis, rendas, juros e dividendos periódicos, enriquecimento sem causa, reparação civil, lucros de má-fé, certas responsabilidades societárias, títulos de crédito e seguro obrigatório. Em quatro anos, pretensão relativa à tutela. Em cinco anos, dívida líquida documentada, honorários profissionais e despesas judiciais do vencedor.",
+    "exemplo_pratico": "Cobrança de dívida líquida constante de contrato particular sujeita-se, em regra, ao prazo de cinco anos.",
+    "atencao": "Cada prazo depende da qualificação exata da pretensão e do marco inicial próprio. O § 1º, II, está revogado desde a vigência da Lei 15.040/2024 e não deve ser usado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prazo especial",
+      "explicacao": "período prescricional definido para uma categoria específica de pretensão"
+     }
+    ]
+   },
+   "original_classification": "PARCIAL",
+   "original_severity": "MÉDIO",
+   "decision": "RECLASSIFICADO",
+   "justification": "“Lucros de má-fé” e o prazo trienal aparecem, mas faltam a restituição de lucros ou dividendos recebidos de má-fé e o termo inicial na deliberação da distribuição. A classificação parcial é correta; a omissão do objeto e do marco inicial eleva a severidade para ALTO.",
+   "final_classification": "PARCIAL",
+   "final_severity": "ALTO",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "source_checked_on": "2026-11-13"
+  },
+  {
+   "sample_position": 9,
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_0001_0672"
+   ],
+   "finding_id": "QA06-B-0207-0114",
+   "source_finding_sha256": "41d8b53ca0703ff1bb8ba8a0f8f9af2b095a0afd3328e661ab81cb9086e2a570",
+   "target_id": "CC2002:ART.206",
+   "subdivision_id": "CC2002:ART.206:PAR.3:INC.VII:AL.a",
+   "legal_text_v2": "para os fundadores, da publicação dos atos constitutivos da sociedade anônima;",
+   "qa05_explanation_id": "ENTENDA/CC2002:ART.206/BASE/1",
+   "qa05_content": {
+    "o_que_diz": "O artigo fixa prazos especiais de um, dois, três, quatro e cinco anos para pretensões expressamente enumeradas.",
+    "o_que_significa": "Em um ano estão, entre outras, hospedagem e alimentos consumidos no estabelecimento, emolumentos de auxiliares e peritos e créditos ligados ao encerramento de sociedade; o antigo inciso de seguro do § 1º foi revogado. Em dois anos prescrevem prestações alimentares vencidas. Em três anos entram aluguéis, rendas, juros e dividendos periódicos, enriquecimento sem causa, reparação civil, lucros de má-fé, certas responsabilidades societárias, títulos de crédito e seguro obrigatório. Em quatro anos, pretensão relativa à tutela. Em cinco anos, dívida líquida documentada, honorários profissionais e despesas judiciais do vencedor.",
+    "exemplo_pratico": "Cobrança de dívida líquida constante de contrato particular sujeita-se, em regra, ao prazo de cinco anos.",
+    "atencao": "Cada prazo depende da qualificação exata da pretensão e do marco inicial próprio. O § 1º, II, está revogado desde a vigência da Lei 15.040/2024 e não deve ser usado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prazo especial",
+      "explicacao": "período prescricional definido para uma categoria específica de pretensão"
+     }
+    ]
+   },
+   "original_classification": "PARCIAL",
+   "original_severity": "MÉDIO",
+   "decision": "RECLASSIFICADO",
+   "justification": "A expressão genérica “responsabilidades societárias” não permite recuperar fundadores, publicação dos atos constitutivos ou sociedade anônima. O comando desta alínea não está materialmente representado; trata-se de AUSENTE e ALTO pelo marco prescricional omitido.",
+   "final_classification": "AUSENTE",
+   "final_severity": "ALTO",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "source_checked_on": "2026-11-13"
+  },
+  {
+   "sample_position": 10,
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_0001_0672"
+   ],
+   "finding_id": "QA06-B-0207-0120",
+   "source_finding_sha256": "642166b6419cec3a592444593ee976c8d6942f5c7aa8610bfcda1780f58274cb",
+   "target_id": "CC2002:ART.206",
+   "subdivision_id": "CC2002:ART.206:PAR.5:INC.III",
+   "legal_text_v2": "a pretensão do vencedor para haver do vencido o que despendeu em juízo.",
+   "qa05_explanation_id": "ENTENDA/CC2002:ART.206/BASE/1",
+   "qa05_content": {
+    "o_que_diz": "O artigo fixa prazos especiais de um, dois, três, quatro e cinco anos para pretensões expressamente enumeradas.",
+    "o_que_significa": "Em um ano estão, entre outras, hospedagem e alimentos consumidos no estabelecimento, emolumentos de auxiliares e peritos e créditos ligados ao encerramento de sociedade; o antigo inciso de seguro do § 1º foi revogado. Em dois anos prescrevem prestações alimentares vencidas. Em três anos entram aluguéis, rendas, juros e dividendos periódicos, enriquecimento sem causa, reparação civil, lucros de má-fé, certas responsabilidades societárias, títulos de crédito e seguro obrigatório. Em quatro anos, pretensão relativa à tutela. Em cinco anos, dívida líquida documentada, honorários profissionais e despesas judiciais do vencedor.",
+    "exemplo_pratico": "Cobrança de dívida líquida constante de contrato particular sujeita-se, em regra, ao prazo de cinco anos.",
+    "atencao": "Cada prazo depende da qualificação exata da pretensão e do marco inicial próprio. O § 1º, II, está revogado desde a vigência da Lei 15.040/2024 e não deve ser usado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prazo especial",
+      "explicacao": "período prescricional definido para uma categoria específica de pretensão"
+     }
+    ]
+   },
+   "original_classification": "PARCIAL",
+   "original_severity": "MÉDIO",
+   "decision": "NAO_CONFIRMADO",
+   "justification": "O artigo fixa o prazo de cinco anos e a explicação identifica expressamente “despesas judiciais do vencedor”, que representa a pretensão do vencedor de reaver do vencido o que despendeu em juízo. A formulação conjunta preserva sujeito, objeto e prazo; o achado de omissão lexical não se confirma.",
+   "final_classification": "COBERTA",
+   "final_severity": "NAO_APLICAVEL",
+   "confidence": "ALTA",
+   "human_review_required": false,
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "source_checked_on": "2026-11-13"
+  },
+  {
+   "sample_position": 11,
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_0001_0672"
+   ],
+   "finding_id": "QA06-B-0207-0113",
+   "source_finding_sha256": "e0cc44aa04cd8986e7cca7ab5d653a56644366ba7a06d9c95a428fe05c090552",
+   "target_id": "CC2002:ART.206",
+   "subdivision_id": "CC2002:ART.206:PAR.3:INC.VII",
+   "legal_text_v2": "a pretensão contra as pessoas em seguida indicadas por violação da lei ou do estatuto, contado o prazo:",
+   "qa05_explanation_id": "ENTENDA/CC2002:ART.206/BASE/1",
+   "qa05_content": {
+    "o_que_diz": "O artigo fixa prazos especiais de um, dois, três, quatro e cinco anos para pretensões expressamente enumeradas.",
+    "o_que_significa": "Em um ano estão, entre outras, hospedagem e alimentos consumidos no estabelecimento, emolumentos de auxiliares e peritos e créditos ligados ao encerramento de sociedade; o antigo inciso de seguro do § 1º foi revogado. Em dois anos prescrevem prestações alimentares vencidas. Em três anos entram aluguéis, rendas, juros e dividendos periódicos, enriquecimento sem causa, reparação civil, lucros de má-fé, certas responsabilidades societárias, títulos de crédito e seguro obrigatório. Em quatro anos, pretensão relativa à tutela. Em cinco anos, dívida líquida documentada, honorários profissionais e despesas judiciais do vencedor.",
+    "exemplo_pratico": "Cobrança de dívida líquida constante de contrato particular sujeita-se, em regra, ao prazo de cinco anos.",
+    "atencao": "Cada prazo depende da qualificação exata da pretensão e do marco inicial próprio. O § 1º, II, está revogado desde a vigência da Lei 15.040/2024 e não deve ser usado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prazo especial",
+      "explicacao": "período prescricional definido para uma categoria específica de pretensão"
+     }
+    ]
+   },
+   "original_classification": "PARCIAL",
+   "original_severity": "MÉDIO",
+   "decision": "CONFIRMADO",
+   "justification": "A explicação situa responsabilidades societárias no prazo de três anos e adverte sobre marcos próprios, mas não explicita que o inciso alcança pretensões por violação da lei ou do estatuto contra as pessoas listadas nas alíneas. O cabeçalho está apenas parcialmente representado.",
+   "final_classification": "PARCIAL",
+   "final_severity": "MÉDIO",
+   "confidence": "MÉDIA",
+   "human_review_required": true,
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "source_checked_on": "2026-11-13"
+  },
+  {
+   "sample_position": 12,
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_0001_0672"
+   ],
+   "finding_id": "QA06-B-0207-0119",
+   "source_finding_sha256": "7798897dc70284c20d3f482cf79c7ee0ce726ab4e0ec3dc93dcdd425b08c2134",
+   "target_id": "CC2002:ART.206",
+   "subdivision_id": "CC2002:ART.206:PAR.5:INC.II",
+   "legal_text_v2": "a pretensão dos profissionais liberais em geral, procuradores judiciais, curadores e professores pelos seus honorários, contado o prazo da conclusão dos serviços, da cessação dos respectivos contratos ou mandato;",
+   "qa05_explanation_id": "ENTENDA/CC2002:ART.206/BASE/1",
+   "qa05_content": {
+    "o_que_diz": "O artigo fixa prazos especiais de um, dois, três, quatro e cinco anos para pretensões expressamente enumeradas.",
+    "o_que_significa": "Em um ano estão, entre outras, hospedagem e alimentos consumidos no estabelecimento, emolumentos de auxiliares e peritos e créditos ligados ao encerramento de sociedade; o antigo inciso de seguro do § 1º foi revogado. Em dois anos prescrevem prestações alimentares vencidas. Em três anos entram aluguéis, rendas, juros e dividendos periódicos, enriquecimento sem causa, reparação civil, lucros de má-fé, certas responsabilidades societárias, títulos de crédito e seguro obrigatório. Em quatro anos, pretensão relativa à tutela. Em cinco anos, dívida líquida documentada, honorários profissionais e despesas judiciais do vencedor.",
+    "exemplo_pratico": "Cobrança de dívida líquida constante de contrato particular sujeita-se, em regra, ao prazo de cinco anos.",
+    "atencao": "Cada prazo depende da qualificação exata da pretensão e do marco inicial próprio. O § 1º, II, está revogado desde a vigência da Lei 15.040/2024 e não deve ser usado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prazo especial",
+      "explicacao": "período prescricional definido para uma categoria específica de pretensão"
+     }
+    ]
+   },
+   "original_classification": "PARCIAL",
+   "original_severity": "MÉDIO",
+   "decision": "RECLASSIFICADO",
+   "justification": "“Honorários profissionais” e o prazo quinquenal estão presentes, mas faltam as categorias abrangidas e, sobretudo, os três marcos iniciais alternativos: conclusão dos serviços, cessação do contrato ou do mandato. A omissão temporal exige severidade ALTO.",
+   "final_classification": "PARCIAL",
+   "final_severity": "ALTO",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "source_checked_on": "2026-11-13"
+  },
+  {
+   "sample_position": 13,
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_0001_0672"
+   ],
+   "finding_id": "QA06-B-0207-0117",
+   "source_finding_sha256": "78cbf483527a936c793ac25852c01ae71d2584a09222e4745b83c11389549405",
+   "target_id": "CC2002:ART.206",
+   "subdivision_id": "CC2002:ART.206:PAR.3:INC.VIII",
+   "legal_text_v2": "a pretensão para haver o pagamento de título de crédito, a contar do vencimento, ressalvadas as disposições de lei especial;",
+   "qa05_explanation_id": "ENTENDA/CC2002:ART.206/BASE/1",
+   "qa05_content": {
+    "o_que_diz": "O artigo fixa prazos especiais de um, dois, três, quatro e cinco anos para pretensões expressamente enumeradas.",
+    "o_que_significa": "Em um ano estão, entre outras, hospedagem e alimentos consumidos no estabelecimento, emolumentos de auxiliares e peritos e créditos ligados ao encerramento de sociedade; o antigo inciso de seguro do § 1º foi revogado. Em dois anos prescrevem prestações alimentares vencidas. Em três anos entram aluguéis, rendas, juros e dividendos periódicos, enriquecimento sem causa, reparação civil, lucros de má-fé, certas responsabilidades societárias, títulos de crédito e seguro obrigatório. Em quatro anos, pretensão relativa à tutela. Em cinco anos, dívida líquida documentada, honorários profissionais e despesas judiciais do vencedor.",
+    "exemplo_pratico": "Cobrança de dívida líquida constante de contrato particular sujeita-se, em regra, ao prazo de cinco anos.",
+    "atencao": "Cada prazo depende da qualificação exata da pretensão e do marco inicial próprio. O § 1º, II, está revogado desde a vigência da Lei 15.040/2024 e não deve ser usado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prazo especial",
+      "explicacao": "período prescricional definido para uma categoria específica de pretensão"
+     }
+    ]
+   },
+   "original_classification": "PARCIAL",
+   "original_severity": "MÉDIO",
+   "decision": "RECLASSIFICADO",
+   "justification": "A explicação inclui títulos de crédito no prazo de três anos, mas não registra a contagem a partir do vencimento nem a ressalva da lei especial. A exceção e o marco inicial são materiais; a classificação segue PARCIAL, com severidade ALTO.",
+   "final_classification": "PARCIAL",
+   "final_severity": "ALTO",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "source_checked_on": "2026-11-13"
+  },
+  {
+   "sample_position": 14,
+   "sample_reasons": [
+    "STRATIFIED_PARCIAL_MODULE_0001_0672"
+   ],
+   "finding_id": "QA06-B-0207-0111",
+   "source_finding_sha256": "3557f75130d976f6f2e865e529fe7c42f051d69739ffcef5a909e098183427c0",
+   "target_id": "CC2002:ART.206",
+   "subdivision_id": "CC2002:ART.206:PAR.1:INC.V",
+   "legal_text_v2": "a pretensão dos credores não pagos contra os sócios ou acionistas e os liquidantes, contado o prazo da publicação da ata de encerramento da liquidação da sociedade.",
+   "qa05_explanation_id": "ENTENDA/CC2002:ART.206/BASE/1",
+   "qa05_content": {
+    "o_que_diz": "O artigo fixa prazos especiais de um, dois, três, quatro e cinco anos para pretensões expressamente enumeradas.",
+    "o_que_significa": "Em um ano estão, entre outras, hospedagem e alimentos consumidos no estabelecimento, emolumentos de auxiliares e peritos e créditos ligados ao encerramento de sociedade; o antigo inciso de seguro do § 1º foi revogado. Em dois anos prescrevem prestações alimentares vencidas. Em três anos entram aluguéis, rendas, juros e dividendos periódicos, enriquecimento sem causa, reparação civil, lucros de má-fé, certas responsabilidades societárias, títulos de crédito e seguro obrigatório. Em quatro anos, pretensão relativa à tutela. Em cinco anos, dívida líquida documentada, honorários profissionais e despesas judiciais do vencedor.",
+    "exemplo_pratico": "Cobrança de dívida líquida constante de contrato particular sujeita-se, em regra, ao prazo de cinco anos.",
+    "atencao": "Cada prazo depende da qualificação exata da pretensão e do marco inicial próprio. O § 1º, II, está revogado desde a vigência da Lei 15.040/2024 e não deve ser usado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prazo especial",
+      "explicacao": "período prescricional definido para uma categoria específica de pretensão"
+     }
+    ]
+   },
+   "original_classification": "PARCIAL",
+   "original_severity": "MÉDIO",
+   "decision": "RECLASSIFICADO",
+   "justification": "A síntese menciona créditos ligados ao encerramento da sociedade no prazo de um ano, mas não identifica credores não pagos, sócios/acionistas e liquidantes, nem a publicação da ata como termo inicial. A cobertura é parcial e a omissão prescricional é ALTO.",
+   "final_classification": "PARCIAL",
+   "final_severity": "ALTO",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "source_checked_on": "2026-11-13"
+  },
+  {
+   "sample_position": 15,
+   "sample_reasons": [
+    "HASH_DETERMINISTIC_FILL_MODULE_0001_0672"
+   ],
+   "finding_id": "QA06-B-0207-0110",
+   "source_finding_sha256": "461f51682628d8aac1debf1744f3b39183f3d3e8559c3fe5f80e1075141328b9",
+   "target_id": "CC2002:ART.206",
+   "subdivision_id": "CC2002:ART.206:PAR.1:INC.IV",
+   "legal_text_v2": "a pretensão contra os peritos, pela avaliação dos bens que entraram para a formação do capital de sociedade anônima, contado da publicação da ata da assembléia que aprovar o laudo;",
+   "qa05_explanation_id": "ENTENDA/CC2002:ART.206/BASE/1",
+   "qa05_content": {
+    "o_que_diz": "O artigo fixa prazos especiais de um, dois, três, quatro e cinco anos para pretensões expressamente enumeradas.",
+    "o_que_significa": "Em um ano estão, entre outras, hospedagem e alimentos consumidos no estabelecimento, emolumentos de auxiliares e peritos e créditos ligados ao encerramento de sociedade; o antigo inciso de seguro do § 1º foi revogado. Em dois anos prescrevem prestações alimentares vencidas. Em três anos entram aluguéis, rendas, juros e dividendos periódicos, enriquecimento sem causa, reparação civil, lucros de má-fé, certas responsabilidades societárias, títulos de crédito e seguro obrigatório. Em quatro anos, pretensão relativa à tutela. Em cinco anos, dívida líquida documentada, honorários profissionais e despesas judiciais do vencedor.",
+    "exemplo_pratico": "Cobrança de dívida líquida constante de contrato particular sujeita-se, em regra, ao prazo de cinco anos.",
+    "atencao": "Cada prazo depende da qualificação exata da pretensão e do marco inicial próprio. O § 1º, II, está revogado desde a vigência da Lei 15.040/2024 e não deve ser usado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prazo especial",
+      "explicacao": "período prescricional definido para uma categoria específica de pretensão"
+     }
+    ]
+   },
+   "original_classification": "PARCIAL",
+   "original_severity": "MÉDIO",
+   "decision": "RECLASSIFICADO",
+   "justification": "A menção geral a “peritos” refere-se a categorias agregadas e não representa a pretensão pela avaliação dos bens aportados ao capital da sociedade anônima, tampouco a publicação da ata que aprovou o laudo. O comando específico está AUSENTE e a severidade é ALTO.",
+   "final_classification": "AUSENTE",
+   "final_severity": "ALTO",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "source_checked_on": "2026-11-13"
+  },
+  {
+   "sample_position": 16,
+   "sample_reasons": [
+    "HASH_DETERMINISTIC_FILL_MODULE_0001_0672"
+   ],
+   "finding_id": "QA06-B-0217-0122",
+   "source_finding_sha256": "348d55d11cffb740f86fc39043a738113455d2980aee7e917c795cdfbab19a2c",
+   "target_id": "CC2002:ART.215",
+   "subdivision_id": "CC2002:ART.215:PAR.1:INC.III",
+   "legal_text_v2": "nome, nacionalidade, estado civil, profissão, domicílio e residência das partes e demais comparecentes, com a indicação, quando necessário, do regime de bens do casamento, nome do outro cônjuge e filiação;",
+   "qa05_explanation_id": "ENTENDA/CC2002:ART.215/BASE/1",
+   "qa05_content": {
+    "o_que_diz": "Escritura pública lavrada por tabelião tem fé pública e deve conter identificação, capacidade, vontade, requisitos legais, leitura, assinaturas e demais formalidades previstas.",
+    "o_que_significa": "O instrumento documenta de forma qualificada o ato. Deve indicar data e local, partes e comparecentes, vontade clara, exigências legais e fiscais, leitura e assinaturas. Há regras para assinatura a rogo, língua portuguesa, intérprete e testemunhas de identidade.",
+    "exemplo_pratico": "Pessoa que não sabe escrever participa da escritura e outra pessoa capaz assina a seu rogo, conforme a formalidade legal.",
+    "atencao": "Fé pública fortalece a prova do que foi formalizado, mas não torna verdadeiro todo fato externo nem salva objeto ilícito, incapacidade ou outro vício do negócio.",
+    "palavras_dificeis": [
+     {
+      "termo": "Fé pública",
+      "explicacao": "presunção qualificada de autenticidade atribuída aos atos do agente público competente"
+     }
+    ]
+   },
+   "original_classification": "PARCIAL",
+   "original_severity": "MÉDIO",
+   "decision": "CONFIRMADO",
+   "justification": "A explicação exige identificação das partes e comparecentes, mas não discrimina os dados obrigatórios nem os elementos conjugais condicionais do inciso III. O núcleo geral existe, porém a enumeração material está incompleta.",
+   "final_classification": "PARCIAL",
+   "final_severity": "MÉDIO",
+   "confidence": "ALTA",
+   "human_review_required": true,
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "source_checked_on": "2026-11-13"
+  }
+ ]
+}
