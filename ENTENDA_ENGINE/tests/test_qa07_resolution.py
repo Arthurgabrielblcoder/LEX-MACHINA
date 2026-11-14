@@ -85,6 +85,14 @@ class QA07ResolutionTest(unittest.TestCase):
         self.assertFalse(self.manifest["deployed"])
         self.assertTrue(all(r["review_status"] == "PENDING_HUMAN_REVIEW"
                             for r in self.candidate if r["status"] == "ACTIVE" and "qa07_resolution" in r))
+        final = load_json(OUT / "QA07_FINAL_CONSOLIDATION.json")
+        cp8 = load_json(OUT / "QA07_CP08.json")
+        self.assertEqual((final["high_findings"]["resolved"], final["indeterminate"]["review_complete"]),
+                         (41, 10))
+        self.assertEqual(final["medium_queue"]["preserved"], 420)
+        self.assertFalse(final["states"]["subdivision_findings_resolved"])
+        self.assertFalse(final["states"]["human_approved"])
+        self.assertEqual((cp8["directed_tests"], cp8["global_tests"], cp8["global_skips"]), (47, 512, 2))
 
     def test_finalization_and_candidate_are_byte_deterministic(self):
         paths = [OUT / "QA07_ACCEPTED_CONTENT_FINAL.json", OUT / "QA07_CP06.json",
