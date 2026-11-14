@@ -1,0 +1,798 @@
+{
+ "schema_version": 1,
+ "mission": "QA-07",
+ "role": "EDITOR",
+ "assignment": "HIGH_FINDINGS_22_41",
+ "as_of": "2026-11-13",
+ "source_queue": "QA06_B_DEFINITIVE_CORRECTION_QUEUE.json",
+ "source_queue_sha256": "d981890d1fecca4fe0e76eeefb1d6d5d398a336be065ebf7c4998ec2641668f9",
+ "baseline_corpus_sha256": "4f7481e5ec697eddc26e5e412ff9f5394c983fcfbd5cff6b678bdb7d9811aaf5",
+ "finding_total": 20,
+ "target_total": 15,
+ "decision_counts": {
+  "CORRECAO_NECESSARIA": 20
+ },
+ "records": [
+  {
+   "target_id": "CC2002:ART.1353",
+   "finding_ids": [
+    "QA06-FINAL-0323",
+    "QA06-FINAL-0326"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1353:PAR.1:INC.I",
+    "CC2002:ART.1353:PAR.3"
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "analysis": "A síntese anterior mencionava prazos e requisitos genericamente, mas não informava os marcos de 60 dias para a sessão seguinte e 90 dias para a conclusão total. Ambos condicionam a validade operacional da sessão permanente.",
+   "risk": "Não confundir o intervalo máximo até a sessão seguinte (60 dias) com o prazo total contado da abertura inicial (90 dias).",
+   "previous_explanation_id": "ENTENDA/CC2002:ART.1353/BASE/1",
+   "previous_content": {
+    "o_que_diz": "Em segunda convocação decide-se por maioria dos presentes, salvo quórum especial; reunião sem quórum especial pode tornar-se sessão permanente sob requisitos, prazo total e continuidade documental.",
+    "o_que_significa": "A sessão permanente permite completar quórum sem nova assembleia, preservando informação e identidade da deliberação.",
+    "exemplo_pratico": "Assembleia suspende e retoma votação dentro do prazo legal para alcançar quórum especial.",
+    "atencao": "Devem ser cumpridos cumulativamente autorização, convocação dos ausentes, ata parcial, prazo máximo e continuidade da pauta.",
+    "palavras_dificeis": [
+     {
+      "termo": "Sessão permanente",
+      "explicacao": "assembleia suspensa e retomada para concluir a mesma deliberação"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Em segunda convocação, a assembleia decide pela maioria dos presentes, salvo quórum especial. Se esse quórum não for alcançado, a maioria presente pode autorizar sessão permanente: devem ser definidos data, hora e deliberações da continuação, marcada para até 60 dias; presentes e ausentes devem ser convocados; a ata parcial deve registrar os argumentos e ser enviada aos ausentes; e a ata final deve consolidar as deliberações. A sessão pode ser prorrogada, mas a assembleia inteira deve terminar em até 90 dias da abertura inicial.",
+    "o_que_significa": "A reunião pode ser suspensa e retomada para completar um quórum especial, sem começar outra assembleia, desde que preserve convocação, informação, pauta, votos e documentação dentro dos dois limites de tempo.",
+    "exemplo_pratico": "Sem quórum especial em 10 de março, a assembleia fixa a continuação para 20 de abril, identifica a pauta, convoca as unidades ausentes e envia a ata parcial. Outras retomadas são possíveis, mas a conclusão não pode ultrapassar 90 dias contados de 10 de março.",
+    "atencao": "Os requisitos são cumulativos. Os votos da primeira sessão permanecem registrados; quem comparecer à continuação pode alterá-los até o encerramento da deliberação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Sessão permanente",
+      "explicacao": "continuação da mesma assembleia, suspensa e retomada para concluir deliberação que exige quórum especial"
+     },
+     {
+      "termo": "Quórum especial",
+      "explicacao": "quantidade qualificada de votos exigida por lei ou convenção"
+     }
+    ]
+   },
+   "source": {
+    "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "as_of": "2026-11-13",
+    "inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+    "legal_text_sha256": [
+     "5882efd74c30a78fd34eeafc08bc8ae16dccafaa022a06821727adb29a181041",
+     "c4ee137b00d470e65f47e8ce3c70ef11225aabc259b129e76151e6cc533f175f"
+    ]
+   },
+   "human_approval_claimed": false,
+   "independent_revalidation_status": "PENDING"
+  },
+  {
+   "target_id": "CC2002:ART.1354-A",
+   "finding_ids": [
+    "QA06-FINAL-0328"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1354-A:PAR.2"
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "analysis": "A redação anterior sugeria dever amplo de tratar problemas técnicos, mas não explicitava a exoneração legal por equipamentos, conexão ou outras circunstâncias fora do controle da administração.",
+   "risk": "A exoneração não cobre falha da própria administração nem autoriza restringir voz, debate ou voto.",
+   "previous_explanation_id": "ENTENDA/CC2002:ART.1354-A/BASE/1",
+   "previous_content": {
+    "o_que_diz": "Assembleias podem ser eletrônicas se a convenção não proibir e se voz, debate e voto forem preservados; edital deve explicar acesso, coleta de votos e eventual forma híbrida.",
+    "o_que_significa": "A tecnologia é válida quando garante participação equivalente e segurança procedimental.",
+    "exemplo_pratico": "Condomínio realiza reunião híbrida com plataforma informada no edital e registro dos votos.",
+    "atencao": "Problema técnico relevante deve ser tratado sem privar condômino; regras complementares podem constar do regimento.",
+    "palavras_dificeis": [
+     {
+      "termo": "Assembleia eletrônica",
+      "explicacao": "reunião condominial realizada por meios digitais"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Assembleias condominiais podem ser eletrônicas ou híbridas se a convenção não proibir e se preservarem voz, debate e voto. A convocação deve explicar acesso, manifestação e coleta de votos. A administração não responde por falhas nos equipamentos ou na internet dos condôminos ou representantes, nem por outras situações fora de seu controle.",
+    "o_que_significa": "A reunião digital é válida com participação e procedimento adequados, mas cada participante assume os problemas de sua própria estrutura tecnológica que a administração não controla.",
+    "exemplo_pratico": "O condomínio fornece corretamente a plataforma e as instruções, mas a conexão particular de um condômino cai. Essa falha externa, por si só, não torna a administração responsável.",
+    "atencao": "A exclusão de responsabilidade alcança apenas situações fora do controle da administração. A ata só é lavrada após a soma e divulgação dos votos, e o edital deve disciplinar instalação, funcionamento e encerramento.",
+    "palavras_dificeis": [
+     {
+      "termo": "Assembleia híbrida",
+      "explicacao": "assembleia com participação física e virtual simultânea"
+     },
+     {
+      "termo": "Fora do controle",
+      "explicacao": "circunstância que a administração não tem poder efetivo de prevenir ou corrigir"
+     }
+    ]
+   },
+   "source": {
+    "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "as_of": "2026-11-13",
+    "inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+    "legal_text_sha256": [
+     "fb1b55a03819216d379ac20b0dd7a5c4728f564c4fb83d1d772232772bd32388"
+    ]
+   },
+   "human_approval_claimed": false,
+   "independent_revalidation_status": "PENDING"
+  },
+  {
+   "target_id": "CC2002:ART.1358-J",
+   "finding_ids": [
+    "QA06-FINAL-0346",
+    "QA06-FINAL-0347",
+    "QA06-FINAL-0349"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1358-J:INC.VIII",
+    "CC2002:ART.1358-J:PAR.1:INC.II",
+    "CC2002:ART.1358-J:PAR.2:INC.II"
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "analysis": "Três comandos autônomos estavam apenas insinuados: desocupação pontual sob multa diária; sanção progressiva e perda temporária por reiteração; e distribuição das despesas de reparo conforme uso normal ou anormal.",
+   "risk": "A perda temporária depende de descumprimento reiterado e de previsão na convenção; não é consequência de qualquer infração isolada.",
+   "previous_explanation_id": "ENTENDA/CC2002:ART.1358-J/BASE/1",
+   "previous_content": {
+    "o_que_diz": "O multiproprietário paga contribuições mesmo sem usar, conserva e devolve o imóvel, comunica danos e responde por prejuízos próprios ou de seus acompanhantes, sujeito a multas graduais.",
+    "o_que_significa": "Cada usuário deve preservar o bem para o período seguinte e sustentar os custos comuns.",
+    "exemplo_pratico": "Após danificar equipamento em sua semana, titular comunica e indeniza o reparo.",
+    "atencao": "Renúncia ao uso não elimina custeio; sanções devem seguir convenção e procedimento.",
+    "palavras_dificeis": [
+     {
+      "termo": "Responsabilidade por acompanhantes",
+      "explicacao": "dever do titular pelos danos causados por quem autoriza a usar"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O multiproprietário deve pagar contribuições mesmo sem usar, conservar e usar o imóvel conforme sua finalidade, comunicar danos, permitir reparos urgentes e responder pelos danos causados por si ou por quem autorizar. Deve desocupar até o dia e a hora convencionados, sob multa diária. A convenção deve prever multa por descumprimento e, se houver reiteração, multa progressiva e perda temporária do uso de sua fração. Reparos por uso normal e desgaste natural são custeados por todos; os causados por uso anormal cabem exclusivamente ao responsável, sem prejuízo de multa.",
+    "o_que_significa": "Cada titular entrega o imóvel no horário e no estado necessários ao próximo período. O custo coletivo cobre desgaste normal; dano decorrente de uso anormal e sanções recaem sobre quem o causou, nos termos da convenção.",
+    "exemplo_pratico": "Um titular permanece após o horário fixado e entrega o imóvel danificado por uso anormal. Pode sofrer a multa diária pela demora e arcar sozinho com o reparo; se reiterar infrações, a convenção pode aplicar multa progressiva e suspender temporariamente seu período de uso.",
+    "atencao": "A perda de uso é temporária e exige descumprimento reiterado. Multas e sanções devem estar previstas na convenção de multipropriedade; desgaste natural não pode ser cobrado exclusivamente de um titular.",
+    "palavras_dificeis": [
+     {
+      "termo": "Multa progressiva",
+      "explicacao": "sanção cujo valor aumenta diante da repetição do descumprimento"
+     },
+     {
+      "termo": "Uso anormal",
+      "explicacao": "utilização incompatível com a finalidade ou os cuidados ordinários do imóvel"
+     }
+    ]
+   },
+   "source": {
+    "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "as_of": "2026-11-13",
+    "inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+    "legal_text_sha256": [
+     "7421cd3f3084a51c0302258f2312648773ec2935bebf73dc37305ae377a028b6",
+     "f7856ab6ec5ab0a6ede7b826a87f011690d3f15e1511540d9a3582d974cdd1a8",
+     "003b568f2fbd24205fc5ed7778aa3967cb25ca5e265c8df040fcd66c9ba1ce48"
+    ]
+   },
+   "human_approval_claimed": false,
+   "independent_revalidation_status": "PENDING"
+  },
+  {
+   "target_id": "CC2002:ART.1358-P",
+   "finding_ids": [
+    "QA06-FINAL-0360"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1358-P:INC.III"
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "analysis": "A regra supletiva do rateio estava diluída em referência genérica a custeio proporcional, sem esclarecer que a proporção segue a fração de tempo apenas na falta de disciplina diversa.",
+   "risk": "Não apresentar a proporcionalidade temporal como regra inderrogável: o instrumento de instituição ou a convenção de multipropriedade pode estabelecer forma diversa.",
+   "previous_explanation_id": "ENTENDA/CC2002:ART.1358-P/BASE/1",
+   "previous_content": {
+    "o_que_diz": "A convenção edilícia com multipropriedade deve identificar unidades, períodos, uso comum, custeio, multas, administração, manutenção e regras de ocupação, entre outras matérias legais.",
+    "o_que_significa": "A convivência entre condomínio espacial e temporal exige disciplina adicional minuciosa.",
+    "exemplo_pratico": "Convenção separa custos gerais dos custos exclusivos das unidades temporais.",
+    "atencao": "O rol legal deve ser integralmente considerado e compatibilizado com a convenção geral.",
+    "palavras_dificeis": [
+     {
+      "termo": "Custeio proporcional",
+      "explicacao": "distribuição de despesas conforme benefício ou fração aplicável"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "A convenção do condomínio edilício que contenha multipropriedade deve identificar unidades e períodos, disciplinar despesas, administração, sanções e quóruns, e definir como os titulares da mesma unidade rateiam as contribuições. Se o instrumento de instituição ou a convenção de multipropriedade não estabelecer outro critério, o rateio será proporcional à fração de tempo de cada titular.",
+    "o_que_significa": "Os custos da unidade precisam ter regra expressa. Na ausência de escolha válida diferente, quem possui período maior suporta parcela proporcionalmente maior das contribuições.",
+    "exemplo_pratico": "Dois titulares têm, respectivamente, uma e três semanas na mesma unidade. Sem regra diferente no instrumento ou na convenção, o segundo participa do rateio em proporção três vezes maior.",
+    "atencao": "A proporcionalidade à fração de tempo é regra supletiva, não obrigatória quando o instrumento de instituição ou a convenção de multipropriedade disciplina validamente outro rateio.",
+    "palavras_dificeis": [
+     {
+      "termo": "Rateio",
+      "explicacao": "divisão de uma despesa entre os responsáveis por seu pagamento"
+     },
+     {
+      "termo": "Regra supletiva",
+      "explicacao": "regra aplicada quando os instrumentos permitidos não estabelecem solução diferente"
+     }
+    ]
+   },
+   "source": {
+    "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "as_of": "2026-11-13",
+    "inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+    "legal_text_sha256": [
+     "d57f853a1be176b0dc06e446e4db5475202c06bfc6dd84e55847c044356bc459"
+    ]
+   },
+   "human_approval_claimed": false,
+   "independent_revalidation_status": "PENDING"
+  },
+  {
+   "target_id": "CC2002:ART.1358-S",
+   "finding_ids": [
+    "QA06-FINAL-0371",
+    "QA06-FINAL-0372"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1358-S:PAR.UNICO:INC.I",
+    "CC2002:ART.1358-S:PAR.UNICO:INC.III"
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "analysis": "A versão anterior falava apenas em direcionamento genérico de receitas, omitindo proibição de uso até quitação e o dever automático da administradora de aplicar integralmente valores líquidos e devolver eventual saldo.",
+   "risk": "As medidas do parágrafo único dependem do tipo específico de empreendimento com sistema único de locação e de previsão na convenção.",
+   "previous_explanation_id": "ENTENDA/CC2002:ART.1358-S/BASE/1",
+   "previous_content": {
+    "o_que_diz": "Inadimplência de custeio pode levar à adjudicação da fração temporal ao condomínio pelo processo civil; em sistemas de locação, receitas podem ser direcionadas à dívida sob regras específicas.",
+    "o_que_significa": "A própria fração e seus rendimentos funcionam como meios de satisfação do débito.",
+    "exemplo_pratico": "Condomínio adjudica judicialmente semana do titular inadimplente.",
+    "atencao": "A medida exige procedimento legal, cálculo correto e respeito às garantias do devedor.",
+    "palavras_dificeis": [
+     {
+      "termo": "Adjudicação",
+      "explicacao": "transferência judicial do bem ao credor para satisfação da dívida"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O inadimplemento de despesas ordinárias ou extraordinárias pode levar, pelo procedimento civil, à adjudicação da fração de tempo ao condomínio edilício. Em empreendimento com sistema único de locação, a convenção pode ainda proibir o inadimplente de usar o imóvel até quitar integralmente a dívida, inserir sua fração no conjunto administrado e atribuir à administradora poderes e dever de aplicar todos os valores líquidos devidos ao titular na amortização das dívidas dos condomínios edilício e de multipropriedade; eventual saldo deve ser repassado imediatamente ao titular.",
+    "o_que_significa": "Além da possível transferência judicial da fração, certos empreendimentos de locação compartilhada podem usar o próprio período e sua renda para pagar a dívida, mas somente nas condições previstas pela lei e pela convenção.",
+    "exemplo_pratico": "A convenção de empreendimento com locação centralizada prevê que a semana do inadimplente entre no sistema de locação. A administradora usa toda a receita líquida para quitar os débitos condominiais e transfere imediatamente ao titular o que sobrar.",
+    "atencao": "Proibição de uso, inclusão no sistema de locação e retenção de receitas não são automáticas para toda multipropriedade: exigem o empreendimento descrito no parágrafo único e disciplina na convenção.",
+    "palavras_dificeis": [
+     {
+      "termo": "Adjudicação",
+      "explicacao": "transferência da fração ao credor por meio do procedimento legal para satisfação da dívida"
+     },
+     {
+      "termo": "Valores líquidos",
+      "explicacao": "receitas restantes após as deduções legítimas do sistema de locação"
+     }
+    ]
+   },
+   "source": {
+    "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "as_of": "2026-11-13",
+    "inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+    "legal_text_sha256": [
+     "21e7c12f8acbc4162e0535af7e907c222a0c6b678f1bca3faea225426b6d3681",
+     "1ee64d5e102db352abdbc2b9ca6bf1f67d7936ed689fa49a3ac1cd9db4bd52ea"
+    ]
+   },
+   "human_approval_claimed": false,
+   "independent_revalidation_status": "PENDING"
+  },
+  {
+   "target_id": "CC2002:ART.1361",
+   "finding_ids": [
+    "QA06-FINAL-0377"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1361:PAR.3"
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "analysis": "Faltava a eficácia atribuída à aquisição posterior da propriedade pelo devedor, relevante quando ele ainda não era proprietário ao celebrar e arquivar a garantia fiduciária.",
+   "risk": "A regra não dispensa arquivamento: a propriedade superveniente torna eficaz a transferência desde esse arquivamento.",
+   "previous_explanation_id": "ENTENDA/CC2002:ART.1361/BASE/1",
+   "previous_content": {
+    "o_que_diz": "Propriedade fiduciária é domínio resolúvel de móvel infungível transferido pelo devedor ao credor como garantia, constituído por registro do contrato.",
+    "o_que_significa": "O credor recebe titularidade limitada à garantia, enquanto o devedor mantém posse direta nos termos legais.",
+    "exemplo_pratico": "Veículo garante empréstimo mediante contrato fiduciário registrado.",
+    "atencao": "Bens e operações sujeitos a leis especiais podem seguir regime próprio.",
+    "palavras_dificeis": [
+     {
+      "termo": "Propriedade fiduciária",
+      "explicacao": "titularidade temporária transferida para garantir dívida"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Propriedade fiduciária é a propriedade resolúvel de coisa móvel infungível transferida pelo devedor ao credor para garantir dívida. Constitui-se com o registro do contrato no órgão competente e desdobra a posse, ficando o devedor como possuidor direto. Se o devedor adquirir posteriormente a propriedade do bem, essa aquisição superveniente torna eficaz a transferência fiduciária desde o arquivamento.",
+    "o_que_significa": "O credor recebe titularidade limitada à garantia por meio do registro. Mesmo que a propriedade do devedor seja adquirida depois, a lei aproveita o arquivamento já realizado para dar eficácia à transferência.",
+    "exemplo_pratico": "O devedor arquiva contrato fiduciário e depois adquire a propriedade do bem descrito. Com essa aquisição posterior, a garantia transferida ao credor torna-se eficaz desde o arquivamento.",
+    "atencao": "A regra trata da propriedade superveniente e não elimina os requisitos do contrato, da identificação do bem e do registro competente. Leis especiais podem reger determinadas operações.",
+    "palavras_dificeis": [
+     {
+      "termo": "Propriedade superveniente",
+      "explicacao": "propriedade adquirida pelo devedor depois do ato ou contrato"
+     },
+     {
+      "termo": "Propriedade resolúvel",
+      "explicacao": "titularidade que se extingue quando ocorre a condição prevista, como a quitação"
+     }
+    ]
+   },
+   "source": {
+    "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "as_of": "2026-11-13",
+    "inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+    "legal_text_sha256": [
+     "c1efd8650516f064f0dacab75c592fc667492cad7b1f3c4bc6bf086167e9f218"
+    ]
+   },
+   "human_approval_claimed": false,
+   "independent_revalidation_status": "PENDING"
+  },
+  {
+   "target_id": "CC2002:ART.1389",
+   "finding_ids": [
+    "QA06-FINAL-0407"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1389:INC.III"
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "analysis": "A explicação reconhecia desuso prolongado, porém omitia o prazo material exato de dez anos contínuos para essa causa de extinção.",
+   "risk": "Uso apenas reduzido ou interrupções inferiores ao período legal não equivalem automaticamente ao não uso contínuo por dez anos.",
+   "previous_explanation_id": "ENTENDA/CC2002:ART.1389/BASE/1",
+   "previous_content": {
+    "o_que_diz": "Outras causas legais extinguem a servidão e autorizam o proprietário onerado a pedir cancelamento mediante prova.",
+    "o_que_significa": "Confusão, supressão das obras ou desuso prolongado podem encerrar o direito conforme o caso previsto.",
+    "exemplo_pratico": "Mesma pessoa adquire os dois imóveis e comprova a reunião para cancelar a servidão.",
+    "atencao": "A extinção precisa ser demonstrada; mero uso reduzido ou interrupção breve não equivale a desuso legal.",
+    "palavras_dificeis": [
+     {
+      "termo": "Confusão",
+      "explicacao": "reunião dos imóveis dominante e serviente na mesma titularidade"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "A servidão também se extingue, permitindo ao dono do imóvel serviente pedir seu cancelamento mediante prova, quando os imóveis dominante e serviente passam ao mesmo proprietário, quando as obras correspondentes são suprimidas por contrato ou outro título expresso, ou quando a servidão não é usada por dez anos contínuos.",
+    "o_que_significa": "Esses fatos eliminam a utilidade ou a base jurídica da servidão, mas o cancelamento exige demonstração da causa de extinção.",
+    "exemplo_pratico": "Uma passagem gravada como servidão deixa de ser utilizada por dez anos sem interrupção. Com a prova desse período, o dono do imóvel onerado pode requerer o cancelamento.",
+    "atencao": "Mero uso pouco frequente ou interrupção breve não satisfaz a hipótese de não uso por dez anos contínuos.",
+    "palavras_dificeis": [
+     {
+      "termo": "Imóvel serviente",
+      "explicacao": "imóvel onerado pela servidão"
+     },
+     {
+      "termo": "Não uso contínuo",
+      "explicacao": "ausência ininterrupta de exercício da servidão durante todo o prazo legal"
+     }
+    ]
+   },
+   "source": {
+    "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "as_of": "2026-11-13",
+    "inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+    "legal_text_sha256": [
+     "cc3df53508688fe3dc2c899c7543e6d5affdc1b1090c02458f0d9ee722fb6eb1"
+    ]
+   },
+   "human_approval_claimed": false,
+   "independent_revalidation_status": "PENDING"
+  },
+  {
+   "target_id": "CC2002:ART.1404",
+   "finding_ids": [
+    "QA06-FINAL-0418"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1404:PAR.1"
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "analysis": "A explicação remetia genericamente ao conceito de despesa módica, mas não apresentava o critério quantitativo legal de dois terços do rendimento líquido anual.",
+   "risk": "O parâmetro compara a despesa ao rendimento líquido de um ano; não é percentual do valor do bem.",
+   "previous_explanation_id": "ENTENDA/CC2002:ART.1404/BASE/1",
+   "previous_content": {
+    "o_que_diz": "O proprietário paga reparações extraordinárias e caras; o usufrutuário remunera com juros o capital usado em obras necessárias ou produtivas.",
+    "o_que_significa": "A lei divide o custo estrutural e o benefício econômico obtido durante o usufruto.",
+    "exemplo_pratico": "Dono refaz telhado estrutural e usufrutuário paga juros sobre o valor investido enquanto aproveita o imóvel.",
+    "atencao": "Os parágrafos definem custo módico e permitem ao usufrutuário fazer obra indispensável omitida pelo dono.",
+    "palavras_dificeis": [
+     {
+      "termo": "Reparação extraordinária",
+      "explicacao": "obra estrutural ou incomum de custo relevante"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O proprietário suporta as reparações extraordinárias e as que não sejam de custo módico; o usufrutuário paga juros sobre o capital gasto nas obras necessárias à conservação ou que aumentem o rendimento. Não são módicas as despesas superiores a dois terços do rendimento líquido de um ano. Se o dono não fizer reparo indispensável a seu cargo, o usufrutuário pode realizá-lo e cobrar o valor gasto.",
+    "o_que_significa": "A lei divide reparos de maior peso com base no custo e no benefício econômico. Uma despesa que ultrapasse dois terços do rendimento líquido anual não pode ser tratada como pequena para transferi-la ao usufrutuário.",
+    "exemplo_pratico": "Se o imóvel rende R$ 30 mil líquidos no ano, despesa superior a R$ 20 mil não é módica. Sendo reparo extraordinário a cargo do dono e indispensável, o usufrutuário pode fazê-lo diante da omissão e exigir reembolso.",
+    "atencao": "O limite de dois terços qualifica a despesa como não módica; ainda é preciso considerar a natureza da reparação e as demais regras do artigo.",
+    "palavras_dificeis": [
+     {
+      "termo": "Rendimento líquido",
+      "explicacao": "rendimento depois das despesas necessárias para sua obtenção"
+     },
+     {
+      "termo": "Custo módico",
+      "explicacao": "custo que não ultrapassa o limite legal de dois terços do rendimento líquido anual"
+     }
+    ]
+   },
+   "source": {
+    "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "as_of": "2026-11-13",
+    "inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+    "legal_text_sha256": [
+     "8621a1fc85f52ed04f2e53eac05a7a90cf3ef19d6ada57d66c10a236505f1e7b"
+    ]
+   },
+   "human_approval_claimed": false,
+   "independent_revalidation_status": "PENDING"
+  },
+  {
+   "target_id": "CC2002:ART.1487-A",
+   "finding_ids": [
+    "QA06-FINAL-0511"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1487-A:PAR.3"
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "analysis": "A prioridade da extensão estava coberta, mas faltava a regra de legitimidade para executar quando surgem vários credores garantidos pela mesma hipoteca estendida.",
+   "risk": "A exceção exige convenção diversa de todos os credores, não apenas acordo entre alguns deles.",
+   "previous_explanation_id": "ENTENDA/CC2002:ART.1487-A/BASE/1",
+   "previous_content": {
+    "o_que_diz": "O proprietário pode estender hipoteca ao mesmo credor para novas obrigações, preservando registro original e respeitando prioridades que surgiram antes da extensão.",
+    "o_que_significa": "A ampliação aproveita a publicidade existente sem prejudicar direitos contraditórios já inscritos.",
+    "exemplo_pratico": "Hipoteca antiga é ampliada para novo empréstimo, mas penhora registrada no intervalo mantém prioridade sobre a extensão.",
+    "atencao": "Prazo, valor, anuência e averbação seguem os parágrafos incluídos pela Lei 14.711/2023.",
+    "palavras_dificeis": [
+     {
+      "termo": "Extensão hipotecária",
+      "explicacao": "ampliação do gravame para abranger novas obrigações"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O proprietário pode estender hipoteca para novas obrigações com o mesmo credor, mantendo registro e publicidade originais, dentro do prazo e valor máximos e sem prejudicar direitos contraditórios já inscritos. A extensão deve ser averbada e respeita a preferência da obrigação inicial e, entre extensões, da obrigação mais antiga. Se depois houver vários credores garantidos pela mesma hipoteca estendida, somente o titular do crédito mais prioritário pode executar judicial ou extrajudicialmente a garantia, salvo convenção diferente de todos os credores.",
+    "o_que_significa": "A hipoteca pode garantir novas dívidas sem perder sua organização registral, mas a prioridade define quem conduz a execução quando existem vários credores.",
+    "exemplo_pratico": "Após cessão de créditos garantidos pela hipoteca estendida, três credores passam a compartilhar a garantia. Sem acordo unânime em sentido diferente, apenas o credor do crédito prioritário promove a execução.",
+    "atencao": "A extensão não ultrapassa o prazo nem o valor máximo da garantia original e não desloca direitos contraditórios que entraram antes na matrícula.",
+    "palavras_dificeis": [
+     {
+      "termo": "Averbação",
+      "explicacao": "anotação posterior feita na matrícula do imóvel"
+     },
+     {
+      "termo": "Crédito prioritário",
+      "explicacao": "crédito que ocupa a posição preferencial segundo as regras legais e registrais"
+     }
+    ]
+   },
+   "source": {
+    "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "as_of": "2026-11-13",
+    "inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+    "legal_text_sha256": [
+     "1cf440b945334d08766aff41222528948fd5eaefd1f7a17608ce1542bdc71334"
+    ]
+   },
+   "human_approval_claimed": false,
+   "independent_revalidation_status": "PENDING"
+  },
+  {
+   "target_id": "CC2002:ART.1488",
+   "finding_ids": [
+    "QA06-FINAL-0514",
+    "QA06-FINAL-0515"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1488:PAR.2",
+    "CC2002:ART.1488:PAR.3"
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "analysis": "A divisão do gravame estava explicada, mas faltavam duas consequências: despesas por conta do requerente, salvo ajuste, e manutenção da responsabilidade do devedor originário, salvo anuência do credor.",
+   "risk": "O desmembramento distribui a garantia entre unidades, mas não libera automaticamente o devedor da responsabilidade pelo saldo referida no art. 1.430.",
+   "previous_explanation_id": "ENTENDA/CC2002:ART.1488/BASE/1",
+   "previous_content": {
+    "o_que_diz": "Loteamento ou condomínio permite dividir judicialmente a hipoteca entre lotes ou unidades, proporcionalmente ao valor e ao crédito.",
+    "o_que_significa": "A divisão evita que cada unidade suporte todo o gravame e facilita circulação autônoma.",
+    "exemplo_pratico": "Terreno hipotecado vira condomínio e o juiz distribui a dívida entre apartamentos.",
+    "atencao": "Credor, devedor ou proprietários podem requerer; o credor só pode opor-se por prejuízo comprovado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Fracionamento da hipoteca",
+      "explicacao": "distribuição do gravame entre unidades resultantes do imóvel"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Se imóvel hipotecado for loteado ou convertido em condomínio edilício, credor, devedor ou proprietários podem pedir ao juiz a divisão da hipoteca entre lotes ou unidades, proporcionalmente a seus valores e ao crédito. O credor só se opõe provando redução da garantia. Salvo acordo diferente, quem requer o desmembramento paga as despesas judiciais e extrajudiciais. A divisão do ônus não exonera o devedor originário da responsabilidade pelo restante da dívida prevista no art. 1.430, a menos que o credor concorde.",
+    "o_que_significa": "A hipoteca pode ser repartida para acompanhar as novas unidades, mas isso não transfere automaticamente os custos do procedimento nem libera o devedor original.",
+    "exemplo_pratico": "O proprietário pede a divisão da hipoteca entre apartamentos e, sem convenção diferente, paga as despesas do procedimento. Mesmo após a divisão, o devedor original continua responsável pelo saldo não coberto, salvo anuência do credor.",
+    "atencao": "Desmembrar o gravame não significa perdoar dívida ou substituir devedor. A exoneração depende da anuência do credor.",
+    "palavras_dificeis": [
+     {
+      "termo": "Desmembramento do ônus",
+      "explicacao": "divisão da hipoteca entre os lotes ou unidades resultantes"
+     },
+     {
+      "termo": "Anuência",
+      "explicacao": "concordância expressa da pessoa cujo direito é afetado"
+     }
+    ]
+   },
+   "source": {
+    "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "as_of": "2026-11-13",
+    "inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+    "legal_text_sha256": [
+     "d6b9f03833a9cb22eeea9b594df1de8f172e6cd6a587eb9db4c0d93319a8e115",
+     "71de6485afab8fb6d027899b9da5af1d5b763f133c2fc9319acea226ef61e5a0"
+    ]
+   },
+   "human_approval_claimed": false,
+   "independent_revalidation_status": "PENDING"
+  },
+  {
+   "target_id": "CC2002:ART.1523",
+   "finding_ids": [
+    "QA06-FINAL-0566"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1523:INC.II"
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "analysis": "A finalidade geral das causas suspensivas estava indicada, mas faltava o período específico de dez meses aplicável à viúva ou à mulher cujo casamento foi nulo ou anulado.",
+   "risk": "O prazo é causa suspensiva, não impedimento absoluto; no inciso II, pode ser afastado com prova de nascimento de filho ou de inexistência de gravidez durante o prazo.",
+   "previous_explanation_id": "ENTENDA/CC2002:ART.1523/BASE/1",
+   "previous_content": {
+    "o_que_diz": "Certas situações patrimoniais ou familiares recomendam adiar o casamento; o juiz pode afastar algumas mediante prova de ausência de prejuízo ou de gravidez.",
+    "o_que_significa": "As causas suspensivas protegem herdeiros, ex-cônjuge, tutelado e certeza sobre filiação, sem tornar o casamento absolutamente impossível.",
+    "exemplo_pratico": "Divorciado prova que a partilha não prejudica o ex-cônjuge e pede afastamento da suspensão.",
+    "atencao": "Casamento realizado apesar da causa pode atrair regime patrimonial obrigatório, e cada dispensa exige prova específica.",
+    "palavras_dificeis": [
+     {
+      "termo": "Causa suspensiva",
+      "explicacao": "situação que recomenda adiar o casamento sem constituir impedimento absoluto"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "A lei recomenda adiar o casamento em quatro situações destinadas a proteger partilha, herdeiros, tutelados e segurança sobre filiação. Entre elas, a viúva ou a mulher cujo casamento foi declarado nulo ou anulado não deve casar até dez meses após o início da viuvez ou a dissolução da sociedade conjugal. O juiz pode afastar as causas dos incisos I, III e IV com prova de ausência do prejuízo indicado; na hipótese do inciso II, a nubente deve provar nascimento de filho ou inexistência de gravidez durante o prazo.",
+    "o_que_significa": "São causas suspensivas: não tornam a pessoa incapaz de casar, mas recomendam espera e podem produzir consequência patrimonial se desrespeitadas. O prazo de dez meses busca esclarecer eventual filiação concebida na relação anterior.",
+    "exemplo_pratico": "Mulher viúva há quatro meses pretende casar e comprova judicialmente que não está grávida. Essa prova pode permitir o afastamento da causa suspensiva do inciso II.",
+    "atencao": "O Código usa formulação ligada ao casamento da mulher. A dispensa do inciso II exige a prova específica prevista no parágrafo único, diferente da prova de ausência de prejuízo exigida nas demais hipóteses.",
+    "palavras_dificeis": [
+     {
+      "termo": "Causa suspensiva",
+      "explicacao": "situação que recomenda adiar o casamento, sem constituir impedimento matrimonial absoluto"
+     },
+     {
+      "termo": "Nubente",
+      "explicacao": "pessoa que pretende se casar"
+     }
+    ]
+   },
+   "source": {
+    "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "as_of": "2026-11-13",
+    "inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+    "legal_text_sha256": [
+     "3e52fd7314fa5f9fb9646058d714093b14ef5655b5fae4459a0241ca54eac256"
+    ]
+   },
+   "human_approval_claimed": false,
+   "independent_revalidation_status": "PENDING"
+  },
+  {
+   "target_id": "CC2002:ART.1541",
+   "finding_ids": [
+    "QA06-FINAL-0602"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1541:PAR.5"
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "analysis": "A versão anterior descrevia apenas a confirmação judicial ordinária e omitia a via alternativa quando o enfermo recupera a saúde e pode ratificar o casamento.",
+   "risk": "A dispensa depende de ratificação perante, conjuntamente, a autoridade competente e o oficial do registro.",
+   "previous_explanation_id": "ENTENDA/CC2002:ART.1541/BASE/1",
+   "previous_content": {
+    "o_que_diz": "Testemunhas do casamento emergencial comparecem ao juiz em dez dias, relatam convocação, lucidez, perigo e consentimento; segue investigação, decisão e registro com efeitos desde a cerimônia.",
+    "o_que_significa": "A validação judicial substitui cautelas ausentes no momento crítico e verifica capacidade matrimonial.",
+    "exemplo_pratico": "Testemunhas prestam declarações e o juiz confirma o vínculo após diligências.",
+    "atencao": "Prazos, conteúdo dos depoimentos e ausência de impedimentos são essenciais à confirmação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Ratificação judicial",
+      "explicacao": "reconhecimento posterior da validade de ato emergencial"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "No casamento celebrado em perigo de vida sem a autoridade, as testemunhas devem procurar o juiz em dez dias e declarar convocação, lucidez, perigo e consentimento; seguem diligências, decisão e registro, cujos efeitos sobre o estado dos cônjuges retroagem à celebração. Essas formalidades e as do artigo anterior são dispensadas se o enfermo convalescer e puder ratificar o casamento na presença da autoridade competente e do oficial do registro.",
+    "o_que_significa": "A lei oferece duas formas de confirmação: procedimento judicial apoiado nas testemunhas ou, havendo recuperação, ratificação pessoal e formal do casamento pelo próprio enfermo.",
+    "exemplo_pratico": "Após casamento emergencial, o enfermo se recupera antes da confirmação judicial. Ele comparece perante a autoridade competente e o oficial do registro e ratifica o casamento, dispensando as formalidades emergenciais indicadas.",
+    "atencao": "Convalescer não basta sozinho: é necessário que o enfermo possa ratificar o casamento perante as duas autoridades mencionadas pela lei.",
+    "palavras_dificeis": [
+     {
+      "termo": "Convalescer",
+      "explicacao": "recuperar-se da enfermidade ou do perigo de vida"
+     },
+     {
+      "termo": "Ratificar",
+      "explicacao": "confirmar formalmente um ato anteriormente praticado"
+     }
+    ]
+   },
+   "source": {
+    "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "as_of": "2026-11-13",
+    "inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+    "legal_text_sha256": [
+     "dfbeb505f028df3faea35f07dfcb84b0736a7032d5f20bff0efe6427dff9d9a4"
+    ]
+   },
+   "human_approval_claimed": false,
+   "independent_revalidation_status": "PENDING"
+  },
+  {
+   "target_id": "CC2002:ART.1735",
+   "finding_ids": [
+    "QA06-FINAL-0791"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1735:INC.IV"
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "analysis": "A referência genérica a condenação relevante não informava o rol legal nem que o impedimento permanece mesmo após o cumprimento da pena.",
+   "risk": "Preservar a expressão legal histórica 'crimes contra os costumes' sem transformá-la em afirmação sobre a classificação penal atual; a incidência concreta pode exigir enquadramento jurídico.",
+   "previous_explanation_id": "ENTENDA/CC2002:ART.1735/BASE/1",
+   "previous_content": {
+    "o_que_diz": "São impedidos de exercer tutela, entre outros, quem não administra livremente seus bens, tem conflito com o menor, inimizada, condenação relevante ou conduta incompatível.",
+    "o_que_significa": "O rol afasta pessoas cuja incapacidade, conflito ou falta de idoneidade possa comprometer o tutelado.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1735, a solução deve observar incapacidade para tutela e as condições específicas descritas na regra.",
+    "atencao": "O impedimento pode provocar exoneração mesmo depois de iniciado o encargo.",
+    "palavras_dificeis": [
+     {
+      "termo": "Incapacidade para tutela",
+      "explicacao": "O rol afasta pessoas cuja incapacidade, conflito ou falta de idoneidade possa comprometer o tutelado."
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Não podem exercer tutela — e devem ser exonerados se já a exercem — quem não administra livremente seus bens, tem conflito relevante com o menor, é inimigo dele ou de seus pais, foi excluído por estes, apresenta conduta ou probidade incompatível, abusou de tutela anterior ou exerce função pública incompatível. Também são impedidos os condenados por furto, roubo, estelionato, falsidade, crime contra a família ou pelos crimes designados no Código Civil como 'contra os costumes', tenham ou não cumprido a pena.",
+    "o_que_significa": "A tutela exige capacidade, ausência de conflito e idoneidade. Nas condenações expressamente listadas, terminar de cumprir a pena não remove, por si só, o impedimento civil para ser tutor.",
+    "exemplo_pratico": "Pessoa condenada por estelionato não pode assumir tutela mesmo depois de cumprir integralmente a pena, pois o artigo mantém o impedimento nessa situação.",
+    "atencao": "A expressão 'crimes contra os costumes' é a terminologia literal e histórica do Código Civil; a correspondência com tipos penais atuais deve ser examinada juridicamente no caso concreto.",
+    "palavras_dificeis": [
+     {
+      "termo": "Exoneração",
+      "explicacao": "retirada da pessoa do encargo que já exercia"
+     },
+     {
+      "termo": "Probidade",
+      "explicacao": "honestidade e correção necessárias ao exercício da tutela"
+     }
+    ]
+   },
+   "source": {
+    "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "as_of": "2026-11-13",
+    "inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+    "legal_text_sha256": [
+     "da1b7c55031c7c09f213ace95b895e99d1c679004b6e8f830b59dd31ca9f220d"
+    ]
+   },
+   "human_approval_claimed": false,
+   "independent_revalidation_status": "PENDING"
+  },
+  {
+   "target_id": "CC2002:ART.1800",
+   "finding_ids": [
+    "QA06-FINAL-0872"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1800:PAR.2"
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "analysis": "A existência de curador estava coberta, porém faltava o regime jurídico que define seus poderes, deveres e responsabilidades.",
+   "risk": "As regras da curatela dos incapazes aplicam-se somente no que forem compatíveis com esta curadoria sucessória.",
+   "previous_explanation_id": "ENTENDA/CC2002:ART.1800/BASE/1",
+   "previous_content": {
+    "o_que_diz": "Bens destinados à prole eventual ficam com curador; se o herdeiro esperado não for concebido em dois anos, passam aos herdeiros legítimos, salvo disposição diferente.",
+    "o_que_significa": "A curadoria preserva o patrimônio durante a espera e a lei impõe prazo supletivo.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1800, a solução deve observar curadoria da prole eventual e as condições específicas descritas na regra.",
+    "atencao": "Concepção e nascimento produzem efeitos conforme as regras do nascituro.",
+    "palavras_dificeis": [
+     {
+      "termo": "Curadoria da prole eventual",
+      "explicacao": "A curadoria preserva o patrimônio durante a espera e a lei impõe prazo supletivo."
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Quando o testamento beneficia filho ainda não concebido de pessoa indicada, os bens, depois da liquidação ou partilha, ficam com curador nomeado pelo juiz. Salvo disposição diferente, a curatela cabe primeiro à pessoa cujo filho era esperado. Os poderes, deveres e responsabilidades desse curador seguem, no que forem compatíveis, as regras da curatela dos incapazes. Se o herdeiro nascer com vida, recebe a sucessão e os frutos desde a morte do testador; se não for concebido em dois anos, os bens passam aos herdeiros legítimos, salvo disposição testamentária em contrário.",
+    "o_que_significa": "O curador apenas conserva e administra os bens durante a espera, submetido a deveres e responsabilidades equivalentes aos da curatela de incapaz quando compatíveis; não se torna proprietário do patrimônio.",
+    "exemplo_pratico": "O juiz entrega ao curador os bens reservados ao futuro filho de determinada pessoa. O curador deve administrá-los e responder por sua gestão segundo as regras compatíveis da curatela dos incapazes.",
+    "atencao": "A aplicação das regras de curatela é adaptada pela expressão 'no que couber'. O nascimento com vida ou o fim do prazo legal altera a destinação dos bens.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prole eventual",
+      "explicacao": "filho que a pessoa indicada poderá conceber no futuro"
+     },
+     {
+      "termo": "No que couber",
+      "explicacao": "somente na medida em que a regra seja compatível com a situação"
+     }
+    ]
+   },
+   "source": {
+    "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "as_of": "2026-11-13",
+    "inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+    "legal_text_sha256": [
+     "e51b6a6851d82f84297b964f223a88f1ba502db9d4e542b6e36ade58e76923f6"
+    ]
+   },
+   "human_approval_claimed": false,
+   "independent_revalidation_status": "PENDING"
+  },
+  {
+   "target_id": "CC2002:ART.1817",
+   "finding_ids": [
+    "QA06-FINAL-0896"
+   ],
+   "subdivision_ids": [
+    "CC2002:ART.1817:PAR.UNICO"
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "analysis": "A versão anterior protegia terceiros e mencionava indenização aos herdeiros, mas omitia a prestação de contas econômica específica imposta ao excluído.",
+   "risk": "Distinguir restituição de frutos e rendimentos, obrigatória, do direito do excluído ao reembolso das despesas de conservação.",
+   "previous_explanation_id": "ENTENDA/CC2002:ART.1817/BASE/1",
+   "previous_content": {
+    "o_que_diz": "Negócios onerosos com terceiros de boa-fé e administração anterior à exclusão são preservados, sem afastar indenização devida pelo excluído.",
+    "o_que_significa": "A segurança de terceiros convive com reparação aos sucessores prejudicados.",
+    "exemplo_pratico": "Em situação relacionada ao art. 1817, a solução deve observar herdeiro aparente e as condições específicas descritas na regra.",
+    "atencao": "Má-fé do adquirente pode alterar a proteção do negócio.",
+    "palavras_dificeis": [
+     {
+      "termo": "Herdeiro aparente",
+      "explicacao": "A segurança de terceiros convive com reparação aos sucessores prejudicados."
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Alienações onerosas a terceiros de boa-fé e atos de administração legal praticados antes da sentença de exclusão permanecem válidos, sem impedir perdas e danos aos herdeiros prejudicados. O excluído deve restituir os frutos e rendimentos que recebeu dos bens hereditários, mas tem direito à indenização pelas despesas feitas para conservá-los.",
+    "o_que_significa": "A lei protege terceiros de boa-fé e, ao mesmo tempo, recompõe o patrimônio sucessório: o excluído devolve os ganhos obtidos, mas não suporta gratuitamente os gastos necessários de conservação.",
+    "exemplo_pratico": "Antes da exclusão, o herdeiro recebe aluguéis do imóvel da herança e paga reparo indispensável. Depois da sentença, restitui os aluguéis, mas pode exigir indenização pela despesa de conservação.",
+    "atencao": "A proteção do negócio exige terceiro de boa-fé e alienação onerosa. A restituição dos rendimentos não elimina o direito de reembolso das despesas conservatórias.",
+    "palavras_dificeis": [
+     {
+      "termo": "Frutos e rendimentos",
+      "explicacao": "utilidades econômicas produzidas pelo bem, como aluguéis"
+     },
+     {
+      "termo": "Despesa de conservação",
+      "explicacao": "gasto necessário para preservar o bem e evitar sua deterioração"
+     }
+    ]
+   },
+   "source": {
+    "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "as_of": "2026-11-13",
+    "inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+    "legal_text_sha256": [
+     "edce3fa0a6f2a3f134da765fd42a3bfe9c293736a06ee7ebe021526cb6bd1a14"
+    ]
+   },
+   "human_approval_claimed": false,
+   "independent_revalidation_status": "PENDING"
+  }
+ ],
+ "human_approval_claimed": false
+}
