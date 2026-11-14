@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "mission": "QA-07-FRONT-B",
+  "as_of": "2026-11-13",
+  "status": "INDETERMINATE_REVIEW_COMPLETE_PENDING_INDEPENDENT_REVALIDATION",
+  "source_queue": "QA06_B_INDETERMINATE_REVIEW_QUEUE.json",
+  "source_queue_sha256": "c29f0ae0c252be9a92bc16df90d1208f30d2bdd2c8a8a8deb23f8876035932ad",
+  "source_inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+  "source_corpus_sha256": "4f7481e5ec697eddc26e5e412ff9f5394c983fcfbd5cff6b678bdb7d9811aaf5",
+  "source_date_cut": "2026-11-13",
+  "total": 10,
+  "decision_counts": {
+    "CONFIRMADO_PARA_CORRECAO": 8,
+    "COBERTURA_MATERIAL_SUFICIENTE": 2,
+    "INDETERMINADO_REQUER_HUMANO": 0,
+    "RECLASSIFICADO_COM_FUNDAMENTO": 0
+  },
+  "sources": [
+    {
+      "kind": "PRIMARY_CURRENT_CODE",
+      "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+      "publisher": "Câmara dos Deputados",
+      "checked_on": "2026-11-13"
+    },
+    {
+      "kind": "PRIMARY_SPECIAL_AND_TRANSITIONAL_LEGISLATION",
+      "url": "https://www2.camara.leg.br/legin/fed/lei/2005/lei-11101-9-fevereiro-2005-535663-normaatualizada-pl.html",
+      "publisher": "Câmara dos Deputados",
+      "checked_on": "2026-11-13",
+      "scope": "Art. 1º e arts. 192, 200 e 201 da Lei nº 11.101/2005 para a equivalência intertemporal do art. 1.071, VIII"
+    }
+  ],
+  "records": [
+    {
+      "finding_id": "QA06-FINAL-0092",
+      "target_id": "CC2002:ART.964",
+      "subdivision_id": "CC2002:ART.964:INC.IV",
+      "legal_text": "sobre os prédios rústicos ou urbanos, fábricas, oficinas, ou quaisquer outras construções, o credor de materiais, dinheiro, ou serviços para a sua edificação, reconstrução, ou melhoramento;",
+      "previous_content": {
+        "o_que_diz": "Há privilégio especial sobre bens determinados para créditos ligados à arrecadação judicial, salvamento, benfeitorias, construção, produção agrícola, locação, edição e abate. Nos aluguéis, a preferência sobre utensílios domésticos limita-se às prestações do ano em curso e do anterior. O salário do trabalhador rural prefere sobre o produto da colheita em que trabalhou, inclusive diante de créditos garantidos por direito real.",
+        "o_que_significa": "Cada crédito recebe preferência apenas sobre o bem ou produto ao qual sua contribuição está legalmente ligada.",
+        "exemplo_pratico": "O salário do trabalhador que participou da colheita é pago com o produto colhido antes até de um crédito com garantia real sobre esse produto.",
+        "atencao": "Os nove incisos têm objetos e limites próprios. O privilégio locatício cobre somente o ano corrente e o anterior, enquanto a prioridade do trabalhador agrícola supera também créditos reais.",
+        "palavras_dificeis": [{"termo": "Privilégio especial", "explicacao": "preferência legal que recai sobre bem ou produto especificamente indicado"}]
+      },
+      "analysis": "A síntese reconhece genericamente créditos de construção, mas não explica que materiais, dinheiro ou serviços empregados em edificação, reconstrução ou melhoramento recebem preferência precisamente sobre o prédio, fábrica, oficina ou outra construção beneficiada. A ligação entre credor, contribuição e bem gravado é o comando material do inciso, não mero detalhe lexical.",
+      "legislative_change_check": "Redação vigente confirmada na fonte oficial; não foi identificada alteração específica do inciso IV.",
+      "remission_check": "Sem remissão externa determinante.",
+      "binding_case_law_check": "Não necessária para decidir a cobertura do comando literal.",
+      "decision": "CONFIRMADO_PARA_CORRECAO",
+      "confidence": "ALTA",
+      "proposed_content": {
+        "o_que_diz": "Há privilégio especial sobre bens determinados para créditos ligados à arrecadação judicial, salvamento, benfeitorias, construção, produção agrícola, locação, edição e abate. Na construção, quem forneceu materiais, dinheiro ou serviços para edificar, reconstruir ou melhorar prédio, fábrica, oficina ou outra construção tem preferência sobre o próprio bem beneficiado. Nos aluguéis, a preferência sobre utensílios domésticos limita-se ao ano em curso e ao anterior; o salário rural prefere sobre a colheita em que houve trabalho, inclusive diante de créditos reais.",
+        "o_que_significa": "A preferência acompanha o bem ou produto diretamente beneficiado pelo crédito. No caso de obra, ela protege quem contribuiu com material, recursos ou trabalho e recai sobre a construção correspondente.",
+        "exemplo_pratico": "Fornecedor de materiais usados para ampliar uma oficina pode ter preferência sobre essa oficina pelo crédito da obra, nos limites legais.",
+        "atencao": "Cada inciso liga um tipo de crédito a um objeto próprio. O privilégio da obra não recai indistintamente sobre todo o patrimônio do devedor.",
+        "palavras_dificeis": [{"termo": "Privilégio especial", "explicacao": "preferência legal de pagamento vinculada a bem ou produto determinado"}, {"termo": "Prédio rústico", "explicacao": "imóvel de natureza rural"}]
+      }
+    },
+    {
+      "finding_id": "QA06-FINAL-0095",
+      "target_id": "CC2002:ART.968",
+      "subdivision_id": "CC2002:ART.968:INC.II",
+      "legal_text": "a firma, com a respectiva assinatura autógrafa que poderá ser substituída pela assinatura autenticada com certificação digital ou meio equivalente que comprove a sua autenticidade, ressalvado o disposto no inciso I do § 1º do art. 4º da Lei Complementar nº 123, de 14 de dezembro de 2006;",
+      "previous_content": {
+        "o_que_diz": "A inscrição informa identificação e regime de bens, firma autenticada, capital, objeto e sede. Alterações são averbadas; transformação e procedimentos simplificados do microempreendedor seguem as regras dos parágrafos.",
+        "o_que_significa": "O registro reúne dados essenciais do empresário e permite atualização, transformação societária e simplificação legal para o MEI.",
+        "exemplo_pratico": "Empresário informa firma, capital e atividade e depois averba mudança de endereço.",
+        "atencao": "Dispensas do MEI dependem da disciplina do CGSIM; simplificação não elimina exigências que a legislação especial mantenha.",
+        "palavras_dificeis": [{"termo": "Firma", "explicacao": "nome empresarial sob o qual o empresário exerce a atividade"}]
+      },
+      "analysis": "A expressão 'firma autenticada' mistura a firma com o requisito de autenticação da assinatura. O inciso exige firma acompanhada de assinatura autógrafa, admitindo substituição por assinatura autenticada com certificação digital ou meio equivalente, e contém ressalva à LC 123. A alternativa eletrônica é material para o modo válido de inscrição.",
+      "legislative_change_check": "Inciso II vigente com redação da LC nº 147/2014, confirmada na fonte oficial.",
+      "remission_check": "Ressalva ao art. 4º, § 1º, I, da LC nº 123/2006 deve ser preservada sem tentar reproduzir toda a lei especial.",
+      "binding_case_law_check": "Não necessária para decidir a cobertura literal e registral.",
+      "decision": "CONFIRMADO_PARA_CORRECAO",
+      "confidence": "ALTA",
+      "proposed_content": {
+        "o_que_diz": "O pedido de inscrição identifica o empresário, seu estado civil e regime de bens, a firma, o capital, o objeto e a sede. A firma vem com assinatura autógrafa, que pode ser substituída por assinatura autenticada mediante certificação digital ou meio equivalente, observada a ressalva legal das micro e pequenas empresas. Alterações são averbadas, e os parágrafos tratam de transformação e simplificação para o MEI.",
+        "o_que_significa": "O registro reúne os dados essenciais do empresário e aceita forma eletrônica capaz de comprovar a autenticidade da assinatura, sem afastar regimes simplificados previstos em lei especial.",
+        "exemplo_pratico": "O empresário apresenta a firma e comprova a autenticidade da assinatura por certificado digital aceito pelo registro, em vez de assinar manualmente o requerimento.",
+        "atencao": "Firma é o nome empresarial; assinatura é a manifestação autenticada do requerente. As dispensas aplicáveis ao MEI e a outros beneficiários da LC nº 123 dependem da legislação especial e da disciplina do CGSIM.",
+        "palavras_dificeis": [{"termo": "Assinatura autógrafa", "explicacao": "assinatura feita de próprio punho"}, {"termo": "Certificação digital", "explicacao": "meio eletrônico que comprova autoria e integridade da assinatura"}]
+      }
+    },
+    {
+      "finding_id": "QA06-FINAL-0148",
+      "target_id": "CC2002:ART.1071",
+      "subdivision_id": "CC2002:ART.1071:INC.VIII",
+      "legal_text": "o pedido de concordata.",
+      "previous_content": {
+        "o_que_diz": "Contas, administradores, remuneração, contrato, reorganizações, liquidação e recuperação dependem de deliberação dos sócios, além de outras matérias legais ou contratuais.",
+        "o_que_significa": "Decisões estruturais e de controle não ficam ao arbítrio isolado da administração.",
+        "exemplo_pratico": "Sócios votam alteração contratual e escolha de novo administrador.",
+        "atencao": "Cada matéria segue o quórum vigente do art. 1.076 ou regra especial.",
+        "palavras_dificeis": [{"termo": "Deliberação societária", "explicacao": "decisão coletiva tomada pelos sócios segundo forma e quórum"}]
+      },
+      "analysis": "O Código ainda conserva literalmente 'pedido de concordata', mas a Lei nº 11.101/2005 passou a disciplinar recuperação judicial, extrajudicial e falência, revogou o regime geral anterior e preservou apenas os processos de concordata ajuizados antes de sua vigência. Para a situação atual, 'recuperação' é tradução material apropriada do tema submetido aos sócios; exigir a palavra histórica sem contexto pioraria a explicação. A síntese não afirma que os institutos sejam idênticos e remete ao quórum vigente.",
+      "legislative_change_check": "Lei nº 11.101/2005, arts. 1º, 192, 200 e 201: novo regime recuperacional, regra de transição para concordatas antigas e revogação do Decreto-Lei nº 7.661/1945.",
+      "remission_check": "O art. 1.076, II, ainda remete ao inciso VIII do art. 1.071 e exige mais da metade do capital social.",
+      "binding_case_law_check": "A conclusão decorre diretamente da sucessão legislativa; não foi necessário atribuir tese jurisprudencial.",
+      "decision": "COBERTURA_MATERIAL_SUFICIENTE",
+      "confidence": "ALTA",
+      "proposed_content": null
+    },
+    {
+      "finding_id": "QA06-FINAL-0154",
+      "target_id": "CC2002:ART.1076",
+      "subdivision_id": "CC2002:ART.1076:CAPUT",
+      "legal_text": "Ressalvado o disposto no art. 1.061, as deliberações dos sócios serão tomadas",
+      "previous_content": {
+        "o_que_diz": "Salvo a nomeação do art. 1.061, matérias estruturais indicadas exigem mais da metade do capital; os demais casos, maioria dos presentes, salvo exigência legal ou contratual maior.",
+        "o_que_significa": "A Lei 14.451/2022 revogou o inciso I e atualizou os quóruns da limitada.",
+        "exemplo_pratico": "Titulares de 55% aprovam alteração contratual abrangida pelo inciso II vigente.",
+        "atencao": "Não aplicar quóruns anteriores; identifique a matéria e eventual regra especial ou contratual mais severa.",
+        "palavras_dificeis": [{"termo": "Maioria do capital", "explicacao": "votos ligados a mais de cinquenta por cento do capital social"}]
+      },
+      "analysis": "O caput é uma oração introdutória cujo sentido só se completa com os incisos. A explicação registra expressamente a ressalva do art. 1.061 e descreve os dois quóruns vigentes. Não há lacuna material; o achado decorreu da fragmentação automática do caput.",
+      "legislative_change_check": "Caput com redação da Lei nº 13.792/2019; inciso I revogado e inciso II alterado pela Lei nº 14.451/2022, todos corretamente reconhecidos pela explicação.",
+      "remission_check": "Ressalva ao art. 1.061 explicitada em 'Salvo a nomeação do art. 1.061'.",
+      "binding_case_law_check": "Não necessária para decidir a cobertura do texto vigente.",
+      "decision": "COBERTURA_MATERIAL_SUFICIENTE",
+      "confidence": "ALTA",
+      "proposed_content": null
+    },
+    {
+      "finding_id": "QA06-FINAL-0158",
+      "target_id": "CC2002:ART.1078",
+      "subdivision_id": "CC2002:ART.1078:PAR.2",
+      "legal_text": "Instalada a assembléia, proceder-se-á à leitura dos documentos referidos no parágrafo antecedente, os quais serão submetidos, pelo presidente, a discussão e votação, nesta não podendo tomar parte os membros da administração e, se houver, os do conselho fiscal.",
+      "previous_content": {
+        "o_que_diz": "A assembleia anual ocorre nos quatro meses após o exercício para contas, balanços, administradores e pauta; documentos ficam disponíveis 30 dias antes, e aprovação sem erro exonera gestores, salvo fraude.",
+        "o_que_significa": "Os sócios recebem informação prévia e exercem controle anual sobre administração.",
+        "exemplo_pratico": "Empresa encerra exercício em dezembro e reúne sócios até abril com balanços acessíveis desde março.",
+        "atencao": "Erro, dolo ou simulação impedem exoneração; anulação da aprovação tem prazo legal de dois anos.",
+        "palavras_dificeis": [{"termo": "Prestação de contas", "explicacao": "apresentação documentada da gestão e de seus resultados"}]
+      },
+      "analysis": "A disponibilidade prévia dos documentos está coberta, mas falta a regra autônoma de leitura, discussão e votação e, sobretudo, o impedimento de participação dos membros da administração e do conselho fiscal na votação. A restrição evita que fiscalizados aprovem as próprias contas e é material.",
+      "legislative_change_check": "Redação vigente confirmada na fonte oficial.",
+      "remission_check": "O parágrafo antecedente identifica os documentos de contas e balanços disponibilizados aos sócios não administradores.",
+      "binding_case_law_check": "Não necessária para decidir a cobertura literal.",
+      "decision": "CONFIRMADO_PARA_CORRECAO",
+      "confidence": "ALTA",
+      "proposed_content": {
+        "o_que_diz": "A assembleia anual ocorre nos quatro meses seguintes ao fim do exercício para examinar contas e balanços, escolher administradores quando cabível e tratar da pauta. Os documentos ficam disponíveis aos sócios não administradores trinta dias antes; na assembleia, são lidos, discutidos e votados, sem participação dos administradores nem, se houver, dos membros do conselho fiscal nessa votação. A aprovação sem reserva pode exonerá-los, salvo erro, dolo ou simulação.",
+        "o_que_significa": "Os sócios recebem informação prévia e controlam anualmente a gestão, enquanto administradores e conselheiros fiscais ficam impedidos de votar a apreciação dos documentos ligados à própria atuação.",
+        "exemplo_pratico": "Na votação das contas anuais, o sócio que também administra a empresa não participa da votação dos documentos da gestão; os demais sócios deliberam após sua leitura e discussão.",
+        "atencao": "A vedação de voto alcança membros da administração e do conselho fiscal na votação prevista no § 2º. Erro, dolo ou simulação impedem a exoneração, e a anulação da aprovação tem prazo legal de dois anos.",
+        "palavras_dificeis": [{"termo": "Prestação de contas", "explicacao": "apresentação documentada da gestão e de seus resultados"}, {"termo": "Exoneração de responsabilidade", "explicacao": "liberação da responsabilidade pelos atos abrangidos pela aprovação válida"}]
+      }
+    },
+    {
+      "finding_id": "QA06-FINAL-0181",
+      "target_id": "CC2002:ART.1134",
+      "subdivision_id": "CC2002:ART.1134:PAR.1:INC.III",
+      "legal_text": "relação dos membros de todos os órgãos da administração da sociedade, com nome, nacionalidade, profissão, domicílio e, salvo quanto a ações ao portador, o valor da participação de cada um no capital da sociedade;",
+      "previous_content": {
+        "o_que_diz": "Sociedade estrangeira só funciona no Brasil com autorização, inclusive por filial, embora possa ser acionista de companhia brasileira; o pedido exige documentos, tradução e prova de representação.",
+        "o_que_significa": "Atividade direta no país depende de controle e documentação abrangentes.",
+        "exemplo_pratico": "Empresa estrangeira pede autorização e apresenta estatuto, administradores, balanço e representante no Brasil.",
+        "atencao": "Ser acionista não equivale a operar diretamente; leis especiais podem impor restrições adicionais.",
+        "palavras_dificeis": [{"termo": "Sociedade estrangeira", "explicacao": "pessoa jurídica constituída sob lei de outro país"}]
+      },
+      "analysis": "A explicação menciona administradores, mas não informa que a relação abrange todos os órgãos da administração nem os dados de identificação e o valor da participação de cada membro, ressalvadas ações ao portador. Esses elementos definem a suficiência documental do pedido de autorização.",
+      "legislative_change_check": "Redação vigente confirmada na fonte oficial.",
+      "remission_check": "Sem remissão externa determinante no inciso III.",
+      "binding_case_law_check": "Não necessária para decidir a cobertura documental.",
+      "decision": "CONFIRMADO_PARA_CORRECAO",
+      "confidence": "ALTA",
+      "proposed_content": {
+        "o_que_diz": "Sociedade estrangeira só funciona no Brasil com autorização do Poder Executivo, inclusive por filial, embora possa ser acionista de companhia brasileira nos limites legais. O pedido reúne prova de constituição, contrato ou estatuto, relação de todos os membros dos órgãos de administração com nome, nacionalidade, profissão, domicílio e participação no capital — salvo quanto a ações ao portador —, além do ato de funcionamento, representante no Brasil e último balanço. Os documentos exigem autenticação, legalização e tradução conforme a lei.",
+        "o_que_significa": "A atividade direta no país depende de autorização e de documentação que permita identificar a sociedade, seus administradores, sua estrutura de capital e quem a representa no Brasil.",
+        "exemplo_pratico": "Ao pedir autorização, a sociedade estrangeira apresenta a lista dos integrantes de seus órgãos de administração, seus dados pessoais e, quando aplicável, quanto cada um participa do capital.",
+        "atencao": "Ser acionista não equivale a operar diretamente no Brasil. A exceção relativa a ações ao portador afasta apenas a informação sobre o valor da participação, não a relação e identificação dos administradores.",
+        "palavras_dificeis": [{"termo": "Ações ao portador", "explicacao": "ações historicamente identificadas pela posse do título, mencionadas na redação do Código"}, {"termo": "Legalização consular", "explicacao": "formalidade de validação do documento estrangeiro, sem prejuízo dos regimes internacionais aplicáveis"}]
+      }
+    },
+    {
+      "finding_id": "QA06-FINAL-0278",
+      "target_id": "CC2002:ART.1301",
+      "subdivision_id": "CC2002:ART.1301:PAR.1",
+      "legal_text": "As janelas cuja visão não incida sobre a linha divisória, bem como as perpendiculares, não poderão ser abertas a menos de setenta e cinco centímetros.",
+      "previous_content": {
+        "o_que_diz": "Janelas, terraços, varandas e eirados devem observar distância mínima do terreno vizinho, com regras próprias para visão oblíqua e pequenas aberturas de luz.",
+        "o_que_significa": "A restrição protege privacidade e segurança sem proibir aberturas tecnicamente limitadas.",
+        "exemplo_pratico": "Janela frontal é instalada a pelo menos metro e meio da divisa.",
+        "atencao": "A distância varia conforme a abertura e há disciplina específica para zona rural e luz ou ventilação.",
+        "palavras_dificeis": [{"termo": "Visão oblíqua", "explicacao": "vista lateral ou indireta para o imóvel vizinho"}]
+      },
+      "analysis": "A existência de regra própria é mencionada, mas o limite de setenta e cinco centímetros para janelas sem visão sobre a linha divisória e janelas perpendiculares não aparece. Como o valor numérico determina licitude da abertura, a omissão é material.",
+      "legislative_change_check": "Redação vigente confirmada na fonte oficial.",
+      "remission_check": "O caput fixa 1,5 metro; o § 1º fixa 75 centímetros; o § 2º excepciona pequenas aberturas de luz e ventilação.",
+      "binding_case_law_check": "Não necessária para decidir o limite literal.",
+      "decision": "CONFIRMADO_PARA_CORRECAO",
+      "confidence": "ALTA",
+      "proposed_content": {
+        "o_que_diz": "Janelas, eirados, terraços e varandas voltados para o terreno vizinho devem ficar a pelo menos um metro e meio. Para janelas cuja visão não incida sobre a linha divisória e para as perpendiculares, a distância mínima é de setenta e cinco centímetros. Pequenas aberturas de luz ou ventilação, nas dimensões e altura legais, não seguem essas proibições.",
+        "o_que_significa": "A distância varia conforme a direção da abertura: a vista direta exige afastamento maior, enquanto a abertura lateral ou perpendicular admite o mínimo de setenta e cinco centímetros.",
+        "exemplo_pratico": "Uma janela perpendicular à divisa pode ser aberta a setenta e cinco centímetros dela; uma janela com vista direta para o terreno vizinho exige um metro e meio.",
+        "atencao": "Não confunda o limite geral de um metro e meio com o limite de setenta e cinco centímetros do § 1º. Aberturas pequenas apenas para luz ou ventilação obedecem requisitos próprios.",
+        "palavras_dificeis": [{"termo": "Linha divisória", "explicacao": "limite jurídico entre os terrenos vizinhos"}, {"termo": "Janela perpendicular", "explicacao": "janela posicionada em ângulo reto em relação à linha divisória"}]
+      }
+    },
+    {
+      "finding_id": "QA06-FINAL-0304",
+      "target_id": "CC2002:ART.1334",
+      "subdivision_id": "CC2002:ART.1334:PAR.2",
+      "legal_text": "São equiparados aos proprietários, para os fins deste artigo, salvo disposição em contrário, os promitentes compradores e os cessionários de direitos relativos às unidades autônomas.",
+      "previous_content": {
+        "o_que_diz": "A convenção disciplina contribuições, administração, assembleias, sanções e regimento, podendo adotar escritura pública ou instrumento particular.",
+        "o_que_significa": "É o estatuto interno do condomínio e deve organizar poder, custeio e convivência dentro da lei.",
+        "exemplo_pratico": "Convenção fixa rateio, competências do síndico e procedimento de multas.",
+        "atencao": "Cláusula convencional não pode afastar norma legal obrigatória nem direitos fundamentais.",
+        "palavras_dificeis": [{"termo": "Convenção condominial", "explicacao": "ato coletivo que estabelece regras estruturais do condomínio"}]
+      },
+      "analysis": "Nenhum campo informa a equiparação, para as matérias do art. 1.334, dos promitentes compradores e cessionários de direitos aos proprietários, ressalvada disposição em contrário. A regra define quem é alcançado pela convenção e não pode ser deduzida da advertência genérica sobre normas obrigatórias.",
+      "legislative_change_check": "Redação vigente confirmada na fonte oficial.",
+      "remission_check": "A equiparação limita-se aos fins do art. 1.334.",
+      "binding_case_law_check": "Não necessária para decidir a cobertura literal.",
+      "decision": "CONFIRMADO_PARA_CORRECAO",
+      "confidence": "ALTA",
+      "proposed_content": {
+        "o_que_diz": "A convenção disciplina contribuições, administração, assembleias, sanções e regimento interno e pode ser feita por escritura pública ou instrumento particular. Para essas matérias, promitentes compradores e cessionários de direitos sobre unidades autônomas são equiparados aos proprietários, salvo disposição em contrário.",
+        "o_que_significa": "A convenção é o estatuto interno do condomínio e alcança, em regra, não só quem já consta como proprietário, mas também quem prometeu comprar ou recebeu direitos sobre a unidade.",
+        "exemplo_pratico": "Quem adquiriu por promessa de compra uma unidade pode ser tratado como proprietário para as regras de contribuição e administração previstas no artigo, salvo disciplina contrária aplicável.",
+        "atencao": "A equiparação vale para os fins deste artigo e contém ressalva expressa a disposição em contrário; ela não transforma automaticamente o promitente comprador em proprietário para todo efeito jurídico.",
+        "palavras_dificeis": [{"termo": "Promitente comprador", "explicacao": "pessoa que celebrou promessa de aquisição da unidade"}, {"termo": "Cessionário de direitos", "explicacao": "pessoa que recebeu de outra os direitos relativos à unidade"}]
+      }
+    },
+    {
+      "finding_id": "QA06-FINAL-0336",
+      "target_id": "CC2002:ART.1358-G",
+      "subdivision_id": "CC2002:ART.1358-G:INC.V",
+      "legal_text": "o regime aplicável em caso de perda ou destruição parcial ou total do imóvel, inclusive para efeitos de participação no risco ou no valor do seguro, da indenização ou da parte restante;",
+      "previous_content": {
+        "o_que_diz": "A convenção deve disciplinar poderes, deveres, número máximo de ocupantes, acesso, manutenção, limpeza, sanções, fundo de reserva e outras regras essenciais.",
+        "o_que_significa": "A gestão detalhada evita conflitos entre usuários sucessivos do mesmo imóvel.",
+        "exemplo_pratico": "Convenção define inventário, horários de troca e responsabilidade por danos.",
+        "atencao": "Sanções e restrições devem ser proporcionais, claras e compatíveis com a lei.",
+        "palavras_dificeis": [{"termo": "Inventário", "explicacao": "relação dos bens e equipamentos que integram o imóvel"}]
+      },
+      "analysis": "A expressão genérica 'outras regras essenciais' não comunica que a convenção deve definir previamente o regime da perda ou destruição parcial ou total e a participação no risco, seguro, indenização ou parte remanescente. Esses efeitos patrimoniais são autônomos e materialmente relevantes.",
+      "legislative_change_check": "Artigo acrescido pela Lei nº 13.777/2018 e vigente na fonte oficial.",
+      "remission_check": "Sem remissão externa determinante no inciso V.",
+      "binding_case_law_check": "Não necessária para decidir a cobertura literal.",
+      "decision": "CONFIRMADO_PARA_CORRECAO",
+      "confidence": "ALTA",
+      "proposed_content": {
+        "o_que_diz": "A convenção da multipropriedade deve disciplinar poderes e deveres, ocupação, acesso, manutenção, limpeza, fundo de reserva e multas. Também deve definir o regime aplicável se o imóvel sofrer perda ou destruição parcial ou total, inclusive como os multiproprietários participam do risco, do seguro, da indenização e da parte que restar.",
+        "o_que_significa": "A convenção organiza tanto o uso cotidiano quanto a divisão das consequências patrimoniais de um sinistro grave envolvendo o imóvel.",
+        "exemplo_pratico": "Se um incêndio destruir parte do imóvel, a convenção deve indicar como o valor do seguro, a indenização e a parte remanescente serão tratados entre os multiproprietários.",
+        "atencao": "Não basta prever manutenção e danos de uso. A convenção deve tratar expressamente da perda ou destruição, parcial ou total, e dos respectivos riscos e valores.",
+        "palavras_dificeis": [{"termo": "Parte remanescente", "explicacao": "porção do imóvel que permanece após perda ou destruição parcial"}, {"termo": "Participação no risco", "explicacao": "critério de distribuição das consequências econômicas do evento entre os titulares"}]
+      }
+    },
+    {
+      "finding_id": "QA06-FINAL-0362",
+      "target_id": "CC2002:ART.1358-P",
+      "subdivision_id": "CC2002:ART.1358-P:INC.VI",
+      "legal_text": "a indicação, se for o caso, de que o empreendimento conta com sistema de administração de intercâmbio, na forma prevista no § 2º do art. 23 da Lei nº 11.771, de 17 de setembro de 2008, seja do período de fruição da fração de tempo, seja do local de fruição, caso em que a responsabilidade e as obrigações da companhia de intercâmbio limitam-se ao contido na documentação de sua contratação;",
+      "previous_content": {
+        "o_que_diz": "A convenção edilícia com multipropriedade deve identificar unidades, períodos, uso comum, custeio, multas, administração, manutenção e regras de ocupação, entre outras matérias legais.",
+        "o_que_significa": "A convivência entre condomínio espacial e temporal exige disciplina adicional minuciosa.",
+        "exemplo_pratico": "Convenção separa custos gerais dos custos exclusivos das unidades temporais.",
+        "atencao": "O rol legal deve ser integralmente considerado e compatibilizado com a convenção geral.",
+        "palavras_dificeis": [{"termo": "Custeio proporcional", "explicacao": "distribuição de despesas conforme benefício ou fração aplicável"}]
+      },
+      "analysis": "O sistema de intercâmbio de período ou local de fruição não aparece nos campos. A regra também limita a responsabilidade e as obrigações da companhia de intercâmbio ao que constar da documentação contratual. Isso altera a compreensão de quem responde e por quê, não sendo absorvido por 'entre outras matérias legais'.",
+      "legislative_change_check": "Artigo acrescido pela Lei nº 13.777/2018 e vigente na fonte oficial.",
+      "remission_check": "Remissão ao art. 23, § 2º, da Lei nº 11.771/2008 identifica o sistema de intercâmbio; a proposta preserva a remissão sem ampliar as obrigações da companhia.",
+      "binding_case_law_check": "Não necessária para decidir a cobertura literal.",
+      "decision": "CONFIRMADO_PARA_CORRECAO",
+      "confidence": "ALTA",
+      "proposed_content": {
+        "o_que_diz": "No condomínio edilício com multipropriedade, a convenção deve identificar unidades e períodos, disciplinar rateio, despesas, administração, sanções e quóruns e, quando houver, indicar o sistema de intercâmbio do período ou do local de fruição. Nesse sistema, a responsabilidade e as obrigações da companhia de intercâmbio ficam limitadas ao que constar da documentação de sua contratação.",
+        "o_que_significa": "A convenção precisa informar se o titular pode trocar seu período ou local de uso por meio de companhia especializada e delimitar o papel dessa companhia pelo contrato celebrado.",
+        "exemplo_pratico": "O empreendimento permite trocar a semana de uso por estadia em outro local; a convenção identifica o sistema, e a companhia responde apenas pelas obrigações assumidas em sua documentação contratual.",
+        "atencao": "A existência do intercâmbio não é presumida. Se oferecido, deve ser indicado, e a companhia não assume obrigações além das previstas na contratação.",
+        "palavras_dificeis": [{"termo": "Sistema de intercâmbio", "explicacao": "mecanismo contratual de troca do período ou do local de fruição da multipropriedade"}, {"termo": "Período de fruição", "explicacao": "intervalo em que o titular pode usar e gozar o imóvel"}]
+      }
+    }
+  ],
+  "corpus_modified": false,
+  "independent_revalidation_pending": true,
+  "human_approval_claimed": false
+}
