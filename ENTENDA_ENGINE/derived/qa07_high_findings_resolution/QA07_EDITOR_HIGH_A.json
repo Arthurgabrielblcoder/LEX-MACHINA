@@ -1,0 +1,614 @@
+{
+ "schema_version": 1,
+ "mission": "QA-07",
+ "role": "EDITOR_HIGH_A",
+ "as_of": "2026-11-13",
+ "status": "EDITORIAL_PROPOSALS_COMPLETE_PENDING_INDEPENDENT_REVALIDATION",
+ "source_queue": "QA06_B_DEFINITIVE_CORRECTION_QUEUE.json",
+ "source_queue_sha256": "d981890d1fecca4fe0e76eeefb1d6d5d398a336be065ebf7c4998ec2641668f9",
+ "authorized_inventory": "QA06_SUBDIVISION_INVENTORY_V2_CORRECTED.json",
+ "authorized_inventory_sha256": "7fe41b6b6e7755e17174551b56ea684fbbd8a399e95641f7f47e729f55ef5c82",
+ "baseline_corpus_sha256": "4f7481e5ec697eddc26e5e412ff9f5394c983fcfbd5cff6b678bdb7d9811aaf5",
+ "finding_count": 21,
+ "target_count": 10,
+ "decision_counts": {
+  "CORRECAO_NECESSARIA": 21,
+  "COBERTURA_SUFFICIENTE_COM_FUNDAMENTO": 0
+ },
+ "sources": [
+  {
+   "authority": "Câmara dos Deputados",
+   "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "cutoff_date": "2026-11-13",
+   "local_official_snapshot_sha256": "3a36498dbafe14b231462b2e64863a4181aae7540fb1dddd6234cc50f70ac09d"
+  }
+ ],
+ "human_approval_claimed": false,
+ "corpus_modified": false,
+ "records": [
+  {
+   "target_id": "CC2002:ART.39",
+   "source_explanation_id": "ENTENDA/CC2002:ART.39/BASE/4",
+   "source_editorial_version": 4,
+   "findings": [
+    {
+     "finding_id": "QA06-FINAL-0001",
+     "subdivision_id": "CC2002:ART.39:PAR.UNICO",
+     "historical_severity": "ALTO",
+     "historical_classification": "PARCIAL",
+     "qa06_review_justification": "A explicação menciona apenas a transferência a ente público, mas omite a regra territorial que define o destinatário: Município ou Distrito Federal conforme a circunscrição e União em território federal. A omissão pode indicar ente dominial errado.",
+     "official_legal_text": "Se, nos dez anos a que se refere este artigo, o ausente não regressar, e nenhum interessado promover a sucessão definitiva, os bens arrecadados passarão ao domínio do Município ou do Distrito Federal, se localizados nas respectivas circunscrições, incorporando-se ao domínio da União, quando situados em território federal.",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    }
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "previous_content": {
+    "o_que_diz": "Se o ausente, descendente ou ascendente regressar nos dez anos posteriores à sucessão definitiva, recebe os bens existentes no estado em que se acharem, os bens sub-rogados em seu lugar ou o preço que herdeiros e interessados receberam pelos bens alienados.",
+    "o_que_significa": "O retorno tardio não recompõe integralmente o acervo; terminado o período sem retorno nem promoção sucessória, os bens arrecadados passam ao ente público indicado no artigo.",
+    "exemplo_pratico": "Ausente volta e recebe o imóvel remanescente, sem exigir bem já alienado além do substituto ou preço previsto na regra.",
+    "atencao": "O texto não inclui todo herdeiro necessário: menciona especificamente o ausente, seus descendentes e seus ascendentes.",
+    "palavras_dificeis": [
+     {
+      "termo": "sub-rogação",
+      "explicacao": "substituição de um bem por outro que assume sua posição jurídica"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Quem retorna dentro dos dez anos posteriores à sucessão definitiva recebe os bens ainda existentes, os que os substituíram ou o preço obtido com alienações. Se ninguém regressar nem promover a sucessão definitiva nesse período, os bens arrecadados passam ao Município ou ao Distrito Federal da respectiva localização; se estiverem em território federal, passam à União.",
+    "o_que_significa": "O retorno tardio não recompõe todo o patrimônio como antes. Encerrado o prazo sem retorno nem iniciativa sucessória, a localização dos bens define qual ente público os recebe.",
+    "exemplo_pratico": "Se o imóvel arrecadado estiver em um município e ninguém regressar ou promover a sucessão definitiva durante os dez anos, ele passa ao domínio municipal; em território federal, o destinatário seria a União.",
+    "atencao": "O direito de retorno previsto no caput alcança especificamente o ausente, seus descendentes e seus ascendentes. A destinação pública do parágrafo único não é genérica: depende da circunscrição onde o bem está situado.",
+    "palavras_dificeis": [
+     {
+      "termo": "sub-rogação",
+      "explicacao": "substituição de um bem por outro que assume sua posição jurídica"
+     },
+     {
+      "termo": "circunscrição",
+      "explicacao": "área territorial de atuação do Município ou do Distrito Federal"
+     }
+    ]
+   },
+   "editor_risk_check": "Revisor independente deve conferir integralidade, precisão dos marcos/condições e ausência de nova generalização indevida."
+  },
+  {
+   "target_id": "CC2002:ART.44",
+   "source_explanation_id": "ENTENDA/CC2002:ART.44/BASE/2",
+   "source_editorial_version": 2,
+   "findings": [
+    {
+     "finding_id": "QA06-FINAL-0003",
+     "subdivision_id": "CC2002:ART.44:PAR.1",
+     "historical_severity": "ALTO",
+     "historical_classification": "PARCIAL",
+     "qa06_review_justification": "A liberdade de criação e funcionamento foi explicada, porém falta a proibição autônoma dirigida ao poder público de negar reconhecimento ou registro. A classificação PARCIAL permanece, mas a omissão incide diretamente sobre garantia jurídica e proibição estatal, justificando severidade ALTO.",
+     "official_legal_text": "São livres a criação, a organização, a estruturação interna e o funcionamento das organizações religiosas, sendo vedado ao poder público negar-lhes reconhecimento ou registro dos atos constitutivos e necessários ao seu funcionamento.",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    }
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "previous_content": {
+    "o_que_diz": "São pessoas jurídicas privadas associações, sociedades, fundações, organizações religiosas, partidos políticos e empreendimentos de economia solidária.",
+    "o_que_significa": "Organizações religiosas têm liberdade de criação e funcionamento; partidos seguem lei específica. As regras de associações aplicam-se subsidiariamente aos empreendimentos solidários e às sociedades referidas pelo § 2º.",
+    "exemplo_pratico": "Um grupo cultural sem finalidade econômica registra associação; uma cooperativa popular pode precisar verificar se se enquadra no regime especial de economia solidária.",
+    "atencao": "O inciso VII e o § 2º mudaram em 2024. Classificar a entidade corretamente é essencial, pois cada espécie possui constituição e regime próprios.",
+    "palavras_dificeis": [
+     {
+      "termo": "subsidiariamente",
+      "explicacao": "de forma complementar, para preencher lacuna sem substituir a disciplina principal"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "São pessoas jurídicas privadas as associações, sociedades, fundações, organizações religiosas, partidos políticos e empreendimentos de economia solidária. Organizações religiosas têm liberdade de criação, organização interna e funcionamento, e o poder público não pode negar o reconhecimento nem o registro dos atos necessários à sua constituição e atividade.",
+    "o_que_significa": "Cada espécie de entidade possui regime próprio. No caso das organizações religiosas, a autonomia institucional também protege contra recusa estatal indevida de reconhecimento ou registro.",
+    "exemplo_pratico": "Uma organização religiosa apresenta seus atos constitutivos regulares ao registro competente; o órgão público não pode recusá-los simplesmente por discordar de sua organização interna ou de sua orientação religiosa.",
+    "atencao": "A liberdade não elimina exigências legais gerais aplicáveis ao registro. A proibição é de negar reconhecimento ou registro por motivo incompatível com a autonomia assegurada pelo Código.",
+    "palavras_dificeis": [
+     {
+      "termo": "atos constitutivos",
+      "explicacao": "documentos que criam a entidade e definem sua organização básica"
+     },
+     {
+      "termo": "subsidiariamente",
+      "explicacao": "de forma complementar, quando a disciplina principal não resolve o ponto"
+     }
+    ]
+   },
+   "editor_risk_check": "Revisor independente deve conferir integralidade, precisão dos marcos/condições e ausência de nova generalização indevida."
+  },
+  {
+   "target_id": "CC2002:ART.206",
+   "source_explanation_id": "ENTENDA/CC2002:ART.206/BASE/1",
+   "source_editorial_version": 1,
+   "findings": [
+    {
+     "finding_id": "QA06-FINAL-0008",
+     "subdivision_id": "CC2002:ART.206:PAR.1:INC.IV",
+     "historical_severity": "ALTO",
+     "historical_classification": "AUSENTE",
+     "qa06_review_justification": "A menção geral a “peritos” refere-se a categorias agregadas e não representa a pretensão pela avaliação dos bens aportados ao capital da sociedade anônima, tampouco a publicação da ata que aprovou o laudo. O comando específico está AUSENTE e a severidade é ALTO.",
+     "official_legal_text": "a pretensão contra os peritos, pela avaliação dos bens que entraram para a formação do capital de sociedade anônima, contado da publicação da ata da assembléia que aprovar o laudo;",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    },
+    {
+     "finding_id": "QA06-FINAL-0009",
+     "subdivision_id": "CC2002:ART.206:PAR.1:INC.V",
+     "historical_severity": "ALTO",
+     "historical_classification": "PARCIAL",
+     "qa06_review_justification": "A síntese menciona créditos ligados ao encerramento da sociedade no prazo de um ano, mas não identifica credores não pagos, sócios/acionistas e liquidantes, nem a publicação da ata como termo inicial. A cobertura é parcial e a omissão prescricional é ALTO.",
+     "official_legal_text": "a pretensão dos credores não pagos contra os sócios ou acionistas e os liquidantes, contado o prazo da publicação da ata de encerramento da liquidação da sociedade.",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    },
+    {
+     "finding_id": "QA06-FINAL-0010",
+     "subdivision_id": "CC2002:ART.206:PAR.3:INC.IX",
+     "historical_severity": "ALTO",
+     "historical_classification": "PARCIAL",
+     "qa06_review_justification": "A explicação situa genericamente o seguro obrigatório no prazo de três anos, porém não identifica as duas pretensões protegidas: beneficiário contra segurador e terceiro prejudicado no seguro obrigatório de responsabilidade civil. A omissão pode impedir o leitor de reconhecer a incidência do prazo.",
+     "official_legal_text": "a pretensão do beneficiário contra o segurador, e a do terceiro prejudicado, no caso de seguro de responsabilidade civil obrigatório.",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    },
+    {
+     "finding_id": "QA06-FINAL-0011",
+     "subdivision_id": "CC2002:ART.206:PAR.3:INC.VI",
+     "historical_severity": "ALTO",
+     "historical_classification": "PARCIAL",
+     "qa06_review_justification": "“Lucros de má-fé” e o prazo trienal aparecem, mas faltam a restituição de lucros ou dividendos recebidos de má-fé e o termo inicial na deliberação da distribuição. A classificação parcial é correta; a omissão do objeto e do marco inicial eleva a severidade para ALTO.",
+     "official_legal_text": "a pretensão de restituição dos lucros ou dividendos recebidos de má-fé, correndo o prazo da data em que foi deliberada a distribuição;",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    },
+    {
+     "finding_id": "QA06-FINAL-0013",
+     "subdivision_id": "CC2002:ART.206:PAR.3:INC.VII:AL.a",
+     "historical_severity": "ALTO",
+     "historical_classification": "AUSENTE",
+     "qa06_review_justification": "A expressão genérica “responsabilidades societárias” não permite recuperar fundadores, publicação dos atos constitutivos ou sociedade anônima. O comando desta alínea não está materialmente representado; trata-se de AUSENTE e ALTO pelo marco prescricional omitido.",
+     "official_legal_text": "para os fundadores, da publicação dos atos constitutivos da sociedade anônima;",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    },
+    {
+     "finding_id": "QA06-FINAL-0014",
+     "subdivision_id": "CC2002:ART.206:PAR.3:INC.VII:AL.b",
+     "historical_severity": "ALTO",
+     "historical_classification": "AUSENTE",
+     "qa06_review_justification": "A explicação apenas agrega “certas responsabilidades societárias” no prazo de três anos. Não identifica administradores ou fiscais nem os marcos alternativos de apresentação do balanço ou reunião/assembleia. A ausência está confirmada; por omitir termo inicial prescricional específico, a severidade final é ALTO.",
+     "official_legal_text": "para os administradores, ou fiscais, da apresentação, aos sócios, do balanço referente ao exercício em que a violação tenha sido praticada, ou da reunião ou assembléia geral que dela deva tomar conhecimento;",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    },
+    {
+     "finding_id": "QA06-FINAL-0015",
+     "subdivision_id": "CC2002:ART.206:PAR.3:INC.VII:AL.c",
+     "historical_severity": "ALTO",
+     "historical_classification": "AUSENTE",
+     "qa06_review_justification": "Não há menção a liquidantes nem à primeira assembleia semestral posterior à violação. O marco inicial prescricional autônomo está ausente e pode alterar o cálculo do prazo, razão pela qual a severidade deve ser ALTO.",
+     "official_legal_text": "para os liquidantes, da primeira assembléia semestral posterior à violação;",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    },
+    {
+     "finding_id": "QA06-FINAL-0016",
+     "subdivision_id": "CC2002:ART.206:PAR.3:INC.VIII",
+     "historical_severity": "ALTO",
+     "historical_classification": "PARCIAL",
+     "qa06_review_justification": "A explicação inclui títulos de crédito no prazo de três anos, mas não registra a contagem a partir do vencimento nem a ressalva da lei especial. A exceção e o marco inicial são materiais; a classificação segue PARCIAL, com severidade ALTO.",
+     "official_legal_text": "a pretensão para haver o pagamento de título de crédito, a contar do vencimento, ressalvadas as disposições de lei especial;",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    },
+    {
+     "finding_id": "QA06-FINAL-0017",
+     "subdivision_id": "CC2002:ART.206:PAR.5:INC.II",
+     "historical_severity": "ALTO",
+     "historical_classification": "PARCIAL",
+     "qa06_review_justification": "“Honorários profissionais” e o prazo quinquenal estão presentes, mas faltam as categorias abrangidas e, sobretudo, os três marcos iniciais alternativos: conclusão dos serviços, cessação do contrato ou do mandato. A omissão temporal exige severidade ALTO.",
+     "official_legal_text": "a pretensão dos profissionais liberais em geral, procuradores judiciais, curadores e professores pelos seus honorários, contado o prazo da conclusão dos serviços, da cessação dos respectivos contratos ou mandato;",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    }
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "previous_content": {
+    "o_que_diz": "O artigo fixa prazos especiais de um, dois, três, quatro e cinco anos para pretensões expressamente enumeradas.",
+    "o_que_significa": "Em um ano estão, entre outras, hospedagem e alimentos consumidos no estabelecimento, emolumentos de auxiliares e peritos e créditos ligados ao encerramento de sociedade; o antigo inciso de seguro do § 1º foi revogado. Em dois anos prescrevem prestações alimentares vencidas. Em três anos entram aluguéis, rendas, juros e dividendos periódicos, enriquecimento sem causa, reparação civil, lucros de má-fé, certas responsabilidades societárias, títulos de crédito e seguro obrigatório. Em quatro anos, pretensão relativa à tutela. Em cinco anos, dívida líquida documentada, honorários profissionais e despesas judiciais do vencedor.",
+    "exemplo_pratico": "Cobrança de dívida líquida constante de contrato particular sujeita-se, em regra, ao prazo de cinco anos.",
+    "atencao": "Cada prazo depende da qualificação exata da pretensão e do marco inicial próprio. O § 1º, II, está revogado desde a vigência da Lei 15.040/2024 e não deve ser usado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prazo especial",
+      "explicacao": "período prescricional definido para uma categoria específica de pretensão"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O artigo estabelece prazos prescricionais especiais de um, dois, três, quatro e cinco anos e dá marcos iniciais próprios a várias pretensões. Em um ano entram, entre outras, a cobrança contra peritos pela avaliação de bens aportados ao capital de sociedade anônima, desde a publicação da ata que aprovou o laudo, e a pretensão de credores não pagos contra sócios, acionistas e liquidantes, desde a publicação da ata de encerramento da liquidação. Em três anos estão a restituição de lucros ou dividendos recebidos de má-fé, contada da deliberação da distribuição; responsabilidades de fundadores, administradores, fiscais e liquidantes, com os marcos societários indicados no inciso; pagamento de título de crédito desde o vencimento, salvo lei especial; e pretensões do beneficiário contra o segurador e do terceiro prejudicado no seguro obrigatório de responsabilidade civil. Em cinco anos prescrevem os honorários de profissionais liberais, procuradores judiciais, curadores e professores, desde a conclusão do serviço ou a cessação do contrato ou mandato.",
+    "o_que_significa": "Não basta saber a duração do prazo: é preciso identificar exatamente a pretensão e o evento que inicia a contagem. Nas responsabilidades societárias trienais, o marco muda conforme o responsável: publicação dos atos constitutivos para fundadores; apresentação do balanço ou reunião que deva conhecer a violação para administradores e fiscais; e primeira assembleia semestral posterior à violação para liquidantes.",
+    "exemplo_pratico": "A pretensão para cobrar um título de crédito, quando não houver prazo diferente em lei especial, conta três anos do vencimento. Já os honorários de um procurador seguem prazo de cinco anos contado da conclusão do serviço ou do fim do contrato ou mandato, conforme o caso.",
+    "atencao": "Qualificação da pretensão, termo inicial e eventual lei especial devem ser verificados juntos. O antigo inciso de seguro do § 1º foi revogado pela Lei 15.040/2024; isso não elimina a regra trienal do § 3º, IX, para o beneficiário e o terceiro prejudicado em seguro obrigatório de responsabilidade civil.",
+    "palavras_dificeis": [
+     {
+      "termo": "prescrição",
+      "explicacao": "perda da possibilidade de exigir judicialmente uma pretensão após o prazo legal"
+     },
+     {
+      "termo": "termo inicial",
+      "explicacao": "fato ou data a partir do qual o prazo começa a correr"
+     },
+     {
+      "termo": "liquidante",
+      "explicacao": "responsável por conduzir a liquidação e o encerramento da sociedade"
+     }
+    ]
+   },
+   "editor_risk_check": "Revisor independente deve conferir integralidade, precisão dos marcos/condições e ausência de nova generalização indevida."
+  },
+  {
+   "target_id": "CC2002:ART.1069",
+   "source_explanation_id": "ENTENDA/CC2002:ART.1069/BASE/2",
+   "source_editorial_version": 2,
+   "findings": [
+    {
+     "finding_id": "QA06-FINAL-0143",
+     "subdivision_id": "CC2002:ART.1069:INC.I",
+     "historical_severity": "ALTO",
+     "historical_classification": "PARCIAL",
+     "qa06_review_justification": "A função fiscalizatória aparece, mas faltam a periodicidade mínima trimestral e o dever dos administradores ou liquidantes de prestar as informações solicitadas.",
+     "official_legal_text": "examinar, pelo menos trimestralmente, os livros e papéis da sociedade e o estado da caixa e da carteira, devendo os administradores ou liquidantes prestar-lhes as informações solicitadas;",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    },
+    {
+     "finding_id": "QA06-FINAL-0144",
+     "subdivision_id": "CC2002:ART.1069:INC.III",
+     "historical_severity": "ALTO",
+     "historical_classification": "PARCIAL",
+     "qa06_review_justification": "A explicação cobre pareceres e operações genericamente, sem registrar apresentação à assembleia anual, lançamento no mesmo livro e base obrigatória nos dois balanços.",
+     "official_legal_text": "exarar no mesmo livro e apresentar à assembléia anual dos sócios parecer sobre os negócios e as operações sociais do exercício em que servirem, tomando por base o balanço patrimonial e o de resultado econômico;",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    }
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "previous_content": {
+    "o_que_diz": "Os conselheiros fiscais examinam livros, caixa e contas, registram resultados, opinam sobre demonstrações e operações e denunciam irregularidades. Convocam assembleia se os diretores atrasarem a convocação por mais de trinta dias ou, diante de motivo grave e urgente, imediatamente; seus deveres continuam durante a liquidação.",
+    "o_que_significa": "A fiscalização é contínua, documentada e inclui reação a erros, fraudes e urgências.",
+    "exemplo_pratico": "Conselheiro detecta desvio, registra conclusão e convoca reunião extraordinária se a administração se omite.",
+    "atencao": "As atribuições podem ser individuais ou colegiadas conforme o inciso; prazos e relatórios devem ser observados.",
+    "palavras_dificeis": [
+     {
+      "termo": "Parecer fiscal",
+      "explicacao": "manifestação técnica do conselho sobre contas e atos societários"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O conselho fiscal examina, ao menos trimestralmente, livros, documentos, caixa e carteira da sociedade, e administradores ou liquidantes devem fornecer as informações solicitadas. Registra conclusões, denuncia irregularidades, opina sobre demonstrações e operações e apresenta à assembleia anual parecer lançado no mesmo livro, baseado no balanço patrimonial e no balanço de resultado econômico. Também pode convocar assembleia nas hipóteses legais, e suas funções continuam durante a liquidação.",
+    "o_que_significa": "A fiscalização é periódica, documentada e informada. O conselho não atua apenas diante de suspeita: deve examinar dados regularmente e prestar contas aos sócios na assembleia anual com base nos dois balanços exigidos.",
+    "exemplo_pratico": "A cada trimestre, o conselho consulta livros e caixa e pede documentos aos administradores. Ao final do exercício, registra e apresenta à assembleia anual parecer apoiado nos balanços patrimonial e de resultado econômico.",
+    "atencao": "A periodicidade trimestral é mínima. Administradores e liquidantes têm dever de informação, e o parecer anual deve ser registrado no mesmo livro usado para as conclusões do conselho.",
+    "palavras_dificeis": [
+     {
+      "termo": "parecer fiscal",
+      "explicacao": "manifestação fundamentada do conselho fiscal sobre negócios, operações e demonstrações da sociedade"
+     },
+     {
+      "termo": "balanço patrimonial",
+      "explicacao": "demonstração da posição de bens, direitos e obrigações da sociedade"
+     }
+    ]
+   },
+   "editor_risk_check": "Revisor independente deve conferir integralidade, precisão dos marcos/condições e ausência de nova generalização indevida."
+  },
+  {
+   "target_id": "CC2002:ART.1187",
+   "source_explanation_id": "ENTENDA/CC2002:ART.1187/BASE/2",
+   "source_editorial_version": 2,
+   "findings": [
+    {
+     "finding_id": "QA06-FINAL-0213",
+     "subdivision_id": "CC2002:ART.1187:INC.II",
+     "historical_severity": "ALTO",
+     "historical_classification": "PARCIAL",
+     "qa06_review_justification": "A regra do menor valor entre custo e preço corrente foi resumida, mas falta a vedação de usar a valorização acima do custo para distribuir lucros ou calcular fundos de reserva.",
+     "official_legal_text": "os valores mobiliários, matéria-prima, bens destinados à alienação, ou que constituem produtos ou artigos da indústria ou comércio da empresa, podem ser estimados pelo custo de aquisição ou de fabricação, ou pelo preço corrente, sempre que este for inferior ao preço de custo, e quando o preço corrente ou venal estiver acima do valor do custo de aquisição, ou fabricação, e os bens forem avaliados pelo preço corrente, a diferença entre este e o preço de custo não será levada em conta para a distribuição de lucros, nem para as percentagens referentes a fundos de reserva;",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    }
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "previous_content": {
+    "o_que_diz": "No balanço, bens destinados à exploração são avaliados pelo custo, com conta de depreciação; estoques, pelo custo ou preço corrente quando inferior; títulos, pela cotação ou custo de aquisição e créditos, pelo valor provável de realização. Gastos pré-operacionais e certas despesas podem integrar o ativo diferido, sujeitos à amortização anual.",
+    "o_que_significa": "O balanço deve usar parâmetros verificáveis e reconhecer depreciação e riscos de recebimento.",
+    "exemplo_pratico": "Máquina usada entra pelo custo menos depreciação; crédito duvidoso recebe valor provável de realização.",
+    "atencao": "Leis e normas contábeis especiais complementam os critérios e podem exigir tratamento mais específico.",
+    "palavras_dificeis": [
+     {
+      "termo": "Depreciação",
+      "explicacao": "redução do valor de bem pelo uso, tempo ou obsolescência"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O balanço deve avaliar bens e direitos por critérios prudentes: bens de exploração pelo custo com depreciação; estoques e itens destinados à alienação pelo custo ou pelo preço corrente quando este for menor; títulos e créditos segundo os critérios legais; e certas despesas por amortização. Se bens forem avaliados pelo preço corrente acima do custo, essa diferença não pode servir para distribuir lucros nem para calcular percentuais de fundos de reserva.",
+    "o_que_significa": "Uma valorização ainda não realizada não pode ser tratada como lucro distribuível nem aumentar artificialmente reservas calculadas por percentual. O balanço deve evitar transformar expectativa de ganho em resultado disponível.",
+    "exemplo_pratico": "Mercadoria adquirida por cem passa a valer cento e trinta e é registrada pelo preço corrente. A diferença de trinta não pode ser usada para distribuir dividendos nem para calcular a parcela destinada ao fundo de reserva.",
+    "atencao": "Leis e normas contábeis especiais podem complementar os critérios, mas não afastam a vedação do inciso quanto à diferença entre preço corrente e custo para esses fins.",
+    "palavras_dificeis": [
+     {
+      "termo": "depreciação",
+      "explicacao": "redução contábil do valor de um bem pelo uso, tempo ou obsolescência"
+     },
+     {
+      "termo": "fundo de reserva",
+      "explicacao": "parcela patrimonial separada para finalidade ou proteção definida em lei ou no regime societário"
+     }
+    ]
+   },
+   "editor_risk_check": "Revisor independente deve conferir integralidade, precisão dos marcos/condições e ausência de nova generalização indevida."
+  },
+  {
+   "target_id": "CC2002:ART.1228",
+   "source_explanation_id": "ENTENDA/CC2002:ART.1228/BASE/1",
+   "source_editorial_version": 1,
+   "findings": [
+    {
+     "finding_id": "QA06-FINAL-0240",
+     "subdivision_id": "CC2002:ART.1228:PAR.1",
+     "historical_severity": "ALTO",
+     "historical_classification": "PARCIAL",
+     "qa06_review_justification": "A função socioambiental é apresentada de modo geral, sem preservar os bens ambientais e culturais enumerados nem os deveres expressos de evitar poluição do ar e das águas.",
+     "official_legal_text": "O direito de propriedade deve ser exercido em consonância com as suas finalidades econômicas e sociais e de modo que sejam preservados, de conformidade com o estabelecido em lei especial, a flora, a fauna, as belezas naturais, o equilíbrio ecológico e o patrimônio histórico e artístico, bem como evitada a poluição do ar e das águas.",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    },
+    {
+     "finding_id": "QA06-FINAL-0243",
+     "subdivision_id": "CC2002:ART.1228:PAR.5",
+     "historical_severity": "ALTO",
+     "historical_classification": "PARCIAL",
+     "qa06_review_justification": "O texto legal exige “No caso do parágrafo antecedente, o juiz fixará a justa indenização devida ao proprietário; pago o preço, valerá a sentença como título para o registro do imóvel em nome dos possuidores.”. Os campos QA-05 citados — o_que_diz: Proprietário pode usar, fruir, dispor e reivindicar a coisa, mas deve cumprir funções econômicas, sociais e ambientais; abuso é vedado e desapropriação judicial coletiva pode exigi | exemplo_pratico: Dono impede ocupação injusta, mas não usa imóvel apenas para causar dano ambiental ao vizinho. — não representam integralmente esse direito, obrigação, consequência ou condição essencial; a omissão pode alterar a aplicação prática da norma e mantém gravidade alta.",
+     "official_legal_text": "No caso do parágrafo antecedente, o juiz fixará a justa indenização devida ao proprietário; pago o preço, valerá a sentença como título para o registro do imóvel em nome dos possuidores.",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    }
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "previous_content": {
+    "o_que_diz": "Proprietário pode usar, fruir, dispor e reivindicar a coisa, mas deve cumprir funções econômicas, sociais e ambientais; abuso é vedado e desapropriação judicial coletiva pode exigir indenização.",
+    "o_que_significa": "O domínio é amplo, não absoluto, e pode ceder diante de interesses protegidos e posse social relevante.",
+    "exemplo_pratico": "Dono impede ocupação injusta, mas não usa imóvel apenas para causar dano ambiental ao vizinho.",
+    "atencao": "Os parágrafos reúnem limites complexos; desapropriação judicial exige extensa posse de boa-fé, obras relevantes e pagamento definido.",
+    "palavras_dificeis": [
+     {
+      "termo": "Função social",
+      "explicacao": "dever de exercer propriedade de modo compatível com interesses sociais protegidos"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O proprietário pode usar, fruir, dispor e reivindicar a coisa, mas deve exercer o domínio conforme suas finalidades econômicas e sociais. Nos termos da legislação especial, deve preservar flora, fauna, belezas naturais, equilíbrio ecológico e patrimônio histórico e artístico, além de evitar poluição do ar e das águas. O abuso é vedado. Em situação de extensa posse coletiva de boa-fé com obras ou serviços de interesse social e econômico relevante, o proprietário pode perder o imóvel mediante justa indenização fixada pelo juiz; pago o preço, a sentença vale como título para registrar o imóvel em nome dos possuidores.",
+    "o_que_significa": "A propriedade é ampla, mas não absoluta. Ela se submete a deveres sociais e ambientais e, na hipótese excepcional de posse coletiva qualificada, a transferência só se completa com a indenização e o pagamento que permite o registro em favor dos possuidores.",
+    "exemplo_pratico": "Uma extensa área é ocupada de boa-fé por muitas pessoas que realizam obras socialmente relevantes. Reconhecidos os requisitos legais, o juiz fixa indenização justa ao proprietário; somente depois de pago o preço a sentença serve para registrar o imóvel em nome dos possuidores.",
+    "atencao": "A hipótese dos §§ 4º e 5º exige conjuntamente posse ininterrupta e de boa-fé por mais de cinco anos, número considerável de pessoas e obras ou serviços de relevante interesse social e econômico. Ela não autoriza transferência sem justa indenização e pagamento.",
+    "palavras_dificeis": [
+     {
+      "termo": "função social",
+      "explicacao": "dever de exercer a propriedade de modo compatível com interesses econômicos, sociais e ambientais protegidos"
+     },
+     {
+      "termo": "título para registro",
+      "explicacao": "documento juridicamente apto a permitir a inscrição da propriedade no registro de imóveis"
+     }
+    ]
+   },
+   "editor_risk_check": "Revisor independente deve conferir integralidade, precisão dos marcos/condições e ausência de nova generalização indevida."
+  },
+  {
+   "target_id": "CC2002:ART.1301",
+   "source_explanation_id": "ENTENDA/CC2002:ART.1301/BASE/1",
+   "source_editorial_version": 1,
+   "findings": [
+    {
+     "finding_id": "QA06-FINAL-0279",
+     "subdivision_id": "CC2002:ART.1301:PAR.2",
+     "historical_severity": "ALTO",
+     "historical_classification": "PARCIAL",
+     "qa06_review_justification": "A existência de regra especial para luz e ventilação é indicada, mas faltam as dimensões máximas e a altura mínima que condicionam a exceção.",
+     "official_legal_text": "As disposições deste artigo não abrangem as aberturas para luz ou ventilação, não maiores de dez centímetros de largura sobre vinte de comprimento e construídas a mais de dois metros de altura de cada piso.",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    }
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "previous_content": {
+    "o_que_diz": "Janelas, terraços, varandas e eirados devem observar distância mínima do terreno vizinho, com regras próprias para visão oblíqua e pequenas aberturas de luz.",
+    "o_que_significa": "A restrição protege privacidade e segurança sem proibir aberturas tecnicamente limitadas.",
+    "exemplo_pratico": "Janela frontal é instalada a pelo menos metro e meio da divisa.",
+    "atencao": "A distância varia conforme a abertura e há disciplina específica para zona rural e luz ou ventilação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Visão oblíqua",
+      "explicacao": "vista lateral ou indireta para o imóvel vizinho"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Janelas, terraços, varandas e eirados devem respeitar as distâncias legais do imóvel vizinho, com regra própria para visão oblíqua. A restrição não alcança pequenas aberturas exclusivamente para luz ou ventilação quando tiverem, no máximo, dez centímetros de largura por vinte de comprimento e estiverem construídas a mais de dois metros de altura em cada piso.",
+    "o_que_significa": "A lei protege a privacidade do vizinho, mas admite uma abertura reduzida e elevada para iluminação ou ventilação. A exceção só vale se todas as medidas forem respeitadas.",
+    "exemplo_pratico": "Uma abertura de dez por vinte centímetros instalada acima de dois metros do piso pode servir à ventilação sem se submeter à distância geral das janelas; uma abertura maior não entra nessa exceção.",
+    "atencao": "Os limites são cumulativos: largura não superior a dez centímetros, comprimento não superior a vinte centímetros e altura superior a dois metros em relação a cada piso.",
+    "palavras_dificeis": [
+     {
+      "termo": "visão oblíqua",
+      "explicacao": "vista lateral ou indireta para o imóvel vizinho"
+     },
+     {
+      "termo": "eirado",
+      "explicacao": "terraço ou área descoberta elevada de uma edificação"
+     }
+    ]
+   },
+   "editor_risk_check": "Revisor independente deve conferir integralidade, precisão dos marcos/condições e ausência de nova generalização indevida."
+  },
+  {
+   "target_id": "CC2002:ART.1331",
+   "source_explanation_id": "ENTENDA/CC2002:ART.1331/BASE/1",
+   "source_editorial_version": 1,
+   "findings": [
+    {
+     "finding_id": "QA06-FINAL-0298",
+     "subdivision_id": "CC2002:ART.1331:PAR.4",
+     "historical_severity": "ALTO",
+     "historical_classification": "AUSENTE",
+     "qa06_review_justification": "Nenhum campo informa que toda unidade deve conservar acesso ao logradouro público; a omissão afeta condição essencial de fruição da unidade.",
+     "official_legal_text": "Nenhuma unidade imobiliária pode ser privada do acesso ao logradouro público.",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    }
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "previous_content": {
+    "o_que_diz": "Condomínio edilício combina unidades exclusivas com partes comuns inseparáveis, cada unidade ligada a fração ideal do solo e áreas coletivas.",
+    "o_que_significa": "O titular dispõe da unidade, mas compartilha estruturas essenciais e participação proporcional no conjunto.",
+    "exemplo_pratico": "Apartamento é exclusivo; terreno, fundações e corredores pertencem a todos.",
+    "atencao": "Abrigos de veículos e partes comuns obedecem ao título, à convenção e às restrições legais de alienação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Fração ideal",
+      "explicacao": "participação indivisa no terreno e nas partes comuns"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "No condomínio edilício, existem unidades de propriedade exclusiva e partes comuns inseparáveis. Cada unidade se vincula a uma fração ideal do solo e das áreas comuns, e nenhuma unidade pode ficar sem acesso ao logradouro público.",
+    "o_que_significa": "O titular dispõe de sua unidade, mas compartilha estruturas essenciais do edifício. A organização do condomínio não pode criar unidade imobiliária isolada da via pública.",
+    "exemplo_pratico": "Apartamento é exclusivo e corredores são comuns; a divisão ou alteração do prédio não pode deixar uma das unidades sem caminho juridicamente assegurado até a rua.",
+    "atencao": "Abrigos de veículos e partes comuns seguem o título, a convenção e as restrições legais. O acesso ao logradouro público deve ser preservado para todas as unidades.",
+    "palavras_dificeis": [
+     {
+      "termo": "fração ideal",
+      "explicacao": "participação indivisa de cada unidade no terreno e nas partes comuns"
+     },
+     {
+      "termo": "logradouro público",
+      "explicacao": "via ou espaço público de circulação, como rua ou avenida"
+     }
+    ]
+   },
+   "editor_risk_check": "Revisor independente deve conferir integralidade, precisão dos marcos/condições e ausência de nova generalização indevida."
+  },
+  {
+   "target_id": "CC2002:ART.1336",
+   "source_explanation_id": "ENTENDA/CC2002:ART.1336/BASE/1",
+   "source_editorial_version": 1,
+   "findings": [
+    {
+     "finding_id": "QA06-FINAL-0307",
+     "subdivision_id": "CC2002:ART.1336:PAR.1",
+     "historical_severity": "ALTO",
+     "historical_classification": "PARCIAL",
+     "qa06_review_justification": "Juros e multas aparecem genericamente, sem correção monetária, regra subsidiária do art. 406 e teto de dois por cento sobre o débito.",
+     "official_legal_text": "O condômino que não pagar a sua contribuição ficará sujeito à correção monetária e aos juros moratórios convencionados ou, não sendo previstos, aos juros estabelecidos no art. 406 deste Código, bem como à multa de até 2% (dois por cento) sobre o débito.",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    }
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "previous_content": {
+    "o_que_diz": "Condômino deve pagar despesas, preservar segurança e fachada e respeitar a destinação; descumprimentos podem gerar juros e multas nos limites legais.",
+    "o_que_significa": "A vida coletiva impõe deveres patrimoniais e de conduta, com sanções proporcionais e procedimento adequado.",
+    "exemplo_pratico": "Proprietário que altera fachada recompõe o padrão e pode sofrer penalidade prevista.",
+    "atencao": "Multas variam conforme a infração e não dispensam convocação, defesa e regras da convenção quando exigíveis.",
+    "palavras_dificeis": [
+     {
+      "termo": "Contribuição condominial",
+      "explicacao": "quota de custeio das despesas comuns"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "O condômino deve contribuir para as despesas, preservar segurança e fachada e respeitar a destinação do edifício. Quem não paga a contribuição fica sujeito à correção monetária, aos juros moratórios convencionados ou, se não houver previsão, aos juros do art. 406, além de multa de até dois por cento sobre o débito. Outras violações podem gerar as multas previstas nos limites legais.",
+    "o_que_significa": "O atraso atualiza o valor devido e pode acrescentar juros e multa, mas cada encargo deve seguir sua base legal ou convencional. As sanções de conduta também dependem das regras e do procedimento aplicáveis.",
+    "exemplo_pratico": "O condômino atrasa a quota mensal: o débito é corrigido, recebe os juros definidos na convenção — ou os do art. 406 se ela nada disser — e pode sofrer multa de até dois por cento sobre o valor devido.",
+    "atencao": "Correção monetária, juros e multa são encargos distintos. A multa moratória do § 1º não pode ultrapassar dois por cento do débito.",
+    "palavras_dificeis": [
+     {
+      "termo": "juros moratórios",
+      "explicacao": "juros devidos pelo atraso no pagamento"
+     },
+     {
+      "termo": "correção monetária",
+      "explicacao": "atualização do valor para recompor a perda do poder de compra da moeda"
+     }
+    ]
+   },
+   "editor_risk_check": "Revisor independente deve conferir integralidade, precisão dos marcos/condições e ausência de nova generalização indevida."
+  },
+  {
+   "target_id": "CC2002:ART.1341",
+   "source_explanation_id": "ENTENDA/CC2002:ART.1341/BASE/2",
+   "source_editorial_version": 2,
+   "findings": [
+    {
+     "finding_id": "QA06-FINAL-0312",
+     "subdivision_id": "CC2002:ART.1341:PAR.3",
+     "historical_severity": "ALTO",
+     "historical_classification": "INCORRETA",
+     "qa06_review_justification": "A síntese admite obra necessária por qualquer condômino sem urgência, mas omite que despesa excessiva não urgente exige autorização prévia da assembleia, podendo induzir atuação sem o requisito legal.",
+     "official_legal_text": "Não sendo urgentes, as obras ou reparos necessários, que importarem em despesas excessivas, somente poderão ser efetuadas após autorização da assembléia, especialmente convocada pelo síndico, ou, em caso de omissão ou impedimento deste, por qualquer dos condôminos.",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    },
+    {
+     "finding_id": "QA06-FINAL-0313",
+     "subdivision_id": "CC2002:ART.1341:PAR.4",
+     "historical_severity": "ALTO",
+     "historical_classification": "PARCIAL",
+     "qa06_review_justification": "O texto legal exige “O condômino que realizar obras ou reparos necessários será reembolsado das despesas que efetuar, não tendo direito à restituição das que fizer com obras ou reparos de outra natureza, embora de interesse comum.”. Os campos QA-05 citados — o_que_diz: Obras necessárias podem ser realizadas pelo síndico e, se ele estiver omisso ou impedido, por qualquer condômino, sem exigência de urgência. Se urgentes e de despesa excessiva, exi — não representam integralmente esse direito, obrigação, consequência ou condição essencial; a omissão pode alterar a aplicação prática da norma e mantém gravidade alta.",
+     "official_legal_text": "O condômino que realizar obras ou reparos necessários será reembolsado das despesas que efetuar, não tendo direito à restituição das que fizer com obras ou reparos de outra natureza, embora de interesse comum.",
+     "decision": "CORRECAO_NECESSARIA",
+     "analysis": "A explicação QA-06 não representa integralmente o comando material indicado; a proposta integrada explicita a regra sem transformar o ENTENDA em transcrição da lei."
+    }
+   ],
+   "decision": "CORRECAO_NECESSARIA",
+   "previous_content": {
+    "o_que_diz": "Obras necessárias podem ser realizadas pelo síndico e, se ele estiver omisso ou impedido, por qualquer condômino, sem exigência de urgência. Se urgentes e de despesa excessiva, exigem convocação imediata da assembleia; obras úteis exigem maioria e voluptuárias, dois terços.",
+    "o_que_significa": "Quórum e iniciativa variam conforme finalidade e urgência da obra.",
+    "exemplo_pratico": "Vazamento urgente é contido por morador; instalação de lazer depende do quórum correspondente.",
+    "atencao": "Classificação da obra e urgência devem ser demonstradas; gasto excessivo exige convocação imediata da assembleia.",
+    "palavras_dificeis": [
+     {
+      "termo": "Obra voluptuária",
+      "explicacao": "melhoria de recreio ou luxo sem aumentar uso habitual"
+     }
+    ]
+   },
+   "proposed_content": {
+    "o_que_diz": "Obras voluptuárias exigem voto de dois terços dos condôminos e obras úteis, maioria. Reparos necessários cabem ao síndico e, se ele se omitir ou estiver impedido, podem ser feitos por qualquer condômino. Se forem urgentes e de custo excessivo, a assembleia deve ser imediatamente convocada; se não forem urgentes e tiverem despesa excessiva, só podem começar após autorização de assembleia especialmente convocada. O condômino é reembolsado pelo que gastar em obra ou reparo necessário, mas não pelas obras de outra natureza, ainda que de interesse comum.",
+    "o_que_significa": "Urgência, necessidade e custo definem quem pode agir e quando a assembleia precisa autorizar. Gasto alto sem urgência exige autorização prévia; o reembolso individual é reservado às intervenções necessárias.",
+    "exemplo_pratico": "Morador contém vazamento urgente e pode cobrar a despesa necessária. Já uma reparação cara, mas sem urgência, deve aguardar autorização da assembleia; uma melhoria apenas útil feita por iniciativa própria não gera automaticamente reembolso.",
+    "atencao": "Não confunda convocação posterior à obra urgente de custo excessivo com autorização prévia para obra necessária não urgente de custo excessivo. Também não há restituição pelo simples fato de uma obra não necessária interessar ao condomínio.",
+    "palavras_dificeis": [
+     {
+      "termo": "obra necessária",
+      "explicacao": "intervenção destinada a conservar o bem ou evitar sua deterioração"
+     },
+     {
+      "termo": "obra voluptuária",
+      "explicacao": "melhoria de recreio ou luxo que não aumenta o uso habitual do bem"
+     }
+    ]
+   },
+   "editor_risk_check": "Revisor independente deve conferir integralidade, precisão dos marcos/condições e ausência de nova generalização indevida."
+  }
+ ]
+}
